@@ -12,5 +12,5 @@ module.exports = {
         reset: 'The **{type}** from **{user}** has been reset!',
         bulkReset: '**{type}** from **{user}** is in process of getting deleted!'
     },
-    aborted: 'Abored **{user}**\'s **{type}** deletion!'
+    aborted: 'Aborted **{user}**\'s **{type}** deletion!'
 };
