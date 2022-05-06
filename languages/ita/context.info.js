@@ -10,3 +10,6 @@ module.exports = {
         none: `Non sono stati dati pronomi`
     }
 };
+
+
+/* Credits to Drijon */
