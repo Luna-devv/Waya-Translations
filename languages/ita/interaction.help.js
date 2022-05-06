@@ -7,3 +7,4 @@ module.exports = {
         vote: 'Vota'
     }
 };
+/* Credits to Drijon */
