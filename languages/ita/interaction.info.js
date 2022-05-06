@@ -9,3 +9,4 @@ module.exports = {
     }
 };
 
+/* Credits to Drijon */
