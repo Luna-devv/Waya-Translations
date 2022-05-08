@@ -1,32 +1,32 @@
 module.exports = {
     choice: {
         remove: {
-            question: 'From where do you want to remove {prn} as prefered pronoun?',
+            question: 'Gdje želite ukloniti {prn} kao svoju zamjenicu?',
             button: {
-                global: 'Remove everywhere',
-                guild: 'Remove in guild'
+                global: 'Makni svuda',
+                guild: 'Makni u serveru'
             }
         },
         add: {
-            question: 'Where to you want to set {prn} as your prefered pronoun?',
+            question: 'Gdje želite postaviti {prn} kao svoju zamjenicu?',
             button: {
-                global: 'Set everywhere',
-                guild: 'Set in guild'
+                global: 'Postavi svuda',
+                guild: 'Postavi u serveru'
             }
         }
     },
     success: {
         removed: {
-            global: 'Successfully removed {prn} as prefered pronoun globally.',
-            guild: 'Successfully removed {prn} as prefered pronoun in this guild.'
+            global: 'Uspješno uklonjen/a {prn} kao globalna zamjenica.',
+            guild: 'Uspješno uklonjen/a {prn} kao zamjenica u serveru..'
         },
         added: {
-            global: 'Successfully added {prn} as prefered pronoun globally.',
-            guild: 'Successfully added {prn} as prefered pronoun in this guild.'
+            global: 'Uspješno postavljen/a {prn} kao globalna zamjenica.',
+            guild: 'Uspješno postavljen/a {prn} kao zamjenica u serveru.'
         }
     },
     error: {
-        tooSlow: 'You were too slow, please try again!',
-        fail: 'Failed to save your settings, please try again!'
+        tooSlow: 'Prespori ste, pokušajte opet!',
+        fail: 'Neuspješno spremanje podataka, pokušajte opet!'
     }
 };

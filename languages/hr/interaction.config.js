@@ -66,7 +66,7 @@ module.exports = {
         title: 'Konfiguriraj {name}',
         button: {
             logging: 'Bilježenje',
-            tickets: 'Ulaznice',
+            tickets: 'Tiketi',
             moderation: 'Moderacija',
             starboard: 'Starboard',
             staff: 'Upravljaj Serverom',
@@ -209,11 +209,11 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Channel',
-                        name: 'Welcomer Channel'
+                        name: 'Kanal Pozdrava'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Welcomer Message'
+                        name: 'Poruka Pozdrava'
                     }
                 }
             }
@@ -222,222 +222,222 @@ module.exports = {
     },
 
     tickets: {
-        title: 'Configure Ticketing',
+        title: 'Konfiguriraj Tikete',
         option: {
-            channel: 'Category: {channel}',
-            staff: 'Staff: {role}',
-            logging: 'Logging: {channel}',
-            naming: 'Naming: {type}',
+            channel: 'Kategorija: {channel}',
+            staff: 'Osoblje: {role}',
+            logging: 'Bilježenje: {channel}',
+            naming: 'Imenovanje: {type}',
             namingType: {
-                username: 'Username',
-                userid: 'UserId',
-                random: 'Random'
+                username: 'Korisničko Ime',
+                userid: 'Korisnički ID',
+                random: 'Nasumično'
             }
         },
         button: {
             logging: {
-                disable: 'Disable Logging',
-                enable: 'Enable Logging',
+                disable: 'Isključi Bilježenje',
+                enable: 'Uključi Bilježenje',
             },
-            texts: 'Change Texts',
+            texts: 'Promijeni Tekstove',
             naming: {
-                title: 'Set a naming type',
-                current: 'Current',
+                title: 'Postavi tip imenovanja',
+                current: 'Trenutno',
                 option: {
-                    username: 'Username',
-                    userid: 'User Id',
-                    random: 'Random Id'
+                    username: 'Korisničko Ime',
+                    userid: 'Korisnički ID',
+                    random: 'Nasumično'
                 }
             }
         },
         page: {
             category: {
-                title: 'Category',
-                name: 'Tickets Category'
+                title: 'Kategorija',
+                name: 'Kategorija Tiketa'
             },
             role: {
-                title: 'Staff Role',
-                name: 'Ticket Staff role'
+                title: 'Uloga Osoblja',
+                name: 'Ulogu Osoblja u Tiketa'
             },
             descriptions: {
-                title: 'Texts',
-                name: 'Ticket descriptions',
+                title: 'Tekstovi',
+                name: 'Opis Tiketa',
                 button: {
-                    unclaimed: 'Change unclaimed text',
-                    claimed: 'Change claimed text'
+                    unclaimed: 'Promijeni nezatraženi tekst',
+                    claimed: 'Promijeni zatraženi tekst'
                 },
                 page: {
                     unclaimed: {
-                        title: 'Unclaimed',
-                        name: 'Unclaimed Ticket description',
+                        title: 'Nezatražena',
+                        name: 'Opis nezatražene Tiketa',
                     },
                     claimed: {
-                        title: 'Claimed',
-                        name: 'Claimed Ticket description',
+                        title: 'Zatražena',
+                        name: 'Opis zatražene Tiketa',
                     },
                     topic: {
-                        title: 'Topic',
-                        name: 'Tickets Topic'
+                        title: 'Tema',
+                        name: 'Tema Tiketa'
                     }
                 }
             },
             logging: {
-                title: 'Logging',
-                name: 'Ticket Logging'
+                title: 'Bilježenje',
+                name: 'Bilježenje Tiketa'
             }
         }
     },
 
     moderation: {
-        title: 'Moderation',
+        title: 'Moderacija',
         option: {
-            role: 'Bypass Role: {role}',
-            logging: 'Logging: {channel}',
+            role: 'Zaobilazna uloga: {role}',
+            logging: 'Bilježenje: {channel}',
         },
         button: {
-            filter: 'Blacklist',
+            filter: 'Crna lista',
             antiScam: 'Anti Scam',
             antiSpam: 'Anti Spam'
         },
         page: {
             role: {
-                title: 'Bypass Role',
-                name: 'Bypass role'
+                title: 'Zaobilazna uloga',
+                name: 'Zaobilaznu ulogu'
             },
             logging: {
-                title: 'Logging',
-                name: 'Moderation logs'
+                title: 'Bilježenje',
+                name: 'Bilježenje moderacije'
             },
             filter: {
                 title: 'Filter',
-                name: 'Moderation Filter',
+                name: 'Moderacijski Filter',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Poruka: {message}',
+                    actions: 'Akcija: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
-                        timeout: 'timeout'
+                        reply: 'odgovor',
+                        delete: 'izbriši',
+                        timeout: 'utišaj'
                     },
-                    total: 'Total: **{amount} words**',
-                    timeout: 'Timeout: {time}'
+                    total: 'Ukupno: **{amount} riječi**',
+                    timeout: 'Utišaj: {time}'
                 },
                 button: {
-                    editWords: 'Edit word list',
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    editWords: 'Uredi listu riječi',
+                    message: 'Uredi Poruku',
+                    timeout: 'Trajanje Utišavanja',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Upravljaj akcijom',
+                        selected: 'Odabrano',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
-                            timeout: 'Timeout'
+                            reply: 'odgovor',
+                            delete: 'izbriši',
+                            timeout: 'utišaj'
                         }
                     }
                 },
                 page: {
                     words: {
-                        title: 'Words',
-                        name: 'Blacklisted word',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
-                        bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
-                        added: 'Successfully added "`{word}`" as new blacklisted word.',
-                        removed: 'Successfully removed "`{word}`" as new blacklisted word.'
+                        title: 'Riječi',
+                        name: 'Zabranjena riječ',
+                        awaitMessage: 'Unesite jednu ili više riječi koje će biti zabranjene.\nMolimo **samo koristite** znakove od `A-Z`\nOdvojite riječi `, ` (zarezom) da ih dodate više.',
+                        bulkAdded: 'Uspješno dodano {amout} novih riječi na crnu listu.',
+                        added: 'Uspješno dodano "`{word}`" na crnu listu.',
+                        removed: 'Uspješno izbrisano "`{word}`" sa crne liste.'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Blacklisted word reply'
+                        title: 'Poruka',
+                        name: 'Odgovor na zabranjenu riječ'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be between 0 and 1440 minutes.',
+                        title: 'Trajanje Utišavanja',
+                        name: 'Trajanje Utišavaja',
+                        description: 'Korisnik će biti utišan za zadano vrijeme!\nOdabir mora biti između 0 i 1440 minuta.',
                     }
                 }
             },
             antiScam: {
                 title: 'Anti Scam',
-                name: 'Moderation Anti Scam',
+                name: 'Moderacija Anti Scam',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
-                    actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
-                        timeout: 'timeout'
+                    message: 'Poruka: {message}',
+                    actions: 'Akcija: {types}',
+                    aactionType: {
+                        reply: 'odgovor',
+                        delete: 'izbriši',
+                        timeout: 'utišaj'
                     },
-                    total: 'Total: **{amount} words**',
-                    timeout: 'Timeout: {time}'
+                    total: 'Ukupno: **{amount} riječi**',
+                    timeout: 'Utišaj: {time}'
                 },
                 button: {
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    message: 'Uredi Poruku',
+                    timeout: 'Trajanje Utišavanja',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Upravljaj akcijom',
+                        selected: 'Odabrano',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
-                            timeout: 'Timeout'
+                            reply: 'odgovor',
+                            delete: 'izbriši',
+                            timeout: 'utišaj'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Anit Scam reply'
+                        title: 'Poruka',
+                        name: 'Anit Scam odgovor'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be between 0 and 1440 minutes.',
+                        title: 'Trajanje Utišavanja',
+                        name: 'Trajanje Utišavaja',
+                        description: 'Korisnik će biti utišan za zadano vrijeme!\nOdabir mora biti između 0 i 1440 minuta.',
                     }
                 }
             },
             anitSpam: {
                 title: 'Anti Spam',
-                name: 'Moderation Anti Spam',
+                name: 'Moderacija Anti Spam',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
-                    threshold: 'Threshold: {threshold}msgs/5s',
-                    actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
-                        timeout: 'timeout'
+                    message: 'Poruka: {message}',
+                    actions: 'Akcija: {types}',
+                    threshold: 'Prekršaj: {threshold}poruka/5s',
+                    aactionType: {
+                        reply: 'odgovor',
+                        delete: 'izbriši',
+                        timeout: 'utišaj'
                     },
-                    total: 'Total: **{amount} words**',
-                    timeout: 'Timeout: {time}'
+                    total: 'Ukupno: **{amount} riječi**',
+                    timeout: 'Utišaj: {time}'
                 },
                 button: {
-                    threshold: 'Edit Threshold',
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    threshold: 'Uredi Prekršaj',
+                    message: 'Uredi Poruku',
+                    timeout: 'Trajanje Utišavanja',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Upravljaj akcijom',
+                        selected: 'Odabrano',
                         option: {
-                            reply: 'Reply',
-                            timeout: 'Timeout',
-                            pruge: 'Purge'
+                            reply: 'odgovor',
+                            delete: 'izbriši',
+                            timeout: 'utišaj'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Anti Spam reply'
+                        title: 'Poruka',
+                        name: 'Anti Spam odgovor'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be between 0 and 1440 minutes.',
+                        title: 'Trajanje Utišavanja',
+                        name: 'Trajanje Utišavaja',
+                        description: 'Korisnik će biti utišan za zadano vrijeme!\nOdabir mora biti između 0 i 1440 minuta.',
                     },
                     threshold: {
-                        title: 'Threshold',
-                        name: 'spam Threshold',
-                        description: 'I will consider it as spam, when this amount gets reached within 5 seconds!\nInput must be between 1 and 99.',
+                        title: 'Prekršaj',
+                        name: 'spam Prekršaj',
+                        description: 'Smatrat ću prekršajem kada odabrani broj poruka je poslan u 5 seconds!\nOdabir mora biti između 1 i 99.',
                     }
                 }
             }
@@ -445,102 +445,104 @@ module.exports = {
     },
 
     starboard: {
-        title: 'Configure Starboard',
+        title: 'Konfiguriraj Starboard',
         button: {
-            emoji: 'Change Emoji',
-            color: 'Change Color',
-            count: 'Change Count',
+            emoji: 'Pormjeni Emotikon',
+            color: 'Pormjeni Boju',
+            count: 'Pormjeni Broj',
             nsfw: {
-                disable: 'Disable NSFW',
-                enable: 'Enable NSFW'
+                disable: 'Isključi NSFW',
+                enable: 'Uključi NSFW'
             },
             selfReact: {
-                disable: 'Disable Self Reaction',
-                enable: 'Enable Self Reaction'
+                disable: 'Isključi Samo-Reagiranje',
+                enable: 'Uključi Samo-Reagiranje'
             },
             logging: {
-                disable: 'Disable Logging',
-                enable: 'Disable Logging'
+                disable: 'Isključi Bilježenje',
+                enable: 'Uključi Bilježenje'
             },
             reply: {
-                disable: 'Hide Replied to',
-                enable: 'Show Replied to'
+                disable: 'Sakrij Odgovor na',
+                enable: 'Prikaži Odgovor na'
             },
             display: {
-                title: 'Set a display style',
-                selected: 'Selected',
+                title: 'Postavi izgled prikaza',
+                selected: 'Odabrano',
                 option: {
-                    tag: 'Tag',
-                    username: 'Username',
-                    nickname: 'Nickname',
-                    guildProfile: 'Guild Profile'
+                    tag: 'Korisničko Tag',
+                    username: 'Korisničko Ime',
+                    nickname: 'Nadimak',
+                    guildProfile: 'Profil Servera'
                 }
             }
         },
         option: {
-            channel: 'Channel: {channel}',
-            color: 'Color: {color}',
-            emoji: 'Emoji: {emoji}',
-            count: 'Count: {count}',
-            display: 'Display: {profileType}',
+            channel: 'Kanal: {channel}',
+            color: 'Boja: {color}',
+            emoji: 'Emotikon: {emoji}',
+            count: 'Broj: {count}',
+            display: 'Prikaz: {profileType}',
             profileType: {
-                tag: 'Tag',
-                username: 'Username',
-                nickname: 'Nickname',
-                guildProfile: 'Guild Profile'
+                tag: 'Korisničko Tag',
+                username: 'Korisničko Ime',
+                nickname: 'Nadimak',
+                guildProfile: 'Profil Servera'
             }
         },
         page: {
             channel: {
-                title: 'Channel',
-                name: 'Starboard Channel'
+                title: 'Kanal',
+                name: 'Kanal Starboarda'
             },
             emoji: {
-                title: 'Emoji',
-                name: 'Starboard Emoji',
+                title: 'Emotikon',
+                name: 'Emotikon Starboarda',
             },
             color: {
-                title: 'Color',
-                name: 'Starboard Color',
-                description: 'Paste the HEX color code into the chat.\nGet a HEX color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'The color code is not a valid HEX color.\nGet a HEX color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                title: 'Boja',
+                name: 'Boja Starboarda',
+                description: 'Unesite HEX kod boje u razgovor.\nHEX kod boje možete dobiti sa [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                invalid: 'Kod boje nija valjan HEX code.\nHEX kod boje možete dobiti sa [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
             },
             count: {
-                title: 'Count',
-                name: 'requierd Count',
-                description: 'Send a number to set the minimum {emote} reaction count requirement.'
+                title: 'Broj',
+                name: 'zahtjevan Broj',
+                description: 'Pošaljite broj da poszavite minimalan zahtjev za broj {emote} reakcija.'
             }
         }
     },
 
     staff: {
-        title: 'Manage {name}',
+        title: 'Upravljaj {name}',
         option: {
             premium: 'Premium: {tier}'
         },
         button: {
-            premium: 'Change premium Tier',
-            data: 'Export Data'
+            premium: 'Pormijeni premium Razinu',
+            data: 'Izvezi Infomacije'
         },
         page: {
             data: {
-                title: 'Data Export',
-                message: 'The data from {name} is displayed below.',
-                error: 'Cannot send message :/'
+                title: 'Izvoz Infomacija',
+                message: 'Infomacija sa {name} su prikazane ispod.',
+                error: 'Ne mogu poslati poruku :/'
             },
             premium: {
-                title: 'Configure Premium',
+                title: 'Konfiguriraj Premium',
                 option: {
-                    tier: 'Current Teir: {tier}'
+                    tier: 'Trenutna Razina: {tier}'
                 },
                 button: {
-                    tier: 'Tier {tier}'
+                    tier: 'Razina {tier}'
                 }
             }
         }
     },
 
     exit: {
-        title: 'Saved settings and exited config menu.'
+        title: 'Promjene su spremljene, izlaz iz konfiguracije.'
     }
 };
+
+// https://cdn.crni.xyz/r/1652026361.png

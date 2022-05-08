@@ -460,7 +460,7 @@ module.exports = {
             },
             logging: {
                 disable: 'Disable Logging',
-                enable: 'Disable Logging'
+                enable: 'Enable Logging'
             },
             reply: {
                 disable: 'Hide Replied to',
