@@ -209,11 +209,11 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Channel',
-                        name: 'Welcomer Channel'
+                        name: 'Byer Channel'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Welcomer Message'
+                        name: 'Byer Message'
                     }
                 }
             }
@@ -460,7 +460,7 @@ module.exports = {
             },
             logging: {
                 disable: 'Disable Logging',
-                enable: 'Disable Logging'
+                enable: 'Enable Logging'
             },
             reply: {
                 disable: 'Hide Replied to',

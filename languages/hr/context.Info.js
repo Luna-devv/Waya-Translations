@@ -3,7 +3,7 @@ module.exports = {
     name: 'Ime',
     id: 'Id',
     created: 'Kreiran',
-    joined: 'Pridruzen',
+    joined: 'Pridružen',
     invited: 'Pozvan od',
     pronouns: {
         title: 'Zamjenice',
