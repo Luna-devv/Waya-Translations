@@ -514,7 +514,7 @@ module.exports = {
     },
 
     staff: {
-        title: 'Manage {guild}',
+        title: 'Manage {name}',
         option: {
             premium: 'Premium: {tier}'
         },
@@ -525,7 +525,7 @@ module.exports = {
         page: {
             data: {
                 title: 'Data Export',
-                message: 'The data from {guild} is displayed below.',
+                message: 'The data from {name} is displayed below.',
                 error: 'Cannot send message :/'
             },
             premium: {
