@@ -5,7 +5,7 @@ With the last update, [@Waya#0325](https://waya.one) got support for multi langa
 Inside of this repo, you will be able to find all language files for all translations. <br />
 
 #### Get started
-If you want to translate into a new language or fix translations, **__please not the following**__:<br />
+If you want to translate into a new language or fix translations, **__please note the following**__:<br />
 1. Never ever replace placeholders with `{}` (i.e.: `{name}`), since these will get replaced later in the code.<br />
 2. The files need to have the same JSON object, which means you should never edit the key value of the JSON.<br />
 3. The files need to have the same name as the original one, `[type].[command].js` (e.i.: `interaction.config.js`).<br />
