@@ -395,19 +395,18 @@ module.exports = {
                     }
                 }
             },
-            anitSpam: {
+            antiSpam: {
                 title: 'Anti Spam',
                 name: 'Moderacija Anti Spam',
                 option: {
                     message: 'Poruka: {message}',
                     actions: 'Akcija: {types}',
-                    threshold: 'Prekršaj: {threshold}poruka/5s',
+                    threshold: 'Prekršaj: **{threshold}poruka/5s**',
                     aactionType: {
                         reply: 'odgovor',
                         delete: 'izbriši',
                         timeout: 'utišaj'
                     },
-                    total: 'Ukupno: **{amount} riječi**',
                     timeout: 'Utišaj: {time}'
                 },
                 button: {

@@ -395,19 +395,18 @@ module.exports = {
                     }
                 }
             },
-            anitSpam: {
+            antiSpam: {
                 title: 'Anti Spam',
                 name: 'Moderation Anti Spam',
                 option: {
                     message: 'Message: {message}',
                     actions: 'Actions: {types}',
-                    threshold: 'Threshold: {threshold}msgs/5s',
+                    threshold: 'Threshold: **{threshold}msgs/5s**',
                     actionType: {
                         reply: 'reply',
                         delete: 'delete',
                         timeout: 'timeout'
                     },
-                    total: 'Total: **{amount} words**',
                     timeout: 'Timeout: {time}'
                 },
                 button: {
