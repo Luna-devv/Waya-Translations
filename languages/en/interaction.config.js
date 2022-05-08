@@ -209,11 +209,11 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Channel',
-                        name: 'Welcomer Channel'
+                        name: 'Byer Channel'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Welcomer Message'
+                        name: 'Byer Message'
                     }
                 }
             }
