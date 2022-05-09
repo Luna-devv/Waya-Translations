@@ -9,6 +9,14 @@ module.exports = {
     global: {   // will be the same everywhere
         none: 'none',
         useButtons: 'Select an option you want to edit using the buttons below.',
+        developer: {
+            bypass: 'You don\'t have the `MANAGE_GUILD` to access this panel..\nDo you still want to continue?',
+            choice: {
+                access: 'I\'m sure, yes',
+                abord: 'Nevermind'
+            },
+            notice: 'carefull - developer privileges enforced..'
+        },
         permissions: 'Missing: {perms}',
         await: {
             channel: 'Mention a Channel or paste the Channel Id into the chat.\nType `none` to remove the channel.',
@@ -64,6 +72,12 @@ module.exports = {
 
     main: {
         title: 'Configure {name}',
+        option: {
+            premium: {
+                text: 'Premium Tier {tier}',
+                buy: 'Buy Premium'
+            }
+        },
         button: {
             logging: 'Logging',
             tickets: 'Ticketing',
