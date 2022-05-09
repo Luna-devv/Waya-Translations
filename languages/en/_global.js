@@ -1,5 +1,8 @@
 module.exports = {
     disabled: 'You have been disabled.',
+    button: {
+        add: 'Add {name}',
+    },
     permissions: {
         user: {
             guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
