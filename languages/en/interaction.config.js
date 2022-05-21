@@ -43,6 +43,10 @@ module.exports = {
             enabled: 'Enabled',
             disabled: 'Disabled',
         },
+        option: {
+            required: 'Required',
+            optional: 'Optional'
+        },
         button: {
             back: 'Back',
             disable: 'Disable',
@@ -241,6 +245,7 @@ module.exports = {
             channel: 'Category: {channel}',
             staff: 'Staff: {role}',
             logging: 'Logging: {channel}',
+            forceReason: 'Reason: {state}',
             naming: 'Naming: {type}',
             namingType: {
                 username: 'Username',
@@ -249,6 +254,10 @@ module.exports = {
             }
         },
         button: {
+            forceReason: {
+                enable: 'Force Reason',
+                disable: 'Optional Reason',
+            },
             logging: {
                 disable: 'Disable Logging',
                 enable: 'Enable Logging',
@@ -466,6 +475,10 @@ module.exports = {
             nsfw: {
                 disable: 'Disable NSFW',
                 enable: 'Enable NSFW'
+            },
+            bots: {
+                disable: 'Disable Bots',
+                enable: 'Enable Bots'
             },
             selfReact: {
                 disable: 'Disable Self Reaction',
