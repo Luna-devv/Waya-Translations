@@ -427,8 +427,8 @@ module.exports = {
                     threshold: 'Threshold: **{threshold}msgs/5s**',
                     actionType: {
                         reply: 'reply',
-                        delete: 'delete',
-                        timeout: 'timeout'
+                        timeout: 'timeout',
+                        purge: 'purge'
                     },
                     timeout: 'Timeout: {time}'
                 },
@@ -442,7 +442,7 @@ module.exports = {
                         option: {
                             reply: 'Reply',
                             timeout: 'Timeout',
-                            pruge: 'Purge'
+                            purge: 'Purge'
                         }
                     }
                 },
