@@ -1,6 +1,6 @@
 module.exports = {
     title: '{user}\'s Einladungen',
-    building: 'Sammle daten...',
+    building: 'Validiere daten...',
     more: '+ {count} mehr',
     none: 'keine',
     button: {
