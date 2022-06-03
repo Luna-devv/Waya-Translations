@@ -6,6 +6,7 @@
 
 module.exports = {
     validate: 'Validate data...',
+    notAllowed: 'You can\'t use this menu.',
     global: {   // will be the same everywhere
         none: 'none',
         useButtons: 'Select an option you want to edit using the buttons below.',
@@ -320,6 +321,7 @@ module.exports = {
         button: {
             filter: 'Blacklist',
             antiScam: 'Anti Scam',
+            antiLink: 'Anti Link',
             antiSpam: 'Anti Spam'
         },
         page: {
@@ -394,6 +396,49 @@ module.exports = {
                     timeout: 'Timeout: {time}'
                 },
                 button: {
+                    message: 'Edit Message',
+                    timeout: 'Timeout Duration',
+                    actions: {
+                        title: 'Manage an action',
+                        selected: 'Selected',
+                        option: {
+                            reply: 'Reply',
+                            delete: 'Delete',
+                            timeout: 'Timeout'
+                        }
+                    }
+                },
+                page: {
+                    message: {
+                        title: 'Message',
+                        name: 'Anit Scam reply'
+                    },
+                    timeout: {
+                        title: 'Timeout Duration',
+                        name: 'Timeout duration',
+                        description: 'The user will be set on Timeout for this duration!\nInput must be between 0 and 1440 minutes.',
+                    }
+                }
+            },
+            antiLink: {
+                title: 'Anti Link',
+                name: 'Moderation Anti Link',
+                option: {
+                    message: 'Message: {message}',
+                    actions: 'Actions: {types}',
+                    actionType: {
+                        reply: 'reply',
+                        delete: 'delete',
+                        timeout: 'timeout'
+                    },
+                    total: 'Total: **{amount} words**',
+                    timeout: 'Timeout: {time}'
+                },
+                button: {
+                    media: {
+                        disable: 'Disallow Media',
+                        enable: 'Allow Media'
+                    },
                     message: 'Edit Message',
                     timeout: 'Timeout Duration',
                     actions: {
