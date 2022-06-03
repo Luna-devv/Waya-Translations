@@ -4,7 +4,7 @@ module.exports = {
         tooLong: 'The time cannot be more than **24 days**..',
         cantFindId: 'I can\'t find any active reminders with the id `{id}`'
     },
-    reminder: 'Hey {user}, here\'s your reminder.',
+    reminder: 'Hey, {user}, here\'s your reminder.',
     remindSet: {
         created: 'I will remind you in **{time}**!',
         id: 'Id'
