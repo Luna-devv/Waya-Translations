@@ -7,8 +7,8 @@ module.exports = {
         }
     },
     delete: {
-        invalidUser: 'User does not exit in the Data Base!',
-        bulkInvalidUser: 'No users exit in the Data Base!',
+        invalidUser: 'User does not exist in the Database!',
+        bulkInvalidUser: 'No users exist in the Database!',
         reset: 'The **{type}** from **{user}** has been reset!',
         bulkReset: '**{type}** from **{user}** is in process of getting deleted!'
     },
