@@ -3,7 +3,7 @@ module.exports = {
     links: {
         website: 'webseite',
         invite: 'einladen',
-        more: 'genaue statistiken'
+        more: 'genaue Statistiken'
     },
     general: {
         title: 'Übersicht',

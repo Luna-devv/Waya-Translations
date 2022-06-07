@@ -1,6 +1,6 @@
 module.exports = {
-    alreadyExists: 'Ein Tag mit diesem Namen exestiert bereits!',
-    alreadyExistsDefault: 'Ein standart Command mit diesen Namen exestiert bereits!',
+    alreadyExists: 'Ein Tag mit diesem Namen existiert bereits!',
+    alreadyExistsDefault: 'Ein standard Befehl mit diesen Namen exestiert bereits!',
     invalidTag: 'Kein Tag mit diesen Namen gefunden!',
     form: {
         formName: '{name} Tag',

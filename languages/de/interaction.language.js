@@ -1,3 +1,3 @@
 module.exports = {
-    updated: 'Deine primäre sprache wurde auf **{locale}** gesetzt!'
+    updated: 'Deine primäre Sprache wurde auf **{locale}** gesetzt!'
 }

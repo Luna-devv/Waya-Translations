@@ -1,6 +1,6 @@
 module.exports = {
-    validate: 'Validere data...',
-    create: 'Eerstelle {type} Prompt...',
+    validate: 'Validere Daten...',
+    create: 'Erstelle {type} Prompt...',
     created: 'Die {type} Prompt wurde erstellt.',
     type: {
         category: 'kategorie',
