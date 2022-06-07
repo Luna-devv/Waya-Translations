@@ -1,6 +1,7 @@
 module.exports = {
     validate: 'Validate data...',
     create: 'Creating {type} prompt...',
+    tooManyRoles: 'You have {roles} roles in your server, please be sure that you only have 244 or less!',
     created: 'The {type} prompt has been created.',
     type: {
         category: 'channel category',
