@@ -1,5 +1,5 @@
 module.exports = {
-    noData: 'Could not find guild in the Data Base!',
+    noData: 'Could not find guild in the Database!',
     confirm: {
         text: 'Are you sure that you want to delete {channel} forever?',
         configReason: 'For `reason`, please enable logging in `/config` => __Ticketing__!',

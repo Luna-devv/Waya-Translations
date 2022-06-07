@@ -4,7 +4,7 @@ module.exports = {
     more: '+ {count} more',
     none: 'none',
     button: {
-        ids: 'User Ids',
+        ids: 'User IDs',
         mentions: 'User Mentions'
     }
 };

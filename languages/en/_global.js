@@ -9,7 +9,7 @@ module.exports = {
             channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
             roles: {
                 user: {
-                    text: 'You cannot perform this action since the highest role of that user is hiegher than yours.',
+                    text: 'You cannot perform this action since the highest role of that user is higher than yours.',
                     user: 'User: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 },
