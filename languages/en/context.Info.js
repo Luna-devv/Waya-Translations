@@ -12,7 +12,7 @@ module.exports = {
     },
     actions: {
         notAllowed: 'You can\'t use this menu.',
-        placeholder: 'Chose an action',
+        placeholder: 'Choose an action',
         option: {
             ban: 'Ban User',
             kick: 'Kick User',
