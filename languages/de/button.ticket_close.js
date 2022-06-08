@@ -10,7 +10,7 @@ module.exports = {
         }
     },
     form: {
-        formTitle: `Close {channel}`,
+        formTitle: `Schließe {channel}`,
         reason: 'Grund'
     }
 };
