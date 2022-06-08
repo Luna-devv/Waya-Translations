@@ -7,13 +7,13 @@ module.exports = {
         user: {
             guild: 'Du kannst diese Aktion nicht ausführen, da dir die {perms} Berechtigungen fehlen.',
             channel: 'Du kannst diese Aktion nicht ausführen, da dir die {perms} Berechtigungen in diesem Kanal fehlen.',
-            Rolles: {
+            roles: {
                 user: {
                     text: 'Du kannst diese Aktion nicht ausführen, da die höchste Rolle von diesem User höher als deine ist.',
                     user: 'User: {u.Rolle} @ index {u.index}',
                     you: 'Du: {y.Rolle} @ index {y.index}'
                 },
-                Rolle: {
+                role: {
                     text: 'Du kannst diese Aktion nicht ausführen da deine höchste Rolle unter der zu bearbeitenden Rolle ist.',
                     user: 'Rolle: {u.Rolle} @ index {u.index}',
                     you: 'Du: {y.Rolle} @ index {y.index}'
