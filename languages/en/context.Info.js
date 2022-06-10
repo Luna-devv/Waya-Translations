@@ -12,6 +12,8 @@ module.exports = {
     },
     actions: {
         notAllowed: 'You can\'t use this menu.',
+        invalidTime: 'The duration cannot be less than a second!',
+        otherInvalidTime: 'The duration cannot be more than 28 days!',
         placeholder: 'Chose an action',
         option: {
             ban: 'Ban User',
@@ -20,10 +22,14 @@ module.exports = {
             role: 'Assign Role'
         },
         form: {
-            reason: 'Reason'
+            reason: 'Reason',
+            note: 'Moderator Note',
+            duration: 'Duration'
         },
         success: {
-            ban: 'Successfully banned {user} from {guild}.'
+            ban: 'Successfully banned {user} from {guild}.',
+            kick: 'Successfully kicked {user} from {guild}.',
+            timeout: 'Successfully timed {user} out in {guild}.',
         }
     }
 };
