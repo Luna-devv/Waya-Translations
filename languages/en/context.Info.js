@@ -14,7 +14,7 @@ module.exports = {
         notAllowed: 'You can\'t use this menu.',
         invalidTime: 'The duration cannot be less than a second!',
         otherInvalidTime: 'The duration cannot be more than 28 days!',
-        placeholder: 'Chose an action',
+        placeholder: 'Choose an action',
         option: {
             ban: 'Ban User',
             kick: 'Kick User',

@@ -1,6 +1,6 @@
 module.exports = {
     error: {
-        tooShort: 'Zeit kann nicht kürzer alls **eine Sekunde** sein..',
+        tooShort: 'Zeit kann nicht kürzer als **eine Sekunde** sein..',
         tooLong: 'Zeit kann nicht mehr als **24 Tage** sein..',
         cantFindId: 'Ich kann keine aktive Erinnerung mit der Id `{id}` finden.'
     },
