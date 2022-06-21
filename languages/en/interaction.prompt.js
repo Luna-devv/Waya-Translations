@@ -10,7 +10,7 @@ module.exports = {
     },
     message: {
         created: 'created',
-        noSupport: 'none [use **/config**]',
+        noSupport: 'none (use **/config**)',
         invalidEmote: 'not in same guild',
         content: 'Content'
     },
