@@ -19,6 +19,7 @@ module.exports = {
             notice: 'carefull - developer privileges enforced..'
         },
         permissions: 'Missing: {perms}',
+        placeholders: 'Placeholders',
         await: {
             channel: 'Mention a Channel or paste the Channel ID into the chat.\nType `none` to remove the channel.',
             category: 'Mention a Category or paste the Category ID into the chat.\nType `none` to remove the category.',
@@ -38,7 +39,8 @@ module.exports = {
         type: {
             text: 'Text Channel',
             category: 'Category Channel',
-            role: 'Role'
+            role: 'Role',
+            emoji: 'Emote'
         },
         state: {
             enabled: 'Enabled',
@@ -287,6 +289,8 @@ module.exports = {
                 title: 'Texts',
                 name: 'Ticket descriptions',
                 button: {
+                    texts: 'Preview ticket',
+                    topic: 'Change topic',
                     unclaimed: 'Change unclaimed text',
                     claimed: 'Change claimed text'
                 },
@@ -313,7 +317,7 @@ module.exports = {
     },
 
     moderation: {
-        title: 'Moderation',
+        title: 'Configure Moderation',
         option: {
             role: 'Bypass Role: {role}',
             logging: 'Logging: {channel}',
@@ -368,7 +372,7 @@ module.exports = {
                         awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
                         bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
                         added: 'Successfully added "`{word}`" as new blacklisted word.',
-                        removed: 'Successfully removed "`{word}`" as new blacklisted word.'
+                        removed: 'Successfully removed "`{word}`" as blacklisted word.'
                     },
                     message: {
                         title: 'Message',
@@ -377,7 +381,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be between 0 and 1440 minutes.',
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`',
                     }
                 }
             },
@@ -416,7 +420,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be between 0 and 1440 minutes.',
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`',
                     }
                 }
             },
@@ -459,7 +463,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be between 0 and 1440 minutes.',
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`',
                     }
                 }
             },
@@ -499,7 +503,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be between 0 and 1440 minutes.',
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`',
                     },
                     threshold: {
                         title: 'Threshold',
