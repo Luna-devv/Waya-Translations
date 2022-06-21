@@ -1,5 +1,6 @@
 module.exports = {
     messages: 'Message Leaderboard',
     invites: 'Invite Leaderboard',
-    none: 'none'
+    none: 'none',
+    personalized: 'Your Position'
 };
