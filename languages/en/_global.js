@@ -2,6 +2,7 @@ module.exports = {
     dms: 'This command cannot be used inside of private messages.',
     disabled: 'You have been disabled.',
     error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
+    premium: 'premium required',
     button: {
         add: 'Add {name}',
     },
