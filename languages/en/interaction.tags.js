@@ -9,7 +9,11 @@ module.exports = {
         placeholder: 'Useable Placeholders',
         button: {
             exit: 'Save & Exit',
-            permission: 'Select a permission the user needs'
+            permission: 'Select a permission the user needs',
+            color: {
+                enabled: 'Select a color for the Embed',
+                disabled: 'Use Embeds and select a color'
+            }
         }
     },
     form: {
@@ -31,7 +35,8 @@ module.exports = {
     },
     list: {
         title: 'Tag list',
-        none: 'no tags'
+        none: 'no tags',
+        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'   // ;[singular, plural]
     },
     deleted: 'Successfully deleted the Tag **{name}**.'
 };
