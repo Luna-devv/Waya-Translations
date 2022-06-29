@@ -21,9 +21,11 @@ module.exports = class I18n {
         };
     }
 
-    get(path, replace, fallback) {
+    get(path, replace, plural, fallback) {
         let data = this.getData(this.options.type);
         if (fallback || !data || Object?.keys(data)?.length == 0) data = this.fallback;
+        if (!this.fallback) data = {};
+
         data._global = this._global;
         if (fallback || !data._global || Object?.keys(data._global) == 0) data._global = this.fallback_global;
         const paths = path.split('.');
@@ -37,7 +39,13 @@ module.exports = class I18n {
             string = string.replaceAll(`{${r.text}}`, r.value);
         });
 
-        if (!string && !fallback) string = this.get(path, replace, true);
+        if (string.match(/\;\[.{0,99}\]/gi)) {
+            string.match(/\;\[.{0,99}\]/gi).forEach(_string => {
+                string = string.replaceAll(_string, _string.slice(1, -1).split(', ')[plural ? 1 : 0]);
+            });
+        };
+
+        if (!string && !fallback) string = this.get(path, replace, plural, true);
         return string;
     }
 }
