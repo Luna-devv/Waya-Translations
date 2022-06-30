@@ -1,7 +1,7 @@
 module.exports = {
     fail: {
         config: 'Das Starboard ist in diesem Server nicht eingerichtet..',
-        content: 'Message has no content nor attachments..',
+        content: 'Message has no content not attachments..',
         channel: 'Der eingerichtete Starboard Channel exestiert nicht mehr..',
         exists: {
             text: 'Die Nachricht ist bereits im Starboard..',
