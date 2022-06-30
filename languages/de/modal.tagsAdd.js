@@ -1,6 +1,6 @@
 module.exports = {
     success: {
-        message: '**{name}** wurde erfolgreich erstellt.',
-        command: 'Probiere es aus mit `{command}`'
+        message: 'Successfully added the Tag **{name}**.',
+        command: 'Try it out with `{command}`'
     }
 };
