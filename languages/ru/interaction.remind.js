@@ -20,7 +20,5 @@ module.exports = {
         reminderCount: 'У Вас {count} напоминаний',
         createFirst: 'Используйте сначала `/remind create`для создания напоминания!'
     },
-    remindDelete: {
-        deleted: 'Я удалила Ваше напоминание с ID `{id}`'
-    }
+    remindDelete: { deleted: 'Я удалила Ваше напоминание с ID `{id}`' }
 };
