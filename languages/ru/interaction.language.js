@@ -1,3 +1,1 @@
-module.exports = {
-    updated: 'Ваш основной язык теперь **{locale}**!'
-};
+module.exports = { updated: 'Ваш основной язык теперь **{locale}**!' };
