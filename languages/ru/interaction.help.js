@@ -3,7 +3,6 @@ module.exports = {
     footer: 'Онлайн {time} • Статистика перемещена в \'/stats\'',
     button: {
         learnmore: 'Узнать больше',
-        add: 'Добавить {name}',
         vote: 'Проголосовать'
     }
 };
