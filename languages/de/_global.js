@@ -1,8 +1,9 @@
 module.exports = {
+    dms: 'This command cannot be used inside of private messages.',
     disabled: 'Du wurdest vom Bot gesperrt.',
-    button: {
-        add: '{name} Einladen',
-    },
+    error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
+    premium: 'premium required',
+    button: { add: '{name} Einladen' },
     permissions: {
         user: {
             guild: 'Du kannst diese Aktion nicht ausführen, da dir die {perms} Berechtigungen fehlen.',

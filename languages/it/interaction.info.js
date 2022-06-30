@@ -8,4 +8,3 @@ module.exports = {
         mentions: 'Menzioni dell utente'
     }
 };
-
