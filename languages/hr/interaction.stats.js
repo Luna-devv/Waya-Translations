@@ -1,22 +1,22 @@
 module.exports = {
-    fetchError: `Ne mogu dohvatiti informacije, pokušajte ponovno kasnije!`,
+    fetchError: `Nije moguće dohvatiti podatke, pokušajte ponovo kasnije!`,
     links: {
         website: 'web stranica',
-        invite: 'pozovi',
-        more: 'više informacija'
+        invite: 'pozivnica',
+        more: 'dubinska statistika'
     },
     general: {
-        title: 'Glavno',
-        uptime: '**{time}** rad',
+        title: 'Općenito',
+        uptime: '**{time}** vrijeme rada',
         guilds: '**{count}** servera',
         users: '**{count}** korisnika',
         invites: '**{count}** pozivnica',
-        starboards: '**{count}** starboards',
-        executed: '**{count}** komanda',
-        usage: '{cpu}% cpu • {mem}% memorija'
+        starboards: '**{count}** starboard-ova',
+        executed: '**{count}** izvršenih',
+        usage: '{cpu}% cpu • {mem}% memorije'
     },
     commandList: {
         title: 'Popularno',
-        none: 'nijedno'
+        none: 'prazno'
     }
 };
