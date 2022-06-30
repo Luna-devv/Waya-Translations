@@ -1,16 +1,16 @@
 module.exports = {
     confirm: {
-        description: 'Jesi li siguran da želiš __izbrisati__ **{type}** podatke od **{user}**?',
+        description: 'Jeste li sigurni da želite __resetirati__ **{type}** podatke od **{user}**?',
         button: {
-            delete: 'Siguran sam, izbriši',
+            delete: 'Siguran sam, obriši',
             abord: 'Nema veze'
         }
     },
     delete: {
-        invalidUser: 'Koristik ne postoji u bazi podataka!',
-        bulkInvalidUser: 'Korisnici ne postoje u bazi podataka!',
-        reset: '**{type}** od **{user}** je resetiran!',
+        invalidUser: 'Korisnik ne postoji u Bazi podataka!',
+        bulkInvalidUser: 'U bazi podataka ne postoje korisnici!',
+        reset: '**{type}** od **{user}** je poništen!',
         bulkReset: '**{type}** od **{user}** je u procesu brisanja!'
     },
-    aborted: 'Otkazano **{user}** brisanje **{type}**!'
+    aborted: 'Prekinuto brisanje **{type}** **{user}**!'
 };
