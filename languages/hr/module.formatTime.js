@@ -1,12 +1,7 @@
 module.exports = {
-    month: 'mjesec',
-    months: 'mjeseci',
-    day: 'dan',
-    days: 'dana',
-    hour: 'sat',
-    hours: 'sati',
-    minute: 'minuta',
-    minutes: 'minuta',
-    second: 'sekunda',
-    seconds: 'sekundi'
+    months: ';[mjesec, mjeseca]',
+    days: ';[dan, dana]',
+    hours: ';[sat, sata]',
+    minutes: ';[minuta, minute]',
+    seconds: ';[sekunda, sekunde]'
 };
