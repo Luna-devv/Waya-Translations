@@ -5,7 +5,5 @@ module.exports = {
         data: 'Du hast das letze mal {relativeTime}** und insgesammt **{amount}** mal gevotet.',
         new: '**NEU!** Unterstüze uns auch auf {url} mit deinem Vote!'
     },
-    button: {
-        vote: 'Vote'
-    }
+    button: { vote: 'Vote' }
 };
