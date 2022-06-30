@@ -1,14 +1,14 @@
 module.exports = {
-    messages: 'Сообщения',
-    name: 'Имя',
+    messages: 'Messages',
+    name: 'Name',
     id: 'Id',
-    created: 'Создан',
-    joined: 'Зашёл',
-    invited: 'Приглашён',
+    created: 'Created',
+    joined: 'Joined',
+    invited: 'Invited by',
     none: 'none',
     pronouns: {
-        title: 'Местоимения',
-        none: 'Не задано'
+        title: 'Pronouns',
+        none: 'No pronouns set'
     },
     actions: {
         notAllowed: 'You can\'t use this menu.',
