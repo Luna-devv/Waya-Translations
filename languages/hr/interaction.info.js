@@ -1,10 +1,10 @@
 module.exports = {
-    title: '{user} Pozivnice',
-    building: 'Izrađuje se...',
-    more: '+ {count} više',
-    none: 'nijedna',
+    title: 'Pozivnice korisnika {user}',
+    building: 'Izgrađivanje...',
+    more: '+ još {count}',
+    none: 'prazno',
     button: {
-        ids: 'Sortiraj po Id',
-        mentions: 'Sortiraj po Tagu'
+        ids: 'ID-ovi korisnika',
+        mentions: 'Spominjanja korisnika'
     }
 };
