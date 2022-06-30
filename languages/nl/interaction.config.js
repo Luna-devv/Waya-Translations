@@ -31,8 +31,8 @@ module.exports = {
             set: 'Successfully set {what} to **{data}**',
             removed: 'Successfully removed the {what}.',
             fail: 'This {what} does not exist in this guild..',
-            lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
-            otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
+            lengthFail: 'De {what} ({length} karakters) is langer dan het maximum aantal toegestane {max} karakters',
+            otherLengthFail: 'De {what} ({length} karakters) is korter dan het minimum aantal toegestane {min} karakters',
             numberFail: 'The {what} is not a number between {a} and {b}!',
             roleFail: 'This Role is only managable by either Discord or belongs to a bot user.'
         },
@@ -187,7 +187,7 @@ module.exports = {
                     role: 'Role: {role}',
                     message: {
                         message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        command: 'Bericht: gebruik `{command}`'
                     }
                 },
                 button: { message: 'Edit Message' },
@@ -213,7 +213,7 @@ module.exports = {
                     channel: 'Channel: {channel}',
                     message: {
                         message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        command: 'Bericht: gebruik `{command}`'
                     }
                 },
                 button: { message: 'Edit Message' },

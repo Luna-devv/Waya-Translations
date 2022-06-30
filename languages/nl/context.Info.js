@@ -4,7 +4,7 @@ module.exports = {
     id: 'Id',
     created: 'Created',
     joined: 'Joined',
-    invited: 'Invited by',
+    invited: 'geïnviteerd door',
     none: 'none',
     pronouns: {
         title: 'Pronouns',
