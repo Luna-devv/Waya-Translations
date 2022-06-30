@@ -1,32 +1,32 @@
 module.exports = {
     choice: {
         remove: {
-            question: 'Gdje želite ukloniti {prn} kao svoju zamjenicu?',
+            question: 'Odakle želite ukloniti {prn} kao željenu zamjenicu?',
             button: {
-                global: 'Makni svuda',
-                guild: 'Makni u serveru'
+                global: 'Uklonite posvuda',
+                guild: 'Ukloni u serveru'
             }
         },
         add: {
-            question: 'Gdje želite postaviti {prn} kao svoju zamjenicu?',
+            question: 'Gdje želite postaviti {prn} kao svoju željenu zamjenicu?',
             button: {
-                global: 'Postavi svuda',
-                guild: 'Postavi u serveru'
+                global: 'Postavite posvuda',
+                guild: 'Postavite u serveru'
             }
         }
     },
     success: {
         removed: {
-            global: 'Uspješno uklonjen/a {prn} kao globalna zamjenica.',
-            guild: 'Uspješno uklonjen/a {prn} kao zamjenica u serveru..'
+            global: 'Uspješno je uklonjena {prn} kao preferirana zamjenica na globalnoj razini.',
+            guild: 'Uspješno je uklonjena {prn} kao preferirana zamjenica u ovom serveru.'
         },
         added: {
-            global: 'Uspješno postavljen/a {prn} kao globalna zamjenica.',
-            guild: 'Uspješno postavljen/a {prn} kao zamjenica u serveru.'
+            global: 'Uspješno je postavljena {prn} kao preferirana zamjenica na globalnoj razini.',
+            guild: 'Uspješno je postavljena {prn} kao preferirana zamjenica u ovom serveru.'
         }
     },
     error: {
-        tooSlow: 'Prespori ste, pokušajte opet!',
-        fail: 'Neuspješno spremanje podataka, pokušajte opet!'
+        tooSlow: 'Bili ste prespori, pokušajte ponovo!',
+        fail: 'Spremanje vaših postavki nije uspjelo, pokušajte ponovno!'
     }
 };
