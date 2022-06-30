@@ -1,26 +1,24 @@
 module.exports = {
     error: {
-        tooShort: 'Vrijeme ne može biti manje od **1 sekunde**..',
+        tooShort: 'Vrijeme ne može biti kraće od **1 sekunde**..',
         tooLong: 'Vrijeme ne može biti duže od **24 dana**..',
-        cantFindId: 'Nemogu naći aktivne podsjetnike sa id `{id}`'
+        cantFindId: 'Ne mogu pronaći aktivne podsjetnike s ID-om `{id}`'
     },
-    reminder: 'Hej {user}, evo tvojeg podsjetnika',
+    reminder: 'Hej {user}, evo vašeg podsjetnika.',
     remindSet: {
-        created: 'Podsjetit ću te za **{time}**!',
-        id: 'Id'
+        created: 'Podsjetit ću te za **{vrijeme}**!',
+        id: 'ID'
     },
     remindView: {
         created: 'Napravljen',
         remindsIn: 'Podsjeća',
         message: 'Poruka',
         button: {
-            delete: 'Izbriši',
+            delete: 'Izbrisati',
             invite: 'Pozovi {user}'
         },
-        reminderCount: 'Imaš {count} podsjetnika',
-        createFirst: 'Koristi `/remind create` da prvo napraviš podsjetnik!'
+        reminderCount: 'Imate {count} podsjetnika',
+        createFirst: 'Prvo upotrijebite `/remind create` za stvaranje podsjetnika!'
     },
-    remindDelete: {
-        deleted: 'Izbrisala sam tvoj podsjetnik sa id `{id}`'
-    }
+    remindDelete: { deleted: 'Izbrisala sam vaš podsjetnik s ID-om `{id}`' }
 };
