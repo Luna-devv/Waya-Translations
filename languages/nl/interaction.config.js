@@ -270,15 +270,15 @@ module.exports = {
                 name: 'Tickets Category'
             },
             role: {
-                title: 'Staff Role',
-                name: 'Ticket Staff role'
+                title: 'Staff Rol',
+                name: 'Ticket staff rol'
             },
             descriptions: {
                 title: 'Texts',
                 name: 'Ticket descriptions',
                 button: {
                     texts: 'Preview ticket',
-                    topic: 'Change topic',
+                    topic: 'Verander topic',
                     unclaimed: 'Change unclaimed text',
                     claimed: 'Change claimed text'
                 },
