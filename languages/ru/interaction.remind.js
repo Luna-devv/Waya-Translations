@@ -1,24 +1,24 @@
 module.exports = {
     error: {
-        tooShort: 'Время не может быть меньше **1 секунды**..',
-        tooLong: 'Время не может быть больше **24 дней**..',
-        cantFindId: 'Я не могу найти активные напоминания с ID `{id}`'
+        tooShort: 'The time cannot be less than **1 second**..',
+        tooLong: 'The time cannot be more than **24 days**..',
+        cantFindId: 'I can\'t find any active reminders with the ID `{id}`'
     },
-    reminder: 'Хей, {user}, вот твоё напоминание',
+    reminder: 'Hey {user}, here\'s your reminder.',
     remindSet: {
-        created: 'Я напомню Вам в **{time}**!',
-        id: 'ID'
+        created: 'I will remind you in **{time}**!',
+        id: 'Id'
     },
     remindView: {
-        created: 'Создано',
-        remindsIn: 'Напоминания',
-        message: 'Сообщение',
+        created: 'Created',
+        remindsIn: 'Reminds',
+        message: 'Message',
         button: {
-            delete: 'Удалить',
-            invite: 'Пригласить {user}'
+            delete: 'Delete',
+            invite: 'Invite {user}'
         },
-        reminderCount: 'У Вас {count} напоминаний',
-        createFirst: 'Используйте сначала `/remind create`для создания напоминания!'
+        reminderCount: 'You have {count} reminders',
+        createFirst: 'Use `/remind create` fist to create a reminder!'
     },
     remindDelete: { deleted: 'Я удалила Ваше напоминание с ID `{id}`' }
 };

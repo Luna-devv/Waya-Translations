@@ -3,7 +3,9 @@ module.exports = {
     disabled: 'You have been disabled.',
     error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
     premium: 'premium required',
-    button: { add: 'Add {name}' },
+    button: {
+        add: 'Add {name}',
+    },
     permissions: {
         user: {
             guild: 'You cannot run this action since you\'re missing the {perms} permissions.',

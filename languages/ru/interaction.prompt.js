@@ -1,21 +1,21 @@
 module.exports = {
-    validate: 'Проверка данных...',
-    create: 'Создание панели {type}...',
+    validate: 'Validate data...',
+    create: 'Creating {type} prompt...',
     tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
-    created: 'Панель {type} создана.',
+    created: 'The {type} prompt has been created.',
     type: {
-        category: 'категория каналов',
-        support: 'роль поддержки',
-        emote: 'свой смайл'
+        category: 'channel category',
+        support: 'support role',
+        emote: 'custom emote'
     },
     message: {
-        created: 'создана',
-        noSupport: 'пусто [используйте **/config**]',
-        invalidEmote: 'невозможно найти на этом сервере',
-        content: 'Контент'
+        created: 'created',
+        noSupport: 'пусто (используйте **/config**)',
+        invalidEmote: 'not in same guild',
+        content: 'Content'
     },
     error: {
-        tooLong: 'Опция {index} включает в себя больше {number} символов!',
-        noData: 'данные не заданы'
+        tooLong: 'Option {index} has more than {number} characters!',
+        noData: 'no data set'
     }
 };

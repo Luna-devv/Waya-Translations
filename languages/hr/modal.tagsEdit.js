@@ -1,6 +1,6 @@
 module.exports = {
     success: {
-        message: 'Uspješno uređen Tag **{name}**.',
-        command: 'Isprobaj sa `{command}`'
+        message: 'Oznaka **{name}** uspješno ažurirana.',
+        command: 'Isprobajte s `{command}`'
     }
 };

@@ -1,5 +1,5 @@
 module.exports = {
     noData: 'Der Server kann nicht in der Datenbank gefunden werden!',
-    noCategory: 'Die Ticket Katogorie wurde entfernt, bitte kontaktiere einen Server Administrator!',
+    noCategory: 'The Tickets category has been deleted. Please notify a Server Administrator.',
     created: 'Dein Ticket, {channel}, wurde erstellt!'
 };

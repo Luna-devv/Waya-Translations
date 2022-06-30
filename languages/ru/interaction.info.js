@@ -1,10 +1,10 @@
 module.exports = {
-    title: 'Приглашения {user}',
-    building: 'Получение данных...',
-    more: 'ещё {count}',
-    none: 'пусто',
+    title: '{user}\'s Invites',
+    building: 'Building...',
+    more: '+ {count} more',
+    none: 'none',
     button: {
-        ids: 'Id пользователей',
-        mentions: 'Упоминания пользователей'
+        ids: 'User IDs',
+        mentions: 'User Mentions'
     }
 };

@@ -2,13 +2,13 @@ module.exports = {
     messages: 'Nachrichten',
     name: 'Name',
     id: 'Id',
-    created: 'Created',
+    created: 'Erstellt',
     joined: 'Beigetreten',
     invited: 'Eingeladen',
-    none: 'none',
+    none: 'keine',
     pronouns: {
-        title: 'Pronouns',
-        none: 'No pronouns set'
+        title: 'Pronomen',
+        none: 'Keine Pronomen ausgewählt'
     },
     actions: {
         notAllowed: 'Du kannst dieses Menü nicht benutzten.',
@@ -19,17 +19,17 @@ module.exports = {
             ban: 'User Bannen',
             kick: 'User Kicken',
             timeout: 'User Muten',
-            role: 'Assign Role'
+            role: 'Rolle Hinzufügen'
         },
         form: {
             reason: 'Grund',
-            note: 'Moderator Note',
-            duration: 'Duration'
+            note: 'Moderator Notiz',
+            duration: 'Länge'
         },
         success: {
             ban: '{user} wurde erfolgreich von {guild} gebannt.',
-            kick: 'Successfully kicked {user} from {guild}.',
-            timeout: 'Successfully timed {user} out in {guild}.'
+            kick: '{user} wurde erfolgreich von {guild} gekickt.',
+            timeout: '{user} wurde erfolgreich von {guild} gemuted.'
         }
     }
 };

@@ -1,18 +1,40 @@
 module.exports = {
-    alreadyExists: 'Tag sa tim imenom već postoji!',
-    invalidTag: 'Tag sa tim imenom ne postoji!',
+    alreadyExists: 'Oznaka s ovim imenom već postoji!',
+    alreadyExistsDefault: 'Zadana naredba s ovim imenom već postoji!',
+    invalidTag: 'Oznaka s ovim imenom ne postoji!',
+    overview: {
+        title: 'Konfiguracija oznake',
+        message: 'Poruka',
+        embed: 'Embed',
+        placeholder: 'Upotrebljivi predlošci',
+        button: {
+            exit: 'Spremi i izađi',
+            permission: 'Odaberite dopuštenje koje korisniku treba',
+            color: {
+                enabled: 'Odaberite boju Embeda',
+                disabled: 'Koristite Embedove i odaberite boju'
+            }
+        }
+    },
     form: {
-        formName: '{name} tag',
-        title: 'Naslov',
-        description: 'Opis',
-        thumbnail: 'Manja Slika',
-        image: 'Slika',
-        placeholder: 'Rezervirani (Ne Uređuj)',
-        placeholderSecret: 'Rekla sam ne uređuj :('
+        formName: 'oznaka {name}',
+        message: { content: 'Sadržaj' },
+        embed: {
+            title: 'Naslov',
+            description: 'Opis',
+            thumbnail: 'Sličica',
+            image: 'Slika',
+            footer: 'Footer'
+        }
+    },
+    success: {
+        message: 'Uspješno je dodana oznaka {name}.',
+        command: 'Isprobajte s {command}'
     },
     list: {
-        title: 'lista Tagova',
-        none: 'nema tagova'
+        title: 'Popis oznaka',
+        none: 'nema oznaka',
+        disabled: '{amount} ;[oznaka je, oznake su] skrivene zbog nedostajućih dopuštenja'    // ;[singular, plural]
     },
-    deleted: 'Uspješno izbrisan Tag **{name}**.'
+    deleted: 'Oznaka **{name}** uspješno je izbrisana.'
 };

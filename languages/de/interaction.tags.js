@@ -1,7 +1,7 @@
 module.exports = {
-    alreadyExists: 'Ein Tag mit diesem Namen existiert bereits!',
-    alreadyExistsDefault: 'Ein standard Befehl mit diesen Namen exestiert bereits!',
-    invalidTag: 'Kein Tag mit diesen Namen gefunden!',
+    alreadyExists: 'A Tag with this name already exists!',
+    alreadyExistsDefault: 'Ein Standard Befehl mit diesen Namen exestiert bereits!',
+    invalidTag: 'A Tag with this name doesn\'t exist!',
     overview: {
         title: 'Tag Config',
         message: 'Message',
@@ -17,7 +17,7 @@ module.exports = {
         }
     },
     form: {
-        formName: '{name} Tag',
+        formName: '{name} tag',
         message: { content: 'Content' },
         embed: {
             title: 'Title',
@@ -32,9 +32,9 @@ module.exports = {
         command: 'Try it out with {command}'
     },
     list: {
-        title: 'Tag liste',
-        none: 'keine Tags',
+        title: 'Tag list',
+        none: 'no tags',
         disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'    // ;[singular, plural]
     },
-    deleted: '**{name}** wurde erfolgreich gelöscht.'
+    deleted: 'Successfully deleted the Tag **{name}**.'
 };

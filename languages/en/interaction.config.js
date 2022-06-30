@@ -3,11 +3,11 @@
     Do NOT edit things like {} since these are placeholders,
     \n are new lines
 */
+
 module.exports = {
     validate: 'Validate data...',
     notAllowed: 'You can\'t use this menu.',
-    global: {
-        // will be the same everywhere
+    global: {   // will be the same everywhere
         none: 'none',
         useButtons: 'Select an option you want to edit using the buttons below.',
         developer: {
@@ -25,7 +25,7 @@ module.exports = {
             category: 'Mention a Category or paste the Category ID into the chat.\nType `none` to remove the category.',
             role: 'Mention a Role or paste the Role ID into the chat.\nType `none` to remove the role.',
             message: 'Send a Message which should be used as {what}.',
-            emote: 'Send an Emoji which should be used as {what}.'
+            emote: 'Send an Emoji which should be used as {what}.',
         },
         success: {
             set: 'Successfully set {what} to **{data}**',
@@ -44,7 +44,7 @@ module.exports = {
         },
         state: {
             enabled: 'Enabled',
-            disabled: 'Disabled'
+            disabled: 'Disabled',
         },
         option: {
             required: 'Required',
@@ -70,13 +70,13 @@ module.exports = {
                 analyst: 'Analyst',
                 cozy: 'Cozy'
             },
-            dupaw: {
-                // This is a name, can't be translated
+            dupaw: {    // This is a name, can't be translated
                 enable: 'Enable dupaw',
                 disable: 'Disable dupaw'
             }
         }
     },
+
     main: {
         title: 'Configure {name}',
         option: {
@@ -104,6 +104,7 @@ module.exports = {
             byer: 'Bying'
         },
         page: {
+
             messages: {
                 title: 'Messages',
                 name: 'Message Logging',
@@ -118,6 +119,7 @@ module.exports = {
                     }
                 }
             },
+
             joins: {
                 title: 'Joins',
                 name: 'Join Logging',
@@ -126,7 +128,9 @@ module.exports = {
                     mode: 'Mode: {mode}',
                     filter: 'Filter: {state}'
                 },
-                button: { filter: 'Filter' },
+                button: {
+                    filter: 'Filter'
+                },
                 page: {
                     channel: {
                         title: 'Channel',
@@ -169,7 +173,7 @@ module.exports = {
                             trigger: {
                                 title: 'Trigger',
                                 name: 'age requirement',
-                                description: 'If an account is younger than this age, they\'ll get punished!\nInput must be between 0 and 28 days.'
+                                description: 'If an account is younger than this age, they\'ll get punished!\nInput must be between 0 and 28 days.',
                             },
                             role: {
                                 title: 'Role',
@@ -179,6 +183,7 @@ module.exports = {
                     }
                 }
             },
+
             welcomer: {
                 title: 'Welcomer',
                 name: 'Welcomer',
@@ -190,7 +195,9 @@ module.exports = {
                         command: 'Message: use `{command}`'
                     }
                 },
-                button: { message: 'Edit Message' },
+                button: {
+                    message: 'Edit Message'
+                },
                 page: {
                     channel: {
                         title: 'Channel',
@@ -206,6 +213,7 @@ module.exports = {
                     }
                 }
             },
+
             byer: {
                 title: 'Byer',
                 name: 'Byer',
@@ -214,9 +222,11 @@ module.exports = {
                     message: {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
-                    }
+                    },
                 },
-                button: { message: 'Edit Message' },
+                button: {
+                    message: 'Edit Message'
+                },
                 page: {
                     channel: {
                         title: 'Channel',
@@ -228,8 +238,10 @@ module.exports = {
                     }
                 }
             }
+
         }
     },
+
     tickets: {
         title: 'Configure Ticketing',
         option: {
@@ -247,11 +259,11 @@ module.exports = {
         button: {
             forceReason: {
                 enable: 'Force Reason',
-                disable: 'Optional Reason'
+                disable: 'Optional Reason',
             },
             logging: {
                 disable: 'Disable Logging',
-                enable: 'Enable Logging'
+                enable: 'Enable Logging',
             },
             texts: 'Change Texts',
             naming: {
@@ -285,11 +297,11 @@ module.exports = {
                 page: {
                     unclaimed: {
                         title: 'Unclaimed',
-                        name: 'Unclaimed Ticket description'
+                        name: 'Unclaimed Ticket description',
                     },
                     claimed: {
                         title: 'Claimed',
-                        name: 'Claimed Ticket description'
+                        name: 'Claimed Ticket description',
                     },
                     topic: {
                         title: 'Topic',
@@ -303,11 +315,12 @@ module.exports = {
             }
         }
     },
+
     moderation: {
         title: 'Configure Moderation',
         option: {
             role: 'Bypass Role: {role}',
-            logging: 'Logging: {channel}'
+            logging: 'Logging: {channel}',
         },
         button: {
             filter: 'Blacklist',
@@ -368,7 +381,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`',
                     }
                 }
             },
@@ -407,7 +420,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`',
                     }
                 }
             },
@@ -450,7 +463,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`',
                     }
                 }
             },
@@ -490,17 +503,18 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`',
                     },
                     threshold: {
                         title: 'Threshold',
                         name: 'spam Threshold',
-                        description: 'I will consider it as spam, when this amount gets reached within 5 seconds!\nInput must be between 1 and 99.'
+                        description: 'I will consider it as spam, when this amount gets reached within 5 seconds!\nInput must be between 1 and 99.',
                     }
                 }
             }
         }
     },
+
     starboard: {
         title: 'Configure Starboard',
         button: {
@@ -558,7 +572,7 @@ module.exports = {
             },
             emoji: {
                 title: 'Emoji',
-                name: 'Starboard Emoji'
+                name: 'Starboard Emoji',
             },
             color: {
                 title: 'Color',
@@ -573,9 +587,12 @@ module.exports = {
             }
         }
     },
+
     staff: {
         title: 'Manage {name}',
-        option: { premium: 'Premium: {tier}' },
+        option: {
+            premium: 'Premium: {tier}'
+        },
         button: {
             premium: 'Change premium Tier',
             data: 'Export Data'
@@ -588,10 +605,17 @@ module.exports = {
             },
             premium: {
                 title: 'Configure Premium',
-                option: { tier: 'Current Tier: {tier}' },
-                button: { tier: 'Tier {tier}' }
+                option: {
+                    tier: 'Current Tier: {tier}'
+                },
+                button: {
+                    tier: 'Tier {tier}'
+                }
             }
         }
     },
-    exit: { title: 'Saved settings and exited config menu.' }
+
+    exit: {
+        title: 'Saved settings and exited config menu.'
+    }
 };
