@@ -1,6 +1,7 @@
 module.exports = {
     validate: 'Проверка данных...',
     create: 'Создание панели {type}...',
+    tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
     created: 'Панель {type} создана.',
     type: {
         category: 'категория каналов',
