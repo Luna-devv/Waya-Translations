@@ -1,4 +1,4 @@
 module.exports = {
-    cantFindId: 'Ne mogu pronaći podsjetnik sa Id `{id}`',
-    deleted: 'Izbrisala sam rvoj podsjetnik sa Id `{id}`'
+    cantFindId: 'Ne mogu pronaći aktivne podsjetnike s ID-om `{id}`',
+    deleted: 'Izbrisala sam vaš podsjetnik s ID-om `{id}`'
 };
