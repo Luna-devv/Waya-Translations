@@ -2,15 +2,15 @@ module.exports = {
     confirm: {
         description: 'Вы уверены, что хотите __сбросить__ информацию о **{type}** участника **{user}**?',
         button: {
-            delete: 'Я уверен, удалить',
-            abord: 'Не важно'
+            delete: 'I\'m sure, delete',
+            abord: 'Неважно'
         }
     },
     delete: {
-        invalidUser: 'Участника нет в базе данных!',
-        bulkInvalidUser: 'Ни одного участника нет в базе данных!',
-        reset: '**{type}** участника **{user}** сброшено!',
-        bulkReset: '**{type}** участника **{user}** в процессе удаления!'
+        invalidUser: 'User does not exist in the Database!',
+        bulkInvalidUser: 'No users exist in the Database!',
+        reset: 'The **{type}** from **{user}** has been reset!',
+        bulkReset: '**{type}** from **{user}** is in process of getting deleted!'
     },
-    aborted: 'Отменено удаление информации о **{type}** **{user}**!'
+    aborted: 'Aborted **{user}**\'s **{type}** deletion!'
 };
