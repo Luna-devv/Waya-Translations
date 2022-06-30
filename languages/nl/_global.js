@@ -1,12 +1,12 @@
 module.exports = {
-    dms: 'This command cannot be used inside of private messages.',
+    dms: 'Dit commando kan niet gebruikt worden in privéberichten.',
     disabled: 'You have been disabled.',
     error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
-    premium: 'premium required',
-    button: { add: 'Add {name}' },
+    premium: 'premium is vereist',
+    button: { add: 'Voeg {name} toe' },
     permissions: {
         user: {
-            guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
+            guild: 'Je kunt deze actie niet gebruiken. Je ontbreekt volgende permissies: {perms}.',
             channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
             roles: {
                 user: {
@@ -22,12 +22,12 @@ module.exports = {
             }
         },
         me: {
-            guild: 'I cannot run this action since I\'m missing the {perms} permissions.',
-            channel: 'I cannot run this action since I\'m missing the {perms} permissions in this channel.',
+            guild: 'Ik kan deze actie niet uitvoeren omdat ik volgende permissies niet heb: {perms}.',
+            channel: 'Ik kan deze actie niet uitvoeren omdat ik volgende permissies niet heb in dit kanaal: {perms}.',
             roles: {
                 user: {
-                    text: 'I cannot perform this action since the highest role of that user is higher than mine.',
-                    user: 'User: {u.role} @ index {u.index}',
+                    text: 'Ik kan deze actie niet uitvoeren omdat de hoogste rol van de gebruiker hoger is dan die van mij.',
+                    user: 'Gebruiker: {u.role} @ index {u.index}',
                     bot: 'Me: {b.role} @ index {b.index}'
                 },
                 role: {
