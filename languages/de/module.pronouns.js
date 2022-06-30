@@ -1,32 +1,32 @@
 module.exports = {
     choice: {
         remove: {
-            question: 'Von wo willst du {prn} als Pronomen entfernen?',
+            question: 'From where do you want to remove {prn} as prefered pronoun?',
             button: {
-                global: 'Überall',
-                guild: 'In diesem Server'
+                global: 'Remove everywhere',
+                guild: 'Remove in guild'
             }
         },
         add: {
-            question: 'Wo willst du {prn} als Pronomen hinzufügen?',
+            question: 'Where to you want to set {prn} as your prefered pronoun?',
             button: {
-                global: 'Überall',
-                guild: 'In diesem Server'
+                global: 'Set everywhere',
+                guild: 'Set in guild'
             }
         }
     },
     success: {
         removed: {
-            global: '{prn} wurde überall erfolgreich als Pronomen entfernt.',
-            guild: '{prn} wurde erfolgreich als Pronomen in diesem Server entfernt.'
+            global: 'Successfully removed {prn} as prefered pronoun globally.',
+            guild: 'Successfully removed {prn} as prefered pronoun in this guild.'
         },
         added: {
-            global: '{prn} wurde überall erfolgreich als Pronomen hinzugefügt.',
-            guild: '{prn} wurde erfolgreich als Pronomen in diesem Server hinzugefügt.'
+            global: 'Successfully added {prn} as prefered pronoun globally.',
+            guild: 'Successfully added {prn} as prefered pronoun in this guild.'
         }
     },
     error: {
-        tooSlow: 'Du warst zu langsam, probiere es erneut!',
-        fail: 'Speichern fehlgeschlagen, bitte probiere es erneut!'
+        tooSlow: 'You were too slow, please try again!',
+        fail: 'Failed to save your settings, please try again!'
     }
 };
