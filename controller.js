@@ -39,9 +39,9 @@ module.exports = class I18n {
             string = string.replaceAll(`{${r.text}}`, r.value);
         });
 
-        if (string.match(/\;\[.{0,99}\]/gi)) {
+        if (string && typeof string === 'string' && string.match(/\;\[.{0,99}\]/gi)) {
             string.match(/\;\[.{0,99}\]/gi).forEach(_string => {
-                string = string.replaceAll(_string, _string.slice(1, -1).split(', ')[plural ? 1 : 0]);
+                string = string.replaceAll(_string, _string.slice(2, -1).split(', ')[plural ? 1 : 0]);
             });
         };
 
