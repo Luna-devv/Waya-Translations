@@ -1,5 +1,5 @@
 module.exports = {
     noData: 'Ne mogu pronaći server u bazi podataka!',
-    noCategory: 'Kategorija za Tikete je izbrisana. Molim obavijestite Administratora.',
-    created: 'Tvoj tiket {channel} je napravljen!'
+    noCategory: 'Kategorija Ulaznica je izbrisana. Molimo obavijestite administratora servera.',
+    created: 'Vaša ulaznica {channel} je stvorena!'
 };
