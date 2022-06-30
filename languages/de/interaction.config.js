@@ -4,67 +4,67 @@
     \n are new lines
 */
 module.exports = {
-    validate: 'Validiere daten...',
-    notAllowed: 'Du kannst dieses Menü nicht benutzten.',
+    validate: 'Validiere Daten...',
+    notAllowed: 'You can\'t use this menu.',
     global: {
         // will be the same everywhere
-        none: 'Keinen',
-        useButtons: 'Editiere eine Option mit einem Button unten!',
+        none: 'keinen',
+        useButtons: 'Editiere eine Option mit einem Button unten.',
         developer: {
-            bypass: 'Dir fehlen die `MANAGE_GUILD` Berechtigungen um auf dieses Menü zu zugreifen\nWillst du dennoch fortfahren?',
+            bypass: 'Dir fehlen die `MANAGE_GUILD` Berechtigungen, um auf dieses Menü zuzugreifen..\nWillst du dennoch fortfahren?',
             choice: {
-                access: 'Ja, will ich',
-                abord: 'Nein danke'
+                access: 'I\'m sure, yes',
+                abord: 'Nevermind'
             },
-            notice: 'aufpassen - Developer Privilegien..'
+            notice: 'carefull - developer privileges enforced..'
         },
-        permissions: 'Fehlend: {perms}',
+        permissions: 'Missing: {perms}',
         placeholders: 'Placeholders',
         await: {
-            channel: 'Erwähne einen Channel oder sende die Id in den Chat.\nSchreibe `none` um den Channel zu entfernen.',
-            category: 'Erwähne eine Kategorie oder sende die Id in den Chat.\nSchreibe `none` um die Kategorie zu entfernen.',
-            role: 'Erwähne eine Rolle oder sende die Id in den Chat.\nSchreibe `none`, um die Rolle zu entfernen.',
-            message: 'Sende eine Nachricht, die als {what} benutzt werden soll.',
-            emote: 'Sende ein Emote, welches als {what} benutzt werden soll.'
+            channel: 'Erwähne einen Channel oder sende die Id in den Chat.\nSchreibe `none`, um den Channel zu entfernen.',
+            category: 'Erwähne eine Kategorie oder sende die Id in den Chat.\nSchreibe `none`, um die Kategorie zu entfernen.',
+            role: 'Mention a Role or paste the Role ID into the chat.\nType `none` to remove the role.',
+            message: 'Send a Message which should be used as {what}.',
+            emote: 'Send an Emoji which should be used as {what}.'
         },
         success: {
-            set: '{what} wurde erfolgreich zu **{data}** geändert',
-            removed: '{what} wurde erfolgreich entfernt.',
-            fail: '{what} existiert nicht in diesem Server..',
-            lengthFail: '{what} ist länger als {max} Buchstaben! ({length} Buchstaben, {relative} zu viel)',
-            otherLengthFail: '{what} ist kürzer als {max} Buchstaben! ({length} Buchstaben, {relative} zu wenig)',
+            set: 'Successfully set {what} to **{data}**',
+            removed: 'Successfully removed the {what}.',
+            fail: 'This {what} does not exist in this guild..',
+            lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
+            otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
             numberFail: '{what} ist keine Zahl zwischen {a} und {b}!',
-            roleFail: 'Diese Rolle wird entweder von Discord selber oder von einen Bot verwaltet!.'
+            roleFail: 'This Role is only managable by either Discord or belongs to a bot user.'
         },
         type: {
             text: 'Text Channel',
-            category: 'Kategorie',
-            role: 'Rolle',
+            category: 'Category Channel',
+            role: 'Role',
             emoji: 'Emote'
         },
         state: {
-            enabled: 'Aktive',
-            disabled: 'Inaktive'
+            enabled: 'Enabled',
+            disabled: 'Disabled'
         },
         option: {
-            required: 'Erforderlich',
+            required: 'Required',
             optional: 'Optional'
         },
         button: {
-            back: 'Zurück',
-            disable: 'Deaktivieren',
-            enable: 'Aktivieren',
+            back: 'Back',
+            disable: 'Disable',
+            enable: 'Enable',
             channel: {
-                set: 'Setze Channel',
-                edit: 'Channel Bearbeiten'
+                set: 'Set Channel',
+                edit: 'Edit Channel'
             },
             category: {
-                set: 'Setze Kategorie',
-                edit: 'Kategorie Bearbeiten'
+                set: 'Set Category',
+                edit: 'Edit Category'
             },
             role: {
-                set: 'Setze Rolle',
-                edit: 'Rolle Bearbeiten'
+                set: 'Set Role',
+                edit: 'Edit Role'
             },
             mode: {
                 analyst: 'Analyst',
@@ -73,7 +73,7 @@ module.exports = {
             dupaw: {
                 // This is a name, can't be translated
                 enable: 'dupaw Aktivieren',
-                disable: 'Disable Deaktivieren'
+                disable: 'dupaw Deaktivieren'
             }
         }
     },
