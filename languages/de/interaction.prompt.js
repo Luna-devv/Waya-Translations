@@ -1,21 +1,21 @@
 module.exports = {
-    validate: 'Validere Daten...',
-    create: 'Erstelle {type} Prompt...',
+    validate: 'Validiere Daten...',
+    create: 'Creating {type} prompt...',
     tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
-    created: 'Die {type} Prompt wurde erstellt.',
+    created: 'The {type} prompt has been created.',
     type: {
         category: 'kategorie',
         support: 'support rolle',
         emote: 'custom emote'
     },
     message: {
-        created: 'erstellt',
-        noSupport: 'keine [benutze **/config**]',
-        invalidEmote: 'nicht im selben Server',
+        created: 'created',
+        noSupport: 'keine (benutze **/config**)',
+        invalidEmote: 'not in same guild',
         content: 'Content'
     },
     error: {
-        tooLong: 'Option {index} hat mer als {number} Buchstaben!',
-        noData: 'keine daten angegeben'
+        tooLong: 'Option {index} hat mehr als {number} Buchstaben!',
+        noData: 'no data set'
     }
 };
