@@ -1,3 +1,1 @@
-module.exports = {
-    updated: 'Tvoj glavni jezik podešen je na **{locale}**!'
-}
+module.exports = { updated: 'Vaš je primarni jezik ažuriran na **{locale}**!' };
