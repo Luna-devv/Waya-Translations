@@ -1,10 +1,10 @@
 module.exports = {
-    title: '{user}s Einladungen',
-    building: 'Validiere Daten...',
-    more: '+ {count} mehr',
-    none: 'keine',
+    title: '{user}\'s Einladungen',
+    building: 'Building...',
+    more: '+ {count} more',
+    none: 'none',
     button: {
-        ids: 'Benutzer Ids',
-        mentions: 'Benutzer Erwähnungen'
+        ids: 'Benutzer IDs',
+        mentions: 'User Mentions'
     }
 };
