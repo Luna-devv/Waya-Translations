@@ -3,7 +3,6 @@ module.exports = {
     footer: 'Online da {time} • statistiche trasferite a \'/stats\'',
     button: {
         learnmore: 'Impara di più',
-        add: 'Invita {name}',
         vote: 'Vota'
     }
 };
