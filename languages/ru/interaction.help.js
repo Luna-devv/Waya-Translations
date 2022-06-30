@@ -1,8 +1,8 @@
 module.exports = {
-    description: '**О {name}**\nЯ разрабатываюсь {devs} иконки от [Danu](https://waya.one/go/danu_icons).\n{name} создана так, что её конфигурация проста и в то же время очень кастомизируема. Всё может быть настроено с помощью одной команды `/config` без всяких премиум возможностей.\n\n**Получить помощь**\nЕсли у вас возникли затруднения просто вступите в наш [Сервер Помощи]({support}) и попросите совета у пользователей.',
-    footer: 'Онлайн {time} • Статистика перемещена в \'/stats\'',
+    description: '**About {name}**\nI\'m developed by {devs} icons by [Danu](https://waya.one/go/danu_icons).\n{name} is made to be very simple in it\'s configuration process but at the same time there to provide the best customizability. Everything can be done in one simple `/config` command without any premium requirements.\n\n**Getting help**\nIf it gets to overwhelming for you simply join the [Support Server]({support}) and ask the community for help there.',
+    footer: 'Online for {time} • Stats moved to \'/stats\'',
     button: {
-        learnmore: 'Узнать больше',
-        vote: 'Проголосовать'
+        learnmore: 'Learn More',
+        vote: 'Vote'
     }
 };
