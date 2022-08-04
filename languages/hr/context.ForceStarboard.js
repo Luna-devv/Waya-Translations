@@ -1,7 +1,7 @@
 module.exports = {
     fail: {
         config: 'Starboard nije postavljen za ovaj server..',
-        content: 'Poruka nema sadržaj niti datoteke..',
+        content: 'Poruka nema sadržaja niti datoteka..',
         channel: 'Konfigurirani Starboard kanal više ne postoji..',
         exists: {
             text: 'Poruka je već na Starboard-u..',
