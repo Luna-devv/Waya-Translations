@@ -81,8 +81,8 @@ module.exports = {
         title: 'Configure {name}',
         option: {
             premium: {
-                text: 'Premium Tier {tier}',
-                buy: 'Buy Premium'
+                text: 'Enterprise Tier {tier}',
+                buy: 'Buy Enterprise'
             }
         },
         button: {
@@ -92,7 +92,7 @@ module.exports = {
             starboard: 'Starboard',
             staff: 'Manage Guild',
             exit: 'Exit',
-            help: 'Support'
+            help: 'Support',
         }
     },
     logging: {
@@ -326,7 +326,15 @@ module.exports = {
             filter: 'Blacklist',
             antiScam: 'Anti Scam',
             antiLink: 'Anti Link',
-            antiSpam: 'Anti Spam'
+            antiSpam: 'Anti Spam',
+            bypassRole: {
+                edit: 'Edit bypass Role',
+                set: 'Set bypass Role'
+            },
+            logging: {
+                edit: 'Edit logging Channel',
+                set: 'Set logging Channel'
+            }
         },
         page: {
             role: {
@@ -591,7 +599,7 @@ module.exports = {
     staff: {
         title: 'Manage {name}',
         option: {
-            premium: 'Premium: {tier}'
+            premium: 'Enterprise: {tier}'
         },
         button: {
             premium: 'Change premium Tier',
@@ -604,7 +612,7 @@ module.exports = {
                 error: 'Cannot send message :/'
             },
             premium: {
-                title: 'Configure Premium',
+                title: 'Configure Enterprise',
                 option: {
                     tier: 'Current Tier: {tier}'
                 },
