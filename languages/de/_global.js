@@ -2,7 +2,7 @@ module.exports = {
     dms: 'Dieser Command kann nicht in privaten Nachrichten ausgeführt werden.',
     disabled: 'Du wurdest vom Bot gesperrt.',
     error: 'Beim Ausführen des Commands ist ein Fehler aufgetreten\nBitte joine den Support Server und melde diesen Fehler\nmit der Id {issue}!',
-    premium: 'premium erforderlich',
+    premium: 'premium required',
     button: { add: '{name} Einladen' },
     permissions: {
         user: {
