@@ -2,7 +2,7 @@ module.exports = {
     dms: 'Dit commando kan niet gebruikt worden in privéberichten.',
     disabled: 'You have been disabled.',
     error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
-    premium: 'premium is vereist',
+    premium: 'premium required',
     button: { add: 'Voeg {name} toe' },
     permissions: {
         user: {
