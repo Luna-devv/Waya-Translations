@@ -6,13 +6,15 @@ module.exports = {
     type: {
         category: 'kategorija kanala',
         support: 'uloga podrške',
-        emote: 'prilagođeni emote'
+        emote: 'prilagođeni emote',
+        endPoll: 'end poll'
     },
     message: {
         created: 'napravljen',
         noSupport: 'prazno (koristite **/config**)',
         invalidEmote: 'nije u istom serveru',
-        content: 'Sadržaj'
+        content: 'Sadržaj',
+        endPoll: 'use {command}'
     },
     error: {
         tooLong: 'Opcija {index} ima više od {number} znakova!',
