@@ -1,12 +1,8 @@
+// ;[singular, plural]
 module.exports = {
-    month: 'month',
-    months: 'months',
-    day: 'day',
-    days: 'days',
-    hour: 'hour',
-    hours: 'hours',
-    minute: 'minute',
-    minutes: 'minutes',
-    second: 'second',
-    seconds: 'seconds'
+    months: ':[mjesec, mjeseca]',
+    days: ';[dan, dana]',
+    hours: ';[sat, sata]',
+    minutes: ';[minuta, minute]',
+    seconds: ';[sekunda, sekunde]'
 };
