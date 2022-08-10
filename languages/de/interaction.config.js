@@ -4,7 +4,7 @@
     \n are new lines
 */
 module.exports = {
-    validate: 'Validate data...',
+    validate: 'Validiere Daten...',
     notAllowed: 'Du kannst mit diesem Menü nicht interagieren.',
     global: {
         // will be the same everywhere
@@ -585,21 +585,21 @@ module.exports = {
         title: '{name} Verwalten',
         option: { premium: 'Enterprise: {tier}' },
         button: {
-            premium: 'Change premium Tier',
-            data: 'Export Data'
+            premium: 'Enterprise Stufe Bearbeiten',
+            data: 'Daten Exportieren'
         },
         page: {
             data: {
-                title: 'Data Export',
-                message: 'The data from {name} is displayed below.',
-                error: 'Cannot send message :/'
+                title: 'Datenexport',
+                message: 'Die Daten von {name} werden hier drunter angezeigt.',
+                error: 'Nachricht kann nicht gesendet werden :/'
             },
             premium: {
-                title: 'Configure Enterprise',
-                option: { tier: 'Current Tier: {tier}' },
-                button: { tier: 'Tier {tier}' }
+                title: 'Enterprise Konfigurieren',
+                option: { tier: 'Aktuelle Stufe: {tier}' },
+                button: { tier: 'Stufe {tier}' }
             }
         }
     },
-    exit: { title: 'Saved settings and exited config menu.' }
+    exit: { title: 'Einstellungen gespeichert und Config Menü verlassen.' }
 };
