@@ -253,6 +253,14 @@ module.exports = {
                 disable: 'Onemogući evidentiranje',
                 enable: 'Omogući evidentiranje'
             },
+            transcript: {
+                disable: 'Disable Transcripts',
+                enable: 'Save Transcripts'
+            },
+            openReason: {
+                disable: 'Disable Open Reason',
+                enable: 'Enable Open Reason'
+            },
             texts: 'Promijenite tekstove',
             naming: {
                 title: 'Postavite vrstu imenovanja',
@@ -391,7 +399,6 @@ module.exports = {
                         delete: 'izbrisati',
                         timeout: 'timeout'
                     },
-                    total: 'Ukupno: **{amount} riječi**',
                     timeout: 'Timeout: {time}'
                 },
                 button: {
@@ -430,7 +437,6 @@ module.exports = {
                         delete: 'izbrisati',
                         timeout: 'timeout'
                     },
-                    total: 'Ukupno: **{amount} riječi**',
                     timeout: 'Timeout: {time}'
                 },
                 button: {
@@ -453,7 +459,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Poruka',
-                        name: 'Anit Scam odgovor'
+                        name: 'Anit Link reply'
                     },
                     timeout: {
                         title: 'Trajanje timeout-a',
@@ -527,13 +533,17 @@ module.exports = {
                 disable: 'Onemogućite samoreagiranje',
                 enable: 'Omogućite samoreagiranje'
             },
+            reply: {
+                disable: 'Sakrij odgovor od',
+                enable: 'Prikaži odgovor od'
+            },
             logging: {
                 disable: 'Onemogući evidentiranje',
                 enable: 'Omogući evidentiranje'
             },
-            reply: {
-                disable: 'Sakrij odgovor od',
-                enable: 'Prikaži odgovor od'
+            blacklist: {
+                set: 'Set Blacklisted Role',
+                change: 'Edit Blacklisted Role'
             },
             display: {
                 title: 'Postavite stil prikaza',
@@ -551,6 +561,7 @@ module.exports = {
             color: 'Boja: {color}',
             emoji: 'Emote: {emoji}',
             count: 'Broj: {count}',
+            blacklistedRole: 'Blacklisted: {role}',
             display: 'Prikaz: {profileType}',
             profileType: {
                 tag: 'Oznaka',
@@ -578,6 +589,10 @@ module.exports = {
                 title: 'Broj',
                 name: 'potreban Broj',
                 description: 'Pošaljite broj za postavljanje minimalnog zahtjeva za broj reakcija {emote}.'
+            },
+            blacklistedRole: {
+                title: 'Blacklist Role',
+                name: 'blacklisted Role'
             }
         }
     },

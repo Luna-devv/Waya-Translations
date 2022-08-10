@@ -253,6 +253,14 @@ module.exports = {
                 disable: 'Logging Deaktivieren',
                 enable: 'Logging Aktivieren'
             },
+            transcript: {
+                disable: 'Disable Transcripts',
+                enable: 'Save Transcripts'
+            },
+            openReason: {
+                disable: 'Disable Open Reason',
+                enable: 'Enable Open Reason'
+            },
             texts: 'Texte Bearbeiten',
             naming: {
                 title: 'Setze einen Benennung Typ',
@@ -391,7 +399,6 @@ module.exports = {
                         delete: 'löschen',
                         timeout: 'muten'
                     },
-                    total: 'Insgesamt: **{amount} Wörter**',
                     timeout: 'Stumm: {time}'
                 },
                 button: {
@@ -430,7 +437,6 @@ module.exports = {
                         delete: 'löschen',
                         timeout: 'muten'
                     },
-                    total: 'Total: **{amount} words**',
                     timeout: 'Stumm: {time}'
                 },
                 button: {
@@ -453,7 +459,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Nachricht',
-                        name: 'Anti Link Nachricht'
+                        name: 'Anit Link reply'
                     },
                     timeout: {
                         title: 'Stumm Dauer',
@@ -527,13 +533,17 @@ module.exports = {
                 disable: 'Selbst-Reaktionen Deaktivieren',
                 enable: 'Selbst-Reaktionen Aktivieren'
             },
+            reply: {
+                disable: 'Originale Nachricht Verstecken',
+                enable: 'Originale Nachricht Anzeigen'
+            },
             logging: {
                 disable: 'Logging Deaktivieren',
                 enable: 'Logging Aktivieren'
             },
-            reply: {
-                disable: 'Originale Nachricht Verstecken',
-                enable: 'Originale Nachricht Anzeigen'
+            blacklist: {
+                set: 'Set Blacklisted Role',
+                change: 'Edit Blacklisted Role'
             },
             display: {
                 title: 'Anzeigestil Festlegen',
@@ -551,6 +561,7 @@ module.exports = {
             color: 'Farbe: {color}',
             emoji: 'Emoji: {emoji}',
             count: 'Reaktionen: {count}',
+            blacklistedRole: 'Blacklisted: {role}',
             display: 'Stiel: {profileType}',
             profileType: {
                 tag: 'Tag',
@@ -578,6 +589,10 @@ module.exports = {
                 title: 'Reaktionen',
                 name: 'erforderliche Reaktionen',
                 description: 'Sende eine gültige Zahl, um die Minimum-Anzahl an {emote} Reaktionen festzulegen.'
+            },
+            blacklistedRole: {
+                title: 'Blacklist Role',
+                name: 'blacklisted Role'
             }
         }
     },
