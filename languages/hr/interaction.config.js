@@ -82,7 +82,7 @@ module.exports = {
         option: {
             premium: {
                 text: 'Enterprise Tier {tier}',
-                buy: 'Buy Enterprise'
+                buy: 'Kupite Enterprise'
             }
         },
         button: {
@@ -315,12 +315,12 @@ module.exports = {
             antiLink: 'Anti Link',
             antiSpam: 'Anti Spam',
             bypassRole: {
-                edit: 'Edit bypass Role',
-                set: 'Set bypass Role'
+                edit: 'Uredi zaobilaznu ulogu',
+                set: 'Postavite zaobilaznu ulogu'
             },
             logging: {
-                edit: 'Edit logging Channel',
-                set: 'Set logging Channel'
+                edit: 'Uredi kanal za evidenciju poruka',
+                set: 'Postavi kanal za evidenciju poruka'
             }
         },
         page: {
@@ -595,7 +595,7 @@ module.exports = {
                 error: 'Cannot send message :/'
             },
             premium: {
-                title: 'Configure Enterprise',
+                title: 'Konfigurirajte Enterprise',
                 option: { tier: 'Trenutna razina: {tier}' },
                 button: { tier: 'Razina {tier}' }
             }
