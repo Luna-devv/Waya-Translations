@@ -1,9 +1,9 @@
 module.exports = {
-    fetchError: `Nije moguće dohvatiti podatke, pokušajte ponovo kasnije!`,
+    fetchError: `Nije moguće dohvatiti podatke, pokušajte ponovno kasnije!`,
     links: {
         website: 'web stranica',
-        invite: 'pozivnica',
-        more: 'dubinska statistika'
+        invite: 'pozovi',
+        more: 'detaljna statistika'
     },
     general: {
         title: 'Općenito',
@@ -12,7 +12,7 @@ module.exports = {
         users: '**{count}** korisnika',
         invites: '**{count}** pozivnica',
         starboards: '**{count}** starboard-ova',
-        executed: '**{count}** izvršenih',
+        executed: '**{count}** komanda',
         usage: '{cpu}% cpu • {mem}% memorije'
     },
     commandList: {
