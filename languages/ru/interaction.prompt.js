@@ -6,13 +6,15 @@ module.exports = {
     type: {
         category: 'channel category',
         support: 'support role',
-        emote: 'custom emote'
+        emote: 'custom emote',
+        endPoll: 'end poll'
     },
     message: {
         created: 'created',
         noSupport: 'пусто (используйте **/config**)',
         invalidEmote: 'not in same guild',
-        content: 'Content'
+        content: 'Content',
+        endPoll: 'use {command}'
     },
     error: {
         tooLong: 'Option {index} has more than {number} characters!',

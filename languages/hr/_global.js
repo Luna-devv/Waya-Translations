@@ -2,7 +2,7 @@ module.exports = {
     dms: 'Ova komanda ne može biti korištena unutar privatnih poruka.',
     disabled: 'Vi nemate pravo koristiti komande.',
     error: 'Dogodila se greška prilikom izvršavanja komande.\nPridružite se pomoćnom serveru i prijavite ovaj problem\ns ID-om {issue}!',
-    premium: 'potrebna premija',
+    premium: 'premium required',
     button: { add: 'Dodaj {name}' },
     permissions: {
         user: {

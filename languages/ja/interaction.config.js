@@ -81,8 +81,8 @@ module.exports = {
         title: 'Configure {name}',
         option: {
             premium: {
-                text: 'Premium Tier {tier}',
-                buy: 'Buy Premium'
+                text: 'Enterprise Tier {tier}',
+                buy: 'Buy Enterprise'
             }
         },
         button: {
@@ -313,7 +313,15 @@ module.exports = {
             filter: 'Blacklist',
             antiScam: 'Anti Scam',
             antiLink: 'Anti Link',
-            antiSpam: 'Anti Spam'
+            antiSpam: 'Anti Spam',
+            bypassRole: {
+                edit: 'Edit bypass Role',
+                set: 'Set bypass Role'
+            },
+            logging: {
+                edit: 'Edit logging Channel',
+                set: 'Set logging Channel'
+            }
         },
         page: {
             role: {
@@ -575,7 +583,7 @@ module.exports = {
     },
     staff: {
         title: 'Manage {name}',
-        option: { premium: 'Premium: {tier}' },
+        option: { premium: 'Enterprise: {tier}' },
         button: {
             premium: 'Change premium Tier',
             data: 'Export Data'
@@ -587,7 +595,7 @@ module.exports = {
                 error: 'Cannot send message :/'
             },
             premium: {
-                title: 'Configure Premium',
+                title: 'Configure Enterprise',
                 option: { tier: 'Current Tier: {tier}' },
                 button: { tier: 'Tier {tier}' }
             }

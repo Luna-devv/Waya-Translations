@@ -81,8 +81,8 @@ module.exports = {
         title: 'Konfiguriraj {name}',
         option: {
             premium: {
-                text: 'Premium razina {tier}',
-                buy: 'Kupite Premium'
+                text: 'Enterprise Tier {tier}',
+                buy: 'Buy Enterprise'
             }
         },
         button: {
@@ -313,7 +313,15 @@ module.exports = {
             filter: 'Crna lista',
             antiScam: 'Anti Scam',
             antiLink: 'Anti Link',
-            antiSpam: 'Anti Spam'
+            antiSpam: 'Anti Spam',
+            bypassRole: {
+                edit: 'Edit bypass Role',
+                set: 'Set bypass Role'
+            },
+            logging: {
+                edit: 'Edit logging Channel',
+                set: 'Set logging Channel'
+            }
         },
         page: {
             role: {
@@ -575,7 +583,7 @@ module.exports = {
     },
     staff: {
         title: 'Upravljaj {name}',
-        option: { premium: 'Premium: {tier}' },
+        option: { premium: 'Enterprise: {tier}' },
         button: {
             premium: 'Promijenite premium nivo',
             data: 'Izvoz podataka'
@@ -587,7 +595,7 @@ module.exports = {
                 error: 'Cannot send message :/'
             },
             premium: {
-                title: 'Konfigurirajte Premium',
+                title: 'Configure Enterprise',
                 option: { tier: 'Trenutna razina: {tier}' },
                 button: { tier: 'Razina {tier}' }
             }
