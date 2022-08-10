@@ -1,39 +1,39 @@
 module.exports = {
-    messages: 'Messages',
-    name: 'Name',
-    id: 'Id',
-    created: 'Created',
-    joined: 'Joined',
-    invited: 'Invited by',
+    messages: 'Poruke',
+    name: 'Ime',
+    id: 'ID',
+    created: 'Napravljen',
+    joined: 'Prudružen',
+    invited: 'Pozvan od',
     none: 'prazno',
     pronouns: {
-        title: 'Pronouns',
-        none: 'No pronouns set'
+        title: 'Zamjenice',
+        none: 'Nema postavljenih zamjenica'
     },
     button: {
-        avatar: 'Avatar URL',
-        banner: 'Banner URL'
+        avatar: 'URL Avatara',
+        banner: 'URL Banera'
     },
     actions: {
-        notAllowed: 'You can\'t use this menu.',
-        invalidTime: 'The duration cannot be less than a second!',
-        otherInvalidTime: 'The duration cannot be more than 28 days!',
-        placeholder: 'Choose an action',
+        notAllowed: 'Ne možete koristiti ovaj izbornik.',
+        invalidTime: 'Trajanje ne može biti kraće od sekunde!',
+        otherInvalidTime: 'Trajanje ne može biti duže od 28 dana!',
+        placeholder: 'Odaberite radnju',
         option: {
-            ban: 'Ban User',
-            kick: 'Kick User',
-            timeout: 'Timeout User',
-            role: 'Assign Role'
+            ban: 'Ban-uj korisnika',
+            kick: 'Kick-uj korisnika',
+            timeout: 'Timeout-uj korisnika',
+            role: 'Dodijelite ulogu'
         },
         form: {
-            reason: 'Reason',
-            note: 'Moderator Note',
-            duration: 'Duration'
+            reason: 'Razlog',
+            note: 'Napomena moderatora',
+            duration: 'Trajanje'
         },
         success: {
-            ban: 'Successfully banned {user} from {guild}.',
-            kick: 'Successfully kicked {user} from {guild}.',
-            timeout: 'Successfully timed {user} out in {guild}.'
+            ban: '{user} je uspješno banovan iz {guild}.',
+            kick: '{user} je uspješno kickovan iz {guild}.',
+            timeout: '{user} je uspješno timeoutan u {guild}.'
         }
     }
 };
