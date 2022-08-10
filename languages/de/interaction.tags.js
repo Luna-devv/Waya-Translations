@@ -1,40 +1,40 @@
 module.exports = {
-    alreadyExists: 'A Tag with this name already exists!',
+    alreadyExists: 'Ein Tag mit diesem Namen existiert bereits!',
     alreadyExistsDefault: 'Ein Standard Befehl mit diesen Namen exestiert bereits!',
-    invalidTag: 'A Tag with this name doesn\'t exist!',
+    invalidTag: 'Es existiert kein Tag mit diesen Namen!',
     overview: {
-        title: 'Tag Config',
-        message: 'Message',
+        title: 'Tag Konfiguration',
+        message: 'Nachricht',
         embed: 'Embed',
-        placeholder: 'Useable Placeholders',
+        placeholder: 'Benutzbare Platzhalter',
         button: {
-            exit: 'Save & Exit',
-            permission: 'Select a permission the user needs',
+            exit: 'Speichern & Verlassen',
+            permission: 'Wähle Permissions die der user braucht',
             color: {
-                enabled: 'Select a color for the Embed',
-                disabled: 'Use Embeds and select a color'
+                enabled: 'Setzte eine Farbe für das Embed',
+                disabled: 'Benutzte Embeds und wähle eine Farbe'
             }
         }
     },
     form: {
-        formName: '{name} tag',
+        formName: '{name} Tag',
         message: { content: 'Content' },
         embed: {
-            title: 'Title',
-            description: 'Description',
-            thumbnail: 'Thumbnail',
-            image: 'Image',
-            footer: 'Footer'
+            title: 'Titel',
+            description: 'Beschreibung',
+            thumbnail: 'Vorschaubild',
+            image: 'Bild',
+            footer: 'Fußzeile'
         }
     },
     success: {
-        message: 'Successfully added the Tag {name}.',
-        command: 'Try it out with {command}'
+        message: 'Erfolgreich den Tag {name} hinzugefügt.',
+        command: 'Teste aus mit {command}'
     },
     list: {
-        title: 'Tag list',
-        none: 'no tags',
-        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'    // ;[singular, plural]
+        title: 'Tag liste',
+        none: 'keine Tags',
+        disabled: '{amount} ;[Tag, Tags] sind versteckt aufgrund fehlender rechte'    // ;[singular, plural]
     },
-    deleted: 'Successfully deleted the Tag **{name}**.'
+    deleted: '**{name}** wurde erfolgreich gelöscht.'
 };
