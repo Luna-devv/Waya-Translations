@@ -10,10 +10,6 @@ module.exports = {
         title: 'Pronomen',
         none: 'Keine Pronomen ausgewählt'
     },
-    button: {
-        avatar: 'Avatar URL',
-        banner: 'Banner URL'
-    },
     actions: {
         notAllowed: 'Du kannst dieses Menü nicht benutzten.',
         invalidTime: 'The duration cannot be less than a second!',
