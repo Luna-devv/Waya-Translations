@@ -265,6 +265,14 @@ module.exports = {
                 disable: 'Disable Logging',
                 enable: 'Enable Logging',
             },
+            transcript: {
+                disable: 'Disable Transcripts',
+                enable: 'Save Transcripts'
+            },
+            openReason: {
+                disable: 'Disable Open Reason',
+                enable: 'Enable Open Reason'
+            },
             texts: 'Change Texts',
             naming: {
                 title: 'Set a naming type',
@@ -404,7 +412,6 @@ module.exports = {
                         delete: 'delete',
                         timeout: 'timeout'
                     },
-                    total: 'Total: **{amount} words**',
                     timeout: 'Timeout: {time}'
                 },
                 button: {
@@ -443,7 +450,6 @@ module.exports = {
                         delete: 'delete',
                         timeout: 'timeout'
                     },
-                    total: 'Total: **{amount} words**',
                     timeout: 'Timeout: {time}'
                 },
                 button: {
@@ -466,7 +472,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anit Scam reply'
+                        name: 'Anit Link reply'
                     },
                     timeout: {
                         title: 'Timeout Duration',
@@ -541,13 +547,17 @@ module.exports = {
                 disable: 'Disable Self Reaction',
                 enable: 'Enable Self Reaction'
             },
+            reply: {
+                disable: 'Hide Replied to',
+                enable: 'Show Replied to'
+            },
             logging: {
                 disable: 'Disable Logging',
                 enable: 'Enable Logging'
             },
-            reply: {
-                disable: 'Hide Replied to',
-                enable: 'Show Replied to'
+            blacklist: {
+                set: 'Set Blacklisted Role',
+                change: 'Edit Blacklisted Role'
             },
             display: {
                 title: 'Set a display style',
@@ -565,6 +575,7 @@ module.exports = {
             color: 'Color: {color}',
             emoji: 'Emoji: {emoji}',
             count: 'Count: {count}',
+            blacklistedRole: 'Blacklisted: {role}',
             display: 'Display: {profileType}',
             profileType: {
                 tag: 'Tag',
@@ -592,6 +603,10 @@ module.exports = {
                 title: 'Count',
                 name: 'requierd Count',
                 description: 'Send a number to set the minimum {emote} reaction count requirement.'
+            },
+            blacklistedRole: {
+                title: 'Blacklist Role',
+                name: 'blacklisted Role'
             }
         }
     },
