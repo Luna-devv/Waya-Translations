@@ -261,17 +261,9 @@ module.exports = {
                 enable: 'Force Reason',
                 disable: 'Optional Reason',
             },
-            transcript: {
-                enable: 'Save Transcript',
-                disable: 'Disable Transcript'
-            },
             logging: {
                 disable: 'Disable Logging',
                 enable: 'Enable Logging',
-            },
-            openReason: {
-                disable: 'Disable Open Reason',
-                enable: 'Enable Open Reason',
             },
             texts: 'Change Texts',
             naming: {
