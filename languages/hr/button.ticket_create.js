@@ -3,8 +3,8 @@ module.exports = {
     noCategory: 'Kategorija Ulaznica je izbrisana. Molimo obavijestite administratora servera.',
     created: 'Vaša ulaznica {channel} je stvorena!',
     form: {
-        formTitle: 'Ticket Opening Reason',
-        field: 'Why do you want to open a Ticket?',
-        placeholder: 'I need help with that..'
+        formTitle: 'Razlog otvaranja ulaznice',
+        field: 'Zašto želite otvoriti ulaznicu?',
+        placeholder: 'Trebam pomoć oko toga..'
     }
 };
