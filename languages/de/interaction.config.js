@@ -254,12 +254,12 @@ module.exports = {
                 enable: 'Logging Aktivieren'
             },
             transcript: {
-                disable: 'Disable Transcripts',
-                enable: 'Save Transcripts'
+                disable: 'Transkripts Deaktivieren',
+                enable: 'Transkripts Speichern'
             },
             openReason: {
-                disable: 'Disable Open Reason',
-                enable: 'Enable Open Reason'
+                disable: 'Öffnungsgrund Deaktivieren',
+                enable: 'Öffnungsgrund Aktivieren'
             },
             texts: 'Texte Bearbeiten',
             naming: {
@@ -459,7 +459,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Nachricht',
-                        name: 'Anit Link reply'
+                        name: 'Anti Link Antwort'
                     },
                     timeout: {
                         title: 'Stumm Dauer',
@@ -542,8 +542,8 @@ module.exports = {
                 enable: 'Logging Aktivieren'
             },
             blacklist: {
-                set: 'Set Blacklisted Role',
-                change: 'Edit Blacklisted Role'
+                set: 'Blacklist Rolle Setzten',
+                change: 'Blacklist Rolle Bearbeiten'
             },
             display: {
                 title: 'Anzeigestil Festlegen',
@@ -591,7 +591,7 @@ module.exports = {
                 description: 'Sende eine gültige Zahl, um die Minimum-Anzahl an {emote} Reaktionen festzulegen.'
             },
             blacklistedRole: {
-                title: 'Blacklist Role',
+                title: 'Blacklist Rolle',
                 name: 'blacklisted Role'
             }
         }
