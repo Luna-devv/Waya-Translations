@@ -10,6 +10,10 @@ module.exports = {
         title: 'Zamjenice',
         none: 'Nema postavljenih zamjenica'
     },
+    button: {
+        avatar: 'Avatar URL',
+        banner: 'Banner URL'
+    },
     actions: {
         notAllowed: 'Ne možete koristiti ovaj izbornik.',
         invalidTime: 'Trajanje ne može biti kraće od sekunde!',
