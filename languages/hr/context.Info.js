@@ -11,8 +11,8 @@ module.exports = {
         none: 'Nema postavljenih zamjenica'
     },
     button: {
-        avatar: 'Avatar URL',
-        banner: 'Banner URL'
+        avatar: 'URL Avatara',
+        banner: 'URL Banera'
     },
     actions: {
         notAllowed: 'Ne možete koristiti ovaj izbornik.',
