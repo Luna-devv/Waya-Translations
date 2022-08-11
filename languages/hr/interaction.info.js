@@ -1,10 +1,10 @@
 module.exports = {
-    title: '{user}\'s Invites',
-    building: 'Building...',
-    more: '+ {count} more',
+    title: 'Pozivnice korisnika {user}',
+    building: 'Izgrađivanje...',
+    more: '+ još {count}',
     none: 'prazno',
     button: {
-        ids: 'User IDs',
-        mentions: 'User Mentions'
+        ids: 'ID-ovi korisnika',
+        mentions: 'Spominjanja korisnika'
     }
 };
