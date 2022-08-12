@@ -592,7 +592,7 @@ module.exports = {
             },
             blacklistedRole: {
                 title: 'Blacklist Rolle',
-                name: 'blacklisted Role'
+                name: 'Blacklisted Rolle'
             }
         }
     },
