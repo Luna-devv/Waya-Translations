@@ -254,12 +254,12 @@ module.exports = {
                 enable: 'Omogući evidentiranje'
             },
             transcript: {
-                disable: 'Disable Transcripts',
-                enable: 'Save Transcripts'
+                disable: 'Onemogući transkripte',
+                enable: 'Spremi transkripte'
             },
             openReason: {
-                disable: 'Disable Open Reason',
-                enable: 'Enable Open Reason'
+                disable: 'Onemogući Razlog Otvaranja',
+                enable: 'Omogući Razlog Otvaranja'
             },
             texts: 'Promijenite tekstove',
             naming: {
@@ -459,7 +459,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Poruka',
-                        name: 'Anit Link reply'
+                        name: 'Anti Link odgovor'
                     },
                     timeout: {
                         title: 'Trajanje timeout-a',
@@ -542,8 +542,8 @@ module.exports = {
                 enable: 'Omogući evidentiranje'
             },
             blacklist: {
-                set: 'Set Blacklisted Role',
-                change: 'Edit Blacklisted Role'
+                set: 'Postavite zabranjenu ulogu',
+                change: 'Uredite zabranjenu ulogu'
             },
             display: {
                 title: 'Postavite stil prikaza',
@@ -561,7 +561,7 @@ module.exports = {
             color: 'Boja: {color}',
             emoji: 'Emote: {emoji}',
             count: 'Broj: {count}',
-            blacklistedRole: 'Blacklisted: {role}',
+            blacklistedRole: 'Zabranjeno: {role}',
             display: 'Prikaz: {profileType}',
             profileType: {
                 tag: 'Oznaka',
@@ -591,8 +591,8 @@ module.exports = {
                 description: 'Pošaljite broj za postavljanje minimalnog zahtjeva za broj reakcija {emote}.'
             },
             blacklistedRole: {
-                title: 'Blacklist Role',
-                name: 'blacklisted Role'
+                title: 'Zabrani Ulogu',
+                name: 'zabranjena Uloga'
             }
         }
     },
