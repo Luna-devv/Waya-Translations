@@ -3,5 +3,5 @@ module.exports = {
     invites: 'Ljestvica Pozivnica',
     none: 'prazno',
     personalized: 'Tvoja pozicija',
-    total: '{amount} ;[users are, user is] on this leaderboard'
+    total: '{amount} ;[korisnici su, korisnik je] na ovoj ploči s najboljim rezultatima'
 };
