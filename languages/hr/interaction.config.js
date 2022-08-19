@@ -6,6 +6,10 @@
 module.exports = {
     validate: 'Potvrdnja podataka...',
     notAllowed: 'Ne možete koristiti ovaj izbornik.',
+    prefix: {
+        name: 'Prefix',
+        set: 'Successfully updated the guilds prefix to {prefix}!'
+    },
     global: {
         // will be the same everywhere
         none: 'prazno',
