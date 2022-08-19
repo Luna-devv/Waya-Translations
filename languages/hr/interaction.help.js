@@ -1,6 +1,6 @@
 module.exports = {
-    description: '**O {name}**\nRazvijena sam od {devs} ikone od [Danu](https://waya.one/go/danu_icons).\n{name} je napravljena da bude vrlo jednostavna u svom procesu konfiguracije, ali u isto vrijeme pruža najbolju prilagodljivost. Sve se može učiniti u jednoj jednostavnoj naredbi `/config` bez ikakvih premium zahtjeva.\n\n**Dobivanje pomoći**\nAko vam postane preteško, jednostavno se pridružite [Pomoćnom Serveru]({support}) i tamo potajte zajednicu za pomoć.',
-    footer: 'Online za {time} • Statistika je premještena u \'/stats\'',
+    description: '**About {name}**\nI\'m developed by {devs} icons by [Danu](https://waya.one/go/danu_icons).\n{name} is made to be very simple in it\'s configuration process but at the same time there to provide the best customizability. Everything can be done in one simple {config} command.\n\n**Accessability**\nIf you want to change the language please use {language}.\nIf you want to help us translate, join us on {translateSite}.\n\nIf it gets to overwhelming for you simply join the [Support Server]({support}) and ask the community in the Support Channel for help.',
+    footer: 'Online for {time}',
     button: {
         learnmore: 'Saznajte Više',
         vote: 'Glasajte'
