@@ -3,5 +3,5 @@ module.exports = {
     invites: 'Einladungs Bestenliste',
     none: 'keiner',
     personalized: 'Deine Position',
-    total: '{amount} ;[users are, user is] on this leaderboard'
+    total: '{amount} ;[users sind, user ist] auf diesem Leaderboard'
 };
