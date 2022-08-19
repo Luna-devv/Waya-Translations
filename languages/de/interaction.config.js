@@ -6,6 +6,10 @@
 module.exports = {
     validate: 'Validiere Daten...',
     notAllowed: 'Du kannst mit diesem Menü nicht interagieren.',
+    prefix: {
+        name: 'Prefix',
+        set: 'Successfully updated the guilds prefix to {prefix}!'
+    },
     global: {
         // will be the same everywhere
         none: 'keinen',
