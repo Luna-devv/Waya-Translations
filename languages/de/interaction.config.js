@@ -8,7 +8,7 @@ module.exports = {
     notAllowed: 'Du kannst mit diesem Menü nicht interagieren.',
     prefix: {
         name: 'Prefix',
-        set: 'Successfully updated the guilds prefix to {prefix}!'
+        set: 'Servers Prefix erfolgreich auf {prefix} geändert!'
     },
     global: {
         // will be the same everywhere
