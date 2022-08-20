@@ -8,7 +8,8 @@ module.exports = {
     notAllowed: 'You can\'t use this menu.',
     prefix: {
         name: 'Prefix',
-        set: 'Successfully updated the guilds prefix to {prefix}!'
+        set: 'Successfully updated the guilds prefix to {prefix}!',
+        disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
     },
     global: {
         // will be the same everywhere
