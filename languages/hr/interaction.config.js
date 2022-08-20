@@ -9,7 +9,7 @@ module.exports = {
     prefix: {
         name: 'Prefiks',
         set: 'Uspješno ažuriran prefiks servera na {prefix}!',
-        disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
+        disclaimer: 'Ovo se NE odnosi na "/" (slash) naredbe'
     },
     global: {
         // will be the same everywhere
