@@ -8,7 +8,8 @@ module.exports = {
     notAllowed: 'Ne možete koristiti ovaj izbornik.',
     prefix: {
         name: 'Prefiks',
-        set: 'Uspješno ažuriran prefiks servera na {prefix}!'
+        set: 'Uspješno ažuriran prefiks servera na {prefix}!',
+        disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
     },
     global: {
         // will be the same everywhere
