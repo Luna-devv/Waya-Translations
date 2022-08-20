@@ -1,4 +1,5 @@
 module.exports = {
+    disclaimer: 'You have to choose an option to apply this setting',
     choice: {
         remove: {
             question: 'From where do you want to remove {prn} as prefered pronoun?',
