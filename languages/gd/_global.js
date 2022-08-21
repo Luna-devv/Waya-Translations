@@ -2,8 +2,8 @@ module.exports = {
     dms: 'Das nix gehen in DMs.',
     disabled: 'Haha! Du nix dürfen Bot nutzen!',
     error: 'Huppala! Da is was put.\nJoin ma den Support Server und sag denen die Fehler ID {issue}',
-    premium: 'Nix für Geringverdiener!',
-    button: { add: 'Lasse {name} mitmachen' },
+    premium: 'nix für Geringverdiener',
+    button: { add: 'hohl dir {name} ok?' },
     permissions: {
         user: {
             guild: 'Keine {perms} rechte!',
