@@ -1,5 +1,5 @@
 module.exports = {
-    fetchError: `Could't not fetch data, please try again later!`,
+    fetchError: `Could not fetch data, please try again later!`,
     links: {
         website: 'website',
         invite: 'invite',
