@@ -1,12 +1,12 @@
 module.exports = {
     fail: {
-        config: 'Stawboawd isn\'t set up fow this guiwd.. >:(',
-        content: 'sowwy babe but.. this message has nyo content nyow attachments..',
-        channel: 'baby im so sowwy but the configuwed Stawboawd channyew doesn\'t exist anymowe..',
+        config: 'Starboard isn\'t set up for this guild..',
+        content: 'Message has no content nor attachments..',
+        channel: 'Configured Starboard channel doesn\'t exist anymore..',
         exists: {
-            text: 'AHHH, The message is awweady in the Stawboawd..',
+            text: 'The message is already in the Starboard..',
             button: 'Message'
         }
     },
-    success: 'The message is nyow in the Stawboawd. qwq'
+    success: 'The message is now in the Starboard.'
 };

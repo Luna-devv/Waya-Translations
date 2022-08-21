@@ -1,39 +1,39 @@
 module.exports = {
     messages: 'Messages',
-    name: 'Nyame',
+    name: 'Name',
     id: 'Id',
-    created: 'Cweated',
-    joined: 'Joinyed',
+    created: 'Created',
+    joined: 'Joined',
     invited: 'Invited by',
-    none: 'nyonye',
+    none: 'none',
     pronouns: {
-        title: 'Pwonyouns',
-        none: 'Nyo pwonyouns set'
+        title: 'Pronouns',
+        none: 'No pronouns set'
     },
     button: {
-        avatar: 'Avataw UWW',
-        banner: 'Bannyew UWW'
+        avatar: 'Avatar URL',
+        banner: 'Banner URL'
     },
     actions: {
-        notAllowed: 'U cannyot use this menyu. :ccc.',
-        invalidTime: 'The duwation cannyot be wess than a second!',
-        otherInvalidTime: 'The duwation cannyot be mowe than 28 days!',
+        notAllowed: 'You can\'t use this menu.',
+        invalidTime: 'The duration cannot be less than a second!',
+        otherInvalidTime: 'The duration cannot be more than 28 days!',
         placeholder: 'Choose an action',
         option: {
-            ban: 'Ban Usew',
-            kick: 'Kick Usew',
-            timeout: 'Timeout Usew',
-            role: 'Assign Wowe'
+            ban: 'Ban User',
+            kick: 'Kick User',
+            timeout: 'Timeout User',
+            role: 'Assign Role'
         },
         form: {
-            reason: 'Weason',
-            note: 'Modewatow Nyote',
-            duration: 'Duwation'
+            reason: 'Reason',
+            note: 'Moderator Note',
+            duration: 'Duration'
         },
         success: {
-            ban: 'Successfuwwy bannyed {user} fwom {guild}.',
-            kick: 'Successfuwwy kicked {user} fwom {guild}.',
-            timeout: 'Successfuwwy timed {user} out in {guild}.'
+            ban: 'Successfully banned {user} from {guild}.',
+            kick: 'Successfully kicked {user} from {guild}.',
+            timeout: 'Successfully timed {user} out in {guild}.',
         }
     }
 };

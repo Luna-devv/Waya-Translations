@@ -1,22 +1,22 @@
 module.exports = {
-    fetchError: `Couwd nyot fetch data, pwease twy again watew!`,
+    fetchError: `Could't not fetch data, please try again later!`,
     links: {
         website: 'website',
         invite: 'invite',
         more: 'in-depth stats'
     },
     general: {
-        title: 'Genyewaw',
+        title: 'General',
         uptime: '**{time}** uptime',
-        guilds: '**{count}** guiwds',
-        users: '**{count}** usews',
+        guilds: '**{count}** guilds',
+        users: '**{count}** users',
         invites: '**{count}** invites',
-        starboards: '**{count}** stawboawds',
+        starboards: '**{count}** starboards',
         executed: '**{count}** executed',
-        usage: '{cpu}% cpu • {mem}% memowy'
+        usage: '{cpu}% cpu • {mem}% memory'
     },
     commandList: {
-        title: 'Popuwaw',
-        none: 'nyonye'
+        title: 'Popular',
+        none: 'none'
     }
 };

@@ -5,7 +5,7 @@
 */
 module.exports = {
     validate: 'Validate data...',
-    notAllowed: 'You cannot use this menu.',
+    notAllowed: 'You can\'t use this menu.',
     prefix: {
         name: 'Prefix',
         set: 'Successfully updated the guilds prefix to {prefix}!',
@@ -76,7 +76,7 @@ module.exports = {
                 cozy: 'Cozy'
             },
             dupaw: {
-                // This is a name, cannot be translated
+                // This is a name, can't be translated
                 enable: 'Enable dupaw',
                 disable: 'Disable dupaw'
             }
@@ -389,7 +389,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -427,7 +427,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -469,7 +469,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -509,7 +509,7 @@ module.exports = {
                     timeout: {
                         title: 'Timeout Duration',
                         name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
                     },
                     threshold: {
                         title: 'Threshold',

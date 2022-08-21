@@ -1,24 +1,26 @@
 module.exports = {
     error: {
-        tooShort: 'The time cannyot be wess than **1 second**..',
-        tooLong: 'The time cannyot be mowe than **24 days**..',
-        cantFindId: 'I can\'t find any active wemindews with the ID `{id}`'
+        tooShort: 'The time cannot be less than **1 second**..',
+        tooLong: 'The time cannot be more than **24 days**..',
+        cantFindId: 'I can\'t find any active reminders with the ID `{id}`'
     },
-    reminder: 'UwU {user} >~<, hewe\'s ur wemindew.',
+    reminder: 'Hey {user}, here\'s your reminder.',
     remindSet: {
-        created: 'I wiww wemind u in **{time}**!',
+        created: 'I will remind you in **{time}**!',
         id: 'Id'
     },
     remindView: {
-        created: 'Cweated',
-        remindsIn: 'Weminds',
+        created: 'Created',
+        remindsIn: 'Reminds',
         message: 'Message',
         button: {
-            delete: 'Dewete',
+            delete: 'Delete',
             invite: 'Invite {user}'
         },
-        reminderCount: 'U have {count} wemindews',
-        createFirst: 'Use `/wemind cweate` fist to cweate a wemindew!'
+        reminderCount: 'You have {count} reminders',
+        createFirst: 'Use `/remind create` fist to create a reminder!'
     },
-    remindDelete: { deleted: 'I\'ve deweted ur wemindew with the Id `{id}`' }
+    remindDelete: {
+        deleted: 'I\'ve deleted your reminder with the Id `{id}`'
+    }
 };

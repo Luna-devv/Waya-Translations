@@ -1,33 +1,33 @@
 module.exports = {
-    disclaimer: 'U have to choose an option to appwy this setting, ok?',
+    disclaimer: 'You have to choose an option to apply this setting',
     choice: {
         remove: {
-            question: 'Fwom whewe do u want to wemuv {prn} as pwefewed pwonyoun?',
+            question: 'From where do you want to remove {prn} as prefered pronoun?',
             button: {
-                global: 'Wemuv evewywhewe',
-                guild: 'Wemuv in guiwd'
+                global: 'Remove everywhere',
+                guild: 'Remove in guild'
             }
         },
         add: {
-            question: 'Whewe to u want to set {prn} as ur pwefewed pwonyoun?',
+            question: 'Where to you want to set {prn} as your prefered pronoun?',
             button: {
-                global: 'Set evewywhewe',
-                guild: 'Set in guiwd'
+                global: 'Set everywhere',
+                guild: 'Set in guild'
             }
         }
     },
     success: {
         removed: {
-            global: 'Successfuwwy wemuvd {prn} as pwefewed pwonyoun gwobawwy.',
-            guild: 'Successfuwwy wemuvd {prn} as pwefewed pwonyoun in this guiwd.'
+            global: 'Successfully removed {prn} as prefered pronoun globally.',
+            guild: 'Successfully removed {prn} as prefered pronoun in this guild.'
         },
         added: {
-            global: 'Successfuwwy added {prn} as pwefewed pwonyoun gwobawwy.',
-            guild: 'Successfuwwy added {prn} as pwefewed pwonyoun in this guiwd.'
+            global: 'Successfully added {prn} as prefered pronoun globally.',
+            guild: 'Successfully added {prn} as prefered pronoun in this guild.'
         }
     },
     error: {
-        tooSlow: 'nyooooo, u wewe too swow, pwease twy again! :c',
-        fail: 'oh nyooo, im so sowwy, Faiwed to save ur settings, pwease twy again! :cccc'
+        tooSlow: 'You were too slow, please try again!',
+        fail: 'Failed to save your settings, please try again!'
     }
 };

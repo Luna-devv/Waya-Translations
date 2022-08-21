@@ -1,38 +1,40 @@
 module.exports = {
-    dms: 'Babe im so sowwy... this command cannyot be used inside of pwivate messages.',
-    disabled: 'What did u do babe? U have been disabwed.',
-    error: 'An ewwow occuwwed whiwe executing this command.\nPwease join the suppowt sewvew and wepowt this issue\nwith the id {issue}!',
-    premium: 'pwemium wequiwed',
-    button: { add: 'Add {name}' },
+    dms: 'This command cannot be used inside of private messages.',
+    disabled: 'You have been disabled.',
+    error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
+    premium: 'premium required',
+    button: {
+        add: 'Add {name}',
+    },
     permissions: {
         user: {
-            guild: 'U cannyot wun this action since u\'we missing the {perms} pewmissions.. >~<',
-            channel: 'U cannyot wun this action since u\'we missing the {perms} pewmissions in this channyew. >~<',
+            guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
+            channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
             roles: {
                 user: {
-                    text: 'U cannyot pewfowm this action since the highest wowe of that usew is highew than urs. >~<',
-                    user: 'Usew: {u.role} @ index {u.index}',
-                    you: 'U: {y.role} @ index {y.index}'
+                    text: 'You cannot perform this action since the highest role of that user is higher than yours.',
+                    user: 'User: {u.role} @ index {u.index}',
+                    you: 'You: {y.role} @ index {y.index}'
                 },
                 role: {
-                    text: 'U cannyot pewfowm this action since ur highest wowe is wowew than the wowe to manyage. >~<',
-                    user: 'Wowe: {u.role} @ index {u.index}',
-                    you: 'U: {y.role} @ index {y.index}'
+                    text: 'You cannot perform this action since your highest role is lower than the role to manage.',
+                    user: 'Role: {u.role} @ index {u.index}',
+                    you: 'You: {y.role} @ index {y.index}'
                 }
             }
         },
         me: {
-            guild: 'I cannyot wun this action since I\'m missing the {perms} pewmissions. >~<',
-            channel: 'I cannyot wun this action since I\'m missing the {perms} pewmissions in this channyew. >~<',
+            guild: 'I cannot run this action since I\'m missing the {perms} permissions.',
+            channel: 'I cannot run this action since I\'m missing the {perms} permissions in this channel.',
             roles: {
                 user: {
-                    text: 'I cannyot pewfowm this action since the highest wowe of that usew is highew than minye. >~<',
-                    user: 'Usew: {u.role} @ index {u.index}',
+                    text: 'I cannot perform this action since the highest role of that user is higher than mine.',
+                    user: 'User: {u.role} @ index {u.index}',
                     bot: 'Me: {b.role} @ index {b.index}'
                 },
                 role: {
-                    text: 'I cannyot pewfowm this action since my highest wowe is highew than the wowe to manyage. >~<',
-                    user: 'Wowe: {u.role} @ index {u.index}',
+                    text: 'I cannot perform this action since my highest role is higher than the role to manage.',
+                    user: 'Role: {u.role} @ index {u.index}',
                     bot: 'Me: {b.role} @ index {b.index}'
                 }
             }

@@ -10,12 +10,8 @@ module.exports = {
         title: 'Pronouns',
         none: 'No pronouns set'
     },
-    button: {
-        avatar: 'Avatar URL',
-        banner: 'Banner URL'
-    },
     actions: {
-        notAllowed: 'You cannot use this menu.',
+        notAllowed: 'You can\'t use this menu.',
         invalidTime: 'The duration cannot be less than a second!',
         otherInvalidTime: 'The duration cannot be more than 28 days!',
         placeholder: 'Choose an action',

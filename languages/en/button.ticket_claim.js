@@ -1,4 +1,4 @@
 module.exports = {
-    noData: 'BABY GIRL 😭 Couwd nyot find guiwd in the Database!',
-    claimed: 'qwq this ticket wiww be nyow handwed by u! 💕'
+    noData: 'Could not find guild in the Database!',
+    claimed: 'The ticket will be now handled by you!'
 };

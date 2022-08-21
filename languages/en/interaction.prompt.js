@@ -1,23 +1,23 @@
 module.exports = {
-    validate: 'Vawidate data...',
-    create: 'Cweating {type} pwompt...',
-    tooManyRoles: 'U have {roles} wowes in ur sewvew, pwease make suwe that u have wess than 244!',
-    created: 'The {type} pwompt has been cweated.',
+    validate: 'Validate data...',
+    create: 'Creating {type} prompt...',
+    tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
+    created: 'The {type} prompt has been created.',
     type: {
-        category: 'channyew categowy',
-        support: 'suppowt wowe',
+        category: 'channel category',
+        support: 'support role',
         emote: 'custom emote',
-        endPoll: 'end poww'
+        endPoll: 'end poll'
     },
     message: {
-        created: 'cweated',
-        noSupport: 'nyonye (use **/config**)',
-        invalidEmote: 'nyot in same guiwd',
+        created: 'created',
+        noSupport: 'none (use **/config**)',
+        invalidEmote: 'not in same guild',
         content: 'Content',
         endPoll: 'use {command}'
     },
     error: {
-        tooLong: 'Option {index} has mowe than {number} chawactews!',
-        noData: 'nyo data set'
+        tooLong: 'Option {index} has more than {number} characters!',
+        noData: 'no data set'
     }
 };

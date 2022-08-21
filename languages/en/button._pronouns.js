@@ -1,1 +1,3 @@
-module.exports = { noData: 'BABY GIRL 😭 Couwd nyot find guiwd in the Database!' };
+module.exports = {
+    noData: 'Could not find guild in the Database!',
+};

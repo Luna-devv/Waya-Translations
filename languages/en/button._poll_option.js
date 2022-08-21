@@ -1,8 +1,8 @@
 module.exports = {
-    noData: 'BABY GIRL 😭 Couwd nyot find guiwd in the Database!',
-    noPoll: 'This poww couwd nyot be found!',
-    ended: 'Oh~ babe, this poww awweady ended {time} ago.',
-    alreadyVoted: 'U ve awweady voted fow option **#{num}**. qwq',
-    voted: 'U ve successfuwwy voted fow **#{num}** in this poww.',
-    end: '**{users} ;[usew, usews]** ;[has, have] voted fow **{options} options** in the wast {time}! qwq'
-};    // syntax: ;[singular, plural]
+    noData: 'Could not find guild in the Database!',
+    noPoll: 'This poll could not be found!',
+    ended: 'This poll already ended {time} ago.',
+    alreadyVoted: 'You\'ve already voted for option **#{num}**.',
+    voted: 'You\'ve successfully voted for **#{num}** in this poll.',
+    end: '**{users} ;[user, users]** ;[has, have] voted for **{options} options** in the last {time}!'
+}; // syntax: ;[singular, plural]
