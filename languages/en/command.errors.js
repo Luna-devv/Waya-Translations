@@ -1,13 +1,13 @@
 module.exports = {
-    notFound: 'This issue could not be found',
+    notFound: 'Sowwy babe~ This issue couwd nyot be found >~<',
     view: {
-        main: 'at {time} while executing {command} for {user}',
-        fixed: 'This error has been fixed',
-        unfixed: 'This error is unresolved'
+        main: 'at {time} whiwe executing {command} fow {user}',
+        fixed: 'qwq this ewwow has been fixed',
+        unfixed: 'oh nyooo, This ewwow is unwesowved ＞﹏＜'
     },
     check: {
-        fixed: 'Updated issue state to resolved.',
-        unfixed: 'Updated issue state to unresolved.'
+        fixed: 'Updated issue state to wesowved qwq',
+        unfixed: 'Updated issue state to unwesowved.. but why babe..? >~<'
     },
-    deleted: 'This issue has been deleted.'
+    deleted: 'This issue has been deweted.'
 };
