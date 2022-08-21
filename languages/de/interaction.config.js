@@ -76,7 +76,7 @@ module.exports = {
                 cozy: 'Übersichtlich'
             },
             dupaw: {
-                // This is a name, can't be translated
+                // This is a name, cannot be translated
                 enable: 'dupaw Aktivieren',
                 disable: 'dupaw Deaktivieren'
             }
@@ -389,7 +389,7 @@ module.exports = {
                     timeout: {
                         title: 'Mute Dauer',
                         name: 'Mute Dauer',
-                        description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -427,7 +427,7 @@ module.exports = {
                     timeout: {
                         title: 'Stumm Dauer',
                         name: 'Stumm Dauer',
-                        description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -469,7 +469,7 @@ module.exports = {
                     timeout: {
                         title: 'Stumm Dauer',
                         name: 'Stumm Dauer',
-                        description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -509,7 +509,7 @@ module.exports = {
                     timeout: {
                         title: 'Stumm Dauer',
                         name: 'Stumm Dauer',
-                        description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     },
                     threshold: {
                         title: 'Schwelle',
