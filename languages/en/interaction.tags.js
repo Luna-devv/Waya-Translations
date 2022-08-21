@@ -18,9 +18,7 @@ module.exports = {
     },
     form: {
         formName: '{name} tag',
-        message: {
-            content: 'Content'
-        },
+        message: { content: 'Content' },
         embed: {
             title: 'Title',
             description: 'Description',
@@ -36,7 +34,7 @@ module.exports = {
     list: {
         title: 'Tag list',
         none: 'no tags',
-        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'   // ;[singular, plural]
+        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'    // ;[singular, plural]
     },
     deleted: 'Successfully deleted the Tag **{name}**.'
 };
