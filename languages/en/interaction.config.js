@@ -6,7 +6,7 @@
 
 module.exports = {
     validate: 'Validate data...',
-    notAllowed: 'You can\'t use this menu.',
+    notAllowed: 'You cannot use this menu.',
     prefix: {
         name: 'Prefix',
         set: 'Successfully updated the guilds prefix to {prefix}!',
@@ -75,7 +75,7 @@ module.exports = {
                 analyst: 'Analyst',
                 cozy: 'Cozy'
             },
-            dupaw: {    // This is a name, can't be translated
+            dupaw: {    // This is a name, cannot be translated
                 enable: 'Enable dupaw',
                 disable: 'Disable dupaw'
             }
