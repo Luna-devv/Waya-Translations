@@ -3,306 +3,318 @@
     Do NOT edit things like {} since these are placeholders,
     \n are new lines
 */
+
 module.exports = {
-    validate: 'Vawidate data...',
-    notAllowed: 'U cannyot use this menyu. :ccc',
+    validate: 'Validate data...',
+    notAllowed: 'You cannot use this menu.',
     prefix: {
-        name: 'Pwefix',
-        set: 'Successfuwwy updated the guiwds pwefix to {prefix}!',
-        disclaimer: 'This does NyOT appwy to "/" (Swash)-Commands'
+        name: 'Prefix',
+        set: 'Successfully updated the guilds prefix to {prefix}!',
+        disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
     },
-    global: {
-        // will be the same everywhere
-        none: 'nyonye',
-        useButtons: 'Sewect an option u want to edit using the buttons bewow.',
+    global: {   // will be the same everywhere
+        none: 'none',
+        useButtons: 'Select an option you want to edit using the buttons below.',
         developer: {
-            bypass: 'u don\'t have the `MANAGE_GUILD` to access this panyew..\nDo u stiww want to continyue?',
+            bypass: 'You don\'t have the `MANAGE_GUILD` to access this panel..\nDo you still want to continue?',
             choice: {
-                access: 'I\'m suwe, yes',
-                abord: 'Nyevewmind'
+                access: 'I\'m sure, yes',
+                abord: 'Nevermind'
             },
-            notice: 'cawefuww - devewopew pwiviweges enfowced..'
+            notice: 'carefull - developer privileges enforced..'
         },
         permissions: 'Missing: {perms}',
-        placeholders: 'Pwacehowdews',
+        placeholders: 'Placeholders',
         await: {
-            channel: 'Mention a Channyew ow paste the Channyew ID into the chat.\nType `none` to wemuv the channyew.',
-            category: 'Mention a Categowy ow paste the Categowy ID into the chat.\nType `none` to wemuv the categowy.',
-            role: 'Mention a wowe ow paste the wowe ID into the chat.\nType `none` to wemuv the wowe.',
-            message: 'Send a Message which shouwd be used as {what}.',
-            emote: 'Send an Emoji which shouwd be used as {what}.'
+            channel: 'Mention a Channel or paste the Channel ID into the chat.\nType `none` to remove the channel.',
+            category: 'Mention a Category or paste the Category ID into the chat.\nType `none` to remove the category.',
+            role: 'Mention a Role or paste the Role ID into the chat.\nType `none` to remove the role.',
+            message: 'Send a Message which should be used as {what}.',
+            emote: 'Send an Emoji which should be used as {what}.',
         },
         success: {
-            set: 'Successfuwwy set {what} to **{data}**',
-            removed: 'Successfuwwy wemuvd the {what}.',
-            fail: 'This {what} does nyot exist in this guiwd..',
-            lengthFail: 'The {what} is wongew than {max} chawactews! ({length} chawactews, {relative} too much)',
-            otherLengthFail: 'The {what} is showtew than {min} chawactews! ({length} chawactews, {relative} too wess)',
-            numberFail: 'The {what} is nyot a nyumbew between {a} and {b}!',
-            roleFail: 'This wowe is onwy manyagabwe by eithew Discowd ow bewongs to a bot usew.'
+            set: 'Successfully set {what} to **{data}**',
+            removed: 'Successfully removed the {what}.',
+            fail: 'This {what} does not exist in this guild..',
+            lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
+            otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
+            numberFail: 'The {what} is not a number between {a} and {b}!',
+            roleFail: 'This Role is only managable by either Discord or belongs to a bot user.'
         },
         type: {
-            text: 'Text Channyew',
-            category: 'Categowy Channyew',
-            role: 'Wowe',
+            text: 'Text Channel',
+            category: 'Category Channel',
+            role: 'Role',
             emoji: 'Emote'
         },
         state: {
-            enabled: 'Enyabwed',
-            disabled: 'Disabwed'
+            enabled: 'Enabled',
+            disabled: 'Disabled',
         },
         option: {
-            required: 'Wequiwed',
-            optional: 'Optionyaw'
+            required: 'Required',
+            optional: 'Optional'
         },
         button: {
             back: 'Back',
-            disable: 'Disabwe',
-            enable: 'Enyabwe',
+            disable: 'Disable',
+            enable: 'Enable',
             channel: {
-                set: 'Set Channyew',
-                edit: 'Edit Channyew'
+                set: 'Set Channel',
+                edit: 'Edit Channel'
             },
             category: {
-                set: 'Set Categowy',
-                edit: 'Edit Categowy'
+                set: 'Set Category',
+                edit: 'Edit Category'
             },
             role: {
-                set: 'Set Wowe',
-                edit: 'Edit Wowe'
+                set: 'Set Role',
+                edit: 'Edit Role'
             },
             mode: {
-                analyst: 'Anyawyst',
+                analyst: 'Analyst',
                 cozy: 'Cozy'
             },
-            dupaw: {
-                // This is a name, can't be translated
-                enable: 'Enyabwe dupaw',
-                disable: 'Disabwe dupaw'
+            dupaw: {    // This is a name, cannot be translated
+                enable: 'Enable dupaw',
+                disable: 'Disable dupaw'
             }
         }
     },
+
     main: {
-        title: 'Configuwe {name}',
+        title: 'Configure {name}',
         option: {
             premium: {
-                text: 'Entewpwise Tiew {tier}',
-                buy: 'Buy Entewpwise'
+                text: 'Enterprise Tier {tier}',
+                buy: 'Buy Enterprise'
             }
         },
         button: {
-            logging: 'Wogging',
+            logging: 'Logging',
             tickets: 'Ticketing',
-            moderation: 'Modewation',
-            starboard: 'Stawboawd',
-            staff: 'Manyage Guiwd',
+            moderation: 'Moderation',
+            starboard: 'Starboard',
+            staff: 'Manage Guild',
             exit: 'Exit',
-            help: 'Suppowt'
+            help: 'Support',
         }
     },
     logging: {
-        title: 'Configuwe Wogging',
+        title: 'Configure Logging',
         button: {
             messages: 'Messages',
             joins: 'Joins',
-            welcomer: 'Wewcoming',
+            welcomer: 'Welcoming',
             byer: 'Bying'
         },
         page: {
+
             messages: {
                 title: 'Messages',
-                name: 'Message Wogging',
+                name: 'Message Logging',
                 option: {
-                    channel: 'Channyew: {channel}',
+                    channel: 'Channel: {channel}',
                     mode: 'Mode: {mode}'
                 },
                 page: {
                     channel: {
-                        title: 'Channyew',
-                        name: 'Message Wogging channyew'
+                        title: 'Channel',
+                        name: 'Message Logging channel'
                     }
                 }
             },
+
             joins: {
                 title: 'Joins',
-                name: 'Join Wogging',
+                name: 'Join Logging',
                 option: {
-                    channel: 'Channyew: {channel}',
+                    channel: 'Channel: {channel}',
                     mode: 'Mode: {mode}',
-                    filter: 'Fiwtew: {state}'
+                    filter: 'Filter: {state}'
                 },
-                button: { filter: 'Fiwtew' },
+                button: {
+                    filter: 'Filter'
+                },
                 page: {
                     channel: {
-                        title: 'Channyew',
-                        name: 'Join Wogging'
+                        title: 'Channel',
+                        name: 'Join Logging'
                     },
                     filter: {
-                        title: 'Fiwtew',
+                        title: 'Filter',
                         option: {
-                            trigger: 'Age Twiggew: **{trigger} days**',
-                            punishment: 'Punyishment: **{type}**',
+                            trigger: 'Age Trigger: **{trigger} days**',
+                            punishment: 'Punishment: **{type}**',
                             punishmentType: {
                                 ban: 'Ban',
                                 kick: 'Kick',
                                 timeout: 'Timeout',
-                                role: 'Assign {role} wowe',
-                                none: 'nyonye'
+                                role: 'Assign {role} role',
+                                none: 'none'
                             }
                         },
                         button: {
                             dmNotification: {
-                                disable: 'Disabwe DM nyotification',
-                                enable: 'Enyabwe DM nyotification'
+                                disable: 'Disable DM notification',
+                                enable: 'Enable DM notification'
                             },
                             trigger: {
-                                set: 'Set Age Twiggew',
-                                edit: 'Edit Age Twiggew'
+                                set: 'Set Age Trigger',
+                                edit: 'Edit Age Trigger'
                             },
                             punishment: {
-                                title: 'Set a punyishment',
-                                current: 'Cuwwent',
+                                title: 'Set a punishment',
+                                current: 'Current',
                                 option: {
-                                    ban: 'Ban Usew',
-                                    kick: 'Kick Usew',
-                                    timeout: 'Timeout Usew',
-                                    role: 'Assign Wowe'
+                                    ban: 'Ban User',
+                                    kick: 'Kick User',
+                                    timeout: 'Timeout User',
+                                    role: 'Assign Role'
                                 }
                             }
                         },
                         page: {
                             trigger: {
-                                title: 'Twiggew',
-                                name: 'age wequiwement',
-                                description: 'If an account is ungew than this age, they\'ww get punyished!\nInput must be between 0 and 28 days.'
+                                title: 'Trigger',
+                                name: 'age requirement',
+                                description: 'If an account is younger than this age, they\'ll get punished!\nInput must be between 0 and 28 days.',
                             },
                             role: {
-                                title: 'Wowe',
-                                name: 'punyishment wowe'
+                                title: 'Role',
+                                name: 'punishment role'
                             }
                         }
                     }
                 }
             },
+
             welcomer: {
-                title: 'Wewcomew',
-                name: 'Wewcomew',
+                title: 'Welcomer',
+                name: 'Welcomer',
                 option: {
-                    channel: 'Channyew: {channel}',
-                    role: 'Wowe: {role}',
+                    channel: 'Channel: {channel}',
+                    role: 'Role: {role}',
                     message: {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
                     }
                 },
-                button: { message: 'Edit Message' },
+                button: {
+                    message: 'Edit Message'
+                },
                 page: {
                     channel: {
-                        title: 'Channyew',
-                        name: 'Wewcomew Channyew'
+                        title: 'Channel',
+                        name: 'Welcomer Channel'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Wewcomew Message'
+                        name: 'Welcomer Message'
                     },
                     role: {
-                        title: 'Wowe',
-                        name: 'Wewcomew Wowe'
+                        title: 'Role',
+                        name: 'Welcomer Role'
                     }
                 }
             },
+
             byer: {
-                title: 'Byew',
-                name: 'Byew',
+                title: 'Byer',
+                name: 'Byer',
                 option: {
-                    channel: 'Channyew: {channel}',
+                    channel: 'Channel: {channel}',
                     message: {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
-                    }
+                    },
                 },
-                button: { message: 'Edit Message' },
+                button: {
+                    message: 'Edit Message'
+                },
                 page: {
                     channel: {
-                        title: 'Channyew',
-                        name: 'Set Channyew'
+                        title: 'Channel',
+                        name: 'Byer Channel'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Byew Message'
+                        name: 'Byer Message'
                     }
                 }
             }
+
         }
     },
+
     tickets: {
-        title: 'Configuwe Ticketing',
+        title: 'Configure Ticketing',
         option: {
-            channel: 'Categowy: {channel}',
+            channel: 'Category: {channel}',
             staff: 'Staff: {role}',
-            logging: 'Wogging: {channel}',
-            forceReason: 'Weason: {state}',
-            naming: 'Nyaming: {type}',
+            logging: 'Logging: {channel}',
+            forceReason: 'Reason: {state}',
+            naming: 'Naming: {type}',
             namingType: {
-                username: 'Usewnyame',
-                userid: 'UsewId',
-                random: 'Wandom'
+                username: 'Username',
+                userid: 'UserId',
+                random: 'Random'
             }
         },
         button: {
             forceReason: {
-                enable: 'Fowce weason',
-                disable: 'Optionyaw Weason'
+                enable: 'Force Reason',
+                disable: 'Optional Reason',
             },
             logging: {
-                disable: 'Disabwe Wogging',
-                enable: 'Enyabwe Wogging'
+                disable: 'Disable Logging',
+                enable: 'Enable Logging',
             },
             transcript: {
-                disable: 'Disabwe Twanscwipts',
-                enable: 'Save Twanscwipts'
+                disable: 'Disable Transcripts',
+                enable: 'Save Transcripts'
             },
             openReason: {
-                disable: 'Disabwe Open Weason',
-                enable: 'Enyabwe Open Weason'
+                disable: 'Disable Open Reason',
+                enable: 'Enable Open Reason'
             },
             texts: 'Change Texts',
             naming: {
-                title: 'Set a nyaming type',
-                current: 'Cuwwent',
+                title: 'Set a naming type',
+                current: 'Current',
                 option: {
-                    username: 'Usewnyame',
-                    userid: 'Usew Id',
-                    random: 'Wandom Id'
+                    username: 'Username',
+                    userid: 'User Id',
+                    random: 'Random Id'
                 }
             }
         },
         page: {
             category: {
-                title: 'Categowy',
-                name: 'Tickets Categowy'
+                title: 'Category',
+                name: 'Tickets Category'
             },
             role: {
-                title: 'Staff Wowe',
-                name: 'Ticket Staff wowe'
+                title: 'Staff Role',
+                name: 'Ticket Staff role'
             },
             descriptions: {
                 title: 'Texts',
-                name: 'Ticket descwiptions',
+                name: 'Ticket descriptions',
                 button: {
-                    texts: 'Pweview ticket',
+                    texts: 'Preview ticket',
                     topic: 'Change topic',
-                    unclaimed: 'Change uncwaimed text',
-                    claimed: 'Change cwaimed text'
+                    unclaimed: 'Change unclaimed text',
+                    claimed: 'Change claimed text'
                 },
                 page: {
                     unclaimed: {
-                        title: 'Uncwaimed',
-                        name: 'Uncwaimed Ticket descwiption'
+                        title: 'Unclaimed',
+                        name: 'Unclaimed Ticket description',
                     },
                     claimed: {
-                        title: 'Cwaimed',
-                        name: 'Cwaimed Ticket descwiption'
+                        title: 'Claimed',
+                        name: 'Claimed Ticket description',
                     },
                     topic: {
                         title: 'Topic',
@@ -311,110 +323,111 @@ module.exports = {
                 }
             },
             logging: {
-                title: 'Wogging',
-                name: 'Ticket Wogging'
+                title: 'Logging',
+                name: 'Ticket Logging'
             }
         }
     },
+
     moderation: {
-        title: 'Configuwe Modewation',
+        title: 'Configure Moderation',
         option: {
-            role: 'Bypass Wowe: {role}',
-            logging: 'Wogging: {channel}'
+            role: 'Bypass Role: {role}',
+            logging: 'Logging: {channel}',
         },
         button: {
-            filter: 'Bwackwist',
+            filter: 'Blacklist',
             antiScam: 'Anti Scam',
-            antiLink: 'Anti Wink',
+            antiLink: 'Anti Link',
             antiSpam: 'Anti Spam',
             bypassRole: {
-                edit: 'Edit bypass Wowe',
-                set: 'Set bypass Wowe'
+                edit: 'Edit bypass Role',
+                set: 'Set bypass Role'
             },
             logging: {
-                edit: 'Edit wogging Channyew',
-                set: 'Set wogging Channyew'
+                edit: 'Edit logging Channel',
+                set: 'Set logging Channel'
             }
         },
         page: {
             role: {
-                title: 'Bypass Wowe',
-                name: 'Bypass wowe'
+                title: 'Bypass Role',
+                name: 'Bypass role'
             },
             logging: {
-                title: 'Wogging',
-                name: 'Modewation wogs'
+                title: 'Logging',
+                name: 'Moderation logs'
             },
             filter: {
-                title: 'Fiwtew',
-                name: 'Modewation Fiwtew',
+                title: 'Filter',
+                name: 'Moderation Filter',
                 option: {
                     message: 'Message: {message}',
                     actions: 'Actions: {types}',
                     actionType: {
-                        reply: 'wepwy',
-                        delete: 'dewete',
+                        reply: 'reply',
+                        delete: 'delete',
                         timeout: 'timeout'
                     },
-                    total: 'Totaw: **{amount} wowds**',
+                    total: 'Total: **{amount} words**',
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    editWords: 'Edit wowd wist',
+                    editWords: 'Edit word list',
                     message: 'Edit Message',
-                    timeout: 'Timeout Duwation',
+                    timeout: 'Timeout Duration',
                     actions: {
-                        title: 'Manyage an action',
-                        selected: 'Sewected',
+                        title: 'Manage an action',
+                        selected: 'Selected',
                         option: {
-                            reply: 'Wepwy',
-                            delete: 'Dewete',
+                            reply: 'Reply',
+                            delete: 'Delete',
                             timeout: 'Timeout'
                         }
                     }
                 },
                 page: {
                     words: {
-                        title: 'Wowds',
-                        name: 'Bwackwisted wowd',
-                        awaitMessage: 'Send onye ow muwtipwe wowds that shouwd get bwackwisted.\nPwease **onwy use** chawactews fwom `A-Z`\nSpwit wowds with `, ` to buwk add wowds.',
-                        bulkAdded: 'Successfuwwy buwk added {amout} nyew wowds to the bwackwist.',
-                        added: 'Successfuwwy added "`{word}`" as nyew bwackwisted wowd.',
-                        removed: 'Successfuwwy wemuvd "`{word}`" as bwackwisted wowd.'
+                        title: 'Words',
+                        name: 'Blacklisted word',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
+                        bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
+                        added: 'Successfully added "`{word}`" as new blacklisted word.',
+                        removed: 'Successfully removed "`{word}`" as blacklisted word.'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Bwackwisted wowd'
+                        name: 'Blacklisted word reply'
                     },
                     timeout: {
-                        title: 'Timeout Duwation',
-                        name: 'Timeout Duwation',
-                        description: 'The usew wiww be set on Timeout fow this duwation!\nInput must be wess than 28 days.\nExampwe: `7d 4h 8m 3s`'
+                        title: 'Timeout Duration',
+                        name: 'Timeout duration',
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`',
                     }
                 }
             },
             antiScam: {
                 title: 'Anti Scam',
-                name: 'Modewation Anti Scam',
+                name: 'Moderation Anti Scam',
                 option: {
                     message: 'Message: {message}',
                     actions: 'Actions: {types}',
                     actionType: {
-                        reply: 'wepwy',
-                        delete: 'dewete',
+                        reply: 'reply',
+                        delete: 'delete',
                         timeout: 'timeout'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
                     message: 'Edit Message',
-                    timeout: 'Timeout Duwation',
+                    timeout: 'Timeout Duration',
                     actions: {
-                        title: 'Manyage an action',
-                        selected: 'Sewected',
+                        title: 'Manage an action',
+                        selected: 'Selected',
                         option: {
-                            reply: 'Wepwy',
-                            delete: 'Dewete',
+                            reply: 'Reply',
+                            delete: 'Delete',
                             timeout: 'Timeout'
                         }
                     }
@@ -422,41 +435,41 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anyit Scam wepwy'
+                        name: 'Anit Scam reply'
                     },
                     timeout: {
-                        title: 'Timeout Duwation',
-                        name: 'Timeout Duwation',
-                        description: 'The usew wiww be set on Timeout fow this duwation!\nInput must be wess than 28 days.\nExampwe: `7d 4h 8m 3s`'
+                        title: 'Timeout Duration',
+                        name: 'Timeout duration',
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`',
                     }
                 }
             },
             antiLink: {
-                title: 'Anti Wink',
-                name: 'Modewation Anti Wink',
+                title: 'Anti Link',
+                name: 'Moderation Anti Link',
                 option: {
                     message: 'Message: {message}',
                     actions: 'Actions: {types}',
                     actionType: {
-                        reply: 'wepwy',
-                        delete: 'dewete',
+                        reply: 'reply',
+                        delete: 'delete',
                         timeout: 'timeout'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
                     media: {
-                        disable: 'Disawwow Media',
-                        enable: 'Awwow Media'
+                        disable: 'Disallow Media',
+                        enable: 'Allow Media'
                     },
                     message: 'Edit Message',
-                    timeout: 'Timeout Duwation',
+                    timeout: 'Timeout Duration',
                     actions: {
-                        title: 'Manyage an action',
-                        selected: 'Sewected',
+                        title: 'Manage an action',
+                        selected: 'Selected',
                         option: {
-                            reply: 'Wepwy',
-                            delete: 'Dewete',
+                            reply: 'Reply',
+                            delete: 'Delete',
                             timeout: 'Timeout'
                         }
                     }
@@ -464,162 +477,173 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anyit wink wepwy'
+                        name: 'Anit Link reply'
                     },
                     timeout: {
-                        title: 'Timeout Duwation',
-                        name: 'Timeout duwation',
-                        description: 'The usew wiww be set on Timeout fow this duwation!\nInput must be wess than 28 days.\nExampwe: `7d 4h 8m 3s`'
+                        title: 'Timeout Duration',
+                        name: 'Timeout duration',
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`',
                     }
                 }
             },
             antiSpam: {
                 title: 'Anti Spam',
-                name: 'Modewation Anti Spam',
+                name: 'Moderation Anti Spam',
                 option: {
                     message: 'Message: {message}',
                     actions: 'Actions: {types}',
-                    threshold: 'Thweshowd: **{threshold}msgs/5s**',
+                    threshold: 'Threshold: **{threshold}msgs/5s**',
                     actionType: {
-                        reply: 'wepwy',
+                        reply: 'reply',
                         timeout: 'timeout',
-                        purge: 'puwge'
+                        purge: 'purge'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    threshold: 'Edit Thweshowd',
+                    threshold: 'Edit Threshold',
                     message: 'Edit Message',
-                    timeout: 'Timeout Duwation',
+                    timeout: 'Timeout Duration',
                     actions: {
-                        title: 'Manyage an action',
-                        selected: 'Sewected',
+                        title: 'Manage an action',
+                        selected: 'Selected',
                         option: {
-                            reply: 'Wepwy',
+                            reply: 'Reply',
                             timeout: 'Timeout',
-                            purge: 'Puwge'
+                            purge: 'Purge'
                         }
                     }
                 },
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anyit Scam wepwy'
+                        name: 'Anti Spam reply'
                     },
                     timeout: {
-                        title: 'Timeout Duwation',
-                        name: 'Timeout duwation',
-                        description: 'The usew wiww be set on Timeout fow this duwation!\nInput must be wess than 28 days.\nExampwe: `7d 4h 8m 3s`'
+                        title: 'Timeout Duration',
+                        name: 'Timeout duration',
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`',
                     },
                     threshold: {
-                        title: 'Thweshowd',
-                        name: 'spam Thweshowd',
-                        description: 'I wiww considew it as spam, when this amount gets weached within 5 seconds!\nInput must be between 1 and 99.'
+                        title: 'Threshold',
+                        name: 'spam Threshold',
+                        description: 'I will consider it as spam, when this amount gets reached within 5 seconds!\nInput must be between 1 and 99.',
                     }
                 }
             }
         }
     },
+
     starboard: {
-        title: 'Configuwe Stawboawd',
+        title: 'Configure Starboard',
         button: {
             emoji: 'Change Emoji',
-            color: 'Change Cowow',
+            color: 'Change Color',
             count: 'Change Count',
             nsfw: {
-                disable: 'Disabwe NSFW',
-                enable: 'Enyabwe NSFW'
+                disable: 'Disable NSFW',
+                enable: 'Enable NSFW'
             },
             bots: {
-                disable: 'Disabwe Bots',
-                enable: 'Enyabwe Bots'
+                disable: 'Disable Bots',
+                enable: 'Enable Bots'
             },
             selfReact: {
-                disable: 'Disabwe Sewf weaction',
-                enable: 'Enyabwe Sewf weaction'
+                disable: 'Disable Self Reaction',
+                enable: 'Enable Self Reaction'
             },
             reply: {
-                disable: 'Hide wepwied to',
-                enable: 'Show wepwied to'
+                disable: 'Hide Replied to',
+                enable: 'Show Replied to'
             },
             logging: {
-                disable: 'Disabwe Wogging',
-                enable: 'Enyabwe Wogging'
+                disable: 'Disable Logging',
+                enable: 'Enable Logging'
             },
             blacklist: {
-                set: 'Set Bwackwisted wowe',
-                change: 'Edit Bwackwisted wowe'
+                set: 'Set Blacklisted Role',
+                change: 'Edit Blacklisted Role'
             },
             display: {
-                title: 'Set a dispway stywe',
-                selected: 'Sewected',
+                title: 'Set a display style',
+                selected: 'Selected',
                 option: {
                     tag: 'Tag',
-                    username: 'Usewnyame',
-                    nickname: 'Nyicknyame',
-                    guildProfile: 'Guiwd Pwofiwe'
+                    username: 'Username',
+                    nickname: 'Nickname',
+                    guildProfile: 'Guild Profile'
                 }
             }
         },
         option: {
-            channel: 'Channyew: {channel}',
-            color: 'Cowow: {color}',
+            channel: 'Channel: {channel}',
+            color: 'Color: {color}',
             emoji: 'Emoji: {emoji}',
             count: 'Count: {count}',
-            blacklistedRole: 'Bwackwisted: {role}',
-            display: 'Dispway: {profileType}',
+            blacklistedRole: 'Blacklisted: {role}',
+            display: 'Display: {profileType}',
             profileType: {
                 tag: 'Tag',
-                username: 'Usewnyame',
-                nickname: 'Nyicknyame',
-                guildProfile: 'Guiwd Pwofiwe'
+                username: 'Username',
+                nickname: 'Nickname',
+                guildProfile: 'Guild Profile'
             }
         },
         page: {
             channel: {
-                title: 'Channyew',
-                name: 'Stawboawd Channyew'
+                title: 'Channel',
+                name: 'Starboard Channel'
             },
             emoji: {
                 title: 'Emoji',
-                name: 'Stawboawd Emoji'
+                name: 'Starboard Emoji',
             },
             color: {
-                title: 'Cowow',
-                name: 'Stawboawd Cowow',
-                description: 'Paste the HEX cowow code into the chat.\nGet a HEX cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'The cowow code is nyot a vawid HEX cowow.\nGet a HEX cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                title: 'Color',
+                name: 'Starboard Color',
+                description: 'Paste the HEX color code into the chat.\nGet a HEX color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                invalid: 'The color code is not a valid HEX color.\nGet a HEX color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
             },
             count: {
                 title: 'Count',
-                name: 'wequiewd Count',
-                description: 'Send a nyumbew to set the minyimum {emote} weaction count wequiwement.'
+                name: 'requierd Count',
+                description: 'Send a number to set the minimum {emote} reaction count requirement.'
             },
             blacklistedRole: {
-                title: 'Bwackwisted Wowe',
-                name: 'bwackwisted Wowe'
+                title: 'Blacklist Role',
+                name: 'blacklisted Role'
             }
         }
     },
+
     staff: {
-        title: 'Manyage {name}',
-        option: { premium: 'Entewpwise: {tier}' },
+        title: 'Manage {name}',
+        option: {
+            premium: 'Enterprise: {tier}'
+        },
         button: {
-            premium: 'Change pwemium Tiew',
-            data: 'Expowt Data'
+            premium: 'Change premium Tier',
+            data: 'Export Data'
         },
         page: {
             data: {
-                title: 'Data Expowt',
-                message: 'The data fwom {name} is dispwayed bewow.',
-                error: 'Cannyot send message :/'
+                title: 'Data Export',
+                message: 'The data from {name} is displayed below.',
+                error: 'Cannot send message :/'
             },
             premium: {
-                title: 'Configuwe Entewpwise',
-                option: { tier: 'Cuwwent Tiew: {tier}' },
-                button: { tier: 'Tiew {tier}' }
+                title: 'Configure Enterprise',
+                option: {
+                    tier: 'Current Tier: {tier}'
+                },
+                button: {
+                    tier: 'Tier {tier}'
+                }
             }
         }
     },
-    exit: { title: 'Saved settings and exited config menyu. >~<' }
+
+    exit: {
+        title: 'Saved settings and exited config menu.'
+    }
 };
