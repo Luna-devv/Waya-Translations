@@ -1,0 +1,1 @@
+module.exports = { success: 'Wewoaded aww intewactions in {ms}ms babe' };
