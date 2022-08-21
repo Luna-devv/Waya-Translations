@@ -1,42 +1,40 @@
 module.exports = {
-    alreadyExists: 'A Tag with this name already exists!',
-    alreadyExistsDefault: 'A default Command with this name already exists!',
-    invalidTag: 'A Tag with this name doesn\'t exist!',
+    alreadyExists: 'A Tag with this nyame awweady exists!',
+    alreadyExistsDefault: 'A defauwt Command with this nyame awweady exists!',
+    invalidTag: 'A Tag with this nyame doesn\'t exist!',
     overview: {
         title: 'Tag Config',
         message: 'Message',
         embed: 'Embed',
-        placeholder: 'Useable Placeholders',
+        placeholder: 'Useabwe Pwacehowdews',
         button: {
             exit: 'Save & Exit',
-            permission: 'Select a permission the user needs',
+            permission: 'Sewect a pewmission the usew nyeeds',
             color: {
-                enabled: 'Select a color for the Embed',
-                disabled: 'Use Embeds and select a color'
+                enabled: 'Sewect a cowow fow the Embed',
+                disabled: 'Use Embeds and sewect a cowow'
             }
         }
     },
     form: {
         formName: '{name} tag',
-        message: {
-            content: 'Content'
-        },
+        message: { content: 'Content' },
         embed: {
-            title: 'Title',
-            description: 'Description',
-            thumbnail: 'Thumbnail',
+            title: 'Titwe',
+            description: 'Descwiption',
+            thumbnail: 'Thumbnyaiw',
             image: 'Image',
-            footer: 'Footer'
+            footer: 'Footew'
         }
     },
     success: {
-        message: 'Successfully added the Tag {name}.',
-        command: 'Try it out with {command}'
+        message: 'Successfuwwy added the Tag {name}.',
+        command: 'Twy it out with {command}'
     },
     list: {
-        title: 'Tag list',
-        none: 'no tags',
-        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'   // ;[singular, plural]
+        title: 'Tag wist',
+        none: 'nyo tags',
+        disabled: '{amount} ;[tag is, tags r] hidden cuz u r missing pewmissions'    // ;[singular, plural]
     },
-    deleted: 'Successfully deleted the Tag **{name}**.'
+    deleted: 'Successfuwwy deweted the Tag **{name}**.'
 };
