@@ -1,5 +1,5 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
+    noData: '404. Leben (Server) nicht gefunden.',
     noPoll: 'This poll could not be found!',
     ended: 'This poll already ended {time} ago.',
     alreadyVoted: 'You\'ve already voted for option **#{num}**.',
