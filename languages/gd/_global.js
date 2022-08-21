@@ -1,37 +1,37 @@
 module.exports = {
-    dms: 'This command cannot be used inside of private messages.',
-    disabled: 'You have been disabled.',
-    error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
-    premium: 'premium required',
-    button: { add: 'Add {name}' },
+    dms: 'Das nix gehen in DMs.',
+    disabled: 'Haha! Du nix dürfen Bot nutzen!',
+    error: 'Huppala! Da is was put.\nJoin ma den Support Server und sag denen die Fehler ID {issue}',
+    premium: 'Nix für Geringverdiener!',
+    button: { add: 'Lasse {name} mitmachen' },
     permissions: {
         user: {
-            guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
-            channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
+            guild: 'Keine {perms} rechte!',
+            channel: 'Keine {perms} rechte in dem Kanal!',
             roles: {
                 user: {
-                    text: 'You cannot perform this action since the highest role of that user is higher than yours.',
+                    text: 'Ist nicht! Die Person ist besser als du!',
                     user: 'User: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 },
                 role: {
-                    text: 'You cannot perform this action since your highest role is lower than the role to manage.',
+                    text: 'Deine Rolle ist unter der rolle die du managen willst kek.',
                     user: 'Role: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 }
             }
         },
         me: {
-            guild: 'I cannot run this action since I\'m missing the {perms} permissions.',
-            channel: 'I cannot run this action since I\'m missing the {perms} permissions in this channel.',
+            guild: 'Geht nicht weil ich kann das nicht. Mir fehlt {perms}.',
+            channel: 'Ich kann das nd weil mir fehlt {perms} in diesem Kanal.',
             roles: {
                 user: {
-                    text: 'I cannot perform this action since the highest role of that user is higher than mine.',
+                    text: 'Öh ja... Problem... Meine Rolle is zu weit unten..',
                     user: 'User: {u.role} @ index {u.index}',
                     bot: 'Me: {b.role} @ index {b.index}'
                 },
                 role: {
-                    text: 'I cannot perform this action since my highest role is higher than the role to manage.',
+                    text: 'Ich nix können weil meine Rolle weiter unten als die die ich will',
                     user: 'Role: {u.role} @ index {u.index}',
                     bot: 'Me: {b.role} @ index {b.index}'
                 }
