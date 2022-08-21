@@ -1,7 +1,7 @@
 module.exports = {
-    messages: 'Message Leaderboard',
-    invites: 'Invite Leaderboard',
-    none: 'none',
-    personalized: 'Your Position',
-    total: '{amount} ;[users are, user is] on this leaderboard'
+    messages: 'Message Weadewboawd',
+    invites: 'Invite Weadewboawd',
+    none: 'nyonye',
+    personalized: 'Ur Position',
+    total: '{amount} ;[usews r, usew is] on this weadewboawd'
 };
