@@ -1,24 +1,22 @@
 module.exports = {
-    dms: 'This command cannot be used inside of private messages.',
-    disabled: 'You have been disabled.',
-    error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
-    premium: 'premium required',
-    button: {
-        add: 'Add {name}',
-    },
+    dms: 'This command cannyot be used inside of pwivate messages.',
+    disabled: 'U have been disabwed.',
+    error: 'An ewwow occuwwed whiwe executing this command.\nPwease join the suppowt sewvew and wepowt this issue\nwith the id {issue}!',
+    premium: 'pwemium wequiwed',
+    button: { add: 'Add {name}' },
     permissions: {
         user: {
-            guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
-            channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
+            guild: 'U cannyot wun this action since u\'we missing the {perms} pewmissions.',
+            channel: 'U cannyot wun this action since u\'we missing the {perms} pewmissions in this channyew.',
             roles: {
                 user: {
-                    text: 'You cannot perform this action since the highest role of that user is higher than yours.',
-                    user: 'User: {u.role} @ index {u.index}',
-                    you: 'You: {y.role} @ index {y.index}'
+                    text: 'U cannyot pewfowm this action since the highest wowe of that usew is highew than urs.',
+                    user: 'Usew: {u.role} @ index {u.index}',
+                    you: 'U: {y.role} @ index {y.index}'
                 },
                 role: {
-                    text: 'You cannot perform this action since your highest role is lower than the role to manage.',
-                    user: 'Role: {u.role} @ index {u.index}',
+                    text: 'U cannyot pewfowm this action since ur highest wowe is wowew than the wowe to manyage.',
+                    user: 'Wowe: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 }
             }
