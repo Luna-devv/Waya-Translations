@@ -1,4 +1,4 @@
 module.exports = {
-    cantFindId: 'I cannot find any active reminders with the ID `{id}`',
-    deleted: 'I\'ve deleted your reminder with the ID `{id}`'
+    cantFindId: 'I can\'t find any active wemindews with the ID `{id}`',
+    deleted: 'I\'ve deweted ur wemindew with the Id `{id}`'
 };
