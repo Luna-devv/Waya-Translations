@@ -33,7 +33,7 @@ module.exports = {
         success: {
             ban: 'Successfully banned {user} from {guild}.',
             kick: 'Successfully kicked {user} from {guild}.',
-            timeout: 'Successfully timed {user} out in {guild}.',
+            timeout: 'Successfully timed {user} out in {guild}.'
         }
     }
 };
