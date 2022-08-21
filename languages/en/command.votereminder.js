@@ -4,7 +4,5 @@ module.exports = {
         disable: 'You\'ve disabled the vote reminder.',
         enable: 'You\'ve enabled the vote reminder.'
     },
-    button: {
-        vote: 'Vote on Top.gg'
-    }
+    button: { vote: 'Vote on Top.gg' }
 };
