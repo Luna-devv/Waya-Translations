@@ -1,4 +1,4 @@
 module.exports = {
-    disable: '{user} has been disabled.',
-    enable: '{user} has been enabled.'
+    disable: '{user} has been disabwed.',
+    enable: '{user} has been enyabwed.'
 };

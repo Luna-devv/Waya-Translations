@@ -1,10 +1,10 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
-    noCategory: 'The Tickets category has been deleted. Please notify a Server Administrator.',
-    created: 'Your ticket {channel} has been created!',
+    noData: 'BABY GIRL 😭 Couwd nyot find guiwd in the Database!',
+    noCategory: 'Oh nyyooo ;c The Tickets categowy has been deweted. Pwease nyotify a Sewvew Adminyistwatow. 😭',
+    created: 'ur ticket {channel} has been cweated! ✍️(◔◡◔)',
     form: {
-        formTitle: 'Ticket Opening Reason',
-        field: 'Why do you want to open a Ticket?',
-        placeholder: 'I need help with that..'
+        formTitle: 'Ticket Openying weason qwq',
+        field: 'Why u want to open a Ticket?',
+        placeholder: 'CUZ I NyEED HEwP DO FIND MOwE QWQ >;)'
     }
 };

@@ -1,3 +1,1 @@
-module.exports = {
-    success: 'Reloaded all interactions in {ms}ms'
-};
+module.exports = { success: 'Wewoaded aww intewactions in {ms}ms babe' };

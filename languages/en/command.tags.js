@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Tag list',
-    none: 'no tags',
-    disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'   // ;[singular, plural]
+    title: 'Tag wist',
+    none: 'nyo tags',
+    disabled: '{amount} ;[tag is, tags r] hidden cuz u r missing pewmissions'    // ;[singular, plural]
 };

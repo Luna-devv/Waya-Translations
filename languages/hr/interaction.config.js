@@ -76,7 +76,7 @@ module.exports = {
                 cozy: 'Udobno'
             },
             dupaw: {
-                // This is a name, can't be translated
+                // This is a name, cannot be translated
                 enable: 'Omogući dupaw',
                 disable: 'Onemogući dupaw'
             }
@@ -389,7 +389,7 @@ module.exports = {
                     timeout: {
                         title: 'Trajanje timeout-a',
                         name: 'Trajanje timeout-a',
-                        description: 'Korisnik će biti postavljen na Timeout za ovo vrijeme!\nUnos mora biti kraći od 18 dana.\nPrimjer: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -427,7 +427,7 @@ module.exports = {
                     timeout: {
                         title: 'Trajanje timeout-a',
                         name: 'Trajanje timeout-a',
-                        description: 'Korisnik će biti postavljen na Timeout za ovo vrijeme!\nUnos mora biti kraći od 18 dana.\nPrimjer: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -469,7 +469,7 @@ module.exports = {
                     timeout: {
                         title: 'Trajanje timeout-a',
                         name: 'Trajanje timeout-a',
-                        description: 'Korisnik će biti postavljen na Timeout za ovo vrijeme!\nUnos mora biti kraći od 18 dana.\nPrimjer: `7d 4h 8m 3s`'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -509,7 +509,7 @@ module.exports = {
                     timeout: {
                         title: 'Trajanje timeout-a',
                         name: 'Trajanje timeout-a',
-                        description: 'Trajanje timeout-a'
+                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     },
                     threshold: {
                         title: 'Okidač',

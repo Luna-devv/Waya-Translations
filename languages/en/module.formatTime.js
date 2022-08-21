@@ -2,7 +2,7 @@
 module.exports = {
     months: ';[month, months]',
     days: ';[day, days]',
-    hours: ';[hour, hours]',
-    minutes: ';[minute, minutes]',
+    hours: ';[houw, houws]',
+    minutes: ';[minyute, minyutes]',
     seconds: ';[second, seconds]'
 };

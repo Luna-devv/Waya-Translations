@@ -1,11 +1,9 @@
 module.exports = {
-    greeting: 'Hello there, {user}',
+    greeting: 'UwU thewe, {usew} >~<',
     description: {
-        remind: 'You are now able to vote again for me on top.gg!',
-        data: 'You\'ve **last voted {relativeTime}** and in total {amount} times.',
-        new: '**NEW!** Also support us on {url} with your vote!'
+        remind: 'U r nyow abwe to vote again fow me on top.gg! ผ(•̀_•́ผ)',
+        data: 'U ve **wast voted {relativeTime}** and in totaw {amount} times.',
+        new: '**NyEW!** Awso suppowt us on {url} with ur vote! （〃｀ 3′〃）'
     },
-    button: {
-        vote: 'Vote'
-    }
+    button: { vote: 'Vote' }
 };
