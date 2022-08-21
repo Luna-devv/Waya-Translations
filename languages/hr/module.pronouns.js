@@ -1,4 +1,5 @@
 module.exports = {
+    disclaimer: 'Morate odabrati opciju za primjenu ove postavke',
     choice: {
         remove: {
             question: 'Odakle želite ukloniti {prn} kao željenu zamjenicu?',

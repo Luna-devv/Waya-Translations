@@ -6,6 +6,11 @@
 module.exports = {
     validate: 'Potvrdnja podataka...',
     notAllowed: 'Ne možete koristiti ovaj izbornik.',
+    prefix: {
+        name: 'Prefiks',
+        set: 'Uspješno ažuriran prefiks servera na {prefix}!',
+        disclaimer: 'Ovo se NE odnosi na "/" (slash) naredbe'
+    },
     global: {
         // will be the same everywhere
         none: 'prazno',
