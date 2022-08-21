@@ -1,16 +1,16 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
+    noData: 'BABY GIRL 😭 Couwd nyot find guiwd in the Database!',
     confirm: {
-        text: 'Are you sure that you want to delete {channel} forever?',
-        configReason: 'For `reason`, please enable logging in `/config` => __Ticketing__!',
-        required: 'A close reason is requried!',
+        text: 'R u suwe babe that u want to dewete {channyew} fowevew?',
+        configReason: 'Fow `weason`, pwease enyabwe wogging in `/config` => __Ticketing__!',
+        required: 'A cwose weason is wequwied!',
         button: {
-            close: 'Close Ticket',
-            closeReason: 'Close Ticket with Reason'
+            close: 'Cwose Ticket nyow!!1',
+            closeReason: 'Cwose Ticket with weason :>'
         }
     },
     form: {
-        formTitle: `Close {channel}`,
-        reason: 'Reason'
+        formTitle: `Cwose {channel}`,
+        reason: 'Weason'
     }
 };
