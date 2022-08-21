@@ -20,5 +20,7 @@ module.exports = {
         reminderCount: 'You have {count} reminders',
         createFirst: 'Use `/remind create` fist to create a reminder!'
     },
-    remindDelete: { deleted: 'I\'ve deleted your reminder with the Id `{id}`' }
+    remindDelete: {
+        deleted: 'I\'ve deleted your reminder with the Id `{id}`'
+    }
 };
