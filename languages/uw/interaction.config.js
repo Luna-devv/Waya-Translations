@@ -14,7 +14,7 @@ module.exports = {
     global: {
         // will be the same everywhere
         none: 'nyonye',
-        useButtons: 'Sewect an option u want to edit using the buttons bewow.',
+        useButtons: 'Sewect an option u want to edit using the buttons bewow, babe. 😘',
         developer: {
             bypass: 'u don\'t have the `MANAGE_GUILD` to access this panyew..\nDo u stiww want to continyue?',
             choice: {
@@ -56,7 +56,7 @@ module.exports = {
             optional: 'Optionyaw'
         },
         button: {
-            back: 'Back',
+            back: 'GO AWAY',
             disable: 'Disabwe',
             enable: 'Enyabwe',
             channel: {
@@ -76,7 +76,7 @@ module.exports = {
                 cozy: 'Cozy'
             },
             dupaw: {
-                // This is a name, can't be translated
+                // This is a name, cannot be translated
                 enable: 'Enyabwe dupaw',
                 disable: 'Disabwe dupaw'
             }
