@@ -15,7 +15,7 @@ module.exports = {
         banner: 'Bannyew UWW'
     },
     actions: {
-        notAllowed: 'U cannyot use this menyu. :ccc.',
+        notAllowed: 'U cannyot use this menyu. :ccc',
         invalidTime: 'The duwation cannyot be wess than a second!',
         otherInvalidTime: 'The duwation cannyot be mowe than 28 days!',
         placeholder: 'Choose an action',

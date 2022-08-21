@@ -5,7 +5,7 @@
 */
 module.exports = {
     validate: 'Validate data...',
-    notAllowed: 'You can\'t use this menu.',
+    notAllowed: 'You cannot use this menu.',
     prefix: {
         name: 'Prefix',
         set: 'Successfully updated the guilds prefix to {prefix}!',
@@ -36,8 +36,8 @@ module.exports = {
             set: 'Successfully set {what} to **{data}**',
             removed: 'Successfully removed the {what}.',
             fail: 'This {what} does not exist in this guild..',
-            lengthFail: 'De {what} ({length} karakters) is langer dan het maximum aantal toegestane {max} karakters',
-            otherLengthFail: 'De {what} ({length} karakters) is korter dan het minimum aantal toegestane {min} karakters',
+            lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
+            otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
             numberFail: 'The {what} is not a number between {a} and {b}!',
             roleFail: 'This Role is only managable by either Discord or belongs to a bot user.'
         },
@@ -192,7 +192,7 @@ module.exports = {
                     role: 'Role: {role}',
                     message: {
                         message: 'Message: {message}',
-                        command: 'Bericht: gebruik `{command}`'
+                        command: 'Message: use `{command}`'
                     }
                 },
                 button: { message: 'Edit Message' },
@@ -218,7 +218,7 @@ module.exports = {
                     channel: 'Channel: {channel}',
                     message: {
                         message: 'Message: {message}',
-                        command: 'Bericht: gebruik `{command}`'
+                        command: 'Message: use `{command}`'
                     }
                 },
                 button: { message: 'Edit Message' },
@@ -283,15 +283,15 @@ module.exports = {
                 name: 'Tickets Category'
             },
             role: {
-                title: 'Staff Rol',
-                name: 'Ticket staff rol'
+                title: 'Staff Role',
+                name: 'Ticket Staff role'
             },
             descriptions: {
                 title: 'Texts',
                 name: 'Ticket descriptions',
                 button: {
                     texts: 'Preview ticket',
-                    topic: 'Verander topic',
+                    topic: 'Change topic',
                     unclaimed: 'Change unclaimed text',
                     claimed: 'Change claimed text'
                 },

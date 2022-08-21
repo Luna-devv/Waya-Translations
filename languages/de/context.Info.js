@@ -15,7 +15,7 @@ module.exports = {
         banner: 'Banner URL'
     },
     actions: {
-        notAllowed: 'Du kannst dieses Menü nicht benutzten.',
+        notAllowed: 'Du kannst mit diesem Menü nicht interagieren.',
         invalidTime: 'Die Dauer kann nicht kleiner als eine Sekunde sein!',
         otherInvalidTime: 'Die Dauer kann nicht länger als 28 Tage sein!',
         placeholder: 'Wähle eine Aktion',

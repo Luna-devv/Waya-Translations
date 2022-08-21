@@ -9,7 +9,7 @@ module.exports = {
     prefix: {
         name: 'Prefix',
         set: 'Servers Prefix erfolgreich auf {prefix} geändert!',
-        disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
+        disclaimer: 'Das gilt NICHT für "/" (Slash)-Commands'
     },
     global: {
         // will be the same everywhere
@@ -76,7 +76,7 @@ module.exports = {
                 cozy: 'Übersichtlich'
             },
             dupaw: {
-                // This is a name, can't be translated
+                // This is a name, cannot be translated
                 enable: 'dupaw Aktivieren',
                 disable: 'dupaw Deaktivieren'
             }
@@ -342,7 +342,7 @@ module.exports = {
                 name: 'Umgehungsrolle'
             },
             logging: {
-                title: 'Logging',
+                title: 'Loggen',
                 name: 'Moderationslogs'
             },
             filter: {

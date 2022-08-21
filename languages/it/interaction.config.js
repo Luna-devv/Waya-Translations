@@ -76,7 +76,7 @@ module.exports = {
                 cozy: 'Cozy'
             },
             dupaw: {
-                // This is a name, can't be translated
+                // This is a name, cannot be translated
                 enable: 'Enable dupaw',
                 disable: 'Disable dupaw'
             }

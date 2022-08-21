@@ -76,7 +76,7 @@ module.exports = {
                 cozy: 'Udobno'
             },
             dupaw: {
-                // This is a name, can't be translated
+                // This is a name, cannot be translated
                 enable: 'Omogući dupaw',
                 disable: 'Onemogući dupaw'
             }
@@ -143,8 +143,8 @@ module.exports = {
                             trigger: 'Dob okidač: **{trigger} dana**',
                             punishment: 'Kazna: **{type}**',
                             punishmentType: {
-                                ban: 'Ban',
-                                kick: 'Kick',
+                                ban: 'Banaj',
+                                kick: 'Izbaci',
                                 timeout: 'Timeout',
                                 role: 'Dodijelite ulogu {role}',
                                 none: 'prazno'
@@ -577,7 +577,7 @@ module.exports = {
         },
         page: {
             channel: {
-                title: 'Channel',
+                title: 'Kanal',
                 name: 'Starboard kanal'
             },
             emoji: {
@@ -612,7 +612,7 @@ module.exports = {
             data: {
                 title: 'Izvoz podataka',
                 message: 'Podaci od {name} prikazani su u nastavku.',
-                error: 'Cannot send message :/'
+                error: 'Ne mogu poslati poruku :/'
             },
             premium: {
                 title: 'Konfigurirajte Enterprise',

@@ -2,7 +2,7 @@ module.exports = {
     error: {
         tooShort: 'The time cannyot be wess than **1 second**..',
         tooLong: 'The time cannyot be mowe than **24 days**..',
-        cantFindId: 'I cannot find any active wemindews with the ID `{id}`'
+        cantFindId: 'I cannyot find any active wemindews with the ID `{id}`, Sowwy babe >~<'
     },
     reminder: 'UwU {user} >~<, hewe\'s ur wemindew.',
     remindSet: {

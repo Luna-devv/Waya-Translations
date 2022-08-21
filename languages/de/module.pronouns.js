@@ -1,5 +1,5 @@
 module.exports = {
-    disclaimer: 'You have to choose an option to apply this setting',
+    disclaimer: 'Du musst eine einstellung auswählen, um diese Einstellung zu speichern',
     choice: {
         remove: {
             question: 'Von wo willst du {prn} als Pronomen entfernen?',

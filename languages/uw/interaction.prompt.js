@@ -1,7 +1,7 @@
 module.exports = {
     validate: 'Vawidate data...',
     create: 'Cweating {type} pwompt...',
-    tooManyRoles: 'U have {roles} wowes in ur sewvew, pwease make suwe that u have wess than 244!',
+    tooManyRoles: 'Girl, U have {roles} wowes in ur sewvew~!!1, pwease make suwe that u have wess than 244!1',
     created: 'The {type} pwompt has been cweated.',
     type: {
         category: 'channyew categowy',
