@@ -1,16 +1,16 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
+    noData: 'VERDAMMTE HACKE WO IST DEIN SERVER IN DER DATENBANK HIN?!',
     confirm: {
-        text: 'Are you sure that you want to delete {channel} forever?',
+        text: 'Soll {channel} wirklich weg?',
         configReason: 'For `reason`, please enable logging in `/config` => __Ticketing__!',
-        required: 'A close reason is requried!',
+        required: 'Gib Grund sonst is nicht.',
         button: {
-            close: 'Close Ticket',
-            closeReason: 'Close Ticket with Reason'
+            close: 'Mach dicht die kacke.',
+            closeReason: 'Mach dicht die Kacke mit Grund.'
         }
     },
     form: {
-        formTitle: `Close {channel}`,
-        reason: 'Reason'
+        formTitle: `Schließ {channel}`,
+        reason: 'Grund'
     }
 };
