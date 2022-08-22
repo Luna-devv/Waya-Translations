@@ -1,1 +1,1 @@
-module.exports = { noData: 'Could not find guild in the Database!' };
+module.exports = { noData: 'Server nicht gefunden.' };
