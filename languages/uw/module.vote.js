@@ -1,5 +1,5 @@
 module.exports = {
-    greeting: 'UwU thewe, {usew} >~<',
+    greeting: 'UwU thewe, {user} >~<',
     description: {
         remind: 'U r nyow abwe to vote again fow me on top.gg! ผ(•̀_•́ผ)',
         data: 'U ve **wast voted {relativeTime}** and in totaw {amount} times.',
