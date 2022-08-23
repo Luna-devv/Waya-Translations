@@ -35,11 +35,11 @@ module.exports = {
         success: {
             set: 'Successfuwwy set {what} to **{data}**',
             removed: 'Successfuwwy wemuvd the {what}.',
-            fail: 'This {what} does nyot exist in this guiwd..',
-            lengthFail: 'The {what} is wongew than {max} chawactews! ({length} chawactews, {relative} too much)',
-            otherLengthFail: 'The {what} is showtew than {min} chawactews! ({length} chawactews, {relative} too wess)',
-            numberFail: 'The {what} is nyot a nyumbew between {a} and {b}!',
-            roleFail: 'This wowe is onwy manyagabwe by eithew Discowd ow bewongs to a bot usew.'
+            fail: 'This {what} does nyot exist in this guiwd.. ;////',
+            lengthFail: 'The {what} is wongew than {max} chawactews! ({length} uwu chawactews, {relative} too much) :////',
+            otherLengthFail: 'The {what} is showtew than {min} chawactews! ({length} uwu chawactews, {relative} too wess)  :////',
+            numberFail: 'BABE, The {what} is nyot a nyumbew >.< between {a} and {b}! ;-;;;     ',
+            roleFail: 'This (^³^) wowe :3 is onwy manyagabwe by ://// eithew Discowd ;-;;; ow bewongs to a bot usew.    '
         },
         type: {
             text: 'Text Channyew',
