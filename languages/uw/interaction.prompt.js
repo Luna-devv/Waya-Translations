@@ -17,7 +17,7 @@ module.exports = {
         endPoll: 'use {command}'
     },
     error: {
-        tooLong: 'Option {index} has mowe than {number} chawactews!',
+        tooLong: 'Option {index} has mowe than {number} chawactews! meow~',
         noData: 'nyo data set'
     }
 };
