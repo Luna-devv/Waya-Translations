@@ -9,7 +9,7 @@ module.exports = {
     prefix: {
         name: 'Pwefix',
         set: 'Successfuwwy updated the guiwds pwefix to {prefix}!',
-        disclaimer: 'This does NyOT appwy to "/" (Swash)-Commands'
+        disclaimer: 'This does NyOT appwy to "/" (Swash)-Commands >~<'
     },
     global: {
         // will be the same everywhere
@@ -96,7 +96,7 @@ module.exports = {
             moderation: 'Modewation',
             starboard: 'Stawboawd',
             staff: 'Manyage Guiwd',
-            exit: 'Exit',
+            exit: 'GOO PWEASE',
             help: 'Suppowt'
         }
     },
