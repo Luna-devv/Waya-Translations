@@ -1,1 +1,1 @@
-module.exports = { updated: 'Ur pwimawy wanguage has been updated to **{locale}**!' };
+module.exports = { updated: 'Ur pwimawy wanguage has been updated to **{locale}**! >:c' };
