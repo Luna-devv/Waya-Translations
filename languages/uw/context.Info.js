@@ -8,7 +8,7 @@ module.exports = {
     none: 'nyonye',
     pronouns: {
         title: 'Pwonyouns',
-        none: 'Nyo pwonyouns set'
+        none: 'Nyo pwonyouns set :3 >.<'
     },
     button: {
         avatar: 'Avataw UWW',

@@ -1,6 +1,6 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
-    noCategory: 'The Tickets category has been deleted. Please notify a Server Administrator.',
+    noData: 'Wo. Zum. Heiligen. Ist. Dieser. KACK SERVER HIN?!',
+    noCategory: 'Ticket Kategorie wurde getestet. Frag Ma bei den Admins',
     created: 'Your ticket {channel} has been created!',
     form: {
         formTitle: 'Ticket Opening Reason',

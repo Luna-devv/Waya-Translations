@@ -4,7 +4,7 @@ module.exports = {
     created: 'ur ticket {channel} has been cweated! ✍️(◔◡◔)',
     form: {
         formTitle: 'Ticket Openying weason qwq',
-        field: 'Why u want to open a Ticket?',
+        field: 'Why ://// >.< do u want to open a Ticket? >.<   ',
         placeholder: 'CUZ I NyEED HEwP DO FIND MOwE QWQ >;)'
     }
 };

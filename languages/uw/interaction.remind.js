@@ -1,7 +1,7 @@
 module.exports = {
     error: {
-        tooShort: 'The time cannyot be wess than **1 second**..',
-        tooLong: 'The time cannyot be mowe than **24 days**..',
+        tooShort: 'The time cannyot be wess than >.< **1 second**.. uwu  ',
+        tooLong: 'The time cannyot be mowe than **24 days**.. >.<',
         cantFindId: 'I cannyot find any active wemindews with the ID `{id}`, Sowwy babe >~<'
     },
     reminder: 'UwU {user} >~<, hewe\'s ur wemindew.',
@@ -18,7 +18,7 @@ module.exports = {
             invite: 'Invite {user}'
         },
         reminderCount: 'U have {count} wemindews',
-        createFirst: 'Use `/wemind cweate` fist to cweate a wemindew!'
+        createFirst: 'Use `/wemind cweate` first to cweate a wemindew!'
     },
-    remindDelete: { deleted: 'I\'ve deweted ur wemindew with the Id `{id}`' }
+    remindDelete: { deleted: 'I\'ve deweted ur wemindew with the Id `{id}` qwq' }
 };

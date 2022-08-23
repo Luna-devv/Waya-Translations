@@ -1,4 +1,4 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
-    claimed: 'The ticket will be now handled by you!'
+    noData: 'Immernoch kein Server gefunden.',
+    claimed: 'Das Ticket ist jetzt deins.'
 };
