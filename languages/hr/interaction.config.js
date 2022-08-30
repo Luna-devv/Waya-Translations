@@ -360,6 +360,7 @@ module.exports = {
                     timeout: 'Timeout: {time}'
                 },
                 button: {
+                    deleteAll: 'Clear word list',
                     editWords: 'Uredite popis riječi',
                     message: 'Uredi poruku',
                     timeout: 'Trajanje timeout-a',
@@ -374,6 +375,20 @@ module.exports = {
                     }
                 },
                 page: {
+                    delete: {
+                        title: 'Clear Word List',
+                        description: 'Are you sure that you want to clear out all blacklisted words?',
+                        page: {
+                            confirm: {
+                                title: 'Confirmed',
+                                description: 'Successfully cleared out all blacklisted words! You can now dismiss this message.'
+                            },
+                            abord: {
+                                title: 'Aborded',
+                                description: 'No actions have been taken! You can now dismiss this message.'
+                            }
+                        }
+                    },
                     words: {
                         title: 'Riječi',
                         name: 'Zabranjene riječi',
