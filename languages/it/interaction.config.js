@@ -360,6 +360,7 @@ module.exports = {
                     timeout: 'Timeout: {time}'
                 },
                 button: {
+                    deleteAll: 'Clear word list',
                     editWords: 'Edit word list',
                     message: 'Edit Message',
                     timeout: 'Timeout Duration',
@@ -374,6 +375,20 @@ module.exports = {
                     }
                 },
                 page: {
+                    delete: {
+                        title: 'Clear Word List',
+                        description: 'Are you sure that you want to clear out all blacklisted words?',
+                        page: {
+                            confirm: {
+                                title: 'Confirmed',
+                                description: 'Successfully cleared out all blacklisted words! You can now dismiss this message.'
+                            },
+                            abord: {
+                                title: 'Aborded',
+                                description: 'No actions have been taken! You can now dismiss this message.'
+                            }
+                        }
+                    },
                     words: {
                         title: 'Words',
                         name: 'Blacklisted word',
