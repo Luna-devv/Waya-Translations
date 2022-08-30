@@ -18,7 +18,7 @@ module.exports = {
             invite: 'Invite {user}'
         },
         reminderCount: 'U have {count} wemindews',
-        createFirst: 'Use `/wemind cweate` first to cweate a wemindew!'
+        createFirst: 'Use {command} first to create a reminder!'
     },
     remindDelete: { deleted: 'I\'ve deweted ur wemindew with the Id `{id}` qwq' }
 };
