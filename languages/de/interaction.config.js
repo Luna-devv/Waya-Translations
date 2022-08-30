@@ -360,6 +360,7 @@ module.exports = {
                     timeout: 'Stumm: {time}'
                 },
                 button: {
+                    deleteAll: 'Wortliste Leeren',
                     editWords: 'Wörterliste Bearbeiten',
                     message: 'Nachricht Bearbeiten',
                     timeout: 'Stumm Dauer',
@@ -374,6 +375,20 @@ module.exports = {
                     }
                 },
                 page: {
+                    delete: {
+                        title: 'Wortliste Leeren',
+                        description: 'Bist du sicher, dass du alle Blacklisted Wörter löschen willst?',
+                        page: {
+                            confirm: {
+                                title: 'Bestätigt',
+                                description: 'Alle Blacklisted Wörter wurden erfolgreich gelöscht! Du kannst diese Nachricht verwerfen.'
+                            },
+                            abord: {
+                                title: 'Abgebrochen',
+                                description: 'Es wurden keine Aktionen durchgeführt! Du kannst diese Nachricht verwerfen.'
+                            }
+                        }
+                    },
                     words: {
                         title: 'Wörter',
                         name: 'Gespenstes Wort',
