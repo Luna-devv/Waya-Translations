@@ -18,7 +18,7 @@ module.exports = {
             invite: 'Invite {user}'
         },
         reminderCount: 'You have {count} reminders',
-        createFirst: 'Use `/remind create` fist to create a reminder!'
+        createFirst: 'Use {command} first to create a reminder!'
     },
     remindDelete: { deleted: 'I\'ve deleted your reminder with the Id `{id}`' }
 };
