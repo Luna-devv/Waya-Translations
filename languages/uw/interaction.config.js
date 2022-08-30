@@ -360,6 +360,7 @@ module.exports = {
                     timeout: 'Timeout: {time}'
                 },
                 button: {
+                    deleteAll: 'Cweaw wowd wist',
                     editWords: 'Edit wowd wist',
                     message: 'Edit Message',
                     timeout: 'Timeout Duwation',
@@ -374,6 +375,20 @@ module.exports = {
                     }
                 },
                 page: {
+                    delete: {
+                        title: 'Cweaw Wowd Wist',
+                        description: 'r u suwe babe that u :3 want to cweaw out aww bwackwisted wowds? :////',
+                        page: {
+                            confirm: {
+                                title: 'Confiwmed',
+                                description: 'I\'ve successfuwwy cweawed out aww bwackwisted wowds baby giww! u can nyow dismiss this message qwq'
+                            },
+                            abord: {
+                                title: 'Abowded',
+                                description: 'i didnt do anything ok babe? u can nyow dismiss this message.. >.<'
+                            }
+                        }
+                    },
                     words: {
                         title: 'Wowds',
                         name: 'Bwackwisted wowd',
