@@ -9,6 +9,7 @@ module.exports = {
     prefix: {
         name: 'Prefix',
         set: 'Successfully updated the guilds prefix to {prefix}!',
+        noSpace: 'Please note that you cannot use spaces inside of the prefix! It\'s only allowed on the end.',
         disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
     },
     global: {
