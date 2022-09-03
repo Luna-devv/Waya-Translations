@@ -9,6 +9,7 @@ module.exports = {
     prefix: {
         name: 'Prefiks',
         set: 'Uspješno ažuriran prefiks servera na {prefix}!',
+        noSpace: 'Please note that you cannot use spaces inside of the prefix! It\'s only allowed on the end.',
         disclaimer: 'Ovo se NE odnosi na "/" (slash) naredbe'
     },
     global: {
