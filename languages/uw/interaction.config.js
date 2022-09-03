@@ -9,7 +9,7 @@ module.exports = {
     prefix: {
         name: 'Pwefix',
         set: 'Successfuwwy updated the guiwds pwefix to {prefix}!',
-        noSpace: 'Please note that you cannot use spaces inside of the prefix! It\'s only allowed on the end.',
+        noSpace: 'BAbe, pwease nyote that u cannyot use spaces inside of the pwefix... >.< It\'s onwy awwowed on the end giwwwy',
         disclaimer: 'This does NyOT appwy to "/" (Swash)-Commands >~<'
     },
     global: {
