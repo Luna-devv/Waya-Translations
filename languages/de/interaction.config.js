@@ -9,6 +9,7 @@ module.exports = {
     prefix: {
         name: 'Prefix',
         set: 'Servers Prefix erfolgreich auf {prefix} geändert!',
+        noSpace: 'Bitte beachte, dass innerhalb des Prefixes keine Leerzeichen verwenden werden können! Dies ist nur am Ende möglich.',
         disclaimer: 'Das gilt NICHT für "/" (Slash)-Commands'
     },
     global: {
