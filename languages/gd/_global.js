@@ -1,6 +1,7 @@
 module.exports = {
     dms: 'Das nix gehen in DMs.',
     disabled: 'Haha! Du nix dürfen Bot nutzen!',
+    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
     error: 'Huppala! Da is was put.\nJoin ma den Support Server und sag denen die Fehler ID {issue}',
     premium: 'nix für Geringverdiener',
     button: { add: 'hohl dir {name} ok?' },
