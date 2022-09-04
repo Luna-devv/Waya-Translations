@@ -1,6 +1,7 @@
 module.exports = {
     dms: 'Ova komanda ne može biti korištena unutar privatnih poruka.',
     disabled: 'Vi nemate pravo koristiti komande.',
+    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
     error: 'Dogodila se greška prilikom izvršavanja komande.\nPridružite se pomoćnom serveru i prijavite ovaj problem\ns ID-om {issue}!',
     premium: 'potreban premium',
     button: { add: 'Dodaj {name}' },
