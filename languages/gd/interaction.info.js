@@ -5,6 +5,8 @@ module.exports = {
     none: 'none',
     button: {
         ids: 'User IDs',
-        mentions: 'User Mentions'
-    }
+        mentions: 'User Mentions',
+        export: 'Export CSV'
+    },
+    export: 'Download the .CVS below and import it into excel!'
 };
