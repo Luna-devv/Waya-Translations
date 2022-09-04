@@ -9,7 +9,7 @@ module.exports = {
     prefix: {
         name: 'Prefiks',
         set: 'Uspješno ažuriran prefiks servera na {prefix}!',
-        noSpace: 'Please note that you cannot use spaces inside of the prefix! It\'s only allowed on the end.',
+        noSpace: 'Imajte na umu da ne možete koristiti razmake unutar prefiksa! Dopušteno je samo na kraju.',
         disclaimer: 'Ovo se NE odnosi na "/" (slash) naredbe'
     },
     global: {
@@ -361,7 +361,7 @@ module.exports = {
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    deleteAll: 'Clear word list',
+                    deleteAll: 'Očisti popis riječi',
                     editWords: 'Uredite popis riječi',
                     message: 'Uredi poruku',
                     timeout: 'Trajanje timeout-a',
@@ -377,16 +377,16 @@ module.exports = {
                 },
                 page: {
                     delete: {
-                        title: 'Clear Word List',
-                        description: 'Are you sure that you want to clear out all blacklisted words?',
+                        title: 'Očisti popis riječi',
+                        description: 'Jeste li sigurni da želite izbrisati sve riječi s crne liste?',
                         page: {
                             confirm: {
-                                title: 'Confirmed',
-                                description: 'Successfully cleared out all blacklisted words! You can now dismiss this message.'
+                                title: 'Potvrđeno',
+                                description: 'Uspješno su izbrisane sve riječi s crne liste! Sada možete odbaciti ovu poruku.'
                             },
                             abord: {
-                                title: 'Aborded',
-                                description: 'No actions have been taken! You can now dismiss this message.'
+                                title: 'Prekinuto',
+                                description: 'Nisu poduzete nikakve radnje! Sada možete odbaciti ovu poruku.'
                             }
                         }
                     },
