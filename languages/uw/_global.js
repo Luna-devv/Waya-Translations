@@ -1,6 +1,7 @@
 module.exports = {
     dms: 'Babe im so sowwy... this command cannyot be used inside of pwivate messages.',
     disabled: 'What did u do babe? U have been disabwed fwom using me :c',
+    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
     error: 'oh nyoo babe~ i\'m so sowwy, but I\ncaused an ewwow whiwe wunnying this...\nwepowt this issue with id {issue}.. >~<',
     premium: 'pwemium wequiwed',
     button: { add: 'Add {name} nyw' },
