@@ -1,5 +1,8 @@
 module.exports = {
+    lengthFail: 'Naziv oznake ne može biti dulji od {max} znakova!',
     alreadyExists: 'Oznaka s ovim imenom već postoji!',
+    tagsLimit: 'Dosegli ste ograničenje od **{count}/{max} oznaka**, [kontaktirajte podršku]({support})!',
+    regexFail: 'Provjera naziva oznake nije uspjela za korištenje SlashCommands!\nImajte na umu da posebni znakovi nisu dopušteni.',
     alreadyExistsDefault: 'Zadana naredba s ovim imenom već postoji!',
     invalidTag: 'Oznaka s ovim imenom ne postoji!',
     overview: {
@@ -34,7 +37,7 @@ module.exports = {
     list: {
         title: 'Popis oznaka',
         none: 'nema oznaka',
-        disabled: '{amount} ;[oznaka je, oznake su] skrivene zbog nedostajućih dopuštenja'    // ;[singular, plural]
+        disabled: '{amount} ;[oznaka je, oznake su] skrivene zbog nedostajućih dopuštenja'
     },
     deleted: 'Oznaka **{name}** uspješno je izbrisana.'
 };
