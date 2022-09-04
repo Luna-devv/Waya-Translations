@@ -1,5 +1,8 @@
 module.exports = {
+    lengthFail: 'The Tag name cannot be longer than {max} characters!',
     alreadyExists: 'A Tag with this name already exists!',
+    tagsLimit: 'You have reached the guild limit of **{count}/{max} tags**, please [Contact Support]({support})!',
+    regexFail: 'Tag name validation failed for using SlashCommands!\nNote that special characters are not allowed.',
     alreadyExistsDefault: 'A default Command with this name already exists!',
     invalidTag: 'A Tag with this name doesn\'t exist!',
     overview: {
@@ -34,7 +37,7 @@ module.exports = {
     list: {
         title: 'Tag list',
         none: 'no tags',
-        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'    // ;[singular, plural]
+        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'
     },
     deleted: 'Successfully deleted the Tag **{name}**.'
 };

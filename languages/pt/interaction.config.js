@@ -5,10 +5,11 @@
 */
 module.exports = {
     validate: 'Validate data...',
-    notAllowed: 'You can\'t use this menu.',
+    notAllowed: 'You cannot use this menu.',
     prefix: {
         name: 'Prefix',
         set: 'Successfully updated the guilds prefix to {prefix}!',
+        noSpace: 'Please note that you cannot use spaces inside of the prefix! It\'s only allowed on the end.',
         disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
     },
     global: {
@@ -76,7 +77,7 @@ module.exports = {
                 cozy: 'Cozy'
             },
             dupaw: {
-                // This is a name, can't be translated
+                // This is a name, cannot be translated
                 enable: 'Enable dupaw',
                 disable: 'Disable dupaw'
             }
@@ -360,6 +361,7 @@ module.exports = {
                     timeout: 'Timeout: {time}'
                 },
                 button: {
+                    deleteAll: 'Clear word list',
                     editWords: 'Edit word list',
                     message: 'Edit Message',
                     timeout: 'Timeout Duration',
@@ -374,6 +376,20 @@ module.exports = {
                     }
                 },
                 page: {
+                    delete: {
+                        title: 'Clear Word List',
+                        description: 'Are you sure that you want to clear out all blacklisted words?',
+                        page: {
+                            confirm: {
+                                title: 'Confirmed',
+                                description: 'Successfully cleared out all blacklisted words! You can now dismiss this message.'
+                            },
+                            abord: {
+                                title: 'Aborded',
+                                description: 'No actions have been taken! You can now dismiss this message.'
+                            }
+                        }
+                    },
                     words: {
                         title: 'Words',
                         name: 'Blacklisted word',

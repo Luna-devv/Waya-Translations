@@ -1,5 +1,8 @@
 module.exports = {
+    lengthFail: 'Der Tag Name kann nicht länger als {max} Zeichen lang sein!',
     alreadyExists: 'Ein Tag mit diesem Namen existiert bereits!',
+    tagsLimit: 'Du hast das Serverlimit von **{count}/{max} Tags** erreicht, bitte [Support kontaktieren]({support})!',
+    regexFail: 'Überprüfung des Tag Namens fehlgeschlagen bei Verwendung von SlashCommands!\nBeachten Sie, dass Sonderzeichen nicht erlaubt sind.',
     alreadyExistsDefault: 'Ein Standard Befehl mit diesen Namen exestiert bereits!',
     invalidTag: 'Es existiert kein Tag mit diesen Namen!',
     overview: {
@@ -34,7 +37,7 @@ module.exports = {
     list: {
         title: 'Tag liste',
         none: 'keine Tags',
-        disabled: '{amount} ;[Tag, Tags] sind versteckt aufgrund fehlender rechte'    // ;[singular, plural]
+        disabled: '{amount} ;[Tag, Tags] sind versteckt aufgrund fehlender rechte'
     },
     deleted: '**{name}** wurde erfolgreich gelöscht.'
 };

@@ -18,7 +18,7 @@ module.exports = {
             invite: 'Pozovi {user}'
         },
         reminderCount: 'Imate {count} podsjetnika',
-        createFirst: 'Prvo upotrijebite `/remind create` za stvaranje podsjetnika!'
+        createFirst: 'Prvo upotrijebite {command} za izradu podsjetnika!'
     },
     remindDelete: { deleted: 'Izbrisala sam vaš podsjetnik s ID-om `{id}`' }
 };

@@ -5,6 +5,8 @@ module.exports = {
     none: 'keine',
     button: {
         ids: 'User IDs',
-        mentions: 'User Erwähnungen'
-    }
+        mentions: 'User Erwähnungen',
+        export: 'CSV Export'
+    },
+    export: 'Laden die .CVS unten herunter und importiere sie in Excel!'
 };

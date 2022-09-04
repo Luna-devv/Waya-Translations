@@ -9,6 +9,7 @@ module.exports = {
     prefix: {
         name: 'Prefiks',
         set: 'Uspješno ažuriran prefiks servera na {prefix}!',
+        noSpace: 'Imajte na umu da ne možete koristiti razmake unutar prefiksa! Dopušteno je samo na kraju.',
         disclaimer: 'Ovo se NE odnosi na "/" (slash) naredbe'
     },
     global: {
@@ -360,6 +361,7 @@ module.exports = {
                     timeout: 'Timeout: {time}'
                 },
                 button: {
+                    deleteAll: 'Očisti popis riječi',
                     editWords: 'Uredite popis riječi',
                     message: 'Uredi poruku',
                     timeout: 'Trajanje timeout-a',
@@ -374,6 +376,20 @@ module.exports = {
                     }
                 },
                 page: {
+                    delete: {
+                        title: 'Očisti popis riječi',
+                        description: 'Jeste li sigurni da želite izbrisati sve riječi s crne liste?',
+                        page: {
+                            confirm: {
+                                title: 'Potvrđeno',
+                                description: 'Uspješno su izbrisane sve riječi s crne liste! Sada možete odbaciti ovu poruku.'
+                            },
+                            abord: {
+                                title: 'Prekinuto',
+                                description: 'Nisu poduzete nikakve radnje! Sada možete odbaciti ovu poruku.'
+                            }
+                        }
+                    },
                     words: {
                         title: 'Riječi',
                         name: 'Zabranjene riječi',

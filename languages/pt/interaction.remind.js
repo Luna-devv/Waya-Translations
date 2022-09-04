@@ -2,7 +2,7 @@ module.exports = {
     error: {
         tooShort: 'The time cannot be less than **1 second**..',
         tooLong: 'The time cannot be more than **24 days**..',
-        cantFindId: 'I can\'t find any active reminders with the ID `{id}`'
+        cantFindId: 'I cannot find any active reminders with the ID `{id}`'
     },
     reminder: 'Hey {user}, here\'s your reminder.',
     remindSet: {
@@ -18,7 +18,7 @@ module.exports = {
             invite: 'Invite {user}'
         },
         reminderCount: 'You have {count} reminders',
-        createFirst: 'Use `/remind create` fist to create a reminder!'
+        createFirst: 'Use {command} first to create a reminder!'
     },
     remindDelete: { deleted: 'I\'ve deleted your reminder with the Id `{id}`' }
 };
