@@ -1,6 +1,7 @@
 module.exports = {
     dms: 'Dit commando kan niet gebruikt worden in privéberichten.',
     disabled: 'You have been disabled.',
+    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
     error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
     premium: 'premium required',
     button: { add: 'Voeg {name} toe' },
