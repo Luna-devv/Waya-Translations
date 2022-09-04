@@ -1,8 +1,8 @@
 module.exports = {
-    lengthFail: 'The Tag name cannot be longer than {max} characters!',
+    lengthFail: 'OH nyoo babe, the Tag nyame cannyot be wongew than {max} chawactews! >~<',
     alreadyExists: 'A Tag with this nyame awweady exists!',
-    tagsLimit: 'You have reached the guild limit of **{count}/{max} tags**, please [Contact Support]({support})!',
-    regexFail: 'Tag name validation failed for using SlashCommands!\nNote that special characters are not allowed.',
+    tagsLimit: 'babe u have weached the guiwd wimit of **{count}/{max} tags**, pwease [Contact Suppowt]({support}) NyOW!!111 >.<',
+    regexFail: 'Tag nyame vawidation faiwed fow using SwashCommands! ://///\nNyote that speciaw chawactews r nyot awwowed. 😔',
     alreadyExistsDefault: 'A defauwt Command with this nyame awweady exists!',
     invalidTag: 'A Tag with this nyame doesn\'t exist!',
     overview: {
