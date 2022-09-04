@@ -1,6 +1,7 @@
 module.exports = {
     dms: 'Dieser Command kann nicht in privaten Nachrichten ausgeführt werden.',
     disabled: 'Du wurdest vom Bot gesperrt.',
+    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
     error: 'Beim Ausführen des Commands ist ein Fehler aufgetreten\nBitte joine den Support Server und melde diesen Fehler\nmit der Id {issue}!',
     premium: 'enterprise required',
     button: { add: '{name} Einladen' },
