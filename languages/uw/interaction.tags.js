@@ -1,5 +1,8 @@
 module.exports = {
+    lengthFail: 'The Tag name cannot be longer than {max} characters!',
     alreadyExists: 'A Tag with this nyame awweady exists!',
+    tagsLimit: 'You have reached the guild limit of **{count}/{max} tags**, please [Contact Support]({support})!',
+    regexFail: 'Tag name validation failed for using SlashCommands!\nNote that special characters are not allowed.',
     alreadyExistsDefault: 'A defauwt Command with this nyame awweady exists!',
     invalidTag: 'A Tag with this nyame doesn\'t exist!',
     overview: {
@@ -34,7 +37,7 @@ module.exports = {
     list: {
         title: 'Tag wist',
         none: 'nyo tags',
-        disabled: '{amount} ;[tag is, tags r] hidden cuz u r missing pewmissions'    // ;[singular, plural]
+        disabled: '{amount} ;[tag is, tags r] hidden cuz u r missing pewmissions'
     },
     deleted: 'Successfuwwy uwu deweted the Tag **{nyame}**. >.<'
 };
