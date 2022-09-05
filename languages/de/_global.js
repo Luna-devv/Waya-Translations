@@ -1,9 +1,19 @@
 module.exports = {
     dms: 'Dieser Command kann nicht in privaten Nachrichten ausgeführt werden.',
     disabled: 'Du wurdest vom Bot gesperrt.',
-    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
+    mention: 'Hey {user}, benutze **{emote} SlashCommands** um mich aufzusetzen!\nNutze {command} für weitere Informationen.',
     error: 'Beim Ausführen des Commands ist ein Fehler aufgetreten\nBitte joine den Support Server und melde diesen Fehler\nmit der Id {issue}!',
-    premium: 'enterprise required',
+    premium: {
+        required: 'abo erforderlich',
+        embeds: {
+            title: 'Entschuldigung, aber Enterprise ist erforderlich',
+            description: 'Damit wir einen stabilen Bot zur Verfügung stellen können und Geld nicht auf Bäumen wächst, müssen wir nicht wesentliche Funktionen hinter einem Abonnement sperren.'
+        },
+        button: {
+            Subscribe: 'Abonnieren',
+            support: 'Support kontaktieren'
+        }
+    },
     button: { add: '{name} Einladen' },
     permissions: {
         user: {
