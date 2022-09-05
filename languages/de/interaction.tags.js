@@ -8,14 +8,14 @@ module.exports = {
     info: {
         _title: '{name} Tag Info',
         title: {
-            created: 'Created',
-            author: 'Author',
-            usesWeek: 'Uses a week',
-            uses: 'Uses'
+            created: 'Erstellt',
+            author: 'Ersteller',
+            usesWeek: 'Verwendung pro Woche',
+            uses: 'Verwenden'
         },
         description: {
-            uses: '{uses} total',
-            usesWeek: 'average {uses} a week'
+            uses: '{uses} gesamt',
+            usesWeek: 'durchschnittlich {uses} pro Woche'
         }
     },
     overview: {
