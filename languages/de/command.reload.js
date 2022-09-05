@@ -1,1 +1,1 @@
-module.exports = { success: 'Alle Interaktionen wurden in {ms}ms neu geladen' };
+module.exports = { success: 'Reloaded all interactions in {ms}' };
