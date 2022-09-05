@@ -5,6 +5,19 @@ module.exports = {
     regexFail: 'Provjera naziva oznake nije uspjela za korištenje SlashCommands!\nImajte na umu da posebni znakovi nisu dopušteni.',
     alreadyExistsDefault: 'Zadana naredba s ovim imenom već postoji!',
     invalidTag: 'Oznaka s ovim imenom ne postoji!',
+    info: {
+        _title: '{name} Tag Info',
+        title: {
+            created: 'Created',
+            author: 'Author',
+            usesWeek: 'Uses a week',
+            uses: 'Uses'
+        },
+        description: {
+            uses: '{uses} total',
+            usesWeek: 'average {uses} a week'
+        }
+    },
     overview: {
         title: 'Konfiguracija oznake',
         message: 'Poruka',
