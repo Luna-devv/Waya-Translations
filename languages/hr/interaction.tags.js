@@ -6,16 +6,16 @@ module.exports = {
     alreadyExistsDefault: 'Zadana naredba s ovim imenom već postoji!',
     invalidTag: 'Oznaka s ovim imenom ne postoji!',
     info: {
-        _title: '{name} Tag Info',
+        _title: 'Informacije o oznaci {name}',
         title: {
-            created: 'Created',
-            author: 'Author',
-            usesWeek: 'Uses a week',
-            uses: 'Uses'
+            created: 'Napravljeno',
+            author: 'Autor',
+            usesWeek: 'Iskorištenja tjedno',
+            uses: 'Korištenja'
         },
         description: {
-            uses: '{uses} total',
-            usesWeek: 'average {uses} a week'
+            uses: '{uses} ukupno',
+            usesWeek: 'u prosjeku {uses} tjedno'
         }
     },
     overview: {
