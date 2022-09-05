@@ -5,6 +5,19 @@ module.exports = {
     regexFail: 'Tag nyame vawidation faiwed fow using SwashCommands! ://///\nNyote that speciaw chawactews r nyot awwowed. 😔',
     alreadyExistsDefault: 'A defauwt Command with this nyame awweady exists!',
     invalidTag: 'A Tag with this nyame doesn\'t exist!',
+    info: {
+        _title: '{name} Tag Info',
+        title: {
+            created: 'Created',
+            author: 'Author',
+            usesWeek: 'Uses a week',
+            uses: 'Uses'
+        },
+        description: {
+            uses: '{uses} total',
+            usesWeek: 'average {uses} a week'
+        }
+    },
     overview: {
         title: 'Tag Config',
         message: 'Message',
