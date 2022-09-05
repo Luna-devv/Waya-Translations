@@ -6,7 +6,7 @@ module.exports = {
     button: {
         ids: 'ID-ovi korisnika',
         mentions: 'Spominjanja korisnika',
-        export: 'Export CSV'
+        export: 'Izvezi u CSV'
     },
-    export: 'Download the .CVS below and import it into excel!'
+    export: 'Preuzmite .CVS u nastavku i uvezite ju u excel!'
 };
