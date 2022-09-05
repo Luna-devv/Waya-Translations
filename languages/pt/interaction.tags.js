@@ -5,6 +5,19 @@ module.exports = {
     regexFail: 'Tag name validation failed for using SlashCommands!\nNote that special characters are not allowed.',
     alreadyExistsDefault: 'A default Command with this name already exists!',
     invalidTag: 'A Tag with this name doesn\'t exist!',
+    info: {
+        _title: '{name} Tag Info',
+        title: {
+            created: 'Created',
+            author: 'Author',
+            usesWeek: 'Uses a week',
+            uses: 'Uses'
+        },
+        description: {
+            uses: '{uses} total',
+            usesWeek: 'average {uses} a week'
+        }
+    },
     overview: {
         title: 'Tag Config',
         message: 'Message',
