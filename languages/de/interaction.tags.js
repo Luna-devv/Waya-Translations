@@ -5,6 +5,19 @@ module.exports = {
     regexFail: 'Überprüfung des Tag Namens fehlgeschlagen bei Verwendung von SlashCommands!\nBeachten Sie, dass Sonderzeichen nicht erlaubt sind.',
     alreadyExistsDefault: 'Ein Standard Befehl mit diesen Namen exestiert bereits!',
     invalidTag: 'Es existiert kein Tag mit diesen Namen!',
+    info: {
+        _title: '{name} Tag Info',
+        title: {
+            created: 'Created',
+            author: 'Author',
+            usesWeek: 'Uses a week',
+            uses: 'Uses'
+        },
+        description: {
+            uses: '{uses} total',
+            usesWeek: 'average {uses} a week'
+        }
+    },
     overview: {
         title: 'Tag Konfiguration',
         message: 'Nachricht',
