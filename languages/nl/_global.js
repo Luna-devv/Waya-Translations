@@ -3,7 +3,17 @@ module.exports = {
     disabled: 'You have been disabled.',
     mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
     error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
-    premium: 'premium required',
+    premium: {
+        required: 'subscription required',
+        embeds: {
+            title: 'Sorry but Subscription is required',
+            description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
+        },
+        button: {
+            Subscribe: 'Subscribe',
+            support: 'Contact Support'
+        }
+    },
     button: { add: 'Voeg {name} toe' },
     permissions: {
         user: {
