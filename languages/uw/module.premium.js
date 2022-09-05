@@ -1,22 +1,22 @@
 module.exports = {
     end: {
-        title: 'Subscription End',
-        description: 'Hey {user}, we have just recieved your subscription cancelation.\nWe\'re sad yo see you go, but we hope that you enjoyed it! {emote}',
+        title: 'Subscwiption End',
+        description: 'Hey {user}~ we have just wecieved ur subscwiption cancewation.\nWe\'we sad yo see u go, but we hope that u enjoyed it! {emote}',
         notes: {
-            title: 'Please Note:',
-            support: 'If you need help, plese [Contact Support]({support})',
-            reSubscribe: 'If you want to reSubscribe, go to {url}'
+            title: 'Pwease Nyote:',
+            support: 'If u nyeed hewp, pwese [Contact Suppowt]({support})',
+            reSubscribe: 'If u want to weSubscwibe, go to {url}'
         }
     },
     new: {
-        title: 'New Enterprise Subscription',
-        description: 'Hey {user}, we have just recieved your successfull payment. {emote}\nWe are really happy to see you on board, and we hope that you will like using the bot with your new benefits!',
+        title: 'Nyew Entewpwise Subscwiption',
+        description: 'Hey {user}, we have just wecieved ur successfuww payment. {emote}\nWe r weawwy happy to see u on boawd, and we hope that u wiww wike using the bot with ur nyew benyefits!',
         notes: {
-            title: 'Please Note:',
-            setGuild: 'To set a Enterprise guild, please use {command}',
-            getGuild: 'If you need help with [getting your Server\'s Id]({article})',
-            cooldown: 'Don\'t forget that you always have a {days} days cooldown!',
-            support: 'If you need help, plese [Contact Support]({support})'
+            title: 'Pwease Nyote:',
+            setGuild: 'To set a Entewpwise guiwd, pwease use {command}',
+            getGuild: 'If u nyeed hewp with [getting ur Sewvew\'s Id]({article})',
+            cooldown: 'Don\'t fowget that u awways have a {days} days coowdown!',
+            support: 'If u nyeed hewp, pwese [Contact Suppowt]({support})'
         }
     }
 };
