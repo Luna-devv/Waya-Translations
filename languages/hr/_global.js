@@ -1,17 +1,17 @@
 module.exports = {
     dms: 'Ova komanda ne može biti korištena unutar privatnih poruka.',
     disabled: 'Vi nemate pravo koristiti komande.',
-    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
+    mention: 'Hej {user}, upotrijebi **{emote} SlashCommands** da me postaviš.\nKoristite {command} za više informacija.',
     error: 'Dogodila se greška prilikom izvršavanja komande.\nPridružite se pomoćnom serveru i prijavite ovaj problem\ns ID-om {issue}!',
     premium: {
-        required: 'subscription required',
+        required: 'potrebna pretplata',
         embeds: {
-            title: 'Sorry but Subscription is required',
-            description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
+            title: 'Žao nam je, ali potrebna je pretplata',
+            description: 'Kako bismo mogli pružiti stabilnog bota i novac ne raste na drveću, moramo zaključati nebitne značajke iza pretplate.'
         },
         button: {
-            Subscribe: 'Subscribe',
-            support: 'Contact Support'
+            Subscribe: 'Pretplatite se',
+            support: 'Obratite se podršci'
         }
     },
     button: { add: 'Dodaj {name}' },
