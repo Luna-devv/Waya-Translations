@@ -1,22 +1,22 @@
 module.exports = {
     end: {
-        title: 'Subscription End',
-        description: 'Hey {user}, we have just recieved your subscription cancelation.\nWe\'re sad yo see you go, but we hope that you enjoyed it! {emote}',
+        title: 'Kraj pretplate',
+        description: 'Hej {user}, upravo smo primili tvoje otkazivanje pretplate.\nŽao nam je što idete, ali se nadamo da ste uživali! {emote}',
         notes: {
-            title: 'Please Note:',
-            support: 'If you need help, plese [Contact Support]({support})',
-            reSubscribe: 'If you want to reSubscribe, go to {url}'
+            title: 'Imajte na umu:',
+            support: 'Ako trebate pomoć, molimo [Kontaktirajte podršku]({support})',
+            reSubscribe: 'Ako se želite ponovno pretplatiti, idite na {url}'
         }
     },
     new: {
-        title: 'New Enterprise Subscription',
-        description: 'Hey {user}, we have just recieved your successfull payment. {emote}\nWe are really happy to see you on board, and we hope that you will like using the bot with your new benefits!',
+        title: 'Nova Enterprise Pretplata',
+        description: 'Hej {user}, upravo smo primili vašu uspješnu uplatu. {emote}\nZaista smo sretni što vas vidimo sa nama i nadamo se da će vam se svidjeti korištenje bota s novim pogodnostima!',
         notes: {
-            title: 'Please Note:',
-            setGuild: 'To set a Enterprise guild, please use {command}',
-            getGuild: 'If you need help with [getting your Server\'s Id]({article})',
-            cooldown: 'Don\'t forget that you always have a {days} days cooldown!',
-            support: 'If you need help, plese [Contact Support]({support})'
+            title: 'Imajte na umu:',
+            setGuild: 'Da biste postavili Enterprise server, koristite {command}',
+            getGuild: 'Ako trebate pomoć s [dobivanjem Id-a vašeg servera]({article})',
+            cooldown: 'Ne zaboravite da uvijek imate {days} dana hlađenja!',
+            support: 'Ako trebate pomoć, molimo [Kontaktirajte podršku]({support})'
         }
     }
 };
