@@ -1,22 +1,22 @@
 module.exports = {
     end: {
-        title: 'Subscription End',
-        description: 'Hey {user}, we have just recieved your subscription cancelation.\nWe\'re sad yo see you go, but we hope that you enjoyed it! {emote}',
+        title: 'Abonnement Abgelaufen',
+        description: 'Hallo {user}, wir haben soeben Ihr Abonnement storniert.\nWir sind traurig, dass du gehst, aber wir hoffen, dass du es genossen hasst! {emote}',
         notes: {
-            title: 'Please Note:',
-            support: 'If you need help, plese [Contact Support]({support})',
-            reSubscribe: 'If you want to reSubscribe, go to {url}'
+            title: 'Hinweis:',
+            support: 'Wenn du Hilfe brauchst, bitte [Support kontaktieren]({support})',
+            reSubscribe: 'Wenn du abonnieren wieder möchtest, gehe zu {url}'
         }
     },
     new: {
-        title: 'New Enterprise Subscription',
-        description: 'Hey {user}, we have just recieved your successfull payment. {emote}\nWe are really happy to see you on board, and we hope that you will like using the bot with your new benefits!',
+        title: 'Neues Enterprise Abonnement',
+        description: 'Hallo {user}, wir haben gerade Ihre erfolgreiche Zahlung erhalten. {emote}\nWir freuen uns sehr, dich am Bord begrüßen zu dürfen und wir hoffen, dass du gerne den Bot mit deinen neuen Vorteilen benutzt!',
         notes: {
-            title: 'Please Note:',
-            setGuild: 'To set a Enterprise guild, please use {command}',
-            getGuild: 'If you need help with [getting your Server\'s Id]({article})',
-            cooldown: 'Don\'t forget that you always have a {days} days cooldown!',
-            support: 'If you need help, plese [Contact Support]({support})'
+            title: 'Hinweis:',
+            setGuild: 'Um eine Enterprise Server zu setzen, benutze bitte {command}',
+            getGuild: 'Wenn du Hilfe benötigst beim [Erhalten der Server Id]({article})',
+            cooldown: 'Vergiss nicht, dass du immer einen {days} Tage Cooldown hattest!',
+            support: 'Wenn du Hilfe brauchst, bitte [Support kontaktieren]({support})'
         }
     }
 };
