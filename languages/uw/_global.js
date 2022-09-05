@@ -3,7 +3,17 @@ module.exports = {
     disabled: 'What did u do babe? U have been disabwed fwom using me :c',
     mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
     error: 'oh nyoo babe~ i\'m so sowwy, but I\ncaused an ewwow whiwe wunnying this...\nwepowt this issue with id {issue}.. >~<',
-    premium: 'pwemium wequiwed',
+    premium: {
+        required: 'subscription required',
+        embeds: {
+            title: 'Sorry but Subscription is required',
+            description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
+        },
+        button: {
+            Subscribe: 'Subscribe',
+            support: 'Contact Support'
+        }
+    },
     button: { add: 'Add {name} nyw' },
     permissions: {
         user: {
