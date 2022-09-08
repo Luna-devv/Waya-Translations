@@ -6,17 +6,26 @@ module.exports = {
     alreadyExistsDefault: 'A default Command with this name already exists!',
     invalidTag: 'A Tag with this name doesn\'t exist!',
     info: {
-        _title: '{name} Tag Info',
         title: {
             created: 'Created',
             author: 'Author',
             usesWeek: 'Uses a week',
-            uses: 'Uses'
+            uses: 'Uses',
+            last: 'Last Used',
+            name: 'Tag Name',
+            slash: 'Slashcommand',
+            channels: 'Channels'
         },
         description: {
-            uses: '{uses} total',
-            usesWeek: 'average {uses} a week'
-        }
+            usesWeek: '{number}/wk',
+            // wk: week;; example: 43/wk
+            slash: {
+                true: 'active',
+                false: 'not active'
+            },
+            channelUses: '{number} uses'
+        },
+        noData: 'no data'
     },
     overview: {
         title: 'Tag Config',
