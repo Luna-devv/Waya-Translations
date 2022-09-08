@@ -6,17 +6,26 @@ module.exports = {
     alreadyExistsDefault: 'A defauwt Command with this nyame awweady exists!',
     invalidTag: 'A Tag with this nyame doesn\'t exist!',
     info: {
-        _title: '{name} Tag Info',
         title: {
             created: 'Cweated',
             author: 'Authoww',
             usesWeek: 'Uses a Week',
-            uses: 'Uses'
+            uses: 'Uses',
+            last: 'Last Used',
+            name: 'Tag Name',
+            slash: 'Slashcommand',
+            channels: 'Channels'
         },
         description: {
-            uses: '{uses} totaw',
-            usesWeek: 'avewage {uses} a week'
-        }
+            usesWeek: '{number}/wk',
+            // wk: week;; example: 43/wk
+            slash: {
+                true: 'active',
+                false: 'not active'
+            },
+            channelUses: '{number} uses'
+        },
+        noData: 'no data'
     },
     overview: {
         title: 'Tag Config',
