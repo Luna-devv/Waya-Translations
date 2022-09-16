@@ -13,8 +13,12 @@ module.exports = {
             uses: 'Verwenden',
             last: 'Last Used',
             name: 'Tag Name',
-            slash: 'Slashcommand',
-            channels: 'Channels'
+            slash: 'Slash Command',
+            channels: 'Channels',
+            tags: 'Tags',
+            totalUses: 'Total Uses',
+            totalTags: 'Total Tags',
+            totalChannels: 'Total Channels'
         },
         description: {
             usesWeek: '{number}/wk',
@@ -23,7 +27,7 @@ module.exports = {
                 true: 'active',
                 false: 'not active'
             },
-            channelUses: '{number} uses'
+            channelUses: '{number} ;[use, uses]'
         },
         noData: 'no data'
     },
@@ -38,6 +42,25 @@ module.exports = {
             color: {
                 enabled: 'Setzte eine Farbe für das Embed',
                 disabled: 'Benutzte Embeds und wähle eine Farbe'
+            },
+            group: {
+                ticket: {
+                    disable: 'Disable Ticket Tag',
+                    enable: 'Enable Ticket Tag'
+                }
+            },
+            permissions: {
+                Administrator: 'Administrator',
+                ManageChannels: 'Manage Channels',
+                ManageGuild: 'Manage Guild',
+                ManageMessages: 'Manage Messages',
+                ManageNicknames: 'Manage Nicknames',
+                ManageRoles: 'Manage Roles',
+                ManageWebhooks: 'Manage Webhooks',
+                ManageEmojisAndStickers: 'Manage Emojis & Stickers',
+                ManageEvents: 'Manage Events',
+                ManageThreads: 'Manage Threads',
+                none: 'None'
             }
         }
     },
