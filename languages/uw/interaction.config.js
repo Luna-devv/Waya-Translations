@@ -268,8 +268,8 @@ module.exports = {
                 enable: 'Enyabwe Open Weason'
             },
             leaveAutoclose: {
-                disable: 'Disable Leave Autoclose',
-                enable: 'Enable Leave Autoclose'
+                disable: 'Disabwe Weave Autocwose',
+                enable: 'Enyabwe Weave Autocwose'
             },
             texts: 'Change Texts',
             naming: {
