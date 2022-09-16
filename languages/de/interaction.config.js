@@ -268,8 +268,8 @@ module.exports = {
                 enable: 'Öffnungsgrund Aktivieren'
             },
             leaveAutoclose: {
-                disable: 'Disable Leave Autoclose',
-                enable: 'Enable Leave Autoclose'
+                disable: 'Deaktivere Member Leave Auto-Schließen',
+                enable: 'Aktiviere Member Leave Auto-Schließen'
             },
             texts: 'Texte Bearbeiten',
             naming: {
