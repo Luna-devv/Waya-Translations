@@ -11,25 +11,25 @@ module.exports = {
             author: 'Autor',
             usesWeek: 'Iskorištenja tjedno',
             uses: 'Korištenja',
-            last: 'Last Used',
-            name: 'Tag Name',
-            slash: 'Slash Command',
-            channels: 'Channels',
-            tags: 'Tags',
-            totalUses: 'Total Uses',
-            totalTags: 'Total Tags',
-            totalChannels: 'Total Channels'
+            last: 'Zadnje Korišteno',
+            name: 'Naziv oznake',
+            slash: 'Slash Komanda',
+            channels: 'Kanali',
+            tags: 'Oznake',
+            totalUses: 'Ukupna upotreba',
+            totalTags: 'Ukupno oznaka',
+            totalChannels: 'Ukupno kanala'
         },
         description: {
-            usesWeek: '{number}/wk',
+            usesWeek: '{number}/tjedno',
             // wk: week;; example: 43/wk
             slash: {
-                true: 'active',
-                false: 'not active'
+                true: 'aktivno',
+                false: 'nije aktivno'
             },
-            channelUses: '{number} ;[use, uses]'
+            channelUses: '{number} ;[korištenje, korištenja]'
         },
-        noData: 'no data'
+        noData: 'nema podataka'
     },
     overview: {
         title: 'Konfiguracija oznake',
@@ -45,22 +45,22 @@ module.exports = {
             },
             group: {
                 ticket: {
-                    disable: 'Disable Ticket Tag',
-                    enable: 'Enable Ticket Tag'
+                    disable: 'Onemogući Oznaku Ulaznice',
+                    enable: 'Omogući Oznaku Ulaznice'
                 }
             },
             permissions: {
                 Administrator: 'Administrator',
-                ManageChannels: 'Manage Channels',
-                ManageGuild: 'Manage Guild',
-                ManageMessages: 'Manage Messages',
-                ManageNicknames: 'Manage Nicknames',
-                ManageRoles: 'Manage Roles',
-                ManageWebhooks: 'Manage Webhooks',
-                ManageEmojisAndStickers: 'Manage Emojis & Stickers',
-                ManageEvents: 'Manage Events',
-                ManageThreads: 'Manage Threads',
-                none: 'None'
+                ManageChannels: 'Upravljanje Kanalima',
+                ManageGuild: 'Upravljajte Serverom',
+                ManageMessages: 'Upravljajte Porukama',
+                ManageNicknames: 'Upravljajte Nadimcima',
+                ManageRoles: 'Upravljajte Ulogama',
+                ManageWebhooks: 'Upravljajte Webhookovima',
+                ManageEmojisAndStickers: 'Upravljajte Emojijima i Stikerima',
+                ManageEvents: 'Upravljajte Događajima',
+                ManageThreads: 'Upravljajte Nitima',
+                none: 'Nijedno'
             }
         }
     },
