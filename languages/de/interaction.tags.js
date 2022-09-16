@@ -11,25 +11,25 @@ module.exports = {
             author: 'Ersteller',
             usesWeek: 'Verwendung pro Woche',
             uses: 'Verwenden',
-            last: 'Last Used',
+            last: 'Zuletzt Verwendet',
             name: 'Tag Name',
             slash: 'Slash Command',
-            channels: 'Channels',
+            channels: 'Kanäle',
             tags: 'Tags',
-            totalUses: 'Total Uses',
-            totalTags: 'Total Tags',
-            totalChannels: 'Total Channels'
+            totalUses: 'Insgesamte Verwendungen',
+            totalTags: 'Tags Anzahl',
+            totalChannels: 'Alle Kanäle'
         },
         description: {
-            usesWeek: '{number}/wk',
+            usesWeek: '{number}/woche',
             // wk: week;; example: 43/wk
             slash: {
-                true: 'active',
-                false: 'not active'
+                true: 'aktiv',
+                false: 'nicht aktiv'
             },
-            channelUses: '{number} ;[use, uses]'
+            channelUses: '{number} verwendet'
         },
-        noData: 'no data'
+        noData: 'keine Daten'
     },
     overview: {
         title: 'Tag Konfiguration',
@@ -45,22 +45,22 @@ module.exports = {
             },
             group: {
                 ticket: {
-                    disable: 'Disable Ticket Tag',
-                    enable: 'Enable Ticket Tag'
+                    disable: 'Deaktiviere Ticket-Tag',
+                    enable: 'Aktiviere Ticket-Tag'
                 }
             },
             permissions: {
                 Administrator: 'Administrator',
-                ManageChannels: 'Manage Channels',
-                ManageGuild: 'Manage Guild',
-                ManageMessages: 'Manage Messages',
-                ManageNicknames: 'Manage Nicknames',
-                ManageRoles: 'Manage Roles',
-                ManageWebhooks: 'Manage Webhooks',
-                ManageEmojisAndStickers: 'Manage Emojis & Stickers',
-                ManageEvents: 'Manage Events',
-                ManageThreads: 'Manage Threads',
-                none: 'None'
+                ManageChannels: 'Kanäle Verwalten',
+                ManageGuild: 'Server Verwalten',
+                ManageMessages: 'Nachrichten Verwalten',
+                ManageNicknames: 'Nickname Verwalten',
+                ManageRoles: 'Rollen Verwalten',
+                ManageWebhooks: 'WebHooks Verwalten',
+                ManageEmojisAndStickers: 'Emoji & Sticker Verwalten',
+                ManageEvents: 'Events Verwalten',
+                ManageThreads: 'Threads Verwalten',
+                none: 'Keine'
             }
         }
     },
