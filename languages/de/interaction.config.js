@@ -267,6 +267,10 @@ module.exports = {
                 disable: 'Öffnungsgrund Deaktivieren',
                 enable: 'Öffnungsgrund Aktivieren'
             },
+            leaveAutoclose: {
+                disable: 'Disable Leave Autoclose',
+                enable: 'Enable Leave Autoclose'
+            },
             texts: 'Texte Bearbeiten',
             naming: {
                 title: 'Setze einen Benennung Typ',
