@@ -279,6 +279,10 @@ module.exports = {
                 disable: "Disable Open Reason",
                 enable: "Enable Open Reason",
             },
+            leaveAutoclose: {
+                disable: "Disable Leave Autoclose",
+                enable: "Enable Leave Autoclose",
+            },
             texts: "Change Texts",
             naming: {
                 title: "Set a naming type",
