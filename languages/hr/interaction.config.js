@@ -268,8 +268,8 @@ module.exports = {
                 enable: 'Omogući Razlog Otvaranja'
             },
             leaveAutoclose: {
-                disable: 'Disable Leave Autoclose',
-                enable: 'Enable Leave Autoclose'
+                disable: 'Onemogući Automatsko Zatvaranje na Izlasku',
+                enable: 'Omogući Automatsko Zatvaranje na Izlasku'
             },
             texts: 'Promijenite tekstove',
             naming: {
