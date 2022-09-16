@@ -3,5 +3,5 @@ module.exports = {
     none: 'keine Tags',
     disabled: '{amount} ;[Tag, Tags] sind versteckt aufgrund fehlender rechte',
     // ;[singular, plural]
-    ticketUse: 'This Tag is only available in tickets using {user}.'
+    ticketUse: 'Dieser Tag ist nur in Tickets, die {user} benutzen, verfügbar.'
 };
