@@ -267,6 +267,10 @@ module.exports = {
                 disable: 'Disabwe Open Weason',
                 enable: 'Enyabwe Open Weason'
             },
+            leaveAutoclose: {
+                disable: 'Disable Leave Autoclose',
+                enable: 'Enable Leave Autoclose'
+            },
             texts: 'Change Texts',
             naming: {
                 title: 'Set a nyaming type',
