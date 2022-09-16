@@ -11,25 +11,25 @@ module.exports = {
             author: 'Authoww',
             usesWeek: 'Uses a Week',
             uses: 'Uses',
-            last: 'Last Used',
-            name: 'Tag Name',
-            slash: 'Slash Command',
-            channels: 'Channels',
+            last: 'Wast Used',
+            name: 'Tag Nyame',
+            slash: 'Swash Command',
+            channels: 'Channyews',
             tags: 'Tags',
-            totalUses: 'Total Uses',
-            totalTags: 'Total Tags',
-            totalChannels: 'Total Channels'
+            totalUses: 'Totaw Uses',
+            totalTags: 'Totaw Tags',
+            totalChannels: 'Totaw Channyews'
         },
         description: {
             usesWeek: '{number}/wk',
             // wk: week;; example: 43/wk
             slash: {
                 true: 'active',
-                false: 'not active'
+                false: 'nyot active'
             },
             channelUses: '{number} ;[use, uses]'
         },
-        noData: 'no data'
+        noData: 'nyo data'
     },
     overview: {
         title: 'Tag Config',
@@ -45,22 +45,22 @@ module.exports = {
             },
             group: {
                 ticket: {
-                    disable: 'Disable Ticket Tag',
-                    enable: 'Enable Ticket Tag'
+                    disable: 'Disabwe Ticket Tag',
+                    enable: 'Enyabwe Ticket Tag'
                 }
             },
             permissions: {
-                Administrator: 'Administrator',
-                ManageChannels: 'Manage Channels',
-                ManageGuild: 'Manage Guild',
-                ManageMessages: 'Manage Messages',
-                ManageNicknames: 'Manage Nicknames',
-                ManageRoles: 'Manage Roles',
-                ManageWebhooks: 'Manage Webhooks',
-                ManageEmojisAndStickers: 'Manage Emojis & Stickers',
-                ManageEvents: 'Manage Events',
-                ManageThreads: 'Manage Threads',
-                none: 'None'
+                Administrator: 'Adminyistwatow',
+                ManageChannels: 'Manyage Channyews',
+                ManageGuild: 'Manyage Guiwd',
+                ManageMessages: 'Manyage Messages',
+                ManageNicknames: 'Manyage Nyicknyames',
+                ManageRoles: 'Manyage Wowes',
+                ManageWebhooks: 'Manyage Webhooks',
+                ManageEmojisAndStickers: 'Manyage Emojis & Stickews',
+                ManageEvents: 'Manyage Events',
+                ManageThreads: 'Manyage Thweads',
+                none: 'Nyonye'
             }
         }
     },
