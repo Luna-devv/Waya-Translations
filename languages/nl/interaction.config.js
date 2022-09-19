@@ -96,6 +96,7 @@ module.exports = {
             tickets: 'Ticketing',
             moderation: 'Moderation',
             starboard: 'Starboard',
+            misc: 'Miscs',
             staff: 'Manage Guild',
             exit: 'Exit',
             help: 'Support'
@@ -618,6 +619,32 @@ module.exports = {
             blacklistedRole: {
                 title: 'Blacklist Role',
                 name: 'blacklisted Role'
+            }
+        }
+    },
+    misc: {
+        title: 'Configure Miscellaneous',
+        button: { embedMessages: 'Embed Messages' },
+        page: {
+            embedMessages: {
+                title: 'Embed Messages',
+                description: '**What\'s This?**\nIf a message link is being send, {name} will reply with the content of that message!',
+                button: {
+                    allowOtherGuilds: {
+                        enable: 'Allow other Guilds to Embed Messages from here',
+                        disable: 'Disalow other Guilds to Embed Messages from here'
+                    },
+                    color: 'Choose a Color for the Embed',
+                    display: {
+                        title: 'Choose a Author display style',
+                        selected: 'Selected',
+                        option: {
+                            message: 'Message Content',
+                            author: 'Author Field',
+                            footer: 'Footer Field'
+                        }
+                    }
+                }
             }
         }
     },
