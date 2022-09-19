@@ -623,7 +623,7 @@ module.exports = {
         }
     },
     misc: {
-        title: 'Configure Miscellaneous',
+        title: 'Sonstiges Konfigurieren',
         button: { embedMessages: 'Embed Messages' },
         page: {
             embedMessages: {
