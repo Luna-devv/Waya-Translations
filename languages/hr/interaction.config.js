@@ -96,7 +96,7 @@ module.exports = {
             tickets: 'Ulaznice',
             moderation: 'Moderacija',
             starboard: 'Starboard',
-            misc: 'Miscs',
+            misc: 'Razno',
             staff: 'Upravljajte serverom',
             exit: 'Izlaz',
             help: 'Podrška'
@@ -623,25 +623,25 @@ module.exports = {
         }
     },
     misc: {
-        title: 'Configure Miscellaneous',
-        button: { embedMessages: 'Embed Messages' },
+        title: 'Konfiguriraj Razno',
+        button: { embedMessages: 'Embed Poruke' },
         page: {
             embedMessages: {
-                title: 'Embed Messages',
-                description: '**What\'s This?**\nIf a message link is being send, {name} will reply with the content of that message!',
+                title: 'Embed Poruke',
+                description: '**Što je ovo?**\nAko se šalje link poruke, {name} će odgovoriti sa sadržajem te poruke!',
                 button: {
                     allowOtherGuilds: {
-                        enable: 'Allow other Guilds to Embed Messages from here',
-                        disable: 'Disalow other Guilds to Embed Messages from here'
+                        enable: 'Dopustite drugim serverima da ugrađuju poruke odavde',
+                        disable: 'Zabranite drugim serverima da ugrađuju poruke odavde'
                     },
-                    color: 'Choose a Color for the Embed',
+                    color: 'Odaberite boju za Embed',
                     display: {
-                        title: 'Choose a Author display style',
-                        selected: 'Selected',
+                        title: 'Odaberite stil prikaza autora',
+                        selected: 'Odabrano',
                         option: {
-                            message: 'Message Content',
-                            author: 'Author Field',
-                            footer: 'Footer Field'
+                            message: 'Sadržaj Poruke',
+                            author: 'Polje autora',
+                            footer: 'Polje podnožja'
                         }
                     }
                 }
