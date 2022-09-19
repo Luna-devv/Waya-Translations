@@ -624,24 +624,24 @@ module.exports = {
     },
     misc: {
         title: 'Sonstiges Konfigurieren',
-        button: { embedMessages: 'Embed Messages' },
+        button: { embedMessages: 'Nachrichten Einbetten' },
         page: {
             embedMessages: {
-                title: 'Embed Messages',
-                description: '**What\'s This?**\nIf a message link is being send, {name} will reply with the content of that message!',
+                title: 'Nachrichten Einbetten',
+                description: '**Was ist das?**\nWenn ein Nachrichtenlink gesendet wird, wird {name} mit dem Inhalt dieser Nachricht antworten!',
                 button: {
                     allowOtherGuilds: {
-                        enable: 'Allow other Guilds to Embed Messages from here',
-                        disable: 'Disalow other Guilds to Embed Messages from here'
+                        enable: 'Erlaube anderen Serverm Nachrichten von hier einzubetten',
+                        disable: 'Verbiete anderen Serverm Nachrichten von hier einzubetten'
                     },
-                    color: 'Choose a Color for the Embed',
+                    color: 'Wähle eine Farbe für das Embed',
                     display: {
-                        title: 'Choose a Author display style',
-                        selected: 'Selected',
+                        title: 'Wählen Sie einen Autoranzeigestil',
+                        selected: 'Ausgewählt',
                         option: {
-                            message: 'Message Content',
-                            author: 'Author Field',
-                            footer: 'Footer Field'
+                            message: 'Nachrichteninhalt',
+                            author: 'Autor Feld',
+                            footer: 'Footer Feld'
                         }
                     }
                 }
