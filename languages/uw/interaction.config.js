@@ -623,25 +623,25 @@ module.exports = {
         }
     },
     misc: {
-        title: 'Configure Miscellaneous',
+        title: 'Configuwe Miscewwanyeous',
         button: { embedMessages: 'Embed Messages' },
         page: {
             embedMessages: {
                 title: 'Embed Messages',
-                description: '**What\'s This?**\nIf a message link is being send, {name} will reply with the content of that message!',
+                description: '**What\'s This? <a:OwOWhatsThis:658170466703245315>**\nIf a message wink is being send, {name} wiww wepwy with the content of that message ^^',
                 button: {
                     allowOtherGuilds: {
-                        enable: 'Allow other Guilds to Embed Messages from here',
-                        disable: 'Disalow other Guilds to Embed Messages from here'
+                        enable: 'Awwow othew Guiwds to Embed Messages fwom hewe',
+                        disable: 'Disawow othew Guiwds to Embed Messages fwom hewe'
                     },
-                    color: 'Choose a Color for the Embed',
+                    color: 'Choose a Cowow fow the Embed',
                     display: {
-                        title: 'Choose a Author display style',
-                        selected: 'Selected',
+                        title: 'Choose a Authow dispway stywe',
+                        selected: 'Sewected',
                         option: {
                             message: 'Message Content',
-                            author: 'Author Field',
-                            footer: 'Footer Field'
+                            author: 'Authow Fiewd',
+                            footer: 'Footew Fiewd'
                         }
                     }
                 }
