@@ -1,7 +1,7 @@
 module.exports = {
     lengthFail: 'OH nyoo babe, the Tag nyame cannyot be wongew than {max} chawactews! >~<',
     alreadyExists: 'A Tag with this nyame awweady exists!',
-    tagsLimit: 'babe u have weached the guiwd wimit of **{count}/{max} tags**, pwease [Contact Suppowt]({support}) NyOW!!111 >.<',
+    tagsLimit: 'You have reached the guild limit of **{count}/{max} tags**!',
     regexFail: 'Tag nyame vawidation faiwed fow using SwashCommands! ://///\nNyote that speciaw chawactews r nyot awwowed. 😔',
     alreadyExistsDefault: 'A defauwt Command with this nyame awweady exists!',
     invalidTag: 'A Tag with this nyame doesn\'t exist!',
