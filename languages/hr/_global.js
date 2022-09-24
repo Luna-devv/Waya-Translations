@@ -7,10 +7,11 @@ module.exports = {
         required: 'potrebna pretplata',
         embeds: {
             title: 'Žao nam je, ali potrebna je pretplata',
+            title2: 'Sorry but the Subscriptions limit was reached',
             description: 'Kako bismo mogli pružiti stabilnog bota i novac ne raste na drveću, moramo zaključati nebitne značajke iza pretplate.'
         },
         button: {
-            Subscribe: 'Pretplatite se',
+            subscribe: 'Subscribe',
             support: 'Obratite se podršci'
         }
     },
