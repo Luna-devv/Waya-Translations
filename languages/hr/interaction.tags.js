@@ -1,7 +1,7 @@
 module.exports = {
     lengthFail: 'Naziv oznake ne može biti dulji od {max} znakova!',
     alreadyExists: 'Oznaka s ovim imenom već postoji!',
-    tagsLimit: 'Dosegli ste ograničenje od **{count}/{max} oznaka**, [kontaktirajte podršku]({support})!',
+    tagsLimit: 'You have reached the guild limit of **{count}/{max} tags**!',
     regexFail: 'Provjera naziva oznake nije uspjela za korištenje SlashCommands!\nImajte na umu da posebni znakovi nisu dopušteni.',
     alreadyExistsDefault: 'Zadana naredba s ovim imenom već postoji!',
     invalidTag: 'Oznaka s ovim imenom ne postoji!',
