@@ -7,10 +7,11 @@ module.exports = {
         required: "subscription required",
         embeds: {
             title: "Sorry but Subscription is required",
+            title2: 'Sorry but the Subscriptions limit was reached',
             description: "In order we can provide a stable bot and money doesn't grow on trees, we have to lock non essential features behind a Subscription."
         },
         button: {
-            Subscribe: "Subscribe",
+            subscribe: "Subscribe",
             support: 'Contact Support'
         }
     },

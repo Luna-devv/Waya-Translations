@@ -1,7 +1,7 @@
 module.exports = {
     lengthFail: "The Tag name cannot be longer than {max} characters!",
     alreadyExists: "A Tag with this name already exists!",
-    tagsLimit: "You have reached the guild limit of **{count}/{max} tags**, please [Contact Support]({support})!",
+    tagsLimit: "You have reached the guild limit of **{count}/{max} tags**!",
     regexFail: "Tag name validation failed for using SlashCommands!\nNote that special characters are not allowed.",
     alreadyExistsDefault: "A default Command with this name already exists!",
     invalidTag: "A Tag with this name doesn't exist!",
