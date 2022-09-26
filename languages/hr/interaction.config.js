@@ -34,8 +34,8 @@ module.exports = {
             emote: 'Pošaljite emoji koji se treba koristiti kao {what}.'
         },
         success: {
-            set: 'Successfully set {what} to **{data}**.',
-            setCodeblock: 'Successfully set {what} to {data}',
+            set: '{what} je uspješno postavljeno na **{data}**.',
+            setCodeblock: '{what} je uspješno postavljeno na {data}',
             removed: 'Uspješno uklonjeno {what}.',
             fail: 'Ovo {what} ne postoji u ovom serveru..',
             lengthFail: '{what} je duži od {max} znakova! ({length} znakova, {relative} previše)',
@@ -98,7 +98,7 @@ module.exports = {
             moderation: 'Moderacija',
             starboard: 'Starboard',
             misc: 'Razno',
-            followNews: 'Follow News',
+            followNews: 'Pratite Vijesti',
             staff: 'Upravljajte serverom',
             exit: 'Izlaz',
             help: 'Podrška'
@@ -628,7 +628,7 @@ module.exports = {
         title: 'Konfiguriraj Razno',
         button: {
             embedMessages: 'Embed Poruke',
-            levelRoles: 'Level Roles'
+            levelRoles: 'Level Uloge'
         },
         page: {
             embedMessages: {
@@ -652,7 +652,7 @@ module.exports = {
                 }
             },
             levelRoles: {
-                title: 'Level Roles',
+                title: 'Level Uloge',
                 option: {
                     roles: 'Roles: **{count}/{max}**',
                     roles_upsell: 'Subscribe to get {count}+',
