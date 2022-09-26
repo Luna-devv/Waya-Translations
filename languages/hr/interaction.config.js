@@ -654,60 +654,60 @@ module.exports = {
             levelRoles: {
                 title: 'Level Uloge',
                 option: {
-                    roles: 'Roles: **{count}/{max}**',
-                    roles_upsell: 'Subscribe to get {count}+',
-                    channel: 'Channel: {channel}',
-                    channel_none: 'message channel',
-                    message: 'Message: {message}'
+                    roles: 'Uloge: **{count}/{max}**',
+                    roles_upsell: 'Pretplatite se da biste dobili {count}+',
+                    channel: 'Kanal: {channel}',
+                    channel_none: 'kanal poruka',
+                    message: 'Poruka: {message}'
                 },
                 button: {
-                    message: 'Edit Message',
-                    addrole: 'Add Level',
+                    message: 'Uredi poruku',
+                    addrole: 'Dodaj Level',
                     select: {
-                        title: 'Chose a trigger you want to edit',
-                        editing: 'Editing',
+                        title: 'Odaberite okidač koji želite urediti',
+                        editing: 'Uređivanje',
                         option: {
-                            name: '{messages} messages',
-                            description: 'Role: {role}'
+                            name: '{messages} poruka',
+                            description: 'Uloga: {role}'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Level Up reply'
+                        title: 'Poruka',
+                        name: 'Odgovor na višu razinu'
                     },
                     channel: {
-                        title: 'Channel',
-                        name: 'Level Up Channel'
+                        title: 'Kanal',
+                        name: 'Kanal za višu razinu'
                     },
                     addRole: {
-                        title: 'New Level Role',
-                        limit: 'You have reached the guild limit of **{count}/{max} level roles**!',
-                        alreadExists: 'A reward role for **{messages} messages** already has been set with the **{role} role**.',
-                        success: 'Successfully added this Level Role. Each user who reaches **{messages} messages** will recieve the **{role} role** now!',
+                        title: 'Nova Uloga Razine',
+                        limit: 'Dosegli ste ograničenje servera od **{count}/{max} uloga na razini**!',
+                        alreadExists: 'Nagradbena uloga za **{messages} poruka** već je postavljena ulogom **{role}**.',
+                        success: 'Uspješno ste dodali ovu ulogu razine. Svaki korisnik koji dođe do **{messages} poruka** sada će dobiti ulogu **{role}**!',
                         page: {
                             messageCount: {
-                                title: 'Message Count',
-                                name: 'required Message Count',
-                                description: 'Send a number, that the user will required to have as in message count to get the selected role.'
+                                title: 'Broj Poruka',
+                                name: 'potreban broj poruka',
+                                description: 'Pošaljite broj koji će korisnik morati imati kao u broju poruka kako bi dobio odabranu ulogu.'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'present Role'
+                                title: 'Uloga',
+                                name: 'sadašnja uloga'
                             }
                         }
                     },
                     editRole: {
-                        title: 'Edit Level Role',
+                        title: 'Uredi razinu uloge',
                         option: {
-                            role: 'Role: {role}',
-                            messages: 'Messages: {messages}'
+                            role: 'Uloga: {role}',
+                            messages: 'Poruka: {messages}'
                         },
                         button: {
-                            messages: 'Change Message Count',
-                            role: 'Change Role',
-                            delete: 'Delete'
+                            messages: 'Promjena broja poruka',
+                            role: 'Promjena uloge',
+                            delete: 'Izbrišite'
                         }
                     }
                 }
@@ -715,8 +715,8 @@ module.exports = {
         }
     },
     followNews: {
-        title: 'Follow News Updates',
-        name: 'Follow News'
+        title: 'Pratite novosti',
+        name: 'Pratite novosti'
     },
     staff: {
         title: 'Upravljaj {name}',
