@@ -300,10 +300,15 @@ module.exports = {
                 button: {
                     texts: 'Preview ticket',
                     topic: 'Change topic',
+                    title: 'Change title text',
                     unclaimed: 'Change unclaimed text',
                     claimed: 'Change claimed text'
                 },
                 page: {
+                    title: {
+                        title: 'Title',
+                        name: 'Ticket embed title'
+                    },
                     unclaimed: {
                         title: 'Unclaimed',
                         name: 'Unclaimed Ticket description'
@@ -564,6 +569,10 @@ module.exports = {
             reply: {
                 disable: 'Hide Replied to',
                 enable: 'Show Replied to'
+            },
+            edits: {
+                disable: 'Disalow Edits',
+                enable: 'Allow Edits'
             },
             logging: {
                 disable: 'Disable Logging',
