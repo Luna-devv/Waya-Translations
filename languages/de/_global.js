@@ -7,11 +7,11 @@ module.exports = {
         required: 'abo erforderlich',
         embeds: {
             title: 'Entschuldigung, aber Enterprise ist erforderlich',
-            title2: 'Sorry but the Subscriptions limit was reached',
+            title2: 'Sorry, aber das Enterprise Limit wurde erreicht',
             description: 'Damit wir einen stabilen Bot zur Verfügung stellen können und Geld nicht auf Bäumen wächst, müssen wir nicht wesentliche Funktionen hinter einem Abonnement sperren.'
         },
         button: {
-            subscribe: 'Subscribe',
+            subscribe: 'Abonnieren',
             support: 'Support kontaktieren'
         }
     },
