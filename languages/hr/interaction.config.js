@@ -300,10 +300,15 @@ module.exports = {
                 button: {
                     texts: 'Pregled ulaznice',
                     topic: 'Promijenite temu',
+                    title: 'Change title text',
                     unclaimed: 'Promijenite nepotraživani tekst',
                     claimed: 'Promijenite deklarirani tekst'
                 },
                 page: {
+                    title: {
+                        title: 'Title',
+                        name: 'Ticket embed title'
+                    },
                     unclaimed: {
                         title: 'Nepotraživano',
                         name: 'Opis nenajavljene karte'
@@ -564,6 +569,10 @@ module.exports = {
             reply: {
                 disable: 'Sakrij odgovor od',
                 enable: 'Prikaži odgovor od'
+            },
+            edits: {
+                disable: 'Disalow Edits',
+                enable: 'Allow Edits'
             },
             logging: {
                 disable: 'Onemogući evidentiranje',
