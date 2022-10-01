@@ -82,7 +82,10 @@ module.exports = {
         command: "Try it out with {command}",
     },
     list: {
-        title: "Tag list",
+        title: {
+            text: 'Text ;[Command, Commands]',
+            slash: 'Slash ;[Command, Commands]',
+        },
         none: "no tags",
         disabled: "{amount} ;[tag is, tags are] hidden due to missing permissions", // ;[singular, plural]
     },
