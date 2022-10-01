@@ -300,10 +300,15 @@ module.exports = {
                 button: {
                     texts: 'Pweview ticket',
                     topic: 'Change topic',
+                    title: 'Change title text',
                     unclaimed: 'Change uncwaimed text',
                     claimed: 'Change cwaimed text'
                 },
                 page: {
+                    title: {
+                        title: 'Title',
+                        name: 'Ticket embed title'
+                    },
                     unclaimed: {
                         title: 'Uncwaimed',
                         name: 'Uncwaimed Ticket descwiption'
@@ -564,6 +569,10 @@ module.exports = {
             reply: {
                 disable: 'Hide wepwied to',
                 enable: 'Show wepwied to'
+            },
+            edits: {
+                disable: 'Disalow Edits',
+                enable: 'Allow Edits'
             },
             logging: {
                 disable: 'Disabwe Wogging',
