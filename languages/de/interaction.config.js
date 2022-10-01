@@ -300,10 +300,15 @@ module.exports = {
                 button: {
                     texts: 'Vorschau Ticket',
                     topic: 'Thema Bearbeiten',
+                    title: 'Change title text',
                     unclaimed: 'Unclaim Text Bearbeiten',
                     claimed: 'Claim Text Bearbeiten'
                 },
                 page: {
+                    title: {
+                        title: 'Title',
+                        name: 'Ticket embed title'
+                    },
                     unclaimed: {
                         title: 'Unclaimed',
                         name: 'Unclaimed Ticket Beschreibung'
@@ -564,6 +569,10 @@ module.exports = {
             reply: {
                 disable: 'Originale Nachricht Verstecken',
                 enable: 'Originale Nachricht Anzeigen'
+            },
+            edits: {
+                disable: 'Disalow Edits',
+                enable: 'Allow Edits'
             },
             logging: {
                 disable: 'Logging Deaktivieren',
