@@ -6,11 +6,13 @@ module.exports = {
     joined: 'Beigetreten',
     invited: 'Eingeladen',
     none: 'keine',
+    timeout: 'on Timeout for {time}',
     pronouns: {
         title: 'Pronomen',
         none: 'Keine Pronomen ausgewählt'
     },
     button: {
+        guildAvatar: 'Per-Guild Avatar URL',
         avatar: 'Avatar URL',
         banner: 'Banner URL'
     },

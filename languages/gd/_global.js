@@ -1,8 +1,20 @@
 module.exports = {
     dms: 'Das nix gehen in DMs.',
     disabled: 'Haha! Du nix dürfen Bot nutzen!',
+    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
     error: 'Huppala! Da is was put.\nJoin ma den Support Server und sag denen die Fehler ID {issue}',
-    premium: 'nix für Geringverdiener',
+    premium: {
+        required: 'subscription required',
+        embeds: {
+            title: 'Sorry but Subscription is required',
+            title2: 'Sorry but the Subscriptions limit was reached',
+            description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
+        },
+        button: {
+            subscribe: 'Subscribe',
+            support: 'Contact Support'
+        }
+    },
     button: { add: 'hohl dir {name} ok?' },
     permissions: {
         user: {

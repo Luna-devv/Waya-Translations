@@ -1,8 +1,20 @@
 module.exports = {
     dms: 'Babe im so sowwy... this command cannyot be used inside of pwivate messages.',
     disabled: 'What did u do babe? U have been disabwed fwom using me :c',
+    mention: 'Hey {user}, use **{emote} SwashCommands** to set me up!\nUse {command} fow mowe infowmations.',
     error: 'oh nyoo babe~ i\'m so sowwy, but I\ncaused an ewwow whiwe wunnying this...\nwepowt this issue with id {issue}.. >~<',
-    premium: 'pwemium wequiwed',
+    premium: {
+        required: 'subscwiption wequiwed',
+        embeds: {
+            title: 'Sowwy but Subscwiption is wequiwed >~<',
+            title2: 'Sorry but the Subscriptions limit was reached',
+            description: 'Uh sowwy babe, but in owdew we can pwovide a stabwe bot and monyey doesn\'t gwow on twees, we have to wock nyon essentiaw featuwes behind a Subscwiption. 😔'
+        },
+        button: {
+            subscribe: 'Subscribe',
+            support: 'Contact Suppowt'
+        }
+    },
     button: { add: 'Add {name} nyw' },
     permissions: {
         user: {

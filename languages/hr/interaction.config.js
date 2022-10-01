@@ -34,7 +34,8 @@ module.exports = {
             emote: 'Pošaljite emoji koji se treba koristiti kao {what}.'
         },
         success: {
-            set: 'Uspješno postavljeno {what} na **{data}**',
+            set: '{what} je uspješno postavljeno na **{data}**.',
+            setCodeblock: '{what} je uspješno postavljeno na {data}',
             removed: 'Uspješno uklonjeno {what}.',
             fail: 'Ovo {what} ne postoji u ovom serveru..',
             lengthFail: '{what} je duži od {max} znakova! ({length} znakova, {relative} previše)',
@@ -96,6 +97,8 @@ module.exports = {
             tickets: 'Ulaznice',
             moderation: 'Moderacija',
             starboard: 'Starboard',
+            misc: 'Razno',
+            followNews: 'Pratite Vijesti',
             staff: 'Upravljajte serverom',
             exit: 'Izlaz',
             help: 'Podrška'
@@ -267,6 +270,10 @@ module.exports = {
                 disable: 'Onemogući Razlog Otvaranja',
                 enable: 'Omogući Razlog Otvaranja'
             },
+            leaveAutoclose: {
+                disable: 'Onemogući Automatsko Zatvaranje na Izlasku',
+                enable: 'Omogući Automatsko Zatvaranje na Izlasku'
+            },
             texts: 'Promijenite tekstove',
             naming: {
                 title: 'Postavite vrstu imenovanja',
@@ -293,10 +300,15 @@ module.exports = {
                 button: {
                     texts: 'Pregled ulaznice',
                     topic: 'Promijenite temu',
+                    title: 'Change title text',
                     unclaimed: 'Promijenite nepotraživani tekst',
                     claimed: 'Promijenite deklarirani tekst'
                 },
                 page: {
+                    title: {
+                        title: 'Title',
+                        name: 'Ticket embed title'
+                    },
                     unclaimed: {
                         title: 'Nepotraživano',
                         name: 'Opis nenajavljene karte'
@@ -558,6 +570,10 @@ module.exports = {
                 disable: 'Sakrij odgovor od',
                 enable: 'Prikaži odgovor od'
             },
+            edits: {
+                disable: 'Disalow Edits',
+                enable: 'Allow Edits'
+            },
             logging: {
                 disable: 'Onemogući evidentiranje',
                 enable: 'Omogući evidentiranje'
@@ -616,6 +632,100 @@ module.exports = {
                 name: 'zabranjena Uloga'
             }
         }
+    },
+    misc: {
+        title: 'Konfiguriraj Razno',
+        button: {
+            embedMessages: 'Embed Poruke',
+            levelRoles: 'Level Uloge'
+        },
+        page: {
+            embedMessages: {
+                title: 'Embed Poruke',
+                description: '**Što je ovo?**\nAko se šalje link poruke, {name} će odgovoriti sa sadržajem te poruke!',
+                button: {
+                    allowOtherGuilds: {
+                        enable: 'Dopustite drugim serverima da ugrađuju poruke odavde',
+                        disable: 'Zabranite drugim serverima da ugrađuju poruke odavde'
+                    },
+                    color: 'Odaberite boju za Embed',
+                    display: {
+                        title: 'Odaberite stil prikaza autora',
+                        selected: 'Odabrano',
+                        option: {
+                            message: 'Sadržaj Poruke',
+                            author: 'Polje autora',
+                            footer: 'Polje podnožja'
+                        }
+                    }
+                }
+            },
+            levelRoles: {
+                title: 'Level Uloge',
+                option: {
+                    roles: 'Uloge: **{count}/{max}**',
+                    roles_upsell: 'Pretplatite se da biste dobili {count}+',
+                    channel: 'Kanal: {channel}',
+                    channel_none: 'kanal poruka',
+                    message: 'Poruka: {message}'
+                },
+                button: {
+                    message: 'Uredi poruku',
+                    addrole: 'Dodaj Level',
+                    select: {
+                        title: 'Odaberite okidač koji želite urediti',
+                        editing: 'Uređivanje',
+                        option: {
+                            name: '{messages} poruka',
+                            description: 'Uloga: {role}'
+                        }
+                    }
+                },
+                page: {
+                    message: {
+                        title: 'Poruka',
+                        name: 'Odgovor na višu razinu'
+                    },
+                    channel: {
+                        title: 'Kanal',
+                        name: 'Kanal za višu razinu'
+                    },
+                    addRole: {
+                        title: 'Nova Uloga Razine',
+                        limit: 'Dosegli ste ograničenje servera od **{count}/{max} uloga na razini**!',
+                        alreadExists: 'Nagradbena uloga za **{messages} poruka** već je postavljena ulogom **{role}**.',
+                        success: 'Uspješno ste dodali ovu ulogu razine. Svaki korisnik koji dođe do **{messages} poruka** sada će dobiti ulogu **{role}**!',
+                        page: {
+                            messageCount: {
+                                title: 'Broj Poruka',
+                                name: 'potreban broj poruka',
+                                description: 'Pošaljite broj koji će korisnik morati imati kao u broju poruka kako bi dobio odabranu ulogu.'
+                            },
+                            role: {
+                                title: 'Uloga',
+                                name: 'sadašnja uloga'
+                            }
+                        }
+                    },
+                    editRole: {
+                        title: 'Uredi razinu uloge',
+                        option: {
+                            role: 'Uloga: {role}',
+                            messages: 'Poruka: {messages}'
+                        },
+                        button: {
+                            messages: 'Promjena broja poruka',
+                            role: 'Promjena uloge',
+                            delete: 'Izbrišite'
+                        }
+                    }
+                }
+            }
+        }
+    },
+    followNews: {
+        title: 'Pratite novosti',
+        name: 'Pratite novosti'
     },
     staff: {
         title: 'Upravljaj {name}',

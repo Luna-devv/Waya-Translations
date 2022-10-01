@@ -34,7 +34,8 @@ module.exports = {
             emote: 'Send an Emoji which shouwd be used as {what}.'
         },
         success: {
-            set: 'Successfuwwy set {what} to **{data}**',
+            set: 'Successfully set {what} to **{data}**.',
+            setCodeblock: 'Successfully set {what} to {data}',
             removed: 'Successfuwwy wemuvd the {what}.',
             fail: 'This {what} does nyot exist in this guiwd.. ;////',
             lengthFail: 'The {what} is wongew than {max} chawactews! ({length} uwu chawactews, {relative} too much) :////',
@@ -96,6 +97,8 @@ module.exports = {
             tickets: 'Ticketing',
             moderation: 'Modewation',
             starboard: 'Stawboawd',
+            misc: 'Miscs',
+            followNews: 'Follow News',
             staff: 'Manyage Guiwd',
             exit: 'GOO PWEASE',
             help: 'Suppowt'
@@ -267,6 +270,10 @@ module.exports = {
                 disable: 'Disabwe Open Weason',
                 enable: 'Enyabwe Open Weason'
             },
+            leaveAutoclose: {
+                disable: 'Disabwe Weave Autocwose',
+                enable: 'Enyabwe Weave Autocwose'
+            },
             texts: 'Change Texts',
             naming: {
                 title: 'Set a nyaming type',
@@ -293,10 +300,15 @@ module.exports = {
                 button: {
                     texts: 'Pweview ticket',
                     topic: 'Change topic',
+                    title: 'Change title text',
                     unclaimed: 'Change uncwaimed text',
                     claimed: 'Change cwaimed text'
                 },
                 page: {
+                    title: {
+                        title: 'Title',
+                        name: 'Ticket embed title'
+                    },
                     unclaimed: {
                         title: 'Uncwaimed',
                         name: 'Uncwaimed Ticket descwiption'
@@ -558,6 +570,10 @@ module.exports = {
                 disable: 'Hide wepwied to',
                 enable: 'Show wepwied to'
             },
+            edits: {
+                disable: 'Disalow Edits',
+                enable: 'Allow Edits'
+            },
             logging: {
                 disable: 'Disabwe Wogging',
                 enable: 'Enyabwe Wogging'
@@ -616,6 +632,100 @@ module.exports = {
                 name: 'bwackwisted Wowe'
             }
         }
+    },
+    misc: {
+        title: 'Configuwe Miscewwanyeous',
+        button: {
+            embedMessages: 'Embed Messages',
+            levelRoles: 'Level Roles'
+        },
+        page: {
+            embedMessages: {
+                title: 'Embed Messages',
+                description: '**What\'s This? <a:OwOWhatsThis:658170466703245315>**\nIf a message wink is being send, {name} wiww wepwy with the content of that message ^^',
+                button: {
+                    allowOtherGuilds: {
+                        enable: 'Awwow othew Guiwds to Embed Messages fwom hewe',
+                        disable: 'Disawow othew Guiwds to Embed Messages fwom hewe'
+                    },
+                    color: 'Choose a Cowow fow the Embed',
+                    display: {
+                        title: 'Choose a Authow dispway stywe',
+                        selected: 'Sewected',
+                        option: {
+                            message: 'Message Content',
+                            author: 'Authow Fiewd',
+                            footer: 'Footew Fiewd'
+                        }
+                    }
+                }
+            },
+            levelRoles: {
+                title: 'Level Roles',
+                option: {
+                    roles: 'Roles: **{count}/{max}**',
+                    roles_upsell: 'Subscribe to get {count}+',
+                    channel: 'Channel: {channel}',
+                    channel_none: 'message channel',
+                    message: 'Message: {message}'
+                },
+                button: {
+                    message: 'Edit Message',
+                    addrole: 'Add Level',
+                    select: {
+                        title: 'Chose a trigger you want to edit',
+                        editing: 'Editing',
+                        option: {
+                            name: '{messages} messages',
+                            description: 'Role: {role}'
+                        }
+                    }
+                },
+                page: {
+                    message: {
+                        title: 'Message',
+                        name: 'Level Up reply'
+                    },
+                    channel: {
+                        title: 'Channel',
+                        name: 'Level Up Channel'
+                    },
+                    addRole: {
+                        title: 'New Level Role',
+                        limit: 'You have reached the guild limit of **{count}/{max} level roles**!',
+                        alreadExists: 'A reward role for **{messages} messages** already has been set with the **{role} role**.',
+                        success: 'Successfully added this Level Role. Each user who reaches **{messages} messages** will recieve the **{role} role** now!',
+                        page: {
+                            messageCount: {
+                                title: 'Message Count',
+                                name: 'required Message Count',
+                                description: 'Send a number, that the user will required to have as in message count to get the selected role.'
+                            },
+                            role: {
+                                title: 'Role',
+                                name: 'present Role'
+                            }
+                        }
+                    },
+                    editRole: {
+                        title: 'Edit Level Role',
+                        option: {
+                            role: 'Role: {role}',
+                            messages: 'Messages: {messages}'
+                        },
+                        button: {
+                            messages: 'Change Message Count',
+                            role: 'Change Role',
+                            delete: 'Delete'
+                        }
+                    }
+                }
+            }
+        }
+    },
+    followNews: {
+        title: 'Follow News Updates',
+        name: 'Follow News'
     },
     staff: {
         title: 'Manyage {name}',

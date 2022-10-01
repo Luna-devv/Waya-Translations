@@ -34,7 +34,8 @@ module.exports = {
             emote: 'Send an Emoji which should be used as {what}.'
         },
         success: {
-            set: 'Successfully set {what} to **{data}**',
+            set: 'Successfully set {what} to **{data}**.',
+            setCodeblock: 'Successfully set {what} to {data}',
             removed: 'Successfully removed the {what}.',
             fail: 'This {what} does not exist in this guild..',
             lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
@@ -96,6 +97,8 @@ module.exports = {
             tickets: 'Ticketing',
             moderation: 'Moderation',
             starboard: 'Starboard',
+            misc: 'Miscs',
+            followNews: 'Follow News',
             staff: 'Manage Guild',
             exit: 'Exit',
             help: 'Support'
@@ -267,6 +270,10 @@ module.exports = {
                 disable: 'Disable Open Reason',
                 enable: 'Enable Open Reason'
             },
+            leaveAutoclose: {
+                disable: 'Disable Leave Autoclose',
+                enable: 'Enable Leave Autoclose'
+            },
             texts: 'Change Texts',
             naming: {
                 title: 'Set a naming type',
@@ -293,10 +300,15 @@ module.exports = {
                 button: {
                     texts: 'Preview ticket',
                     topic: 'Change topic',
+                    title: 'Change title text',
                     unclaimed: 'Change unclaimed text',
                     claimed: 'Change claimed text'
                 },
                 page: {
+                    title: {
+                        title: 'Title',
+                        name: 'Ticket embed title'
+                    },
                     unclaimed: {
                         title: 'Unclaimed',
                         name: 'Unclaimed Ticket description'
@@ -558,6 +570,10 @@ module.exports = {
                 disable: 'Hide Replied to',
                 enable: 'Show Replied to'
             },
+            edits: {
+                disable: 'Disalow Edits',
+                enable: 'Allow Edits'
+            },
             logging: {
                 disable: 'Disable Logging',
                 enable: 'Enable Logging'
@@ -616,6 +632,100 @@ module.exports = {
                 name: 'blacklisted Role'
             }
         }
+    },
+    misc: {
+        title: 'Configure Miscellaneous',
+        button: {
+            embedMessages: 'Embed Messages',
+            levelRoles: 'Level Roles'
+        },
+        page: {
+            embedMessages: {
+                title: 'Embed Messages',
+                description: '**What\'s This?**\nIf a message link is being send, {name} will reply with the content of that message!',
+                button: {
+                    allowOtherGuilds: {
+                        enable: 'Allow other Guilds to Embed Messages from here',
+                        disable: 'Disalow other Guilds to Embed Messages from here'
+                    },
+                    color: 'Choose a Color for the Embed',
+                    display: {
+                        title: 'Choose a Author display style',
+                        selected: 'Selected',
+                        option: {
+                            message: 'Message Content',
+                            author: 'Author Field',
+                            footer: 'Footer Field'
+                        }
+                    }
+                }
+            },
+            levelRoles: {
+                title: 'Level Roles',
+                option: {
+                    roles: 'Roles: **{count}/{max}**',
+                    roles_upsell: 'Subscribe to get {count}+',
+                    channel: 'Channel: {channel}',
+                    channel_none: 'message channel',
+                    message: 'Message: {message}'
+                },
+                button: {
+                    message: 'Edit Message',
+                    addrole: 'Add Level',
+                    select: {
+                        title: 'Chose a trigger you want to edit',
+                        editing: 'Editing',
+                        option: {
+                            name: '{messages} messages',
+                            description: 'Role: {role}'
+                        }
+                    }
+                },
+                page: {
+                    message: {
+                        title: 'Message',
+                        name: 'Level Up reply'
+                    },
+                    channel: {
+                        title: 'Channel',
+                        name: 'Level Up Channel'
+                    },
+                    addRole: {
+                        title: 'New Level Role',
+                        limit: 'You have reached the guild limit of **{count}/{max} level roles**!',
+                        alreadExists: 'A reward role for **{messages} messages** already has been set with the **{role} role**.',
+                        success: 'Successfully added this Level Role. Each user who reaches **{messages} messages** will recieve the **{role} role** now!',
+                        page: {
+                            messageCount: {
+                                title: 'Message Count',
+                                name: 'required Message Count',
+                                description: 'Send a number, that the user will required to have as in message count to get the selected role.'
+                            },
+                            role: {
+                                title: 'Role',
+                                name: 'present Role'
+                            }
+                        }
+                    },
+                    editRole: {
+                        title: 'Edit Level Role',
+                        option: {
+                            role: 'Role: {role}',
+                            messages: 'Messages: {messages}'
+                        },
+                        button: {
+                            messages: 'Change Message Count',
+                            role: 'Change Role',
+                            delete: 'Delete'
+                        }
+                    }
+                }
+            }
+        }
+    },
+    followNews: {
+        title: 'Follow News Updates',
+        name: 'Follow News'
     },
     staff: {
         title: 'Manage {name}',

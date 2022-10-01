@@ -1,1 +1,1 @@
-module.exports = { success: 'wewoaded aww ;-;;; intewactions >.< in {ms}ms  babe' };
+module.exports = { success: 'babe, i ve wewoaded aww intewactions in {ms}' };

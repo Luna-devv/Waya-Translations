@@ -1,10 +1,36 @@
 module.exports = {
     lengthFail: 'Naziv oznake ne može biti dulji od {max} znakova!',
     alreadyExists: 'Oznaka s ovim imenom već postoji!',
-    tagsLimit: 'Dosegli ste ograničenje od **{count}/{max} oznaka**, [kontaktirajte podršku]({support})!',
+    tagsLimit: 'Dosegli ste ograničenje servera od **{count}/{max} oznaka**!',
     regexFail: 'Provjera naziva oznake nije uspjela za korištenje SlashCommands!\nImajte na umu da posebni znakovi nisu dopušteni.',
     alreadyExistsDefault: 'Zadana naredba s ovim imenom već postoji!',
     invalidTag: 'Oznaka s ovim imenom ne postoji!',
+    info: {
+        title: {
+            created: 'Napravljeno',
+            author: 'Autor',
+            usesWeek: 'Iskorištenja tjedno',
+            uses: 'Korištenja',
+            last: 'Zadnje Korišteno',
+            name: 'Naziv oznake',
+            slash: 'Slash Komanda',
+            channels: 'Kanali',
+            tags: 'Oznake',
+            totalUses: 'Ukupna upotreba',
+            totalTags: 'Ukupno oznaka',
+            totalChannels: 'Ukupno kanala'
+        },
+        description: {
+            usesWeek: '{number}/tjedno',
+            // wk: week;; example: 43/wk
+            slash: {
+                true: 'aktivno',
+                false: 'nije aktivno'
+            },
+            channelUses: '{number} ;[korištenje, korištenja]'
+        },
+        noData: 'nema podataka'
+    },
     overview: {
         title: 'Konfiguracija oznake',
         message: 'Poruka',
@@ -16,6 +42,25 @@ module.exports = {
             color: {
                 enabled: 'Odaberite boju Embeda',
                 disabled: 'Koristite Embedove i odaberite boju'
+            },
+            group: {
+                ticket: {
+                    disable: 'Onemogući Oznaku Ulaznice',
+                    enable: 'Omogući Oznaku Ulaznice'
+                }
+            },
+            permissions: {
+                Administrator: 'Administrator',
+                ManageChannels: 'Upravljanje Kanalima',
+                ManageGuild: 'Upravljajte Serverom',
+                ManageMessages: 'Upravljajte Porukama',
+                ManageNicknames: 'Upravljajte Nadimcima',
+                ManageRoles: 'Upravljajte Ulogama',
+                ManageWebhooks: 'Upravljajte Webhookovima',
+                ManageEmojisAndStickers: 'Upravljajte Emojijima i Stikerima',
+                ManageEvents: 'Upravljajte Događajima',
+                ManageThreads: 'Upravljajte Nitima',
+                none: 'Nijedno'
             }
         }
     },
@@ -35,7 +80,10 @@ module.exports = {
         command: 'Isprobajte s {command}'
     },
     list: {
-        title: 'Popis oznaka',
+        title: {
+            text: 'Text ;[Command, Commands]',
+            slash: 'Slash ;[Command, Commands]'
+        },
         none: 'nema oznaka',
         disabled: '{amount} ;[oznaka je, oznake su] skrivene zbog nedostajućih dopuštenja'
     },

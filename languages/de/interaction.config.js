@@ -34,7 +34,8 @@ module.exports = {
             emote: 'Sende ein Emoji, welches als {what} benutzt werden soll.'
         },
         success: {
-            set: '{what} ist somit nun **{data}**',
+            set: 'Successfully set {what} to **{data}**.',
+            setCodeblock: 'Successfully set {what} to {data}',
             removed: '{what} wurde erfolgreich entfernt.',
             fail: '{what} existiert nicht in diesem Server..',
             lengthFail: '{what} ist länger als {max} Buchstaben! ({length} Buchstaben, {relative} zu viel)',
@@ -96,6 +97,8 @@ module.exports = {
             tickets: 'Tickets',
             moderation: 'Moderation',
             starboard: 'Starboard',
+            misc: 'Miscs',
+            followNews: 'Follow News',
             staff: 'Server Verwalten',
             exit: 'Speichern',
             help: 'Support'
@@ -267,6 +270,10 @@ module.exports = {
                 disable: 'Öffnungsgrund Deaktivieren',
                 enable: 'Öffnungsgrund Aktivieren'
             },
+            leaveAutoclose: {
+                disable: 'Deaktivere Member Leave Auto-Schließen',
+                enable: 'Aktiviere Member Leave Auto-Schließen'
+            },
             texts: 'Texte Bearbeiten',
             naming: {
                 title: 'Setze einen Benennung Typ',
@@ -293,10 +300,15 @@ module.exports = {
                 button: {
                     texts: 'Vorschau Ticket',
                     topic: 'Thema Bearbeiten',
+                    title: 'Change title text',
                     unclaimed: 'Unclaim Text Bearbeiten',
                     claimed: 'Claim Text Bearbeiten'
                 },
                 page: {
+                    title: {
+                        title: 'Title',
+                        name: 'Ticket embed title'
+                    },
                     unclaimed: {
                         title: 'Unclaimed',
                         name: 'Unclaimed Ticket Beschreibung'
@@ -558,6 +570,10 @@ module.exports = {
                 disable: 'Originale Nachricht Verstecken',
                 enable: 'Originale Nachricht Anzeigen'
             },
+            edits: {
+                disable: 'Disalow Edits',
+                enable: 'Allow Edits'
+            },
             logging: {
                 disable: 'Logging Deaktivieren',
                 enable: 'Logging Aktivieren'
@@ -616,6 +632,100 @@ module.exports = {
                 name: 'Blacklisted Rolle'
             }
         }
+    },
+    misc: {
+        title: 'Sonstiges Konfigurieren',
+        button: {
+            embedMessages: 'Nachrichten Einbetten',
+            levelRoles: 'Level Roles'
+        },
+        page: {
+            embedMessages: {
+                title: 'Nachrichten Einbetten',
+                description: '**Was ist das?**\nWenn ein Nachrichtenlink gesendet wird, wird {name} mit dem Inhalt dieser Nachricht antworten!',
+                button: {
+                    allowOtherGuilds: {
+                        enable: 'Erlaube anderen Serverm Nachrichten von hier einzubetten',
+                        disable: 'Verbiete anderen Serverm Nachrichten von hier einzubetten'
+                    },
+                    color: 'Wähle eine Farbe für das Embed',
+                    display: {
+                        title: 'Wählen Sie einen Autoranzeigestil',
+                        selected: 'Ausgewählt',
+                        option: {
+                            message: 'Nachrichteninhalt',
+                            author: 'Autor Feld',
+                            footer: 'Footer Feld'
+                        }
+                    }
+                }
+            },
+            levelRoles: {
+                title: 'Level Roles',
+                option: {
+                    roles: 'Roles: **{count}/{max}**',
+                    roles_upsell: 'Subscribe to get {count}+',
+                    channel: 'Channel: {channel}',
+                    channel_none: 'message channel',
+                    message: 'Message: {message}'
+                },
+                button: {
+                    message: 'Edit Message',
+                    addrole: 'Add Level',
+                    select: {
+                        title: 'Chose a trigger you want to edit',
+                        editing: 'Editing',
+                        option: {
+                            name: '{messages} messages',
+                            description: 'Role: {role}'
+                        }
+                    }
+                },
+                page: {
+                    message: {
+                        title: 'Message',
+                        name: 'Level Up reply'
+                    },
+                    channel: {
+                        title: 'Channel',
+                        name: 'Level Up Channel'
+                    },
+                    addRole: {
+                        title: 'New Level Role',
+                        limit: 'You have reached the guild limit of **{count}/{max} level roles**!',
+                        alreadExists: 'A reward role for **{messages} messages** already has been set with the **{role} role**.',
+                        success: 'Successfully added this Level Role. Each user who reaches **{messages} messages** will recieve the **{role} role** now!',
+                        page: {
+                            messageCount: {
+                                title: 'Message Count',
+                                name: 'required Message Count',
+                                description: 'Send a number, that the user will required to have as in message count to get the selected role.'
+                            },
+                            role: {
+                                title: 'Role',
+                                name: 'present Role'
+                            }
+                        }
+                    },
+                    editRole: {
+                        title: 'Edit Level Role',
+                        option: {
+                            role: 'Role: {role}',
+                            messages: 'Messages: {messages}'
+                        },
+                        button: {
+                            messages: 'Change Message Count',
+                            role: 'Change Role',
+                            delete: 'Delete'
+                        }
+                    }
+                }
+            }
+        }
+    },
+    followNews: {
+        title: 'Follow News Updates',
+        name: 'Follow News'
     },
     staff: {
         title: '{name} Verwalten',
