@@ -6,13 +6,13 @@ module.exports = {
     joined: 'Joinyed',
     invited: 'Invited by',
     none: 'nyonye',
-    timeout: 'on Timeout for {time}',
+    timeout: 'on Timeout fow {time}',
     pronouns: {
         title: 'Pwonyouns',
         none: 'Nyo pwonyouns set :3 >.<'
     },
     button: {
-        guildAvatar: 'Per-Guild Avatar URL',
+        guildAvatar: 'Pew-Guiwd Avataw Uww',
         avatar: 'Avataw UWW',
         banner: 'Bannyew UWW'
     },
