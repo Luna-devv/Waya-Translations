@@ -7,11 +7,11 @@ module.exports = {
         required: 'subscwiption wequiwed',
         embeds: {
             title: 'Sowwy but Subscwiption is wequiwed >~<',
-            title2: 'Sorry but the Subscriptions limit was reached',
+            title2: 'SOWWY BABE >~< but the Subscwiptions wimit was weached',
             description: 'Uh sowwy babe, but in owdew we can pwovide a stabwe bot and monyey doesn\'t gwow on twees, we have to wock nyon essentiaw featuwes behind a Subscwiption. 😔'
         },
         button: {
-            subscribe: 'Subscribe',
+            subscribe: 'Subscwibe :>',
             support: 'Contact Suppowt'
         }
     },
