@@ -1,7 +1,7 @@
 module.exports = {
     title: {
-        text: 'Text ;[Command, Commands]',
-        slash: 'Slash ;[Command, Commands]'
+        text: 'Tekst ;[Naredba, Naredbe]',
+        slash: 'Kosa crta ;[Naredba, Naredbe]'
     },
     none: 'nema oznaka',
     disabled: '{amount} ;[oznaka je, oznake su] skrivene jer nedostaju dozvole',

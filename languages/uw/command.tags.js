@@ -1,7 +1,7 @@
 module.exports = {
     title: {
         text: 'Text ;[Command, Commands]',
-        slash: 'Slash ;[Command, Commands]'
+        slash: 'Swash ;[Command, Commands]'
     },
     none: 'nyo tags',
     disabled: '{amount} ;[tag is, tags r] hidden cuz u r missing pewmissions',

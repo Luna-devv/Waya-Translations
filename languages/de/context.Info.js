@@ -6,7 +6,7 @@ module.exports = {
     joined: 'Beigetreten',
     invited: 'Eingeladen',
     none: 'keine',
-    timeout: 'on Timeout for {time}',
+    timeout: 'auf Timeout für {time}',
     pronouns: {
         title: 'Pronomen',
         none: 'Keine Pronomen ausgewählt'

@@ -34,8 +34,8 @@ module.exports = {
             emote: 'Sende ein Emoji, welches als {what} benutzt werden soll.'
         },
         success: {
-            set: 'Successfully set {what} to **{data}**.',
-            setCodeblock: 'Successfully set {what} to {data}',
+            set: 'Erfolgreich {what} auf **{data}** gesetzt.',
+            setCodeblock: '{what} ist somit nun {data}',
             removed: '{what} wurde erfolgreich entfernt.',
             fail: '{what} existiert nicht in diesem Server..',
             lengthFail: '{what} ist länger als {max} Buchstaben! ({length} Buchstaben, {relative} zu viel)',
@@ -97,8 +97,8 @@ module.exports = {
             tickets: 'Tickets',
             moderation: 'Moderation',
             starboard: 'Starboard',
-            misc: 'Miscs',
-            followNews: 'Follow News',
+            misc: 'Sonstiges',
+            followNews: 'News Folgen',
             staff: 'Server Verwalten',
             exit: 'Speichern',
             help: 'Support'
@@ -299,15 +299,15 @@ module.exports = {
                 name: 'Ticket Beschreibungen',
                 button: {
                     texts: 'Vorschau Ticket',
-                    topic: 'Thema Bearbeiten',
-                    title: 'Change title text',
+                    topic: 'Topic Bearbeiten',
+                    title: 'Titel ändern',
                     unclaimed: 'Unclaim Text Bearbeiten',
                     claimed: 'Claim Text Bearbeiten'
                 },
                 page: {
                     title: {
-                        title: 'Title',
-                        name: 'Ticket embed title'
+                        title: 'Titel',
+                        name: 'Ticket Embed Titel'
                     },
                     unclaimed: {
                         title: 'Unclaimed',
@@ -571,8 +571,8 @@ module.exports = {
                 enable: 'Originale Nachricht Anzeigen'
             },
             edits: {
-                disable: 'Disalow Edits',
-                enable: 'Allow Edits'
+                disable: 'Bearbeitungen verbieten',
+                enable: 'Bearbeiten zulassen'
             },
             logging: {
                 disable: 'Logging Deaktivieren',
@@ -637,7 +637,7 @@ module.exports = {
         title: 'Sonstiges Konfigurieren',
         button: {
             embedMessages: 'Nachrichten Einbetten',
-            levelRoles: 'Level Roles'
+            levelRoles: 'Level Rollen'
         },
         page: {
             embedMessages: {
@@ -661,62 +661,62 @@ module.exports = {
                 }
             },
             levelRoles: {
-                title: 'Level Roles',
+                title: 'Level Rollen',
                 option: {
-                    roles: 'Roles: **{count}/{max}**',
-                    roles_upsell: 'Subscribe to get {count}+',
-                    channel: 'Channel: {channel}',
-                    channel_none: 'message channel',
-                    message: 'Message: {message}'
+                    roles: 'Rollen: **{count}/{max}**',
+                    roles_upsell: 'Abonniere für +{count}',
+                    channel: 'Kanal: {channel}',
+                    channel_none: 'nachrichten kanal',
+                    message: 'Nachricht: {message}'
                 },
                 button: {
-                    message: 'Edit Message',
-                    addrole: 'Add Level',
+                    message: 'Nachricht Bearbeiten',
+                    addrole: 'Level Hinzufügen',
                     select: {
-                        title: 'Chose a trigger you want to edit',
-                        editing: 'Editing',
+                        title: 'Wähle einen Trigger, den du bearbeiten möchtest',
+                        editing: 'Bearbeitung',
                         option: {
-                            name: '{messages} messages',
-                            description: 'Role: {role}'
+                            name: '{messages} nachrichten',
+                            description: 'Rolle: {role}'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Level Up reply'
+                        title: 'Nachricht',
+                        name: 'Level Up nachricht'
                     },
                     channel: {
-                        title: 'Channel',
-                        name: 'Level Up Channel'
+                        title: 'Kanal',
+                        name: 'Level Up Kanal'
                     },
                     addRole: {
-                        title: 'New Level Role',
-                        limit: 'You have reached the guild limit of **{count}/{max} level roles**!',
-                        alreadExists: 'A reward role for **{messages} messages** already has been set with the **{role} role**.',
-                        success: 'Successfully added this Level Role. Each user who reaches **{messages} messages** will recieve the **{role} role** now!',
+                        title: 'Neue Level Rolle',
+                        limit: 'Du hast das Serverlimit von **{count}/{max} Level Rollen erreicht**!',
+                        alreadExists: 'Eine Belohnung Rolle für **{messages} Nachrichten** wurde bereits mit der **{role} Rolle gesetzt.',
+                        success: 'Diese Level Rolle wurde erfolgreich hinzugefügt. Jeder User, der **{messages} Nachrichten erreicht** erhält jetzt die **{role} Rolle**!',
                         page: {
                             messageCount: {
-                                title: 'Message Count',
-                                name: 'required Message Count',
-                                description: 'Send a number, that the user will required to have as in message count to get the selected role.'
+                                title: 'Nachrichtenanzahl',
+                                name: 'erforderliche Nachrichtenanzahl',
+                                description: 'Senden Sie eine Nummer, die der User als Nachrichtenanzahl benötigt, um die ausgewählte Rolle zu erhalten.'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'present Role'
+                                title: 'Rolle',
+                                name: 'geschenk Rolle'
                             }
                         }
                     },
                     editRole: {
-                        title: 'Edit Level Role',
+                        title: 'Level Rolle Bearbeiten',
                         option: {
-                            role: 'Role: {role}',
-                            messages: 'Messages: {messages}'
+                            role: 'Rolle: {role}',
+                            messages: 'Nachrichten: {messages}'
                         },
                         button: {
-                            messages: 'Change Message Count',
-                            role: 'Change Role',
-                            delete: 'Delete'
+                            messages: 'Nachrichtenanzahl ändern',
+                            role: 'Rolle ändern',
+                            delete: 'Löschen'
                         }
                     }
                 }
@@ -724,8 +724,8 @@ module.exports = {
         }
     },
     followNews: {
-        title: 'Follow News Updates',
-        name: 'Follow News'
+        title: 'News Updates Folgen',
+        name: 'News Folgen'
     },
     staff: {
         title: '{name} Verwalten',

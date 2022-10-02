@@ -6,13 +6,13 @@ module.exports = {
     joined: 'Pridružen',
     invited: 'Pozvan od',
     none: 'prazno',
-    timeout: 'on Timeout for {time}',
+    timeout: 'na isteku {time}',
     pronouns: {
         title: 'Zamjenice',
         none: 'Nema postavljenih zamjenica'
     },
     button: {
-        guildAvatar: 'Per-Guild Avatar URL',
+        guildAvatar: 'Server URL Avatara',
         avatar: 'URL Avatara',
         banner: 'URL Banera'
     },

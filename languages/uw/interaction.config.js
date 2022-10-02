@@ -34,8 +34,8 @@ module.exports = {
             emote: 'Send an Emoji which shouwd be used as {what}.'
         },
         success: {
-            set: 'Successfully set {what} to **{data}**.',
-            setCodeblock: 'Successfully set {what} to {data}',
+            set: 'Successfuwwy set {what} to **{data}** qwq',
+            setCodeblock: 'Successfuwwy set {what} to {data}',
             removed: 'Successfuwwy wemuvd the {what}.',
             fail: 'This {what} does nyot exist in this guiwd.. ;////',
             lengthFail: 'The {what} is wongew than {max} chawactews! ({length} uwu chawactews, {relative} too much) :////',
@@ -98,7 +98,7 @@ module.exports = {
             moderation: 'Modewation',
             starboard: 'Stawboawd',
             misc: 'Miscs',
-            followNews: 'Follow News',
+            followNews: 'Fowwow Nyews',
             staff: 'Manyage Guiwd',
             exit: 'GOO PWEASE',
             help: 'Suppowt'
@@ -300,14 +300,14 @@ module.exports = {
                 button: {
                     texts: 'Pweview ticket',
                     topic: 'Change topic',
-                    title: 'Change title text',
+                    title: 'Change titwe text',
                     unclaimed: 'Change uncwaimed text',
                     claimed: 'Change cwaimed text'
                 },
                 page: {
                     title: {
-                        title: 'Title',
-                        name: 'Ticket embed title'
+                        title: 'Titwe',
+                        name: 'Ticket embed titwe'
                     },
                     unclaimed: {
                         title: 'Uncwaimed',
@@ -571,8 +571,8 @@ module.exports = {
                 enable: 'Show wepwied to'
             },
             edits: {
-                disable: 'Disalow Edits',
-                enable: 'Allow Edits'
+                disable: 'Disawwow Edits',
+                enable: 'Awwow Edits'
             },
             logging: {
                 disable: 'Disabwe Wogging',
@@ -636,7 +636,7 @@ module.exports = {
     misc: {
         title: 'Configuwe Miscewwanyeous',
         button: {
-            embedMessages: 'Embed Messages',
+            embedMessages: 'Wevew Wowes',
             levelRoles: 'Level Roles'
         },
         page: {
@@ -661,62 +661,62 @@ module.exports = {
                 }
             },
             levelRoles: {
-                title: 'Level Roles',
+                title: 'Wevew Wowes',
                 option: {
-                    roles: 'Roles: **{count}/{max}**',
-                    roles_upsell: 'Subscribe to get {count}+',
-                    channel: 'Channel: {channel}',
-                    channel_none: 'message channel',
+                    roles: 'Wowes: **{count}/{max}**',
+                    roles_upsell: 'Subscwibe to get {count}+',
+                    channel: 'Channyew: {channel}',
+                    channel_none: 'message channyew',
                     message: 'Message: {message}'
                 },
                 button: {
                     message: 'Edit Message',
-                    addrole: 'Add Level',
+                    addrole: 'Add Wevew',
                     select: {
-                        title: 'Chose a trigger you want to edit',
+                        title: 'Chose a twiggew u want to edit',
                         editing: 'Editing',
                         option: {
                             name: '{messages} messages',
-                            description: 'Role: {role}'
+                            description: 'Wowe: {role}'
                         }
                     }
                 },
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Level Up reply'
+                        name: 'Wevew Up wepwy'
                     },
                     channel: {
-                        title: 'Channel',
-                        name: 'Level Up Channel'
+                        title: 'Channyew',
+                        name: 'Wevew Up Channyew'
                     },
                     addRole: {
-                        title: 'New Level Role',
-                        limit: 'You have reached the guild limit of **{count}/{max} level roles**!',
-                        alreadExists: 'A reward role for **{messages} messages** already has been set with the **{role} role**.',
-                        success: 'Successfully added this Level Role. Each user who reaches **{messages} messages** will recieve the **{role} role** now!',
+                        title: 'Nyew Wevew Wowe',
+                        limit: 'Babe, U have weached the guiwd wimit of **{count}/{max} wevew wowes**! >~<\n',
+                        alreadExists: 'A wewawd wowe fow **{messages} messages** awweady has been set with the **{role} wowe** >.>',
+                        success: 'Successfuwwy added this Wevew Wowe. Each usew who weaches **{messages} messages** wiww wecieve the **{wowe} wowe** nyow! 🎉',
                         page: {
                             messageCount: {
                                 title: 'Message Count',
-                                name: 'required Message Count',
-                                description: 'Send a number, that the user will required to have as in message count to get the selected role.'
+                                name: 'wequiwed Message Count',
+                                description: 'Babe, can u send a nyumbew, that the usew wiww wequiwed to have as in message count to get the sewected wowe?'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'present Role'
+                                title: 'Wowe',
+                                name: 'pwesent Wowe'
                             }
                         }
                     },
                     editRole: {
-                        title: 'Edit Level Role',
+                        title: 'Edit Wevew Wowe',
                         option: {
-                            role: 'Role: {role}',
+                            role: 'Wowe: {role}',
                             messages: 'Messages: {messages}'
                         },
                         button: {
                             messages: 'Change Message Count',
-                            role: 'Change Role',
-                            delete: 'Delete'
+                            role: 'Change Wowe',
+                            delete: 'Dewete'
                         }
                     }
                 }
@@ -724,8 +724,8 @@ module.exports = {
         }
     },
     followNews: {
-        title: 'Follow News Updates',
-        name: 'Follow News'
+        title: 'Fowwow Nyews Updates',
+        name: 'Fowwow Nyews'
     },
     staff: {
         title: 'Manyage {name}',
