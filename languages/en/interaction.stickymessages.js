@@ -35,7 +35,6 @@ module.exports = {
     list: {
         title: 'Sticky ;[Message, Messages]',
         none: "no sticky messages",
-        disabled: "{amount} ;[tag is, tags are] hidden due to missing permissions", // ;[singular, plural]
     },
     deleted: "Successfully deleted the Sticky Message in {channel}.",
 };
