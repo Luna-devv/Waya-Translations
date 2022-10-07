@@ -6,12 +6,21 @@ module.exports = {
         title: 'Konfiguracija ljepljivih poruka',
         message: 'Poruka',
         embed: 'Embed',
+        note: 'Button Note',
+        note_status: {
+            show: 'Showing',
+            hide: 'Hidden'
+        },
         button: {
             exit: 'Spremi i izađi',
             permission: 'Odaberite dopuštenje koje korisnik treba',
             color: {
                 enabled: 'Odaberite boju za Embed',
                 disabled: 'Koristite Embed i odaberite boju'
+            },
+            note: {
+                show: 'Show Note',
+                hide: 'Hide Note'
             }
         }
     },
