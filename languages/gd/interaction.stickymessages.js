@@ -6,12 +6,21 @@ module.exports = {
         title: 'Sticky Message Config',
         message: 'Message',
         embed: 'Embed',
+        note: 'Button Note',
+        note_status: {
+            show: 'Showing',
+            hide: 'Hidden'
+        },
         button: {
             exit: 'Save & Exit',
             permission: 'Select a permission the user needs',
             color: {
                 enabled: 'Select a color for the Embed',
                 disabled: 'Use Embeds and select a color'
+            },
+            note: {
+                show: 'Show Note',
+                hide: 'Hide Note'
             }
         }
     },
