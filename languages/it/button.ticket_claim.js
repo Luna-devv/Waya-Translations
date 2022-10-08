@@ -1,4 +1,4 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
-    claimed: 'The ticket will be now handled by you!'
+    noData: 'Impossibile trovare la gilda nel database!',
+    claimed: 'Il ticket sarà ora gestito da te!'
 };
