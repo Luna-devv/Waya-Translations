@@ -13,7 +13,6 @@ module.exports = {
         },
         button: {
             exit: 'Speichern & Verlassen',
-            permission: 'Select a permission the user needs',
             color: {
                 enabled: 'Setzte eine Farbe für das Embed',
                 disabled: 'Benutzte Embeds und wähle eine Farbe'
