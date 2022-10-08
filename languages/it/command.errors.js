@@ -1,13 +1,13 @@
 module.exports = {
-    notFound: 'This issue could not be found',
+    notFound: 'Questo problema, non è stato trovato',
     view: {
-        main: 'at {time} while executing {command} for {user}',
-        fixed: 'This error has been fixed',
-        unfixed: 'This error is unresolved'
+        main: 'a {time} durante l\'esecuzione di {command} per {user}',
+        fixed: 'Questo problema è stato risolto',
+        unfixed: 'Questo errore non è risolto'
     },
     check: {
-        fixed: 'Updated issue state to resolved.',
-        unfixed: 'Updated issue state to unresolved.'
+        fixed: 'Stato del problema aggiornato a risolto.',
+        unfixed: 'Stato del problema aggiornato a irrisolto.'
     },
-    deleted: 'This issue has been deleted.'
+    deleted: 'Il problema è stato eliminato.'
 };
