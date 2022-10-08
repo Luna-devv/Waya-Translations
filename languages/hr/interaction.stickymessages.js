@@ -13,7 +13,6 @@ module.exports = {
         },
         button: {
             exit: 'Spremi i izađi',
-            permission: 'Odaberite dopuštenje koje korisnik treba',
             color: {
                 enabled: 'Odaberite boju za Embed',
                 disabled: 'Koristite Embed i odaberite boju'
