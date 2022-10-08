@@ -1,11 +1,11 @@
 module.exports = {
     title: {
-        text: 'Text ;[Command, Commands]',
-        slash: 'Slash ;[Command, Commands]'
+        text: 'Testo ;[Comando, Comandi]',
+        slash: 'Slash ;[Comando, Comandi]'
     },
-    none: 'no tags',
-    disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions',
+    none: 'nessun tag',
+    disabled: '{amount} ;[tag è, tag sono] nascosti a causa di permessi mancanti',
     // ;[singular, plural]
-    ticketUse: 'This Tag is only available in tickets using {user}.',
-    overLimit: 'You have reached the guild limit of **{count}/{max} tags**!\n\nNote that this tag exceeds the limits and is disabled until you increase the limit again.'
+    ticketUse: 'Questo Tag è disponibile solo nei ticket usando {user}.',
+    overLimit: 'Hai raggiunto il limite della gilda di **{count}/{max} tag**!\n\nNota che questo tag supera i limiti e viene disabilitato fino a quando non si aumenta nuovamente il limite.'
 };
