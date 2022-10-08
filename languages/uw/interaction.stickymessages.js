@@ -13,7 +13,6 @@ module.exports = {
         },
         button: {
             exit: 'Save & Exit',
-            permission: 'Sewect a pewmission the usew nyeeds',
             color: {
                 enabled: 'Sewect a cowow fow the Embed',
                 disabled: 'Use Embeds and sewect a cowow'
