@@ -36,8 +36,10 @@ module.exports = {
         },
         success: {
             set: "Successfully set {what} to **{data}**.",
+            add: "Successfully add {what} to **{data}**.",
             setCodeblock: "Successfully set {what} to {data}",
             removed: "Successfully removed the {what}.",
+            remove: "Successfully remove {what} from **{data}**.",
             fail: "This {what} does not exist in this guild..",
             lengthFail: "The {what} is longer than {max} characters! ({length} characters, {relative} too much)",
             otherLengthFail: "The {what} is shorter than {min} characters! ({length} characters, {relative} too less)",
@@ -122,6 +124,12 @@ module.exports = {
                     channel: "Channel: {channel}",
                     mode: "Mode: {mode}",
                 },
+                button: {
+                    snipe: {
+                        enable: 'Enable Snipe',
+                        disable: 'Disable Snipe',
+                    },
+                },
                 page: {
                     channel: {
                         title: "Channel",
@@ -204,9 +212,11 @@ module.exports = {
                         message: "Message: {message}",
                         command: "Message: use `{command}`",
                     },
+                    pings: 'Pings: {channels}'
                 },
                 button: {
                     message: "Edit Message",
+                    pings: "Edit Ping Channels",
                 },
                 page: {
                     channel: {
@@ -220,6 +230,12 @@ module.exports = {
                     role: {
                         title: "Role",
                         name: "Welcomer Role",
+                    },
+                    pings: {
+                        title: "Pings",
+                        name: "Pings list",
+                        description: "Mention a Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.",
+                        missingPrefix: "The message must be prefixed with `+` to add or `-` to remove Channels.",
                     },
                 },
             },
