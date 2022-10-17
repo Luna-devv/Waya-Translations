@@ -35,8 +35,10 @@ module.exports = {
         },
         success: {
             set: 'Erfolgreich {what} auf **{data}** gesetzt.',
+            add: 'Successfully add {what} to **{data}**.',
             setCodeblock: '{what} ist somit nun {data}',
             removed: '{what} wurde erfolgreich entfernt.',
+            remove: 'Successfully remove {what} from **{data}**.',
             fail: '{what} existiert nicht in diesem Server..',
             lengthFail: '{what} ist länger als {max} Buchstaben! ({length} Buchstaben, {relative} zu viel)',
             otherLengthFail: '{what} ist kürzer als {min} Buchstaben! ({length} Buchstaben, {relative} zu wenig)',
@@ -120,6 +122,12 @@ module.exports = {
                     channel: 'Kanal: {channel}',
                     mode: 'Modus: {mode}'
                 },
+                button: {
+                    snipe: {
+                        enable: 'Enable Snipe',
+                        disable: 'Disable Snipe'
+                    }
+                },
                 page: {
                     channel: {
                         title: 'Kanal',
@@ -197,9 +205,13 @@ module.exports = {
                     message: {
                         message: 'Nachricht: {message}',
                         command: 'Nachricht: Benutze `{command}`'
-                    }
+                    },
+                    pings: 'Pings: {channels}'
                 },
-                button: { message: 'Nachricht Bearbeiten' },
+                button: {
+                    message: 'Nachricht Bearbeiten',
+                    pings: 'Edit Ping Channels'
+                },
                 page: {
                     channel: {
                         title: 'Kanal',
@@ -212,6 +224,12 @@ module.exports = {
                     role: {
                         title: 'Rolle',
                         name: 'Beitretungsrolle'
+                    },
+                    pings: {
+                        title: 'Pings',
+                        name: 'Pings list',
+                        description: 'Mention a Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
                     }
                 }
             },
