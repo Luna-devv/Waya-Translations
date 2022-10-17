@@ -694,7 +694,7 @@ module.exports = {
                         title: 'Nyew Wevew Wowe',
                         limit: 'Babe, U have weached the guiwd wimit of **{count}/{max} wevew wowes**! >~<\n',
                         alreadExists: 'A wewawd wowe fow **{messages} messages** awweady has been set with the **{role} wowe** >.>',
-                        success: 'Successfuwwy added this Wevew Wowe. Each usew who weaches **{messages} messages** wiww wecieve the **{wowe} wowe** nyow! 🎉',
+                        success: 'Successfuwwy added this Wevew Wowe. Each usew who weaches **{messages} messages** wiww wecieve the **{role} wowe** nyow! 🎉',
                         page: {
                             messageCount: {
                                 title: 'Message Count',
