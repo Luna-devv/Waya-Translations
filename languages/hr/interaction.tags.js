@@ -85,7 +85,9 @@ module.exports = {
             slash: 'Kosa crta ;[Naredba, Naredbe]'
         },
         none: 'nema oznaka',
-        disabled: '{amount} ;[oznaka je, oznake su] skrivene zbog nedostajućih dopuštenja'
+        disabled: '{amount} ;[oznaka je, oznake su] skrivene zbog nedostajućih dopuštenja',
+        // ;[singular, plural]
+        amount: '{amount} tags • Use with {command}'
     },
     deleted: 'Oznaka **{name}** uspješno je izbrisana.'
 };
