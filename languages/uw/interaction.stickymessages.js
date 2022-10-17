@@ -35,12 +35,12 @@ module.exports = {
         }
     },
     success: {
-        message: 'Successfuwwy added a Sticky Message in {channyew} >.>',
+        message: 'Successfuwwy added a Sticky Message in {channel} >.>',
         try: 'Ayy, twy it out by sending a few messages thewe :>'
     },
     list: {
         title: 'Sticky ;[Message, Messages]',
         none: 'nyo sticky messages'
     },
-    deleted: 'Successfuwwy deweted the Sticky Message in {channyew}. ^^'
+    deleted: 'Successfuwwy deweted the Sticky Message in {channel}. ^^'
 };
