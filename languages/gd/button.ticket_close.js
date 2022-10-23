@@ -1,4 +1,5 @@
 module.exports = {
+    request: { ureStaff: 'You are staff, you can just use {command}.' },
     noData: 'VERDAMMTE HACKE WO IST DEIN SERVER IN DER DATENBANK HIN?!',
     confirm: {
         text: 'Soll {channel} wirklich weg?',
