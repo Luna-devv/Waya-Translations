@@ -45,6 +45,11 @@ module.exports = {
             numberFail: '{what} nije broj između {a} i {b}!',
             roleFail: 'Ovom ulogom može upravljati samo Discord ili pripada korisniku bota.'
         },
+        webedit: {
+            button: 'Embed Editor',
+            title: 'Message Web Edit',
+            description: 'Open [this Website]({url}) to start editing the message & embed.'
+        },
         type: {
             text: 'Tekstualni kanal',
             category: 'Kanal kategorije',
@@ -206,11 +211,14 @@ module.exports = {
                         message: 'Poruka: {message}',
                         command: 'Poruka: koristite `{command}`'
                     },
-                    pings: 'Pings: {channels}'
+                    pings: 'Pings: {channels}',
+                    autodelete: 'Auto delete: **{time}**',
+                    autodelete_never: 'never'
                 },
                 button: {
                     message: 'Uredi poruku',
-                    pings: 'Edit Ping Channels'
+                    pings: 'Edit Ping Channels',
+                    autodelete: 'Set Autodelete'
                 },
                 page: {
                     channel: {
@@ -230,6 +238,11 @@ module.exports = {
                         name: 'Pings list',
                         description: 'Mention a Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
                         missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                    },
+                    autodelete: {
+                        title: 'Auto Delete',
+                        name: 'Auto Delete',
+                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
                     }
                 }
             },
