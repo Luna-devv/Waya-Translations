@@ -1,4 +1,5 @@
 module.exports = {
+    request: { ureStaff: 'You are staff, you can just use {command}.' },
     noData: 'BABY GIRL 😭 Couwd nyot find guiwd in the Database!',
     confirm: {
         text: 'R u suwe babe that u want to dewete {channyew} fowevew?',
