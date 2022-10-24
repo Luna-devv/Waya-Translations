@@ -237,12 +237,12 @@ module.exports = {
                         title: 'Ping-Pongs',
                         name: 'Pings wist',
                         description: 'Mention a Channyew ow paste the Channyew ID into the chat.\nPwefix the message with `+` to add ow `-` to wemuv Channyews.\nU can send muwtipwe Channyews sepewated with a space.\nType `none` to wemuv aww Channyews.',
-                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                        missingPrefix: 'The message must be pwefixed with `+` to add ow `-` to wemuv Channyews >:)'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Auto Dewete',
+                        name: 'Auto Dewete',
+                        description: 'The Wewcomew message wiww be deweted aftew this time.\nWe wecommend u to keep this time showt (onwy few seconds).\nExampwe: `1m 3s`'
                     }
                 }
             },
