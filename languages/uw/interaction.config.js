@@ -35,10 +35,10 @@ module.exports = {
         },
         success: {
             set: 'Successfuwwy set {what} to **{data}** qwq',
-            add: 'Successfully add {what} to **{data}**.',
+            add: 'Successfuwwy add {what} to **{data}** qwq',
             setCodeblock: 'Successfuwwy set {what} to {data}',
             removed: 'Successfuwwy wemuvd the {what}.',
-            remove: 'Successfully remove {what} from **{data}**.',
+            remove: 'Successfuwwy wemuv {what} to **{data}** :///',
             fail: 'This {what} does nyot exist in this guiwd.. ;////',
             lengthFail: 'The {what} is wongew than {max} chawactews! ({length} uwu chawactews, {relative} too much) :////',
             otherLengthFail: 'The {what} is showtew than {min} chawactews! ({length} uwu chawactews, {relative} too wess)  :////',
@@ -46,9 +46,9 @@ module.exports = {
             roleFail: 'This (^³^) wowe :3 is onwy manyagabwe by ://// eithew Discowd ;-;;; ow bewongs to a bot usew.    '
         },
         webedit: {
-            button: 'Embed Editor',
-            title: 'Message Web Edit',
-            description: 'Open [this Website]({url}) to start editing the message & embed.'
+            button: 'Embed Editow',
+            title: 'Message Weeb~ Edit\n',
+            description: 'Open [this Weebsite]({uww}) to stawt editing the message & embed :;3'
         },
         type: {
             text: 'Text Channyew',
@@ -129,8 +129,8 @@ module.exports = {
                 },
                 button: {
                     snipe: {
-                        enable: 'Enable Snipe',
-                        disable: 'Disable Snipe'
+                        enable: 'Enyabwe Snyipe',
+                        disable: 'Disabwe Snyipe'
                     }
                 },
                 page: {
@@ -212,13 +212,13 @@ module.exports = {
                         command: 'Message: use `{command}`'
                     },
                     pings: 'Pings: {channels}',
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    autodelete: 'Auto dewete: **{time}**',
+                    autodelete_never: 'nyevew'
                 },
                 button: {
                     message: 'Edit Message',
-                    pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete'
+                    pings: 'Edit Ping-Pong Channyews',
+                    autodelete: 'Set Autodewete'
                 },
                 page: {
                     channel: {
@@ -234,9 +234,9 @@ module.exports = {
                         name: 'Wewcomew Wowe'
                     },
                     pings: {
-                        title: 'Pings',
-                        name: 'Pings list',
-                        description: 'Mention a Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                        title: 'Ping-Pongs',
+                        name: 'Pings wist',
+                        description: 'Mention a Channyew ow paste the Channyew ID into the chat.\nPwefix the message with `+` to add ow `-` to wemuv Channyews.\nU can send muwtipwe Channyews sepewated with a space.\nType `none` to wemuv aww Channyews.',
                         missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
                     },
                     autodelete: {
