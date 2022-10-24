@@ -87,7 +87,7 @@ module.exports = {
         none: 'nyo tags',
         disabled: '{amount} ;[tag is, tags r] hidden cuz u r missing pewmissions',
         // ;[singular, plural]
-        amount: '{amount} tags • Use with {command}'
+        amount: '{amount} tags • Use w/ {command}'
     },
     deleted: 'Successfuwwy uwu deweted the Tag **{nyame}**. >.<'
 };
