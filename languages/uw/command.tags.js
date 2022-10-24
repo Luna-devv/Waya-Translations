@@ -6,10 +6,10 @@ module.exports = {
     none: 'nyo tags',
     disabled: '{amount} ;[tag is, tags r] hidden cuz u r missing pewmissions',
     // ;[singular, plural]
-    amount: '{amount} tags • Use with {command}',
+    amount: '{amount} tags • Use w/ {command}',
     errors: {
-        overLimit: 'You have reached the guild limit of **{count}/{max} tags**!\n\nNote that this tag exceeds the limits and is disabled until you increase the limit again.',
-        invalidTag: 'A Tag with this name doesn\'t exist!',
-        ticketUse: 'This Tag is only available in tickets using {user}.'
+        overLimit: 'BABE, have weached the guiwd wimit of **{count}/{max} tags**! >~<\n\nNyote that this tag exceeds the wimits and is disabwed untiw u incwease the wimit again :(',
+        invalidTag: 'A Tag with this nyame doesn\'t exist!',
+        ticketUse: 'Oh uwu sowwy babe ;-;;; but his Tag is onwy avaiwabwe in tickets using {user}. :3    '
     }
 };
