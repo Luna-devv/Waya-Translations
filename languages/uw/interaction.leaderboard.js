@@ -1,5 +1,6 @@
 module.exports = {
     messages: 'Message Weadewboawd',
+    voice: 'Voice Weadewboawd',
     invites: 'Invite Weadewboawd',
     none: 'nyonye',
     personalized: 'Ur Position',

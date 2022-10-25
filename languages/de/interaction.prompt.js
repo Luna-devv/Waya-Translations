@@ -19,5 +19,10 @@ module.exports = {
     error: {
         tooLong: 'Option {index} hat mehr als {number} Buchstaben!',
         noData: 'keine daten angegeben'
+    },
+    webedit: {
+        title: 'Message Web Edit',
+        description: 'Open [this Website]({url}) to start editing the message & embed.',
+        open: 'Open Web Edit'
     }
 };

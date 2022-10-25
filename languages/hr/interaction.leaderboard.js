@@ -1,5 +1,6 @@
 module.exports = {
     messages: 'Ljestvica Poruka',
+    voice: 'Voice Leaderboard',
     invites: 'Ljestvica Pozivnica',
     none: 'prazno',
     personalized: 'Tvoja pozicija',

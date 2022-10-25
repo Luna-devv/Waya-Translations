@@ -19,5 +19,10 @@ module.exports = {
     error: {
         tooLong: 'Option {index} has mowe than {number} chawactews! meow~',
         noData: 'nyo data set'
+    },
+    webedit: {
+        title: 'Message Weeb~ Edit\n',
+        description: 'Open [this Weebsite]({uww}) to stawt editing the message & embed :;3',
+        open: 'Open Weeeb Edit\n'
     }
 };

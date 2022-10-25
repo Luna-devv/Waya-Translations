@@ -35,104 +35,118 @@ module.exports = {
         },
         success: {
             set: 'Successfully set {what} to **{data}**.',
+            add: 'Successfully add {what} to **{data}**.',
             setCodeblock: 'Successfully set {what} to {data}',
             removed: 'Successfully removed the {what}.',
+            remove: 'Successfully remove {what} from **{data}**.',
             fail: 'This {what} does not exist in this guild..',
             lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
             otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
-            numberFail: 'The {what} is not a number between {a} and {b}!',
-            roleFail: 'This Role is only managable by either Discord or belongs to a bot user.'
+            numberFail: 'Il {what} non è un numero compreso tra {a} e {b}!',
+            roleFail: 'Questo ruolo è gestibile solo da Discord o appartiene a un utente del bot.'
+        },
+        webedit: {
+            button: 'Embed Editor',
+            title: 'Message Web Edit',
+            description: 'Open [this Website]({url}) to start editing the message & embed.',
+            open: 'Open Web Edit'
         },
         type: {
-            text: 'Text Channel',
-            category: 'Category Channel',
-            role: 'Role',
+            text: 'Canale di testo',
+            category: 'Canale categoria',
+            role: 'Ruolo',
             emoji: 'Emote'
         },
         state: {
-            enabled: 'Enabled',
-            disabled: 'Disabled'
+            enabled: 'Abilitato',
+            disabled: 'Disattivato'
         },
         option: {
-            required: 'Required',
-            optional: 'Optional'
+            required: 'Necessaria',
+            optional: 'Opzionale'
         },
         button: {
-            back: 'Back',
-            disable: 'Disable',
-            enable: 'Enable',
+            back: 'Indietro',
+            disable: 'Disabilita',
+            enable: 'Abilita',
             channel: {
-                set: 'Set Channel',
-                edit: 'Edit Channel'
+                set: 'Imposta Canale',
+                edit: 'Modifica Canale'
             },
             category: {
-                set: 'Set Category',
-                edit: 'Edit Category'
+                set: 'Imposta categoria',
+                edit: 'Modifica Categoria'
             },
             role: {
-                set: 'Set Role',
-                edit: 'Edit Role'
+                set: 'Imposta Ruolo',
+                edit: 'Modifica Ruolo'
             },
             mode: {
-                analyst: 'Analyst',
-                cozy: 'Cozy'
+                analyst: 'Analisti',
+                cozy: 'Accogliente'
             },
             dupaw: {
                 // This is a name, cannot be translated
-                enable: 'Enable dupaw',
-                disable: 'Disable dupaw'
+                enable: 'Abilita dupaw',
+                disable: 'Disabilita dupaw'
             }
         }
     },
     main: {
-        title: 'Configure {name}',
+        title: 'Configura {name}',
         option: {
             premium: {
-                text: 'Enterprise Tier {tier}',
-                buy: 'Buy Enterprise'
+                text: 'Livello Abbonamento {tier}',
+                buy: 'Compra un Abbonamento'
             }
         },
         button: {
             logging: 'Logging',
-            tickets: 'Ticketing',
-            moderation: 'Moderation',
+            tickets: 'Ticket',
+            moderation: 'Moderazione',
             starboard: 'Starboard',
-            misc: 'Miscs',
-            followNews: 'Follow News',
-            staff: 'Manage Guild',
-            exit: 'Exit',
-            help: 'Support'
+            misc: 'Misc',
+            followNews: 'Segui Notizie',
+            staff: 'Gestire la Gilda',
+            exit: 'Chiudi',
+            help: 'Assistenza'
         }
     },
     logging: {
-        title: 'Configure Logging',
+        title: 'Configura Logging',
         button: {
-            messages: 'Messages',
+            messages: 'Messaggi',
             joins: 'Joins',
-            welcomer: 'Welcoming',
-            byer: 'Bying'
+            welcomer: 'Accoglienza',
+            byer: 'Andata'
         },
         page: {
             messages: {
-                title: 'Messages',
-                name: 'Message Logging',
+                title: 'Messaggi',
+                name: 'Logging Messaggi',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}'
+                    channel: 'Canale: {channel}',
+                    mode: 'Modalità: {mode}'
+                },
+                button: {
+                    snipe: {
+                        enable: 'Enable Snipe',
+                        disable: 'Disable Snipe'
+                    }
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Message Logging channel'
+                        title: 'Canale',
+                        name: 'Canale Logging messaggi'
                     }
                 }
             },
             joins: {
                 title: 'Joins',
-                name: 'Join Logging',
+                name: 'Logging Unizione',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}',
+                    channel: 'Canale: {channel}',
+                    mode: 'Modalità: {mode}',
                     filter: 'Filter: {state}'
                 },
                 button: { filter: 'Filter' },
@@ -197,9 +211,16 @@ module.exports = {
                     message: {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
-                    }
+                    },
+                    pings: 'Pings: {channels}',
+                    autodelete: 'Auto delete: **{time}**',
+                    autodelete_never: 'never'
                 },
-                button: { message: 'Edit Message' },
+                button: {
+                    message: 'Edit Message',
+                    pings: 'Edit Ping Channels',
+                    autodelete: 'Set Autodelete'
+                },
                 page: {
                     channel: {
                         title: 'Channel',
@@ -212,6 +233,17 @@ module.exports = {
                     role: {
                         title: 'Role',
                         name: 'Welcomer Role'
+                    },
+                    pings: {
+                        title: 'Pings',
+                        name: 'Pings list',
+                        description: 'Mention a Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                    },
+                    autodelete: {
+                        title: 'Auto Delete',
+                        name: 'Auto Delete',
+                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
                     }
                 }
             },
@@ -240,31 +272,31 @@ module.exports = {
         }
     },
     tickets: {
-        title: 'Configure Ticketing',
+        title: 'Configura Ticketing',
         option: {
-            channel: 'Category: {channel}',
-            staff: 'Staff: {role}',
+            channel: 'Categoria: {channel}',
+            staff: 'Personale: {role}',
             logging: 'Logging: {channel}',
-            forceReason: 'Reason: {state}',
-            naming: 'Naming: {type}',
+            forceReason: 'Motivo: {state}',
+            naming: 'Denominazione: {type}',
             namingType: {
-                username: 'Username',
-                userid: 'UserId',
-                random: 'Random'
+                username: 'Nomeutente',
+                userid: 'Idutente',
+                random: 'Casuale'
             }
         },
         button: {
             forceReason: {
-                enable: 'Force Reason',
-                disable: 'Optional Reason'
+                enable: 'Motivo forzato',
+                disable: 'Motivo Opzionale'
             },
             logging: {
-                disable: 'Disable Logging',
-                enable: 'Enable Logging'
+                disable: 'Disabilita Logging',
+                enable: 'Abilita Logging'
             },
             transcript: {
-                disable: 'Disable Transcripts',
-                enable: 'Save Transcripts'
+                disable: 'Disabilita Trascritti',
+                enable: 'Salva trascrizioni'
             },
             openReason: {
                 disable: 'Disable Open Reason',

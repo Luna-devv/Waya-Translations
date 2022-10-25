@@ -1,10 +1,10 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
-    noCategory: 'The Tickets category has been deleted. Please notify a Server Administrator.',
-    created: 'Your ticket {channel} has been created!',
+    noData: 'Impossibile trovare la gilda nel database!',
+    noCategory: 'La categoria Ticket è stata eliminata. Si prega d\'informare un amministratore del server.',
+    created: 'Il tuo ticket {channel} è stato creato!',
     form: {
-        formTitle: 'Ticket Opening Reason',
-        field: 'Why do you want to open a Ticket?',
-        placeholder: 'I need help with that..'
+        formTitle: 'Motivo di Apertura Biglietto',
+        field: 'Perché vuoi aprire un Ticket?',
+        placeholder: 'Ho bisogno di aiuto per..'
     }
 };

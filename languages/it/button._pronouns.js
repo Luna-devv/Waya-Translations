@@ -1,1 +1,1 @@
-module.exports = { noData: 'Could not find guild in the Database!' };
+module.exports = { noData: 'Impossibile trovare la gilda nel database!' };

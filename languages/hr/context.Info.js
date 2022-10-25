@@ -1,10 +1,10 @@
 module.exports = {
     messages: 'Poruke',
     name: 'Ime',
-    id: 'ID',
     created: 'Napravljen',
     joined: 'Pridružen',
-    invited: 'Pozvan od',
+    invites: 'Invites',
+    voice: 'Voice',
     none: 'prazno',
     timeout: 'na isteku {time}',
     pronouns: {

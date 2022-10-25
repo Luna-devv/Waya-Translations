@@ -35,13 +35,21 @@ module.exports = {
         },
         success: {
             set: 'Successfuwwy set {what} to **{data}** qwq',
+            add: 'Successfuwwy add {what} to **{data}** qwq',
             setCodeblock: 'Successfuwwy set {what} to {data}',
             removed: 'Successfuwwy wemuvd the {what}.',
+            remove: 'Successfuwwy wemuv {what} to **{data}** :///',
             fail: 'This {what} does nyot exist in this guiwd.. ;////',
             lengthFail: 'The {what} is wongew than {max} chawactews! ({length} uwu chawactews, {relative} too much) :////',
             otherLengthFail: 'The {what} is showtew than {min} chawactews! ({length} uwu chawactews, {relative} too wess)  :////',
             numberFail: 'BABE, The {what} is nyot a nyumbew >.< between {a} and {b}! ;-;;;     ',
             roleFail: 'This (^³^) wowe :3 is onwy manyagabwe by ://// eithew Discowd ;-;;; ow bewongs to a bot usew.    '
+        },
+        webedit: {
+            button: 'Embed Editow',
+            title: 'Message Weeb~ Edit\n',
+            description: 'Open [this Weebsite]({uww}) to stawt editing the message & embed :;3',
+            open: 'Open Weeeb Edit\n'
         },
         type: {
             text: 'Text Channyew',
@@ -120,6 +128,12 @@ module.exports = {
                     channel: 'Channyew: {channel}',
                     mode: 'Mode: {mode}'
                 },
+                button: {
+                    snipe: {
+                        enable: 'Enyabwe Snyipe',
+                        disable: 'Disabwe Snyipe'
+                    }
+                },
                 page: {
                     channel: {
                         title: 'Channyew',
@@ -197,9 +211,16 @@ module.exports = {
                     message: {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
-                    }
+                    },
+                    pings: 'Pings: {channels}',
+                    autodelete: 'Auto dewete: **{time}**',
+                    autodelete_never: 'nyevew'
                 },
-                button: { message: 'Edit Message' },
+                button: {
+                    message: 'Edit Message',
+                    pings: 'Edit Ping-Pong Channyews',
+                    autodelete: 'Set Autodewete'
+                },
                 page: {
                     channel: {
                         title: 'Channyew',
@@ -212,6 +233,17 @@ module.exports = {
                     role: {
                         title: 'Wowe',
                         name: 'Wewcomew Wowe'
+                    },
+                    pings: {
+                        title: 'Ping-Pongs',
+                        name: 'Pings wist',
+                        description: 'Mention a Channyew ow paste the Channyew ID into the chat.\nPwefix the message with `+` to add ow `-` to wemuv Channyews.\nU can send muwtipwe Channyews sepewated with a space.\nType `none` to wemuv aww Channyews.',
+                        missingPrefix: 'The message must be pwefixed with `+` to add ow `-` to wemuv Channyews >:)'
+                    },
+                    autodelete: {
+                        title: 'Auto Dewete',
+                        name: 'Auto Dewete',
+                        description: 'The Wewcomew message wiww be deweted aftew this time.\nWe wecommend u to keep this time showt (onwy few seconds).\nExampwe: `1m 3s`'
                     }
                 }
             },
@@ -694,7 +726,7 @@ module.exports = {
                         title: 'Nyew Wevew Wowe',
                         limit: 'Babe, U have weached the guiwd wimit of **{count}/{max} wevew wowes**! >~<\n',
                         alreadExists: 'A wewawd wowe fow **{messages} messages** awweady has been set with the **{role} wowe** >.>',
-                        success: 'Successfuwwy added this Wevew Wowe. Each usew who weaches **{messages} messages** wiww wecieve the **{wowe} wowe** nyow! 🎉',
+                        success: 'Successfuwwy added this Wevew Wowe. Each usew who weaches **{messages} messages** wiww wecieve the **{role} wowe** nyow! 🎉',
                         page: {
                             messageCount: {
                                 title: 'Message Count',

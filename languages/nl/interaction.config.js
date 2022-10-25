@@ -35,13 +35,21 @@ module.exports = {
         },
         success: {
             set: 'Successfully set {what} to **{data}**.',
+            add: 'Successfully add {what} to **{data}**.',
             setCodeblock: 'Successfully set {what} to {data}',
             removed: 'Successfully removed the {what}.',
+            remove: 'Successfully remove {what} from **{data}**.',
             fail: 'This {what} does not exist in this guild..',
             lengthFail: 'De {what} ({length} karakters) is langer dan het maximum aantal toegestane {max} karakters',
             otherLengthFail: 'De {what} ({length} karakters) is korter dan het minimum aantal toegestane {min} karakters',
             numberFail: 'The {what} is not a number between {a} and {b}!',
             roleFail: 'This Role is only managable by either Discord or belongs to a bot user.'
+        },
+        webedit: {
+            button: 'Embed Editor',
+            title: 'Message Web Edit',
+            description: 'Open [this Website]({url}) to start editing the message & embed.',
+            open: 'Open Web Edit'
         },
         type: {
             text: 'Text Channel',
@@ -120,6 +128,12 @@ module.exports = {
                     channel: 'Channel: {channel}',
                     mode: 'Mode: {mode}'
                 },
+                button: {
+                    snipe: {
+                        enable: 'Enable Snipe',
+                        disable: 'Disable Snipe'
+                    }
+                },
                 page: {
                     channel: {
                         title: 'Channel',
@@ -197,9 +211,16 @@ module.exports = {
                     message: {
                         message: 'Message: {message}',
                         command: 'Bericht: gebruik `{command}`'
-                    }
+                    },
+                    pings: 'Pings: {channels}',
+                    autodelete: 'Auto delete: **{time}**',
+                    autodelete_never: 'never'
                 },
-                button: { message: 'Edit Message' },
+                button: {
+                    message: 'Edit Message',
+                    pings: 'Edit Ping Channels',
+                    autodelete: 'Set Autodelete'
+                },
                 page: {
                     channel: {
                         title: 'Channel',
@@ -212,6 +233,17 @@ module.exports = {
                     role: {
                         title: 'Role',
                         name: 'Welcomer Role'
+                    },
+                    pings: {
+                        title: 'Pings',
+                        name: 'Pings list',
+                        description: 'Mention a Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                    },
+                    autodelete: {
+                        title: 'Auto Delete',
+                        name: 'Auto Delete',
+                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
                     }
                 }
             },

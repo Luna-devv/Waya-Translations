@@ -19,5 +19,10 @@ module.exports = {
     error: {
         tooLong: 'Opcija {index} ima više od {number} znakova!',
         noData: 'nema skupa podataka'
+    },
+    webedit: {
+        title: 'Message Web Edit',
+        description: 'Open [this Website]({url}) to start editing the message & embed.',
+        open: 'Open Web Edit'
     }
 };

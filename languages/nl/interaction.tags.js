@@ -85,7 +85,9 @@ module.exports = {
             slash: 'Slash ;[Command, Commands]'
         },
         none: 'no tags',
-        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions'
+        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions',
+        // ;[singular, plural]
+        amount: '{amount} tags • Use with {command}'
     },
     deleted: 'Successfully deleted the Tag **{name}**.'
 };

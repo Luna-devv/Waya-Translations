@@ -1,38 +1,46 @@
 module.exports = {
-    alreadyExists: 'A Sticky Message in this channel already exists!',
-    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} Sticky Messages**!',
-    invalidStickymessage: 'No Sticky Message exists in this channel!',
+    alreadyExists: 'Ljepljiva poruka u ovom kanalu već postoji!',
+    stickymessagesLimit: 'Dosegli ste ograničenje servera od **{count}/{max} ljepljivih poruka**!',
+    invalidStickymessage: 'U ovom kanalu ne postoji ljepljiva poruka!',
     overview: {
-        title: 'Sticky Message Config',
-        message: 'Message',
+        title: 'Konfiguracija ljepljivih poruka',
+        message: 'Poruka',
         embed: 'Embed',
+        note: 'Button Note',
+        note_status: {
+            show: 'Showing',
+            hide: 'Hidden'
+        },
         button: {
-            exit: 'Save & Exit',
-            permission: 'Select a permission the user needs',
+            exit: 'Spremi i izađi',
             color: {
-                enabled: 'Select a color for the Embed',
-                disabled: 'Use Embeds and select a color'
+                enabled: 'Odaberite boju za Embed',
+                disabled: 'Koristite Embed i odaberite boju'
+            },
+            note: {
+                show: 'Show Note',
+                hide: 'Hide Note'
             }
         }
     },
     form: {
-        formName: '{name} sticky message',
-        message: { content: 'Content' },
+        formName: '{name} ljepljiva poruka',
+        message: { content: 'Sadržaj' },
         embed: {
-            title: 'Title',
-            description: 'Description',
-            thumbnail: 'Thumbnail',
-            image: 'Image',
+            title: 'Naslov',
+            description: 'Opis',
+            thumbnail: 'Sličica',
+            image: 'Slika',
             footer: 'Footer'
         }
     },
     success: {
-        message: 'Successfully added a Sticky Message in {channel}.',
-        try: 'Try it out by sending a few messages there!'
+        message: 'Uspješno dodana ljepljiva poruka u {channel}.',
+        try: 'Isprobajte ga tako što ćete tamo poslati nekoliko poruka!'
     },
     list: {
-        title: 'Sticky ;[Message, Messages]',
-        none: 'no sticky messages'
+        title: 'Ljepljiva ;[Poruka, Poruke]',
+        none: 'nema ljepljivih poruka'
     },
-    deleted: 'Successfully deleted the Sticky Message in {channel}.'
+    deleted: 'Uspješno izbrisana ljepljiva poruka u {channel}.'
 };

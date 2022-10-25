@@ -35,13 +35,21 @@ module.exports = {
         },
         success: {
             set: '{what} je uspješno postavljeno na **{data}**.',
+            add: 'Successfully add {what} to **{data}**.',
             setCodeblock: '{what} je uspješno postavljeno na {data}',
             removed: 'Uspješno uklonjeno {what}.',
+            remove: 'Successfully remove {what} from **{data}**.',
             fail: 'Ovo {what} ne postoji u ovom serveru..',
             lengthFail: '{what} je duži od {max} znakova! ({length} znakova, {relative} previše)',
             otherLengthFail: '{what} kraći je od {min} znakova! ({length} znakova, {relative} previše manje)',
             numberFail: '{what} nije broj između {a} i {b}!',
             roleFail: 'Ovom ulogom može upravljati samo Discord ili pripada korisniku bota.'
+        },
+        webedit: {
+            button: 'Embed Editor',
+            title: 'Message Web Edit',
+            description: 'Open [this Website]({url}) to start editing the message & embed.',
+            open: 'Open Web Edit'
         },
         type: {
             text: 'Tekstualni kanal',
@@ -120,6 +128,12 @@ module.exports = {
                     channel: 'Kanal: {channel}',
                     mode: 'Način rada: {mode}'
                 },
+                button: {
+                    snipe: {
+                        enable: 'Enable Snipe',
+                        disable: 'Disable Snipe'
+                    }
+                },
                 page: {
                     channel: {
                         title: 'Kanal',
@@ -197,9 +211,16 @@ module.exports = {
                     message: {
                         message: 'Poruka: {message}',
                         command: 'Poruka: koristite `{command}`'
-                    }
+                    },
+                    pings: 'Pings: {channels}',
+                    autodelete: 'Auto delete: **{time}**',
+                    autodelete_never: 'never'
                 },
-                button: { message: 'Uredi poruku' },
+                button: {
+                    message: 'Uredi poruku',
+                    pings: 'Edit Ping Channels',
+                    autodelete: 'Set Autodelete'
+                },
                 page: {
                     channel: {
                         title: 'Kanal',
@@ -212,6 +233,17 @@ module.exports = {
                     role: {
                         title: 'Uloga',
                         name: 'Uloga dobrodošlice'
+                    },
+                    pings: {
+                        title: 'Pings',
+                        name: 'Pings list',
+                        description: 'Mention a Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                    },
+                    autodelete: {
+                        title: 'Auto Delete',
+                        name: 'Auto Delete',
+                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
                     }
                 }
             },

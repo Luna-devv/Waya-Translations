@@ -1,10 +1,10 @@
 module.exports = {
     messages: 'Nachrichten',
     name: 'Name',
-    id: 'Id',
     created: 'Erstellt',
     joined: 'Beigetreten',
-    invited: 'Eingeladen',
+    invites: 'Einladungen',
+    voice: 'Voice',
     none: 'keine',
     timeout: 'auf Timeout für {time}',
     pronouns: {

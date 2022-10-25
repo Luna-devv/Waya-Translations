@@ -1,4 +1,4 @@
 module.exports = {
-    result: 'result',
-    tooLong: 'The result is too long.. The result can be seen in the attached file.'
+    result: 'risultato',
+    tooLong: 'Il risultato è troppo lungo. Il risultato può essere visto nel file allegato.'
 };

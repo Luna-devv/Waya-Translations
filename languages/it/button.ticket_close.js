@@ -1,16 +1,17 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
+    request: { ureStaff: 'You are staff, you can just use {command}.' },
+    noData: 'Impossibile trovare la gilda nel database!',
     confirm: {
-        text: 'Are you sure that you want to delete {channel} forever?',
-        configReason: 'For `reason`, please enable logging in `/config` => __Ticketing__!',
-        required: 'A close reason is requried!',
+        text: 'Sei sicuro di voler\' eliminare {channel} per sempre?',
+        configReason: 'Per `motivo`, per favore abilita il login `/config` => __Ticketing__!',
+        required: 'È necessario un motivo per la chiusura!',
         button: {
-            close: 'Close Ticket',
-            closeReason: 'Close Ticket with Reason'
+            close: 'Chiudi Ticket',
+            closeReason: 'Chiudi Ticket con motivo'
         }
     },
     form: {
-        formTitle: `Close {channel}`,
-        reason: 'Reason'
+        formTitle: `Chiudi {channel}`,
+        reason: 'Motivo'
     }
 };

@@ -6,12 +6,20 @@ module.exports = {
         title: 'Sticky Message Config',
         message: 'Message',
         embed: 'Embed',
+        note: 'Button Nyote',
+        note_status: {
+            show: 'Showing',
+            hide: 'Hidden'
+        },
         button: {
             exit: 'Save & Exit',
-            permission: 'Sewect a pewmission the usew nyeeds',
             color: {
                 enabled: 'Sewect a cowow fow the Embed',
                 disabled: 'Use Embeds and sewect a cowow'
+            },
+            note: {
+                show: 'Show Nyote',
+                hide: 'Hide Nyote'
             }
         }
     },
@@ -27,12 +35,12 @@ module.exports = {
         }
     },
     success: {
-        message: 'Successfuwwy added a Sticky Message in {channyew} >.>',
+        message: 'Successfuwwy added a Sticky Message in {channel} >.>',
         try: 'Ayy, twy it out by sending a few messages thewe :>'
     },
     list: {
         title: 'Sticky ;[Message, Messages]',
         none: 'nyo sticky messages'
     },
-    deleted: 'Successfuwwy deweted the Sticky Message in {channyew}. ^^'
+    deleted: 'Successfuwwy deweted the Sticky Message in {channel}. ^^'
 };
