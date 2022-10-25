@@ -23,6 +23,6 @@ module.exports = {
     webedit: {
         title: 'Message Weeb~ Edit\n',
         description: 'Open [this Weebsite]({uww}) to stawt editing the message & embed :;3',
-        open: 'Open Weeeb Edit\n'
+        open: 'Open Weeeb Edit'
     }
 };
