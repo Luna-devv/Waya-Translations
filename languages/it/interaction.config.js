@@ -48,7 +48,8 @@ module.exports = {
         webedit: {
             button: 'Embed Editor',
             title: 'Message Web Edit',
-            description: 'Open [this Website]({url}) to start editing the message & embed.'
+            description: 'Open [this Website]({url}) to start editing the message & embed.',
+            open: 'Open Web Edit'
         },
         type: {
             text: 'Canale di testo',
