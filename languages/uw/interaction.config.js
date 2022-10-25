@@ -48,7 +48,8 @@ module.exports = {
         webedit: {
             button: 'Embed Editow',
             title: 'Message Weeb~ Edit\n',
-            description: 'Open [this Weebsite]({uww}) to stawt editing the message & embed :;3'
+            description: 'Open [this Weebsite]({uww}) to stawt editing the message & embed :;3',
+            open: 'Open Weeeb Edit\n'
         },
         type: {
             text: 'Text Channyew',
