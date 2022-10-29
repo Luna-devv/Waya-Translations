@@ -263,9 +263,12 @@ module.exports = {
                         message: "Message: {message}",
                         command: "Message: use `{command}`",
                     },
+                    autodelete: 'Auto delete: **{time}**',
+                    autodelete_never: "never",
                 },
                 button: {
                     message: "Edit Message",
+                    autodelete: "Set Autodelete",
                 },
                 page: {
                     channel: {
@@ -275,6 +278,11 @@ module.exports = {
                     message: {
                         title: "Message",
                         name: "Byer Message",
+                    },
+                    autodelete: {
+                        title: "Auto Delete",
+                        name: "Auto Delete",
+                        description: "The Byer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`"
                     },
                 },
             },
