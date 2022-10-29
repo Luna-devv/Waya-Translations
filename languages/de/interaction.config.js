@@ -255,9 +255,14 @@ module.exports = {
                     message: {
                         message: 'Nachricht: {message}',
                         command: 'Nachricht: Benutze `{command}`'
-                    }
+                    },
+                    autodelete: 'Auto delete: **{time}**',
+                    autodelete_never: 'never'
                 },
-                button: { message: 'Nachricht Bearbeiten' },
+                button: {
+                    message: 'Nachricht Bearbeiten',
+                    autodelete: 'Set Autodelete'
+                },
                 page: {
                     channel: {
                         title: 'Kanal',
@@ -266,6 +271,11 @@ module.exports = {
                     message: {
                         title: 'Nachricht',
                         name: 'Verabschiedungsnachricht'
+                    },
+                    autodelete: {
+                        title: 'Auto Delete',
+                        name: 'Auto Delete',
+                        description: 'The Byer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
                     }
                 }
             }
