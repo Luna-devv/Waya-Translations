@@ -255,9 +255,14 @@ module.exports = {
                     message: {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
-                    }
+                    },
+                    autodelete: 'Auto dewete: **{time}**',
+                    autodelete_never: 'nyevew'
                 },
-                button: { message: 'Edit Message' },
+                button: {
+                    message: 'Edit Message',
+                    autodelete: 'Set Autodewete'
+                },
                 page: {
                     channel: {
                         title: 'Channyew',
@@ -266,6 +271,11 @@ module.exports = {
                     message: {
                         title: 'Message',
                         name: 'Byew Message'
+                    },
+                    autodelete: {
+                        title: 'Auto Dewete',
+                        name: 'Auto Dewete',
+                        description: 'The Wewcomew message wiww be deweted aftew this time.\nWe wecommend u to keep this time showt (onwy few seconds).\nExampwe: `1m 3s`'
                     }
                 }
             }
