@@ -1,0 +1,1 @@
+module.exports = { success: 'C\' u watew, {usew}!' };
