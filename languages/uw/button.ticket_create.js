@@ -7,5 +7,5 @@ module.exports = {
         field: 'Why ://// >.< do u want to open a Ticket? >.<   ',
         placeholder: 'CUZ I NyEED HEwP DO FIND MOwE QWQ >;)'
     },
-    commands: { closerequest: 'Create a close request' }
+    commands: { closerequest: 'Cweate a cwose wequest' }
 };
