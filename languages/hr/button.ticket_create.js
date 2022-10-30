@@ -6,5 +6,6 @@ module.exports = {
         formTitle: 'Razlog otvaranja ulaznice',
         field: 'Zašto želite otvoriti ulaznicu?',
         placeholder: 'Trebam pomoć oko toga..'
-    }
+    },
+    commands: { closerequest: 'Create a close request' }
 };
