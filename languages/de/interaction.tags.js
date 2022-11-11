@@ -87,7 +87,7 @@ module.exports = {
         none: 'keine Tags',
         disabled: '{amount} ;[Tag, Tags] sind versteckt aufgrund fehlender rechte',
         // ;[singular, plural]
-        amount: '{amount} tags • Use with {command}'
+        amount: '{amount} Tags • Mit {command} verwenden'
     },
     deleted: '**{name}** wurde erfolgreich gelöscht.'
 };
