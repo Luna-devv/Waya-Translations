@@ -86,6 +86,10 @@ module.exports = {
                 analyst: "Analyst",
                 cozy: "Cozy",
             },
+            modeChange: {
+                analyst: "Set to Analyst",
+                cozy: "Set to Cozy",
+            },
             dupaw: {
                 // This is a name, cannot be translated
                 enable: "Enable dupaw",
@@ -114,6 +118,7 @@ module.exports = {
             help: "Support",
         },
     },
+
     logging: {
         title: "Configure Logging",
         button: {
@@ -151,9 +156,11 @@ module.exports = {
                     channel: "Channel: {channel}",
                     mode: "Mode: {mode}",
                     filter: "Filter: {state}",
+                    captcha: "CAPTCHA: {state}",
                 },
                 button: {
                     filter: "Filter",
+                    captcha: "CAPTCHA Verification",
                 },
                 page: {
                     channel: {
@@ -205,6 +212,48 @@ module.exports = {
                             },
                         },
                     },
+                    captcha: {
+                        title: "CAPTCHA",
+                        name: "CAPTCHA",
+                        option: {
+                            verifiedrole: "Verified Role: {role}",
+                            unverifiedrole: "Unerified Role: {role}",
+                            channel: "Logging: {channel}"
+                        },
+                        disclaimer: "Continue with {command}",
+                        button: {
+                            verifiedrole: {
+                                set: "Set Verified Role",
+                                edit: "Edit Verified Role"
+                            },
+                            unverifiedrole: {
+                                set: "Set Unverified Role",
+                                edit: "Edit Unverified Role"
+                            },
+                            type: {
+                                title: "Set a CAPTCHA type",
+                                selected: "Selected",
+                            },
+                        },
+                        page: {
+                            verifiedrole: {
+                                title: "Verified Role",
+                                name: "CAPTCHA verified Role",
+                            },
+                            unverifiedrole: {
+                                title: "Unverifiedrole Role",
+                                name: "CAPTCHA unverifiedrole Role",
+                            },
+                            logging: {
+                                title: "Logging",
+                                name: "CAPTCHA logging Channel",
+                            },
+                            role: {
+                                title: "Role",
+                                name: "failed CAPTCHA role",
+                            },
+                        }
+                    }
                 },
             },
 
@@ -214,6 +263,7 @@ module.exports = {
                 option: {
                     channel: "Channel: {channel}",
                     role: "Role: {role}",
+                    role_managed: "Managed trough **joins > captcha**",
                     message: {
                         message: "Message: {message}",
                         command: "Message: use `{command}`",
