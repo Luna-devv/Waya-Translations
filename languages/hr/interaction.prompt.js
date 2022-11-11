@@ -20,6 +20,7 @@ module.exports = {
         tooLong: 'Opcija {index} ima više od {number} znakova!',
         noData: 'nema skupa podataka'
     },
+    verifySetUp: '**CAPTCHA Setup is Required**\nPlease use {command} and go to *\'Logging > Joins > CAPTCHA\'* and run this command again.',
     webedit: {
         title: 'Message Web Edit',
         description: 'Open [this Website]({url}) to start editing the message & embed.',
