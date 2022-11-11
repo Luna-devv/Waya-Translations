@@ -258,7 +258,7 @@ module.exports = {
                 option: {
                     channel: 'Channyew: {channel}',
                     role: 'Wowe: {role}',
-                    role_managed: 'Managed trough **joins > captcha**',
+                    role_managed: 'Manyaged twough **joins > captcha**',
                     message: {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
