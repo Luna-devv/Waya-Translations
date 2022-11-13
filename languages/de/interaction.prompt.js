@@ -20,9 +20,10 @@ module.exports = {
         tooLong: 'Option {index} hat mehr als {number} Buchstaben!',
         noData: 'keine daten angegeben'
     },
+    verifySetUp: '**CAPTCHA Setup ist erforderlich**\nBitte benutze {command} und gehe zu *\'Logging > Joins > CAPTCHA\'* und führe diesen Befehl erneut.',
     webedit: {
-        title: 'Message Web Edit',
-        description: 'Open [this Website]({url}) to start editing the message & embed.',
-        open: 'Open Web Edit'
+        title: 'Nachricht Web Editor',
+        description: 'Öffne [diese Website]({url}), um die Nachricht zu bearbeiten und einzubetten.',
+        open: 'Web Editor öffnen'
     }
 };

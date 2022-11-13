@@ -6,5 +6,6 @@ module.exports = {
         formTitle: 'Motivo di Apertura Biglietto',
         field: 'Perché vuoi aprire un Ticket?',
         placeholder: 'Ho bisogno di aiuto per..'
-    }
+    },
+    commands: { closerequest: 'Create a close request' }
 };

@@ -85,6 +85,10 @@ module.exports = {
                 analyst: 'Analitički',
                 cozy: 'Udobno'
             },
+            modeChange: {
+                analyst: 'Set to Analyst',
+                cozy: 'Set to Cozy'
+            },
             dupaw: {
                 // This is a name, cannot be translated
                 enable: 'Omogući dupaw',
@@ -147,9 +151,13 @@ module.exports = {
                 option: {
                     channel: 'Kanal: {channel}',
                     mode: 'Način rada: {mode}',
-                    filter: 'Filter: {state}'
+                    filter: 'Filter: {state}',
+                    captcha: 'CAPTCHA: {state}'
                 },
-                button: { filter: 'Filter' },
+                button: {
+                    filter: 'Filter',
+                    captcha: 'CAPTCHA Verification'
+                },
                 page: {
                     channel: {
                         title: 'Kanal',
@@ -199,6 +207,48 @@ module.exports = {
                                 name: 'kaznena uloga'
                             }
                         }
+                    },
+                    captcha: {
+                        title: 'CAPTCHA',
+                        name: 'CAPTCHA',
+                        option: {
+                            verifiedrole: 'Verified Role: {role}',
+                            unverifiedrole: 'Unerified Role: {role}',
+                            channel: 'Logging: {channel}'
+                        },
+                        disclaimer: 'Continue with {command}',
+                        button: {
+                            verifiedrole: {
+                                set: 'Set Verified Role',
+                                edit: 'Edit Verified Role'
+                            },
+                            unverifiedrole: {
+                                set: 'Set Unverified Role',
+                                edit: 'Edit Unverified Role'
+                            },
+                            type: {
+                                title: 'Set a CAPTCHA type',
+                                selected: 'Selected'
+                            }
+                        },
+                        page: {
+                            verifiedrole: {
+                                title: 'Verified Role',
+                                name: 'CAPTCHA verified Role'
+                            },
+                            unverifiedrole: {
+                                title: 'Unverifiedrole Role',
+                                name: 'CAPTCHA unverifiedrole Role'
+                            },
+                            logging: {
+                                title: 'Logging',
+                                name: 'CAPTCHA logging Channel'
+                            },
+                            role: {
+                                title: 'Role',
+                                name: 'failed CAPTCHA role'
+                            }
+                        }
                     }
                 }
             },
@@ -208,6 +258,7 @@ module.exports = {
                 option: {
                     channel: 'Kanal: {channel}',
                     role: 'Uloga: {role}',
+                    role_managed: 'Managed trough **joins > captcha**',
                     message: {
                         message: 'Poruka: {message}',
                         command: 'Poruka: koristite `{command}`'

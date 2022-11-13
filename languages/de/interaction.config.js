@@ -35,10 +35,10 @@ module.exports = {
         },
         success: {
             set: 'Erfolgreich {what} auf **{data}** gesetzt.',
-            add: 'Successfully add {what} to **{data}**.',
+            add: 'Erfolgreich {what} zu **{data}** hinzugefügt.',
             setCodeblock: '{what} ist somit nun {data}',
             removed: '{what} wurde erfolgreich entfernt.',
-            remove: 'Successfully remove {what} from **{data}**.',
+            remove: '{what} wurde erfolgreich von {data} entfernt.',
             fail: '{what} existiert nicht in diesem Server..',
             lengthFail: '{what} ist länger als {max} Buchstaben! ({length} Buchstaben, {relative} zu viel)',
             otherLengthFail: '{what} ist kürzer als {min} Buchstaben! ({length} Buchstaben, {relative} zu wenig)',
@@ -47,9 +47,9 @@ module.exports = {
         },
         webedit: {
             button: 'Embed Editor',
-            title: 'Message Web Edit',
-            description: 'Open [this Website]({url}) to start editing the message & embed.',
-            open: 'Open Web Edit'
+            title: 'Nachricht Web Editor',
+            description: 'Öffne [diese Website]({url}), um die Nachricht zu bearbeiten und einzubetten.',
+            open: 'Web Editor öffnen'
         },
         type: {
             text: 'Text Kanal',
@@ -84,6 +84,10 @@ module.exports = {
             mode: {
                 analyst: 'Daten reich',
                 cozy: 'Übersichtlich'
+            },
+            modeChange: {
+                analyst: 'Auf Analyst setzen',
+                cozy: 'Auf Cozy setzen'
             },
             dupaw: {
                 // This is a name, cannot be translated
@@ -130,8 +134,8 @@ module.exports = {
                 },
                 button: {
                     snipe: {
-                        enable: 'Enable Snipe',
-                        disable: 'Disable Snipe'
+                        enable: 'Aktiviere Snipes',
+                        disable: 'Deaktiviere Snipes'
                     }
                 },
                 page: {
@@ -147,9 +151,13 @@ module.exports = {
                 option: {
                     channel: 'Kanal: {channel}',
                     mode: 'Modus: {mode}',
-                    filter: 'Filter: {state}'
+                    filter: 'Filter: {state}',
+                    captcha: 'CAPTCHA: {state}'
                 },
-                button: { filter: 'Filter' },
+                button: {
+                    filter: 'Filter',
+                    captcha: 'CAPTCHA Verifizierung'
+                },
                 page: {
                     channel: {
                         title: 'Kanal',
@@ -199,6 +207,48 @@ module.exports = {
                                 name: 'Bestrafungs Rolle'
                             }
                         }
+                    },
+                    captcha: {
+                        title: 'CAPTCHA',
+                        name: 'CAPTCHA',
+                        option: {
+                            verifiedrole: 'Verifizierte Rolle: {role}',
+                            unverifiedrole: 'Unverifizierte Rolle: {role}',
+                            channel: 'Logging: {channel}'
+                        },
+                        disclaimer: 'Mit {command} fortfahren',
+                        button: {
+                            verifiedrole: {
+                                set: 'Verifizierte Rolle Setzen',
+                                edit: 'Verifizierte Rolle Bearbeiten'
+                            },
+                            unverifiedrole: {
+                                set: 'Unverifizierte Rolle Setzen',
+                                edit: 'Unverifizierte Rolle Bearbeiten'
+                            },
+                            type: {
+                                title: 'CAPTCHA Typ festlegen',
+                                selected: 'Ausgewählt'
+                            }
+                        },
+                        page: {
+                            verifiedrole: {
+                                title: 'Verifiziert Rolle',
+                                name: 'CAPTCHA verifizierte Rolle'
+                            },
+                            unverifiedrole: {
+                                title: 'Unverifiziert Rolle',
+                                name: 'CAPTCHA unverifizierte Rolle'
+                            },
+                            logging: {
+                                title: 'Logging',
+                                name: 'CAPTCHA Logging Channel'
+                            },
+                            role: {
+                                title: 'Rolle',
+                                name: 'fehlgeschlagene CAPTCHA-Rolle'
+                            }
+                        }
                     }
                 }
             },
@@ -208,18 +258,19 @@ module.exports = {
                 option: {
                     channel: 'Kanal: {channel}',
                     role: 'Rolle: {role}',
+                    role_managed: 'Verwaltet durch **Joins > captcha**',
                     message: {
                         message: 'Nachricht: {message}',
                         command: 'Nachricht: Benutze `{command}`'
                     },
                     pings: 'Pings: {channels}',
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    autodelete: 'Auto Delete: **{time}**',
+                    autodelete_never: 'niemals'
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
-                    pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete'
+                    pings: 'Ping Kanäle bearbeiten',
+                    autodelete: 'Autodelete festlegen'
                 },
                 page: {
                     channel: {
@@ -236,14 +287,14 @@ module.exports = {
                     },
                     pings: {
                         title: 'Pings',
-                        name: 'Pings list',
-                        description: 'Mention a Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
-                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                        name: 'Pingliste',
+                        description: 'Erwähne einen Channel oder sende die Id in den Chat.\nPräfix die Nachricht mit `+` zum Hinzufügen oder `-` um Kanäle zu entfernen.\nDu kannst mehrere Kanäle mit einem Leerzeichen trennen.\nSchreibe `none`, um alle Channels zu entfernen.',
+                        missingPrefix: 'Der Nachricht muss ein `+` vorangestellt werden, um Kanäle hinzuzufügen, oder ein `-`, um Kanäle zu entfernen.'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Automatisch löschen',
+                        name: 'Automatisch löschen',
+                        description: 'Die Willkommensnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
                     }
                 }
             },
@@ -256,12 +307,12 @@ module.exports = {
                         message: 'Nachricht: {message}',
                         command: 'Nachricht: Benutze `{command}`'
                     },
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    autodelete: 'Auto Delete: **{time}**',
+                    autodelete_never: 'niemals'
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
-                    autodelete: 'Set Autodelete'
+                    autodelete: 'Autodelete festlegen'
                 },
                 page: {
                     channel: {
@@ -273,9 +324,9 @@ module.exports = {
                         name: 'Verabschiedungsnachricht'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Byer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Automatisch löschen',
+                        name: 'Automatisch löschen',
+                        description: 'Die Verabschiedungssnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
                     }
                 }
             }

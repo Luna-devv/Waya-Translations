@@ -20,8 +20,9 @@ module.exports = {
         tooLong: 'Option {index} has mowe than {number} chawactews! meow~',
         noData: 'nyo data set'
     },
+    verifySetUp: '**CAPTCHA Setup is Wequiwed**\nPwease use {command} and go to *\'wogging > Joins > CAPTCHA\'* and wun this command again qwq',
     webedit: {
-        title: 'Message Weeb~ Edit',
+        title: 'Message Weeb~ Edit\n',
         description: 'Open [this Weebsite]({uww}) to stawt editing the message & embed :;3',
         open: 'Open Weeeb Edit'
     }

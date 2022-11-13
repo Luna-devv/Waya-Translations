@@ -85,6 +85,10 @@ module.exports = {
                 analyst: 'Anyawyst',
                 cozy: 'Cozy'
             },
+            modeChange: {
+                analyst: 'Set to Anyawyst',
+                cozy: 'Set to Cozy'
+            },
             dupaw: {
                 // This is a name, cannot be translated
                 enable: 'Enyabwe dupaw',
@@ -147,9 +151,13 @@ module.exports = {
                 option: {
                     channel: 'Channyew: {channel}',
                     mode: 'Mode: {mode}',
-                    filter: 'Fiwtew: {state}'
+                    filter: 'Fiwtew: {state}',
+                    captcha: 'CAPTCHA: {state}'
                 },
-                button: { filter: 'Fiwtew' },
+                button: {
+                    filter: 'Fiwtew',
+                    captcha: 'CAPTCHA Cati~fication'
+                },
                 page: {
                     channel: {
                         title: 'Channyew',
@@ -199,6 +207,48 @@ module.exports = {
                                 name: 'punyishment wowe'
                             }
                         }
+                    },
+                    captcha: {
+                        title: 'CAPTCHA',
+                        name: 'CAPTCHA',
+                        option: {
+                            verifiedrole: 'Vewified Wowe: {role}',
+                            unverifiedrole: 'Unyewified Wowe: {role}',
+                            channel: 'Wogging: {channel}'
+                        },
+                        disclaimer: 'Continyue with {command}',
+                        button: {
+                            verifiedrole: {
+                                set: 'Set Vewified Wowe',
+                                edit: 'Edit Vewified Wowe'
+                            },
+                            unverifiedrole: {
+                                set: 'Set Unvewified Wowe',
+                                edit: 'Edit Unvewified Wowe'
+                            },
+                            type: {
+                                title: 'Set a CAPTCHA type',
+                                selected: 'Sewected'
+                            }
+                        },
+                        page: {
+                            verifiedrole: {
+                                title: 'Vewified Wowe',
+                                name: 'CAPTCHA vewified Wowe'
+                            },
+                            unverifiedrole: {
+                                title: 'Unvewifiedwowe Wowe',
+                                name: 'CAPTCHA unvewifiedwowe Wowe'
+                            },
+                            logging: {
+                                title: 'Wogging',
+                                name: 'CAPTCHA wogging Channyew'
+                            },
+                            role: {
+                                title: 'Wowe',
+                                name: 'faiwed CAPTCHA wowe'
+                            }
+                        }
                     }
                 }
             },
@@ -208,6 +258,7 @@ module.exports = {
                 option: {
                     channel: 'Channyew: {channel}',
                     role: 'Wowe: {role}',
+                    role_managed: 'Manyaged twough **joins > captcha**',
                     message: {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
