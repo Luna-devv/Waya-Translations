@@ -15,7 +15,10 @@ module.exports = {
             support: 'Support kontaktieren'
         }
     },
-    button: { add: '{name} Einladen' },
+    button: {
+        add: '{name} Einladen',
+        support: 'Support'
+    },
     permissions: {
         user: {
             guild: 'Du kannst diese Aktion nicht ausführen, da dir die {perms} Berechtigungen fehlen.',

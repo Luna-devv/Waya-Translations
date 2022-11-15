@@ -15,7 +15,10 @@ module.exports = {
             support: 'Contact Suppowt'
         }
     },
-    button: { add: 'Add {name} nyw' },
+    button: {
+        add: 'Add {name} nyw',
+        support: 'Support'
+    },
     permissions: {
         user: {
             guild: 'sowwy baby, u cannyot wun this action cuz u\'we missing the {perms} pewmissions.. >~<',

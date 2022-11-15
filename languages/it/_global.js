@@ -15,7 +15,10 @@ module.exports = {
             support: 'Contatta il supporto'
         }
     },
-    button: { add: 'Aggiungi {name}' },
+    button: {
+        add: 'Aggiungi {name}',
+        support: 'Support'
+    },
     permissions: {
         user: {
             guild: 'Non puoi eseguire questa azione poiché ti mancano le autorizzazioni {perms}.',
