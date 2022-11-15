@@ -312,7 +312,7 @@ module.exports = {
                 },
                 button: {
                     message: 'Uredi poruku',
-                    autodelete: 'Set Autodelete'
+                    autodelete: 'Postavite automatsko brisanje'
                 },
                 page: {
                     channel: {
@@ -324,9 +324,9 @@ module.exports = {
                         name: 'Pozdravna poruka'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Byer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Automatsko brisanje',
+                        name: 'Automatsko brisanje',
+                        description: 'Poruka Byera bit će izbrisana nakon tog vremena.\nPreporučujemo da ovo vrijeme bude kratko (samo nekoliko sekundi).\nPrimjer: `1m 3s`'
                     }
                 }
             }
