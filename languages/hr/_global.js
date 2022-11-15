@@ -15,7 +15,10 @@ module.exports = {
             support: 'Obratite se podršci'
         }
     },
-    button: { add: 'Dodaj {name}' },
+    button: {
+        add: 'Dodaj {name}',
+        support: 'Support'
+    },
     permissions: {
         user: {
             guild: 'Ne možete pokrenuti ovu radnju jer vam nedostaju dopuštenja {perms}.',
