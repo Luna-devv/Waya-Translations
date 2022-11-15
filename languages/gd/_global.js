@@ -15,7 +15,10 @@ module.exports = {
             support: 'Contact Support'
         }
     },
-    button: { add: 'hohl dir {name} ok?' },
+    button: {
+        add: 'hohl dir {name} ok?',
+        support: 'Support'
+    },
     permissions: {
         user: {
             guild: 'Keine {perms} rechte!',
