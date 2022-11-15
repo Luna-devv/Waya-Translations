@@ -1,20 +1,20 @@
 module.exports = {
     join: {
-        title: 'Welcome {user}!',
-        description: 'In order to get access to this Server, you will have to complete a quick verification to lower the risk of Bot attacks and to ensure overhaul security {emote}\n\nPlease note the Admins and Mods of {guild} do not have access to any of your provided information.'
+        title: 'Dobro došli {user}!',
+        description: 'Kako biste dobili pristup ovom serveru, morat ćete dovršiti brzu provjeru kako biste smanjili rizik od napada robota i osigurali reviziju sigurnosti {emote}\n\nImajte na umu da administratori i moderatori {guild} nemaju pristup informacijama koje ste dali.'
     },
     punishment: {
-        ban: 'Banned from {guild}',
-        kick: 'Kicked from {guild}',
-        timeout: 'Timed out in {guild}',
-        role: 'Assigned Role in {guild}'
+        ban: 'Zabranjen iz {guild}',
+        kick: 'Izbačen iz {guild}',
+        timeout: 'Utišan u {guild}',
+        role: 'Dodijeljena uloga u {guild}'
     },
     reason: {
-        filter: 'Account is younger than {days} days ({relative})',
-        captcha: 'Failed Verification (CAPTCHA)'
+        filter: 'Račun je mlađi od {days} dana ({relative})',
+        captcha: 'Neuspjela provjera (CAPTCHA)'
     },
     button: {
-        verify: 'Complete Verification',
-        privacy: 'Privacy Policy'
+        verify: 'Završite Provjeru',
+        privacy: 'Pravila o Privatnosti'
     }
 };
