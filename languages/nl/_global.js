@@ -15,7 +15,10 @@ module.exports = {
             support: 'Contact Support'
         }
     },
-    button: { add: 'Voeg {name} toe' },
+    button: {
+        add: 'Voeg {name} toe',
+        support: 'Support'
+    },
     permissions: {
         user: {
             guild: 'Je kunt deze actie niet gebruiken. Je ontbreekt volgende permissies: {perms}.',
