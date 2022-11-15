@@ -87,7 +87,7 @@ module.exports = {
         none: 'nema oznaka',
         disabled: '{amount} ;[oznaka je, oznake su] skrivene zbog nedostajućih dopuštenja',
         // ;[singular, plural]
-        amount: '{amount} tags • Use with {command}'
+        amount: '{amount} oznake • Koristite s {command}'
     },
     deleted: 'Oznaka **{name}** uspješno je izbrisana.'
 };
