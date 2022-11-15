@@ -12,11 +12,12 @@ module.exports = {
         },
         button: {
             subscribe: "Subscribe",
-            support: 'Contact Support'
+            support: "Contact Support"
         }
     },
     button: {
         add: "Add {name}",
+        support: "Support"
     },
     permissions: {
         user: {
