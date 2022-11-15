@@ -20,10 +20,10 @@ module.exports = {
         tooLong: 'Opcija {index} ima više od {number} znakova!',
         noData: 'nema skupa podataka'
     },
-    verifySetUp: '**CAPTCHA Setup is Required**\nPlease use {command} and go to *\'Logging > Joins > CAPTCHA\'* and run this command again.',
+    verifySetUp: '**Potrebno je postavljanje CAPTCHA**\nUpotrijebite {command} i idite na *\'Zapisivanje > Pridruživanja > CAPTCHA\'* i ponovno pokrenite ovu naredbu.',
     webedit: {
-        title: 'Message Web Edit',
-        description: 'Open [this Website]({url}) to start editing the message & embed.',
-        open: 'Open Web Edit'
+        title: 'Poruka Web Edit',
+        description: 'Otvorite [ovu web-stranicu]({url}) za početak uređivanja poruke i ugradite je.',
+        open: 'Otvorite Web Edit'
     }
 };
