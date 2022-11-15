@@ -15,7 +15,10 @@ module.exports = {
             support: 'Contact Support'
         }
     },
-    button: { add: 'Add {name}' },
+    button: {
+        add: 'Add {name}',
+        support: 'Support'
+    },
     permissions: {
         user: {
             guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
