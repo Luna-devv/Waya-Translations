@@ -270,7 +270,11 @@ module.exports = {
                 button: {
                     message: 'Edit Message',
                     pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete'
+                    autodelete: 'Set Autodelete',
+                    assignRolesAfterRejoin: {
+                        enable: 'Reassign Roles after Rejoin',
+                        disable: 'Disable Reassign Roles after Rejoin'
+                    }
                 },
                 page: {
                     channel: {
@@ -675,6 +679,11 @@ module.exports = {
                 set: 'Set Blacklisted Role',
                 change: 'Edit Blacklisted Role'
             },
+            blacklistedChannels: 'Edit Blacklisted Channels',
+            delete: {
+                disable: 'Disable Delete <{reactions} Reactions',
+                enable: 'Enable Delete <{reactions} Reactions'
+            },
             display: {
                 title: 'Set a display style',
                 selected: 'Selected',
@@ -723,6 +732,12 @@ module.exports = {
             blacklistedRole: {
                 title: 'Blacklist Role',
                 name: 'blacklisted Role'
+            },
+            blacklistedChannels: {
+                title: 'Blacklist Channels',
+                name: 'Blacklist Channel list',
+                description: 'Mention a Channel/Category or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
             }
         }
     },
@@ -730,7 +745,8 @@ module.exports = {
         title: 'Configure Miscellaneous',
         button: {
             embedMessages: 'Embed Messages',
-            levelRoles: 'Level Roles'
+            levelRoles: 'Level Roles',
+            leaderboards: 'Leaderboards'
         },
         page: {
             embedMessages: {
@@ -811,6 +827,19 @@ module.exports = {
                             role: 'Change Role',
                             delete: 'Delete'
                         }
+                    }
+                }
+            },
+            leaderboards: {
+                title: 'Leaderboards',
+                button: { blacklistedChannels: 'Edit Blacklisted Channels' },
+                option: { blacklisted: 'Blacklisted: {channels}' },
+                page: {
+                    blacklistedChannels: {
+                        title: 'Blacklist Channels',
+                        name: 'Blacklist Channel list',
+                        description: 'Mention any Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
                     }
                 }
             }
