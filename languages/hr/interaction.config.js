@@ -270,7 +270,11 @@ module.exports = {
                 button: {
                     message: 'Uredi poruku',
                     pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete'
+                    autodelete: 'Set Autodelete',
+                    assignRolesAfterRejoin: {
+                        enable: 'Reassign Roles after Rejoin',
+                        disable: 'Disable Reassign Roles after Rejoin'
+                    }
                 },
                 page: {
                     channel: {
@@ -675,6 +679,11 @@ module.exports = {
                 set: 'Postavite zabranjenu ulogu',
                 change: 'Uredite zabranjenu ulogu'
             },
+            blacklistedChannels: 'Edit Blacklisted Channels',
+            delete: {
+                disable: 'Disable Delete <{reactions} Reactions',
+                enable: 'Enable Delete <{reactions} Reactions'
+            },
             display: {
                 title: 'Postavite stil prikaza',
                 selected: 'Odabran',
@@ -723,6 +732,12 @@ module.exports = {
             blacklistedRole: {
                 title: 'Zabrani Ulogu',
                 name: 'zabranjena Uloga'
+            },
+            blacklistedChannels: {
+                title: 'Blacklist Channels',
+                name: 'Blacklist Channel list',
+                description: 'Mention a Channel/Category or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
             }
         }
     },
@@ -730,7 +745,8 @@ module.exports = {
         title: 'Konfiguriraj Razno',
         button: {
             embedMessages: 'Embed Poruke',
-            levelRoles: 'Level Uloge'
+            levelRoles: 'Level Uloge',
+            leaderboards: 'Leaderboards'
         },
         page: {
             embedMessages: {
@@ -811,6 +827,19 @@ module.exports = {
                             role: 'Promjena uloge',
                             delete: 'Izbrišite'
                         }
+                    }
+                }
+            },
+            leaderboards: {
+                title: 'Leaderboards',
+                button: { blacklistedChannels: 'Edit Blacklisted Channels' },
+                option: { blacklisted: 'Blacklisted: {channels}' },
+                page: {
+                    blacklistedChannels: {
+                        title: 'Blacklist Channels',
+                        name: 'Blacklist Channel list',
+                        description: 'Mention any Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
                     }
                 }
             }
