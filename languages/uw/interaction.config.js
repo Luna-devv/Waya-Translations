@@ -252,9 +252,9 @@ module.exports = {
                             },
                             color: {
                                 title: 'Page Cowow',
-                                name: 'Page Color',
-                                description: 'Paste a Hex color into the chat you want to use.\nWe recommend you using a color near to black with very high saturation.\nNote that the color on the Passport will always look brighter.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                                name: 'Page Cowow',
+                                description: 'Paste a Hex cowow into the chat u want to use.\nWe wecommend u using a cowow nyeaw to bwack with vewy high satuwation.\nNyote that the cowow on the Passpowt wiww awways wook bwightew.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'The cowow code is nyot a vawid Hex cowow.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
@@ -280,8 +280,8 @@ module.exports = {
                     pings: 'Edit Ping-Pong Channyews',
                     autodelete: 'Set Autodewete',
                     assignRolesAfterRejoin: {
-                        enable: 'Reassign Roles after Rejoin',
-                        disable: 'Disable Reassign Roles after Rejoin'
+                        enable: 'Weassign Wowes aftew Wejoin',
+                        disable: 'Disabwe Weassign Wowes aftew Wejoin'
                     }
                 },
                 page: {
@@ -681,10 +681,10 @@ module.exports = {
                 set: 'Set Bwackwisted wowe',
                 change: 'Edit Bwackwisted wowe'
             },
-            blacklistedChannels: 'Edit Blacklisted Channels',
+            blacklistedChannels: 'Edit Bwackwisted Channyews',
             delete: {
-                disable: 'Disable Delete <{reactions} Reactions',
-                enable: 'Enable Delete <{reactions} Reactions'
+                disable: 'Disabwe Dewete <{reactions} weactions',
+                enable: 'Enyabwe Dewete <{reactions} weactions'
             },
             display: {
                 title: 'Set a dispway stywe',
@@ -723,8 +723,8 @@ module.exports = {
             color: {
                 title: 'Cowow',
                 name: 'Stawboawd Cowow',
-                description: 'Paste a Hex color into the chat you want to use.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                description: 'Paste a Hex cowow into the chat u want to use.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                invalid: 'The cowow code is nyot a vawid Hex cowow.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
             },
             count: {
                 title: 'Count',
@@ -736,10 +736,10 @@ module.exports = {
                 name: 'bwackwisted Wowe'
             },
             blacklistedChannels: {
-                title: 'Blacklist Channels',
-                name: 'Blacklist Channel list',
-                description: 'Mention a Channel/Category or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
-                missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                title: 'Bwackwist Channyews',
+                name: 'Bwackwist Channyew wist',
+                description: 'Mention a Channyew/Categowy ow paste the Channyew ID into the chat.\nPwefix the message with `+` to add ow `-` to wemuv Channyews.\nU can send muwtipwe Channyews sepewated with a space.\nType `none` to wemuv aww Channyews.',
+                missingPrefix: 'The message must be pwefixed with `+` to add ow `-` to wemuv Channyews.'
             }
         }
     },
@@ -748,7 +748,7 @@ module.exports = {
         button: {
             embedMessages: 'Wevew Wowes',
             levelRoles: 'Level Roles',
-            leaderboards: 'Leaderboards'
+            leaderboards: 'Weadewboawds'
         },
         page: {
             embedMessages: {
@@ -784,7 +784,7 @@ module.exports = {
                     message: 'Edit Message',
                     addrole: 'Add Wevew',
                     select: {
-                        title: 'Chose a Level Role you want to edit',
+                        title: 'Chose a Wevew Wowe u want to edit',
                         editing: 'Editing',
                         option: {
                             name: '{messages} messages',
@@ -833,9 +833,9 @@ module.exports = {
                 }
             },
             leaderboards: {
-                title: 'Leaderboards',
-                option: { blacklisted: 'Blacklisted: {channels}' },
-                button: { blacklistedChannels: 'Edit Blacklisted Channels' }
+                title: 'Weadewboawds',
+                option: { blacklisted: 'Bwackwisted: {channels}' },
+                button: { blacklistedChannels: 'Edit Bwackwisted Channyews' }
             }
         }
     },
