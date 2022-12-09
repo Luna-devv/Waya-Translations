@@ -214,7 +214,8 @@ module.exports = {
                         option: {
                             verifiedrole: 'Verifizierte Rolle: {role}',
                             unverifiedrole: 'Unverifizierte Rolle: {role}',
-                            channel: 'Logging: {channel}'
+                            channel: 'Logging: {channel}',
+                            color: 'Color: {color}'
                         },
                         disclaimer: 'Mit {command} fortfahren',
                         button: {
@@ -229,7 +230,8 @@ module.exports = {
                             type: {
                                 title: 'CAPTCHA Typ festlegen',
                                 selected: 'Ausgewählt'
-                            }
+                            },
+                            color: 'Change Page Color'
                         },
                         page: {
                             verifiedrole: {
@@ -247,6 +249,12 @@ module.exports = {
                             role: {
                                 title: 'Rolle',
                                 name: 'fehlgeschlagene CAPTCHA-Rolle'
+                            },
+                            color: {
+                                title: 'Page Color',
+                                name: 'Page Color',
+                                description: 'Paste a Hex color into the chat you want to use.\nWe recommend you using a color near to black with very high saturation.\nNote that the color on the Passport will always look brighter.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
@@ -288,12 +296,6 @@ module.exports = {
                     role: {
                         title: 'Rolle',
                         name: 'Beitretungsrolle'
-                    },
-                    pings: {
-                        title: 'Pings',
-                        name: 'Pingliste',
-                        description: 'Erwähne einen Channel oder sende die Id in den Chat.\nPräfix die Nachricht mit `+` zum Hinzufügen oder `-` um Kanäle zu entfernen.\nDu kannst mehrere Kanäle mit einem Leerzeichen trennen.\nSchreibe `none`, um alle Channels zu entfernen.',
-                        missingPrefix: 'Der Nachricht muss ein `+` vorangestellt werden, um Kanäle hinzuzufügen, oder ein `-`, um Kanäle zu entfernen.'
                     },
                     autodelete: {
                         title: 'Automatisch löschen',
@@ -721,8 +723,8 @@ module.exports = {
             color: {
                 title: 'Farbe',
                 name: 'Starboard Farbe',
-                description: 'Füge einen HEX Farbcode in den Chat ein. \nEinen HEX Farbcode kannst du hier finden [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'Dieser Farbcode ist keine gültige HEX Farbe.\nEinen HEX Farbcode kannst du hier finden [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                description: 'Paste a Hex color into the chat you want to use.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
             },
             count: {
                 title: 'Reaktionen',
@@ -782,7 +784,7 @@ module.exports = {
                     message: 'Nachricht Bearbeiten',
                     addrole: 'Level Hinzufügen',
                     select: {
-                        title: 'Wähle einen Trigger, den du bearbeiten möchtest',
+                        title: 'Chose a Level Role you want to edit',
                         editing: 'Bearbeitung',
                         option: {
                             name: '{messages} nachrichten',
@@ -832,16 +834,8 @@ module.exports = {
             },
             leaderboards: {
                 title: 'Leaderboards',
-                button: { blacklistedChannels: 'Edit Blacklisted Channels' },
                 option: { blacklisted: 'Blacklisted: {channels}' },
-                page: {
-                    blacklistedChannels: {
-                        title: 'Blacklist Channels',
-                        name: 'Blacklist Channel list',
-                        description: 'Mention any Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
-                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
-                    }
-                }
+                button: { blacklistedChannels: 'Edit Blacklisted Channels' }
             }
         }
     },
