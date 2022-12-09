@@ -214,7 +214,8 @@ module.exports = {
                         option: {
                             verifiedrole: 'Vewified Wowe: {role}',
                             unverifiedrole: 'Unyewified Wowe: {role}',
-                            channel: 'Wogging: {channel}'
+                            channel: 'Wogging: {channel}',
+                            color: 'Cowow: {color}'
                         },
                         disclaimer: 'Continyue with {command}',
                         button: {
@@ -229,7 +230,8 @@ module.exports = {
                             type: {
                                 title: 'Set a CAPTCHA type',
                                 selected: 'Sewected'
-                            }
+                            },
+                            color: 'Change Page Cowow'
                         },
                         page: {
                             verifiedrole: {
@@ -247,6 +249,12 @@ module.exports = {
                             role: {
                                 title: 'Wowe',
                                 name: 'faiwed CAPTCHA wowe'
+                            },
+                            color: {
+                                title: 'Page Cowow',
+                                name: 'Page Color',
+                                description: 'Paste a Hex color into the chat you want to use.\nWe recommend you using a color near to black with very high saturation.\nNote that the color on the Passport will always look brighter.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
@@ -288,12 +296,6 @@ module.exports = {
                     role: {
                         title: 'Wowe',
                         name: 'Wewcomew Wowe'
-                    },
-                    pings: {
-                        title: 'Ping-Pongs',
-                        name: 'Pings wist',
-                        description: 'Mention a Channyew ow paste the Channyew ID into the chat.\nPwefix the message with `+` to add ow `-` to wemuv Channyews.\nU can send muwtipwe Channyews sepewated with a space.\nType `none` to wemuv aww Channyews.',
-                        missingPrefix: 'The message must be pwefixed with `+` to add ow `-` to wemuv Channyews >:)'
                     },
                     autodelete: {
                         title: 'Auto Dewete',
@@ -721,8 +723,8 @@ module.exports = {
             color: {
                 title: 'Cowow',
                 name: 'Stawboawd Cowow',
-                description: 'Paste the HEX cowow code into the chat.\nGet a HEX cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'The cowow code is nyot a vawid HEX cowow.\nGet a HEX cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                description: 'Paste a Hex color into the chat you want to use.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
             },
             count: {
                 title: 'Count',
@@ -782,7 +784,7 @@ module.exports = {
                     message: 'Edit Message',
                     addrole: 'Add Wevew',
                     select: {
-                        title: 'Chose a twiggew u want to edit',
+                        title: 'Chose a Level Role you want to edit',
                         editing: 'Editing',
                         option: {
                             name: '{messages} messages',
@@ -832,16 +834,8 @@ module.exports = {
             },
             leaderboards: {
                 title: 'Leaderboards',
-                button: { blacklistedChannels: 'Edit Blacklisted Channels' },
                 option: { blacklisted: 'Blacklisted: {channels}' },
-                page: {
-                    blacklistedChannels: {
-                        title: 'Blacklist Channels',
-                        name: 'Blacklist Channel list',
-                        description: 'Mention any Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
-                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
-                    }
-                }
+                button: { blacklistedChannels: 'Edit Blacklisted Channels' }
             }
         }
     },
