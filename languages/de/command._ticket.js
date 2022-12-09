@@ -1,5 +1,5 @@
 module.exports = {
-    noMember: 'Please provide a valid member as argument.',
-    add: { success: '{user} has been successfully added to this Ticket!' },
-    remove: { success: '{user} has been successfully removed from this Ticket!' }
+    noMember: 'Bitte gebe ein gültiges Mitglied als Argument an.',
+    add: { success: '{user} wurde erfolgreich zu diesem Ticket hinzugefügt!' },
+    remove: { success: '{user} wurde erfolgreich aus diesem Ticket entfernt!' }
 };
