@@ -2,8 +2,8 @@ module.exports = {
     noData: 'Der Server kann nicht in der Datenbank gefunden werden!',
     claimed: 'Das Ticket wurde von dir übernommen!',
     commands: {
-        add: 'Add member to this ticket',
-        remove: 'Remove member from this ticket',
+        add: 'Füge einen User zu deinem Ticket hinzu',
+        remove: 'Entferne einen User aus dem Ticket',
         close: 'Schließet dieses Ticket',
         tags: 'Alle Tags auflisten'
     }
