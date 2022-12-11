@@ -17,7 +17,7 @@ module.exports = {
     },
     button: {
         add: 'Dodaj {name}',
-        support: 'Support'
+        support: 'Podrška'
     },
     permissions: {
         user: {

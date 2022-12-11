@@ -214,7 +214,8 @@ module.exports = {
                         option: {
                             verifiedrole: 'Vewified Wowe: {role}',
                             unverifiedrole: 'Unyewified Wowe: {role}',
-                            channel: 'Wogging: {channel}'
+                            channel: 'Wogging: {channel}',
+                            color: 'Cowow: {color}'
                         },
                         disclaimer: 'Continyue with {command}',
                         button: {
@@ -229,7 +230,8 @@ module.exports = {
                             type: {
                                 title: 'Set a CAPTCHA type',
                                 selected: 'Sewected'
-                            }
+                            },
+                            color: 'Change Page Cowow'
                         },
                         page: {
                             verifiedrole: {
@@ -247,6 +249,12 @@ module.exports = {
                             role: {
                                 title: 'Wowe',
                                 name: 'faiwed CAPTCHA wowe'
+                            },
+                            color: {
+                                title: 'Page Cowow',
+                                name: 'Page Cowow',
+                                description: 'Paste a Hex cowow into the chat u want to use.\nWe wecommend u using a cowow nyeaw to bwack with vewy high satuwation.\nNyote that the cowow on the Passpowt wiww awways wook bwightew.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'The cowow code is nyot a vawid Hex cowow.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
@@ -270,7 +278,11 @@ module.exports = {
                 button: {
                     message: 'Edit Message',
                     pings: 'Edit Ping-Pong Channyews',
-                    autodelete: 'Set Autodewete'
+                    autodelete: 'Set Autodewete',
+                    assignRolesAfterRejoin: {
+                        enable: 'Weassign Wowes aftew Wejoin',
+                        disable: 'Disabwe Weassign Wowes aftew Wejoin'
+                    }
                 },
                 page: {
                     channel: {
@@ -284,12 +296,6 @@ module.exports = {
                     role: {
                         title: 'Wowe',
                         name: 'Wewcomew Wowe'
-                    },
-                    pings: {
-                        title: 'Ping-Pongs',
-                        name: 'Pings wist',
-                        description: 'Mention a Channyew ow paste the Channyew ID into the chat.\nPwefix the message with `+` to add ow `-` to wemuv Channyews.\nU can send muwtipwe Channyews sepewated with a space.\nType `none` to wemuv aww Channyews.',
-                        missingPrefix: 'The message must be pwefixed with `+` to add ow `-` to wemuv Channyews >:)'
                     },
                     autodelete: {
                         title: 'Auto Dewete',
@@ -675,6 +681,11 @@ module.exports = {
                 set: 'Set Bwackwisted wowe',
                 change: 'Edit Bwackwisted wowe'
             },
+            blacklistedChannels: 'Edit Bwackwisted Channyews',
+            delete: {
+                disable: 'Disabwe Dewete <{reactions} weactions',
+                enable: 'Enyabwe Dewete <{reactions} weactions'
+            },
             display: {
                 title: 'Set a dispway stywe',
                 selected: 'Sewected',
@@ -712,8 +723,8 @@ module.exports = {
             color: {
                 title: 'Cowow',
                 name: 'Stawboawd Cowow',
-                description: 'Paste the HEX cowow code into the chat.\nGet a HEX cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'The cowow code is nyot a vawid HEX cowow.\nGet a HEX cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                description: 'Paste a Hex cowow into the chat u want to use.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                invalid: 'The cowow code is nyot a vawid Hex cowow.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
             },
             count: {
                 title: 'Count',
@@ -723,6 +734,12 @@ module.exports = {
             blacklistedRole: {
                 title: 'Bwackwisted Wowe',
                 name: 'bwackwisted Wowe'
+            },
+            blacklistedChannels: {
+                title: 'Bwackwist Channyews',
+                name: 'Bwackwist Channyew wist',
+                description: 'Mention a Channyew/Categowy ow paste the Channyew ID into the chat.\nPwefix the message with `+` to add ow `-` to wemuv Channyews.\nU can send muwtipwe Channyews sepewated with a space.\nType `none` to wemuv aww Channyews.',
+                missingPrefix: 'The message must be pwefixed with `+` to add ow `-` to wemuv Channyews.'
             }
         }
     },
@@ -730,7 +747,8 @@ module.exports = {
         title: 'Configuwe Miscewwanyeous',
         button: {
             embedMessages: 'Wevew Wowes',
-            levelRoles: 'Level Roles'
+            levelRoles: 'Level Roles',
+            leaderboards: 'Weadewboawds'
         },
         page: {
             embedMessages: {
@@ -766,7 +784,7 @@ module.exports = {
                     message: 'Edit Message',
                     addrole: 'Add Wevew',
                     select: {
-                        title: 'Chose a twiggew u want to edit',
+                        title: 'Chose a Wevew Wowe u want to edit',
                         editing: 'Editing',
                         option: {
                             name: '{messages} messages',
@@ -813,6 +831,11 @@ module.exports = {
                         }
                     }
                 }
+            },
+            leaderboards: {
+                title: 'Weadewboawds',
+                option: { blacklisted: 'Bwackwisted: {channels}' },
+                button: { blacklistedChannels: 'Edit Bwackwisted Channyews' }
             }
         }
     },

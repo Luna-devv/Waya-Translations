@@ -6,10 +6,10 @@ module.exports = {
     none: 'nema oznaka',
     disabled: '{amount} ;[oznaka je, oznake su] skrivene jer nedostaju dozvole',
     // ;[singular, plural]
-    amount: '{amount} tags • Use with {command}',
+    amount: '{amount} oznake • Koristite s {command}',
     errors: {
-        overLimit: 'You have reached the guild limit of **{count}/{max} tags**!\n\nNote that this tag exceeds the limits and is disabled until you increase the limit again.',
-        invalidTag: 'A Tag with this name doesn\'t exist!',
+        overLimit: 'Dosegli ste ograničenje servera od **{count}/{max} oznaka**!\n\nImajte na umu da ova oznaka premašuje ograničenja i da je onemogućena dok ponovno ne povećate ograničenje.',
+        invalidTag: 'Oznaka s ovim imenom ne postoji!',
         ticketUse: 'This Tag is only available in tickets using {user}.'
     }
 };

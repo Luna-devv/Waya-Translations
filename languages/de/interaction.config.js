@@ -214,7 +214,8 @@ module.exports = {
                         option: {
                             verifiedrole: 'Verifizierte Rolle: {role}',
                             unverifiedrole: 'Unverifizierte Rolle: {role}',
-                            channel: 'Logging: {channel}'
+                            channel: 'Logging: {channel}',
+                            color: 'Farbe: {color}'
                         },
                         disclaimer: 'Mit {command} fortfahren',
                         button: {
@@ -229,7 +230,8 @@ module.exports = {
                             type: {
                                 title: 'CAPTCHA Typ festlegen',
                                 selected: 'Ausgewählt'
-                            }
+                            },
+                            color: 'Farbe der Seite ändern'
                         },
                         page: {
                             verifiedrole: {
@@ -247,6 +249,12 @@ module.exports = {
                             role: {
                                 title: 'Rolle',
                                 name: 'fehlgeschlagene CAPTCHA-Rolle'
+                            },
+                            color: {
+                                title: 'Seitenfarbe',
+                                name: 'Seitenfarbe',
+                                description: 'Sende eine Hex-Farbe in den Chat, die verwenden werden soll.\nWir empfehlen dir, eine Farbe in der Nähe von Schwarz mit sehr hoher Sättigung zu verwenden.\nBeachte, dass die Farbe im Passport immer heller aussieht.\nErhalte einen Hex-Farbcode von [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'Dieser Farbcode ist keine gültige HEX Farbe.\nEinen HEX Farbcode kannst du hier finden [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
@@ -270,7 +278,11 @@ module.exports = {
                 button: {
                     message: 'Nachricht Bearbeiten',
                     pings: 'Ping Kanäle bearbeiten',
-                    autodelete: 'Autodelete festlegen'
+                    autodelete: 'Autodelete festlegen',
+                    assignRolesAfterRejoin: {
+                        enable: 'Rollen nach Rejoinen neu zuweisen',
+                        disable: 'Deaktiviere die Neuzuordnung von Rollen nach Rejoin'
+                    }
                 },
                 page: {
                     channel: {
@@ -284,12 +296,6 @@ module.exports = {
                     role: {
                         title: 'Rolle',
                         name: 'Beitretungsrolle'
-                    },
-                    pings: {
-                        title: 'Pings',
-                        name: 'Pingliste',
-                        description: 'Erwähne einen Channel oder sende die Id in den Chat.\nPräfix die Nachricht mit `+` zum Hinzufügen oder `-` um Kanäle zu entfernen.\nDu kannst mehrere Kanäle mit einem Leerzeichen trennen.\nSchreibe `none`, um alle Channels zu entfernen.',
-                        missingPrefix: 'Der Nachricht muss ein `+` vorangestellt werden, um Kanäle hinzuzufügen, oder ein `-`, um Kanäle zu entfernen.'
                     },
                     autodelete: {
                         title: 'Automatisch löschen',
@@ -675,6 +681,11 @@ module.exports = {
                 set: 'Blacklist Rolle Setzten',
                 change: 'Blacklist Rolle Bearbeiten'
             },
+            blacklistedChannels: 'Blacklist Channels Bearbeiten',
+            delete: {
+                disable: 'Lösche <{reactions} Reaktionen deaktivieren',
+                enable: 'Aktiviere Lösche <{reactions} Reaktionen'
+            },
             display: {
                 title: 'Anzeigestil Festlegen',
                 selected: 'Ausgewählt',
@@ -723,6 +734,12 @@ module.exports = {
             blacklistedRole: {
                 title: 'Blacklist Rolle',
                 name: 'Blacklisted Rolle'
+            },
+            blacklistedChannels: {
+                title: 'Blacklist Channels',
+                name: 'Blacklist Channel List',
+                description: 'Erwähne einen Channel/Kategorie oder sende die Id in den Chat.\nPräfix die Nachricht mit `+` zum Hinzufügen oder `-` um Kanäle zu entfernen.\nDu kannst mehrere Kanäle mit einem Leerzeichen trennen.\nSchreibe `none`, um alle Channels zu entfernen.',
+                missingPrefix: 'Der Nachricht muss ein `+` vorangestellt werden, um Kanäle hinzuzufügen, oder ein `-`, um Kanäle zu entfernen.'
             }
         }
     },
@@ -730,7 +747,8 @@ module.exports = {
         title: 'Sonstiges Konfigurieren',
         button: {
             embedMessages: 'Nachrichten Einbetten',
-            levelRoles: 'Level Rollen'
+            levelRoles: 'Level Rollen',
+            leaderboards: 'Leaderboards'
         },
         page: {
             embedMessages: {
@@ -766,7 +784,7 @@ module.exports = {
                     message: 'Nachricht Bearbeiten',
                     addrole: 'Level Hinzufügen',
                     select: {
-                        title: 'Wähle einen Trigger, den du bearbeiten möchtest',
+                        title: 'Wähle eine Level Rolle, die du bearbeiten möchtest',
                         editing: 'Bearbeitung',
                         option: {
                             name: '{messages} nachrichten',
@@ -813,6 +831,11 @@ module.exports = {
                         }
                     }
                 }
+            },
+            leaderboards: {
+                title: 'Leaderboards',
+                option: { blacklisted: 'Blacklisted: {channels}' },
+                button: { blacklistedChannels: 'Blacklist Channels Bearbeiten' }
             }
         }
     },

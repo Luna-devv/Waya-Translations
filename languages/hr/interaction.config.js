@@ -214,7 +214,8 @@ module.exports = {
                         option: {
                             verifiedrole: 'Verified Role: {role}',
                             unverifiedrole: 'Unerified Role: {role}',
-                            channel: 'Logging: {channel}'
+                            channel: 'Logging: {channel}',
+                            color: 'Color: {color}'
                         },
                         disclaimer: 'Continue with {command}',
                         button: {
@@ -229,7 +230,8 @@ module.exports = {
                             type: {
                                 title: 'Set a CAPTCHA type',
                                 selected: 'Selected'
-                            }
+                            },
+                            color: 'Change Page Color'
                         },
                         page: {
                             verifiedrole: {
@@ -247,6 +249,12 @@ module.exports = {
                             role: {
                                 title: 'Role',
                                 name: 'failed CAPTCHA role'
+                            },
+                            color: {
+                                title: 'Page Color',
+                                name: 'Page Color',
+                                description: 'Paste a Hex color into the chat you want to use.\nWe recommend you using a color near to black with very high saturation.\nNote that the color on the Passport will always look brighter.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
@@ -270,7 +278,11 @@ module.exports = {
                 button: {
                     message: 'Uredi poruku',
                     pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete'
+                    autodelete: 'Set Autodelete',
+                    assignRolesAfterRejoin: {
+                        enable: 'Reassign Roles after Rejoin',
+                        disable: 'Disable Reassign Roles after Rejoin'
+                    }
                 },
                 page: {
                     channel: {
@@ -284,12 +296,6 @@ module.exports = {
                     role: {
                         title: 'Uloga',
                         name: 'Uloga dobrodošlice'
-                    },
-                    pings: {
-                        title: 'Pings',
-                        name: 'Pings list',
-                        description: 'Mention a Channel or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
-                        missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
                     },
                     autodelete: {
                         title: 'Auto Delete',
@@ -312,7 +318,7 @@ module.exports = {
                 },
                 button: {
                     message: 'Uredi poruku',
-                    autodelete: 'Set Autodelete'
+                    autodelete: 'Postavite automatsko brisanje'
                 },
                 page: {
                     channel: {
@@ -324,9 +330,9 @@ module.exports = {
                         name: 'Pozdravna poruka'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Byer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Automatsko brisanje',
+                        name: 'Automatsko brisanje',
+                        description: 'Poruka Byera bit će izbrisana nakon tog vremena.\nPreporučujemo da ovo vrijeme bude kratko (samo nekoliko sekundi).\nPrimjer: `1m 3s`'
                     }
                 }
             }
@@ -675,6 +681,11 @@ module.exports = {
                 set: 'Postavite zabranjenu ulogu',
                 change: 'Uredite zabranjenu ulogu'
             },
+            blacklistedChannels: 'Edit Blacklisted Channels',
+            delete: {
+                disable: 'Disable Delete <{reactions} Reactions',
+                enable: 'Enable Delete <{reactions} Reactions'
+            },
             display: {
                 title: 'Postavite stil prikaza',
                 selected: 'Odabran',
@@ -712,8 +723,8 @@ module.exports = {
             color: {
                 title: 'Boja',
                 name: 'Starboard Boja',
-                description: 'Zalijepite HEX kod boje u chat.\nNabavite HEX kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'Kod boje nije valjana HEX boja.\nNabavite HEX kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                description: 'Paste a Hex color into the chat you want to use.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
             },
             count: {
                 title: 'Broj',
@@ -723,6 +734,12 @@ module.exports = {
             blacklistedRole: {
                 title: 'Zabrani Ulogu',
                 name: 'zabranjena Uloga'
+            },
+            blacklistedChannels: {
+                title: 'Blacklist Channels',
+                name: 'Blacklist Channel list',
+                description: 'Mention a Channel/Category or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
+                missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
             }
         }
     },
@@ -730,7 +747,8 @@ module.exports = {
         title: 'Konfiguriraj Razno',
         button: {
             embedMessages: 'Embed Poruke',
-            levelRoles: 'Level Uloge'
+            levelRoles: 'Level Uloge',
+            leaderboards: 'Leaderboards'
         },
         page: {
             embedMessages: {
@@ -766,7 +784,7 @@ module.exports = {
                     message: 'Uredi poruku',
                     addrole: 'Dodaj Level',
                     select: {
-                        title: 'Odaberite okidač koji želite urediti',
+                        title: 'Chose a Level Role you want to edit',
                         editing: 'Uređivanje',
                         option: {
                             name: '{messages} poruka',
@@ -813,6 +831,11 @@ module.exports = {
                         }
                     }
                 }
+            },
+            leaderboards: {
+                title: 'Leaderboards',
+                option: { blacklisted: 'Blacklisted: {channels}' },
+                button: { blacklistedChannels: 'Edit Blacklisted Channels' }
             }
         }
     },
