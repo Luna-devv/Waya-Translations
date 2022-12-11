@@ -17,7 +17,7 @@ module.exports = {
     },
     button: {
         add: 'Add {name} nyw',
-        support: 'Support'
+        support: 'Suppowt'
     },
     permissions: {
         user: {

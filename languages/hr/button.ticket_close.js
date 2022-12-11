@@ -1,5 +1,5 @@
 module.exports = {
-    request: { ureStaff: 'You are staff, you can just use {command}.' },
+    request: { ureStaff: 'Vi ste osoblje, možete samo koristiti {command}.' },
     noData: 'Ne mogu pronaći server u bazi podataka!',
     confirm: {
         text: 'Jeste li sigurni da želite zauvijek izbrisati {channel}?',

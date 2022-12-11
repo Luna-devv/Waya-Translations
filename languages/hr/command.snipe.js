@@ -1,9 +1,9 @@
 module.exports = {
-    none: 'There were no Deleted/Edited messages in the last {time}.',
-    header: 'From {user} in {channel}:',
-    disclaimer: 'The latest {amount} snipes in the last {time}',
+    none: 'Nije bilo Izbrisanih/Uređenih poruka u zadnjih {time}.',
+    header: 'Od {user} u {channel}:',
+    disclaimer: 'Zadnjih {amount} provjera u zadnjih {time}',
     type: {
-        edit: 'Edit:',
-        delete: 'Delete:'
+        edit: 'Uredi:',
+        delete: 'Izbrisati:'
     }
 };
