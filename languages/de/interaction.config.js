@@ -271,6 +271,11 @@ module.exports = {
                         message: 'Nachricht: {message}',
                         command: 'Nachricht: Benutze `{command}`'
                     },
+                    afterleaveMessage: {
+                        message: 'NV Nachricht: {message}',
+                        // AL: After Leave - just use the first letters of your language :)
+                        command: 'NV Nachricht: Benutze `{command}`'
+                    },
                     pings: 'Pings: {channels}',
                     autodelete: 'Auto Delete: **{time}**',
                     autodelete_never: 'niemals'
@@ -282,7 +287,17 @@ module.exports = {
                     assignRolesAfterRejoin: {
                         enable: 'Rollen nach Rejoinen neu zuweisen',
                         disable: 'Deaktiviere die Neuzuordnung von Rollen nach Rejoin'
-                    }
+                    },
+                    afterleave: {
+                        title: 'Was sollte mit der Nachricht passieren, wenn der User wieder verlässt?',
+                        selected: 'Ausgewählt',
+                        option: {
+                            nothing: 'Nichts',
+                            edit: 'Beim Verlassen bearbeiten',
+                            delete: 'Beim Verlassen löschen'
+                        }
+                    },
+                    afterleave_webedit: 'Nach Verlassen Embed Editor'
                 },
                 page: {
                     channel: {
