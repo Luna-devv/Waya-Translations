@@ -271,6 +271,11 @@ module.exports = {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
                     },
+                    afterleaveMessage: {
+                        message: 'AW Message: {message}',
+                        // AL: After Leave - just use the first letters of your language :)
+                        command: 'AW Message: use `{command}`'
+                    },
                     pings: 'Pings: {channels}',
                     autodelete: 'Auto dewete: **{time}**',
                     autodelete_never: 'nyevew'
@@ -282,7 +287,17 @@ module.exports = {
                     assignRolesAfterRejoin: {
                         enable: 'Weassign Wowes aftew Wejoin',
                         disable: 'Disabwe Weassign Wowes aftew Wejoin'
-                    }
+                    },
+                    afterleave: {
+                        title: 'What shouwd happen with the message if the membew weaves?',
+                        selected: 'Sewected',
+                        option: {
+                            nothing: 'Nyothing',
+                            edit: 'Edit on weave',
+                            delete: 'Dewete on weave'
+                        }
+                    },
+                    afterleave_webedit: 'Aftew Weave Embed Editow'
                 },
                 page: {
                     channel: {
