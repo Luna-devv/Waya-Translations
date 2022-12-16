@@ -271,6 +271,11 @@ module.exports = {
                         message: 'Message: {message}',
                         command: 'Bericht: gebruik `{command}`'
                     },
+                    afterleaveMessage: {
+                        message: 'AL Message: {message}',
+                        // AL: After Leave - just use the first letters of your language :)
+                        command: 'AL Message: use `{command}`'
+                    },
                     pings: 'Pings: {channels}',
                     autodelete: 'Auto delete: **{time}**',
                     autodelete_never: 'never'
@@ -282,7 +287,17 @@ module.exports = {
                     assignRolesAfterRejoin: {
                         enable: 'Reassign Roles after Rejoin',
                         disable: 'Disable Reassign Roles after Rejoin'
-                    }
+                    },
+                    afterleave: {
+                        title: 'What should happen with the message if the member leaves?',
+                        selected: 'Selected',
+                        option: {
+                            nothing: 'Nothing',
+                            edit: 'Edit on leave',
+                            delete: 'Delete on leave'
+                        }
+                    },
+                    afterleave_webedit: 'After Leave Embed Editor'
                 },
                 page: {
                     channel: {
