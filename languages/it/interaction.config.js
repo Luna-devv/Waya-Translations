@@ -4,28 +4,28 @@
     \n are new lines
 */
 module.exports = {
-    validate: 'Validate data...',
+    validate: 'Convalidazione dei dati...',
     notAllowed: 'You can\'t use this menu.',
     prefix: {
-        name: 'Prefix',
-        set: 'Successfully updated the guilds prefix to {prefix}!',
-        noSpace: 'Please note that you cannot use spaces inside of the prefix! It\'s only allowed on the end.',
-        disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
+        name: 'Prefisso',
+        set: 'Hai aggiornato con successo il prefisso della gilda a {prefix}!',
+        noSpace: 'Si prega di notare che non è possibile utilizzare spazi all\'interno del prefisso! È consentito solo alla fine.',
+        disclaimer: 'Questo NON si applica ai comandi "/" (Slash)-comandi'
     },
     global: {
         // will be the same everywhere
-        none: 'none',
-        useButtons: 'Select an option you want to edit using the buttons below.',
+        none: 'nessuno',
+        useButtons: 'Selezionare un\'opzione che si desidera modificare utilizzando i pulsanti qui sotto.',
         developer: {
-            bypass: 'You don\'t have the `MANAGE_GUILD` to access this panel..\nDo you still want to continue?',
+            bypass: 'Non hai i permessi `MANAGE_GUILD` per accedere a questo pannello...\nVuoi ancora continuare?',
             choice: {
-                access: 'I\'m sure, yes',
-                abord: 'Nevermind'
+                access: 'Si sono sicuro',
+                abord: 'Lascia stare'
             },
-            notice: 'carefull - developer privileges enforced..'
+            notice: 'prudente - privilegi di sviluppatore forzati..'
         },
-        permissions: 'Missing: {perms}',
-        placeholders: 'Placeholders',
+        permissions: 'Mancanti: {perms}',
+        placeholders: 'Segnaposti',
         await: {
             channel: 'Mention a Channel or paste the Channel ID into the chat.\nType `none` to remove the channel.',
             category: 'Mention a Category or paste the Category ID into the chat.\nType `none` to remove the category.',
@@ -212,43 +212,43 @@ module.exports = {
                         title: 'CAPTCHA',
                         name: 'CAPTCHA',
                         option: {
-                            verifiedrole: 'Verified Role: {role}',
-                            unverifiedrole: 'Unerified Role: {role}',
-                            channel: 'Logging: {channel}',
-                            color: 'Color: {color}'
+                            verifiedrole: 'Ruolo verificato: {role}',
+                            unverifiedrole: 'Ruolo non verificato: {role}',
+                            channel: 'Canale del log: {channel}',
+                            color: 'Colore: {color}'
                         },
-                        disclaimer: 'Continue with {command}',
+                        disclaimer: 'Continua con {command}',
                         button: {
                             verifiedrole: {
-                                set: 'Set Verified Role',
-                                edit: 'Edit Verified Role'
+                                set: 'Imposta Ruolo Verificato',
+                                edit: 'Modifica Ruolo Verificato'
                             },
                             unverifiedrole: {
-                                set: 'Set Unverified Role',
-                                edit: 'Edit Unverified Role'
+                                set: 'Imposta Ruolo Non Verificato',
+                                edit: 'Modifica Ruolo Non Verificato'
                             },
                             type: {
-                                title: 'Set a CAPTCHA type',
-                                selected: 'Selected'
+                                title: 'Imposta un tipo CAPTCHA',
+                                selected: 'Selezionato'
                             },
-                            color: 'Change Page Color'
+                            color: 'Cambia colore della pagina'
                         },
                         page: {
                             verifiedrole: {
-                                title: 'Verified Role',
-                                name: 'CAPTCHA verified Role'
+                                title: 'Ruolo Verificato',
+                                name: 'Ruolo verificato dal CAPTCHA'
                             },
                             unverifiedrole: {
-                                title: 'Unverifiedrole Role',
-                                name: 'CAPTCHA unverifiedrole Role'
+                                title: 'Ruolo Non Verificato',
+                                name: 'Ruolo non verificato dal CAPTCHA'
                             },
                             logging: {
                                 title: 'Logging',
-                                name: 'CAPTCHA logging Channel'
+                                name: 'Canale di registrazione CAPTCHA'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'failed CAPTCHA role'
+                                title: 'Ruolo',
+                                name: 'ruolo CAPTCHA fallito'
                             },
                             color: {
                                 title: 'Page Color',
