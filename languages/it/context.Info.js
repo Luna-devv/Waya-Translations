@@ -1,24 +1,24 @@
 module.exports = {
-    messages: 'Messages',
-    name: 'Name',
-    created: 'Created',
-    joined: 'Joined',
-    invites: 'Invites',
-    voice: 'Voice',
-    none: 'none',
-    timeout: 'on Timeout for {time}',
+    messages: 'Messaggi',
+    name: 'Nome',
+    created: 'Creato',
+    joined: 'Unito',
+    invites: 'Inviti',
+    voice: 'Canale vocale',
+    none: 'nessuno',
+    timeout: 'in Timeout per {time}',
     pronouns: {
-        title: 'Pronouns',
-        none: 'No pronouns set'
+        title: 'Pronomi',
+        none: 'Nessun pronome impostato'
     },
     button: {
-        guildAvatar: 'Per-Guild Avatar URL',
-        avatar: 'Avatar URL',
-        banner: 'Banner URL'
+        guildAvatar: 'URL Avatar per Gilda',
+        avatar: 'URL dell\'avatar',
+        banner: 'URL dell\'banner'
     },
     actions: {
         notAllowed: 'You can\'t use this menu.',
-        invalidTime: 'The duration cannot be less than a second!',
+        invalidTime: 'La durata non può essere meno di un secondo!',
         otherInvalidTime: 'The duration cannot be more than 28 days!',
         placeholder: 'Choose an action',
         option: {
