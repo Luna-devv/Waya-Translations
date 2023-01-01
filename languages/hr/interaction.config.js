@@ -265,8 +265,7 @@ module.exports = {
                 name: 'Dobrodošlica',
                 option: {
                     channel: 'Kanal: {channel}',
-                    role: 'Uloga: {role}',
-                    role_managed: 'Managed trough **joins > captcha**',
+                    role: 'Roles: {role}',
                     message: {
                         message: 'Poruka: {message}',
                         command: 'Poruka: koristite `{command}`'
@@ -282,6 +281,10 @@ module.exports = {
                 },
                 button: {
                     message: 'Uredi poruku',
+                    card: {
+                        enable: 'Enabled Welcomer Card',
+                        disable: 'Disable Welcomer Card'
+                    },
                     pings: 'Edit Ping Channels',
                     autodelete: 'Set Autodelete',
                     assignRolesAfterRejoin: {
@@ -333,6 +336,10 @@ module.exports = {
                 },
                 button: {
                     message: 'Uredi poruku',
+                    card: {
+                        enable: 'Enabled Welcomer Card',
+                        disable: 'Disable Welcomer Card'
+                    },
                     autodelete: 'Postavite automatsko brisanje'
                 },
                 page: {
