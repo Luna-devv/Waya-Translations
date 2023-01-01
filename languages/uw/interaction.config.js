@@ -265,8 +265,7 @@ module.exports = {
                 name: 'Wewcomew',
                 option: {
                     channel: 'Channyew: {channel}',
-                    role: 'Wowe: {role}',
-                    role_managed: 'Manyaged twough **joins > captcha**',
+                    role: 'Wowes: {role}',
                     message: {
                         message: 'Message: {message}',
                         command: 'Message: use `{command}`'
@@ -282,6 +281,10 @@ module.exports = {
                 },
                 button: {
                     message: 'Edit Message',
+                    card: {
+                        enable: 'Enyabwed Wewcomew Cawd',
+                        disable: 'Disabwe Wewcomew Cawd'
+                    },
                     pings: 'Edit Ping-Pong Channyews',
                     autodelete: 'Set Autodewete',
                     assignRolesAfterRejoin: {
@@ -333,6 +336,10 @@ module.exports = {
                 },
                 button: {
                     message: 'Edit Message',
+                    card: {
+                        enable: 'Enyabwed Wewcomew Cawd',
+                        disable: 'Disabwe Wewcomew Cawd'
+                    },
                     autodelete: 'Set Autodewete'
                 },
                 page: {
