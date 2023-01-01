@@ -270,8 +270,7 @@ module.exports = {
                 name: "Welcomer",
                 option: {
                     channel: "Channel: {channel}",
-                    role: "Role: {role}",
-                    role_managed: "Managed trough **joins > captcha**",
+                    role: "Roles: {role}",
                     message: {
                         message: "Message: {message}",
                         command: "Message: use `{command}`",
@@ -286,6 +285,10 @@ module.exports = {
                 },
                 button: {
                     message: "Edit Message",
+                    card: {
+                        enable: "Enabled Welcomer Card",
+                        disable: "Disable Welcomer Card"
+                    },
                     pings: "Edit Ping Channels",
                     autodelete: "Set Autodelete",
                     assignRolesAfterRejoin: {
@@ -338,6 +341,10 @@ module.exports = {
                 },
                 button: {
                     message: "Edit Message",
+                    card: {
+                        enable: "Enabled Welcomer Card",
+                        disable: "Disable Welcomer Card"
+                    },
                     autodelete: "Set Autodelete",
                 },
                 page: {

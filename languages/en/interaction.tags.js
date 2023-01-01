@@ -49,6 +49,7 @@ module.exports = {
                     enable: 'Enable Ticket Tag',
                 }
             },
+            aliases: "Manage Name Aliases",
             permissions: {
                 Administrator: 'Administrator',
                 ManageChannels: 'Manage Channels',
@@ -76,6 +77,9 @@ module.exports = {
             image: "Image",
             footer: "Footer",
         },
+        aliases: {
+            name: "Name Aliases ({max} max)"
+        }
     },
     success: {
         message: "Successfully added the Tag {name}.",
