@@ -762,7 +762,7 @@ module.exports = {
         title: 'Configuwe Miscewwanyeous',
         button: {
             embedMessages: 'Wevew Wowes',
-            levelRoles: 'Level Roles',
+            levelRoles: 'Wevew Wowes',
             leaderboards: 'Weadewboawds'
         },
         page: {
