@@ -7,5 +7,5 @@ module.exports = {
         field: 'Perché vuoi aprire un Ticket?',
         placeholder: 'Ho bisogno di aiuto per..'
     },
-    commands: { closerequest: 'Create a close request' }
+    commands: { closerequest: 'Crea una richiesta di chiusura' }
 };

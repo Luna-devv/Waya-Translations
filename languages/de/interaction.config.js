@@ -265,8 +265,7 @@ module.exports = {
                 name: 'Willkommenheißer',
                 option: {
                     channel: 'Kanal: {channel}',
-                    role: 'Rolle: {role}',
-                    role_managed: 'Verwaltet durch **Joins > captcha**',
+                    role: 'Rollen: {role}',
                     message: {
                         message: 'Nachricht: {message}',
                         command: 'Nachricht: Benutze `{command}`'
@@ -282,6 +281,10 @@ module.exports = {
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
+                    card: {
+                        enable: 'Willkommens-Karte aktivieren',
+                        disable: 'Willkommens-Karte deaktivieren'
+                    },
                     pings: 'Ping Kanäle bearbeiten',
                     autodelete: 'Autodelete festlegen',
                     assignRolesAfterRejoin: {
@@ -333,6 +336,10 @@ module.exports = {
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
+                    card: {
+                        enable: 'Willkommens-Karte aktivieren',
+                        disable: 'Willkommens-Karte deaktivieren'
+                    },
                     autodelete: 'Autodelete festlegen'
                 },
                 page: {

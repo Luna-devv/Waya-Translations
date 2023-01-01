@@ -6,10 +6,10 @@ module.exports = {
     none: 'nessun tag',
     disabled: '{amount} ;[tag è, tag sono] nascosti a causa di permessi mancanti',
     // ;[singular, plural]
-    amount: '{amount} tags • Use with {command}',
+    amount: '{amount} tag • Usa con {command}',
     errors: {
-        overLimit: 'You have reached the guild limit of **{count}/{max} tags**!\n\nNote that this tag exceeds the limits and is disabled until you increase the limit again.',
-        invalidTag: 'A Tag with this name doesn\'t exist!',
-        ticketUse: 'This Tag is only available in tickets using {user}.'
+        overLimit: 'Hai raggiunto il limite della gilda di **{count}/{max} tag**!\n\nNota che questo tag supera i limiti e viene disabilitato fino a quando non si aumenta nuovamente il limite.',
+        invalidTag: 'Un Tag con questo nome non esiste!',
+        ticketUse: 'Questo Tag è disponibile solo nei ticket usando {user}.'
     }
 };
