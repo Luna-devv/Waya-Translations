@@ -4,8 +4,8 @@ module.exports = {
     created: 'ur ticket {channel} has been cweated! ✍️(◔◡◔)',
     form: {
         formTitle: 'Ticket Openying weason qwq',
-        field: 'Why ://// >.< do u want to open a Ticket? >.<   ',
-        placeholder: 'CUZ I NyEED HEwP DO FIND MOwE QWQ >;)'
+        field: 'Why ://// do u want to open a Ticket? >.<',
+        placeholder: 'cuz I nyeed hewp with that.... :('
     },
     commands: { closerequest: 'Cweate a cwose wequest' }
 };
