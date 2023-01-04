@@ -380,8 +380,8 @@ module.exports = {
                 disable: 'Optionyaw Weason'
             },
             logging: {
-                disable: 'Disabwe Wogging',
-                enable: 'Enyabwe Wogging'
+                edit: 'Set Wogging Channyew',
+                set: 'Change Wogging Channyew'
             },
             transcript: {
                 disable: 'Disabwe Twanscwipts',
@@ -395,7 +395,7 @@ module.exports = {
                 disable: 'Disabwe Weave Autocwose',
                 enable: 'Enyabwe Weave Autocwose'
             },
-            texts: 'Change Texts',
+            embeds: 'Change Embeds',
             naming: {
                 title: 'Set a nyaming type',
                 current: 'Cuwwent',
@@ -419,11 +419,11 @@ module.exports = {
                 title: 'Texts',
                 name: 'Ticket descwiptions',
                 button: {
-                    texts: 'Pweview ticket',
-                    topic: 'Change topic',
+                    texts: 'Pweview Ticket',
+                    topic: 'Change Topic',
                     title: 'Change titwe text',
-                    unclaimed: 'Change uncwaimed text',
-                    claimed: 'Change cwaimed text'
+                    unclaimed: 'Change Uncwaimed Embed',
+                    claimed: 'Change Cwaimed Embed'
                 },
                 page: {
                     title: {
