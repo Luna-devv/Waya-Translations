@@ -380,8 +380,8 @@ module.exports = {
                 disable: 'Izborni razlog'
             },
             logging: {
-                disable: 'Onemogući evidentiranje',
-                enable: 'Omogući evidentiranje'
+                edit: 'Set Logging Channel',
+                set: 'Change Logging Channel'
             },
             transcript: {
                 disable: 'Onemogući transkripte',
@@ -395,7 +395,7 @@ module.exports = {
                 disable: 'Onemogući Automatsko Zatvaranje na Izlasku',
                 enable: 'Omogući Automatsko Zatvaranje na Izlasku'
             },
-            texts: 'Promijenite tekstove',
+            embeds: 'Change Embeds',
             naming: {
                 title: 'Postavite vrstu imenovanja',
                 current: 'Trenutno',
@@ -419,11 +419,11 @@ module.exports = {
                 title: 'Tekstovi',
                 name: 'Opisi ulaznica',
                 button: {
-                    texts: 'Pregled ulaznice',
-                    topic: 'Promijenite temu',
+                    texts: 'Preview Ticket',
+                    topic: 'Change Topic',
                     title: 'Promjena tekst naslova',
-                    unclaimed: 'Promijenite nepotraživani tekst',
-                    claimed: 'Promijenite deklarirani tekst'
+                    unclaimed: 'Change Unclaimed Embed',
+                    claimed: 'Change Claimed Embed'
                 },
                 page: {
                     title: {

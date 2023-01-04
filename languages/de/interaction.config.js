@@ -380,8 +380,8 @@ module.exports = {
                 disable: 'Optionaler Grund'
             },
             logging: {
-                disable: 'Logging Deaktivieren',
-                enable: 'Logging Aktivieren'
+                edit: 'Setze Logging Kanal',
+                set: 'Ändere Logging Kanal'
             },
             transcript: {
                 disable: 'Transkripts Deaktivieren',
@@ -395,7 +395,7 @@ module.exports = {
                 disable: 'Deaktivere Member Leave Auto-Schließen',
                 enable: 'Aktiviere Member Leave Auto-Schließen'
             },
-            texts: 'Texte Bearbeiten',
+            embeds: 'Embeds Editieren',
             naming: {
                 title: 'Setze einen Benennung Typ',
                 current: 'Aktuell',
@@ -419,11 +419,11 @@ module.exports = {
                 title: 'Texte',
                 name: 'Ticket Beschreibungen',
                 button: {
-                    texts: 'Vorschau Ticket',
-                    topic: 'Topic Bearbeiten',
+                    texts: 'Ticket Vorschau',
+                    topic: 'Kanal Thema Bearbeiten',
                     title: 'Titel ändern',
-                    unclaimed: 'Unclaim Text Bearbeiten',
-                    claimed: 'Claim Text Bearbeiten'
+                    unclaimed: 'Unclaimed Embed Bearbeiten',
+                    claimed: 'Claimed Embed Bearbeiten'
                 },
                 page: {
                     title: {
