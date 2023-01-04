@@ -49,6 +49,7 @@ module.exports = {
                     enable: 'Enyabwe Ticket Tag'
                 }
             },
+            aliases: 'Manyage Nyame Awiases',
             permissions: {
                 Administrator: 'Adminyistwatow',
                 ManageChannels: 'Manyage Channyews',
@@ -73,7 +74,8 @@ module.exports = {
             thumbnail: 'Thumbnyaiw',
             image: 'Image',
             footer: 'Footew'
-        }
+        },
+        aliases: { name: 'Nyame Awiases ({max} max)' }
     },
     success: {
         message: 'Successfuwwy added the Tag {name}.',

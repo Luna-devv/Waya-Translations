@@ -1,5 +1,5 @@
 module.exports = {
-    request: { ureStaff: 'You are staff, you can just use {command}.' },
+    request: { ureStaff: 'Sei uno staff, puoi usare {command}.' },
     noData: 'Impossibile trovare la gilda nel database!',
     confirm: {
         text: 'Sei sicuro di voler\' eliminare {channel} per sempre?',

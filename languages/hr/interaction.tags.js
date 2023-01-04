@@ -49,6 +49,7 @@ module.exports = {
                     enable: 'Omogući Oznaku Ulaznice'
                 }
             },
+            aliases: 'Manage Name Aliases',
             permissions: {
                 Administrator: 'Administrator',
                 ManageChannels: 'Upravljanje Kanalima',
@@ -73,7 +74,8 @@ module.exports = {
             thumbnail: 'Sličica',
             image: 'Slika',
             footer: 'Footer'
-        }
+        },
+        aliases: { name: 'Name Aliases ({max} max)' }
     },
     success: {
         message: 'Uspješno je dodana oznaka {name}.',

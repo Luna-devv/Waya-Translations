@@ -49,6 +49,7 @@ module.exports = {
                     enable: 'Aktiviere Ticket-Tag'
                 }
             },
+            aliases: 'Namen Alias verwalten',
             permissions: {
                 Administrator: 'Administrator',
                 ManageChannels: 'Kanäle Verwalten',
@@ -73,7 +74,8 @@ module.exports = {
             thumbnail: 'Vorschaubild',
             image: 'Bild',
             footer: 'Fußzeile'
-        }
+        },
+        aliases: { name: 'Namen Aliase ({max} max)' }
     },
     success: {
         message: 'Erfolgreich den Tag {name} hinzugefügt.',
