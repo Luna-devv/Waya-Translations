@@ -380,8 +380,8 @@ module.exports = {
                 disable: 'Optional Reason'
             },
             logging: {
-                disable: 'Disable Logging',
-                enable: 'Enable Logging'
+                edit: 'Set Logging Channel',
+                set: 'Change Logging Channel'
             },
             transcript: {
                 disable: 'Disable Transcripts',
@@ -395,7 +395,7 @@ module.exports = {
                 disable: 'Disable Leave Autoclose',
                 enable: 'Enable Leave Autoclose'
             },
-            texts: 'Change Texts',
+            embeds: 'Change Embeds',
             naming: {
                 title: 'Set a naming type',
                 current: 'Current',
@@ -419,11 +419,11 @@ module.exports = {
                 title: 'Texts',
                 name: 'Ticket descriptions',
                 button: {
-                    texts: 'Preview ticket',
-                    topic: 'Change topic',
+                    texts: 'Preview Ticket',
+                    topic: 'Change Topic',
                     title: 'Change title text',
-                    unclaimed: 'Change unclaimed text',
-                    claimed: 'Change claimed text'
+                    unclaimed: 'Change Unclaimed Embed',
+                    claimed: 'Change Claimed Embed'
                 },
                 page: {
                     title: {
