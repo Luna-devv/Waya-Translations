@@ -27,7 +27,7 @@ module.exports = {
         permissions: 'Mancanti: {perms}',
         placeholders: 'Segnaposti',
         await: {
-            channel: 'Mention a Channel or paste the Channel ID into the chat.\nType `none` to remove the channel.',
+            channel: 'Menziona un canale o incolla l\'ID del canale nella chat.\nDigita `none` per rimuovere il canale.',
             category: 'Mention a Category or paste the Category ID into the chat.\nType `none` to remove the category.',
             role: 'Mention a Role or paste the Role ID into the chat.\nType `none` to remove the role.',
             message: 'Send a Message which should be used as {what}.',
