@@ -1,9 +1,9 @@
 module.exports = {
     messages: 'Messages',
-    name: 'Name',
-    created: 'Created',
-    joined: 'Joined',
-    invites: 'Invites',
+    name: 'Nom',
+    created: 'Créé',
+    joined: 'Rejoint',
+    invites: 'Invitations',
     voice: 'Voice',
     none: 'none',
     timeout: 'on Timeout for {time}',
@@ -13,8 +13,8 @@ module.exports = {
     },
     button: {
         guildAvatar: 'Per-Guild Avatar URL',
-        avatar: 'Avatar URL',
-        banner: 'Banner URL'
+        avatar: 'URL de l\'avatar',
+        banner: 'URL de la bannière'
     },
     actions: {
         notAllowed: 'You cannot use this menu.',
