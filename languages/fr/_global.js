@@ -1,14 +1,14 @@
 module.exports = {
-    dms: 'This command cannot be used inside of private messages.',
-    disabled: 'You have been disabled.',
-    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
-    error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
+    dms: 'Cette commande ne peut pas être utilisée en DM.',
+    disabled: 'Vous êtes banni.',
+    mention: 'Hey {user}, utilise **{emote} SlashCommands** pour me configurer !\nUtilise {command} pour plus d\'informations.',
+    error: 'Un erreur s\'est produite en exécutant cette commande.\nVeuillez rejoindre le serveur Support and signaler cette erreur\navec l\'id {issue} !',
     premium: {
-        required: 'subscription required',
+        required: 'abonnement requis',
         embeds: {
             title: 'Sorry but Subscription is required',
             title2: 'Sorry but the Subscriptions limit was reached',
-            description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
+            description: 'Pour pouvoir vous proposer un bot fiable, et parce que l\'argent ne pousse pas dans les arbres, les fonctions non essentielles sont restreintes par un abonnement.'
         },
         button: {
             subscribe: 'Subscribe',
@@ -16,16 +16,16 @@ module.exports = {
         }
     },
     button: {
-        add: 'Add {name}',
+        add: 'Ajouter {name}',
         support: 'Support'
     },
     permissions: {
         user: {
-            guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
-            channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
+            guild: 'La permission {perms} est requise pour effectuer cette action.',
+            channel: 'La permission {perms} est requise pour effectuer cette action.',
             roles: {
                 user: {
-                    text: 'You cannot perform this action since the highest role of that user is higher than yours.',
+                    text: 'Vous ne pouvez pas effectuer cette action car cet utilisateur possède un rôle plus haut que les vôtres.',
                     user: 'User: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 },
