@@ -400,15 +400,15 @@ module.exports = {
                 title: 'Set a naming type',
                 current: 'Current',
                 option: {
-                    username: 'Username',
+                    username: 'Nom d\'utilisateur',
                     userid: 'User Id',
-                    random: 'Random Id'
+                    random: 'Id aléatoire'
                 }
             }
         },
         page: {
             category: {
-                title: 'Category',
+                title: 'Catégorie',
                 name: 'Tickets Category'
             },
             role: {
@@ -427,7 +427,7 @@ module.exports = {
                 },
                 page: {
                     title: {
-                        title: 'Title',
+                        title: 'Titre',
                         name: 'Ticket embed title'
                     },
                     unclaimed: {
@@ -439,8 +439,8 @@ module.exports = {
                         name: 'Claimed Ticket description'
                     },
                     topic: {
-                        title: 'Topic',
-                        name: 'Tickets Topic'
+                        title: 'Sujet',
+                        name: 'Sujet du ticket'
                     }
                 }
             },
@@ -458,9 +458,9 @@ module.exports = {
         },
         button: {
             filter: 'Blacklist',
-            antiScam: 'Anti Scam',
-            antiLink: 'Anti Link',
-            antiSpam: 'Anti Spam',
+            antiScam: 'Anti-Arnaques',
+            antiLink: 'Anti-Lien',
+            antiSpam: 'Anti-Spam',
             bypassRole: {
                 edit: 'Edit bypass Role',
                 set: 'Set bypass Role'
@@ -480,11 +480,11 @@ module.exports = {
                 name: 'Moderation logs'
             },
             filter: {
-                title: 'Filter',
-                name: 'Moderation Filter',
+                title: 'Filtre',
+                name: 'Filtre de modération',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Message : {message}',
+                    actions: 'Actions : {types}',
                     actionType: {
                         reply: 'reply',
                         delete: 'delete',
@@ -518,13 +518,13 @@ module.exports = {
                                 description: 'Successfully cleared out all blacklisted words! You can now dismiss this message.'
                             },
                             abord: {
-                                title: 'Aborded',
+                                title: 'Annulé',
                                 description: 'No actions have been taken! You can now dismiss this message.'
                             }
                         }
                     },
                     words: {
-                        title: 'Words',
+                        title: 'Mots',
                         name: 'Blacklisted word',
                         awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
                         bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
@@ -598,11 +598,11 @@ module.exports = {
                         disable: 'Disallow Media',
                         enable: 'Allow Media'
                     },
-                    message: 'Edit Message',
+                    message: 'Éditer le message',
                     timeout: 'Timeout Duration',
                     actions: {
                         title: 'Manage an action',
-                        selected: 'Selected',
+                        selected: 'Sélectionné',
                         option: {
                             reply: 'Reply',
                             delete: 'Delete',
@@ -672,16 +672,16 @@ module.exports = {
     starboard: {
         title: 'Configure Starboard',
         button: {
-            emoji: 'Change Emoji',
-            color: 'Change Color',
+            emoji: 'Changer l\'émoji',
+            color: 'Changer la couleur',
             count: 'Change Count',
             nsfw: {
-                disable: 'Disable NSFW',
-                enable: 'Enable NSFW'
+                disable: 'Désactiver NSFW',
+                enable: 'Activer NSFW'
             },
             bots: {
-                disable: 'Disable Bots',
-                enable: 'Enable Bots'
+                disable: 'Désactiver les Bots',
+                enable: 'Activer les Bots'
             },
             selfReact: {
                 disable: 'Disable Self Reaction',
