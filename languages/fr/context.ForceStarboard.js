@@ -8,5 +8,5 @@ module.exports = {
             button: 'Message'
         }
     },
-    success: 'The message is now in the Starboard.'
+    success: 'Ce message est désormais dans le Starboard.'
 };
