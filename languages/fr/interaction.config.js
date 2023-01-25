@@ -58,17 +58,17 @@ module.exports = {
             emoji: 'Emote'
         },
         state: {
-            enabled: 'Enabled',
-            disabled: 'Disabled'
+            enabled: 'Activé',
+            disabled: 'Désactivé'
         },
         option: {
             required: 'Required',
-            optional: 'Optional'
+            optional: 'Optionnel'
         },
         button: {
             back: 'Back',
-            disable: 'Disable',
-            enable: 'Enable',
+            disable: 'Désactiver',
+            enable: 'Activer',
             channel: {
                 set: 'Set Channel',
                 edit: 'Edit Channel'
@@ -364,20 +364,20 @@ module.exports = {
         title: 'Configure Ticketing',
         option: {
             channel: 'Category: {channel}',
-            staff: 'Staff: {role}',
+            staff: 'Staff : {role}',
             logging: 'Logging: {channel}',
-            forceReason: 'Reason: {state}',
+            forceReason: 'Raison : {state}',
             naming: 'Naming: {type}',
             namingType: {
-                username: 'Username',
+                username: 'Nom d\'utilisateur',
                 userid: 'UserId',
-                random: 'Random'
+                random: 'Aléatoire'
             }
         },
         button: {
             forceReason: {
                 enable: 'Force Reason',
-                disable: 'Optional Reason'
+                disable: 'Raison facultative'
             },
             logging: {
                 edit: 'Set Logging Channel',
