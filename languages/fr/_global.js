@@ -21,7 +21,7 @@ module.exports = {
     },
     permissions: {
         user: {
-            guild: 'La permission {perms} est requise pour effectuer cette action.',
+            guild: 'Les permissions {perms} sont requises pour effectuer cette action.',
             channel: 'La permission {perms} est requise pour effectuer cette action.',
             roles: {
                 user: {
