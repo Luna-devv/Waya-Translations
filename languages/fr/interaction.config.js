@@ -5,22 +5,22 @@
 */
 module.exports = {
     validate: 'Validate data...',
-    notAllowed: 'You cannot use this menu.',
+    notAllowed: 'Vous ne pouvez pas utiliser ce menu.',
     prefix: {
-        name: 'Prefix',
-        set: 'Successfully updated the guilds prefix to {prefix}!',
-        noSpace: 'Please note that you cannot use spaces inside of the prefix! It\'s only allowed on the end.',
-        disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
+        name: 'Préfixe',
+        set: 'Le préfixe pour ce serveur a bien été changé en {prefix} !',
+        noSpace: 'Veuillez ne pas entrer d\'espace dans le préfixe ! Vous ne pouvez en ajouter qu\'à la fin.',
+        disclaimer: 'Ceci ne s\'applique PAS aux commandes "/" (Slash)'
     },
     global: {
         // will be the same everywhere
         none: 'none',
-        useButtons: 'Select an option you want to edit using the buttons below.',
+        useButtons: 'Sélectionnez l\'option que vous souhaitez modifier avec les boutons ci-dessous.',
         developer: {
             bypass: 'You don\'t have the `MANAGE_GUILD` to access this panel..\nDo you still want to continue?',
             choice: {
-                access: 'I\'m sure, yes',
-                abord: 'Nevermind'
+                access: 'Je suis sûr(e), oui',
+                abord: 'Peu importe'
             },
             notice: 'carefull - developer privileges enforced..'
         },
@@ -70,16 +70,16 @@ module.exports = {
             disable: 'Désactiver',
             enable: 'Activer',
             channel: {
-                set: 'Set Channel',
-                edit: 'Edit Channel'
+                set: 'Définir le salon',
+                edit: 'Modifier le salon'
             },
             category: {
-                set: 'Set Category',
-                edit: 'Edit Category'
+                set: 'Définir la catégorie',
+                edit: 'Modifier la catégorie'
             },
             role: {
-                set: 'Set Role',
-                edit: 'Edit Role'
+                set: 'Définir le rôle',
+                edit: 'Modifier le rôle'
             },
             mode: {
                 analyst: 'Analyst',
@@ -127,10 +127,10 @@ module.exports = {
         page: {
             messages: {
                 title: 'Messages',
-                name: 'Message Logging',
+                name: 'Historique des messages',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}'
+                    channel: 'Salon : {channel}',
+                    mode: 'Mode : {mode}'
                 },
                 button: {
                     snipe: {
@@ -140,8 +140,8 @@ module.exports = {
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Message Logging channel'
+                        title: 'Salon',
+                        name: 'Salon d\'historique des messages'
                     }
                 }
             },
@@ -149,50 +149,50 @@ module.exports = {
                 title: 'Joins',
                 name: 'Join Logging',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}',
-                    filter: 'Filter: {state}',
-                    captcha: 'CAPTCHA: {state}'
+                    channel: 'Salon : {channel}',
+                    mode: 'Mode : {mode}',
+                    filter: 'Filtre : {state}',
+                    captcha: 'CAPTCHA : {state}'
                 },
                 button: {
-                    filter: 'Filter',
-                    captcha: 'CAPTCHA Verification'
+                    filter: 'Filtre',
+                    captcha: 'Vérification CAPTCHA'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Join Logging'
+                        title: 'Salon',
+                        name: 'Rejoindre l\'historique'
                     },
                     filter: {
-                        title: 'Filter',
+                        title: 'Filtre',
                         option: {
                             trigger: 'Age Trigger: **{trigger} days**',
                             punishment: 'Punishment: **{type}**',
                             punishmentType: {
-                                ban: 'Ban',
-                                kick: 'Kick',
-                                timeout: 'Timeout',
-                                role: 'Assign {role} role',
+                                ban: 'Bannir',
+                                kick: 'Expulser',
+                                timeout: 'Exclure',
+                                role: 'Assigner le rôle {role}',
                                 none: 'none'
                             }
                         },
                         button: {
                             dmNotification: {
-                                disable: 'Disable DM notification',
-                                enable: 'Enable DM notification'
+                                disable: 'Désactiver les notifications en MP',
+                                enable: 'Activer les notifications en MP'
                             },
                             trigger: {
                                 set: 'Set Age Trigger',
                                 edit: 'Edit Age Trigger'
                             },
                             punishment: {
-                                title: 'Set a punishment',
+                                title: 'Définir une sanction',
                                 current: 'Current',
                                 option: {
-                                    ban: 'Ban User',
-                                    kick: 'Kick User',
-                                    timeout: 'Timeout User',
-                                    role: 'Assign Role'
+                                    ban: 'Bannir un utilisateur',
+                                    kick: 'Expulser un utilisateur',
+                                    timeout: 'Exclure un utilisateur',
+                                    role: 'Assigner un rôle'
                                 }
                             }
                         },
@@ -204,7 +204,7 @@ module.exports = {
                             },
                             role: {
                                 title: 'Role',
-                                name: 'punishment role'
+                                name: 'rôle sanction'
                             }
                         }
                     },
@@ -212,10 +212,10 @@ module.exports = {
                         title: 'CAPTCHA',
                         name: 'CAPTCHA',
                         option: {
-                            verifiedrole: 'Verified Role: {role}',
-                            unverifiedrole: 'Unerified Role: {role}',
-                            channel: 'Logging: {channel}',
-                            color: 'Color: {color}'
+                            verifiedrole: 'Rôle vérifié : {role}',
+                            unverifiedrole: 'Rôle non vérifié : {role}',
+                            channel: 'Historique : {channel}',
+                            color: 'Couleur : {color}'
                         },
                         disclaimer: 'Continue with {command}',
                         button: {
@@ -304,20 +304,20 @@ module.exports = {
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Welcomer Channel'
+                        title: 'Salon',
+                        name: 'Salon de bienvenue'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Welcomer Message'
+                        name: 'Message de bienvenue'
                     },
                     role: {
-                        title: 'Role',
-                        name: 'Welcomer Role'
+                        title: 'Rôle',
+                        name: 'Rôle de bienvenue'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
+                        title: 'Suppression Automatique',
+                        name: 'Suppression Automatique',
                         description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
                     }
                 }
@@ -326,16 +326,16 @@ module.exports = {
                 title: 'Byer',
                 name: 'Byer',
                 option: {
-                    channel: 'Channel: {channel}',
+                    channel: 'Salon : {channel}',
                     message: {
-                        message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        message: 'Message : {message}',
+                        command: 'Message : utiliser `{command}`'
                     },
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    autodelete: 'Suppression automatique : **{time}**',
+                    autodelete_never: 'jamais'
                 },
                 button: {
-                    message: 'Edit Message',
+                    message: 'Modifier le message',
                     card: {
                         enable: 'Enabled Welcomer Card',
                         disable: 'Disable Welcomer Card'
@@ -344,7 +344,7 @@ module.exports = {
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
+                        title: 'Salon',
                         name: 'Byer Channel'
                     },
                     message: {
