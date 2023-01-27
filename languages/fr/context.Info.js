@@ -9,7 +9,7 @@ module.exports = {
     timeout: 'on Timeout for {time}',
     pronouns: {
         title: 'Pronoms',
-        none: 'No pronouns set'
+        none: 'Aucun pronom défini'
     },
     button: {
         guildAvatar: 'Per-Guild Avatar URL',
@@ -17,13 +17,13 @@ module.exports = {
         banner: 'URL de la bannière'
     },
     actions: {
-        notAllowed: 'You cannot use this menu.',
+        notAllowed: 'Vous ne pouvez pas utiliser ce menu.',
         invalidTime: 'The duration cannot be less than a second!',
         otherInvalidTime: 'The duration cannot be more than 28 days!',
         placeholder: 'Choose an action',
         option: {
             ban: 'Bannir l\'utilisateur',
-            kick: 'Kick l\'utilisateur',
+            kick: 'Expulser l\'utilisateur',
             timeout: 'Timeout User',
             role: 'Assigner un rôle'
         },
@@ -33,9 +33,9 @@ module.exports = {
             duration: 'Duration'
         },
         success: {
-            ban: 'Successfully banned {user} from {guild}.',
-            kick: 'Successfully kicked {user} from {guild}.',
-            timeout: 'Successfully timed {user} out in {guild}.'
+            ban: '{user} a bien été banni du serveur {guild}.',
+            kick: '{user} a bien été expulsé du serveur {guild}.',
+            timeout: '{user} a bien été exclu du serveur {guild}.'
         }
     }
 };
