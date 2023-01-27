@@ -276,15 +276,16 @@ module.exports = {
                         command: 'NV Nachricht: Benutze `{command}`'
                     },
                     pings: 'Pings: {channels}',
-                    autodelete: 'Auto Delete: **{time}**',
+                    autodelete: 'Auto Löschen: **{time}**',
                     autodelete_never: 'niemals'
+                },
+                warnings: {
+                    afterleaveXautodelete: 'Wir empfehlen nicht, **Auto löschen** und **Beim Verlassen löschen** gleichzeitig zu verwenden',
+                    embedXcard: 'In Embed Karte überschreibt das eigene Embed Bild'
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
-                    card: {
-                        enable: 'Willkommens-Karte aktivieren',
-                        disable: 'Willkommens-Karte deaktivieren'
-                    },
+                    imgcard: 'Edit Card',
                     pings: 'Ping Kanäle bearbeiten',
                     autodelete: 'Autodelete festlegen',
                     assignRolesAfterRejoin: {
@@ -300,6 +301,7 @@ module.exports = {
                             delete: 'Beim Verlassen löschen'
                         }
                     },
+                    dm_webedit: 'DM Message Embed Editor',
                     afterleave_webedit: 'Nach Verlassen Embed Editor'
                 },
                 page: {
@@ -319,6 +321,28 @@ module.exports = {
                         title: 'Automatisch löschen',
                         name: 'Automatisch löschen',
                         description: 'Die Willkommensnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
+                    },
+                    imgcard: {
+                        title: 'Card',
+                        option: { background: 'Background: {url}' },
+                        button: {
+                            background: {
+                                set: 'Set Custom Background',
+                                edit: 'Edit Custom Background'
+                            },
+                            deleteBackground: 'Delete Background',
+                            inEmbed: {
+                                enable: 'Show Image in Embed',
+                                disable: 'Don\'t Show Image in Embed'
+                            }
+                        },
+                        page: {
+                            background: {
+                                title: 'Background',
+                                name: 'Card Background',
+                                description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
+                            }
+                        }
                     }
                 }
             },
@@ -336,10 +360,6 @@ module.exports = {
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
-                    card: {
-                        enable: 'Willkommens-Karte aktivieren',
-                        disable: 'Willkommens-Karte deaktivieren'
-                    },
                     autodelete: 'Autodelete festlegen'
                 },
                 page: {
@@ -506,7 +526,8 @@ module.exports = {
                             delete: 'Löschen',
                             timeout: 'Muten'
                         }
-                    }
+                    },
+                    export: 'Show word list'
                 },
                 page: {
                     delete: {
