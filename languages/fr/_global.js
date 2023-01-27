@@ -6,13 +6,13 @@ module.exports = {
     premium: {
         required: 'abonnement requis',
         embeds: {
-            title: 'Sorry but Subscription is required',
-            title2: 'Sorry but the Subscriptions limit was reached',
+            title: 'Désolé, l\'abonnement est requis',
+            title2: 'Désolé, la limite d\'abonnement est atteinte',
             description: 'Pour pouvoir vous proposer un bot fiable, et parce que l\'argent ne pousse pas dans les arbres, les fonctions non essentielles sont restreintes par un abonnement.'
         },
         button: {
-            subscribe: 'Subscribe',
-            support: 'Contact Support'
+            subscribe: 'S\'abonner',
+            support: 'Contacter le support'
         }
     },
     button: {
