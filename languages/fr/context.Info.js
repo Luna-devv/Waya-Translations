@@ -8,7 +8,7 @@ module.exports = {
     none: 'none',
     timeout: 'on Timeout for {time}',
     pronouns: {
-        title: 'Pronouns',
+        title: 'Pronoms',
         none: 'No pronouns set'
     },
     button: {
@@ -22,10 +22,10 @@ module.exports = {
         otherInvalidTime: 'The duration cannot be more than 28 days!',
         placeholder: 'Choose an action',
         option: {
-            ban: 'Ban User',
-            kick: 'Kick User',
+            ban: 'Bannir l\'utilisateur',
+            kick: 'Kick l\'utilisateur',
             timeout: 'Timeout User',
-            role: 'Assign Role'
+            role: 'Assigner un rôle'
         },
         form: {
             reason: 'Reason',
