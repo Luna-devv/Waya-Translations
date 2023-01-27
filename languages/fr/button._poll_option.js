@@ -3,6 +3,6 @@ module.exports = {
     noPoll: 'Ce sondage est introuvable !',
     ended: 'Ce sondage s\'est terminé il y a {time}.',
     alreadyVoted: 'You\'ve already voted for option **#{num}**.',
-    voted: 'You\'ve successfully voted for **#{num}** in this poll.',
+    voted: 'Vous avez voté **#{num}** à ce sondage.',
     end: '**{users} ;[user, users]** ;[has, have] voted for **{options} options** in the last {time}!'
 };    // syntax: ;[singular, plural]
