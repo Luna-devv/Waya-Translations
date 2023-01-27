@@ -54,7 +54,7 @@ module.exports = {
         }
     },
     ad: {
-        vote: 'Support Us!',
-        help: 'Need Help?'
+        vote: 'Unterstütze uns!',
+        help: 'Brauchst Hilfe?'
     }
 };
