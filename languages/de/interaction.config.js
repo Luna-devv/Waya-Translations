@@ -86,8 +86,8 @@ module.exports = {
                 cozy: 'Übersichtlich'
             },
             modeChange: {
-                analyst: 'Auf Analyst setzen',
-                cozy: 'Auf Cozy setzen'
+                analyst: 'Auf Analyst Setzen',
+                cozy: 'Auf Cozy Setzen'
             },
             dupaw: {
                 // This is a name, cannot be translated
@@ -182,8 +182,8 @@ module.exports = {
                                 enable: 'DM Benachrichtigung aktiviert'
                             },
                             trigger: {
-                                set: 'Alterstrigger setzen',
-                                edit: 'Alterstrigger bearbeiten'
+                                set: 'Alterstrigger Setzen',
+                                edit: 'Alterstrigger Bearbeiten'
                             },
                             punishment: {
                                 title: 'Bestrafung setzten',
@@ -281,13 +281,13 @@ module.exports = {
                 },
                 warnings: {
                     afterleaveXautodelete: 'Wir empfehlen nicht, **Auto löschen** und **Beim Verlassen löschen** gleichzeitig zu verwenden',
-                    embedXcard: 'In Embed Karte überschreibt das eigene Embed Bild'
+                    embedXcard: 'Die in Embed Begrüßungskarte überschreibt das eigene Embed Bild'
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
-                    imgcard: 'Edit Card',
+                    imgcard: 'Begrüßungskarte Bearbeiten',
                     pings: 'Ping Kanäle bearbeiten',
-                    autodelete: 'Autodelete festlegen',
+                    autodelete: 'Auto Löschen Festlegen',
                     assignRolesAfterRejoin: {
                         enable: 'Rollen nach Rejoinen neu zuweisen',
                         disable: 'Deaktiviere die Neuzuordnung von Rollen nach Rejoin'
@@ -301,7 +301,7 @@ module.exports = {
                             delete: 'Beim Verlassen löschen'
                         }
                     },
-                    dm_webedit: 'DM Message Embed Editor',
+                    dm_webedit: 'DM Nachrichten Embed Editor',
                     afterleave_webedit: 'Nach Verlassen Embed Editor'
                 },
                 page: {
@@ -323,24 +323,24 @@ module.exports = {
                         description: 'Die Willkommensnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
                     },
                     imgcard: {
-                        title: 'Card',
-                        option: { background: 'Background: {url}' },
+                        title: 'Begrüßungskarte',
+                        option: { background: 'Hintergrund: {url}' },
                         button: {
                             background: {
-                                set: 'Set Custom Background',
-                                edit: 'Edit Custom Background'
+                                set: 'Benutzerdefinierten Hintergrund Setzen',
+                                edit: 'Benutzerdefinierten Hintergrund Bearbeiten'
                             },
-                            deleteBackground: 'Delete Background',
+                            deleteBackground: 'Hintergrund Löschen',
                             inEmbed: {
-                                enable: 'Show Image in Embed',
-                                disable: 'Don\'t Show Image in Embed'
+                                enable: 'Karte im Embed anzeigen',
+                                disable: 'Karte nicht im Embed anzeigen'
                             }
                         },
                         page: {
                             background: {
-                                title: 'Background',
-                                name: 'Card Background',
-                                description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
+                                title: 'Hintergrund',
+                                name: 'Kartenhintergrund',
+                                description: 'Der Link muss eine **direkte Bild URL** sein, es muss auch ein Link vom Typ {scheme} sein.\nWir empfehlen ein Verhältnis von {ratio} und eine mindeste Auflösung von {resolution}.'
                             }
                         }
                     }
@@ -527,7 +527,7 @@ module.exports = {
                             timeout: 'Muten'
                         }
                     },
-                    export: 'Show word list'
+                    export: 'Wörterliste Anschauen'
                 },
                 page: {
                     delete: {
