@@ -2,7 +2,7 @@ module.exports = {
     dms: 'Cette commande ne peut pas être utilisée en DM.',
     disabled: 'Vous êtes banni.',
     mention: 'Hey {user}, utilise **{emote} SlashCommands** pour me configurer !\nUtilise {command} pour plus d\'informations.',
-    error: 'Un erreur s\'est produite en exécutant cette commande.\nVeuillez rejoindre le serveur Support and signaler cette erreur\navec l\'id {issue} !',
+    error: 'Un erreur s\'est produite lors de l\'exécution de cette commande.\nVeuillez rejoindre le serveur de support et signaler cette erreur\navec l\'id {issue} !',
     premium: {
         required: 'abonnement requis',
         embeds: {
@@ -22,10 +22,10 @@ module.exports = {
     permissions: {
         user: {
             guild: 'Les permissions {perms} sont requises pour effectuer cette action.',
-            channel: 'La permission {perms} est requise pour effectuer cette action.',
+            channel: 'Les permissions {perms} sont requises pour effectuer cette action ici.',
             roles: {
                 user: {
-                    text: 'Vous ne pouvez pas effectuer cette action car cet utilisateur possède un rôle plus haut que les vôtres.',
+                    text: 'Vous ne pouvez pas effectuer cette action, car cet utilisateur possède un rôle plus haut que les vôtres.',
                     user: 'User: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 },
@@ -37,11 +37,11 @@ module.exports = {
             }
         },
         me: {
-            guild: 'I cannot run this action since I\'m missing the {perms} permissions.',
-            channel: 'I cannot run this action since I\'m missing the {perms} permissions in this channel.',
+            guild: 'J\'ai besoin des permissions {perms} pour effectuer cette action.',
+            channel: 'J\'ai besoin des permissions {perms} pour effectuer cette action ici.',
             roles: {
                 user: {
-                    text: 'I cannot perform this action since the highest role of that user is higher than mine.',
+                    text: 'Vous ne pouvez pas effectuer cette action, car cet utilisateur possède un rôle plus haut que le mien.',
                     user: 'User: {u.role} @ index {u.index}',
                     bot: 'Me: {b.role} @ index {b.index}'
                 },
