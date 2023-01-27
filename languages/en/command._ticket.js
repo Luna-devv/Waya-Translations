@@ -5,5 +5,9 @@ module.exports = {
     },
     remove: {
         success: "{user} has been successfully removed from this Ticket!"
+    },
+    claim: {
+        already: ";[{user} is, You are] already handling this ticket!",
+        success: "You have successfully transfared the ticket to {user}!"
     }
 };
