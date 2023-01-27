@@ -5,7 +5,7 @@ module.exports = {
     form: {
         formTitle: 'Ticket Opening Reason',
         field: 'Why do you want to open a Ticket?',
-        placeholder: 'I need help with that..'
+        placeholder: 'J\'ai besoin d\'aide pour ça..'
     },
     commands: { closerequest: 'Create a close request' }
 };
