@@ -1,22 +1,22 @@
 module.exports = {
     end: {
-        title: 'Subscription End',
-        description: 'Hey {user}, we have just recieved your subscription cancelation.\nWe\'re sad yo see you go, but we hope that you enjoyed it! {emote}',
+        title: 'Abbonamento Terminato',
+        description: 'Ciao {user}, abbiamo appena ricevuto la cancellazione del tuo abbonamento.\nCi dispiace che tu te ne vai, ma speriamo che ti sia piacuto! {emote}',
         notes: {
-            title: 'Please Note:',
-            support: 'If you need help, plese [Contact Support]({support})',
-            reSubscribe: 'If you want to reSubscribe, go to {url}'
+            title: 'Nota che:',
+            support: 'Se hai bisogno di aiuto [Contatta l\'assistenza]({support})',
+            reSubscribe: 'Se vuoi riabbonarti, vai a {url}'
         }
     },
     new: {
-        title: 'New Enterprise Subscription',
-        description: 'Hey {user}, we have just recieved your successfull payment. {emote}\nWe are really happy to see you on board, and we hope that you will like using the bot with your new benefits!',
+        title: 'Nuovo Abbonamento',
+        description: 'Ciao {user}, abbiamo appena ricevuto il tuo pagamento con successo. {emote}\nSiamo davvero felici di vederti a bordo, e speriamo che ti piacerà usare il bot con i tuoi nuovi vantaggi!',
         notes: {
-            title: 'Please Note:',
-            setGuild: 'To set a Enterprise guild, please use {command}',
-            getGuild: 'If you need help with [getting your Server\'s Id]({article})',
-            cooldown: 'Don\'t forget that you always have a {days} days cooldown!',
-            support: 'If you need help, plese [Contact Support]({support})'
+            title: 'Nota bene:',
+            setGuild: 'Per impostare una Gilda con Abbonamento, utilizza {command}',
+            getGuild: 'Se hai bisogno di aiuto per [ottenere l\'Id del tuo server]({article})',
+            cooldown: 'Non dimenticare che hai sempre {days} giorni di raffreddamento!',
+            support: 'Se hai bisogno di aiuto [Contatta l\'assistenza]({support})'
         }
     }
 };
