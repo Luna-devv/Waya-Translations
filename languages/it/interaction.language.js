@@ -1,1 +1,1 @@
-module.exports = { updated: 'Your primary language has been updated to **{locale}**!' };
+module.exports = { updated: 'La tua lingua principale è stata aggiornata a **{locale}**!' };
