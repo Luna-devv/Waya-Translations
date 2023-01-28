@@ -27,29 +27,29 @@ module.exports = {
         permissions: 'Mancanti: {perms}',
         placeholders: 'Segnaposti',
         await: {
-            channel: 'Mention a Channel or paste the Channel ID into the chat.\nType `none` to remove the channel.',
-            category: 'Mention a Category or paste the Category ID into the chat.\nType `none` to remove the category.',
-            role: 'Mention a Role or paste the Role ID into the chat.\nType `none` to remove the role.',
-            message: 'Send a Message which should be used as {what}.',
-            emote: 'Send an Emoji which should be used as {what}.'
+            channel: 'Menziona un canale o incolla l\'ID del canale nella chat.\nDigita `none` per rimuovere il canale.',
+            category: 'Menziona un canale o incolla l\'ID del canale nella chat.\nDigita `none` per rimuovere il canale.',
+            role: 'Menziona un ruolo o incolla l\'ID ruolo nella chat.\nDigita `none` per rimuovere il ruolo.',
+            message: 'Invia un messaggio che dovrebbe essere usato come {what}.',
+            emote: 'Invia un Emoji che dovrebbe essere usato come {what}.'
         },
         success: {
-            set: 'Successfully set {what} to **{data}**.',
-            add: 'Successfully add {what} to **{data}**.',
-            setCodeblock: 'Successfully set {what} to {data}',
-            removed: 'Successfully removed the {what}.',
-            remove: 'Successfully remove {what} from **{data}**.',
-            fail: 'This {what} does not exist in this guild..',
-            lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
-            otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
-            numberFail: 'Il {what} non è un numero compreso tra {a} e {b}!',
-            roleFail: 'Questo ruolo è gestibile solo da Discord o appartiene a un utente del bot.'
+            set: 'Impostato {what} a **{data}** con successo.',
+            add: 'Aggiunto {what} a **{data}** con successo.',
+            setCodeblock: 'Impostato {what} a {data} con successo',
+            removed: 'Rimosso {what} con successo.',
+            remove: 'Rimosso {what} da **{data}** con successo.',
+            fail: '{what} non esiste in questo Server..',
+            lengthFail: '{what} è più lungo di {max} caratteri! ({length} caratteri, {relative} troppo)',
+            otherLengthFail: '{what} è più corto di {min} caratteri! ({length} caratteri, {relative} troppo meno)',
+            numberFail: '{what} non è un numero compreso tra {a} e {b}!',
+            roleFail: 'Questo ruolo è gestibile solo da Discord o appartiene a un utente bot.'
         },
         webedit: {
-            button: 'Embed Editor',
-            title: 'Message Web Edit',
-            description: 'Open [this Website]({url}) to start editing the message & embed.',
-            open: 'Open Web Edit'
+            button: 'Editore Embed',
+            title: 'Modifica Messaggio Web',
+            description: 'Apri [questo sito Web]({url}), per iniziare a modificare il messaggio e l\'embed.',
+            open: 'Apri La Modifica Web'
         },
         type: {
             text: 'Canale di testo',
@@ -86,8 +86,8 @@ module.exports = {
                 cozy: 'Accogliente'
             },
             modeChange: {
-                analyst: 'Set to Analyst',
-                cozy: 'Set to Cozy'
+                analyst: 'Imposta su Analista',
+                cozy: 'Imposta su accogliente'
             },
             dupaw: {
                 // This is a name, cannot be translated
@@ -134,8 +134,8 @@ module.exports = {
                 },
                 button: {
                     snipe: {
-                        enable: 'Enable Snipe',
-                        disable: 'Disable Snipe'
+                        enable: 'Abilita Snipe',
+                        disable: 'Disabilita Snipe'
                     }
                 },
                 page: {
@@ -151,60 +151,60 @@ module.exports = {
                 option: {
                     channel: 'Canale: {channel}',
                     mode: 'Modalità: {mode}',
-                    filter: 'Filter: {state}',
+                    filter: 'Filtro: {state}',
                     captcha: 'CAPTCHA: {state}'
                 },
                 button: {
-                    filter: 'Filter',
-                    captcha: 'CAPTCHA Verification'
+                    filter: 'Filtro',
+                    captcha: 'Verifica CAPTCHA'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Join Logging'
+                        title: 'Canale',
+                        name: 'Logging Unizione'
                     },
                     filter: {
-                        title: 'Filter',
+                        title: 'Filtro',
                         option: {
-                            trigger: 'Age Trigger: **{trigger} days**',
-                            punishment: 'Punishment: **{type}**',
+                            trigger: 'Trigger Età: **{trigger} giorni**',
+                            punishment: 'Punzione: **{type}**',
                             punishmentType: {
                                 ban: 'Ban',
-                                kick: 'Kick',
+                                kick: 'Espellsione',
                                 timeout: 'Timeout',
-                                role: 'Assign {role} role',
-                                none: 'none'
+                                role: 'Assegna {role}',
+                                none: 'niente'
                             }
                         },
                         button: {
                             dmNotification: {
-                                disable: 'Disable DM notification',
-                                enable: 'Enable DM notification'
+                                disable: 'Disabilita notifiche su messaggi privati',
+                                enable: 'Abilita notifiche su messaggi privati'
                             },
                             trigger: {
-                                set: 'Set Age Trigger',
-                                edit: 'Edit Age Trigger'
+                                set: 'Imposta Trigger Età',
+                                edit: 'Modifica il Trigger Età'
                             },
                             punishment: {
-                                title: 'Set a punishment',
-                                current: 'Current',
+                                title: 'Imposta una punizione',
+                                current: 'Attuale',
                                 option: {
-                                    ban: 'Ban User',
-                                    kick: 'Kick User',
-                                    timeout: 'Timeout User',
-                                    role: 'Assign Role'
+                                    ban: 'Banna utente',
+                                    kick: 'Espelli Utente',
+                                    timeout: 'Timeout Utente',
+                                    role: 'Assegna ruolo'
                                 }
                             }
                         },
                         page: {
                             trigger: {
                                 title: 'Trigger',
-                                name: 'age requirement',
-                                description: 'If an account is younger than this age, they\'ll get punished!\nInput must be between 0 and 28 days.'
+                                name: 'limite età',
+                                description: 'Se un account è più giovane di questa età, verrà punito!\nL\'input deve essere compreso tra 0 e 28 giorni.'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'punishment role'
+                                title: 'Ruolo',
+                                name: 'ruolo di punizione'
                             }
                         }
                     },
@@ -251,117 +251,137 @@ module.exports = {
                                 name: 'ruolo CAPTCHA fallito'
                             },
                             color: {
-                                title: 'Page Color',
-                                name: 'Page Color',
-                                description: 'Paste a Hex color into the chat you want to use.\nWe recommend you using a color near to black with very high saturation.\nNote that the color on the Passport will always look brighter.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                                title: 'Colore sfondo',
+                                name: 'Colore sfondo',
+                                description: 'Incolla un colore Hex nella chat che vuoi usare.\nTi consigliamo di usare un colore vicino al nero con saturazione molto alta.\nNota che il colore sul Passaporto sarà sempre più luminoso.\nOttieni un codice colore Hex da [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'Il codice colore non è un colore Hex valido.\nOttieni un codice colore Hex da [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
                 }
             },
             welcomer: {
-                title: 'Welcomer',
-                name: 'Welcomer',
+                title: 'Benvenutore',
+                name: 'Benvenutore',
                 option: {
-                    channel: 'Channel: {channel}',
-                    role: 'Roles: {role}',
+                    channel: 'Canale: {channel}',
+                    role: 'Ruoli: {role}',
                     message: {
-                        message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        message: 'Messaggio: {message}',
+                        command: 'Messaggio: usa `{command}`'
                     },
                     afterleaveMessage: {
-                        message: 'AL Message: {message}',
+                        message: 'DlA Messaggio: {message}',
                         // AL: After Leave - just use the first letters of your language :)
-                        command: 'AL Message: use `{command}`'
+                        command: 'DlA Messaggio: usa `{command}`'
                     },
-                    pings: 'Pings: {channels}',
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    pings: 'Ping: {channels}',
+                    autodelete: 'Auto eliminazione: **{time}**',
+                    autodelete_never: 'mai'
+                },
+                warnings: {
+                    afterleaveXautodelete: 'Non consigliamo di utilizzare **eliminazione automatica** ed Eliminazione dopo abbandono** contemporaneamente',
+                    embedXcard: 'Nella scheda incorporata sovrascrive l\'immagine incorporata personalizzata'
                 },
                 button: {
-                    message: 'Edit Message',
-                    card: {
-                        enable: 'Enabled Welcomer Card',
-                        disable: 'Disable Welcomer Card'
-                    },
-                    pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete',
+                    message: 'Modifica messaggio',
+                    imgcard: 'Modifica carta',
+                    pings: 'Modifica Canali Ping',
+                    autodelete: 'Imposta Eliminazione Automatica',
                     assignRolesAfterRejoin: {
-                        enable: 'Reassign Roles after Rejoin',
-                        disable: 'Disable Reassign Roles after Rejoin'
+                        enable: 'Riassegna ruoli dopo la Riunione',
+                        disable: 'Disabilita Riassegna ruoli dopo la Riunione'
                     },
                     afterleave: {
-                        title: 'What should happen with the message if the member leaves?',
-                        selected: 'Selected',
+                        title: 'Che cosa dovrebbe accadere con il messaggio se il membro abbandona il server?',
+                        selected: 'Selezionato',
                         option: {
-                            nothing: 'Nothing',
-                            edit: 'Edit on leave',
-                            delete: 'Delete on leave'
+                            nothing: 'Niente',
+                            edit: 'Modifica a abbandono',
+                            delete: 'Elimina a abbandono'
                         }
                     },
-                    afterleave_webedit: 'After Leave Embed Editor'
+                    dm_webedit: 'Editore Embed in messaggi privati',
+                    afterleave_webedit: 'Editore Embed dopo l\'abbandono'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Welcomer Channel'
+                        title: 'Canale',
+                        name: 'Canale di Benvenutore'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Welcomer Message'
+                        title: 'Messaggio',
+                        name: 'Messaggio Benvenutore'
                     },
                     role: {
-                        title: 'Role',
-                        name: 'Welcomer Role'
+                        title: 'Ruolo',
+                        name: 'Ruolo Benvenutore'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Eliminazione Automatica',
+                        name: 'Eliminazione Automatica',
+                        description: 'Il messaggio Benvenutore, verrà eliminato dopo questo tempo.\nConsigliamo di mantenere questo tempo breve (solo pochi secondi).\nEsempio: `1m 3s`'
+                    },
+                    imgcard: {
+                        title: 'Scheda',
+                        option: { background: 'Sfondo: {url}' },
+                        button: {
+                            background: {
+                                set: 'Sfondo personalizzato',
+                                edit: 'Modifica Sfondo personalizzato'
+                            },
+                            deleteBackground: 'Elimina sfondo',
+                            inEmbed: {
+                                enable: 'Mostra immagine in Embed',
+                                disable: 'Non mostrare immagine in Embed'
+                            }
+                        },
+                        page: {
+                            background: {
+                                title: 'Sfondo',
+                                name: 'Sfondo Card',
+                                description: 'Il link deve essere un **URL di immagine diretta**, deve anche essere un link di tipo {scheme}.\nConsigliamo un rapporto di {ratio} e una risoluzione minima di {resolution}.'
+                            }
+                        }
                     }
                 }
             },
             byer: {
-                title: 'Byer',
-                name: 'Byer',
+                title: 'Abbandonatore',
+                name: 'Abbandonatore',
                 option: {
-                    channel: 'Channel: {channel}',
+                    channel: 'Canale: {channel}',
                     message: {
-                        message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        message: 'Messaggio: {message}',
+                        command: 'Messaggio: usa `{command}`'
                     },
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    autodelete: 'Auto eliminazione: **{time}**',
+                    autodelete_never: 'mai'
                 },
                 button: {
-                    message: 'Edit Message',
-                    card: {
-                        enable: 'Enabled Welcomer Card',
-                        disable: 'Disable Welcomer Card'
-                    },
-                    autodelete: 'Set Autodelete'
+                    message: 'Modifica messaggio',
+                    autodelete: 'Imposta Eliminazione Automatica'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Byer Channel'
+                        title: 'Canale',
+                        name: 'Imposta Canale Abbandonatore'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Byer Message'
+                        title: 'Messaggio',
+                        name: 'Messaggio Abbandonatore'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Byer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Eliminazione Automatica',
+                        name: 'Eliminazione Automatica',
+                        description: 'Il messaggio Abbandonatore, verrà eliminato dopo questo tempo.\nConsigliamo di mantenere questo tempo breve (solo pochi secondi).\nEsempio: `1m 3s`'
                     }
                 }
             }
         }
     },
     tickets: {
-        title: 'Configura Ticketing',
+        title: 'Configura Ticket',
         option: {
             channel: 'Categoria: {channel}',
             staff: 'Personale: {role}',
@@ -380,510 +400,511 @@ module.exports = {
                 disable: 'Motivo Opzionale'
             },
             logging: {
-                edit: 'Set Logging Channel',
-                set: 'Change Logging Channel'
+                edit: 'Imposta canale dei Log',
+                set: 'Cambia il Canale Log'
             },
             transcript: {
                 disable: 'Disabilita Trascritti',
                 enable: 'Salva trascrizioni'
             },
             openReason: {
-                disable: 'Disable Open Reason',
-                enable: 'Enable Open Reason'
+                disable: 'Disabilita Motivo Apertura',
+                enable: 'Abilita Motivo Apertura'
             },
             leaveAutoclose: {
-                disable: 'Disable Leave Autoclose',
-                enable: 'Enable Leave Autoclose'
+                disable: 'Disabilita Chiusura Automatica ad abbandono',
+                enable: 'Abilita Chiusura Automatica ad abbandono'
             },
-            embeds: 'Change Embeds',
+            embeds: 'Cambia Embed',
             naming: {
-                title: 'Set a naming type',
-                current: 'Current',
+                title: 'Imposta un tipo di nome',
+                current: 'Attuale',
                 option: {
-                    username: 'Username',
-                    userid: 'User Id',
-                    random: 'Random Id'
+                    username: 'Nomeutente',
+                    userid: 'Id Utente',
+                    random: 'Id Casuale'
                 }
             }
         },
         page: {
             category: {
-                title: 'Category',
-                name: 'Tickets Category'
+                title: 'Categoria',
+                name: 'Categoria Ticket'
             },
             role: {
-                title: 'Staff Role',
-                name: 'Ticket Staff role'
+                title: 'Ruolo dello Staff',
+                name: 'Ruolo Staff-Ticket'
             },
             descriptions: {
-                title: 'Texts',
-                name: 'Ticket descriptions',
+                title: 'Testi',
+                name: 'Descrizione Ticket',
                 button: {
-                    texts: 'Preview Ticket',
-                    topic: 'Change Topic',
-                    title: 'Change title text',
-                    unclaimed: 'Change Unclaimed Embed',
-                    claimed: 'Change Claimed Embed'
+                    texts: 'Anteprima Ticket',
+                    topic: 'Cambia Argomento',
+                    title: 'Cambia il titolo',
+                    unclaimed: 'Modifica Embed non reclamato',
+                    claimed: 'Modifica Embed reclamato'
                 },
                 page: {
                     title: {
-                        title: 'Title',
-                        name: 'Ticket embed title'
+                        title: 'Titolo',
+                        name: 'Titolo Embed Ticket'
                     },
                     unclaimed: {
-                        title: 'Unclaimed',
-                        name: 'Unclaimed Ticket description'
+                        title: 'Non reclamato',
+                        name: 'Descrizione Ticket non reclamato'
                     },
                     claimed: {
-                        title: 'Claimed',
-                        name: 'Claimed Ticket description'
+                        title: 'Reclamato',
+                        name: 'Descrizione Ticket reclamato'
                     },
                     topic: {
-                        title: 'Topic',
-                        name: 'Tickets Topic'
+                        title: 'Tema',
+                        name: 'Tema Ticket'
                     }
                 }
             },
             logging: {
                 title: 'Logging',
-                name: 'Ticket Logging'
+                name: 'Logging Ticket'
             }
         }
     },
     moderation: {
-        title: 'Configure Moderation',
+        title: 'Configura Moderazione',
         option: {
-            role: 'Bypass Role: {role}',
+            role: 'Ruolo di bypass: {role}',
             logging: 'Logging: {channel}'
         },
         button: {
-            filter: 'Blacklist',
+            filter: 'Elenco esclusi',
             antiScam: 'Anti Scam',
             antiLink: 'Anti Link',
-            antiSpam: 'Anti Spam',
+            antiSpam: 'Anti-spam',
             bypassRole: {
-                edit: 'Edit bypass Role',
-                set: 'Set bypass Role'
+                edit: 'Modifica ruolo bypass',
+                set: 'Imposta ruolo bypass'
             },
             logging: {
-                edit: 'Edit logging Channel',
-                set: 'Set logging Channel'
+                edit: 'Modifica Canale Logging',
+                set: 'Imposta Canale Logging'
             }
         },
         page: {
             role: {
-                title: 'Bypass Role',
-                name: 'Bypass role'
+                title: 'Ruolo di bypass',
+                name: 'Ruolo di bypass'
             },
             logging: {
                 title: 'Logging',
-                name: 'Moderation logs'
+                name: 'Log-Moderazione'
             },
             filter: {
-                title: 'Filter',
-                name: 'Moderation Filter',
+                title: 'Filtro',
+                name: 'Filtro Moderazione',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Messaggio: {message}',
+                    actions: 'Azioni: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
+                        reply: 'risposta',
+                        delete: 'elimina',
                         timeout: 'timeout'
                     },
-                    total: 'Total: **{amount} words**',
+                    total: 'Totale: **{amount} parole**',
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    deleteAll: 'Clear word list',
-                    editWords: 'Edit word list',
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    deleteAll: 'Cancella lista di parole',
+                    editWords: 'Modifica elenco di parole',
+                    message: 'Modifica messaggio',
+                    timeout: 'Durata del timeout',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Scegli un\'azione',
+                        selected: 'Selezionato',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
+                            reply: 'Risposta',
+                            delete: 'Elimina',
                             timeout: 'Timeout'
                         }
-                    }
+                    },
+                    export: 'Mostra elenco di parole'
                 },
                 page: {
                     delete: {
-                        title: 'Clear Word List',
-                        description: 'Are you sure that you want to clear out all blacklisted words?',
+                        title: 'Cancella lista di parole',
+                        description: 'Sei sicuro di voler cancellare tutte le parole in blacklist?',
                         page: {
                             confirm: {
-                                title: 'Confirmed',
-                                description: 'Successfully cleared out all blacklisted words! You can now dismiss this message.'
+                                title: 'Confermato',
+                                description: 'Eliminato tutte le parole della blacklist con successo! Ora puoi scartare questo messaggio.'
                             },
                             abord: {
-                                title: 'Aborded',
-                                description: 'No actions have been taken! You can now dismiss this message.'
+                                title: 'Abortito',
+                                description: 'Nessuna azione intrapresa! Ora puoi scartare questo messaggio.'
                             }
                         }
                     },
                     words: {
-                        title: 'Words',
-                        name: 'Blacklisted word',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
-                        bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
-                        added: 'Successfully added "`{word}`" as new blacklisted word.',
-                        removed: 'Successfully removed "`{word}`" as blacklisted word.'
+                        title: 'Parole',
+                        name: 'Parole nella Blacklist',
+                        awaitMessage: 'Invia una o più parole che dovrebbero essere inserite nella blacklist.\nPer favore **usa solo** caratteri da `A-Z`\nDividi parole con `, ` per aggiungere tante parole contemporaneamente.',
+                        bulkAdded: 'Aggiunto {amout} nuove parole alla blacklist con successo.',
+                        added: 'Aggiunto con successo "`{word}`" come nuova parola nella blacklist.',
+                        removed: 'Rimosso con successo "`{word}`" come parola dalla blacklist.'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Blacklisted word reply'
+                        title: 'Messaggio',
+                        name: 'Parola compresa nella blacklist'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Durata del timeout',
+                        name: 'Durata del timeout',
+                        description: 'L\'utente sarà impostato su Timeout per questa durata!\nL\'input deve essere inferiore a 18 giorni.\nEsempio: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiScam: {
                 title: 'Anti Scam',
-                name: 'Moderation Anti Scam',
+                name: 'Moderazione Anti Scam',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Messaggio: {message}',
+                    actions: 'Azioni: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
+                        reply: 'risposta',
+                        delete: 'elimina',
                         timeout: 'timeout'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    message: 'Modifica messaggio',
+                    timeout: 'Durata del timeout',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Scegli un\'azione',
+                        selected: 'Selezionato',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
+                            reply: 'Risposta',
+                            delete: 'Elimina',
                             timeout: 'Timeout'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Anit Scam reply'
+                        title: 'Messaggio',
+                        name: 'Risposta Anti Scam'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Durata del timeout',
+                        name: 'Durata del timeout',
+                        description: 'L\'utente sarà impostato su Timeout per questa durata!\nL\'input deve essere inferiore a 18 giorni.\nEsempio: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiLink: {
                 title: 'Anti Link',
-                name: 'Moderation Anti Link',
+                name: 'Moderazione Anti Scam',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Messaggio: {message}',
+                    actions: 'Azioni: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
+                        reply: 'risposta',
+                        delete: 'elimina',
                         timeout: 'timeout'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
                     media: {
-                        disable: 'Disallow Media',
-                        enable: 'Allow Media'
+                        disable: 'Disattiva Media',
+                        enable: 'Consenti Media'
                     },
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    message: 'Modifica messaggio',
+                    timeout: 'Durata del timeout',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Scegli un\'azione',
+                        selected: 'Selezionato',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
+                            reply: 'Risposta',
+                            delete: 'Elimina',
                             timeout: 'Timeout'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Anit Link reply'
+                        title: 'Messaggio',
+                        name: 'Risposta Anti Link'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Durata del timeout',
+                        name: 'Durata del timeout',
+                        description: 'L\'utente sarà impostato su Timeout per questa durata!\nL\'input deve essere inferiore a 18 giorni.\nEsempio: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiSpam: {
                 title: 'Anti Spam',
-                name: 'Moderation Anti Spam',
+                name: 'Moderazione Anti Spam',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
-                    threshold: 'Threshold: **{threshold}msgs/5s**',
+                    message: 'Messaggio: {message}',
+                    actions: 'Azioni: {types}',
+                    threshold: 'Soglia: **{threshold}messaggi/5s**',
                     actionType: {
-                        reply: 'reply',
+                        reply: 'risposta',
                         timeout: 'timeout',
-                        purge: 'purge'
+                        purge: 'elimina'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    threshold: 'Edit Threshold',
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    threshold: 'Modifica soglia',
+                    message: 'Modifica messaggio',
+                    timeout: 'Durata del timeout',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Scegli un\'azione',
+                        selected: 'Selezionato',
                         option: {
-                            reply: 'Reply',
+                            reply: 'Risposta',
                             timeout: 'Timeout',
-                            purge: 'Purge'
+                            purge: 'Elimina'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Anti Spam reply'
+                        title: 'Messaggio',
+                        name: 'Risposta Anti Spam'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Durata del timeout',
+                        name: 'Durata del timeout',
+                        description: 'L\'utente sarà impostato su Timeout per questa durata!\nL\'input deve essere inferiore a 18 giorni.\nEsempio: `7d 4h 8m 3s`'
                     },
                     threshold: {
-                        title: 'Threshold',
-                        name: 'spam Threshold',
-                        description: 'I will consider it as spam, when this amount gets reached within 5 seconds!\nInput must be between 1 and 99.'
+                        title: 'Soglia',
+                        name: 'soglia spam',
+                        description: 'Lo considererò come spam, quando questo importo viene raggiunto entro 5 secondi!\nInput deve essere compreso tra 1 e 99.'
                     }
                 }
             }
         }
     },
     starboard: {
-        title: 'Configure Starboard',
+        title: 'Configura Starboard',
         button: {
-            emoji: 'Change Emoji',
-            color: 'Change Color',
-            count: 'Change Count',
+            emoji: 'Cambia Emoji',
+            color: 'Cambia colore',
+            count: 'Cambia Contatore',
             nsfw: {
-                disable: 'Disable NSFW',
-                enable: 'Enable NSFW'
+                disable: 'Disattiva NSFW',
+                enable: 'Attiva NSFW'
             },
             bots: {
-                disable: 'Disable Bots',
-                enable: 'Enable Bots'
+                disable: 'Disabilita I Bot',
+                enable: 'Abilita Bot'
             },
             selfReact: {
-                disable: 'Disable Self Reaction',
-                enable: 'Enable Self Reaction'
+                disable: 'Disabilita Reazione Di Sé',
+                enable: 'Abilita Reazione Di Sé'
             },
             reply: {
-                disable: 'Hide Replied to',
-                enable: 'Show Replied to'
+                disable: 'Nascondi Risposte a',
+                enable: 'Mostra risposte a'
             },
             edits: {
-                disable: 'Disalow Edits',
-                enable: 'Allow Edits'
+                disable: 'Vieta Modifiche',
+                enable: 'Permetti Modifiche'
             },
             logging: {
-                disable: 'Disable Logging',
-                enable: 'Enable Logging'
+                disable: 'Disabilita Logging',
+                enable: 'Abilita Logging'
             },
             blacklist: {
-                set: 'Set Blacklisted Role',
-                change: 'Edit Blacklisted Role'
+                set: 'Imposta Ruolo Blacklist',
+                change: 'Modifica Ruolo Blacklist'
             },
-            blacklistedChannels: 'Edit Blacklisted Channels',
+            blacklistedChannels: 'Modifica Canale Blacklist',
             delete: {
-                disable: 'Disable Delete <{reactions} Reactions',
-                enable: 'Enable Delete <{reactions} Reactions'
+                disable: 'Disabilita Elimina <{reactions} Reazioni',
+                enable: 'Abilita Elimina <{reactions} Reazioni'
             },
             display: {
-                title: 'Set a display style',
-                selected: 'Selected',
+                title: 'Imposta uno stile di visualizzazione',
+                selected: 'Selezionato',
                 option: {
                     tag: 'Tag',
-                    username: 'Username',
-                    nickname: 'Nickname',
-                    guildProfile: 'Guild Profile'
+                    username: 'Nomeutente',
+                    nickname: 'Soprannome',
+                    guildProfile: 'Profilo Gilda'
                 }
             }
         },
         option: {
-            channel: 'Channel: {channel}',
-            color: 'Color: {color}',
+            channel: 'Canale: {channel}',
+            color: 'Colore: {color}',
             emoji: 'Emoji: {emoji}',
-            count: 'Count: {count}',
-            blacklistedRole: 'Blacklisted: {role}',
-            display: 'Display: {profileType}',
+            count: 'Conto: {count}',
+            blacklistedRole: 'Blacklist: {role}',
+            display: 'Visualizza: {profileType}',
             profileType: {
                 tag: 'Tag',
-                username: 'Username',
-                nickname: 'Nickname',
-                guildProfile: 'Guild Profile'
+                username: 'Nomeutente',
+                nickname: 'Soprannome',
+                guildProfile: 'Profilo Gilda'
             }
         },
         page: {
             channel: {
-                title: 'Channel',
-                name: 'Starboard Channel'
+                title: 'Canale',
+                name: 'Canale Starboard'
             },
             emoji: {
                 title: 'Emoji',
-                name: 'Starboard Emoji'
+                name: 'Emoji Starboard'
             },
             color: {
-                title: 'Color',
-                name: 'Starboard Color',
-                description: 'Paste a Hex color into the chat you want to use.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                title: 'Colore',
+                name: 'Colore Starboard',
+                description: 'Incolla un colore Hex nella chat che vuoi usare.\nOttieni un codice colore Hex da [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                invalid: 'Il codice colore non è un colore Hex valido.\nOttieni un codice colore Hex da [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
             },
             count: {
-                title: 'Count',
-                name: 'requierd Count',
-                description: 'Send a number to set the minimum {emote} reaction count requirement.'
+                title: 'Conto',
+                name: 'Conto necessario',
+                description: 'Invia un numero per impostare il requisito minimo di reazioni - {emote}.'
             },
             blacklistedRole: {
-                title: 'Blacklist Role',
-                name: 'blacklisted Role'
+                title: 'Ruolo/i Blacklist',
+                name: 'Ruolo/i nella Blacklist'
             },
             blacklistedChannels: {
-                title: 'Blacklist Channels',
-                name: 'Blacklist Channel list',
-                description: 'Mention a Channel/Category or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
-                missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                title: 'Canale/i Blacklist',
+                name: 'Lista dei Canali Blacklist',
+                description: 'Menziona un canale / categoria o incolla l\'ID del canale nella chat.\nPrefissa il messaggio con `+` per aggiungere o `-` per rimuovere i canali.\nPuoi inviare più canali separati da uno spazio.\nDigita `none` per rimuovere tutti i canali.',
+                missingPrefix: 'Il messaggio deve essere prefissato con `+` per aggiungere o `-` per rimuovere i canali.'
             }
         }
     },
     misc: {
-        title: 'Configure Miscellaneous',
+        title: 'Configura Varie',
         button: {
-            embedMessages: 'Embed Messages',
-            levelRoles: 'Level Roles',
-            leaderboards: 'Leaderboards'
+            embedMessages: 'Messaggi embed',
+            levelRoles: 'Ruoli di Livello',
+            leaderboards: 'Classifiche'
         },
         page: {
             embedMessages: {
-                title: 'Embed Messages',
-                description: '**What\'s This?**\nIf a message link is being send, {name} will reply with the content of that message!',
+                title: 'Messaggi embed',
+                description: '**Cos\'è?**\nSe viene inviato un link al messaggio, {name} risponderà con il contenuto di quel messaggio!',
                 button: {
                     allowOtherGuilds: {
-                        enable: 'Allow other Guilds to Embed Messages from here',
-                        disable: 'Disalow other Guilds to Embed Messages from here'
+                        enable: 'Permetti ad altre Gilde di incorporare messaggi da qui',
+                        disable: 'Vieta ad altre Gilde ti incorporare Messaggi da qui'
                     },
-                    color: 'Choose a Color for the Embed',
+                    color: 'Scegli un colore per l\'Embed',
                     display: {
-                        title: 'Choose a Author display style',
-                        selected: 'Selected',
+                        title: 'Scegli uno stile di visualizzazione autore',
+                        selected: 'Selezionato',
                         option: {
-                            message: 'Message Content',
-                            author: 'Author Field',
-                            footer: 'Footer Field'
+                            message: 'Contenuto messaggio',
+                            author: 'Campo Autore',
+                            footer: 'Campo Footer'
                         }
                     }
                 }
             },
             levelRoles: {
-                title: 'Level Roles',
+                title: 'Ruoli di Livello',
                 option: {
-                    roles: 'Roles: **{count}/{max}**',
-                    roles_upsell: 'Subscribe to get {count}+',
-                    channel: 'Channel: {channel}',
-                    channel_none: 'message channel',
-                    message: 'Message: {message}'
+                    roles: 'Ruoli: **{count}/{max}**',
+                    roles_upsell: 'Iscriviti per ricevere {count}+',
+                    channel: 'Canale: {channel}',
+                    channel_none: 'canale messaggi',
+                    message: 'Messaggio: {message}'
                 },
                 button: {
-                    message: 'Edit Message',
-                    addrole: 'Add Level',
+                    message: 'Modifica messaggio',
+                    addrole: 'Aggiungi livello',
                     select: {
-                        title: 'Chose a Level Role you want to edit',
-                        editing: 'Editing',
+                        title: 'Scegli un ruolo di livello che vuoi modificare',
+                        editing: 'Modificando',
                         option: {
-                            name: '{messages} messages',
-                            description: 'Role: {role}'
+                            name: '{messages} messaggi',
+                            description: 'Ruolo: {role}'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Level Up reply'
+                        title: 'Messaggio',
+                        name: 'Risposta di livellazione'
                     },
                     channel: {
-                        title: 'Channel',
-                        name: 'Level Up Channel'
+                        title: 'Canale',
+                        name: 'Canale di Livellazione'
                     },
                     addRole: {
-                        title: 'New Level Role',
-                        limit: 'You have reached the guild limit of **{count}/{max} level roles**!',
-                        alreadExists: 'A reward role for **{messages} messages** already has been set with the **{role} role**.',
-                        success: 'Successfully added this Level Role. Each user who reaches **{messages} messages** will recieve the **{role} role** now!',
+                        title: 'Nuovo Ruolo Di Livello',
+                        limit: 'Hai raggiunto il limite di **{count}/{max} ruoli di livello**!',
+                        alreadExists: 'Un ruolo di ricompensa per **{messages} messaggi** è già stato impostato con il ruolo **{role}**.',
+                        success: 'Aggiunto con successo questo ruolo di livello. Ogni utente che raggiunge **{messages} messaggi** riceverà il ruolo **{role} ** ora!',
                         page: {
                             messageCount: {
-                                title: 'Message Count',
-                                name: 'required Message Count',
-                                description: 'Send a number, that the user will required to have as in message count to get the selected role.'
+                                title: 'Conto Messaggi',
+                                name: 'conto di Messaggi necessari',
+                                description: 'Invia un numero, che l\'utente dovrà avere come nel conteggio dei messaggi per ottenere il ruolo selezionato.'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'present Role'
+                                title: 'Ruolo',
+                                name: 'ruolo presente'
                             }
                         }
                     },
                     editRole: {
-                        title: 'Edit Level Role',
+                        title: 'Modifica Ruolo di Livello',
                         option: {
-                            role: 'Role: {role}',
-                            messages: 'Messages: {messages}'
+                            role: 'Ruolo: {role}',
+                            messages: 'Messaggi: {messages}'
                         },
                         button: {
-                            messages: 'Change Message Count',
-                            role: 'Change Role',
-                            delete: 'Delete'
+                            messages: 'Cambia Conteggio Messaggi',
+                            role: 'Cambia ruolo',
+                            delete: 'Elimina'
                         }
                     }
                 }
             },
             leaderboards: {
-                title: 'Leaderboards',
-                option: { blacklisted: 'Blacklisted: {channels}' },
-                button: { blacklistedChannels: 'Edit Blacklisted Channels' }
+                title: 'Classifiche',
+                option: { blacklisted: 'Blacklist: {channels}' },
+                button: { blacklistedChannels: 'Modifica Canali nella Blacklist' }
             }
         }
     },
     followNews: {
-        title: 'Follow News Updates',
-        name: 'Follow News'
+        title: 'Segui aggiornamenti',
+        name: 'Segui Notizie'
     },
     staff: {
-        title: 'Manage {name}',
-        option: { premium: 'Enterprise: {tier}' },
+        title: 'Gestisci {name}',
+        option: { premium: 'Livello Abbonamento {tier}' },
         button: {
-            premium: 'Change premium Tier',
-            data: 'Export Data'
+            premium: 'Cambia livello premium',
+            data: 'Esporta Dati'
         },
         page: {
             data: {
-                title: 'Data Export',
-                message: 'The data from {name} is displayed below.',
-                error: 'Cannot send message :/'
+                title: 'Esportazione dati',
+                message: 'I dati da {name} sono visualizzati di seguito.',
+                error: 'Non posso mandare il messaggio :/'
             },
             premium: {
-                title: 'Configure Enterprise',
-                option: { tier: 'Current Tier: {tier}' },
-                button: { tier: 'Tier {tier}' }
+                title: 'Configura Abbonamento',
+                option: { tier: 'Livello attuale: {tier}' },
+                button: { tier: 'Livello {tier}' }
             }
         }
     },
-    exit: { title: 'Saved settings and exited config menu.' }
+    exit: { title: 'Impostazioni salvate e menu di configurazione uscito.' }
 };

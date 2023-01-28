@@ -86,8 +86,8 @@ module.exports = {
                 cozy: 'Übersichtlich'
             },
             modeChange: {
-                analyst: 'Auf Analyst setzen',
-                cozy: 'Auf Cozy setzen'
+                analyst: 'Auf Analyst Setzen',
+                cozy: 'Auf Cozy Setzen'
             },
             dupaw: {
                 // This is a name, cannot be translated
@@ -182,8 +182,8 @@ module.exports = {
                                 enable: 'DM Benachrichtigung aktiviert'
                             },
                             trigger: {
-                                set: 'Alterstrigger setzen',
-                                edit: 'Alterstrigger bearbeiten'
+                                set: 'Alterstrigger Setzen',
+                                edit: 'Alterstrigger Bearbeiten'
                             },
                             punishment: {
                                 title: 'Bestrafung setzten',
@@ -276,17 +276,18 @@ module.exports = {
                         command: 'NV Nachricht: Benutze `{command}`'
                     },
                     pings: 'Pings: {channels}',
-                    autodelete: 'Auto Delete: **{time}**',
+                    autodelete: 'Auto Löschen: **{time}**',
                     autodelete_never: 'niemals'
+                },
+                warnings: {
+                    afterleaveXautodelete: 'Wir empfehlen nicht, **Auto löschen** und **Beim Verlassen löschen** gleichzeitig zu verwenden',
+                    embedXcard: 'Die in Embed Begrüßungskarte überschreibt das eigene Embed Bild'
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
-                    card: {
-                        enable: 'Willkommens-Karte aktivieren',
-                        disable: 'Willkommens-Karte deaktivieren'
-                    },
+                    imgcard: 'Begrüßungskarte Bearbeiten',
                     pings: 'Ping Kanäle bearbeiten',
-                    autodelete: 'Autodelete festlegen',
+                    autodelete: 'Auto Löschen Festlegen',
                     assignRolesAfterRejoin: {
                         enable: 'Rollen nach Rejoinen neu zuweisen',
                         disable: 'Deaktiviere die Neuzuordnung von Rollen nach Rejoin'
@@ -300,6 +301,7 @@ module.exports = {
                             delete: 'Beim Verlassen löschen'
                         }
                     },
+                    dm_webedit: 'DM Nachrichten Embed Editor',
                     afterleave_webedit: 'Nach Verlassen Embed Editor'
                 },
                 page: {
@@ -319,6 +321,28 @@ module.exports = {
                         title: 'Automatisch löschen',
                         name: 'Automatisch löschen',
                         description: 'Die Willkommensnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
+                    },
+                    imgcard: {
+                        title: 'Begrüßungskarte',
+                        option: { background: 'Hintergrund: {url}' },
+                        button: {
+                            background: {
+                                set: 'Benutzerdefinierten Hintergrund Setzen',
+                                edit: 'Benutzerdefinierten Hintergrund Bearbeiten'
+                            },
+                            deleteBackground: 'Hintergrund Löschen',
+                            inEmbed: {
+                                enable: 'Karte im Embed anzeigen',
+                                disable: 'Karte nicht im Embed anzeigen'
+                            }
+                        },
+                        page: {
+                            background: {
+                                title: 'Hintergrund',
+                                name: 'Kartenhintergrund',
+                                description: 'Der Link muss eine **direkte Bild URL** sein, es muss auch ein Link vom Typ {scheme} sein.\nWir empfehlen ein Verhältnis von {ratio} und eine mindeste Auflösung von {resolution}.'
+                            }
+                        }
                     }
                 }
             },
@@ -336,10 +360,6 @@ module.exports = {
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
-                    card: {
-                        enable: 'Willkommens-Karte aktivieren',
-                        disable: 'Willkommens-Karte deaktivieren'
-                    },
                     autodelete: 'Autodelete festlegen'
                 },
                 page: {
@@ -506,7 +526,8 @@ module.exports = {
                             delete: 'Löschen',
                             timeout: 'Muten'
                         }
-                    }
+                    },
+                    export: 'Wörterliste Anschauen'
                 },
                 page: {
                     delete: {

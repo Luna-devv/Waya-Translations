@@ -279,12 +279,13 @@ module.exports = {
                     autodelete: 'Auto delete: **{time}**',
                     autodelete_never: 'never'
                 },
+                warnings: {
+                    afterleaveXautodelete: 'We don\'t recommend using **Auto Delete** and **Delete After Leave** simultaneously',
+                    embedXcard: 'In embed card overwrites your custom embed image'
+                },
                 button: {
                     message: 'Uredi poruku',
-                    card: {
-                        enable: 'Enabled Welcomer Card',
-                        disable: 'Disable Welcomer Card'
-                    },
+                    imgcard: 'Edit Card',
                     pings: 'Edit Ping Channels',
                     autodelete: 'Set Autodelete',
                     assignRolesAfterRejoin: {
@@ -300,6 +301,7 @@ module.exports = {
                             delete: 'Delete on leave'
                         }
                     },
+                    dm_webedit: 'DM Message Embed Editor',
                     afterleave_webedit: 'After Leave Embed Editor'
                 },
                 page: {
@@ -319,6 +321,28 @@ module.exports = {
                         title: 'Auto Delete',
                         name: 'Auto Delete',
                         description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                    },
+                    imgcard: {
+                        title: 'Card',
+                        option: { background: 'Background: {url}' },
+                        button: {
+                            background: {
+                                set: 'Set Custom Background',
+                                edit: 'Edit Custom Background'
+                            },
+                            deleteBackground: 'Delete Background',
+                            inEmbed: {
+                                enable: 'Show Image in Embed',
+                                disable: 'Don\'t Show Image in Embed'
+                            }
+                        },
+                        page: {
+                            background: {
+                                title: 'Background',
+                                name: 'Card Background',
+                                description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
+                            }
+                        }
                     }
                 }
             },
@@ -336,10 +360,6 @@ module.exports = {
                 },
                 button: {
                     message: 'Uredi poruku',
-                    card: {
-                        enable: 'Enabled Welcomer Card',
-                        disable: 'Disable Welcomer Card'
-                    },
                     autodelete: 'Postavite automatsko brisanje'
                 },
                 page: {
@@ -506,7 +526,8 @@ module.exports = {
                             delete: 'Izbrisati',
                             timeout: 'Izbrisati'
                         }
-                    }
+                    },
+                    export: 'Show word list'
                 },
                 page: {
                     delete: {

@@ -1,21 +1,21 @@
 module.exports = {
     join: {
-        title: 'Welcome {user}!',
-        description: 'In order to get access to this Server, you will have to complete a quick verification to lower the risk of Bot attacks and to ensure overhaul security {emote}\n\nPlease note the Admins and Mods of {guild} do not have access to any of your provided information.',
-        premium: 'Thank you for being an Enterprise member and supporting this project {emote}\n\nNote that you do not need to pass the verification in {guild} as skipping verification is part of your Enterprise plan.'
+        title: 'Benvenuto/a {user}!',
+        description: 'Per accedere a questo Server, dovrai completare una rapida verifica per ridurre il rischio di attacchi ai bot e per garantire la sicurezza di revisione {emote}\n\nNota che gli amministratori e i Moderatori di {guild} non hanno accesso a nessuna delle tue informazioni.',
+        premium: 'Grazie per essere un membro Abbonato e per aver supportato questo progetto {emote}\n\nNota che non è necessario passare la verifica in {guild} poiché la verifica saltata fa parte del tuo piano Abbonamento.'
     },
     punishment: {
-        ban: 'Banned from {guild}',
-        kick: 'Kicked from {guild}',
-        timeout: 'Timed out in {guild}',
-        role: 'Assigned Role in {guild}'
+        ban: 'Bannato da {guild}',
+        kick: 'Espulso da {guild}',
+        timeout: 'Timeout in {guild}',
+        role: 'Ruolo assegnato in {guild}'
     },
     reason: {
-        filter: 'Account is younger than {days} days ({relative})',
-        captcha: 'Failed Verification (CAPTCHA)'
+        filter: 'L\'account è più giovane di {days} giorni ({relative})',
+        captcha: 'Verifica Fallita (CAPTCHA)'
     },
     button: {
-        verify: 'Complete Verification',
-        privacy: 'Privacy Policy'
+        verify: 'Verifica Completata',
+        privacy: 'Politica sulla Privacy'
     }
 };

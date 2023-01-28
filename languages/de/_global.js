@@ -52,5 +52,9 @@ module.exports = {
                 }
             }
         }
+    },
+    ad: {
+        vote: 'Unterstütze uns!',
+        help: 'Brauchst Hilfe?'
     }
 };
