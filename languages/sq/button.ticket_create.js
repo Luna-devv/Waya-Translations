@@ -1,10 +1,10 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
-    noCategory: 'The Tickets category has been deleted. Please notify a Server Administrator.',
-    created: 'Your ticket {channel} has been created!',
+    noData: 'Nuk mund të gjeja Serverin në bazën e të dhënave!',
+    noCategory: 'Kategoria e Ticketave është fshirë. Ju lutemi njoftoni një administrator të serverit.',
+    created: 'Ticketa juaj {channel} është krijuar!',
     form: {
-        formTitle: 'Ticket Opening Reason',
-        field: 'Why do you want to open a Ticket?',
+        formTitle: 'Arsyeja e hapjes së Ticketes',
+        field: 'Pse dëshironi të hapni një Ticket?',
         placeholder: 'I need help with that..'
     },
     commands: { closerequest: 'Create a close request' },
