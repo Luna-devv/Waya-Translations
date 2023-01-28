@@ -1,25 +1,25 @@
 module.exports = {
-    disclaimer: 'You have to choose an option to apply this setting',
+    disclaimer: 'Devi scegliere un\'opzione per applicare questa impostazione',
     choice: {
         remove: {
-            question: 'From where do you want to remove {prn} as prefered pronoun?',
+            question: 'Da dove vuoi rimuovere {prn} come pronome preferito?',
             button: {
-                global: 'Remove everywhere',
-                guild: 'Remove in guild'
+                global: 'Rimuovi ovonque',
+                guild: 'Rimuovi nel\' Server'
             }
         },
         add: {
-            question: 'Where to you want to set {prn} as your prefered pronoun?',
+            question: 'Dove vuoi impostare {prn} come tuo pronome preferito?',
             button: {
-                global: 'Set everywhere',
-                guild: 'Set in guild'
+                global: 'Imposta dappertutto',
+                guild: 'Imposta nel\'Server'
             }
         }
     },
     success: {
         removed: {
-            global: 'Successfully removed {prn} as prefered pronoun globally.',
-            guild: 'Successfully removed {prn} as prefered pronoun in this guild.'
+            global: 'Hai rimosso con successo {prn} come pronome preferito a livello globale.',
+            guild: 'Hai rimosso con successo {prn} come pronome preferito in questo Server.'
         },
         added: {
             global: 'Successfully added {prn} as prefered pronoun globally.',
