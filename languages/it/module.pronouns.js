@@ -22,12 +22,12 @@ module.exports = {
             guild: 'Hai rimosso con successo {prn} come pronome preferito in questo Server.'
         },
         added: {
-            global: 'Successfully added {prn} as prefered pronoun globally.',
-            guild: 'Successfully added {prn} as prefered pronoun in this guild.'
+            global: 'Hai aggiunto con successo {prn} come pronome preferito a livello globale.',
+            guild: 'Hai aggiunto con successo {prn} come pronome preferito in questo Server.'
         }
     },
     error: {
-        tooSlow: 'You were too slow, please try again!',
-        fail: 'Failed to save your settings, please try again!'
+        tooSlow: 'Sei stato troppo lento, per favore riprova!',
+        fail: 'Impossibile salvare le impostazioni, per favore riprova!'
     }
 };
