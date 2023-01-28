@@ -1,29 +1,29 @@
 module.exports = {
-    validate: 'Validate data...',
-    create: 'Creating {type} prompt...',
-    tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
-    created: 'The {type} prompt has been created.',
+    validate: 'Convalidazione dei dati...',
+    create: 'Creazione del prompt {type}...',
+    tooManyRoles: 'Hai {roles} ruoli nel tuo server, assicurati di avere meno di 244!',
+    created: 'Il prompt {type} è stato creato.',
     type: {
-        category: 'channel category',
-        support: 'support role',
-        emote: 'custom emote',
-        endPoll: 'end poll'
+        category: 'categoria canale',
+        support: 'ruolo di supporto',
+        emote: 'emoto personalizzato',
+        endPoll: 'fine sondaggio'
     },
     message: {
-        created: 'created',
-        noSupport: 'none (use **/config**)',
-        invalidEmote: 'not in same guild',
-        content: 'Content',
-        endPoll: 'use {command}'
+        created: 'creato',
+        noSupport: 'nessuno (usa **/config**)',
+        invalidEmote: 'non nella stessa gilda',
+        content: 'Contenuto',
+        endPoll: 'usa {command}'
     },
     error: {
-        tooLong: 'Option {index} has more than {number} characters!',
-        noData: 'no data set'
+        tooLong: 'L\'opzione {index} ha più di {number} caratteri!',
+        noData: 'nessuna serie di dati impostata'
     },
-    verifySetUp: '**CAPTCHA Setup is Required**\nPlease use {command} and go to *\'Logging > Joins > CAPTCHA\'* and run this command again.',
+    verifySetUp: '**L\'impostazione CAPTCHA è necessaria**\nPer favore usa {command} e vai su *\'Logging > Joins > CAPTCHA\'* ed esegui nuovamente questo comando.',
     webedit: {
-        title: 'Message Web Edit',
-        description: 'Open [this Website]({url}) to start editing the message & embed.',
-        open: 'Open Web Edit'
+        title: 'Modifica Messaggio Web',
+        description: 'Apri [questo sito Web]({url}), per iniziare a modificare il messaggio e l\'embed.',
+        open: 'Apri Modifica Web'
     }
 };
