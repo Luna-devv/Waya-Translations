@@ -1,4 +1,4 @@
 module.exports = {
-    cantFindId: 'I cannot find any active reminders with the ID `{id}`',
-    deleted: 'I\'ve deleted your reminder with the ID `{id}`'
+    cantFindId: 'Nuk mund të gjej ndonjë rikujtues aktiv me ID-në `{id}`',
+    deleted: 'Unë e kam fshirë kujtesën tuaj me ID-në `{id}`'
 };
