@@ -4,20 +4,20 @@ module.exports = {
     mention: 'Hej {user}, përdor **{emote} SlashCommands** për të më konfiguruar!\nPërdorni {command} për më shumë informacion.',
     error: 'Ndodhi një gabim gjatë ekzekutimit të kësaj komande.\nJu lutemi bashkohuni me serverin e mbështetjes dhe raportoni këtë problem\nme Id-në {issue}!',
     premium: {
-        required: 'subscription required',
+        required: 'kërkohet abonimi',
         embeds: {
-            title: 'Sorry but Subscription is required',
-            title2: 'Sorry but the Subscriptions limit was reached',
-            description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
+            title: 'Na vjen keq, por kërkohet abonim',
+            title2: 'Na vjen keq, por kufiri i abonimeve u arrit',
+            description: 'Në mënyrë që të mund të ofrojmë një bot të qëndrueshëm dhe paratë të mos rriten në pemë, duhet të mbyllim veçori jo thelbësore pas një Abonimi.'
         },
         button: {
-            subscribe: 'Subscribe',
-            support: 'Contact Support'
+            subscribe: 'Abonohu',
+            support: 'Kontaktoni mbështetjen'
         }
     },
     button: {
-        add: 'Add {name}',
-        support: 'Support'
+        add: 'Shto {name}',
+        support: 'Mbështetja'
     },
     permissions: {
         user: {
