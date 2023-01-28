@@ -1,11 +1,11 @@
 module.exports = {
     set: {
-        noGuild: 'Please enter the Guild id of the Server you want to add Enterprise. [How to get the Id?]({article})',
-        noSubscription: 'You are currently not an Enterprise Subscriber, if you want to have access to special benefits and want to support the development, consider [buying Enterprise]({url}).',
-        onCooldown: 'You are currently on cooldown, note that you can only change the guild all {days} days, {remaining}.',
-        notFound: 'The selected Guild could not be found, please be sure that I am in this Server!',
-        noPerms: '{guild} is not owned by you nor do you manage it!',
-        alreadyHas: '{guild} already seems like to have Enterprise enabled!',
-        success: 'WooHoo, {user}! You have successfully activated Enterprise in {guild}!'
+        noGuild: 'Inserisci l\'id della Gilda del Server che vuoi aggiungere al Abbonamento. [Come ottenere l\'Id?]({article})',
+        noSubscription: 'Al momento non sei un abbonato, se vuoi avere accesso a benefici speciali e vuoi supportare lo sviluppo, prendi in considerazione a [comprare l\'Abbonamento]({url}).',
+        onCooldown: 'Al momento sei in fase di raffreddamento, nota che puoi cambiare la gilda solo tutti i {days} giorni, {remaining}.',
+        notFound: 'La Gilda selezionata non può essere trovata, assicurati che ci sono in questo Server!',
+        noPerms: '{guild} non è di tua proprietà né lo gestisci!',
+        alreadyHas: '{guild} sembra già avere un Abbonamento abilitato!',
+        success: 'WooHoo, {user}! Hai attivato l\'Abbonamento in {guild} von successo!'
     }
 };
