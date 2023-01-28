@@ -1,1 +1,1 @@
-module.exports = { success: 'See you later, {user}!' };
+module.exports = { success: 'A dopo, {user}!' };

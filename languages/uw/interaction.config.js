@@ -279,12 +279,13 @@ module.exports = {
                     autodelete: 'Auto dewete: **{time}**',
                     autodelete_never: 'nyevew'
                 },
+                warnings: {
+                    afterleaveXautodelete: 'We dont wecommend using **Auto Dewete** and **Dewete Aftew weave** simuwtanyeouswy',
+                    embedXcard: 'In embed cawd uvwwwites ur custom embed image'
+                },
                 button: {
                     message: 'Edit Message',
-                    card: {
-                        enable: 'Enyabwed Wewcomew Cawd',
-                        disable: 'Disabwe Wewcomew Cawd'
-                    },
+                    imgcard: 'Edit Cawd',
                     pings: 'Edit Ping-Pong Channyews',
                     autodelete: 'Set Autodewete',
                     assignRolesAfterRejoin: {
@@ -300,6 +301,7 @@ module.exports = {
                             delete: 'Dewete on weave'
                         }
                     },
+                    dm_webedit: 'DM Message Embed Editow',
                     afterleave_webedit: 'Aftew Weave Embed Editow'
                 },
                 page: {
@@ -319,6 +321,28 @@ module.exports = {
                         title: 'Auto Dewete',
                         name: 'Auto Dewete',
                         description: 'The Wewcomew message wiww be deweted aftew this time.\nWe wecommend u to keep this time showt (onwy few seconds).\nExampwe: `1m 3s`'
+                    },
+                    imgcard: {
+                        title: 'Cawd',
+                        option: { background: 'Backgwound: {url}' },
+                        button: {
+                            background: {
+                                set: 'Set Custom Backgwound',
+                                edit: 'Edit Custom Backgwound'
+                            },
+                            deleteBackground: 'Dewete Backgwound',
+                            inEmbed: {
+                                enable: 'Show Image in Embed',
+                                disable: 'Dont Show Image in Embed'
+                            }
+                        },
+                        page: {
+                            background: {
+                                title: 'Backgwound',
+                                name: 'Cawd Backgwound',
+                                description: 'The wink must be a **diwect image Uww**, it awso must be a {scheme} type wink.\nWe wecommend a watio of {ratio} and a min wesowution of {resolution}.'
+                            }
+                        }
                     }
                 }
             },
@@ -336,10 +360,6 @@ module.exports = {
                 },
                 button: {
                     message: 'Edit Message',
-                    card: {
-                        enable: 'Enyabwed Wewcomew Cawd',
-                        disable: 'Disabwe Wewcomew Cawd'
-                    },
                     autodelete: 'Set Autodewete'
                 },
                 page: {
@@ -506,7 +526,8 @@ module.exports = {
                             delete: 'Dewete',
                             timeout: 'Timeout'
                         }
-                    }
+                    },
+                    export: 'Show wowd wist'
                 },
                 page: {
                     delete: {

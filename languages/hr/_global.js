@@ -52,5 +52,9 @@ module.exports = {
                 }
             }
         }
+    },
+    ad: {
+        vote: 'Support Us!',
+        help: 'Need Help?'
     }
 };

@@ -52,5 +52,9 @@ module.exports = {
                 }
             }
         }
+    },
+    ad: {
+        vote: 'Suppowt Us :3',
+        help: 'Nyeed Hewp?'
     }
 };
