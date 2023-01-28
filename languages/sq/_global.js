@@ -21,29 +21,29 @@ module.exports = {
     },
     permissions: {
         user: {
-            guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
-            channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
+            guild: 'Nuk mund ta ekzekutosh këtë veprim pasi të mungojnë lejet e {perms}.',
+            channel: 'Nuk mund ta ekzekutosh këtë veprim pasi të mungojnë lejet e {perms} në këtë kanal.',
             roles: {
                 user: {
-                    text: 'You cannot perform this action since the highest role of that user is higher than yours.',
-                    user: 'User: {u.role} @ index {u.index}',
-                    you: 'You: {y.role} @ index {y.index}'
+                    text: 'Ju nuk mund ta kryeni këtë veprim pasi roli më i lartë i atij përdoruesi është më i lartë se i juaji.',
+                    user: 'Përdoruesi: {u.role} @ indeks {u.index}',
+                    you: 'Ju: {y.role} @ indeks {y.index}'
                 },
                 role: {
-                    text: 'You cannot perform this action since your highest role is lower than the role to manage.',
-                    user: 'Role: {u.role} @ index {u.index}',
-                    you: 'You: {y.role} @ index {y.index}'
+                    text: 'Ju nuk mund ta kryeni këtë veprim pasi roli juaj më i lartë është më i ulët se roli për të menaxhuar.',
+                    user: 'Roli: {u.role} @ indeks {u.index}',
+                    you: 'Ju: {y.role} @ indeks {y.index}'
                 }
             }
         },
         me: {
-            guild: 'I cannot run this action since I\'m missing the {perms} permissions.',
-            channel: 'I cannot run this action since I\'m missing the {perms} permissions in this channel.',
+            guild: 'Nuk mund ta ekzekutoj këtë veprim pasi më mungojnë lejet e {perms}.',
+            channel: 'Nuk mund ta ekzekutoj këtë veprim pasi më mungojnë lejet e {perms} në këtë kanal.',
             roles: {
                 user: {
-                    text: 'I cannot perform this action since the highest role of that user is higher than mine.',
-                    user: 'User: {u.role} @ index {u.index}',
-                    bot: 'Me: {b.role} @ index {b.index}'
+                    text: 'Nuk mund ta kryej këtë veprim pasi roli më i lartë i atij përdoruesi është më i lartë se i imi.',
+                    user: 'Përdoruesi: {u.role} @ indeks {u.index}',
+                    bot: 'Unë: {b.role} @ indeks {b.index}'
                 },
                 role: {
                     text: 'I cannot perform this action since my highest role is higher than the role to manage.',
