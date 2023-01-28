@@ -46,15 +46,15 @@ module.exports = {
                     bot: 'Unë: {b.role} @ indeks {b.index}'
                 },
                 role: {
-                    text: 'I cannot perform this action since my highest role is higher than the role to manage.',
-                    user: 'Role: {u.role} @ index {u.index}',
-                    bot: 'Me: {b.role} @ index {b.index}'
+                    text: 'Nuk mund ta kryej këtë veprim pasi roli im më i lartë është më i lartë se roli për të menaxhuar.',
+                    user: 'Roli: {u.role} @ indeks {u.index}',
+                    bot: 'Unë: {b.role} @ indeks {b.index}'
                 }
             }
         }
     },
     ad: {
-        vote: 'Support Us!',
-        help: 'Need Help?'
+        vote: 'Na mbështetni!',
+        help: 'Ke nevoje per ndihme?'
     }
 };
