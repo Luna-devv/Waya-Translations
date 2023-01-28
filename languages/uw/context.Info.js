@@ -13,8 +13,8 @@ module.exports = {
     },
     button: {
         guildAvatar: 'Pew-Guiwd Avataw Uww',
-        avatar: 'Avataw UWW',
-        banner: 'Bannyew UWW'
+        avatar: 'Avataw Uww',
+        banner: 'Bannyew Uww'
     },
     actions: {
         notAllowed: 'U cannyot use this menyu. :ccc',
