@@ -1,46 +1,46 @@
 module.exports = {
-    alreadyExists: 'A Sticky Message in this channel already exists!',
-    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} Sticky Messages**!',
-    invalidStickymessage: 'No Sticky Message exists in this channel!',
+    alreadyExists: 'Un messaggio adesivo in questo canale esiste già!',
+    stickymessagesLimit: 'Hai raggiunto il limite di **{count}/{max} Messaggi Adesivi**!',
+    invalidStickymessage: 'Nessun messaggio adesivo esiste in questo canale!',
     overview: {
-        title: 'Sticky Message Config',
-        message: 'Message',
+        title: 'Configurazione Messaggio Adesivo',
+        message: 'Messaggio',
         embed: 'Embed',
-        note: 'Button Note',
+        note: 'Nota Bottone',
         note_status: {
-            show: 'Showing',
-            hide: 'Hidden'
+            show: 'Mostrando',
+            hide: 'Nascosto'
         },
         button: {
-            exit: 'Save & Exit',
+            exit: 'Salva ed esci',
             color: {
-                enabled: 'Select a color for the Embed',
-                disabled: 'Use Embeds and select a color'
+                enabled: 'Scegli un colore per l\'Embed',
+                disabled: 'Usa Embed e seleziona un colore'
             },
             note: {
-                show: 'Show Note',
-                hide: 'Hide Note'
+                show: 'Mostra nota',
+                hide: 'Nascondi nota'
             }
         }
     },
     form: {
-        formName: '{name} sticky message',
-        message: { content: 'Content' },
+        formName: '{name} messaggio adesivo',
+        message: { content: 'Contenuto' },
         embed: {
-            title: 'Title',
-            description: 'Description',
-            thumbnail: 'Thumbnail',
-            image: 'Image',
-            footer: 'Footer'
+            title: 'Titolo',
+            description: 'Descrizione',
+            thumbnail: 'Miniatura',
+            image: 'Immagine',
+            footer: 'Piè di Pagina'
         }
     },
     success: {
-        message: 'Successfully added a Sticky Message in {channel}.',
-        try: 'Try it out by sending a few messages there!'
+        message: 'Aggiunto Messaggio Adesivo in {channel} con successo.',
+        try: 'Provalo inviando alcuni messaggi lì!'
     },
     list: {
-        title: 'Sticky ;[Message, Messages]',
-        none: 'no sticky messages'
+        title: 'Adesivo ;[Messaggio, Messaggi]',
+        none: 'nessun messaggio adesivo'
     },
-    deleted: 'Successfully deleted the Sticky Message in {channel}.'
+    deleted: 'Il messaggio adesivo in {channel} è stato eliminato con successo.'
 };
