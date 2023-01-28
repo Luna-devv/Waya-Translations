@@ -1,8 +1,8 @@
 // ;[singular, plural]
 module.exports = {
-    months: ';[month, months]',
-    days: ';[day, days]',
-    hours: ';[hour, hours]',
-    minutes: ';[minute, minutes]',
-    seconds: ';[second, seconds]'
+    months: ';[mese, mesi]',
+    days: ';[giorno, giorni]',
+    hours: ';[ore, ore]',
+    minutes: ';[minuto, minuti]',
+    seconds: ';[secondo, secondi]'
 };
