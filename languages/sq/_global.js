@@ -1,8 +1,8 @@
 module.exports = {
-    dms: 'This command cannot be used inside of private messages.',
-    disabled: 'You have been disabled.',
-    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
-    error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
+    dms: 'Kjo komandë nuk mund të përdoret brenda mesazheve private.',
+    disabled: 'Ju keni qenë të paaftë.',
+    mention: 'Hej {user}, përdor **{emote} SlashCommands** për të më konfiguruar!\nPërdorni {command} për më shumë informacion.',
+    error: 'Ndodhi një gabim gjatë ekzekutimit të kësaj komande.\nJu lutemi bashkohuni me serverin e mbështetjes dhe raportoni këtë problem\nme Id-në {issue}!',
     premium: {
         required: 'subscription required',
         embeds: {
