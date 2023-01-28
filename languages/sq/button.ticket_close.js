@@ -1,17 +1,17 @@
 module.exports = {
-    request: { ureStaff: 'You are staff, you can just use {command}.' },
-    noData: 'Could not find guild in the Database!',
+    request: { ureStaff: 'Ju jeni staf, thjesht mund të përdorni {command}.' },
+    noData: 'Nuk mund të gjeja Serverin në bazën e të dhënave!',
     confirm: {
-        text: 'Are you sure that you want to delete {channel} forever?',
-        configReason: 'For `reason`, please enable logging in `/config` => __Ticketing__!',
-        required: 'A close reason is requried!',
+        text: 'Jeni i sigurt se doni të fshini {channel} përgjithmonë?',
+        configReason: 'Për \'arsye\', ju lutemi aktivizoni hyrjen në `/config` => __Ticketing__!',
+        required: 'Kërkohet një arsye për të mbyllur këtë Ticket!',
         button: {
-            close: 'Close Ticket',
-            closeReason: 'Close Ticket with Reason'
+            close: 'Mbylle Ticketen',
+            closeReason: 'Mbylle Ticketen me arsye'
         }
     },
     form: {
-        formTitle: `Close {channel}`,
-        reason: 'Reason'
+        formTitle: `Mbyll {channel}`,
+        reason: 'Arsyeja'
     }
 };
