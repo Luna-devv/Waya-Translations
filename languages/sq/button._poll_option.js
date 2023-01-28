@@ -1,8 +1,8 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
-    noPoll: 'This poll could not be found!',
-    ended: 'This poll already ended {time} ago.',
-    alreadyVoted: 'You\'ve already voted for option **#{num}**.',
-    voted: 'You\'ve successfully voted for **#{num}** in this poll.',
-    end: '**{users} ;[user, users]** ;[has, have] voted for **{options} options** in the last {time}!'
+    noData: 'Nuk mund të gjeja Serverin në bazën e të dhënave!',
+    noPoll: 'Ky sondazh nuk u gjet!',
+    ended: 'Ky sondazh ka përfunduar tashmë {time} më parë.',
+    alreadyVoted: 'Ju keni votuar tashmë për opsionin **#{num}**.',
+    voted: 'Ju keni votuar me sukses për **#{num}** në këtë sondazh.',
+    end: '**{users} ;[përdorues, përdorues]** ;[ka, kanë] votuar për **{options} opsionet** në {time} e fundit!'
 };    // syntax: ;[singular, plural]
