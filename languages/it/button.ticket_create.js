@@ -9,7 +9,7 @@ module.exports = {
     },
     commands: { closerequest: 'Crea una richiesta di chiusura' },
     max: {
-        category: 'You cannot create a Ticket at this time as this server reached [the max channel limit per category]({docs}) of {num}. Please tell the server admins to set the category channel to {string} to resolve this issue!\n\nHaving questions? {support}',
-        guild: 'You cannot create a Ticket at this time as this server reached the max channel limit of {num}. Please tell the server admins to delete a few channels to resovle this issue!\n\nHaving questions? {support}'
+        category: 'Non è possibile creare un Ticket in questo momento perché questo server ha raggiunto [il limite massimo di canali per categoria]({docs}) di {num}. Si prega di dire agli amministratori del server di impostare il canale categoria a {string} per risolvere questo problema!\n\nHai domande? {support}',
+        guild: 'Non puoi creare un Ticket in questo momento poiché questo server ha raggiunto il limite massimo di canali di {num}. Si prega di dire agli amministratori del server di eliminare alcuni canali per risolvere questo problema!\n\nHai domande? {support}'
     }
 };
