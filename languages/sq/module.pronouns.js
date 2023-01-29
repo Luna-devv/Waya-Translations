@@ -1,33 +1,33 @@
 module.exports = {
-    disclaimer: 'You have to choose an option to apply this setting',
+    disclaimer: 'Ju duhet të zgjidhni një opsion për të aplikuar këtë cilësim',
     choice: {
         remove: {
-            question: 'From where do you want to remove {prn} as prefered pronoun?',
+            question: 'Nga ku dëshironi të hiqni {prn} si përemër të preferuar?',
             button: {
-                global: 'Remove everywhere',
-                guild: 'Remove in guild'
+                global: 'Hiqeni gjithkund',
+                guild: 'Hiqeni në këtë server'
             }
         },
         add: {
-            question: 'Where to you want to set {prn} as your prefered pronoun?',
+            question: 'Ku dëshironi të vendosni {prn} si përemrin tuaj të preferuar?',
             button: {
-                global: 'Set everywhere',
-                guild: 'Set in guild'
+                global: 'Gjithkund',
+                guild: 'Vendosur në Server'
             }
         }
     },
     success: {
         removed: {
-            global: 'Successfully removed {prn} as prefered pronoun globally.',
-            guild: 'Successfully removed {prn} as prefered pronoun in this guild.'
+            global: 'U hoq me sukses {prn} si përemër i preferuar globalisht.',
+            guild: 'U hoq me sukses {prn} si përemër i preferuar në këtë Server.'
         },
         added: {
-            global: 'Successfully added {prn} as prefered pronoun globally.',
-            guild: 'Successfully added {prn} as prefered pronoun in this guild.'
+            global: 'U shtua me sukses {prn} si përemër i preferuar globalisht.',
+            guild: 'U shtua me sukses {prn} si përemër i preferuar në këtë Server.'
         }
     },
     error: {
-        tooSlow: 'You were too slow, please try again!',
-        fail: 'Failed to save your settings, please try again!'
+        tooSlow: 'Ishe shumë i ngadalshëm, provo sërish!',
+        fail: 'Ruajtja e cilësimeve tuaja dështoi, provoni përsëri!'
     }
 };
