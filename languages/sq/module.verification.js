@@ -1,21 +1,21 @@
 module.exports = {
     join: {
-        title: 'Welcome {user}!',
-        description: 'In order to get access to this Server, you will have to complete a quick verification to lower the risk of Bot attacks and to ensure overhaul security {emote}\n\nPlease note the Admins and Mods of {guild} do not have access to any of your provided information.',
-        premium: 'Thank you for being an Enterprise member and supporting this project {emote}\n\nNote that you do not need to pass the verification in {guild} as skipping verification is part of your Enterprise plan.'
+        title: 'Mirë se vjen {user}!',
+        description: 'Në mënyrë që të keni akses në këtë server, do t\'ju duhet të kryeni një verifikim të shpejtë për të ulur rrezikun e sulmeve me Bot dhe për të siguruar sigurinë e rinovimit {emote}\n\nJu lutemi, vini re se administratorët dhe moderatorët e {guild} nuk kanë qasje në asnjë nga informacionet tuaja të dhëna.',
+        premium: 'Faleminderit që jeni anëtar i Ndërmarrjes dhe mbështeteni këtë projekt {emote}\n\nVini re se nuk keni nevojë ta kaloni verifikimin në {guild} pasi anashkalimi i verifikimit është pjesë e planit tuaj të ndërmarrjes.'
     },
     punishment: {
-        ban: 'Banned from {guild}',
-        kick: 'Kicked from {guild}',
-        timeout: 'Timed out in {guild}',
-        role: 'Assigned Role in {guild}'
+        ban: 'U Bannu nga {guild}',
+        kick: 'U ba Kick nga {guild}',
+        timeout: 'U ba Timeout nga {guild}',
+        role: 'Roli i caktuar në {guild}'
     },
     reason: {
-        filter: 'Account is younger than {days} days ({relative})',
-        captcha: 'Failed Verification (CAPTCHA)'
+        filter: 'Accounti është më e re se {days} ditë ({relative})',
+        captcha: 'Verifikimi i dështuar (CAPTCHA)'
     },
     button: {
-        verify: 'Complete Verification',
-        privacy: 'Privacy Policy'
+        verify: 'Verifikimi i plotësuar',
+        privacy: 'Politika e privatësisë'
     }
 };
