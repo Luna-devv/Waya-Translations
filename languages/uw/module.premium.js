@@ -1,7 +1,7 @@
 module.exports = {
     end: {
         title: 'Subscwiption End',
-        description: 'Hey {user}~ we have just wecieved ur subscwiption cancewation.\nWe\'we sad yo see u go, but we hope that u enjoyed it! {emote}',
+        description: 'Hey {user}~ we\'ve just weceived ur subscwiption cancewation :(\nWe\'we sad to see u go, but we hope that u enjoyed it! {emote}',
         notes: {
             title: 'Pwease Nyote:',
             support: 'If u nyeed hewp, pwese [Contact Suppowt]({support})',
@@ -10,7 +10,7 @@ module.exports = {
     },
     new: {
         title: 'Nyew Entewpwise Subscwiption',
-        description: 'Hey {user}, we have just wecieved ur successfuww payment. {emote}\nWe r weawwy happy to see u on boawd, and we hope that u wiww wike using the bot with ur nyew benyefits!',
+        description: 'Hey {user}~ we have just weceived ur successfuww payment. {emote}\nWe r weawwy happy to see u on boawd, and we hope that u wiww wike using the bot with ur nyew benyefits!',
         notes: {
             title: 'Pwease Nyote:',
             setGuild: 'To set a Entewpwise guiwd, pwease use {command}',
