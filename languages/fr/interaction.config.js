@@ -4,7 +4,7 @@
     \n are new lines
 */
 module.exports = {
-    validate: 'Validate data...',
+    validate: 'Validation des données...',
     notAllowed: 'Vous ne pouvez pas utiliser ce menu.',
     prefix: {
         name: 'Préfixe',
@@ -14,22 +14,22 @@ module.exports = {
     },
     global: {
         // will be the same everywhere
-        none: 'none',
+        none: 'aucun',
         useButtons: 'Sélectionnez l\'option que vous souhaitez modifier avec les boutons ci-dessous.',
         developer: {
-            bypass: 'You don\'t have the `MANAGE_GUILD` to access this panel..\nDo you still want to continue?',
+            bypass: 'Vous n\'avez pas `MANAGE_GUILD` pour accéder à cette interface..\nVoulez-vous tout de même continuer ?',
             choice: {
                 access: 'Je suis sûr(e), oui',
                 abord: 'Laissez tomber'
             },
-            notice: 'carefull - developer privileges enforced..'
+            notice: 'attention - Privilèges développeurs activés..'
         },
-        permissions: 'Missing: {perms}',
+        permissions: 'Manquant : {perms}',
         placeholders: 'Placeholders',
         await: {
-            channel: 'Mention a Channel or paste the Channel ID into the chat.\nType `none` to remove the channel.',
-            category: 'Mention a Category or paste the Category ID into the chat.\nType `none` to remove the category.',
-            role: 'Mention a Role or paste the Role ID into the chat.\nType `none` to remove the role.',
+            channel: 'Mentionnez un salon ou envoyez l\'ID d\'un salon dans le chat.\nTaper `none` pour supprimer le salon.',
+            category: 'Mentionnez une catégorie ou envoyez l\'ID d\'une catégorie dans le chat.\nTaper `none` pour supprimer la catégorie.',
+            role: 'Mentionnez un rôle ou envoyez l\'ID d\'un rôle dans le chat.\nTaper `none` pour supprimer le rôle.',
             message: 'Send a Message which should be used as {what}.',
             emote: 'Send an Emoji which should be used as {what}.'
         },
@@ -46,15 +46,15 @@ module.exports = {
             roleFail: 'This Role is only managable by either Discord or belongs to a bot user.'
         },
         webedit: {
-            button: 'Embed Editor',
-            title: 'Message Web Edit',
-            description: 'Open [this Website]({url}) to start editing the message & embed.',
-            open: 'Open Web Edit'
+            button: 'Editeur d\'embed',
+            title: 'Éditer le message en ligne',
+            description: 'Allez sur [ce site]({url}) pour modifier le message et l\'embed.',
+            open: 'Ouvrir l\'éditeur en ligne'
         },
         type: {
-            text: 'Text Channel',
-            category: 'Category Channel',
-            role: 'Role',
+            text: 'Salon textuel',
+            category: 'Catégorie du salon',
+            role: 'Rôle',
             emoji: 'Emote'
         },
         state: {
@@ -66,7 +66,7 @@ module.exports = {
             optional: 'Optionnel'
         },
         button: {
-            back: 'Back',
+            back: 'Précédent',
             disable: 'Désactiver',
             enable: 'Activer',
             channel: {
@@ -91,13 +91,13 @@ module.exports = {
             },
             dupaw: {
                 // This is a name, cannot be translated
-                enable: 'Enable dupaw',
-                disable: 'Disable dupaw'
+                enable: 'Activer dupaw',
+                disable: 'Désactiver dupaw'
             }
         }
     },
     main: {
-        title: 'Configure {name}',
+        title: 'Configurer {name}',
         option: {
             premium: {
                 text: 'Enterprise Tier {tier}',
@@ -105,11 +105,11 @@ module.exports = {
             }
         },
         button: {
-            logging: 'Logging',
-            tickets: 'Ticketing',
+            logging: 'Historique',
+            tickets: 'Tickets',
             moderation: 'Moderation',
             starboard: 'Starboard',
-            misc: 'Miscs',
+            misc: 'Autres',
             followNews: 'Follow News',
             staff: 'Manage Guild',
             exit: 'Exit',
