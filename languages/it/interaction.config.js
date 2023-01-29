@@ -280,7 +280,7 @@ module.exports = {
                     autodelete_never: 'mai'
                 },
                 warnings: {
-                    afterleaveXautodelete: 'Non consigliamo di utilizzare **eliminazione automatica** ed Eliminazione dopo abbandono** contemporaneamente',
+                    afterleaveXautodelete: 'Non consigliamo di utilizzare **eliminazione automatica** ed **Eliminazione dopo abbandono** contemporaneamente',
                     embedXcard: 'Nella scheda incorporata sovrascrive l\'immagine incorporata personalizzata'
                 },
                 button: {
