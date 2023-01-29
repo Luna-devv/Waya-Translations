@@ -1,1 +1,1 @@
-module.exports = { success: 'Reloaded all interactions in {ms}' };
+module.exports = { success: 'Rifreskoi të gjitha ndërveprimet në {ms}' };
