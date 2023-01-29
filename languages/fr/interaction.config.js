@@ -110,9 +110,9 @@ module.exports = {
             moderation: 'Moderation',
             starboard: 'Starboard',
             misc: 'Autres',
-            followNews: 'Follow News',
-            staff: 'Manage Guild',
-            exit: 'Exit',
+            followNews: 'Suivre les nouveautés',
+            staff: 'Gérer le serveur',
+            exit: 'Quitter',
             help: 'Support'
         }
     },
