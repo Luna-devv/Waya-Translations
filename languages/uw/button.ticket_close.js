@@ -4,7 +4,7 @@ module.exports = {
     confirm: {
         text: 'R u suwe babe that u want to dewete {channel} fowevew?',
         configReason: 'Fow `weason`, pwease enyabwe wogging in `/config` => __Ticketing__, ok?',
-        required: 'A cwose weason is wequwied!',
+        required: 'A cwose weason is wequiwed!',
         button: {
             close: 'Cwose Ticket nyow!!1',
             closeReason: 'Cwose Ticket with weason :>'
