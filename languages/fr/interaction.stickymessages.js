@@ -1,46 +1,46 @@
 module.exports = {
-    alreadyExists: 'A Sticky Message in this channel already exists!',
-    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} Sticky Messages**!',
-    invalidStickymessage: 'No Sticky Message exists in this channel!',
+    alreadyExists: 'Un message persistant existe déjà dans ce salon !',
+    stickymessagesLimit: 'Vous avez atteint la limite par serveur de **{count}/{max} messages persistants** !',
+    invalidStickymessage: 'Aucun message persistant n\'existe dans ce salon !',
     overview: {
-        title: 'Sticky Message Config',
+        title: 'Configuration d\'un message persistant',
         message: 'Message',
         embed: 'Embed',
-        note: 'Button Note',
+        note: 'Note du bouton',
         note_status: {
-            show: 'Showing',
-            hide: 'Hidden'
+            show: 'Affiché',
+            hide: 'Caché'
         },
         button: {
-            exit: 'Save & Exit',
+            exit: 'Enregistrer et quitter',
             color: {
-                enabled: 'Select a color for the Embed',
-                disabled: 'Use Embeds and select a color'
+                enabled: 'Veuillez sélectionner une couleur pour l\'embed',
+                disabled: 'Utiliser un embed et sélectionner une couleur'
             },
             note: {
-                show: 'Show Note',
-                hide: 'Hide Note'
+                show: 'Afficher la note',
+                hide: 'Cacher la note'
             }
         }
     },
     form: {
-        formName: '{name} sticky message',
-        message: { content: 'Content' },
+        formName: '{name} message persistant',
+        message: { content: 'Contenu' },
         embed: {
-            title: 'Title',
+            title: 'Titre',
             description: 'Description',
-            thumbnail: 'Thumbnail',
+            thumbnail: 'Icône',
             image: 'Image',
-            footer: 'Footer'
+            footer: 'Texte de bas de page'
         }
     },
     success: {
-        message: 'Successfully added a Sticky Message in {channel}.',
-        try: 'Try it out by sending a few messages there!'
+        message: 'Votre message persistant a bien été ajouté dans {channel}.',
+        try: 'Essayez en envoyant quelques messages ici !'
     },
     list: {
-        title: 'Sticky ;[Message, Messages]',
-        none: 'no sticky messages'
+        title: ';[message persistant, messages persistants]',
+        none: 'pas de messages persistants'
     },
-    deleted: 'Successfully deleted the Sticky Message in {channel}.'
+    deleted: 'Votre message persistant a bien été supprimé dans {channel}.'
 };
