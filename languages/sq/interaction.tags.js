@@ -1,95 +1,95 @@
 module.exports = {
-    lengthFail: 'The Tag name cannot be longer than {max} characters!',
-    alreadyExists: 'A Tag with this name already exists!',
-    tagsLimit: 'You have reached the guild limit of **{count}/{max} tags**!',
-    regexFail: 'Tag name validation failed for using SlashCommands!\nNote that special characters are not allowed.',
-    alreadyExistsDefault: 'A default Command with this name already exists!',
-    invalidTag: 'A Tag with this name doesn\'t exist!',
+    lengthFail: 'Emri i etiketës nuk mund të jetë më i gjatë se {max} karaktere!',
+    alreadyExists: 'Një etiketë me këtë emër ekziston tashmë!',
+    tagsLimit: 'Ju keni arritur kufirin e Serverit prej **{count}/{max} etiketash**!',
+    regexFail: 'Vleresimi i emrit të etiketës dështoi për përdorimin e SlashCommands!\nVini re se karakteret speciale nuk lejohen.',
+    alreadyExistsDefault: 'Një komandë e paracaktuar me këtë emër ekziston tashmë!',
+    invalidTag: 'Një etiketë me këtë emër nuk ekziston!',
     info: {
         title: {
-            created: 'Created',
-            author: 'Author',
-            usesWeek: 'Uses a week',
-            uses: 'Uses',
-            last: 'Last Used',
-            name: 'Tag Name',
-            slash: 'Slash Command',
-            channels: 'Channels',
-            tags: 'Tags',
-            totalUses: 'Total Uses',
-            totalTags: 'Total Tags',
-            totalChannels: 'Total Channels'
+            created: 'Krijuar',
+            author: 'Autori',
+            usesWeek: 'Përdoret një javë',
+            uses: 'Përdorimet',
+            last: 'Përdorimi i fundit',
+            name: 'Emri i etiketës',
+            slash: 'Slash Comand',
+            channels: 'Kanalet',
+            tags: 'Etiketat',
+            totalUses: 'Përdorimet totale',
+            totalTags: 'Gjithsej Etiketa',
+            totalChannels: 'Totali i kanaleve'
         },
         description: {
-            usesWeek: '{number}/wk',
+            usesWeek: '{number}/jv',
             // wk: week;; example: 43/wk
             slash: {
-                true: 'active',
-                false: 'not active'
+                true: 'aktive',
+                false: 'joaktiv'
             },
-            channelUses: '{number} ;[use, uses]'
+            channelUses: '{number} ;[përdor, përdorimet]'
         },
-        noData: 'no data'
+        noData: 'nuk ka të dhëna'
     },
     overview: {
-        title: 'Tag Config',
-        message: 'Message',
+        title: 'Konfigurimi i etiketës',
+        message: 'Mesazh',
         embed: 'Embed',
-        placeholder: 'Useable Placeholders',
+        placeholder: 'Vendmbajtësit e përdorshëm',
         button: {
-            exit: 'Save & Exit',
-            permission: 'Select a permission the user needs',
+            exit: 'Ruaj & Dil',
+            permission: 'Zgjidhni një leje që i nevojitet përdoruesit',
             color: {
-                enabled: 'Select a color for the Embed',
-                disabled: 'Use Embeds and select a color'
+                enabled: 'Zgjidhni një ngjyrë për Embed',
+                disabled: 'Përdorni Embeds dhe zgjidhni një ngjyrë'
             },
             group: {
                 ticket: {
-                    disable: 'Disable Ticket Tag',
-                    enable: 'Enable Ticket Tag'
+                    disable: 'Çaktivizo etiketën e biletave',
+                    enable: 'Aktivizo etiketën e biletave'
                 }
             },
-            aliases: 'Manage Name Aliases',
+            aliases: 'Menaxho pseudonimet e emrave',
             permissions: {
-                Administrator: 'Administrator',
-                ManageChannels: 'Manage Channels',
-                ManageGuild: 'Manage Guild',
-                ManageMessages: 'Manage Messages',
-                ManageNicknames: 'Manage Nicknames',
-                ManageRoles: 'Manage Roles',
-                ManageWebhooks: 'Manage Webhooks',
-                ManageEmojisAndStickers: 'Manage Emojis & Stickers',
-                ManageEvents: 'Manage Events',
-                ManageThreads: 'Manage Threads',
-                none: 'None'
+                Administrator: 'Administrator/i',
+                ManageChannels: 'Menaxho kanalet',
+                ManageGuild: 'Menaxho Serverin',
+                ManageMessages: 'Menaxho Mesazhet',
+                ManageNicknames: 'Menaxho pseudonimet',
+                ManageRoles: 'Menaxho rolet',
+                ManageWebhooks: 'Menaxho Webhooks',
+                ManageEmojisAndStickers: 'Menaxho emoji dhe ngjitëse',
+                ManageEvents: 'Menaxho Ngjarjet',
+                ManageThreads: 'Menaxho temat',
+                none: 'Asnjë'
             }
         }
     },
     form: {
-        formName: '{name} tag',
-        message: { content: 'Content' },
+        formName: '{name} etiketë',
+        message: { content: 'Përmbajtja' },
         embed: {
-            title: 'Title',
-            description: 'Description',
-            thumbnail: 'Thumbnail',
-            image: 'Image',
-            footer: 'Footer'
+            title: 'Titulli',
+            description: 'Përshkrim',
+            thumbnail: 'Miniatura',
+            image: 'Imazhi',
+            footer: 'Pjesa fundore'
         },
-        aliases: { name: 'Name Aliases ({max} max)' }
+        aliases: { name: 'Pseudonimet e emrave ({max} max)' }
     },
     success: {
-        message: 'Successfully added the Tag {name}.',
-        command: 'Try it out with {command}'
+        message: 'Etiketa {name} u shtua me sukses.',
+        command: 'Provojeni me {command}'
     },
     list: {
         title: {
-            text: 'Text ;[Command, Commands]',
-            slash: 'Slash ;[Command, Commands]'
+            text: 'Teksti ;[Komanda/i, Komandat]',
+            slash: 'Slash ;[Komanda/i, Komandat]'
         },
-        none: 'no tags',
-        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions',
+        none: 'pa etiketa',
+        disabled: '{amount} ;[etiketa është, etiketat janë] të fshehura për shkak të mungesës së lejeve',
         // ;[singular, plural]
-        amount: '{amount} tags • Use with {command}'
+        amount: '{amount} etiketa • Përdorni me {command}'
     },
-    deleted: 'Successfully deleted the Tag **{name}**.'
+    deleted: 'Etiketa **{name}** u fshi me sukses.'
 };
