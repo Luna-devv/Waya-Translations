@@ -4,33 +4,33 @@ module.exports = {
     created: 'Créé',
     joined: 'Rejoint',
     invites: 'Invitations',
-    voice: 'Voice',
-    none: 'none',
-    timeout: 'on Timeout for {time}',
+    voice: 'Vocal',
+    none: 'aucun',
+    timeout: 'Exclu pour {time}',
     pronouns: {
         title: 'Pronoms',
         none: 'Aucun pronom défini'
     },
     button: {
-        guildAvatar: 'Per-Guild Avatar URL',
+        guildAvatar: 'URL de l\'avatar spécifique à ce serveur',
         avatar: 'URL de l\'avatar',
         banner: 'URL de la bannière'
     },
     actions: {
         notAllowed: 'Vous ne pouvez pas utiliser ce menu.',
-        invalidTime: 'The duration cannot be less than a second!',
-        otherInvalidTime: 'The duration cannot be more than 28 days!',
-        placeholder: 'Choose an action',
+        invalidTime: 'La durée doit être supérieure à 1 seconde !',
+        otherInvalidTime: 'La durée doit être inférieure à 28 jours !',
+        placeholder: 'Choisissez une action',
         option: {
             ban: 'Bannir l\'utilisateur',
             kick: 'Expulser l\'utilisateur',
-            timeout: 'Timeout User',
+            timeout: 'Exclure l\'utilisateur',
             role: 'Assigner un rôle'
         },
         form: {
-            reason: 'Reason',
-            note: 'Moderator Note',
-            duration: 'Duration'
+            reason: 'Raison',
+            note: 'Note du modérateur',
+            duration: 'Durée'
         },
         success: {
             ban: '{user} a bien été banni du serveur {guild}.',
