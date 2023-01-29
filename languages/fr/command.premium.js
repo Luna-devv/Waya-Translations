@@ -4,7 +4,7 @@ module.exports = {
         noSubscription: 'Vous n\'avez pas souscrit à un abonnement Entreprise. Si vous voulez accéder à des avantages spéciaux et que vous voulez soutenir le développement, pensez à [vous abonner à Entreprise]({url}).',
         onCooldown: 'Vous utilisez cette commande trop souvent, vous pouvez changer de serveur tous les {days} jours, {remaining}.',
         notFound: 'Ce serveur est introuvable, veuillez vérifier que je suis bien dans ce serveur !',
-        noPerms: '{guild} is not owned by you nor do you manage it!',
+        noPerms: '{guild} n\'est pas votre propriété, ou vous n\'avez pas la permission de le gérer !',
         alreadyHas: '{guild} semble déjà avoir un abonnement Entreprise appliqué !',
         success: 'Youhou, {user} ! Vous avez activé Entreprise sur {guild} !'
     }
