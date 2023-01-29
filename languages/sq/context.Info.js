@@ -1,41 +1,41 @@
 module.exports = {
-    messages: 'Messages',
-    name: 'Name',
-    created: 'Created',
-    joined: 'Joined',
-    invites: 'Invites',
-    voice: 'Voice',
-    none: 'none',
-    timeout: 'on Timeout for {time}',
+    messages: 'Mesazhet',
+    name: 'Emri',
+    created: 'Krijuar',
+    joined: 'U bashkua',
+    invites: 'Fton',
+    voice: 'Zëri',
+    none: 'asnje',
+    timeout: 'në kohëzgjatje për {time}',
     pronouns: {
-        title: 'Pronouns',
-        none: 'No pronouns set'
+        title: 'Përemrat',
+        none: 'Nuk ka përemra të vendosur'
     },
     button: {
-        guildAvatar: 'Per-Guild Avatar URL',
-        avatar: 'Avatar URL',
-        banner: 'Banner URL'
+        guildAvatar: 'URL-ja e avatarit të Serverit',
+        avatar: 'URL e avatarit',
+        banner: 'URL e banerit'
     },
     actions: {
-        notAllowed: 'You cannot use this menu.',
-        invalidTime: 'The duration cannot be less than a second!',
-        otherInvalidTime: 'The duration cannot be more than 28 days!',
-        placeholder: 'Choose an action',
+        notAllowed: 'Ju nuk mund ta përdorni këtë menu.',
+        invalidTime: 'Kohëzgjatja nuk mund të jetë më pak se një sekondë!',
+        otherInvalidTime: 'Kohëzgjatja nuk mund të jetë më shumë se 28 ditë!',
+        placeholder: 'Zgjidhni një veprim',
         option: {
-            ban: 'Ban User',
-            kick: 'Kick User',
-            timeout: 'Timeout User',
-            role: 'Assign Role'
+            ban: 'Ban përdoruesin',
+            kick: 'Kick përdoruesin',
+            timeout: 'Timeout përdoruesin',
+            role: 'Cakto rol'
         },
         form: {
-            reason: 'Reason',
-            note: 'Moderator Note',
-            duration: 'Duration'
+            reason: 'Arsyeja',
+            note: 'Shënim i moderatorit',
+            duration: 'Kohëzgjatja'
         },
         success: {
-            ban: 'Successfully banned {user} from {guild}.',
-            kick: 'Successfully kicked {user} from {guild}.',
-            timeout: 'Successfully timed {user} out in {guild}.'
+            ban: 'U ba Ban me sukses {user} nga {guild}.',
+            kick: 'U ba Kick me sukses {user} nga {guild}.',
+            timeout: 'U ba timeout me sukses {user} nga {guild}.'
         }
     }
 };
