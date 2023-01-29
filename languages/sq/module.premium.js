@@ -1,22 +1,22 @@
 module.exports = {
     end: {
-        title: 'Subscription End',
-        description: 'Hey {user}, we have just received your subscription cancelation.\nWe\'re sad to see you go, but we hope that you enjoyed it! {emote}',
+        title: 'Fundi i Abonimit',
+        description: 'Pershendetje {user}, sapo kemi marrë anulimin e abonimit tuaj.\nJemi të trishtuar që ju shohim të largoheni, por shpresojmë që ju ka pëlqyer! {emote}',
         notes: {
-            title: 'Please Note:',
-            support: 'If you need help, please [Contact Support]({support})',
-            reSubscribe: 'If you want to reSubscribe, go to {url}'
+            title: 'Ju lutemi vini re:',
+            support: 'Nëse keni nevojë për ndihmë, ju lutemi [Kontaktoni Mbështetjen]({support})',
+            reSubscribe: 'Nëse dëshironi të ri-abonoheni, shkoni te {url}'
         }
     },
     new: {
-        title: 'New Enterprise Subscription',
-        description: 'Hey {user}, we have just received your successfull payment. {emote}\nWe are really happy to see you on board, and we hope that you will like using the bot with your new benefits!',
+        title: 'Abonimi i Ndërmarrjes së Re',
+        description: 'Pershendetje {user}, sapo kemi marrë pagesën tuaj të suksesshme. {emote}\nJemi vërtet të lumtur që ju shohim në bord dhe shpresojmë se do t\'ju pëlqejë ta përdorni robotin me përfitimet tuaja të reja!',
         notes: {
-            title: 'Please Note:',
-            setGuild: 'To set a Enterprise guild, please use {command}',
-            getGuild: 'If you need help with [getting your Server\'s Id]({article})',
-            cooldown: 'Don\'t forget that you always have a {days} days cooldown!',
-            support: 'If you need help, please [Contact Support]({support})'
+            title: 'Ju lutemi vini re:',
+            setGuild: 'Për të vendosur një grup të ndërmarrjeve, ju lutemi përdorni {command}',
+            getGuild: 'Nëse keni nevojë për ndihmë me [marrjen e Id-së së Serverit tuaj]({article})',
+            cooldown: 'Mos harroni se keni gjithmonë një freskim për {days} ditë!',
+            support: 'Nëse keni nevojë për ndihmë, ju lutemi [Kontaktoni Mbështetjen]({support})'
         }
     }
 };
