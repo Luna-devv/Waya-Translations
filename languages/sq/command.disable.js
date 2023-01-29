@@ -1,4 +1,4 @@
 module.exports = {
-    disable: '{user} has been disabled.',
-    enable: '{user} has been enabled.'
+    disable: '{user} është çaktivizuar.',
+    enable: '{user} është aktivizuar.'
 };
