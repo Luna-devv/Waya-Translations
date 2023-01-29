@@ -1,33 +1,33 @@
 module.exports = {
-    disclaimer: 'You have to choose an option to apply this setting',
+    disclaimer: 'Vous devez choisir une option pour utiliser ce paramètre',
     choice: {
         remove: {
-            question: 'From where do you want to remove {prn} as prefered pronoun?',
+            question: 'Où voulez-vous retirer {prn} de vos pronoms préférés ?',
             button: {
-                global: 'Remove everywhere',
-                guild: 'Remove in guild'
+                global: 'Partout',
+                guild: 'Dans ce serveur'
             }
         },
         add: {
-            question: 'Where to you want to set {prn} as your prefered pronoun?',
+            question: 'Où voulez-vous définir {prn} comme votre pronom préféré ?',
             button: {
-                global: 'Set everywhere',
-                guild: 'Set in guild'
+                global: 'Partout',
+                guild: 'Dans ce serveur'
             }
         }
     },
     success: {
         removed: {
-            global: 'Successfully removed {prn} as prefered pronoun globally.',
-            guild: 'Successfully removed {prn} as prefered pronoun in this guild.'
+            global: 'Le pronom {prn} a bien été retiré de vos pronoms préférés partout.',
+            guild: 'Le pronom {prn} a bien été retiré de vos pronoms préférés dans ce serveur.'
         },
         added: {
-            global: 'Successfully added {prn} as prefered pronoun globally.',
-            guild: 'Successfully added {prn} as prefered pronoun in this guild.'
+            global: 'Le pronom {prn} a bien été ajouté à vos pronoms préférés partout.',
+            guild: 'Le pronom {prn} a bien été ajouté à vos pronoms préférés dans ce serveur.'
         }
     },
     error: {
-        tooSlow: 'You were too slow, please try again!',
-        fail: 'Failed to save your settings, please try again!'
+        tooSlow: 'Vous avez été trop lent, veuillez recommencer !',
+        fail: 'Échec de l\'enregistrement de vos paramètres, veuillez réessayer !'
     }
 };
