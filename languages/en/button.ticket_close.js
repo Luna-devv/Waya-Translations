@@ -6,7 +6,7 @@ module.exports = {
     confirm: {
         text: 'Are you sure that you want to delete {channel} forever?',
         configReason: 'For `reason`, please enable logging in `/config` => __Ticketing__!',
-        required: 'A close reason is requried!',
+        required: 'A close reason is required!',
         button: {
             close: 'Close Ticket',
             closeReason: 'Close Ticket with Reason'
