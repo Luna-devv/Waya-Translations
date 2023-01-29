@@ -213,7 +213,7 @@ module.exports = {
                         name: 'CAPTCHA',
                         option: {
                             verifiedrole: 'Vewified Wowe: {role}',
-                            unverifiedrole: 'Unyewified Wowe: {role}',
+                            unverifiedrole: 'Unvewified Wowe: {role}',
                             channel: 'Wogging: {channel}',
                             color: 'Cowow: {color}'
                         },
