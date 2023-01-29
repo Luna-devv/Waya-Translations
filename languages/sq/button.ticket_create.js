@@ -5,11 +5,11 @@ module.exports = {
     form: {
         formTitle: 'Arsyeja e hapjes së Ticketes',
         field: 'Pse dëshironi të hapni një Ticket?',
-        placeholder: 'I need help with that..'
+        placeholder: 'Me duhet ndihme per kete..'
     },
-    commands: { closerequest: 'Create a close request' },
+    commands: { closerequest: 'Krijo një kërkesë të për mbyllëse' },
     max: {
-        category: 'You cannot create a Ticket at this time as this server reached [the max channel limit per category]({docs}) of {num}. Please tell the server admins to set the category channel to {string} to resolve this issue!\n\nHaving questions? {support}',
-        guild: 'You cannot create a Ticket at this time as this server reached the max channel limit of {num}. Please tell the server admins to delete a few channels to resovle this issue!\n\nHaving questions? {support}'
+        category: 'Nuk mund të krijosh një Tickete në këtë moment pasi ky server ka arritur [kufizimin maksimal të kanalit për kategori]({docs}) prej {num}. Ju lutemi tregoni administratorëve të serverit që të vendosin kanalin e kategorisë në {string} për të zgjidhur këtë problem!\n\nKeni pyetje? {support}',
+        guild: 'Nuk mund të krijosh një Tickete në këtë moment pasi ky server ka arritur kufirin maksimal të kanalit prej {num}. Ju lutemi tregoni administratorëve të serverit që të fshijnë disa kanale për të zgjidhur këtë problem!\n\nKeni pyetje? {support}'
     }
 };
