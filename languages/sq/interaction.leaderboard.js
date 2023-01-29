@@ -1,8 +1,8 @@
 module.exports = {
-    messages: 'Message Leaderboard',
-    voice: 'Voice Leaderboard',
-    invites: 'Invite Leaderboard',
-    none: 'none',
-    personalized: 'Your Position',
-    total: '{amount} ;[users are, user is] on this leaderboard'
+    messages: 'Tabela drejtuese e mesazheve',
+    voice: 'Tabela drejtuese e zërit',
+    invites: 'Tabela drejtuese e Ftesavë',
+    none: 'asnje',
+    personalized: 'Pozicioni juaj',
+    total: '{amount} ;[përdoruesit janë, përdoruesi është] në këtë tabelë'
 };
