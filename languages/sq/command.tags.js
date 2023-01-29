@@ -1,15 +1,15 @@
 module.exports = {
     title: {
-        text: 'Text ;[Command, Commands]',
-        slash: 'Slash ;[Command, Commands]'
+        text: 'Teksti ;[Komanda/i, Komandat]',
+        slash: 'Slash ;[Komanda/i, Komandat]'
     },
-    none: 'no tags',
-    disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions',
+    none: 'pa etiketa',
+    disabled: '{amount} ;[etiketa është, etiketat janë] të fshehura për shkak të mungesës së lejeve',
     // ;[singular, plural]
-    amount: '{amount} tags • Use with {command}',
+    amount: '{amount} etiketa • Përdorni me {command}',
     errors: {
-        overLimit: 'You have reached the guild limit of **{count}/{max} tags**!\n\nNote that this tag exceeds the limits and is disabled until you increase the limit again.',
-        invalidTag: 'A Tag with this name doesn\'t exist!',
-        ticketUse: 'This Tag is only available in tickets using {user}.'
+        overLimit: 'Ju keni arritur kufirin e Serverit prej **{count}/{max} etiketash**!\n\nVini re se ky etiketë i kalon kufijtë dhe është i çaktivizuar derisa ta rritni përsëri kufirin.',
+        invalidTag: 'Një etiketë me këtë emër nuk ekziston!',
+        ticketUse: 'Ky etiketë disponohet vetëm në biletat që përdorin {user}.'
     }
 };
