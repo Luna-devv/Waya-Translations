@@ -1,7 +1,7 @@
 module.exports = {
-    notFound: 'This issue could not be found',
+    notFound: 'Cette erreur est introuvable',
     view: {
-        main: 'at {time} while executing {command} for {user}',
+        main: 'à {time} lors de l\'exécution de {command} pour {user}',
         fixed: 'Cette erreur a été corrigée',
         unfixed: 'Cette erreur n\'est pas résolue'
     },
