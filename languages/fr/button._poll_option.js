@@ -1,5 +1,5 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
+    noData: 'Impossible de trouver ce serveur dans la base de données !',
     noPoll: 'Ce sondage est introuvable !',
     ended: 'Ce sondage s\'est terminé il y a {time}.',
     alreadyVoted: 'You\'ve already voted for option **#{num}**.',
