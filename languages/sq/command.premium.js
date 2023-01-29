@@ -5,7 +5,7 @@ module.exports = {
         onCooldown: 'Jeni aktualisht në freskim, kini parasysh se mund ta ndryshoni repartin vetëm gjatë gjithë {days} ditëve, {remaining}.',
         notFound: 'Serveri i përzgjedhur nuk u gjet, ju lutemi sigurohuni që unë jam në këtë server!',
         noPerms: '{guild} nuk është në pronësi të ju dhe as nuk e menaxhoni atë!',
-        alreadyHas: '{guild} already seems like to have Enterprise enabled!',
-        success: 'WooHoo, {user}! You have successfully activated Enterprise in {guild}!'
+        alreadyHas: '{guild} tashmë duket sikur e ka të aktivizuar Enterprise!',
+        success: 'HAJDEE, {user}! Ju keni aktivizuar me sukses Abonimin në {guild}!'
     }
 };
