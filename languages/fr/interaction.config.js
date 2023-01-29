@@ -20,7 +20,7 @@ module.exports = {
             bypass: 'You don\'t have the `MANAGE_GUILD` to access this panel..\nDo you still want to continue?',
             choice: {
                 access: 'Je suis sûr(e), oui',
-                abord: 'Peu importe'
+                abord: 'Laissez tomber'
             },
             notice: 'carefull - developer privileges enforced..'
         },
