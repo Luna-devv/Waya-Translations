@@ -1,11 +1,11 @@
 module.exports = {
     set: {
-        noGuild: 'Please enter the Guild id of the Server you want to add Enterprise. [How to get the Id?]({article})',
-        noSubscription: 'You are currently not an Enterprise Subscriber, if you want to have access to special benefits and want to support the development, consider [buying Enterprise]({url}).',
-        onCooldown: 'You are currently on cooldown, note that you can only change the guild all {days} days, {remaining}.',
-        notFound: 'The selected Guild could not be found, please be sure that I am in this Server!',
+        noGuild: 'Veuillez entrer l\'ID du serveur sur lequel vous voulez activer votre abonnement Entreprise. [Comment obtenir l\'ID ?]({article})',
+        noSubscription: 'Vous n\'avez pas souscrit à un abonnement Entreprise. Si vous voulez accéder à des avantages spéciaux et que vous voulez soutenir le développement, pensez à [vous abonner à Entreprise]({url}).',
+        onCooldown: 'Vous utilisez cette commande trop souvent, vous pouvez changer de serveur tous les {days} jours, {remaining}.',
+        notFound: 'Ce serveur est introuvable, veuillez vérifier que je suis bien dans ce serveur !',
         noPerms: '{guild} is not owned by you nor do you manage it!',
-        alreadyHas: '{guild} already seems like to have Enterprise enabled!',
-        success: 'WooHoo, {user}! You have successfully activated Enterprise in {guild}!'
+        alreadyHas: '{guild} semble déjà avoir un abonnement Entreprise appliqué !',
+        success: 'Youhou, {user} ! Vous avez activé Entreprise sur {guild} !'
     }
 };
