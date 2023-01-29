@@ -4,90 +4,90 @@
     \n are new lines
 */
 module.exports = {
-    validate: 'Validate data...',
-    notAllowed: 'You cannot use this menu.',
+    validate: 'Verifiko të dhënat...',
+    notAllowed: 'Ju nuk mund ta përdorni këtë menu.',
     prefix: {
-        name: 'Prefix',
-        set: 'Successfully updated the guilds prefix to {prefix}!',
-        noSpace: 'Please note that you cannot use spaces inside of the prefix! It\'s only allowed on the end.',
-        disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
+        name: 'Prefiks/i',
+        set: 'U përditësua me sukses prefiksi i Serverit në {prefix}!',
+        noSpace: 'Ju lutemi vini re se nuk mund të përdorni hapësira brenda prefiksit! Lejohet vetëm në fund.',
+        disclaimer: 'Kjo NUK vlen për komandat "/" (Slash)'
     },
     global: {
         // will be the same everywhere
-        none: 'none',
-        useButtons: 'Select an option you want to edit using the buttons below.',
+        none: 'asnje',
+        useButtons: 'Zgjidhni një opsion që dëshironi të modifikoni duke përdorur butonat më poshtë.',
         developer: {
-            bypass: 'You don\'t have the `MANAGE_GUILD` to access this panel..\nDo you still want to continue?',
+            bypass: 'Ju nuk keni "MANAGE_GUILD" për të hyrë në këtë panel..\nDëshironi të vazhdoni akoma?',
             choice: {
-                access: 'I\'m sure, yes',
-                abord: 'Nevermind'
+                access: 'Jam i sigurt, po',
+                abord: 'Jo'
             },
-            notice: 'carefull - developer privileges enforced..'
+            notice: 'kujdes - zbatohen privilegjet e zhvilluesit..'
         },
-        permissions: 'Missing: {perms}',
-        placeholders: 'Placeholders',
+        permissions: 'Mungon: {perms}',
+        placeholders: 'Vendmbajtësi',
         await: {
-            channel: 'Mention a Channel or paste the Channel ID into the chat.\nType `none` to remove the channel.',
-            category: 'Mention a Category or paste the Category ID into the chat.\nType `none` to remove the category.',
-            role: 'Mention a Role or paste the Role ID into the chat.\nType `none` to remove the role.',
-            message: 'Send a Message which should be used as {what}.',
-            emote: 'Send an Emoji which should be used as {what}.'
+            channel: 'Përmendni një kanal ose ngjisni ID-në e kanalit në bisedë.\nShkruani "asnjë" për të hequr kanalin.',
+            category: 'Përmendni një kanal ose ngjisni ID-në e kanalit në bisedë.\nShkruani "asnjë" për të hequr kanalin.',
+            role: 'Përmendni një rol ose ngjitni ID-në e rolit në bisedë.\nShkruani "asnjë" për të hequr rolin.',
+            message: 'Dërgoni një Mesazh i cili duhet të përdoret si {what}.',
+            emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.'
         },
         success: {
-            set: 'Successfully set {what} to **{data}**.',
-            add: 'Successfully add {what} to **{data}**.',
-            setCodeblock: 'Successfully set {what} to {data}',
-            removed: 'Successfully removed the {what}.',
-            remove: 'Successfully remove {what} from **{data}**.',
-            fail: 'This {what} does not exist in this guild..',
-            lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
-            otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
-            numberFail: 'The {what} is not a number between {a} and {b}!',
-            roleFail: 'This Role is only managable by either Discord or belongs to a bot user.'
+            set: 'U vendos me sukses {what} në **{data}**.',
+            add: 'Shtoni me sukses {what} te **{data}**.',
+            setCodeblock: 'U caktua me sukses {what} në {data}',
+            removed: 'U hoq me sukses {what}.',
+            remove: 'Hiq me sukses {what} nga **{data}**.',
+            fail: 'Kjo {what} nuk ekziston në këtë Server..',
+            lengthFail: '{what} është më i gjatë se {max} karaktere! ({length} karaktere, {relative} shumë)',
+            otherLengthFail: '{what} është më i shkurtër se {min} karaktere! ({length} karaktere, {relative} shumë më pak)',
+            numberFail: '{what} nuk është një numër midis {a} dhe {b}!',
+            roleFail: 'Ky rol është i menaxhueshëm vetëm nga Discord ose i përket një përdoruesi bot.'
         },
         webedit: {
             button: 'Embed Editor',
-            title: 'Message Web Edit',
-            description: 'Open [this Website]({url}) to start editing the message & embed.',
-            open: 'Open Web Edit'
+            title: 'Redaktimi në ueb i mesazheve',
+            description: 'Hapni [këtë faqe interneti]({url}) për të filluar redaktimin dhe futjen e mesazhit.',
+            open: 'Hapni Redaktimin e Uebit'
         },
         type: {
-            text: 'Text Channel',
-            category: 'Category Channel',
-            role: 'Role',
+            text: 'Kanali i tekstit',
+            category: 'Kanali i kategorisë',
+            role: 'Roli',
             emoji: 'Emote'
         },
         state: {
-            enabled: 'Enabled',
-            disabled: 'Disabled'
+            enabled: 'Aktivizuar',
+            disabled: 'E çaktivizuar'
         },
         option: {
-            required: 'Required',
-            optional: 'Optional'
+            required: 'E nevojshme',
+            optional: 'Fakultative'
         },
         button: {
-            back: 'Back',
-            disable: 'Disable',
-            enable: 'Enable',
+            back: 'Mbrapa',
+            disable: 'Çaktivizo',
+            enable: 'Aktivizo',
             channel: {
-                set: 'Set Channel',
-                edit: 'Edit Channel'
+                set: 'Cakto kanalin',
+                edit: 'Redakto kanalin'
             },
             category: {
-                set: 'Set Category',
-                edit: 'Edit Category'
+                set: 'Cakto kategorinë',
+                edit: 'Redakto Kategorinë'
             },
             role: {
-                set: 'Set Role',
-                edit: 'Edit Role'
+                set: 'Vendosja e rolit',
+                edit: 'Redakto rolin'
             },
             mode: {
-                analyst: 'Analyst',
-                cozy: 'Cozy'
+                analyst: 'Analist',
+                cozy: 'Komode'
             },
             modeChange: {
-                analyst: 'Set to Analyst',
-                cozy: 'Set to Cozy'
+                analyst: 'Cakto në Analist',
+                cozy: 'Cakto në Komode'
             },
             dupaw: {
                 // This is a name, cannot be translated
