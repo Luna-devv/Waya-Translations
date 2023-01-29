@@ -1,8 +1,8 @@
 module.exports = {
     messages: 'Classement par messages',
-    voice: 'Classement des Vocaux',
+    voice: 'Classement par Vocal',
     invites: 'Classement par invitations',
     none: 'aucun',
     personalized: 'Votre Position',
-    total: '{amount} ;[users are, user is] on this leaderboard'
+    total: '{amount} ;[utilisateurs sont, utilisateur est] dans ce classement'
 };
