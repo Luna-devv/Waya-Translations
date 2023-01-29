@@ -1,13 +1,13 @@
 module.exports = {
-    notFound: 'This issue could not be found',
+    notFound: 'Kjo çështje nuk mund të gjendej',
     view: {
-        main: 'at {time} while executing {command} for {user}',
-        fixed: 'This error has been fixed',
-        unfixed: 'This error is unresolved'
+        main: 'në {time} gjatë ekzekutimit të {command} për {user}',
+        fixed: 'Ky gabim është rregulluar',
+        unfixed: 'Ky gabim është i pazgjidhur'
     },
     check: {
-        fixed: 'Updated issue state to resolved.',
-        unfixed: 'Updated issue state to unresolved.'
+        fixed: 'Gjendja e problemit u përditësua për t\'u zgjidhur.',
+        unfixed: 'Gjendja e problemit u përditësua në të pazgjidhur.'
     },
-    deleted: 'This issue has been deleted.'
+    deleted: 'Kjo çështje është fshirë.'
 };
