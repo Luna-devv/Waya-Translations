@@ -1,12 +1,12 @@
 module.exports = {
-    title: '{user}\'s Invites',
-    building: 'Building...',
-    more: '+ {count} more',
-    none: 'none',
+    title: 'Ftesat e {user}',
+    building: 'Tu Zhvillu...',
+    more: '+ {count} më shumë',
+    none: 'asnje',
     button: {
-        ids: 'User IDs',
-        mentions: 'User Mentions',
-        export: 'Export CSV'
+        ids: 'ID-të e përdoruesve',
+        mentions: 'Përmendjet e përdoruesve',
+        export: 'Eksporto CSV'
     },
-    export: 'Download the .CVS below and import it into excel!'
+    export: 'Shkarkoni .CVS më poshtë dhe importojeni në Excel!'
 };
