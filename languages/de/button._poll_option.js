@@ -1,7 +1,7 @@
 module.exports = {
-    noPoll: 'Diese Abstimmung kann nicht in der Datenbank gefunden werden!',
-    ended: 'Diese Abstimmung hat schon vor {time} geendet.',
-    alreadyVoted: 'Du hast bereits für option **#{num}** abgestimmt.',
-    voted: 'Du hast erfolgreich für option **#{num}** abgestimmt.',
-    end: '**{users} Benutzer ;[hat, haben] für **{options} Optionen** in den letzten {time} abgestimmt!'
+    noPoll: 'This poll could not be found!',
+    ended: 'This poll already ended {time} ago.',
+    alreadyVoted: 'You\'ve already voted for option **#{num}**.',
+    voted: 'You\'ve successfully voted for **#{num}** in this poll.',
+    end: '**{users} ;[user, users]** ;[has, have] voted for **{options} options** in the last {time}!'
 };    // syntax: ;[singular, plural]
