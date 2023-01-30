@@ -1,24 +1,24 @@
 module.exports = {
     error: {
-        tooShort: 'The time cannot be less than **1 second**..',
-        tooLong: 'The time cannot be more than **24 days**..',
-        cantFindId: 'I cannot find any active reminders with the ID `{id}`'
+        tooShort: 'Koha nuk mund të jetë më pak se **1 sekondë**..',
+        tooLong: 'Koha nuk mund të jetë më shumë se **24 ditë**..',
+        cantFindId: 'Nuk mund të gjej ndonjë rikujtues aktiv me ID-në `{id}`'
     },
-    reminder: 'Hey {user}, here\'s your reminder.',
+    reminder: 'Përshëndetje {user}, këtu është rikujtesa juaj.',
     remindSet: {
-        created: 'I will remind you in **{time}**!',
+        created: 'Do t\'ju kujtoj në **{time}**!',
         id: 'Id'
     },
     remindView: {
-        created: 'Created',
-        remindsIn: 'Reminds',
-        message: 'Message',
+        created: 'Krijuar',
+        remindsIn: 'Kujtues',
+        message: 'Mesazh',
         button: {
-            delete: 'Delete',
-            invite: 'Invite {user}'
+            delete: 'Fshij',
+            invite: 'Fto {user}'
         },
-        reminderCount: 'You have {count} reminders',
-        createFirst: 'Use {command} first to create a reminder!'
+        reminderCount: 'Ju keni {count} rikujtues',
+        createFirst: 'Përdorni {command} fillimisht për të krijuar një kujtesë!'
     },
-    remindDelete: { deleted: 'I\'ve deleted your reminder with the Id `{id}`' }
+    remindDelete: { deleted: 'Unë e kam fshirë kujtesën tuaj me Id-në `{id}`' }
 };
