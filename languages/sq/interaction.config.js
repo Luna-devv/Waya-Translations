@@ -852,13 +852,13 @@ module.exports = {
                         success: 'Successfully added this Level Role. Each user who reaches **{messages} messages** will recieve the **{role} role** now!',
                         page: {
                             messageCount: {
-                                title: 'Message Count',
-                                name: 'required Message Count',
-                                description: 'Send a number, that the user will required to have as in message count to get the selected role.'
+                                title: 'Numri i mesazheve',
+                                name: 'numri i kërkuar i mesazheve',
+                                description: 'Dërgoni një numër që përdoruesi do të duhet ta ketë si në numërimin e mesazheve për të marrë rolin e zgjedhur.'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'present Role'
+                                title: 'Roli',
+                                name: 'roli i pranishëm'
                             }
                         }
                     },
