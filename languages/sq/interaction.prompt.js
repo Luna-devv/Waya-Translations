@@ -1,29 +1,29 @@
 module.exports = {
-    validate: 'Validate data...',
-    create: 'Creating {type} prompt...',
-    tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
-    created: 'The {type} prompt has been created.',
+    validate: 'Verifiko të dhënat...',
+    create: 'Po krijohet kërkesa për {type}...',
+    tooManyRoles: 'Ju keni {roles} role në serverin tuaj, ju lutemi sigurohuni që të keni më pak se 244!',
+    created: 'Prompti {type} është krijuar.',
     type: {
-        category: 'channel category',
-        support: 'support role',
-        emote: 'custom emote',
-        endPoll: 'end poll'
+        category: 'kategoria e kanalit',
+        support: 'rolin mbështetës',
+        emote: 'emote i preferuar',
+        endPoll: 'fund sondazhit'
     },
     message: {
-        created: 'created',
-        noSupport: 'none (use **/config**)',
-        invalidEmote: 'not in same guild',
-        content: 'Content',
-        endPoll: 'use {command}'
+        created: 'krijuar',
+        noSupport: 'asnjë (përdor **/config**)',
+        invalidEmote: 'jo në të njëjtin Server',
+        content: 'Përmbajtja',
+        endPoll: 'përdor {command}'
     },
     error: {
-        tooLong: 'Option {index} has more than {number} characters!',
-        noData: 'no data set'
+        tooLong: 'Opsioni {index} ka më shumë se {number} karaktere!',
+        noData: 'asnjë grup të dhënash'
     },
-    verifySetUp: '**CAPTCHA Setup is Required**\nPlease use {command} and go to *\'Logging > Joins > CAPTCHA\'* and run this command again.',
+    verifySetUp: '**Kërkohet konfigurimi i CAPTCHA**\nJu lutemi përdorni {command} dhe shkoni te *\'Logging > Joins > CAPTCHA\'* dhe ekzekutoni përsëri këtë komandë.',
     webedit: {
-        title: 'Message Web Edit',
-        description: 'Open [this Website]({url}) to start editing the message & embed.',
-        open: 'Open Web Edit'
+        title: 'Redaktimi në ueb i mesazheve',
+        description: 'Hapni [këtë faqe interneti]({url}) për të filluar redaktimin dhe futjen e mesazhit.',
+        open: 'Hapni Redaktimin e Uebit'
     }
 };
