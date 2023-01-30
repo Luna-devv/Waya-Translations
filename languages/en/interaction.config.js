@@ -326,6 +326,11 @@ module.exports = {
                         name: "Auto Delete",
                         description: "The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`"
                     },
+                    dm: {
+                        button: {
+                            disable: "Disable DM message"
+                        }
+                    },
                     imgcard: {
                         title: "Card",
                         option: {
