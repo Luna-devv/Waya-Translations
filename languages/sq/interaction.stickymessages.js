@@ -1,46 +1,46 @@
 module.exports = {
-    alreadyExists: 'A Sticky Message in this channel already exists!',
-    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} Sticky Messages**!',
-    invalidStickymessage: 'No Sticky Message exists in this channel!',
+    alreadyExists: 'Një Mesazh Ngjitës në këtë kanal ekziston tashmë!',
+    stickymessagesLimit: 'Ju keni arritur kufirin e Serverit prej **{count}/{max} Mesazhe Ngjitëse**!',
+    invalidStickymessage: 'Nuk ekziston asnjë mesazh ngjitës në këtë kanal!',
     overview: {
-        title: 'Sticky Message Config',
-        message: 'Message',
+        title: 'Konfigurimi i mesazheve ngjitëse',
+        message: 'Mesazh',
         embed: 'Embed',
-        note: 'Button Note',
+        note: 'Shënim i butonit',
         note_status: {
-            show: 'Showing',
-            hide: 'Hidden'
+            show: 'Duke treguar',
+            hide: 'E fshehur'
         },
         button: {
-            exit: 'Save & Exit',
+            exit: 'Ruaj & Dil',
             color: {
-                enabled: 'Select a color for the Embed',
-                disabled: 'Use Embeds and select a color'
+                enabled: 'Zgjidhni një ngjyrë për Embed',
+                disabled: 'Përdorni Embeds dhe zgjidhni një ngjyrë'
             },
             note: {
-                show: 'Show Note',
-                hide: 'Hide Note'
+                show: 'Shfaq shënimet',
+                hide: 'Fshih shënimin'
             }
         }
     },
     form: {
-        formName: '{name} sticky message',
-        message: { content: 'Content' },
+        formName: '{name} mesazh ngjitës',
+        message: { content: 'Përmbajtja' },
         embed: {
-            title: 'Title',
-            description: 'Description',
-            thumbnail: 'Thumbnail',
-            image: 'Image',
-            footer: 'Footer'
+            title: 'Titulli',
+            description: 'Përshkrim',
+            thumbnail: 'Miniatura',
+            image: 'Imazhi',
+            footer: 'Pjesa fundore'
         }
     },
     success: {
-        message: 'Successfully added a Sticky Message in {channel}.',
-        try: 'Try it out by sending a few messages there!'
+        message: 'U shtua me sukses një Mesazh Ngjitës në {channel}.',
+        try: 'Provojeni duke dërguar disa mesazhe atje!'
     },
     list: {
-        title: 'Sticky ;[Message, Messages]',
-        none: 'no sticky messages'
+        title: 'Ngjitëse ;[Mesazhi, Mesazhe]',
+        none: 'nuk ka mesazhe ngjitëse'
     },
-    deleted: 'Successfully deleted the Sticky Message in {channel}.'
+    deleted: 'Mesazhi ngjitës në {channel} u fshi me sukses.'
 };
