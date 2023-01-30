@@ -1,5 +1,4 @@
 module.exports = {
-    noData: 'Nuk mund të gjeja Serverin në bazën e të dhënave!',
     noPoll: 'Ky sondazh nuk u gjet!',
     ended: 'Ky sondazh ka përfunduar tashmë {time} më parë.',
     alreadyVoted: 'Ju keni votuar tashmë për opsionin **#{num}**.',
