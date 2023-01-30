@@ -91,23 +91,23 @@ module.exports = {
             },
             dupaw: {
                 // This is a name, cannot be translated
-                enable: 'Enable dupaw',
-                disable: 'Disable dupaw'
+                enable: 'Aktivizo dupaw',
+                disable: 'Çaktivizo dupaw'
             }
         }
     },
     main: {
-        title: 'Configure {name}',
+        title: 'Konfiguro {name}',
         option: {
             premium: {
-                text: 'Enterprise Tier {tier}',
-                buy: 'Buy Enterprise'
+                text: 'Niveli i Abonimit {tier}',
+                buy: 'Blej Abonimin'
             }
         },
         button: {
             logging: 'Logging',
-            tickets: 'Ticketing',
-            moderation: 'Moderation',
+            tickets: 'Ticketat',
+            moderation: 'Moderues',
             starboard: 'Starboard',
             misc: 'Miscs',
             followNews: 'Follow News',
