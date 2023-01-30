@@ -1,5 +1,4 @@
 module.exports = {
-    noData: 'Impossible de trouver ce serveur dans la base de données !',
     noPoll: 'Ce sondage est introuvable !',
     ended: 'Ce sondage s\'est terminé il y a {time}.',
     alreadyVoted: 'Vous avez déjà voté pour **#{num}**.',
