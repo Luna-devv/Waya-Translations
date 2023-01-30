@@ -322,6 +322,7 @@ module.exports = {
                         name: 'Eliminazione Automatica',
                         description: 'Il messaggio Benvenutore, verrà eliminato dopo questo tempo.\nConsigliamo di mantenere questo tempo breve (solo pochi secondi).\nEsempio: `1m 3s`'
                     },
+                    dm: { button: { disable: 'Disabilita il messaggio DM' } },
                     imgcard: {
                         title: 'Scheda',
                         option: { background: 'Sfondo: {url}' },
