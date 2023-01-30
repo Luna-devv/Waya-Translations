@@ -1,5 +1,4 @@
 module.exports = {
-    noData: 'Impossibile trovare la gilda nel database!',
     noPoll: 'Impossibile trovare questo sondaggio!',
     ended: 'Questo sondaggio è già terminato {time} fa.',
     alreadyVoted: 'Hai gia votato per **#{num}**.',
