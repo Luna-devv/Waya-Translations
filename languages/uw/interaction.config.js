@@ -322,6 +322,7 @@ module.exports = {
                         name: 'Auto Dewete',
                         description: 'The Wewcomew message wiww be deweted aftew this time.\nWe wecommend u to keep this time showt (onwy few seconds).\nExampwe: `1m 3s`'
                     },
+                    dm: { button: { disable: 'Disabwe DM message' } },
                     imgcard: {
                         title: 'Cawd',
                         option: { background: 'Backgwound: {url}' },
