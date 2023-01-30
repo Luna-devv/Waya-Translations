@@ -1,5 +1,4 @@
 module.exports = {
-    noData: 'Ne mogu pronaći server u bazi podataka!',
     noPoll: 'Ova anketa nije pronađena!',
     ended: 'Ova je anketa već završila prije {time}.',
     alreadyVoted: 'Već ste glasali za opciju **#{num}**.',
