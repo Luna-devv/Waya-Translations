@@ -1,5 +1,4 @@
 module.exports = {
-    noData: 'BABY GIRL 😭 Couwd nyot find guiwd in the Database!',
     noPoll: 'This poww couwd nyot be found!',
     ended: 'Oh~ babe, this poww awweady ended {time} ago.',
     alreadyVoted: 'U ve awweady voted fow option **#{num}**. qwq',
