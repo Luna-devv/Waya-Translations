@@ -1,22 +1,22 @@
 module.exports = {
-    fetchError: `Could't not fetch data, please try again later!`,
+    fetchError: `Të dhënat nuk mund të merreshin, ju lutemi provoni përsëri më vonë!`,
     links: {
-        website: 'website',
-        invite: 'invite',
-        more: 'in-depth stats'
+        website: 'faqe interneti',
+        invite: 'ftoj',
+        more: 'statistika të thelluara'
     },
     general: {
-        title: 'General',
-        uptime: '**{time}** uptime',
-        guilds: '**{count}** guilds',
-        users: '**{count}** users',
-        invites: '**{count}** invites',
-        starboards: '**{count}** starboards',
-        executed: '**{count}** executed',
-        usage: '{cpu}% cpu • {mem}% memory'
+        title: 'Gjeneral',
+        uptime: '**{time}** koha e funksionimit',
+        guilds: '**{count}** Serverat',
+        users: '**{count}** përdorues',
+        invites: '**{count}** ftesat',
+        starboards: '**{count}** starboard',
+        executed: '**{count}** ekzekutuar',
+        usage: '{cpu}% cpu • {mem}% memorie'
     },
     commandList: {
-        title: 'Popular',
-        none: 'none'
+        title: 'Popullore',
+        none: 'asnje'
     }
 };
