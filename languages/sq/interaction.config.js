@@ -109,102 +109,102 @@ module.exports = {
             tickets: 'Ticketat',
             moderation: 'Moderues',
             starboard: 'Starboard',
-            misc: 'Miscs',
-            followNews: 'Follow News',
-            staff: 'Manage Guild',
-            exit: 'Exit',
-            help: 'Support'
+            misc: 'Të ndryshme',
+            followNews: 'Ndiqni Lajmet',
+            staff: 'Menaxho Serverin',
+            exit: 'Dilni',
+            help: 'Mbështetja'
         }
     },
     logging: {
-        title: 'Configure Logging',
+        title: 'Konfiguro Logging',
         button: {
-            messages: 'Messages',
-            joins: 'Joins',
-            welcomer: 'Welcoming',
-            byer: 'Bying'
+            messages: 'Mesazhet',
+            joins: 'Bashkimet',
+            welcomer: 'Mikpritëse',
+            byer: 'Pershendetjet'
         },
         page: {
             messages: {
-                title: 'Messages',
-                name: 'Message Logging',
+                title: 'Mesazhet',
+                name: 'Logging i mesazheve',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}'
+                    channel: 'Kanali: {channel}',
+                    mode: 'Modaliteti: {mode}'
                 },
                 button: {
                     snipe: {
-                        enable: 'Enable Snipe',
-                        disable: 'Disable Snipe'
+                        enable: 'Aktivizo Snipe',
+                        disable: 'Çaktivizo Snipe'
                     }
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Message Logging channel'
+                        title: 'Kanal/i',
+                        name: 'Kanali i Logging të mesazheve'
                     }
                 }
             },
             joins: {
-                title: 'Joins',
-                name: 'Join Logging',
+                title: 'Bashkimet',
+                name: 'Logging i Bashkimeve',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}',
-                    filter: 'Filter: {state}',
+                    channel: 'Kanali: {channel}',
+                    mode: 'Modaliteti: {mode}',
+                    filter: 'Filtri: {state}',
                     captcha: 'CAPTCHA: {state}'
                 },
                 button: {
-                    filter: 'Filter',
-                    captcha: 'CAPTCHA Verification'
+                    filter: 'Filtër',
+                    captcha: 'Verifikimi CAPTCHA'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Join Logging'
+                        title: 'Kanal/i',
+                        name: 'Logging i Bashkimeve'
                     },
                     filter: {
-                        title: 'Filter',
+                        title: 'Filtër',
                         option: {
-                            trigger: 'Age Trigger: **{trigger} days**',
-                            punishment: 'Punishment: **{type}**',
+                            trigger: 'Shkaktësi i moshës: **{trigger} ditë**',
+                            punishment: 'Dënimi: **{type}**',
                             punishmentType: {
                                 ban: 'Ban',
                                 kick: 'Kick',
                                 timeout: 'Timeout',
-                                role: 'Assign {role} role',
-                                none: 'none'
+                                role: 'Cakto rolin {role}',
+                                none: 'asnje'
                             }
                         },
                         button: {
                             dmNotification: {
-                                disable: 'Disable DM notification',
-                                enable: 'Enable DM notification'
+                                disable: 'Çaktivizo njoftimin DM',
+                                enable: 'Aktivizo njoftimin DM'
                             },
                             trigger: {
-                                set: 'Set Age Trigger',
-                                edit: 'Edit Age Trigger'
+                                set: 'Cakto këmbëzën e moshës',
+                                edit: 'Modifiko nxitjen e moshës'
                             },
                             punishment: {
-                                title: 'Set a punishment',
-                                current: 'Current',
+                                title: 'Vendosni një dënim',
+                                current: 'Aktuale',
                                 option: {
-                                    ban: 'Ban User',
-                                    kick: 'Kick User',
-                                    timeout: 'Timeout User',
-                                    role: 'Assign Role'
+                                    ban: 'Ban përdoruesin',
+                                    kick: 'Kick përdoruesin',
+                                    timeout: 'Timeout përdoruesin',
+                                    role: 'Cakto rol'
                                 }
                             }
                         },
                         page: {
                             trigger: {
-                                title: 'Trigger',
-                                name: 'age requirement',
-                                description: 'If an account is younger than this age, they\'ll get punished!\nInput must be between 0 and 28 days.'
+                                title: 'Shkaktësi',
+                                name: 'kërkesa e moshës',
+                                description: 'Nëse një account është më e re se kjo moshë, ata do të ndëshkohen!\nHyrja duhet të jetë nga 0 deri në 28 ditë.'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'punishment role'
+                                title: 'Roli',
+                                name: 'roli i ndëshkimit'
                             }
                         }
                     },
@@ -212,49 +212,49 @@ module.exports = {
                         title: 'CAPTCHA',
                         name: 'CAPTCHA',
                         option: {
-                            verifiedrole: 'Verified Role: {role}',
-                            unverifiedrole: 'Unverified Role: {role}',
+                            verifiedrole: 'Roli i verifikuar: {role}',
+                            unverifiedrole: 'Roli i paverifikuar: {role}',
                             channel: 'Logging: {channel}',
-                            color: 'Color: {color}'
+                            color: 'Ngjyra: {color}'
                         },
-                        disclaimer: 'Continue with {command}',
+                        disclaimer: 'Vazhdo me {command}',
                         button: {
                             verifiedrole: {
-                                set: 'Set Verified Role',
-                                edit: 'Edit Verified Role'
+                                set: 'Cakto rolin e verifikuar',
+                                edit: 'Redakto rolin e verifikuar'
                             },
                             unverifiedrole: {
-                                set: 'Set Unverified Role',
-                                edit: 'Edit Unverified Role'
+                                set: 'Cakto rolin e paverifikuar',
+                                edit: 'Redakto rolin e paverifikuar'
                             },
                             type: {
-                                title: 'Set a CAPTCHA type',
-                                selected: 'Selected'
+                                title: 'Cakto një lloj CAPTCHA',
+                                selected: 'Zgjedhur'
                             },
-                            color: 'Change Page Color'
+                            color: 'Ndrysho ngjyrën e faqes'
                         },
                         page: {
                             verifiedrole: {
-                                title: 'Verified Role',
-                                name: 'CAPTCHA verified Role'
+                                title: 'Roli i verifikuar',
+                                name: 'Roli i verifikuar nga CAPTCHA'
                             },
                             unverifiedrole: {
-                                title: 'Unverifiedrole Role',
-                                name: 'CAPTCHA unverifiedrole Role'
+                                title: 'Roli i paverifikuar',
+                                name: 'Roli i paverifikuar nga CAPTCHA'
                             },
                             logging: {
                                 title: 'Logging',
-                                name: 'CAPTCHA logging Channel'
+                                name: 'Kanali i Logging të CAPTCHA'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'failed CAPTCHA role'
+                                title: 'Roli',
+                                name: 'roli i dështuar CAPTCHA'
                             },
                             color: {
-                                title: 'Page Color',
-                                name: 'Page Color',
-                                description: 'Paste a Hex color into the chat you want to use.\nWe recommend you using a color near to black with very high saturation.\nNote that the color on the Passport will always look brighter.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                                title: 'Ngjyra e faqes',
+                                name: 'Ngjyra e faqes',
+                                description: 'Ngjitni një ngjyrë Hex në bisedën që dëshironi të përdorni.\nNe ju rekomandojmë të përdorni një ngjyrë afër të zezës me ngopje shumë të lartë.\nVini re se ngjyra në pasaportë do të duket gjithmonë më e ndritshme.\nMerr një kod ngjyre Hex nga [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'Kodi i ngjyrës nuk është një ngjyrë Hex e vlefshme.\nMerr një kod ngjyre Hex nga [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
@@ -322,6 +322,7 @@ module.exports = {
                         name: 'Auto Delete',
                         description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
                     },
+                    dm: { button: { disable: 'Disable DM message' } },
                     imgcard: {
                         title: 'Card',
                         option: { background: 'Background: {url}' },
@@ -876,35 +877,35 @@ module.exports = {
                 }
             },
             leaderboards: {
-                title: 'Leaderboards',
-                option: { blacklisted: 'Blacklisted: {channels}' },
-                button: { blacklistedChannels: 'Edit Blacklisted Channels' }
+                title: 'Tabelat e klasifikimit',
+                option: { blacklisted: 'Në listën e zezë: {channels}' },
+                button: { blacklistedChannels: 'Redaktoni kanalet në listën e zezë' }
             }
         }
     },
     followNews: {
-        title: 'Follow News Updates',
-        name: 'Follow News'
+        title: 'Ndiqni përditësimet e lajmeve',
+        name: 'Ndiqni Lajmet'
     },
     staff: {
-        title: 'Manage {name}',
-        option: { premium: 'Enterprise: {tier}' },
+        title: 'Menaxho {name}',
+        option: { premium: 'Abonimi: {tier}' },
         button: {
-            premium: 'Change premium Tier',
-            data: 'Export Data'
+            premium: 'Ndrysho nivelin premium',
+            data: 'Eksporto të dhënat'
         },
         page: {
             data: {
-                title: 'Data Export',
-                message: 'The data from {name} is displayed below.',
-                error: 'Cannot send message :/'
+                title: 'Eksporti i të dhënave',
+                message: 'Të dhënat nga {name} shfaqen më poshtë.',
+                error: 'Nuk mund te dergoj mesazh :/'
             },
             premium: {
-                title: 'Configure Enterprise',
-                option: { tier: 'Current Tier: {tier}' },
-                button: { tier: 'Tier {tier}' }
+                title: 'Konfiguro Abonimin',
+                option: { tier: 'Niveli aktual: {tier}' },
+                button: { tier: 'Niveli {tier}' }
             }
         }
     },
-    exit: { title: 'Saved settings and exited config menu.' }
+    exit: { title: 'Cilësimet e ruajtura dhe dola nga menyja e konfigurimit.' }
 };
