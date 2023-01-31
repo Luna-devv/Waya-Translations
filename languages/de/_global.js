@@ -1,60 +1,60 @@
 module.exports = {
-    dms: 'Dieser Command kann nicht in privaten Nachrichten ausgeführt werden.',
-    disabled: 'Du wurdest vom Bot gesperrt.',
-    mention: 'Hey {user}, benutze **{emote} SlashCommands** um mich aufzusetzen!\nNutze {command} für weitere Informationen.',
-    error: 'Beim Ausführen des Commands ist ein Fehler aufgetreten\nBitte joine den Support Server und melde diesen Fehler\nmit der Id {issue}!',
+    dms: 'This command cannot be used inside of private messages.',
+    disabled: 'You have been disabled.',
+    mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
+    error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
     premium: {
-        required: 'abo erforderlich',
+        required: 'subscription required',
         embeds: {
-            title: 'Entschuldigung, aber Enterprise ist erforderlich',
-            title2: 'Sorry, aber das Enterprise Limit wurde erreicht',
-            description: 'Damit wir einen stabilen Bot zur Verfügung stellen können und Geld nicht auf Bäumen wächst, müssen wir nicht wesentliche Funktionen hinter einem Abonnement sperren.'
+            title: 'Sorry but Subscription is required',
+            title2: 'Sorry but the Subscriptions limit was reached',
+            description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
         },
         button: {
-            subscribe: 'Abonnieren',
-            support: 'Support kontaktieren'
+            subscribe: 'Subscribe',
+            support: 'Contact Support'
         }
     },
     button: {
-        add: '{name} Einladen',
+        add: 'Add {name}',
         support: 'Support'
     },
     permissions: {
         user: {
-            guild: 'Du kannst diese Aktion nicht ausführen, da dir die {perms} Berechtigungen fehlen.',
-            channel: 'Du kannst diese Aktion nicht ausführen, da dir die {perms} Berechtigungen in diesem Kanal fehlen.',
+            guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
+            channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
             roles: {
                 user: {
-                    text: 'Du kannst diese Aktion nicht ausführen, da die höchste Rolle von diesem User höher als deine ist.',
+                    text: 'You cannot perform this action since the highest role of that user is higher than yours.',
                     user: 'User: {u.role} @ index {u.index}',
-                    you: 'Du: {y.role} @ index {y.index}'
+                    you: 'You: {y.role} @ index {y.index}'
                 },
                 role: {
-                    text: 'Du kannst diese Aktion nicht ausführen da deine höchste Rolle unter der zu bearbeitenden Rolle ist.',
-                    user: 'Rolle: {u.role} @ index {u.index}',
-                    you: 'Du: {y.role} @ index {y.index}'
+                    text: 'You cannot perform this action since your highest role is lower than the role to manage.',
+                    user: 'Role: {u.role} @ index {u.index}',
+                    you: 'You: {y.role} @ index {y.index}'
                 }
             }
         },
         me: {
-            guild: 'Ich kann diese Aktion nicht ausführen, da mir die {perms} Berechtigungen fehlen.',
-            channel: 'Ich kann diese Aktion nicht ausführen, da mir die {perms} Berechtigungen in diesem Kanal fehlen.',
+            guild: 'I cannot run this action since I\'m missing the {perms} permissions.',
+            channel: 'I cannot run this action since I\'m missing the {perms} permissions in this channel.',
             roles: {
                 user: {
-                    text: 'Ich kann diese Aktion nicht ausführen, da die höchste Rolle von dem User höher als meine ist.',
+                    text: 'I cannot perform this action since the highest role of that user is higher than mine.',
                     user: 'User: {u.role} @ index {u.index}',
-                    bot: 'Ich: {b.role} @ index {b.index}'
+                    bot: 'Me: {b.role} @ index {b.index}'
                 },
                 role: {
-                    text: 'Ich kann diese Aktion nicht ausführen, da meine höchste Rolle unter der zu bearbeitenden Rolle ist.',
-                    user: 'Rolle: {u.role} @ index {u.index}',
-                    bot: 'Ich: {b.role} @ index {b.index}'
+                    text: 'I cannot perform this action since my highest role is higher than the role to manage.',
+                    user: 'Role: {u.role} @ index {u.index}',
+                    bot: 'Me: {b.role} @ index {b.index}'
                 }
             }
         }
     },
     ad: {
-        vote: 'Unterstütze uns!',
-        help: 'Brauchst Hilfe?'
+        vote: 'Support Us!',
+        help: 'Need Help?'
     }
 };
