@@ -1,0 +1,1 @@
+module.exports = { success: 'Alle Interaktionen wurden in {ms} neu geladen' };
