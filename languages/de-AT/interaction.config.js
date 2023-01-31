@@ -301,7 +301,7 @@ module.exports = {
                             delete: 'Delete on leave'
                         }
                     },
-                    dm_webedit: 'DM Message Embed Editor',
+                    dm: 'DM Message',
                     afterleave_webedit: 'After Leave Embed Editor'
                 },
                 page: {
@@ -344,7 +344,8 @@ module.exports = {
                                 description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
                             }
                         }
-                    }
+                    },
+                    dm: { title: 'Direct Message' }
                 }
             },
             byer: {
