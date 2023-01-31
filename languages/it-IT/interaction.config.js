@@ -301,7 +301,7 @@ module.exports = {
                             delete: 'Elimina a abbandono'
                         }
                     },
-                    dm_webedit: 'Editore Embed in messaggi privati',
+                    dm: 'DM Message',
                     afterleave_webedit: 'Editore Embed dopo l\'abbandono'
                 },
                 page: {
@@ -344,7 +344,8 @@ module.exports = {
                                 description: 'Il link deve essere un **URL di immagine diretta**, deve anche essere un link di tipo {scheme}.\nConsigliamo un rapporto di {ratio} e una risoluzione minima di {resolution}.'
                             }
                         }
-                    }
+                    },
+                    dm: { title: 'Direct Message' }
                 }
             },
             byer: {
