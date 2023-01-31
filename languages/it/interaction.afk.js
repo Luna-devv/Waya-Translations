@@ -1,1 +1,0 @@
-module.exports = { success: 'A dopo, {user}!' };

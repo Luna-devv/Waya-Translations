@@ -1,1 +1,0 @@
-module.exports = { noData: 'Impossibile trovare la gilda nel database!' };
