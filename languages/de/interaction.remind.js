@@ -1,24 +1,24 @@
 module.exports = {
     error: {
-        tooShort: 'The time cannot be less than **1 second**..',
-        tooLong: 'The time cannot be more than **24 days**..',
-        cantFindId: 'I cannot find any active reminders with the ID `{id}`'
+        tooShort: 'Zeit kann nicht kürzer als **eine Sekunde** sein..',
+        tooLong: 'Zeit kann nicht mehr als **24 Tage** sein..',
+        cantFindId: 'Ich kann keine aktive Erinnerung mit der Id `{id}` finden'
     },
-    reminder: 'Hey {user}, here\'s your reminder.',
+    reminder: 'Hey, {user}, hier ist deine Erinnerung.',
     remindSet: {
-        created: 'I will remind you in **{time}**!',
+        created: 'Ich werde dich in **{time}** erinnern!',
         id: 'Id'
     },
     remindView: {
-        created: 'Created',
-        remindsIn: 'Reminds',
-        message: 'Message',
+        created: 'Erstellt',
+        remindsIn: 'Erinnert',
+        message: 'Nachricht',
         button: {
-            delete: 'Delete',
-            invite: 'Invite {user}'
+            delete: 'Löschen',
+            invite: '{user} Einladen'
         },
-        reminderCount: 'You have {count} reminders',
-        createFirst: 'Use {command} first to create a reminder!'
+        reminderCount: 'Du hast {count} Erinnerungen',
+        createFirst: 'Benutze zuerst {command}, um eine Erinnerung zu erstellen!'
     },
-    remindDelete: { deleted: 'I\'ve deleted your reminder with the Id `{id}`' }
+    remindDelete: { deleted: 'Ich habe deine Erinnerung mit der Id `{id}` gelöscht.' }
 };
