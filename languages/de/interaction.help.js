@@ -1,8 +1,8 @@
 module.exports = {
-    description: '**About {name}**\nI\'m developed by {devs} icons by [Danu](https://waya.one/go/danu_icons).\n{name} is made to be very simple in it\'s configuration process but at the same time there to provide the best customizability. Everything can be done in one simple {config} command.\n\n**Accessability**\nIf you want to change the language please use {language}.\nIf you want to help us translate, join us on {translateSite}.\n\nIf it gets to overwhelming for you simply join the [Support Server]({support}) and ask the community in the Support Channel for help.',
-    footer: 'Online for {time}',
+    description: '**Über {name}**\nIch werde von {devs} entwickelt, icons by [Danu] (https://waya.one/go/danu_icons).\n{name} ist so konzipiert, dass es sehr einfach zu konfigurieren ist, aber gleichzeitig die besten Anpassungsmöglichkeiten bietet. Alles kann mit einem einfachen {config} Command erledigt werden.\n\n**Barrierefreiheit**\nWenn du die Sprache ändern willst, benutze bitte den {language} command.\nWenn du uns bei der Übersetzung helfen willst, trette uns auf {translateSite} bei.\n\nWenn du damit überfordert bist, Join einfach unseren [Support Server]({support}) und frag\' unsere Community im Support Channel um Hilfe.',
+    footer: 'Online seit {time}',
     button: {
-        learnmore: 'Learn More',
-        vote: 'Vote'
+        learnmore: 'Mehr Erfahren',
+        vote: 'Voten'
     }
 };
