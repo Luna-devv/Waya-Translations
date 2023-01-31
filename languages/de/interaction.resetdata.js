@@ -1,16 +1,16 @@
 module.exports = {
     confirm: {
-        description: 'Are you sure that you want to __reset__ the **{type}** data from **{user}**?',
+        description: 'Bist du dir sicher, dass du **{type}** von **{user}** __zurücksetzen__ willst?',
         button: {
-            delete: 'I\'m sure, delete',
-            abord: 'Nevermind'
+            delete: 'Ja, ich bin',
+            abord: 'Nein danke'
         }
     },
     delete: {
-        invalidUser: 'User does not exist in the Database!',
-        bulkInvalidUser: 'No users exist in the Database!',
-        reset: 'The **{type}** from **{user}** has been reset!',
-        bulkReset: '**{type}** from **{user}** is in process of getting deleted!'
+        invalidUser: 'User existiert nicht in der Datenbank!',
+        bulkInvalidUser: 'Keine User in der Datenbank!',
+        reset: '**{type}** von **{user}** wurde zurückgesetzt!',
+        bulkReset: '**{type}** von **{user}** ist im Prozess zurückgesetzt zu werden!'
     },
-    aborted: 'Aborted **{user}**\'s **{type}** deletion!'
+    aborted: '**{user}**s **{type}** Zurücksetzung wurde abgebrochen!'
 };
