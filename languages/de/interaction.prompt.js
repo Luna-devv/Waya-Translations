@@ -1,29 +1,29 @@
 module.exports = {
-    validate: 'Validate data...',
-    create: 'Creating {type} prompt...',
-    tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
-    created: 'The {type} prompt has been created.',
+    validate: 'Validiere Daten...',
+    create: 'Erstelle {type} Prompt...',
+    tooManyRoles: 'Du hast {roles} rollen auf deinem Server, Bitte stelle sicher, dass du weniger als 244 hast!',
+    created: 'Die {type} Prompt wurde erstellt.',
     type: {
-        category: 'channel category',
-        support: 'support role',
-        emote: 'custom emote',
-        endPoll: 'end poll'
+        category: 'kategorie',
+        support: 'support rolle',
+        emote: 'Benutzerdefiniertes Emoji',
+        endPoll: 'abstimmung enden'
     },
     message: {
-        created: 'created',
-        noSupport: 'none (use **/config**)',
-        invalidEmote: 'not in same guild',
-        content: 'Content',
-        endPoll: 'use {command}'
+        created: 'erstellt',
+        noSupport: 'keine (benutze **/config**)',
+        invalidEmote: 'nicht im selben Server',
+        content: 'Inhalt',
+        endPoll: 'benutzte {command}'
     },
     error: {
-        tooLong: 'Option {index} has more than {number} characters!',
-        noData: 'no data set'
+        tooLong: 'Option {index} hat mehr als {number} Buchstaben!',
+        noData: 'keine daten angegeben'
     },
-    verifySetUp: '**CAPTCHA Setup is Required**\nPlease use {command} and go to *\'Logging > Joins > CAPTCHA\'* and run this command again.',
+    verifySetUp: '**CAPTCHA Setup ist erforderlich**\nBitte benutze {command} und gehe zu *\'Logging > Joins > CAPTCHA\'* und führe diesen Befehl erneut.',
     webedit: {
-        title: 'Message Web Edit',
-        description: 'Open [this Website]({url}) to start editing the message & embed.',
-        open: 'Open Web Edit'
+        title: 'Nachricht Web Editor',
+        description: 'Öffne [diese Website]({url}), um die Nachricht zu bearbeiten und einzubetten.',
+        open: 'Web Editor öffnen'
     }
 };
