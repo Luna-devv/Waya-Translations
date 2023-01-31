@@ -1,46 +1,46 @@
 module.exports = {
-    alreadyExists: 'Eine fixierte Nachricht existiert für diesen Channel bereits!',
-    stickymessagesLimit: 'Du hast das Serverlimit von **{count}/{max} fixierten Nachrichten** erreicht!',
-    invalidStickymessage: 'Keine fixierte Nachricht existiert nicht in diesem Channel!',
+    alreadyExists: 'A Sticky Message in this channel already exists!',
+    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} Sticky Messages**!',
+    invalidStickymessage: 'No Sticky Message exists in this channel!',
     overview: {
-        title: 'Sticky Message Konfiguration',
-        message: 'Nachricht',
+        title: 'Sticky Message Config',
+        message: 'Message',
         embed: 'Embed',
-        note: 'Button Notiz',
+        note: 'Button Note',
         note_status: {
-            show: 'Anzeigen',
-            hide: 'Versteckt'
+            show: 'Showing',
+            hide: 'Hidden'
         },
         button: {
-            exit: 'Speichern & Verlassen',
+            exit: 'Save & Exit',
             color: {
-                enabled: 'Setzte eine Farbe für das Embed',
-                disabled: 'Benutzte Embeds und wähle eine Farbe'
+                enabled: 'Select a color for the Embed',
+                disabled: 'Use Embeds and select a color'
             },
             note: {
-                show: 'Notizen Zeigen',
-                hide: 'Notizen Ausblenden'
+                show: 'Show Note',
+                hide: 'Hide Note'
             }
         }
     },
     form: {
-        formName: '{name} fixierte Nachricht',
+        formName: '{name} sticky message',
         message: { content: 'Content' },
         embed: {
-            title: 'Titel',
-            description: 'Beschreibung',
-            thumbnail: 'Vorschaubild',
-            image: 'Bild',
-            footer: 'Fußzeile'
+            title: 'Title',
+            description: 'Description',
+            thumbnail: 'Thumbnail',
+            image: 'Image',
+            footer: 'Footer'
         }
     },
     success: {
-        message: 'Fixierte Nachricht in {channel} erfolgreich hinzugefügt.',
-        try: 'Probiere es aus, indem du ein paar Nachrichten sendest!'
+        message: 'Successfully added a Sticky Message in {channel}.',
+        try: 'Try it out by sending a few messages there!'
     },
     list: {
-        title: 'Fixierte ;[Nachricht, Nachrichten]',
-        none: 'keine fixierten nachrichten'
+        title: 'Sticky ;[Message, Messages]',
+        none: 'no sticky messages'
     },
-    deleted: 'Fixierte Nachricht in {channel} erfolgreich gelöst.'
+    deleted: 'Successfully deleted the Sticky Message in {channel}.'
 };
