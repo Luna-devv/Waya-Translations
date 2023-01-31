@@ -1,12 +1,12 @@
 module.exports = {
-    title: '{user}\'s Invites',
-    building: 'Building...',
-    more: '+ {count} more',
-    none: 'none',
+    title: '{user}s Einladungen',
+    building: 'Validiere Daten...',
+    more: '+ {count} mehr',
+    none: 'keine',
     button: {
         ids: 'User IDs',
-        mentions: 'User Mentions',
-        export: 'Export CSV'
+        mentions: 'User Erwähnungen',
+        export: 'CSV Export'
     },
-    export: 'Download the .CVS below and import it into excel!'
+    export: 'Laden die .CVS unten herunter und importiere sie in Excel!'
 };
