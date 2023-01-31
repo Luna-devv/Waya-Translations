@@ -1,1 +1,0 @@
-module.exports = { noData: 'Server nicht gefunden.' };
