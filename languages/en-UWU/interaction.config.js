@@ -301,7 +301,7 @@ module.exports = {
                             delete: 'Dewete on weave'
                         }
                     },
-                    dm_webedit: 'DM Message Embed Editow',
+                    dm: 'DM Message',
                     afterleave_webedit: 'Aftew Weave Embed Editow'
                 },
                 page: {
@@ -344,7 +344,8 @@ module.exports = {
                                 description: 'The wink must be a **diwect image Uww**, it awso must be a {scheme} type wink.\nWe wecommend a watio of {ratio} and a min wesowution of {resolution}.'
                             }
                         }
-                    }
+                    },
+                    dm: { title: 'Direct Message' }
                 }
             },
             byer: {
