@@ -1,0 +1,1 @@
+module.exports = { success: 'Tutte le interazioni sono state ricaricate in {ms}' };
