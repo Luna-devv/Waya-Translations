@@ -1,1 +1,0 @@
-module.exports = { noData: 'BABY GIRL 😭 Couwd nyot find guiwd in the Database!' };

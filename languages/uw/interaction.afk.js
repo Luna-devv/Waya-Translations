@@ -1,1 +1,0 @@
-module.exports = { success: 'C\' u watew, {user}!' };
