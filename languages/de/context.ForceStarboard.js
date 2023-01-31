@@ -1,12 +1,12 @@
 module.exports = {
     fail: {
-        config: 'Starboard isn\'t set up for this guild..',
-        content: 'Message has no content nor attachments..',
-        channel: 'Configured Starboard channel doesn\'t exist anymore..',
+        config: 'Das Starboard ist in diesem Server nicht eingerichtet..',
+        content: 'Die Nachricht hat keinen Inhalt Wedernoch Anhänge..',
+        channel: 'Der eingerichtete Starboard Channel exestiert nicht mehr..',
         exists: {
-            text: 'The message is already in the Starboard..',
-            button: 'Message'
+            text: 'Die Nachricht ist bereits im Starboard..',
+            button: 'Zur Nachricht'
         }
     },
-    success: 'The message is now in the Starboard.'
+    success: 'Die Nachricht ist nun im Starboard.'
 };
