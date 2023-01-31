@@ -1,10 +1,10 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
-    claimed: 'The ticket will be now handled by you!',
+    noData: 'Der Server kann nicht in der Datenbank gefunden werden!',
+    claimed: 'Das Ticket wurde von dir übernommen!',
     commands: {
-        add: 'Add member to this ticket',
-        remove: 'Remove member from this ticket',
-        close: 'Close this ticket',
-        tags: 'List all tags'
+        add: 'Füge einen User zu deinem Ticket hinzu',
+        remove: 'Entferne einen User aus dem Ticket',
+        close: 'Schließet dieses Ticket',
+        tags: 'Alle Tags auflisten'
     }
 };
