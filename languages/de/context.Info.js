@@ -1,15 +1,15 @@
 module.exports = {
-    messages: 'Nachrichten',
+    messages: 'Messages',
     name: 'Name',
-    created: 'Erstellt',
-    joined: 'Beigetreten',
-    invites: 'Einladungen',
+    created: 'Created',
+    joined: 'Joined',
+    invites: 'Invites',
     voice: 'Voice',
-    none: 'keine',
-    timeout: 'auf Timeout für {time}',
+    none: 'none',
+    timeout: 'on Timeout for {time}',
     pronouns: {
-        title: 'Pronomen',
-        none: 'Keine Pronomen ausgewählt'
+        title: 'Pronouns',
+        none: 'No pronouns set'
     },
     button: {
         guildAvatar: 'Per-Guild Avatar URL',
@@ -17,25 +17,25 @@ module.exports = {
         banner: 'Banner URL'
     },
     actions: {
-        notAllowed: 'Du kannst mit diesem Menü nicht interagieren.',
-        invalidTime: 'Die Dauer kann nicht kleiner als eine Sekunde sein!',
-        otherInvalidTime: 'Die Dauer kann nicht länger als 28 Tage sein!',
-        placeholder: 'Wähle eine Aktion',
+        notAllowed: 'You cannot use this menu.',
+        invalidTime: 'The duration cannot be less than a second!',
+        otherInvalidTime: 'The duration cannot be more than 28 days!',
+        placeholder: 'Choose an action',
         option: {
-            ban: 'User Bannen',
-            kick: 'User Kicken',
-            timeout: 'User Muten',
-            role: 'Rolle Hinzufügen'
+            ban: 'Ban User',
+            kick: 'Kick User',
+            timeout: 'Timeout User',
+            role: 'Assign Role'
         },
         form: {
-            reason: 'Grund',
-            note: 'Moderator Notiz',
-            duration: 'Länge'
+            reason: 'Reason',
+            note: 'Moderator Note',
+            duration: 'Duration'
         },
         success: {
-            ban: '{user} wurde erfolgreich von {guild} gebannt.',
-            kick: '{user} wurde erfolgreich von {guild} gekickt.',
-            timeout: '{user} wurde erfolgreich von {guild} gemuted.'
+            ban: 'Successfully banned {user} from {guild}.',
+            kick: 'Successfully kicked {user} from {guild}.',
+            timeout: 'Successfully timed {user} out in {guild}.'
         }
     }
 };
