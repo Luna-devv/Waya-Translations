@@ -1,8 +1,8 @@
 module.exports = {
-    fail: 'You either need to provide `true` or `false` as argument.',
+    fail: 'Du musst entweder `true` oder `false` als Argument angeben.',
     success: {
-        disable: 'You\'ve disabled the vote reminder.',
-        enable: 'You\'ve enabled the vote reminder.'
+        disable: 'Sie haben die Vote-Erinnerung deaktiviert.',
+        enable: 'Sie haben die Vote-Erinnerung aktiviert.'
     },
-    button: { vote: 'Vote on Top.gg' }
+    button: { vote: 'Vote auf Top.gg' }
 };
