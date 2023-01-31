@@ -1,1 +1,0 @@
-module.exports = { updated: 'Vaš je primarni jezik ažuriran na **{locale}**!' };

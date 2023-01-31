@@ -1,1 +1,0 @@
-module.exports = { success: 'Ponovno učitane sve interakcije za {ms}' };
