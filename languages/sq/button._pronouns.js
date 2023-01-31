@@ -1,1 +1,0 @@
-module.exports = { noData: 'Nuk mund të gjeja Serverin në bazën e të dhënave!' };

@@ -1,1 +1,0 @@
-module.exports = { success: 'Shihemi më vonë, {user}!' };
