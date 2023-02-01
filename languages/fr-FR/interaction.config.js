@@ -27,9 +27,9 @@ module.exports = {
         permissions: 'Manquant : {perms}',
         placeholders: 'Placeholders',
         await: {
-            channel: 'Mentionnez un salon ou envoyez l\'ID d\'un salon dans le chat.\nTaper `none` pour supprimer le salon.',
-            category: 'Mentionnez une catégorie ou envoyez l\'ID d\'une catégorie dans le chat.\nTaper `none` pour supprimer la catégorie.',
-            role: 'Mentionnez un rôle ou envoyez l\'ID d\'un rôle dans le chat.\nTaper `none` pour supprimer le rôle.',
+            channel: 'Mentionnez un salon ou envoyez l\'ID d\'un salon dans le chat.\nTaper `aucun` pour supprimer le salon.',
+            category: 'Mentionnez une catégorie ou envoyez l\'ID d\'une catégorie dans le chat.\nTaper `aucun` pour supprimer la catégorie.',
+            role: 'Mentionnez un rôle ou envoyez l\'ID d\'un rôle dans le chat.\nTaper `aucun` pour supprimer le rôle.',
             message: 'Envoyez le message qui sera utilisé en tant que {what}.',
             emote: 'Envoyez l\'émoji qui sera utilisé en tant que {what}.'
         },
@@ -55,7 +55,7 @@ module.exports = {
             text: 'Salon textuel',
             category: 'Catégorie du salon',
             role: 'Rôle',
-            emoji: 'Emote'
+            emoji: 'Émoji'
         },
         state: {
             enabled: 'Activé',
@@ -243,66 +243,66 @@ module.exports = {
                                 name: 'Rôle non vérifié CAPTCHA'
                             },
                             logging: {
-                                title: 'Logging',
-                                name: 'CAPTCHA logging Channel'
+                                title: 'Historique',
+                                name: 'Salon d\'historique du CAPTCHA'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'failed CAPTCHA role'
+                                title: 'Rôle',
+                                name: 'rôle CAPTCHA échoué'
                             },
                             color: {
-                                title: 'Page Color',
-                                name: 'Page Color',
-                                description: 'Paste a Hex color into the chat you want to use.\nWe recommend you using a color near to black with very high saturation.\nNote that the color on the Passport will always look brighter.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                                title: 'Couleur de la page',
+                                name: 'Couleur de la page',
+                                description: 'Entrez une couleur en hexadécimal dans le chat.\nIl est recommandé d\'utiliser une couleur proche du noir avec une très forte saturation.\nNotez que la couleur sur le Passeport apparaîtra toujours plus clair.\nObtenez une couleur en hexadécimal avec [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/) !',
+                                invalid: 'Cette couleur n\'est pas une couleur hexadécimale valide.\nObtenez une couleur en hexadécimal avec [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/) !'
                             }
                         }
                     }
                 }
             },
             welcomer: {
-                title: 'Welcomer',
-                name: 'Welcomer',
+                title: 'Accueil',
+                name: 'Accueil',
                 option: {
-                    channel: 'Channel: {channel}',
-                    role: 'Roles: {role}',
+                    channel: 'Salon : {channel}',
+                    role: 'Rôles : {role}',
                     message: {
-                        message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        message: 'Message : {message}',
+                        command: 'Message : utilisez `{command}`'
                     },
                     afterleaveMessage: {
-                        message: 'AL Message: {message}',
+                        message: 'AD Message : {message}',
                         // AL: After Leave - just use the first letters of your language :)
-                        command: 'AL Message: use `{command}`'
+                        command: 'AD Message : utilisez `{command}`'
                     },
-                    pings: 'Pings: {channels}',
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    pings: 'Pings : {channels}',
+                    autodelete: 'Suppression automatique : **{time}**',
+                    autodelete_never: 'jamais'
                 },
                 warnings: {
-                    afterleaveXautodelete: 'We don\'t recommend using **Auto Delete** and **Delete After Leave** simultaneously',
-                    embedXcard: 'In embed card overwrites your custom embed image'
+                    afterleaveXautodelete: 'Il n\'est pas recommandé d\'utiliser **Suppression Automatique** et **Supprimer Après Départ** simultanément',
+                    embedXcard: 'Un carton dans un embed remplacera votre image d\'embed personnalisée'
                 },
                 button: {
-                    message: 'Edit Message',
-                    imgcard: 'Edit Card',
-                    pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete',
+                    message: 'Modifier le Message',
+                    imgcard: 'Éditer le Carton',
+                    pings: 'Modifier les Salons Pings',
+                    autodelete: 'Configurer Suppression Automatique',
                     assignRolesAfterRejoin: {
-                        enable: 'Reassign Roles after Rejoin',
-                        disable: 'Disable Reassign Roles after Rejoin'
+                        enable: 'Réassigner les rôles après être revenu',
+                        disable: 'Ne pas réassigner les rôles après être revenu'
                     },
                     afterleave: {
-                        title: 'What should happen with the message if the member leaves?',
-                        selected: 'Selected',
+                        title: 'Que doit devenir ce message si la personne quitte ?',
+                        selected: 'Sélectionné',
                         option: {
-                            nothing: 'Nothing',
-                            edit: 'Edit on leave',
-                            delete: 'Delete on leave'
+                            nothing: 'Rien',
+                            edit: 'Modifier quand elle quitte',
+                            delete: 'Supprimer quand elle quitte'
                         }
                     },
-                    dm: 'DM Message',
-                    afterleave_webedit: 'After Leave Embed Editor'
+                    dm: 'Message en MP',
+                    afterleave_webedit: 'Éditeur d\'Embed Après Départ'
                 },
                 page: {
                     channel: {
