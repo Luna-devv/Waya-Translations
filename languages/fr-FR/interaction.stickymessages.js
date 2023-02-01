@@ -36,7 +36,7 @@ module.exports = {
     },
     success: {
         message: 'Votre message persistant a bien été ajouté dans {channel}.',
-        try: 'Essayez en envoyant quelques messages ici !'
+        try: 'Essayez en envoyant quelques messages dedans !'
     },
     list: {
         title: ';[message persistant, messages persistants]',
