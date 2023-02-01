@@ -340,17 +340,17 @@ module.exports = {
                         page: {
                             background: {
                                 title: 'Arrière-plan',
-                                name: 'Card Background',
-                                description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
+                                name: 'Arrière-plan du carton',
+                                description: 'Le lien doit être un **lien direct vers votre image**, il doit également être de la forme {scheme}.\nIl est recommandé d\'utiliser un ratio de {ratio} et une résolution minimale de {resolution}.'
                             }
                         }
                     },
-                    dm: { title: 'Direct Message' }
+                    dm: { title: 'Message Privé' }
                 }
             },
             byer: {
-                title: 'Byer',
-                name: 'Byer',
+                title: 'Départ',
+                name: 'Départ',
                 option: {
                     channel: 'Salon : {channel}',
                     message: {
@@ -362,37 +362,37 @@ module.exports = {
                 },
                 button: {
                     message: 'Modifier le message',
-                    autodelete: 'Set Autodelete'
+                    autodelete: 'Configurer la suppression automatique'
                 },
                 page: {
                     channel: {
                         title: 'Salon',
-                        name: 'Byer Channel'
+                        name: 'Salon des départs'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Byer Message'
+                        name: 'Message de départ'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Byer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Suppression Automatique',
+                        name: 'Suppression Automatique',
+                        description: 'Le message de départ sera supprimé après cette durée.\nIl est recommandé de définir un temps court (quelques secondes).\nExemple : `1m 3s`'
                     }
                 }
             }
         }
     },
     tickets: {
-        title: 'Configure Ticketing',
+        title: 'Configurer les tickets',
         option: {
-            channel: 'Category: {channel}',
+            channel: 'Catégorie : {channel}',
             staff: 'Staff : {role}',
-            logging: 'Logging: {channel}',
+            logging: 'Historique : {channel}',
             forceReason: 'Raison : {state}',
-            naming: 'Naming: {type}',
+            naming: 'Nommage : {type}',
             namingType: {
                 username: 'Nom d\'utilisateur',
-                userid: 'UserId',
+                userid: 'ID de l\'utilisateur',
                 random: 'Aléatoire'
             }
         },
@@ -402,8 +402,8 @@ module.exports = {
                 disable: 'Raison facultative'
             },
             logging: {
-                edit: 'Set Logging Channel',
-                set: 'Change Logging Channel'
+                edit: 'Définir le salon d\'historique',
+                set: 'Modifier le salon d\'historique'
             },
             transcript: {
                 disable: 'Disable Transcripts',
