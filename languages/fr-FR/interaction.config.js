@@ -117,12 +117,12 @@ module.exports = {
         }
     },
     logging: {
-        title: 'Configure Logging',
+        title: 'Configurer l\'historique',
         button: {
             messages: 'Messages',
-            joins: 'Joins',
-            welcomer: 'Welcoming',
-            byer: 'Bying'
+            joins: 'Arrivées',
+            welcomer: 'Accueil',
+            byer: 'Au revoir'
         },
         page: {
             messages: {
@@ -146,8 +146,8 @@ module.exports = {
                 }
             },
             joins: {
-                title: 'Joins',
-                name: 'Join Logging',
+                title: 'Arrivées',
+                name: 'Historique des arrivées',
                 option: {
                     channel: 'Salon : {channel}',
                     mode: 'Mode : {mode}',
@@ -166,8 +166,8 @@ module.exports = {
                     filter: {
                         title: 'Filtre',
                         option: {
-                            trigger: 'Age Trigger: **{trigger} days**',
-                            punishment: 'Punishment: **{type}**',
+                            trigger: 'Limite d\'âge : **{trigger} jours**',
+                            punishment: 'Sanction : **{type}**',
                             punishmentType: {
                                 ban: 'Bannir',
                                 kick: 'Expulser',
@@ -182,12 +182,12 @@ module.exports = {
                                 enable: 'Activer les notifications en MP'
                             },
                             trigger: {
-                                set: 'Set Age Trigger',
-                                edit: 'Edit Age Trigger'
+                                set: 'Définir un âge limite',
+                                edit: 'Modifier l\'âge limite'
                             },
                             punishment: {
                                 title: 'Définir une sanction',
-                                current: 'Current',
+                                current: 'Actuellement',
                                 option: {
                                     ban: 'Bannir un utilisateur',
                                     kick: 'Expulser un utilisateur',
@@ -198,9 +198,9 @@ module.exports = {
                         },
                         page: {
                             trigger: {
-                                title: 'Trigger',
-                                name: 'age requirement',
-                                description: 'If an account is younger than this age, they\'ll get punished!\nInput must be between 0 and 28 days.'
+                                title: 'Limite',
+                                name: 'âge requis',
+                                description: 'Si un compte est plus jeune que cette limite, il sera puni !\nVous pouvez entrer un âge entre 0 et 28 jours.'
                             },
                             role: {
                                 title: 'Rôle',
@@ -253,7 +253,7 @@ module.exports = {
                             color: {
                                 title: 'Couleur de la page',
                                 name: 'Couleur de la page',
-                                description: 'Entrez une couleur en hexadécimal dans le chat.\nIl est recommandé d\'utiliser une couleur proche du noir avec une très forte saturation.\nNotez que la couleur sur le Passeport apparaîtra toujours plus clair.\nObtenez une couleur en hexadécimal avec [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/) !',
+                                description: 'Entrez une couleur en hexadécimal dans le chat.\nIl est recommandé d\'utiliser une couleur proche du noir avec une très forte saturation.\nNotez que la couleur sur la page de vérification apparaîtra toujours plus clair.\nObtenez une couleur en hexadécimal avec [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/) !',
                                 invalid: 'Cette couleur n\'est pas une couleur hexadécimale valide.\nObtenez une couleur en hexadécimal avec [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/) !'
                             }
                         }
@@ -320,26 +320,26 @@ module.exports = {
                     autodelete: {
                         title: 'Suppression Automatique',
                         name: 'Suppression Automatique',
-                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        description: 'Le message d\'accueil sera supprimé après cette durée.\nIl est recommandé de définir un temps court (quelques secondes).\nExemple : `1m 3s`'
                     },
-                    dm: { button: { disable: 'Disable DM message' } },
+                    dm: { button: { disable: 'Désactiver le message en MP' } },
                     imgcard: {
-                        title: 'Card',
-                        option: { background: 'Background: {url}' },
+                        title: 'Carton',
+                        option: { background: 'Arrière-plan : {url}' },
                         button: {
                             background: {
-                                set: 'Set Custom Background',
-                                edit: 'Edit Custom Background'
+                                set: 'Définir un arrière-plan personnalisé',
+                                edit: 'Modifier l\'arrière-plan personnalisé'
                             },
-                            deleteBackground: 'Delete Background',
+                            deleteBackground: 'Supprimer l\'arrière-plan',
                             inEmbed: {
-                                enable: 'Show Image in Embed',
-                                disable: 'Don\'t Show Image in Embed'
+                                enable: 'Afficher l\'image dans un embed',
+                                disable: 'Ne pas afficher l\'image dans un embed'
                             }
                         },
                         page: {
                             background: {
-                                title: 'Background',
+                                title: 'Arrière-plan',
                                 name: 'Card Background',
                                 description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
                             }
