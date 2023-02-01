@@ -30,8 +30,8 @@ module.exports = {
             channel: 'Mentionnez un salon ou envoyez l\'ID d\'un salon dans le chat.\nTaper `none` pour supprimer le salon.',
             category: 'Mentionnez une catégorie ou envoyez l\'ID d\'une catégorie dans le chat.\nTaper `none` pour supprimer la catégorie.',
             role: 'Mentionnez un rôle ou envoyez l\'ID d\'un rôle dans le chat.\nTaper `none` pour supprimer le rôle.',
-            message: 'Send a Message which should be used as {what}.',
-            emote: 'Send an Emoji which should be used as {what}.'
+            message: 'Envoyez le message qui sera utilisé en tant que {what}.',
+            emote: 'Envoyez l\'émoji qui sera utilisé en tant que {what}.'
         },
         success: {
             set: 'Successfully set {what} to **{data}**.',
@@ -43,7 +43,7 @@ module.exports = {
             lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
             otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
             numberFail: 'The {what} is not a number between {a} and {b}!',
-            roleFail: 'This Role is only managable by either Discord or belongs to a bot user.'
+            roleFail: 'Ce rôle n\'est modifiable que par Discord ou est lié à un bot.'
         },
         webedit: {
             button: 'Editeur d\'embed',
@@ -82,12 +82,12 @@ module.exports = {
                 edit: 'Modifier le rôle'
             },
             mode: {
-                analyst: 'Analyst',
-                cozy: 'Cozy'
+                analyst: 'Analyste',
+                cozy: 'Confort'
             },
             modeChange: {
-                analyst: 'Set to Analyst',
-                cozy: 'Set to Cozy'
+                analyst: 'Définir sur Analyste',
+                cozy: 'Définir sur Confort'
             },
             dupaw: {
                 // This is a name, cannot be translated
@@ -100,8 +100,8 @@ module.exports = {
         title: 'Configurer {name}',
         option: {
             premium: {
-                text: 'Enterprise Tier {tier}',
-                buy: 'Buy Enterprise'
+                text: 'Entreprise Niveau {tier}',
+                buy: 'S\'abonner à Entreprise'
             }
         },
         button: {
@@ -173,7 +173,7 @@ module.exports = {
                                 kick: 'Expulser',
                                 timeout: 'Exclure',
                                 role: 'Assigner le rôle {role}',
-                                none: 'none'
+                                none: 'aucun'
                             }
                         },
                         button: {
@@ -203,7 +203,7 @@ module.exports = {
                                 description: 'If an account is younger than this age, they\'ll get punished!\nInput must be between 0 and 28 days.'
                             },
                             role: {
-                                title: 'Role',
+                                title: 'Rôle',
                                 name: 'rôle sanction'
                             }
                         }
@@ -217,30 +217,30 @@ module.exports = {
                             channel: 'Historique : {channel}',
                             color: 'Couleur : {color}'
                         },
-                        disclaimer: 'Continue with {command}',
+                        disclaimer: 'Continuez avec {command}',
                         button: {
                             verifiedrole: {
-                                set: 'Set Verified Role',
-                                edit: 'Edit Verified Role'
+                                set: 'Définir le rôle vérifié',
+                                edit: 'Modifier le rôle vérifié'
                             },
                             unverifiedrole: {
-                                set: 'Set Unverified Role',
-                                edit: 'Edit Unverified Role'
+                                set: 'Définir le rôle non vérifié',
+                                edit: 'Modifier le rôle non vérifié'
                             },
                             type: {
-                                title: 'Set a CAPTCHA type',
-                                selected: 'Selected'
+                                title: 'Définir un type de CAPTCHA',
+                                selected: 'Sélectionné'
                             },
-                            color: 'Change Page Color'
+                            color: 'Changer la couleur de la page'
                         },
                         page: {
                             verifiedrole: {
-                                title: 'Verified Role',
-                                name: 'CAPTCHA verified Role'
+                                title: 'Rôle vérifié',
+                                name: 'Rôle vérifié CAPTCHA'
                             },
                             unverifiedrole: {
-                                title: 'Unverifiedrole Role',
-                                name: 'CAPTCHA unverifiedrole Role'
+                                title: 'Rôle non vérifié',
+                                name: 'Rôle non vérifié CAPTCHA'
                             },
                             logging: {
                                 title: 'Logging',
