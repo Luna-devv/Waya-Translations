@@ -242,8 +242,8 @@ module.exports = {
                                 name: "CAPTCHA verified Role",
                             },
                             unverifiedrole: {
-                                title: "Unverifiedrole Role",
-                                name: "CAPTCHA unverifiedrole Role",
+                                title: "Unverified Role",
+                                name: "CAPTCHA unverified Role",
                             },
                             logging: {
                                 title: "Logging",
