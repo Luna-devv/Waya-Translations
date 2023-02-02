@@ -305,7 +305,7 @@ module.exports = {
                             delete: "Delete on leave",
                         },
                     },
-                    dm_webedit: "DM Message Embed Editor",
+                    dm: "DM Message",
                     afterleave_webedit: "After Leave Embed Editor",
                 },
                 page: {
@@ -355,6 +355,9 @@ module.exports = {
                             },
                         },
                     },
+                    dm: {
+                        title: "Direct Message"
+                    }
                 },
             },
 
