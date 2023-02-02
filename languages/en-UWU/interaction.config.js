@@ -1,5 +1,4 @@
 /*
-    \' is here to escape the character so the string doesn't end
     Do NOT edit things like {} since these are placeholders,
     \n are new lines
 */
@@ -27,9 +26,9 @@ module.exports = {
         permissions: 'Missing: {perms}',
         placeholders: 'Pwacehowdews',
         await: {
-            channel: 'Mention a Channyew ow paste the Channyew ID into the chat.\nType `none` to wemuv the channyew.',
-            category: 'Mention a Categowy ow paste the Categowy ID into the chat.\nType `none` to wemuv the categowy.',
-            role: 'Mention a wowe ow paste the wowe ID into the chat.\nType `none` to wemuv the wowe.',
+            channel: 'Mention a Channyew ow paste the Channyew Id into the chat.\nType {string} to wemuv the channyew.',
+            category: 'Mention a Categowy ow paste the Categowy Id into the chat.\nType {string} to wemuv the categowy.',
+            role: 'Mention a wowe ow paste the wowe Id into the chat.\nType {string} to wemuv the wowe.',
             message: 'Send a Message which shouwd be used as {what}.',
             emote: 'Send an Emoji which shouwd be used as {what}.'
         },
@@ -239,8 +238,8 @@ module.exports = {
                                 name: 'CAPTCHA vewified Wowe'
                             },
                             unverifiedrole: {
-                                title: 'Unvewifiedwowe Wowe',
-                                name: 'CAPTCHA unvewifiedwowe Wowe'
+                                title: 'Unvewified Wowe',
+                                name: 'CAPTCHA unvewified Wowe'
                             },
                             logging: {
                                 title: 'Wogging',
@@ -345,7 +344,7 @@ module.exports = {
                             }
                         }
                     },
-                    dm: { title: 'Direct Message' }
+                    dm: { title: 'Diwect Message' }
                 }
             },
             byer: {
