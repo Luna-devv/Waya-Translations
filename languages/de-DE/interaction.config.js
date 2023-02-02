@@ -1,5 +1,4 @@
 /*
-    \' is here to escape the character so the string doesn't end
     Do NOT edit things like {} since these are placeholders,
     \n are new lines
 */
@@ -27,9 +26,9 @@ module.exports = {
         permissions: 'Fehlt: {perms}',
         placeholders: 'Platzhalter',
         await: {
-            channel: 'Erwähne einen Channel oder sende die Id in den Chat.\nSchreibe `none`, um den Channel zu entfernen.',
-            category: 'Erwähne eine Kategorie oder sende die Id in den Chat.\nSchreibe `none`, um die Kategorie zu entfernen.',
-            role: 'Erwähne eine Rolle oder sende die Id in den Chat.\nSchreibe `none`, um die Rolle zu entfernen.',
+            channel: 'Erwähne einen Channel oder sende die Id in den Chat.\nSchreibe {string}, um den Channel zu entfernen.',
+            category: 'Erwähne eine Kategorie oder sende die Id in den Chat.\nSchreibe {string}, um die Kategorie zu entfernen.',
+            role: 'Erwähne eine Rolle oder sende die Id in den Chat.\nSchreibe {string}, um die Rolle zu entfernen.',
             message: 'Sende eine Nachricht, die als {what} benutzt werden soll.',
             emote: 'Sende ein Emoji, welches als {what} benutzt werden soll.'
         },
@@ -301,7 +300,7 @@ module.exports = {
                             delete: 'Beim Verlassen löschen'
                         }
                     },
-                    dm: 'DM Message',
+                    dm: 'PN Nachricht',
                     afterleave_webedit: 'Nach Verlassen Embed Editor'
                 },
                 page: {
@@ -345,7 +344,7 @@ module.exports = {
                             }
                         }
                     },
-                    dm: { title: 'Direct Message' }
+                    dm: { title: 'Privatnachricht' }
                 }
             },
             byer: {
