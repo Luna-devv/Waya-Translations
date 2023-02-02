@@ -1,5 +1,4 @@
 /*
-    \' is here to escape the character so the string doesn't end
     Do NOT edit things like {} since these are placeholders,
     \n are new lines
 */
@@ -27,9 +26,9 @@ module.exports = {
         permissions: 'Mancanti: {perms}',
         placeholders: 'Segnaposti',
         await: {
-            channel: 'Menziona un canale o incolla l\'ID del canale nella chat.\nDigita `none` per rimuovere il canale.',
-            category: 'Menziona un canale o incolla l\'ID del canale nella chat.\nDigita `none` per rimuovere il canale.',
-            role: 'Menziona un ruolo o incolla l\'ID ruolo nella chat.\nDigita `none` per rimuovere il ruolo.',
+            channel: 'Menziona un canale o incolla l\'Id del canale nella chat.\nDigita {string} per rimuovere il canale.',
+            category: 'Menziona una categoria o incolla l\'Id della categoria nella chat.\nDigita {string} per rimuovere la categoria.',
+            role: 'Menziona un ruolo o incolla l\'Id del ruolo nella chat.\nDigita {string} per rimuovere il ruolo.',
             message: 'Invia un messaggio che dovrebbe essere usato come {what}.',
             emote: 'Invia un Emoji che dovrebbe essere usato come {what}.'
         },
@@ -301,7 +300,7 @@ module.exports = {
                             delete: 'Elimina a abbandono'
                         }
                     },
-                    dm: 'DM Message',
+                    dm: 'Messaggio DM',
                     afterleave_webedit: 'Editore Embed dopo l\'abbandono'
                 },
                 page: {
@@ -345,7 +344,7 @@ module.exports = {
                             }
                         }
                     },
-                    dm: { title: 'Direct Message' }
+                    dm: { title: 'Messaggio diretto' }
                 }
             },
             byer: {
