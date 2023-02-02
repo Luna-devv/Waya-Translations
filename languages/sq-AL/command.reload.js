@@ -1,0 +1,1 @@
+module.exports = { success: 'Rifreskoi të gjitha ndërveprimet në {ms}' };
