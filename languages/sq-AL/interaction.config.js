@@ -1,5 +1,4 @@
 /*
-    \' is here to escape the character so the string doesn't end
     Do NOT edit things like {} since these are placeholders,
     \n are new lines
 */
@@ -27,9 +26,9 @@ module.exports = {
         permissions: 'Mungon: {perms}',
         placeholders: 'Vendmbajtësi',
         await: {
-            channel: 'Përmendni një kanal ose ngjisni ID-në e kanalit në bisedë.\nShkruani "asnjë" për të hequr kanalin.',
-            category: 'Përmendni një kanal ose ngjisni ID-në e kanalit në bisedë.\nShkruani "asnjë" për të hequr kanalin.',
-            role: 'Përmendni një rol ose ngjitni ID-në e rolit në bisedë.\nShkruani "asnjë" për të hequr rolin.',
+            channel: 'Mention a Channel or paste the Channel Id into the chat.\nType {string} to remove the channel.',
+            category: 'Mention a Category or paste the Category Id into the chat.\nType {string} to remove the category.',
+            role: 'Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.',
             message: 'Dërgoni një Mesazh i cili duhet të përdoret si {what}.',
             emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.'
         },
