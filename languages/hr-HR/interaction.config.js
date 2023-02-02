@@ -1,5 +1,4 @@
 /*
-    \' is here to escape the character so the string doesn't end
     Do NOT edit things like {} since these are placeholders,
     \n are new lines
 */
@@ -27,9 +26,9 @@ module.exports = {
         permissions: 'Nedostaje: {perms}',
         placeholders: 'Predlošci',
         await: {
-            channel: 'Spomenute kanal ili zalijepite ID kanala u chat.\nUpišite `none` da biste uklonili kanal.',
-            category: 'Spomenute kategoriju ili zalijepite ID kategorije u chat.\nUpišite `none` da biste uklonili kategoriju.',
-            role: 'Spomenute ulogu ili zalijepite ID uloge u chat.\nUpišite `none` da biste uklonili ulogu.',
+            channel: 'Mention a Channel or paste the Channel Id into the chat.\nType {string} to remove the channel.',
+            category: 'Mention a Category or paste the Category Id into the chat.\nType {string} to remove the category.',
+            role: 'Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.',
             message: 'Pošaljite poruku koju treba koristiti kao {what}.',
             emote: 'Pošaljite emoji koji se treba koristiti kao {what}.'
         },
@@ -239,8 +238,8 @@ module.exports = {
                                 name: 'CAPTCHA verified Role'
                             },
                             unverifiedrole: {
-                                title: 'Unverifiedrole Role',
-                                name: 'CAPTCHA unverifiedrole Role'
+                                title: 'Unverified Role',
+                                name: 'CAPTCHA unverified Role'
                             },
                             logging: {
                                 title: 'Logging',
