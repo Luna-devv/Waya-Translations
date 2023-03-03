@@ -26,9 +26,9 @@ module.exports = {
         permissions: 'Mungon: {perms}',
         placeholders: 'Vendmbajtësi',
         await: {
-            channel: 'Mention a Channel or paste the Channel Id into the chat.\nType {string} to remove the channel.',
-            category: 'Mention a Category or paste the Category Id into the chat.\nType {string} to remove the category.',
-            role: 'Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.',
+            channel: 'Përmendni një kanal ose ngjisni Id-në e kanalit në bisedë.\nShkruani {string} për të hequr kanalin.',
+            category: 'Përmendni një kategori ose ngjisni Id-në e kategorisë në bisedë.\nShkruani {string} për të hequr kategorinë.',
+            role: 'Përmendni një rol ose ngjitni Id-në e rolit në bisedë.\nShkruani {string} për të hequr rolin.',
             message: 'Dërgoni një Mesazh i cili duhet të përdoret si {what}.',
             emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.'
         },
@@ -260,30 +260,30 @@ module.exports = {
                 }
             },
             welcomer: {
-                title: 'Welcomer',
-                name: 'Welcomer',
+                title: 'Mikpritës',
+                name: 'Mikpritës',
                 option: {
-                    channel: 'Channel: {channel}',
-                    role: 'Roles: {role}',
+                    channel: 'Kanali: {channel}',
+                    role: 'Rolet: {role}',
                     message: {
-                        message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        message: 'Mesazhi: {message}',
+                        command: 'Mesazhi: përdorni `{command}`'
                     },
                     afterleaveMessage: {
-                        message: 'AL Message: {message}',
+                        message: 'Mesazhi AL: {message}',
                         // AL: After Leave - just use the first letters of your language :)
-                        command: 'AL Message: use `{command}`'
+                        command: 'Mesazhi AL: përdorni `{command}`'
                     },
-                    pings: 'Pings: {channels}',
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    pings: 'Ping: {channels}',
+                    autodelete: 'Fshij automatikisht: **{time}**',
+                    autodelete_never: 'kurrë'
                 },
                 warnings: {
-                    afterleaveXautodelete: 'We don\'t recommend using **Auto Delete** and **Delete After Leave** simultaneously',
-                    embedXcard: 'In embed card overwrites your custom embed image'
+                    afterleaveXautodelete: 'Ne nuk rekomandojmë përdorimin e **Fshij automatik** dhe **Fshi pas largimit** njëkohësisht',
+                    embedXcard: 'Karta në embed mbishkruan imazhin tuaj të personalizuar të ngulitjes'
                 },
                 button: {
-                    message: 'Edit Message',
+                    message: 'Redakto mesazhin',
                     imgcard: 'Edit Card',
                     pings: 'Edit Ping Channels',
                     autodelete: 'Set Autodelete',
