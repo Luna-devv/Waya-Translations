@@ -40,8 +40,8 @@ module.exports = {
     },
     likes: {
         add: 'Like',
-        remove: 'Liked',
-        added: 'You have liked {user}\'s profile. They now have {num} ;[like, likes] :3',
-        removed: 'You no longer like {user}\'s profile.'
+        remove: 'Geliked',
+        added: 'Du hast das Profil von {user} geliket. Sie hat jetzt {num} ;[like, likes] :3',
+        removed: 'Dir gefällt das Profil von {user} nicht mehr.'
     }
 };
