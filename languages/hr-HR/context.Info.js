@@ -37,5 +37,11 @@ module.exports = {
             kick: 'Uspješno izbačen {user} iz {guild}.',
             timeout: 'Uspješno utišan {user} u {guild}.'
         }
+    },
+    likes: {
+        add: 'Like',
+        remove: 'Liked',
+        added: 'You have liked {user}\'s profile. They now have {num} ;[like, likes] :3',
+        removed: 'You no longer like {user}\'s profile.'
     }
 };
