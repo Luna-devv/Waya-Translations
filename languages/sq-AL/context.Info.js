@@ -42,6 +42,6 @@ module.exports = {
         add: 'Pelqej',
         remove: 'Pëlqyer',
         added: 'Ju keni pëlqyer profilin e {user}. Ata tani kanë {num} ;[like, like] :3',
-        removed: 'You no longer like {user}\'s profile.'
+        removed: 'Nuk të pëlqen më profili i {user}.'
     }
 };
