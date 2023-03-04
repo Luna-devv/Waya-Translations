@@ -39,9 +39,9 @@ module.exports = {
         }
     },
     likes: {
-        add: 'Like',
-        remove: 'Liked',
-        added: 'You have liked {user}\'s profile. They now have {num} ;[like, likes] :3',
-        removed: 'You no longer like {user}\'s profile.'
+        add: 'Mi piace',
+        remove: 'Piaciuto',
+        added: 'Ti è piaciuto il profilo di {user}. Ora hanno {num} ;[piace, mi piace] :3',
+        removed: 'Non ti piace più il profilo di {user}.'
     }
 };
