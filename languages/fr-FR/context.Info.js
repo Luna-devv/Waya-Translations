@@ -37,5 +37,11 @@ module.exports = {
             kick: '{user} a bien été expulsé du serveur {guild}.',
             timeout: '{user} a bien été exclu du serveur {guild}.'
         }
+    },
+    likes: {
+        add: 'Like',
+        remove: 'Liked',
+        added: 'You have liked {user}\'s profile. They now have {num} ;[like, likes] :3',
+        removed: 'You no longer like {user}\'s profile.'
     }
 };
