@@ -37,5 +37,11 @@ module.exports = {
             kick: 'Successfuwwy kicked {user} fwom {guild}.',
             timeout: 'Successfuwwy timed {user} out in {guild}.'
         }
+    },
+    likes: {
+        add: 'Like',
+        remove: 'Liked',
+        added: 'You have liked {user}\'s profile. They now have {num} ;[like, likes] :3',
+        removed: 'You no longer like {user}\'s profile.'
     }
 };
