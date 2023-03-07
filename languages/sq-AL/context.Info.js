@@ -40,8 +40,9 @@ module.exports = {
     },
     likes: {
         add: 'Pelqej',
-        remove: 'Pëlqyer',
+        remove: 'Dislike',
         added: 'Ju keni pëlqyer profilin e {user}. Ata tani kanë {num} ;[like, like] :3',
-        removed: 'Nuk të pëlqen më profili i {user}.'
+        removed: 'Nuk të pëlqen më profili i {user}.',
+        dm: '{emote} Congratulations, {name}!\n\nWe have some fantastic news to share with you! Your {bot} profile has reached an incredible {num} likes! You\'re clearly doing something right because people just can\'t get enough of you!\n\nSo let\'s keep the momentum going and spread the love! Tell everyone to invite {bot} by sending them {link} and make sure to use the {command} followed by your username to heart 💖 your profile!\n\nThank you for being such a fantastic part of our community!\n\nCheers,\n{bot} '
     }
 };
