@@ -1,4 +1,4 @@
 module.exports = {
-    result: 'result',
-    tooLong: 'The result is too long.. The result can be seen in the attached file.'
+    result: 'eaganios',
+    tooLong: 'Is ageabnis isch zi leng... Di Evalurierung konnsch in da unghengtn Datei segn.'
 };
