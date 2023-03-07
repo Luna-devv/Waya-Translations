@@ -40,8 +40,9 @@ module.exports = {
     },
     likes: {
         add: 'Like',
-        remove: 'Geliked',
+        remove: 'Dislike',
         added: 'Du hast das Profil von {user} geliket. Sie hat jetzt {num} ;[like, likes] :3',
-        removed: 'Dir gefällt das Profil von {user} nicht mehr.'
+        removed: 'Dir gefällt das Profil von {user} nicht mehr.',
+        dm: '{emote} Glückwunsch, {name}!\n\nWir haben einige fantastische Neuigkeiten mit dir zu teilen! Dein {bot} Profil hat unglaubliche {num} Gefällt mir! Du machst eindeutig etwas richtig, weil die Leute einfach nicht genug von dir bekommen!\n\nAlso lass uns den Schwung halten und die Liebe verbreiten! Sag allen {bot} einzuladen, indem du ihnen {link} schickst und stelle sicher, dass du {command} gefolgt von deinem Benutzernamen um dein Profiel zu Herzen 💖!\n\nVielen Dank, dass du ein so fantastischer Teil unserer Community bist!\n\nGrüße,\n{bot} '
     }
 };
