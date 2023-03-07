@@ -40,8 +40,9 @@ module.exports = {
     },
     likes: {
         add: 'Mi piace',
-        remove: 'Piaciuto',
+        remove: 'Dislike',
         added: 'Ti è piaciuto il profilo di {user}. Ora hanno {num} ;[piace, mi piace] :3',
-        removed: 'Non ti piace più il profilo di {user}.'
+        removed: 'Non ti piace più il profilo di {user}.',
+        dm: '{emote} Congratulations, {name}!\n\nWe have some fantastic news to share with you! Your {bot} profile has reached an incredible {num} likes! You\'re clearly doing something right because people just can\'t get enough of you!\n\nSo let\'s keep the momentum going and spread the love! Tell everyone to invite {bot} by sending them {link} and make sure to use the {command} followed by your username to heart 💖 your profile!\n\nThank you for being such a fantastic part of our community!\n\nCheers,\n{bot} '
     }
 };
