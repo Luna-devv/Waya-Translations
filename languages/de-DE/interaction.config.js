@@ -30,7 +30,8 @@ module.exports = {
             category: 'Erwähne eine Kategorie oder sende die Id in den Chat.\nSchreibe {string}, um die Kategorie zu entfernen.',
             role: 'Erwähne eine Rolle oder sende die Id in den Chat.\nSchreibe {string}, um die Rolle zu entfernen.',
             message: 'Sende eine Nachricht, die als {what} benutzt werden soll.',
-            emote: 'Sende ein Emoji, welches als {what} benutzt werden soll.'
+            emote: 'Sende ein Emoji, welches als {what} benutzt werden soll.',
+            patient: 'Enabling this might take a few seconds, please wait..'
         },
         success: {
             set: 'Erfolgreich {what} auf **{data}** gesetzt.',
@@ -301,7 +302,8 @@ module.exports = {
                         }
                     },
                     dm: 'PN Nachricht',
-                    afterleave_webedit: 'Nach Verlassen Embed Editor'
+                    afterleave_webedit: 'Nach Verlassen Embed Editor',
+                    wave: 'Wave Button'
                 },
                 page: {
                     channel: {
@@ -344,7 +346,21 @@ module.exports = {
                             }
                         }
                     },
-                    dm: { title: 'Privatnachricht' }
+                    dm: { title: 'Privatnachricht' },
+                    wavebtn: {
+                        title: 'Wave to say hi',
+                        option: { send: 'Send: {type}' },
+                        button: {
+                            type: {
+                                title: 'Select a response type',
+                                option: {
+                                    '0': 'Random Sticker',
+                                    '1': 'Custom Message'
+                                }
+                            }
+                        },
+                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                    }
                 }
             },
             byer: {
