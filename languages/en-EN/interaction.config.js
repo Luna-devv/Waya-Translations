@@ -32,6 +32,7 @@ module.exports = {
             role: "Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.",
             message: "Send a Message which should be used as {what}.",
             emote: "Send an Emoji which should be used as {what}.",
+            patient: "Enabling this might take a few seconds, please wait.."
         },
         success: {
             set: "Successfully set {what} to **{data}**.",
@@ -306,6 +307,7 @@ module.exports = {
                     },
                     dm: "DM Message",
                     afterleave_webedit: "After Leave Embed Editor",
+                    wave: "Wave Button"
                 },
                 page: {
                     channel: {
@@ -356,6 +358,24 @@ module.exports = {
                     },
                     dm: {
                         title: "Direct Message"
+                    },
+                    wavebtn: {
+                        title: "Wave to say hi",
+                        option: {
+                            send: "Send: {type}"
+                        },
+                        button: {
+                            type: {
+                                title: 'Select a response type',
+                                option: {
+                                    '0': "Random Sticker",
+                                    '1': "Custom Message"
+                                }
+                            }
+                        },
+                        warnings: {
+                            channelMissmatch: "Channel of the webhook is different than the greet message."
+                        }
                     }
                 },
             },
