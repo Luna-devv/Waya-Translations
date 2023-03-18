@@ -30,7 +30,8 @@ module.exports = {
             category: 'Menziona una categoria o incolla l\'Id della categoria nella chat.\nDigita {string} per rimuovere la categoria.',
             role: 'Menziona un ruolo o incolla l\'Id del ruolo nella chat.\nDigita {string} per rimuovere il ruolo.',
             message: 'Invia un messaggio che dovrebbe essere usato come {what}.',
-            emote: 'Invia un Emoji che dovrebbe essere usato come {what}.'
+            emote: 'Invia un Emoji che dovrebbe essere usato come {what}.',
+            patient: 'Enabling this might take a few seconds, please wait..'
         },
         success: {
             set: 'Impostato {what} a **{data}** con successo.',
@@ -301,7 +302,8 @@ module.exports = {
                         }
                     },
                     dm: 'Messaggio DM',
-                    afterleave_webedit: 'Editore Embed dopo l\'abbandono'
+                    afterleave_webedit: 'Editore Embed dopo l\'abbandono',
+                    wave: 'Wave Button'
                 },
                 page: {
                     channel: {
@@ -344,7 +346,21 @@ module.exports = {
                             }
                         }
                     },
-                    dm: { title: 'Messaggio diretto' }
+                    dm: { title: 'Messaggio diretto' },
+                    wavebtn: {
+                        title: 'Wave to say hi',
+                        option: { send: 'Send: {type}' },
+                        button: {
+                            type: {
+                                title: 'Select a response type',
+                                option: {
+                                    '0': 'Random Sticker',
+                                    '1': 'Custom Message'
+                                }
+                            }
+                        },
+                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                    }
                 }
             },
             byer: {
