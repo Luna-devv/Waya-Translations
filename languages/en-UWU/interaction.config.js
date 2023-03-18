@@ -30,7 +30,8 @@ module.exports = {
             category: 'Mention a Categowy ow paste the Categowy Id into the chat.\nType {string} to wemuv the categowy.',
             role: 'Mention a wowe ow paste the wowe Id into the chat.\nType {string} to wemuv the wowe.',
             message: 'Send a Message which shouwd be used as {what}.',
-            emote: 'Send an Emoji which shouwd be used as {what}.'
+            emote: 'Send an Emoji which shouwd be used as {what}.',
+            patient: 'Enabling this might take a few seconds, please wait..'
         },
         success: {
             set: 'Successfuwwy set {what} to **{data}** qwq',
@@ -301,7 +302,8 @@ module.exports = {
                         }
                     },
                     dm: 'DM Message',
-                    afterleave_webedit: 'Aftew Weave Embed Editow'
+                    afterleave_webedit: 'Aftew Weave Embed Editow',
+                    wave: 'Wave Button'
                 },
                 page: {
                     channel: {
@@ -344,7 +346,21 @@ module.exports = {
                             }
                         }
                     },
-                    dm: { title: 'Diwect Message' }
+                    dm: { title: 'Diwect Message' },
+                    wavebtn: {
+                        title: 'Wave to say hi',
+                        option: { send: 'Send: {type}' },
+                        button: {
+                            type: {
+                                title: 'Select a response type',
+                                option: {
+                                    '0': 'Random Sticker',
+                                    '1': 'Custom Message'
+                                }
+                            }
+                        },
+                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                    }
                 }
             },
             byer: {
