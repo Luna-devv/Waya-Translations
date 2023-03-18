@@ -30,7 +30,8 @@ module.exports = {
             category: 'Mention a Category or paste the Category Id into the chat.\nType {string} to remove the category.',
             role: 'Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.',
             message: 'Pošaljite poruku koju treba koristiti kao {what}.',
-            emote: 'Pošaljite emoji koji se treba koristiti kao {what}.'
+            emote: 'Pošaljite emoji koji se treba koristiti kao {what}.',
+            patient: 'Enabling this might take a few seconds, please wait..'
         },
         success: {
             set: '{what} je uspješno postavljeno na **{data}**.',
@@ -301,7 +302,8 @@ module.exports = {
                         }
                     },
                     dm: 'DM Message',
-                    afterleave_webedit: 'After Leave Embed Editor'
+                    afterleave_webedit: 'After Leave Embed Editor',
+                    wave: 'Wave Button'
                 },
                 page: {
                     channel: {
@@ -344,7 +346,21 @@ module.exports = {
                             }
                         }
                     },
-                    dm: { title: 'Direct Message' }
+                    dm: { title: 'Direct Message' },
+                    wavebtn: {
+                        title: 'Wave to say hi',
+                        option: { send: 'Send: {type}' },
+                        button: {
+                            type: {
+                                title: 'Select a response type',
+                                option: {
+                                    '0': 'Random Sticker',
+                                    '1': 'Custom Message'
+                                }
+                            }
+                        },
+                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                    }
                 }
             },
             byer: {
