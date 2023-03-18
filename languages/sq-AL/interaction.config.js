@@ -30,7 +30,8 @@ module.exports = {
             category: 'Përmendni një kategori ose ngjisni Id-në e kategorisë në bisedë.\nShkruani {string} për të hequr kategorinë.',
             role: 'Përmendni një rol ose ngjitni Id-në e rolit në bisedë.\nShkruani {string} për të hequr rolin.',
             message: 'Dërgoni një Mesazh i cili duhet të përdoret si {what}.',
-            emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.'
+            emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.',
+            patient: 'Enabling this might take a few seconds, please wait..'
         },
         success: {
             set: 'U vendos me sukses {what} në **{data}**.',
@@ -301,7 +302,8 @@ module.exports = {
                         }
                     },
                     dm: 'Mesazh DM',
-                    afterleave_webedit: 'Pas largimit nga Redaktori i Embed'
+                    afterleave_webedit: 'Pas largimit nga Redaktori i Embed',
+                    wave: 'Wave Button'
                 },
                 page: {
                     channel: {
@@ -344,7 +346,21 @@ module.exports = {
                             }
                         }
                     },
-                    dm: { title: 'Mesazh direkt' }
+                    dm: { title: 'Mesazh direkt' },
+                    wavebtn: {
+                        title: 'Wave to say hi',
+                        option: { send: 'Send: {type}' },
+                        button: {
+                            type: {
+                                title: 'Select a response type',
+                                option: {
+                                    '0': 'Random Sticker',
+                                    '1': 'Custom Message'
+                                }
+                            }
+                        },
+                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                    }
                 }
             },
             byer: {
