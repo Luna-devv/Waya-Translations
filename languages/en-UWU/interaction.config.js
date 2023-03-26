@@ -31,7 +31,7 @@ module.exports = {
             role: 'Mention a wowe ow paste the wowe Id into the chat.\nType {string} to wemuv the wowe.',
             message: 'Send a Message which shouwd be used as {what}.',
             emote: 'Send an Emoji which shouwd be used as {what}.',
-            patient: 'Enabling this might take a few seconds, please wait..'
+            patient: 'Enyabwing this might take a few seconds, pwease wait..'
         },
         success: {
             set: 'Successfuwwy set {what} to **{data}** qwq',
@@ -348,18 +348,18 @@ module.exports = {
                     },
                     dm: { title: 'Diwect Message' },
                     wavebtn: {
-                        title: 'Wave to say hi',
+                        title: 'Wave to say heyy',
                         option: { send: 'Send: {type}' },
                         button: {
                             type: {
-                                title: 'Select a response type',
+                                title: 'Sewect a wesponse type',
                                 option: {
-                                    '0': 'Random Sticker',
+                                    '0': 'Wandom Stickew',
                                     '1': 'Custom Message'
                                 }
                             }
                         },
-                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                        warnings: { channelMissmatch: 'Channyew of the webhook is diffewent than the gweet message.' }
                     }
                 }
             },
