@@ -31,7 +31,7 @@ module.exports = {
             role: 'Erwähne eine Rolle oder sende die Id in den Chat.\nSchreibe {string}, um die Rolle zu entfernen.',
             message: 'Sende eine Nachricht, die als {what} benutzt werden soll.',
             emote: 'Sende ein Emoji, welches als {what} benutzt werden soll.',
-            patient: 'Enabling this might take a few seconds, please wait..'
+            patient: 'Aktivieren kann ein paar Sekunden dauern, bitte warten..'
         },
         success: {
             set: 'Erfolgreich {what} auf **{data}** gesetzt.',
@@ -348,18 +348,18 @@ module.exports = {
                     },
                     dm: { title: 'Privatnachricht' },
                     wavebtn: {
-                        title: 'Wave to say hi',
-                        option: { send: 'Send: {type}' },
+                        title: 'Winke, um Hallo zu sagen',
+                        option: { send: 'Sende: {type}' },
                         button: {
                             type: {
-                                title: 'Select a response type',
+                                title: 'Antwortstyp auswählen',
                                 option: {
-                                    '0': 'Random Sticker',
-                                    '1': 'Custom Message'
+                                    '0': 'Zufälliger Sticker',
+                                    '1': 'Eigene Nachricht'
                                 }
                             }
                         },
-                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                        warnings: { channelMissmatch: 'Der Kanal der Webhook ist anders als der Willkommenskanal.' }
                     }
                 }
             },
