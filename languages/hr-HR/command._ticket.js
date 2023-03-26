@@ -1,9 +1,9 @@
 module.exports = {
-    noMember: 'Please provide a valid member as argument.',
-    add: { success: '{user} has been successfully added to this Ticket!' },
-    remove: { success: '{user} has been successfully removed from this Ticket!' },
+    noMember: 'Navedite važećeg člana kao argument.',
+    add: { success: '{user} je uspješno dodan ovoj ulaznici!' },
+    remove: { success: '{user} je uspješno uklonjen s ove ulaznice!' },
     claim: {
-        already: ';[{user} is, You are] already handling this ticket!',
-        success: 'You have successfully transfared the ticket to {user}!'
+        already: ';[{user} već upravlja, Vi već upravljate] ovom kartom!',
+        success: 'Uspješno ste prenijeli ulaznicu korisniku {user}!'
     }
 };
