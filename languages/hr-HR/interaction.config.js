@@ -26,19 +26,19 @@ module.exports = {
         permissions: 'Nedostaje: {perms}',
         placeholders: 'Predlošci',
         await: {
-            channel: 'Mention a Channel or paste the Channel Id into the chat.\nType {string} to remove the channel.',
-            category: 'Mention a Category or paste the Category Id into the chat.\nType {string} to remove the category.',
-            role: 'Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.',
+            channel: 'Spomenite kanal ili zalijepite Id kanala u chat.\nUpišite {string} za uklanjanje kanala.',
+            category: 'Spomenite kategoriju ili zalijepite Id kategorije u chat.\nUpišite {string} za uklanjanje kategorije.',
+            role: 'Spomenite ulogu ili zalijepite Id uloge u chat.\nUpišite {string} da biste uklonili ulogu.',
             message: 'Pošaljite poruku koju treba koristiti kao {what}.',
             emote: 'Pošaljite emoji koji se treba koristiti kao {what}.',
-            patient: 'Enabling this might take a few seconds, please wait..'
+            patient: 'Omogućavanje ovoga može potrajati nekoliko sekundi, pričekajte..'
         },
         success: {
             set: '{what} je uspješno postavljeno na **{data}**.',
-            add: 'Successfully add {what} to **{data}**.',
+            add: 'Uspješno dodan {what} u **{data}**.',
             setCodeblock: '{what} je uspješno postavljeno na {data}',
             removed: 'Uspješno uklonjeno {what}.',
-            remove: 'Successfully remove {what} from **{data}**.',
+            remove: 'Uspješno uklonjen {what} iz **{data}**.',
             fail: 'Ovo {what} ne postoji u ovom serveru..',
             lengthFail: '{what} je duži od {max} znakova! ({length} znakova, {relative} previše)',
             otherLengthFail: '{what} kraći je od {min} znakova! ({length} znakova, {relative} previše manje)',
@@ -46,16 +46,16 @@ module.exports = {
             roleFail: 'Ovom ulogom može upravljati samo Discord ili pripada korisniku bota.'
         },
         webedit: {
-            button: 'Embed Editor',
-            title: 'Message Web Edit',
-            description: 'Open [this Website]({url}) to start editing the message & embed.',
-            open: 'Open Web Edit'
+            button: 'Embed uređivač',
+            title: 'Web Edit Poruke',
+            description: 'Otvorite [ovo web mjesto]({url}) da biste započeli s uređivanjem poruke i embeda.',
+            open: 'Otvorite Web Edit'
         },
         type: {
             text: 'Tekstualni kanal',
             category: 'Kanal kategorije',
             role: 'Uloga',
-            emoji: 'Emote'
+            emoji: 'Emoji'
         },
         state: {
             enabled: 'Omogućeno',
@@ -86,8 +86,8 @@ module.exports = {
                 cozy: 'Udobno'
             },
             modeChange: {
-                analyst: 'Set to Analyst',
-                cozy: 'Set to Cozy'
+                analyst: 'Postavite na Analitičar',
+                cozy: 'Postavite na Ugodno'
             },
             dupaw: {
                 // This is a name, cannot be translated
@@ -100,7 +100,7 @@ module.exports = {
         title: 'Konfiguriraj {name}',
         option: {
             premium: {
-                text: 'Enterprise Tier {tier}',
+                text: 'Enterprise Tir {tier}',
                 buy: 'Kupite Enterprise'
             }
         },
@@ -134,8 +134,8 @@ module.exports = {
                 },
                 button: {
                     snipe: {
-                        enable: 'Enable Snipe',
-                        disable: 'Disable Snipe'
+                        enable: 'Omogući Snipe',
+                        disable: 'Onemogući Snipe'
                     }
                 },
                 page: {
@@ -156,7 +156,7 @@ module.exports = {
                 },
                 button: {
                     filter: 'Filter',
-                    captcha: 'CAPTCHA Verification'
+                    captcha: 'CAPTCHA provjera'
                 },
                 page: {
                     channel: {
@@ -171,7 +171,7 @@ module.exports = {
                             punishmentType: {
                                 ban: 'Banaj',
                                 kick: 'Izbaci',
-                                timeout: 'Timeout',
+                                timeout: 'Pauza',
                                 role: 'Dodijelite ulogu {role}',
                                 none: 'prazno'
                             }
@@ -212,49 +212,49 @@ module.exports = {
                         title: 'CAPTCHA',
                         name: 'CAPTCHA',
                         option: {
-                            verifiedrole: 'Verified Role: {role}',
-                            unverifiedrole: 'Unverified Role: {role}',
-                            channel: 'Logging: {channel}',
+                            verifiedrole: 'Potvrđena uloga: {role}',
+                            unverifiedrole: 'Nepotvrđena uloga: {role}',
+                            channel: 'Bilježenje: {channel}',
                             color: 'Color: {color}'
                         },
-                        disclaimer: 'Continue with {command}',
+                        disclaimer: 'Nastavite s {command}',
                         button: {
                             verifiedrole: {
-                                set: 'Set Verified Role',
-                                edit: 'Edit Verified Role'
+                                set: 'Postavite potvrđenu ulogu',
+                                edit: 'Uredi potvrđenu ulogu'
                             },
                             unverifiedrole: {
-                                set: 'Set Unverified Role',
-                                edit: 'Edit Unverified Role'
+                                set: 'Postavite neprovjerenu ulogu',
+                                edit: 'Uredi neprovjerenu ulogu'
                             },
                             type: {
-                                title: 'Set a CAPTCHA type',
-                                selected: 'Selected'
+                                title: 'Postavite vrstu CAPTCHA',
+                                selected: 'Odabrano'
                             },
-                            color: 'Change Page Color'
+                            color: 'Promjena boje stranice'
                         },
                         page: {
                             verifiedrole: {
-                                title: 'Verified Role',
-                                name: 'CAPTCHA verified Role'
+                                title: 'Potvrđena uloga',
+                                name: 'CAPTCHA potvrđena uloga'
                             },
                             unverifiedrole: {
-                                title: 'Unverified Role',
-                                name: 'CAPTCHA unverified Role'
+                                title: 'Nepotvrđena uloga',
+                                name: 'CAPTCHA neprovjerena uloga'
                             },
                             logging: {
-                                title: 'Logging',
-                                name: 'CAPTCHA logging Channel'
+                                title: 'Bilježenje',
+                                name: 'Kanal za CAPTCHA bilježenje'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'failed CAPTCHA role'
+                                title: 'Uloga',
+                                name: 'neuspješna CAPTCHA uloga'
                             },
                             color: {
-                                title: 'Page Color',
-                                name: 'Page Color',
-                                description: 'Paste a Hex color into the chat you want to use.\nWe recommend you using a color near to black with very high saturation.\nNote that the color on the Passport will always look brighter.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                                title: 'Boja stranice',
+                                name: 'Boja stranice',
+                                description: 'Zalijepite Hex boju u chat koji želite koristiti.\nPreporučujemo da koristite boju blizu crne s vrlo visokom zasićenošću.\nImajte na umu da će boja na putovnici uvijek izgledati svjetlije.\nDobijte heksadecimalni kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'Šifra boje nije važeća heksadecimalna boja.\nDobijte heksadecimalni kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
@@ -265,45 +265,45 @@ module.exports = {
                 name: 'Dobrodošlica',
                 option: {
                     channel: 'Kanal: {channel}',
-                    role: 'Roles: {role}',
+                    role: 'Uloge: {role}',
                     message: {
                         message: 'Poruka: {message}',
                         command: 'Poruka: koristite `{command}`'
                     },
                     afterleaveMessage: {
-                        message: 'AL Message: {message}',
+                        message: 'AL poruka: {message}',
                         // AL: After Leave - just use the first letters of your language :)
-                        command: 'AL Message: use `{command}`'
+                        command: 'AL poruka: koristite `{command}`'
                     },
-                    pings: 'Pings: {channels}',
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    pings: 'Pingovi: {channels}',
+                    autodelete: 'Automatsko brisanje: **{time}**',
+                    autodelete_never: 'nikada'
                 },
                 warnings: {
-                    afterleaveXautodelete: 'We don\'t recommend using **Auto Delete** and **Delete After Leave** simultaneously',
-                    embedXcard: 'In embed card overwrites your custom embed image'
+                    afterleaveXautodelete: 'Ne preporučujemo korištenje **Automatsko brisanje** i **Brisanje nakon odlaska** istovremeno',
+                    embedXcard: 'U embed kartici prepisuje vašu prilagođenu ugrađenu sliku'
                 },
                 button: {
                     message: 'Uredi poruku',
-                    imgcard: 'Edit Card',
-                    pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete',
+                    imgcard: 'Uredi karticu',
+                    pings: 'Uredi Ping kanale',
+                    autodelete: 'Postavite automatsko brisanje',
                     assignRolesAfterRejoin: {
-                        enable: 'Reassign Roles after Rejoin',
-                        disable: 'Disable Reassign Roles after Rejoin'
+                        enable: 'Ponovno dodijelite uloge nakon ponovnog pridruživanja',
+                        disable: 'Onemogući ponovno dodjeljivanje uloga nakon ponovnog pridruživanja'
                     },
                     afterleave: {
-                        title: 'What should happen with the message if the member leaves?',
-                        selected: 'Selected',
+                        title: 'Što bi se trebalo dogoditi s porukom ako član ode?',
+                        selected: 'Odabrano',
                         option: {
-                            nothing: 'Nothing',
-                            edit: 'Edit on leave',
-                            delete: 'Delete on leave'
+                            nothing: 'Ništa',
+                            edit: 'Uredi na dopustu',
+                            delete: 'Brisanje na dopustu'
                         }
                     },
-                    dm: 'DM Message',
-                    afterleave_webedit: 'After Leave Embed Editor',
-                    wave: 'Wave Button'
+                    dm: 'DM poruka',
+                    afterleave_webedit: 'Nakon napuštanja Embed uređivač',
+                    wave: 'Gumb mahanja'
                 },
                 page: {
                     channel: {
@@ -319,47 +319,47 @@ module.exports = {
                         name: 'Uloga dobrodošlice'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Automatsko brisanje',
+                        name: 'Automatsko brisanje',
+                        description: 'Poruka dobrodošlice bit će izbrisana nakon tog vremena.\nPreporučujemo da ovo vrijeme bude kratko (samo nekoliko sekundi).\nPrimjer: `1m 3s`'
                     },
-                    dm: { button: { disable: 'Disable DM message' } },
+                    dm: { button: { disable: 'Onemogući DM poruku' } },
                     imgcard: {
-                        title: 'Card',
-                        option: { background: 'Background: {url}' },
+                        title: 'Kartica',
+                        option: { background: 'Pozadina: {url}' },
                         button: {
                             background: {
-                                set: 'Set Custom Background',
-                                edit: 'Edit Custom Background'
+                                set: 'Postavite prilagođenu pozadinu',
+                                edit: 'Uredi prilagođenu pozadinu'
                             },
-                            deleteBackground: 'Delete Background',
+                            deleteBackground: 'Izbriši pozadinu',
                             inEmbed: {
-                                enable: 'Show Image in Embed',
-                                disable: 'Don\'t Show Image in Embed'
+                                enable: 'Prikazuj sliku u Embed',
+                                disable: 'Ne prikazuj sliku u Embedu'
                             }
                         },
                         page: {
                             background: {
-                                title: 'Background',
-                                name: 'Card Background',
-                                description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
+                                title: 'Pozadina',
+                                name: 'Pozadina kartice',
+                                description: 'Veza mora biti **izravni URL slike**, također mora biti veza tipa {scheme}.\nPreporučujemo omjer od {ratio} i minimalnu razlučivost od {resolution}.'
                             }
                         }
                     },
-                    dm: { title: 'Direct Message' },
+                    dm: { title: 'Direktna poruka' },
                     wavebtn: {
-                        title: 'Wave to say hi',
-                        option: { send: 'Send: {type}' },
+                        title: 'Mahnite da pozdravite',
+                        option: { send: 'Pošalji: {type}' },
                         button: {
                             type: {
-                                title: 'Select a response type',
+                                title: 'Odaberite vrstu odgovora',
                                 option: {
-                                    '0': 'Random Sticker',
-                                    '1': 'Custom Message'
+                                    '0': 'Nasumična naljepnica',
+                                    '1': 'Prilagođena poruka'
                                 }
                             }
                         },
-                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                        warnings: { channelMissmatch: 'Kanal webhooka razlikuje se od pozdravne poruke.' }
                     }
                 }
             },
@@ -372,8 +372,8 @@ module.exports = {
                         message: 'Poruka: {message}',
                         command: 'Poruka: koristite `{command}`'
                     },
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    autodelete: 'Automatsko brisanje: **{time}**',
+                    autodelete_never: 'nikada'
                 },
                 button: {
                     message: 'Uredi poruku',
@@ -417,8 +417,8 @@ module.exports = {
                 disable: 'Izborni razlog'
             },
             logging: {
-                edit: 'Set Logging Channel',
-                set: 'Change Logging Channel'
+                edit: 'Postavite kanal bilježenja',
+                set: 'Promjena kanala za bilježenje'
             },
             transcript: {
                 disable: 'Onemogući transkripte',
@@ -432,7 +432,7 @@ module.exports = {
                 disable: 'Onemogući Automatsko Zatvaranje na Izlasku',
                 enable: 'Omogući Automatsko Zatvaranje na Izlasku'
             },
-            embeds: 'Change Embeds',
+            embeds: 'Promjena embeda',
             naming: {
                 title: 'Postavite vrstu imenovanja',
                 current: 'Trenutno',
@@ -456,11 +456,11 @@ module.exports = {
                 title: 'Tekstovi',
                 name: 'Opisi ulaznica',
                 button: {
-                    texts: 'Preview Ticket',
-                    topic: 'Change Topic',
+                    texts: 'Pregled ulaznice',
+                    topic: 'Promjena teme',
                     title: 'Promjena tekst naslova',
-                    unclaimed: 'Change Unclaimed Embed',
-                    claimed: 'Change Claimed Embed'
+                    unclaimed: 'Promijenite Nezahtijevani Embed',
+                    claimed: 'Promijenite Zahtijevani Embed'
                 },
                 page: {
                     title: {
@@ -525,10 +525,10 @@ module.exports = {
                     actionType: {
                         reply: 'odgovor',
                         delete: 'izbrisati',
-                        timeout: 'timeout'
+                        timeout: 'pauza'
                     },
                     total: 'Ukupno: **{amount} riječi**',
-                    timeout: 'Timeout: {time}'
+                    timeout: 'Pauza: {time}'
                 },
                 button: {
                     deleteAll: 'Očisti popis riječi',
@@ -544,7 +544,7 @@ module.exports = {
                             timeout: 'Izbrisati'
                         }
                     },
-                    export: 'Show word list'
+                    export: 'Prikaži popis riječi'
                 },
                 page: {
                     delete: {
@@ -589,9 +589,9 @@ module.exports = {
                     actionType: {
                         reply: 'odgovor',
                         delete: 'izbrisati',
-                        timeout: 'timeout'
+                        timeout: 'pauza'
                     },
-                    timeout: 'Timeout: {time}'
+                    timeout: 'Pauza: {time}'
                 },
                 button: {
                     message: 'Uredi poruku',
@@ -602,7 +602,7 @@ module.exports = {
                         option: {
                             reply: 'Odgovor',
                             delete: 'Izbrisati',
-                            timeout: 'Timeout'
+                            timeout: 'Pauza'
                         }
                     }
                 },
@@ -627,9 +627,9 @@ module.exports = {
                     actionType: {
                         reply: 'odgovor',
                         delete: 'izbrisati',
-                        timeout: 'timeout'
+                        timeout: 'pauza'
                     },
-                    timeout: 'Timeout: {time}'
+                    timeout: 'Pauza: {time}'
                 },
                 button: {
                     media: {
@@ -644,7 +644,7 @@ module.exports = {
                         option: {
                             reply: 'Odgovor',
                             delete: 'Izbrisati',
-                            timeout: 'Timeout'
+                            timeout: 'Pauza'
                         }
                     }
                 },
@@ -669,10 +669,10 @@ module.exports = {
                     threshold: 'Okidač: **{threshold}poruka/5s**',
                     actionType: {
                         reply: 'odgovor',
-                        timeout: 'timeout',
+                        timeout: 'pauza',
                         purge: 'izbriši'
                     },
-                    timeout: 'Timeout: {time}'
+                    timeout: 'Pauza: {time}'
                 },
                 button: {
                     threshold: 'Uredi okidač',
@@ -683,7 +683,7 @@ module.exports = {
                         selected: 'Odabran',
                         option: {
                             reply: 'Odgovor',
-                            timeout: 'Timeout',
+                            timeout: 'Pauza',
                             purge: 'Izbriši'
                         }
                     }
@@ -741,10 +741,10 @@ module.exports = {
                 set: 'Postavite zabranjenu ulogu',
                 change: 'Uredite zabranjenu ulogu'
             },
-            blacklistedChannels: 'Edit Blacklisted Channels',
+            blacklistedChannels: 'Uredite kanale na crnoj listi',
             delete: {
-                disable: 'Disable Delete <{reactions} Reactions',
-                enable: 'Enable Delete <{reactions} Reactions'
+                disable: 'Onemogući brisanje <{reactions} Reakcija',
+                enable: 'Omogući brisanje <{reactions} Reakcija'
             },
             display: {
                 title: 'Postavite stil prikaza',
@@ -783,8 +783,8 @@ module.exports = {
             color: {
                 title: 'Boja',
                 name: 'Starboard Boja',
-                description: 'Paste a Hex color into the chat you want to use.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                description: 'Zalijepite Hex boju u chat koji želite koristiti.\nDobijte heksadecimalni kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                invalid: 'Šifra boje nije važeća heksadecimalna boja.\nDobijte heksadecimalni kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
             },
             count: {
                 title: 'Broj',
@@ -796,10 +796,10 @@ module.exports = {
                 name: 'zabranjena Uloga'
             },
             blacklistedChannels: {
-                title: 'Blacklist Channels',
-                name: 'Blacklist Channel list',
-                description: 'Mention a Channel/Category or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
-                missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                title: 'Kanali na crnoj listi',
+                name: 'Popis kanali na crnoj listi',
+                description: 'Spomenite kanal/kategoriju ili zalijepite Id kanala u chat.\nDodajte ispred poruke `+` za dodavanje ili `-` za uklanjanje kanala.\nMožete poslati više kanala odvojenih razmakom.\nUpišite `none` za uklanjanje svih kanala.',
+                missingPrefix: 'Poruka mora imati prefiks `+` za dodavanje ili `-` za uklanjanje kanala.'
             }
         }
     },
@@ -808,7 +808,7 @@ module.exports = {
         button: {
             embedMessages: 'Embed Poruke',
             levelRoles: 'Level Uloge',
-            leaderboards: 'Leaderboards'
+            leaderboards: 'Ploče s najboljim rezultatima'
         },
         page: {
             embedMessages: {
@@ -844,7 +844,7 @@ module.exports = {
                     message: 'Uredi poruku',
                     addrole: 'Dodaj Level',
                     select: {
-                        title: 'Chose a Level Role you want to edit',
+                        title: 'Odaberite ulogu razine koju želite urediti',
                         editing: 'Uređivanje',
                         option: {
                             name: '{messages} poruka',
@@ -893,9 +893,9 @@ module.exports = {
                 }
             },
             leaderboards: {
-                title: 'Leaderboards',
-                option: { blacklisted: 'Blacklisted: {channels}' },
-                button: { blacklistedChannels: 'Edit Blacklisted Channels' }
+                title: 'Ploče s najboljim rezultatima',
+                option: { blacklisted: 'Na crnoj listi: {channels}' },
+                button: { blacklistedChannels: 'Uredite kanale na crnoj listi' }
             }
         }
     },
