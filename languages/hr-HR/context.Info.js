@@ -3,8 +3,8 @@ module.exports = {
     name: 'Ime',
     created: 'Napravljen',
     joined: 'Pridružen',
-    invites: 'Invites',
-    voice: 'Voice',
+    invites: 'Pozivnica',
+    voice: 'Glasovno',
     none: 'prazno',
     timeout: 'na isteku {time}',
     pronouns: {
@@ -39,10 +39,10 @@ module.exports = {
         }
     },
     likes: {
-        add: 'Like',
-        remove: 'Dislike',
-        added: 'You have liked {user}\'s profile. They now have {num} ;[like, likes] :3',
-        removed: 'You no longer like {user}\'s profile.',
-        dm: '{emote} Congratulations, {name}!\n\nWe have some fantastic news to share with you! Your {bot} profile has reached an incredible {num} likes! You\'re clearly doing something right because people just can\'t get enough of you!\n\nSo let\'s keep the momentum going and spread the love! Tell everyone to invite {bot} by sending them {link} and make sure to use the {command} followed by your username to heart 💖 your profile!\n\nThank you for being such a fantastic part of our community!\n\nCheers,\n{bot} '
+        add: 'Sviđa mi se',
+        remove: 'Ne sviđa mi se',
+        added: 'Svidio vam se profil korisnika/ce {user}. Sada imaju {num} ;[like, likes] :3',
+        removed: 'Više vam se ne sviđa profil korisnika/ce {user}.',
+        dm: '{emote} Čestitamo, {name}!\n\nImamo fantastične vijesti za podijeliti s vama! Vaš {bot} profil dosegao je nevjerojatnih {num} lajkova! Očito nešto radite kako treba jer vas se ljudi jednostavno ne mogu zasititi!\n\nStoga nastavimo dalje i širimo ljubav! Recite svima da pozovu {bot} tako što ćete im poslati {link} i obavezno upotrijebite {command} nakon koje slijedi vaše korisničko ime u srcu 💖 vašem profilu!\n\nHvala vam što ste tako fantastičan dio naše zajednice!\n\nŽivjeli,\n{bot} '
     }
 };
