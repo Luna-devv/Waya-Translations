@@ -31,7 +31,7 @@ module.exports = {
             description: 'Opis',
             thumbnail: 'Sličica',
             image: 'Slika',
-            footer: 'Footer'
+            footer: 'Podnožje'
         }
     },
     success: {
