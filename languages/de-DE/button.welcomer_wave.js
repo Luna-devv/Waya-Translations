@@ -1,4 +1,4 @@
 module.exports = {
-    noHook: 'This feature has been disabled by server admins.',
-    disclaimer: 'This message has been configured by server admins. {bot} is committed to providing a safe and respectful environment for all users. We do not support or tolerate any harmful or offensive content or language.'
+    noHook: 'Diese Funktion wurde von Serveradministratoren deaktiviert.',
+    disclaimer: 'Diese Nachricht wurde von Serveradministratoren konfiguriert. {bot} verpflichtet sich, allen Benutzern eine sichere und respektvolle Umgebung zur Verfügung zu stellen. Wir unterstützen oder tolerieren keine schädlichen oder beleidigenden Inhalte oder Sprachen.'
 };
