@@ -1,9 +1,10 @@
 module.exports = {
-    alreadyExists: 'Eine fixierte Nachricht existiert für diesen Channel bereits!',
-    stickymessagesLimit: 'Du hast das Serverlimit von **{count}/{max} fixierten Nachrichten** erreicht!',
-    invalidStickymessage: 'Keine fixierte Nachricht existiert nicht in diesem Channel!',
+    alreadyExists: 'Eine Stickymessage in diesem Kanal existiert bereits!',
+    stickymessagesLimit: 'Du hast das Serverlimit von **{count}/{max} Stickybessages** erreicht!',
+    invalidstickymessage: 'In diesem Kanal existiert keine Stickymessage!',
     overview: {
-        title: 'Sticky Message Konfiguration',
+        title: 'Stickymessage Konfiguration',
+        permissions: 'Fehlt: {perms}',
         message: 'Nachricht',
         embed: 'Embed',
         note: 'Button Notiz',
@@ -24,7 +25,7 @@ module.exports = {
         }
     },
     form: {
-        formName: '{name} fixierte Nachricht',
+        formName: '{name}\'s Stickymessage',
         message: { content: 'Content' },
         embed: {
             title: 'Titel',
@@ -35,12 +36,12 @@ module.exports = {
         }
     },
     success: {
-        message: 'Fixierte Nachricht in {channel} erfolgreich hinzugefügt.',
+        message: 'Eine Stickymessage wurde erfolgreich in {channel} erstellt.',
         try: 'Probiere es aus, indem du ein paar Nachrichten sendest!'
     },
     list: {
-        title: 'Fixierte ;[Nachricht, Nachrichten]',
+        title: ';[Stickymessage, Stickymessages]',
         none: 'keine fixierten nachrichten'
     },
-    deleted: 'Fixierte Nachricht in {channel} erfolgreich gelöst.'
+    deleted: 'Stickymessage erfolgreich in {channel} gelöscht.'
 };
