@@ -35,14 +35,14 @@ module.exports = {
         },
         success: {
             set: '{what} a bien été défini à **{data}**.',
-            add: 'Successfully add {what} to **{data}**.',
-            setCodeblock: 'Successfully set {what} to {data}',
-            removed: 'Successfully removed the {what}.',
-            remove: 'Successfully remove {what} from **{data}**.',
-            fail: 'This {what} does not exist in this guild..',
-            lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
-            otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
-            numberFail: 'The {what} is not a number between {a} and {b}!',
+            add: '{what} a bien été ajouté à **{data}**.',
+            setCodeblock: '{what} a bien été défini à {data}',
+            removed: '{what} a bien été supprimé.',
+            remove: '{what} a bien été supprimé de **{data}**.',
+            fail: '{what} n\'existe pas dans ce serveur..',
+            lengthFail: 'Ce {what} est plus long que {max} caractères ! ({length} caractères, {relative} caractères de trop)',
+            otherLengthFail: 'Ce {what} est plus court que {min} caractères ! ({length} caractères, {relative} caractères manquants)',
+            numberFail: 'Ce {what} n\'est pas un nombre compris entre {a} et {b} !',
             roleFail: 'Ce rôle n\'est modifiable que par Discord ou est lié à un bot.'
         },
         webedit: {
@@ -107,7 +107,7 @@ module.exports = {
         button: {
             logging: 'Historique',
             tickets: 'Tickets',
-            moderation: 'Moderation',
+            moderation: 'Modération',
             starboard: 'Starboard',
             misc: 'Autres',
             followNews: 'Suivre les nouveautés',
