@@ -1,9 +1,10 @@
 module.exports = {
-    alreadyExists: 'Un messaggio adesivo in questo canale esiste già!',
-    stickymessagesLimit: 'Hai raggiunto il limite di **{count}/{max} Messaggi Adesivi**!',
-    invalidStickymessage: 'Nessun messaggio adesivo esiste in questo canale!',
+    alreadyExists: 'A stickymessage in this channel already exists!',
+    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} stickymessages**!',
+    invalidstickymessage: 'No stickymessage exists in this channel!',
     overview: {
-        title: 'Configurazione Messaggio Adesivo',
+        title: 'Stickymessage Config',
+        permissions: 'Missing: {perms}',
         message: 'Messaggio',
         embed: 'Embed',
         note: 'Nota Bottone',
@@ -24,7 +25,7 @@ module.exports = {
         }
     },
     form: {
-        formName: '{name} messaggio adesivo',
+        formName: '{name}\'s Stickymessage',
         message: { content: 'Contenuto' },
         embed: {
             title: 'Titolo',
@@ -35,12 +36,12 @@ module.exports = {
         }
     },
     success: {
-        message: 'Aggiunto Messaggio Adesivo in {channel} con successo.',
+        message: 'Successfully added a stickymessage in {channel}.',
         try: 'Provalo inviando alcuni messaggi lì!'
     },
     list: {
-        title: 'Adesivo ;[Messaggio, Messaggi]',
+        title: ';[Stickymessage, Stickymessages]',
         none: 'nessun messaggio adesivo'
     },
-    deleted: 'Il messaggio adesivo in {channel} è stato eliminato con successo.'
+    deleted: 'Successfully deleted the stickymessage in {channel}.'
 };
