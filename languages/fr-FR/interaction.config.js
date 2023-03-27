@@ -31,10 +31,10 @@ module.exports = {
             role: 'Mentionnez un rôle ou envoyez l\'ID d\'un rôle dans le chat.\nTapez {string} pour supprimer le rôle.',
             message: 'Envoyez le message qui sera utilisé en tant que {what}.',
             emote: 'Envoyez l\'émoji qui sera utilisé en tant que {what}.',
-            patient: 'Enabling this might take a few seconds, please wait..'
+            patient: 'Activer ceci peut prendre quelques secondes, veuillez patienter..'
         },
         success: {
-            set: 'Successfully set {what} to **{data}**.',
+            set: '{what} a bien été défini à **{data}**.',
             add: 'Successfully add {what} to **{data}**.',
             setCodeblock: 'Successfully set {what} to {data}',
             removed: 'Successfully removed the {what}.',
