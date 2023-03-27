@@ -1,9 +1,10 @@
 module.exports = {
-    alreadyExists: 'Baby, A Sticky Message in this channyew awweady exists! qwq',
-    stickymessagesLimit: 'Ooohhuu :( U have weached the guiwd wimit of **{count}/{max} Sticky Messages**! >~<',
-    invalidStickymessage: 'But babe.. Nyo Sticky Message exists in this channyew! :(',
+    alreadyExists: 'A stickymessage in this channel already exists!',
+    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} stickymessages**!',
+    invalidstickymessage: 'No stickymessage exists in this channel!',
     overview: {
-        title: 'Sticky Message Config',
+        title: 'Stickymessage Config',
+        permissions: 'Missing: {perms}',
         message: 'Message',
         embed: 'Embed',
         note: 'Button Nyote',
@@ -24,7 +25,7 @@ module.exports = {
         }
     },
     form: {
-        formName: '{name} sticky message',
+        formName: '{name}\'s Stickymessage',
         message: { content: 'Content' },
         embed: {
             title: 'Titwe',
@@ -35,12 +36,12 @@ module.exports = {
         }
     },
     success: {
-        message: 'Successfuwwy added a Sticky Message in {channel} >.>',
+        message: 'Successfully added a stickymessage in {channel}.',
         try: 'Ayy, twy it out by sending a few messages thewe :>'
     },
     list: {
-        title: 'Sticky ;[Message, Messages]',
+        title: ';[Stickymessage, Stickymessages]',
         none: 'nyo sticky messages'
     },
-    deleted: 'Successfuwwy deweted the Sticky Message in {channel}. ^^'
+    deleted: 'Successfully deleted the stickymessage in {channel}.'
 };
