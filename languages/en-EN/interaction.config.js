@@ -24,6 +24,7 @@ module.exports = {
             },
             notice: "carefull - developer privileges enforced..",
         },
+        upsell: 'Subscribe to get {count} more',
         permissions: "Missing: {perms}",
         placeholders: "Placeholders",
         await: {
@@ -32,6 +33,7 @@ module.exports = {
             role: "Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.",
             message: "Send a Message which should be used as {what}.",
             emote: "Send an Emoji which should be used as {what}.",
+            color: "Send a hex color code which should be used for {what}. Get a valid code at {url}.",
             patient: "Enabling this might take a few seconds, please wait.."
         },
         success: {
@@ -45,6 +47,8 @@ module.exports = {
             otherLengthFail: "The {what} is shorter than {min} characters! ({length} characters, {relative} too less)",
             numberFail: "The {what} is not a number between {a} and {b}!",
             roleFail: "This Role is only managable by either Discord or belongs to a bot user.",
+            colorFail: "No valid hex color code was provided. Get a valid code at {url}.",
+            emoteFail: "You have not sent any valid emotes. Only custom discord and default emojis are supported.",
         },
         webedit: {
             button: "Embed Editor",
@@ -286,8 +290,10 @@ module.exports = {
                 warnings: {
                     afterleaveXautodelete: "We don't recommend using **Auto Delete** and **Delete After Leave** simultaneously",
                     embedXcard: "In embed card overwrites your custom embed image",
+                    channelMissmatch: "Channel of the wave webhook is different than the greet message"
                 },
                 button: {
+                    nextpage: "Next Page ({cur}/{total})",
                     message: "Edit Message",
                     imgcard: "Edit Card",
                     pings: "Edit Ping Channels",
@@ -307,7 +313,8 @@ module.exports = {
                     },
                     dm: "DM Message",
                     afterleave_webedit: "After Leave Embed Editor",
-                    wave: "Wave Button"
+                    wave: "Wave Button",
+                    reactions: "Reactions"
                 },
                 page: {
                     channel: {
@@ -330,6 +337,27 @@ module.exports = {
                     dm: {
                         button: {
                             disable: "Disable DM message"
+                        }
+                    },
+                    reactions: {
+                        title: "Reactions",
+                        option: {
+                            welcomer: "Welcome Message Reactions: {emotes}",
+                            firstmessage: "First Message Reactions: {emotes}"
+                        },
+                        button: {
+                            welcomer: "Welcome Message",
+                            firstmessage: "First Member Message"
+                        },
+                        page: {
+                            welcomer: {
+                                title: "Welcomer",
+                                name: "welcomer auto reaction"
+                            },
+                            firstmessage: {
+                                title: "First Message",
+                                name: "auto reaction"
+                            }
                         }
                     },
                     imgcard: {
@@ -362,19 +390,37 @@ module.exports = {
                     wavebtn: {
                         title: "Wave to say hi",
                         option: {
-                            send: "Send: {type}"
+                            send: "Send: {type}",
+                            label: "Label: {label}"
                         },
                         button: {
+                            label: "Change Button Text",
+                            ping: {
+                                enable: "Enable Ping",
+                                disable: "Disable Ping"
+                            },
                             type: {
                                 title: 'Select a response type',
                                 option: {
                                     '0': "Random Sticker",
                                     '1': "Custom Message"
                                 }
+                            },
+                            color: {
+                                title: 'Select a color for the button',
+                                option: {
+                                    blurple: "Blurple", // You may leave that
+                                    grey: "Grey",
+                                    green: "Green",
+                                    red: "Red",
+                                }
                             }
                         },
-                        warnings: {
-                            channelMissmatch: "Channel of the webhook is different than the greet message."
+                        page: {
+                            label: {
+                                title: "Label",
+                                name: "Button Text",
+                            }
                         }
                     }
                 },
@@ -435,8 +481,8 @@ module.exports = {
                 disable: "Optional Reason",
             },
             logging: {
-                edit: "Set Logging Channel",
-                set: "Change Logging Channel",
+                set: "Set Logging Channel",
+                edit: "Change Logging Channel",
             },
             transcript: {
                 disable: "Disable Transcripts",
@@ -673,7 +719,7 @@ module.exports = {
                 page: {
                     message: {
                         title: "Message",
-                        name: "Anit Link reply",
+                        name: "Anti Link reply",
                     },
                     timeout: {
                         title: "Timeout Duration",
@@ -805,9 +851,7 @@ module.exports = {
             },
             color: {
                 title: "Color",
-                name: "Starboard Color",
-                description: "Paste a Hex color into the chat you want to use.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!",
-                invalid: "The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!",
+                name: "Starboard Color"
             },
             count: {
                 title: "Count",
@@ -861,7 +905,6 @@ module.exports = {
                 title: 'Level Roles',
                 option: {
                     roles: 'Roles: **{count}/{max}**',
-                    roles_upsell: 'Subscribe to get {count}+',
                     channel: 'Channel: {channel}',
                     channel_none: 'message channel',
                     message: 'Message: {message}',
@@ -926,7 +969,29 @@ module.exports = {
                 },
                 button: {
                     blacklistedChannels: "Edit Blacklisted Channels",
+                    reset: {
+                        disable: "Don't Reset Member Data on Leave",
+                        enable: "Reset Member Data on Leave"
+                    },
+                    roles: "Reward Roles"
                 },
+                page: {
+                    roles: {
+                        title: "Top Roles",
+                        option: {
+                            messages: "Message Roles: {roles}",
+                            voiceminutes: "Voice Roles: {roles}",
+                        },
+                        warnings: {
+                            order: "Please select the #1st role first, then #2nd and then #3rd",
+                            permsOrder: "Please check that all roles are bellow the {bot} role"
+                        },
+                        button: {
+                            messages: "Top 3 messange roles",
+                            voiceminutes: "Top 3 voice minutes roles"
+                        }
+                    }
+                }
             }
 
         }

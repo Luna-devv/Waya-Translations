@@ -8,6 +8,6 @@ module.exports = {
     },
     claim: {
         already: ";[{user} is, You are] already handling this ticket!",
-        success: "You have successfully transfared the ticket to {user}!"
+        success: "You have successfully transfered the ticket to {user}!"
     }
 };

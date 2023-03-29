@@ -1,9 +1,10 @@
 module.exports = {
-    alreadyExists: "A Sticky Message in this channel already exists!",
-    stickymessagesLimit: "You have reached the guild limit of **{count}/{max} Sticky Messages**!",
-    invalidStickymessage: "No Sticky Message exists in this channel!",
+    alreadyExists: "A stickymessage in this channel already exists!",
+    stickymessagesLimit: "You have reached the guild limit of **{count}/{max} stickymessages**!",
+    invalidstickymessage: "No stickymessage exists in this channel!",
     overview: {
-        title: "Sticky Message Config",
+        title: "Stickymessage Config",
+        permissions: "Missing: {perms}",
         message: "Message",
         embed: "Embed",
         note: "Button Note",
@@ -24,7 +25,7 @@ module.exports = {
         },
     },
     form: {
-        formName: "{name} sticky message",
+        formName: "{name}'s Stickymessage",
         message: {
             content: "Content",
         },
@@ -37,12 +38,12 @@ module.exports = {
         },
     },
     success: {
-        message: "Successfully added a Sticky Message in {channel}.",
+        message: "Successfully added a stickymessage in {channel}.",
         try: "Try it out by sending a few messages there!",
     },
     list: {
-        title: 'Sticky ;[Message, Messages]',
+        title: ';[Stickymessage, Stickymessages]',
         none: "no sticky messages",
     },
-    deleted: "Successfully deleted the Sticky Message in {channel}.",
+    deleted: "Successfully deleted the stickymessage in {channel}.",
 };
