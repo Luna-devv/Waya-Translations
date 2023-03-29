@@ -23,6 +23,7 @@ module.exports = {
             },
             notice: 'kujdes - zbatohen privilegjet e zhvilluesit..'
         },
+        upsell: 'Subscribe to get {count} more',
         permissions: 'Mungon: {perms}',
         placeholders: 'Vendmbajtësi',
         await: {
@@ -31,6 +32,7 @@ module.exports = {
             role: 'Përmendni një rol ose ngjitni Id-në e rolit në bisedë.\nShkruani {string} për të hequr rolin.',
             message: 'Dërgoni një Mesazh i cili duhet të përdoret si {what}.',
             emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.',
+            color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
             patient: 'Enabling this might take a few seconds, please wait..'
         },
         success: {
@@ -43,7 +45,9 @@ module.exports = {
             lengthFail: '{what} është më i gjatë se {max} karaktere! ({length} karaktere, {relative} shumë)',
             otherLengthFail: '{what} është më i shkurtër se {min} karaktere! ({length} karaktere, {relative} shumë më pak)',
             numberFail: '{what} nuk është një numër midis {a} dhe {b}!',
-            roleFail: 'Ky rol është i menaxhueshëm vetëm nga Discord ose i përket një përdoruesi bot.'
+            roleFail: 'Ky rol është i menaxhueshëm vetëm nga Discord ose i përket një përdoruesi bot.',
+            colorFail: 'No valid hex color code was provided. Get a valid code at {url}.',
+            emoteFail: 'You have not sent any valid emotes. Only custom discord and default emojis are supported.'
         },
         webedit: {
             button: 'Embed Editor',
@@ -281,9 +285,11 @@ module.exports = {
                 },
                 warnings: {
                     afterleaveXautodelete: 'Ne nuk rekomandojmë përdorimin e **Fshij automatik** dhe **Fshi pas largimit** njëkohësisht',
-                    embedXcard: 'Karta në embed mbishkruan imazhin tuaj të personalizuar të ngulitjes'
+                    embedXcard: 'Karta në embed mbishkruan imazhin tuaj të personalizuar të ngulitjes',
+                    channelMissmatch: 'Channel of the wave webhook is different than the greet message'
                 },
                 button: {
+                    nextpage: 'Next Page ({cur}/{total})',
                     message: 'Redakto mesazhin',
                     imgcard: 'Modifiko kartën',
                     pings: 'Redakto Kanalet Ping',
@@ -303,7 +309,8 @@ module.exports = {
                     },
                     dm: 'Mesazh DM',
                     afterleave_webedit: 'Pas largimit nga Redaktori i Embed',
-                    wave: 'Wave Button'
+                    wave: 'Wave Button',
+                    reactions: 'Reactions'
                 },
                 page: {
                     channel: {
@@ -324,6 +331,27 @@ module.exports = {
                         description: 'Mesazhi i Mirëpritësit do të fshihet pas kësaj kohe.\nNe ju rekomandojmë ta mbani këtë kohë të shkurtër (vetëm disa sekonda).\nShembull: `1m 3s`'
                     },
                     dm: { button: { disable: 'Çaktivizo mesazhin DM' } },
+                    reactions: {
+                        title: 'Reactions',
+                        option: {
+                            welcomer: 'Welcome Message Reactions: {emotes}',
+                            firstmessage: 'First Message Reactions: {emotes}'
+                        },
+                        button: {
+                            welcomer: 'Welcome Message',
+                            firstmessage: 'First Member Message'
+                        },
+                        page: {
+                            welcomer: {
+                                title: 'Welcomer',
+                                name: 'welcomer auto reaction'
+                            },
+                            firstmessage: {
+                                title: 'First Message',
+                                name: 'auto reaction'
+                            }
+                        }
+                    },
                     imgcard: {
                         title: 'Kartë',
                         option: { background: 'Sfondi: {url}' },
@@ -349,17 +377,40 @@ module.exports = {
                     dm: { title: 'Mesazh direkt' },
                     wavebtn: {
                         title: 'Wave to say hi',
-                        option: { send: 'Send: {type}' },
+                        option: {
+                            send: 'Send: {type}',
+                            label: 'Label: {label}'
+                        },
                         button: {
+                            label: 'Change Button Text',
+                            ping: {
+                                enable: 'Enable Ping',
+                                disable: 'Disable Ping'
+                            },
                             type: {
                                 title: 'Select a response type',
                                 option: {
                                     '0': 'Random Sticker',
                                     '1': 'Custom Message'
                                 }
+                            },
+                            color: {
+                                title: 'Select a color for the button',
+                                option: {
+                                    blurple: 'Blurple',
+                                    // You may leave that
+                                    grey: 'Grey',
+                                    green: 'Green',
+                                    red: 'Red'
+                                }
                             }
                         },
-                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                        page: {
+                            label: {
+                                title: 'Label',
+                                name: 'Button Text'
+                            }
+                        }
                     }
                 }
             },
@@ -417,8 +468,8 @@ module.exports = {
                 disable: 'Arsyeja Fakultative'
             },
             logging: {
-                edit: 'Cakto kanalin e Logging',
-                set: 'Ndrysho kanalin e Logging'
+                set: 'Set Logging Channel',
+                edit: 'Change Logging Channel'
             },
             transcript: {
                 disable: 'Çaktivizo transkriptet',
@@ -651,7 +702,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Mesazh',
-                        name: 'Përgjigje Anti Link'
+                        name: 'Anti Link reply'
                     },
                     timeout: {
                         title: 'Kohëzgjatja e Timeoutit',
@@ -782,9 +833,7 @@ module.exports = {
             },
             color: {
                 title: 'Ngjyrë',
-                name: 'Ngjyra e Starboard',
-                description: 'Ngjitni një ngjyrë Hex në bisedën që dëshironi të përdorni.\nMerr një kod ngjyre Hex nga [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'Kodi i ngjyrës nuk është një ngjyrë Hex e vlefshme.\nMerr një kod ngjyre Hex nga [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                name: 'Ngjyra e Starboard'
             },
             count: {
                 title: 'Numërimi',
@@ -835,7 +884,6 @@ module.exports = {
                 title: 'Rolet e nivelit',
                 option: {
                     roles: 'Rolet: **{count}/{max}**',
-                    roles_upsell: 'Abonohu ​​për të marrë {count}+',
                     channel: 'Kanali: {channel}',
                     channel_none: 'kanal mesazhesh',
                     message: 'Mesazh: {message}'
@@ -895,7 +943,31 @@ module.exports = {
             leaderboards: {
                 title: 'Tabelat e klasifikimit',
                 option: { blacklisted: 'Në listën e zezë: {channels}' },
-                button: { blacklistedChannels: 'Redaktoni kanalet në listën e zezë' }
+                button: {
+                    blacklistedChannels: 'Redaktoni kanalet në listën e zezë',
+                    reset: {
+                        disable: 'Don\'t Reset Member Data on Leave',
+                        enable: 'Reset Member Data on Leave'
+                    },
+                    roles: 'Reward Roles'
+                },
+                page: {
+                    roles: {
+                        title: 'Top Roles',
+                        option: {
+                            messages: 'Message Roles: {roles}',
+                            voiceminutes: 'Voice Roles: {roles}'
+                        },
+                        warnings: {
+                            order: 'Please select the #1st role first, then #2nd and then #3rd',
+                            permsOrder: 'Please check that all roles are bellow the {bot} role'
+                        },
+                        button: {
+                            messages: 'Top 3 messange roles',
+                            voiceminutes: 'Top 3 voice minutes roles'
+                        }
+                    }
+                }
             }
         }
     },
