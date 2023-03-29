@@ -4,6 +4,6 @@ module.exports = {
     remove: { success: '{user} është hequr me sukses nga kjo Tickete!' },
     claim: {
         already: ';[{user} është, Ju po e trajtoni tashmë këtë Tickete!',
-        success: 'Ju e keni transferuar me sukses Ticketen te {user}!'
+        success: 'You have successfully transfered the ticket to {user}!'
     }
 };

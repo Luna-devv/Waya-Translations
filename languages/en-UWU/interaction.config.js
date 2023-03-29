@@ -23,6 +23,7 @@ module.exports = {
             },
             notice: 'cawefuww - devewopew pwiviweges enfowced..'
         },
+        upsell: 'Subscribe to get {count} more',
         permissions: 'Missing: {perms}',
         placeholders: 'Pwacehowdews',
         await: {
@@ -30,7 +31,9 @@ module.exports = {
             category: 'Mention a Categowy ow paste the Categowy Id into the chat.\nType {string} to wemuv the categowy.',
             role: 'Mention a wowe ow paste the wowe Id into the chat.\nType {string} to wemuv the wowe.',
             message: 'Send a Message which shouwd be used as {what}.',
-            emote: 'Send an Emoji which shouwd be used as {what}.'
+            emote: 'Send an Emoji which shouwd be used as {what}.',
+            color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
+            patient: 'Enyabwing this might take a few seconds, pwease wait..'
         },
         success: {
             set: 'Successfuwwy set {what} to **{data}** qwq',
@@ -42,7 +45,9 @@ module.exports = {
             lengthFail: 'The {what} is wongew than {max} chawactews! ({length} uwu chawactews, {relative} too much) :////',
             otherLengthFail: 'The {what} is showtew than {min} chawactews! ({length} uwu chawactews, {relative} too wess)  :////',
             numberFail: 'BABE, The {what} is nyot a nyumbew >.< between {a} and {b}! ;-;;;     ',
-            roleFail: 'This (^³^) wowe :3 is onwy manyagabwe by ://// eithew Discowd ;-;;; ow bewongs to a bot usew.    '
+            roleFail: 'This (^³^) wowe :3 is onwy manyagabwe by ://// eithew Discowd ;-;;; ow bewongs to a bot usew.    ',
+            colorFail: 'No valid hex color code was provided. Get a valid code at {url}.',
+            emoteFail: 'You have not sent any valid emotes. Only custom discord and default emojis are supported.'
         },
         webedit: {
             button: 'Embed Editow',
@@ -280,9 +285,11 @@ module.exports = {
                 },
                 warnings: {
                     afterleaveXautodelete: 'We dont wecommend using **Auto Dewete** and **Dewete Aftew weave** simuwtanyeouswy',
-                    embedXcard: 'In embed cawd uvwwwites ur custom embed image'
+                    embedXcard: 'In embed cawd uvwwwites ur custom embed image',
+                    channelMissmatch: 'Channel of the wave webhook is different than the greet message'
                 },
                 button: {
+                    nextpage: 'Next Page ({cur}/{total})',
                     message: 'Edit Message',
                     imgcard: 'Edit Cawd',
                     pings: 'Edit Ping-Pong Channyews',
@@ -301,7 +308,9 @@ module.exports = {
                         }
                     },
                     dm: 'DM Message',
-                    afterleave_webedit: 'Aftew Weave Embed Editow'
+                    afterleave_webedit: 'Aftew Weave Embed Editow',
+                    wave: 'Wave Button',
+                    reactions: 'Reactions'
                 },
                 page: {
                     channel: {
@@ -322,6 +331,27 @@ module.exports = {
                         description: 'The Wewcomew message wiww be deweted aftew this time.\nWe wecommend u to keep this time showt (onwy few seconds).\nExampwe: `1m 3s`'
                     },
                     dm: { button: { disable: 'Disabwe DM message' } },
+                    reactions: {
+                        title: 'Reactions',
+                        option: {
+                            welcomer: 'Welcome Message Reactions: {emotes}',
+                            firstmessage: 'First Message Reactions: {emotes}'
+                        },
+                        button: {
+                            welcomer: 'Welcome Message',
+                            firstmessage: 'First Member Message'
+                        },
+                        page: {
+                            welcomer: {
+                                title: 'Welcomer',
+                                name: 'welcomer auto reaction'
+                            },
+                            firstmessage: {
+                                title: 'First Message',
+                                name: 'auto reaction'
+                            }
+                        }
+                    },
                     imgcard: {
                         title: 'Cawd',
                         option: { background: 'Backgwound: {url}' },
@@ -344,7 +374,44 @@ module.exports = {
                             }
                         }
                     },
-                    dm: { title: 'Diwect Message' }
+                    dm: { title: 'Diwect Message' },
+                    wavebtn: {
+                        title: 'Wave to say heyy',
+                        option: {
+                            send: 'Send: {type}',
+                            label: 'Label: {label}'
+                        },
+                        button: {
+                            label: 'Change Button Text',
+                            ping: {
+                                enable: 'Enable Ping',
+                                disable: 'Disable Ping'
+                            },
+                            type: {
+                                title: 'Sewect a wesponse type',
+                                option: {
+                                    '0': 'Wandom Stickew',
+                                    '1': 'Custom Message'
+                                }
+                            },
+                            color: {
+                                title: 'Select a color for the button',
+                                option: {
+                                    blurple: 'Blurple',
+                                    // You may leave that
+                                    grey: 'Grey',
+                                    green: 'Green',
+                                    red: 'Red'
+                                }
+                            }
+                        },
+                        page: {
+                            label: {
+                                title: 'Label',
+                                name: 'Button Text'
+                            }
+                        }
+                    }
                 }
             },
             byer: {
@@ -401,8 +468,8 @@ module.exports = {
                 disable: 'Optionyaw Weason'
             },
             logging: {
-                edit: 'Set Wogging Channyew',
-                set: 'Change Wogging Channyew'
+                set: 'Set Logging Channel',
+                edit: 'Change Logging Channel'
             },
             transcript: {
                 disable: 'Disabwe Twanscwipts',
@@ -635,7 +702,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anyit wink wepwy'
+                        name: 'Anti Link reply'
                     },
                     timeout: {
                         title: 'Timeout Duwation',
@@ -766,9 +833,7 @@ module.exports = {
             },
             color: {
                 title: 'Cowow',
-                name: 'Stawboawd Cowow',
-                description: 'Paste a Hex cowow into the chat u want to use.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'The cowow code is nyot a vawid Hex cowow.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                name: 'Stawboawd Cowow'
             },
             count: {
                 title: 'Count',
@@ -819,7 +884,6 @@ module.exports = {
                 title: 'Wevew Wowes',
                 option: {
                     roles: 'Wowes: **{count}/{max}**',
-                    roles_upsell: 'Subscwibe to get {count}+',
                     channel: 'Channyew: {channel}',
                     channel_none: 'message channyew',
                     message: 'Message: {message}'
@@ -879,7 +943,31 @@ module.exports = {
             leaderboards: {
                 title: 'Weadewboawds',
                 option: { blacklisted: 'Bwackwisted: {channels}' },
-                button: { blacklistedChannels: 'Edit Bwackwisted Channyews' }
+                button: {
+                    blacklistedChannels: 'Edit Bwackwisted Channyews',
+                    reset: {
+                        disable: 'Don\'t Reset Member Data on Leave',
+                        enable: 'Reset Member Data on Leave'
+                    },
+                    roles: 'Reward Roles'
+                },
+                page: {
+                    roles: {
+                        title: 'Top Roles',
+                        option: {
+                            messages: 'Message Roles: {roles}',
+                            voiceminutes: 'Voice Roles: {roles}'
+                        },
+                        warnings: {
+                            order: 'Please select the #1st role first, then #2nd and then #3rd',
+                            permsOrder: 'Please check that all roles are bellow the {bot} role'
+                        },
+                        button: {
+                            messages: 'Top 3 messange roles',
+                            voiceminutes: 'Top 3 voice minutes roles'
+                        }
+                    }
+                }
             }
         }
     },

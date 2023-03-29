@@ -23,14 +23,17 @@ module.exports = {
             },
             notice: 'kujdes - zbatohen privilegjet e zhvilluesit..'
         },
+        upsell: 'Subscribe to get {count} more',
         permissions: 'Mungon: {perms}',
         placeholders: 'Vendmbajtësi',
         await: {
-            channel: 'Mention a Channel or paste the Channel Id into the chat.\nType {string} to remove the channel.',
-            category: 'Mention a Category or paste the Category Id into the chat.\nType {string} to remove the category.',
-            role: 'Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.',
+            channel: 'Përmendni një kanal ose ngjisni Id-në e kanalit në bisedë.\nShkruani {string} për të hequr kanalin.',
+            category: 'Përmendni një kategori ose ngjisni Id-në e kategorisë në bisedë.\nShkruani {string} për të hequr kategorinë.',
+            role: 'Përmendni një rol ose ngjitni Id-në e rolit në bisedë.\nShkruani {string} për të hequr rolin.',
             message: 'Dërgoni një Mesazh i cili duhet të përdoret si {what}.',
-            emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.'
+            emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.',
+            color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
+            patient: 'Enabling this might take a few seconds, please wait..'
         },
         success: {
             set: 'U vendos me sukses {what} në **{data}**.',
@@ -42,7 +45,9 @@ module.exports = {
             lengthFail: '{what} është më i gjatë se {max} karaktere! ({length} karaktere, {relative} shumë)',
             otherLengthFail: '{what} është më i shkurtër se {min} karaktere! ({length} karaktere, {relative} shumë më pak)',
             numberFail: '{what} nuk është një numër midis {a} dhe {b}!',
-            roleFail: 'Ky rol është i menaxhueshëm vetëm nga Discord ose i përket një përdoruesi bot.'
+            roleFail: 'Ky rol është i menaxhueshëm vetëm nga Discord ose i përket një përdoruesi bot.',
+            colorFail: 'No valid hex color code was provided. Get a valid code at {url}.',
+            emoteFail: 'You have not sent any valid emotes. Only custom discord and default emojis are supported.'
         },
         webedit: {
             button: 'Embed Editor',
@@ -260,596 +265,655 @@ module.exports = {
                 }
             },
             welcomer: {
-                title: 'Welcomer',
-                name: 'Welcomer',
+                title: 'Mikpritës',
+                name: 'Mikpritës',
                 option: {
-                    channel: 'Channel: {channel}',
-                    role: 'Roles: {role}',
+                    channel: 'Kanali: {channel}',
+                    role: 'Rolet: {role}',
                     message: {
-                        message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        message: 'Mesazhi: {message}',
+                        command: 'Mesazhi: përdorni `{command}`'
                     },
                     afterleaveMessage: {
-                        message: 'AL Message: {message}',
+                        message: 'Mesazhi AL: {message}',
                         // AL: After Leave - just use the first letters of your language :)
-                        command: 'AL Message: use `{command}`'
+                        command: 'Mesazhi AL: përdorni `{command}`'
                     },
-                    pings: 'Pings: {channels}',
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    pings: 'Ping: {channels}',
+                    autodelete: 'Fshij automatikisht: **{time}**',
+                    autodelete_never: 'kurrë'
                 },
                 warnings: {
-                    afterleaveXautodelete: 'We don\'t recommend using **Auto Delete** and **Delete After Leave** simultaneously',
-                    embedXcard: 'In embed card overwrites your custom embed image'
+                    afterleaveXautodelete: 'Ne nuk rekomandojmë përdorimin e **Fshij automatik** dhe **Fshi pas largimit** njëkohësisht',
+                    embedXcard: 'Karta në embed mbishkruan imazhin tuaj të personalizuar të ngulitjes',
+                    channelMissmatch: 'Channel of the wave webhook is different than the greet message'
                 },
                 button: {
-                    message: 'Edit Message',
-                    imgcard: 'Edit Card',
-                    pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete',
+                    nextpage: 'Next Page ({cur}/{total})',
+                    message: 'Redakto mesazhin',
+                    imgcard: 'Modifiko kartën',
+                    pings: 'Redakto Kanalet Ping',
+                    autodelete: 'Fshirja automatike',
                     assignRolesAfterRejoin: {
-                        enable: 'Reassign Roles after Rejoin',
-                        disable: 'Disable Reassign Roles after Rejoin'
+                        enable: 'Ricakto rolet pas Ribashkimit',
+                        disable: 'Çaktivizo Ricaktimin e roleve pas Ribashkimit'
                     },
                     afterleave: {
-                        title: 'What should happen with the message if the member leaves?',
-                        selected: 'Selected',
+                        title: 'Çfarë duhet të ndodhë me mesazhin nëse anëtari largohet?',
+                        selected: 'Zgjedhur',
                         option: {
-                            nothing: 'Nothing',
-                            edit: 'Edit on leave',
-                            delete: 'Delete on leave'
+                            nothing: 'Asgjë',
+                            edit: 'Redakto në larghim',
+                            delete: 'Fshij në larghim'
                         }
                     },
-                    dm: 'DM Message',
-                    afterleave_webedit: 'After Leave Embed Editor'
+                    dm: 'Mesazh DM',
+                    afterleave_webedit: 'Pas largimit nga Redaktori i Embed',
+                    wave: 'Wave Button',
+                    reactions: 'Reactions'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Welcomer Channel'
+                        title: 'Kanal/i',
+                        name: 'Kanali i mirepritur'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Welcomer Message'
+                        title: 'Mesazh',
+                        name: 'Mesazh Mirëpritës'
                     },
                     role: {
-                        title: 'Role',
-                        name: 'Welcomer Role'
+                        title: 'Roli',
+                        name: 'Roli i mirëseardhjes'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Fshij automatikisht',
+                        name: 'Fshij automatikisht',
+                        description: 'Mesazhi i Mirëpritësit do të fshihet pas kësaj kohe.\nNe ju rekomandojmë ta mbani këtë kohë të shkurtër (vetëm disa sekonda).\nShembull: `1m 3s`'
                     },
-                    dm: { button: { disable: 'Disable DM message' } },
+                    dm: { button: { disable: 'Çaktivizo mesazhin DM' } },
+                    reactions: {
+                        title: 'Reactions',
+                        option: {
+                            welcomer: 'Welcome Message Reactions: {emotes}',
+                            firstmessage: 'First Message Reactions: {emotes}'
+                        },
+                        button: {
+                            welcomer: 'Welcome Message',
+                            firstmessage: 'First Member Message'
+                        },
+                        page: {
+                            welcomer: {
+                                title: 'Welcomer',
+                                name: 'welcomer auto reaction'
+                            },
+                            firstmessage: {
+                                title: 'First Message',
+                                name: 'auto reaction'
+                            }
+                        }
+                    },
                     imgcard: {
-                        title: 'Card',
-                        option: { background: 'Background: {url}' },
+                        title: 'Kartë',
+                        option: { background: 'Sfondi: {url}' },
                         button: {
                             background: {
-                                set: 'Set Custom Background',
-                                edit: 'Edit Custom Background'
+                                set: 'Vendos Sfond personalizuar',
+                                edit: 'Redakto sfondin e personalizuar'
                             },
-                            deleteBackground: 'Delete Background',
+                            deleteBackground: 'Fshi sfondin',
                             inEmbed: {
-                                enable: 'Show Image in Embed',
-                                disable: 'Don\'t Show Image in Embed'
+                                enable: 'Shfaq imazhin në Embed',
+                                disable: 'Mos e shfaq imazhin në Embed'
                             }
                         },
                         page: {
                             background: {
-                                title: 'Background',
-                                name: 'Card Background',
-                                description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
+                                title: 'Sfondi',
+                                name: 'Sfondi i kartës',
+                                description: 'Lidhja duhet të jetë një **URL e imazhit të drejtpërdrejtë**, gjithashtu duhet të jetë një lidhje e tipit {scheme}.\nNe rekomandojmë një raport prej {ratio} dhe një rezolucion minimal prej {resolution}.'
                             }
                         }
                     },
-                    dm: { title: 'Direct Message' }
+                    dm: { title: 'Mesazh direkt' },
+                    wavebtn: {
+                        title: 'Wave to say hi',
+                        option: {
+                            send: 'Send: {type}',
+                            label: 'Label: {label}'
+                        },
+                        button: {
+                            label: 'Change Button Text',
+                            ping: {
+                                enable: 'Enable Ping',
+                                disable: 'Disable Ping'
+                            },
+                            type: {
+                                title: 'Select a response type',
+                                option: {
+                                    '0': 'Random Sticker',
+                                    '1': 'Custom Message'
+                                }
+                            },
+                            color: {
+                                title: 'Select a color for the button',
+                                option: {
+                                    blurple: 'Blurple',
+                                    // You may leave that
+                                    grey: 'Grey',
+                                    green: 'Green',
+                                    red: 'Red'
+                                }
+                            }
+                        },
+                        page: {
+                            label: {
+                                title: 'Label',
+                                name: 'Button Text'
+                            }
+                        }
+                    }
                 }
             },
             byer: {
                 title: 'Byer',
                 name: 'Byer',
                 option: {
-                    channel: 'Channel: {channel}',
+                    channel: 'Kanali: {channel}',
                     message: {
-                        message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        message: 'Mesazhi: {message}',
+                        command: 'Mesazhi: përdorni `{command}`'
                     },
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    autodelete: 'Fshij automatikisht: **{time}**',
+                    autodelete_never: 'kurrë'
                 },
                 button: {
-                    message: 'Edit Message',
-                    autodelete: 'Set Autodelete'
+                    message: 'Redakto mesazhin',
+                    autodelete: 'Fshirja automatike'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Byer Channel'
+                        title: 'Kanal/i',
+                        name: 'Kanali Byer'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Byer Message'
+                        title: 'Mesazh',
+                        name: 'Mesazhi Byer'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Byer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Fshij automatikisht',
+                        name: 'Fshij automatikisht',
+                        description: 'Mesazhi Byer do të fshihet pas kësaj kohe.\nNe ju rekomandojmë ta mbani këtë kohë të shkurtër (vetëm disa sekonda).\nShembull: `1m 3s`'
                     }
                 }
             }
         }
     },
     tickets: {
-        title: 'Configure Ticketing',
+        title: 'Konfiguro Ticketa',
         option: {
-            channel: 'Category: {channel}',
-            staff: 'Staff: {role}',
+            channel: 'Kategoria: {channel}',
+            staff: 'Stafi: {role}',
             logging: 'Logging: {channel}',
-            forceReason: 'Reason: {state}',
-            naming: 'Naming: {type}',
+            forceReason: 'Arsyeja: {state}',
+            naming: 'Emërtimi: {type}',
             namingType: {
-                username: 'Username',
-                userid: 'UserId',
-                random: 'Random'
+                username: 'Emri i përdoruesit',
+                userid: 'ID-ja e përdoruesit',
+                random: 'E rastësishme'
             }
         },
         button: {
             forceReason: {
-                enable: 'Force Reason',
-                disable: 'Optional Reason'
+                enable: 'Arsyeja e forcës',
+                disable: 'Arsyeja Fakultative'
             },
             logging: {
-                edit: 'Set Logging Channel',
-                set: 'Change Logging Channel'
+                set: 'Set Logging Channel',
+                edit: 'Change Logging Channel'
             },
             transcript: {
-                disable: 'Disable Transcripts',
-                enable: 'Save Transcripts'
+                disable: 'Çaktivizo transkriptet',
+                enable: 'Ruaj transkriptet'
             },
             openReason: {
-                disable: 'Disable Open Reason',
-                enable: 'Enable Open Reason'
+                disable: 'Çaktivizoni arsyen e hapur',
+                enable: 'Aktivizo arsyen e hapur'
             },
             leaveAutoclose: {
-                disable: 'Disable Leave Autoclose',
-                enable: 'Enable Leave Autoclose'
+                disable: 'Çaktivizo mbylljen automatike të largimit',
+                enable: 'Aktivizo mbylljen automatike të largimit'
             },
-            embeds: 'Change Embeds',
+            embeds: 'Ndrysho Embeds',
             naming: {
-                title: 'Set a naming type',
-                current: 'Current',
+                title: 'Vendosni një lloj emërtimi',
+                current: 'Aktuale',
                 option: {
-                    username: 'Username',
-                    userid: 'User Id',
-                    random: 'Random Id'
+                    username: 'Emri i përdoruesit',
+                    userid: 'ID-të e përdoruesve',
+                    random: 'Id i rastësishëm'
                 }
             }
         },
         page: {
             category: {
-                title: 'Category',
-                name: 'Tickets Category'
+                title: 'Kategoria',
+                name: 'Kategoria e Ticketav'
             },
             role: {
-                title: 'Staff Role',
-                name: 'Ticket Staff role'
+                title: 'Roli i Stafit',
+                name: 'Roli i stafit të Ticketav'
             },
             descriptions: {
-                title: 'Texts',
-                name: 'Ticket descriptions',
+                title: 'Tekste',
+                name: 'Përshkrimet e Ticketave',
                 button: {
-                    texts: 'Preview Ticket',
-                    topic: 'Change Topic',
-                    title: 'Change title text',
-                    unclaimed: 'Change Unclaimed Embed',
-                    claimed: 'Change Claimed Embed'
+                    texts: 'Parashikimi i Ticketes',
+                    topic: 'Ndrysho Temën',
+                    title: 'Ndrysho tekstin e titullit',
+                    unclaimed: 'Ndrysho Embed të padeklaruar',
+                    claimed: 'Ndrysho Embed të pretenduar'
                 },
                 page: {
                     title: {
-                        title: 'Title',
-                        name: 'Ticket embed title'
+                        title: 'Titulli',
+                        name: 'Titulli i futjes së Ticketes'
                     },
                     unclaimed: {
-                        title: 'Unclaimed',
-                        name: 'Unclaimed Ticket description'
+                        title: 'E pamëtuar',
+                        name: 'Përshkrimi i biletës së pakërkuar'
                     },
                     claimed: {
-                        title: 'Claimed',
-                        name: 'Claimed Ticket description'
+                        title: 'E pretenduar',
+                        name: 'Përshkrimi i Ticketes së pretenduar'
                     },
                     topic: {
-                        title: 'Topic',
-                        name: 'Tickets Topic'
+                        title: 'Temë',
+                        name: 'Tema e Ticketave'
                     }
                 }
             },
             logging: {
                 title: 'Logging',
-                name: 'Ticket Logging'
+                name: 'Logging e Ticketave'
             }
         }
     },
     moderation: {
-        title: 'Configure Moderation',
+        title: 'Konfiguro Moderimin',
         option: {
-            role: 'Bypass Role: {role}',
+            role: 'Roli i anashkalimit: {role}',
             logging: 'Logging: {channel}'
         },
         button: {
-            filter: 'Blacklist',
+            filter: 'Lista e Zezë',
             antiScam: 'Anti Scam',
             antiLink: 'Anti Link',
             antiSpam: 'Anti Spam',
             bypassRole: {
-                edit: 'Edit bypass Role',
-                set: 'Set bypass Role'
+                edit: 'Redakto rolin e anashkalimit',
+                set: 'Cakto rolin e anashkalimit'
             },
             logging: {
-                edit: 'Edit logging Channel',
-                set: 'Set logging Channel'
+                edit: 'Redakto kanalin e Logging',
+                set: 'Cakto kanalin e Logging'
             }
         },
         page: {
             role: {
-                title: 'Bypass Role',
-                name: 'Bypass role'
+                title: 'Roli i anashkalimit',
+                name: 'Roli i anashkalimit'
             },
             logging: {
                 title: 'Logging',
-                name: 'Moderation logs'
+                name: 'Logs e moderimit'
             },
             filter: {
-                title: 'Filter',
-                name: 'Moderation Filter',
+                title: 'Filtër',
+                name: 'Filtri i Moderimit',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Mesazhi: {message}',
+                    actions: 'Veprimet: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
+                        reply: 'përgjigje',
+                        delete: 'fshij',
                         timeout: 'timeout'
                     },
-                    total: 'Total: **{amount} words**',
+                    total: 'Gjithsej: **{amount} fjalë**',
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    deleteAll: 'Clear word list',
-                    editWords: 'Edit word list',
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    deleteAll: 'Pastro listën e fjalëve',
+                    editWords: 'Redakto listën e fjalëve',
+                    message: 'Redakto mesazhin',
+                    timeout: 'Kohëzgjatja e Timeoutit',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Menaxhoni një veprim',
+                        selected: 'Zgjedhur',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
+                            reply: 'Përgjigje',
+                            delete: 'Fshij',
                             timeout: 'Timeout'
                         }
                     },
-                    export: 'Show word list'
+                    export: 'Shfaq listën e fjalëve'
                 },
                 page: {
                     delete: {
-                        title: 'Clear Word List',
-                        description: 'Are you sure that you want to clear out all blacklisted words?',
+                        title: 'Pastro listën e fjalëve',
+                        description: 'Jeni i sigurt se doni të pastroni të gjitha fjalët në blacklist?',
                         page: {
                             confirm: {
-                                title: 'Confirmed',
-                                description: 'Successfully cleared out all blacklisted words! You can now dismiss this message.'
+                                title: 'Konfirmuar',
+                                description: 'U fshi me sukses të gjitha fjalët në blacklist! Tani mund ta heqësh këtë mesazh.'
                             },
                             abord: {
-                                title: 'Aborded',
-                                description: 'No actions have been taken! You can now dismiss this message.'
+                                title: 'I abortuar',
+                                description: 'Asnjë veprim nuk është ndërmarrë! Tani mund ta heqësh këtë mesazh.'
                             }
                         }
                     },
                     words: {
-                        title: 'Words',
-                        name: 'Blacklisted word',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
-                        bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
-                        added: 'Successfully added "`{word}`" as new blacklisted word.',
-                        removed: 'Successfully removed "`{word}`" as blacklisted word.'
+                        title: 'Fjalët',
+                        name: 'Fjalë në blacklist',
+                        awaitMessage: 'Dërgoni një ose disa fjalë që duhet të futen në blacklist.\nJu lutem **përdorni** vetëm karaktere nga "A-Z".\nNdani fjalët me `,` për të shtuar fjalë në masë.',
+                        bulkAdded: 'U shtuan me sukses {amout} fjalë të reja në blacklist.',
+                        added: 'U shtua me sukses "`{word}`" si fjalë e re në blacklist.',
+                        removed: 'U hoq me sukses "`{word}`" si fjalë në blacklist.'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Blacklisted word reply'
+                        title: 'Mesazh',
+                        name: 'Përgjigje fjalësh në blacklist'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Kohëzgjatja e Timeoutit',
+                        name: 'Kohëzgjatja e Timeoutit',
+                        description: 'Përdoruesi do të vendoset në Timeout për këtë kohëzgjatje!\nHyrja duhet të jetë më pak se 18 ditë.\nShembull: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiScam: {
                 title: 'Anti Scam',
-                name: 'Moderation Anti Scam',
+                name: 'Moderimi kundër Scam',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Mesazh: {message}',
+                    actions: 'Veprimet: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
+                        reply: 'përgjigje',
+                        delete: 'fshij',
                         timeout: 'timeout'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    message: 'Redakto mesazhin',
+                    timeout: 'Kohëzgjatja e Timeoutit',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Menaxhoni një veprim',
+                        selected: 'Zgjedhur',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
+                            reply: 'Përgjigje',
+                            delete: 'Fshij',
                             timeout: 'Timeout'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Anit Scam reply'
+                        title: 'Mesazh',
+                        name: 'Përgjigje Anti Scam'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Kohëzgjatja e Timeoutit',
+                        name: 'Kohëzgjatja e Timeoutit',
+                        description: 'Përdoruesi do të vendoset në Timeout për këtë kohëzgjatje!\nHyrja duhet të jetë më pak se 18 ditë.\nShembull: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiLink: {
                 title: 'Anti Link',
-                name: 'Moderation Anti Link',
+                name: 'Moderimi kundër Link',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Mesazh: {message}',
+                    actions: 'Veprimet: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
+                        reply: 'përgjigje',
+                        delete: 'fshij',
                         timeout: 'timeout'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
                     media: {
-                        disable: 'Disallow Media',
-                        enable: 'Allow Media'
+                        disable: 'Mos lejo media',
+                        enable: 'Lejo media'
                     },
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    message: 'Redakto mesazhin',
+                    timeout: 'Kohëzgjatja e Timeoutit',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Menaxhoni një veprim',
+                        selected: 'Zgjedhur',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
+                            reply: 'Përgjigje',
+                            delete: 'Fshij',
                             timeout: 'Timeout'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Anit Link reply'
+                        title: 'Mesazh',
+                        name: 'Anti Link reply'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Kohëzgjatja e Timeoutit',
+                        name: 'Kohëzgjatja e Timeoutit',
+                        description: 'Përdoruesi do të vendoset në Timeout për këtë kohëzgjatje!\nHyrja duhet të jetë më pak se 18 ditë.\nShembull: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiSpam: {
                 title: 'Anti Spam',
-                name: 'Moderation Anti Spam',
+                name: 'Moderimi kundër Spam',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
-                    threshold: 'Threshold: **{threshold}msgs/5s**',
+                    message: 'Mesazh: {message}',
+                    actions: 'Veprimet: {types}',
+                    threshold: 'Pragu: **{threshold}msgs/5s**',
                     actionType: {
-                        reply: 'reply',
+                        reply: 'përgjigje',
                         timeout: 'timeout',
-                        purge: 'purge'
+                        purge: 'spastroji'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    threshold: 'Edit Threshold',
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    threshold: 'Redakto pragun',
+                    message: 'Redakto mesazhin',
+                    timeout: 'Kohëzgjatja e Timeoutit',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Menaxhoni një veprim',
+                        selected: 'Zgjedhur',
                         option: {
-                            reply: 'Reply',
+                            reply: 'Përgjigje',
                             timeout: 'Timeout',
-                            purge: 'Purge'
+                            purge: 'Spastroji'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Anti Spam reply'
+                        title: 'Mesazh',
+                        name: 'Përgjigje Anti Spam'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Kohëzgjatja e Timeoutit',
+                        name: 'Kohëzgjatja e Timeoutit',
+                        description: 'Përdoruesi do të vendoset në Timeout për këtë kohëzgjatje!\nHyrja duhet të jetë më pak se 18 ditë.\nShembull: `7d 4h 8m 3s`'
                     },
                     threshold: {
-                        title: 'Threshold',
-                        name: 'spam Threshold',
-                        description: 'I will consider it as spam, when this amount gets reached within 5 seconds!\nInput must be between 1 and 99.'
+                        title: 'Pragu',
+                        name: 'Pragu i spamit',
+                        description: 'Unë do ta konsideroj atë si spam, kur kjo shumë të arrihet brenda 5 sekondave!\nHyrja duhet të jetë midis 1 dhe 99.'
                     }
                 }
             }
         }
     },
     starboard: {
-        title: 'Configure Starboard',
+        title: 'Konfiguro Starboard',
         button: {
-            emoji: 'Change Emoji',
-            color: 'Change Color',
-            count: 'Change Count',
+            emoji: 'Ndrysho Emoji',
+            color: 'Ndrysho ngjyrën',
+            count: 'Ndrysho numërimin',
             nsfw: {
-                disable: 'Disable NSFW',
-                enable: 'Enable NSFW'
+                disable: 'Çaktivizo NSFW',
+                enable: 'Aktivizo NSFW'
             },
             bots: {
-                disable: 'Disable Bots',
-                enable: 'Enable Bots'
+                disable: 'Çaktivizo robotët',
+                enable: 'Aktivizo robotët'
             },
             selfReact: {
-                disable: 'Disable Self Reaction',
-                enable: 'Enable Self Reaction'
+                disable: 'Çaktivizo Vetë Reagimin',
+                enable: 'Aktivizo Vetë-Reagimin'
             },
             reply: {
-                disable: 'Hide Replied to',
-                enable: 'Show Replied to'
+                disable: 'Fshih Përgjigjja tek',
+                enable: 'Shfaq Përgjigjur në'
             },
             edits: {
-                disable: 'Disalow Edits',
-                enable: 'Allow Edits'
+                disable: 'Mos lejo modifikimet',
+                enable: 'Lejo modifikimet'
             },
             logging: {
-                disable: 'Disable Logging',
-                enable: 'Enable Logging'
+                disable: 'Çaktivizo Logging',
+                enable: 'Aktivizo Logging'
             },
             blacklist: {
-                set: 'Set Blacklisted Role',
-                change: 'Edit Blacklisted Role'
+                set: 'Cakto rolin në blacklist',
+                change: 'Redakto rolin në blacklist'
             },
-            blacklistedChannels: 'Edit Blacklisted Channels',
+            blacklistedChannels: 'Redaktoni kanalet në blacklist',
             delete: {
-                disable: 'Disable Delete <{reactions} Reactions',
-                enable: 'Enable Delete <{reactions} Reactions'
+                disable: 'Çaktivizo fshij <{reactions} Reagime',
+                enable: 'Aktivizo fshij <{reactions} Reagime'
             },
             display: {
-                title: 'Set a display style',
-                selected: 'Selected',
+                title: 'Vendosni një stil ekrani',
+                selected: 'Zgjedhur',
                 option: {
-                    tag: 'Tag',
-                    username: 'Username',
-                    nickname: 'Nickname',
-                    guildProfile: 'Guild Profile'
+                    tag: 'Etiketë',
+                    username: 'Emri i përdoruesit',
+                    nickname: 'Pseudonimi',
+                    guildProfile: 'Profili i serverit'
                 }
             }
         },
         option: {
-            channel: 'Channel: {channel}',
-            color: 'Color: {color}',
+            channel: 'Kanali: {channel}',
+            color: 'Ngjyra: {color}',
             emoji: 'Emoji: {emoji}',
-            count: 'Count: {count}',
-            blacklistedRole: 'Blacklisted: {role}',
-            display: 'Display: {profileType}',
+            count: 'Numërimi: {count}',
+            blacklistedRole: 'Blacklist: {role}',
+            display: 'Shfaqë: {profileType}',
             profileType: {
-                tag: 'Tag',
-                username: 'Username',
-                nickname: 'Nickname',
-                guildProfile: 'Guild Profile'
+                tag: 'Etiketë',
+                username: 'Emri i përdoruesit',
+                nickname: 'Pseudonimi',
+                guildProfile: 'Profili i serverit'
             }
         },
         page: {
             channel: {
-                title: 'Channel',
-                name: 'Starboard Channel'
+                title: 'Kanal/i',
+                name: 'Kanali Starboard'
             },
             emoji: {
                 title: 'Emoji',
-                name: 'Starboard Emoji'
+                name: 'Emoji Starboard'
             },
             color: {
-                title: 'Color',
-                name: 'Starboard Color',
-                description: 'Paste a Hex color into the chat you want to use.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                title: 'Ngjyrë',
+                name: 'Ngjyra e Starboard'
             },
             count: {
-                title: 'Count',
-                name: 'requierd Count',
-                description: 'Send a number to set the minimum {emote} reaction count requirement.'
+                title: 'Numërimi',
+                name: 'Numri i kërkuar',
+                description: 'Dërgo një numër për të vendosur kërkesën minimale të numrit të reagimeve {emote}.'
             },
             blacklistedRole: {
-                title: 'Blacklist Role',
-                name: 'blacklisted Role'
+                title: 'Roli Blacklist',
+                name: 'Roli blacklist'
             },
             blacklistedChannels: {
-                title: 'Blacklist Channels',
-                name: 'Blacklist Channel list',
-                description: 'Mention a Channel/Category or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
-                missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+                title: 'Kanalet e blacklist',
+                name: 'Lista e kanaleve në blacklist',
+                description: 'Përmendni një kanal/kategori ose ngjitni ID-në e kanalit në bisedë.\nVendosni mesazhin me `+` për të shtuar ose `-` për të hequr kanalet.\nJu mund të dërgoni kanale të shumta të ndara me një hapësirë.\nShkruani `none` për të hequr të gjitha kanalet.',
+                missingPrefix: 'Mesazhit duhet të parashtesohet me `+` për të shtuar ose `-` për të hequr kanalet.'
             }
         }
     },
     misc: {
-        title: 'Configure Miscellaneous',
+        title: 'Konfiguro sene të ndryshme',
         button: {
-            embedMessages: 'Embed Messages',
-            levelRoles: 'Level Roles',
-            leaderboards: 'Leaderboards'
+            embedMessages: 'Mesazhet Embed',
+            levelRoles: 'Rolet e nivelit',
+            leaderboards: 'Tabelat e klasifikimit'
         },
         page: {
             embedMessages: {
-                title: 'Embed Messages',
-                description: '**What\'s This?**\nIf a message link is being send, {name} will reply with the content of that message!',
+                title: 'Mesazhet Embed',
+                description: '**Cfare eshte kjo?**\nNëse një lidhje mesazhi po dërgohet, {name} do të përgjigjet me përmbajtjen e atij mesazhi!',
                 button: {
                     allowOtherGuilds: {
-                        enable: 'Allow other Guilds to Embed Messages from here',
-                        disable: 'Disalow other Guilds to Embed Messages from here'
+                        enable: 'Lejo Guilds të tjera të ngulitin mesazhe nga këtu',
+                        disable: 'Mos lejo Guilds të tjera për të futur mesazhe nga këtu'
                     },
-                    color: 'Choose a Color for the Embed',
+                    color: 'Zgjidhni një ngjyrë për Embed',
                     display: {
-                        title: 'Choose a Author display style',
-                        selected: 'Selected',
+                        title: 'Zgjidhni stilin e shfaqjes së autorit',
+                        selected: 'Zgjedhur',
                         option: {
-                            message: 'Message Content',
-                            author: 'Author Field',
-                            footer: 'Footer Field'
+                            message: 'Përmbajtja e mesazhit',
+                            author: 'Fusha e autorit',
+                            footer: 'Fusha e Fundit'
                         }
                     }
                 }
             },
             levelRoles: {
-                title: 'Level Roles',
+                title: 'Rolet e nivelit',
                 option: {
-                    roles: 'Roles: **{count}/{max}**',
-                    roles_upsell: 'Subscribe to get {count}+',
-                    channel: 'Channel: {channel}',
-                    channel_none: 'message channel',
-                    message: 'Message: {message}'
+                    roles: 'Rolet: **{count}/{max}**',
+                    channel: 'Kanali: {channel}',
+                    channel_none: 'kanal mesazhesh',
+                    message: 'Mesazh: {message}'
                 },
                 button: {
-                    message: 'Edit Message',
-                    addrole: 'Add Level',
+                    message: 'Redakto mesazhin',
+                    addrole: 'Shto nivelin',
                     select: {
-                        title: 'Chose a Level Role you want to edit',
-                        editing: 'Editing',
+                        title: 'Zgjidhni një rol të nivelit që dëshironi të modifikoni',
+                        editing: 'Redaktimi',
                         option: {
-                            name: '{messages} messages',
-                            description: 'Role: {role}'
+                            name: '{messages} mesazhet',
+                            description: 'Rolet: {role}'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Level Up reply'
+                        title: 'Mesazh',
+                        name: 'Përgjigja e nivelit lart'
                     },
                     channel: {
-                        title: 'Channel',
-                        name: 'Level Up Channel'
+                        title: 'Kanal/i',
+                        name: 'Kanali i nivelit lart'
                     },
                     addRole: {
-                        title: 'New Level Role',
-                        limit: 'You have reached the guild limit of **{count}/{max} level roles**!',
-                        alreadExists: 'A reward role for **{messages} messages** already has been set with the **{role} role**.',
-                        success: 'Successfully added this Level Role. Each user who reaches **{messages} messages** will recieve the **{role} role** now!',
+                        title: 'Roli i nivelit të ri',
+                        limit: 'Ke arritur kufirin e grupit të **{count}/{max} roleve të nivelit**!',
+                        alreadExists: 'Një rol shpërblimi për **{messages} mesazhe** tashmë është caktuar me rolin **{role}**.',
+                        success: 'U shtua me sukses ky rol në nivel. Çdo përdorues që arrin **{messages} mesazhe** do të marrë rolin **{role}** tani!',
                         page: {
                             messageCount: {
                                 title: 'Numri i mesazheve',
@@ -863,15 +927,15 @@ module.exports = {
                         }
                     },
                     editRole: {
-                        title: 'Edit Level Role',
+                        title: 'Redakto rolin e nivelit',
                         option: {
-                            role: 'Role: {role}',
-                            messages: 'Messages: {messages}'
+                            role: 'Rolet: {role}',
+                            messages: 'Mesazhet: {messages}'
                         },
                         button: {
-                            messages: 'Change Message Count',
-                            role: 'Change Role',
-                            delete: 'Delete'
+                            messages: 'Ndrysho numrin e mesazheve',
+                            role: 'Ndryshoni rol',
+                            delete: 'Fshij'
                         }
                     }
                 }
@@ -879,7 +943,31 @@ module.exports = {
             leaderboards: {
                 title: 'Tabelat e klasifikimit',
                 option: { blacklisted: 'Në listën e zezë: {channels}' },
-                button: { blacklistedChannels: 'Redaktoni kanalet në listën e zezë' }
+                button: {
+                    blacklistedChannels: 'Redaktoni kanalet në listën e zezë',
+                    reset: {
+                        disable: 'Don\'t Reset Member Data on Leave',
+                        enable: 'Reset Member Data on Leave'
+                    },
+                    roles: 'Reward Roles'
+                },
+                page: {
+                    roles: {
+                        title: 'Top Roles',
+                        option: {
+                            messages: 'Message Roles: {roles}',
+                            voiceminutes: 'Voice Roles: {roles}'
+                        },
+                        warnings: {
+                            order: 'Please select the #1st role first, then #2nd and then #3rd',
+                            permsOrder: 'Please check that all roles are bellow the {bot} role'
+                        },
+                        button: {
+                            messages: 'Top 3 messange roles',
+                            voiceminutes: 'Top 3 voice minutes roles'
+                        }
+                    }
+                }
             }
         }
     },

@@ -4,6 +4,6 @@ module.exports = {
     remove: { success: '{user} has been successfuwwy wemuvd fwom this Ticket uwu' },
     claim: {
         already: ';[{user} is, U r] awweady handwing this ticket!',
-        success: 'U have successfuwwy twansfawed the ticket to {usew} ;D'
+        success: 'You have successfully transfered the ticket to {user}!'
     }
 };

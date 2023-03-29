@@ -2,7 +2,7 @@ module.exports = {
     join: {
         title: 'Dobro došli {user}!',
         description: 'Kako biste dobili pristup ovom serveru, morat ćete dovršiti brzu provjeru kako biste smanjili rizik od napada robota i osigurali reviziju sigurnosti {emote}\n\nImajte na umu da administratori i moderatori {guild} nemaju pristup informacijama koje ste dali.',
-        premium: 'Thank you for being an Enterprise member and supporting this project {emote}\n\nNote that you do not need to pass the verification in {guild} as skipping verification is part of your Enterprise plan.'
+        premium: 'Hvala vam što ste Enterprise član i podržavate ovaj projekt {emote}\n\nImajte na umu da ne morate proći verifikaciju u {guild} jer je preskakanje verifikacije dio vašeg Enterprise plana.'
     },
     punishment: {
         ban: 'Zabranjen iz {guild}',

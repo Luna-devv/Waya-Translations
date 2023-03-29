@@ -10,6 +10,6 @@ module.exports = {
     errors: {
         overLimit: 'Dosegli ste ograničenje servera od **{count}/{max} oznaka**!\n\nImajte na umu da ova oznaka premašuje ograničenja i da je onemogućena dok ponovno ne povećate ograničenje.',
         invalidTag: 'Oznaka s ovim imenom ne postoji!',
-        ticketUse: 'This Tag is only available in tickets using {user}.'
+        ticketUse: 'Ova je oznaka dostupna samo u ulaznicama koje koriste {user}.'
     }
 };
