@@ -23,6 +23,7 @@ module.exports = {
             },
             notice: 'oprezno - privilegije programera nametnute..'
         },
+        upsell: 'Subscribe to get {count} more',
         permissions: 'Nedostaje: {perms}',
         placeholders: 'Predlošci',
         await: {
@@ -31,6 +32,7 @@ module.exports = {
             role: 'Spomenite ulogu ili zalijepite Id uloge u chat.\nUpišite {string} da biste uklonili ulogu.',
             message: 'Pošaljite poruku koju treba koristiti kao {what}.',
             emote: 'Pošaljite emoji koji se treba koristiti kao {what}.',
+            color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
             patient: 'Omogućavanje ovoga može potrajati nekoliko sekundi, pričekajte..'
         },
         success: {
@@ -43,7 +45,9 @@ module.exports = {
             lengthFail: '{what} je duži od {max} znakova! ({length} znakova, {relative} previše)',
             otherLengthFail: '{what} kraći je od {min} znakova! ({length} znakova, {relative} previše manje)',
             numberFail: '{what} nije broj između {a} i {b}!',
-            roleFail: 'Ovom ulogom može upravljati samo Discord ili pripada korisniku bota.'
+            roleFail: 'Ovom ulogom može upravljati samo Discord ili pripada korisniku bota.',
+            colorFail: 'No valid hex color code was provided. Get a valid code at {url}.',
+            emoteFail: 'You have not sent any valid emotes. Only custom discord and default emojis are supported.'
         },
         webedit: {
             button: 'Embed uređivač',
@@ -281,9 +285,11 @@ module.exports = {
                 },
                 warnings: {
                     afterleaveXautodelete: 'Ne preporučujemo korištenje **Automatsko brisanje** i **Brisanje nakon odlaska** istovremeno',
-                    embedXcard: 'U embed kartici prepisuje vašu prilagođenu ugrađenu sliku'
+                    embedXcard: 'U embed kartici prepisuje vašu prilagođenu ugrađenu sliku',
+                    channelMissmatch: 'Channel of the wave webhook is different than the greet message'
                 },
                 button: {
+                    nextpage: 'Next Page ({cur}/{total})',
                     message: 'Uredi poruku',
                     imgcard: 'Uredi karticu',
                     pings: 'Uredi Ping kanale',
@@ -303,7 +309,8 @@ module.exports = {
                     },
                     dm: 'DM poruka',
                     afterleave_webedit: 'Nakon napuštanja Embed uređivač',
-                    wave: 'Gumb mahanja'
+                    wave: 'Gumb mahanja',
+                    reactions: 'Reactions'
                 },
                 page: {
                     channel: {
@@ -324,6 +331,27 @@ module.exports = {
                         description: 'Poruka dobrodošlice bit će izbrisana nakon tog vremena.\nPreporučujemo da ovo vrijeme bude kratko (samo nekoliko sekundi).\nPrimjer: `1m 3s`'
                     },
                     dm: { button: { disable: 'Onemogući DM poruku' } },
+                    reactions: {
+                        title: 'Reactions',
+                        option: {
+                            welcomer: 'Welcome Message Reactions: {emotes}',
+                            firstmessage: 'First Message Reactions: {emotes}'
+                        },
+                        button: {
+                            welcomer: 'Welcome Message',
+                            firstmessage: 'First Member Message'
+                        },
+                        page: {
+                            welcomer: {
+                                title: 'Welcomer',
+                                name: 'welcomer auto reaction'
+                            },
+                            firstmessage: {
+                                title: 'First Message',
+                                name: 'auto reaction'
+                            }
+                        }
+                    },
                     imgcard: {
                         title: 'Kartica',
                         option: { background: 'Pozadina: {url}' },
@@ -349,17 +377,40 @@ module.exports = {
                     dm: { title: 'Direktna poruka' },
                     wavebtn: {
                         title: 'Mahnite da pozdravite',
-                        option: { send: 'Pošalji: {type}' },
+                        option: {
+                            send: 'Pošalji: {type}',
+                            label: 'Label: {label}'
+                        },
                         button: {
+                            label: 'Change Button Text',
+                            ping: {
+                                enable: 'Enable Ping',
+                                disable: 'Disable Ping'
+                            },
                             type: {
                                 title: 'Odaberite vrstu odgovora',
                                 option: {
                                     '0': 'Nasumična naljepnica',
                                     '1': 'Prilagođena poruka'
                                 }
+                            },
+                            color: {
+                                title: 'Select a color for the button',
+                                option: {
+                                    blurple: 'Blurple',
+                                    // You may leave that
+                                    grey: 'Grey',
+                                    green: 'Green',
+                                    red: 'Red'
+                                }
                             }
                         },
-                        warnings: { channelMissmatch: 'Kanal webhooka razlikuje se od pozdravne poruke.' }
+                        page: {
+                            label: {
+                                title: 'Label',
+                                name: 'Button Text'
+                            }
+                        }
                     }
                 }
             },
@@ -417,8 +468,8 @@ module.exports = {
                 disable: 'Izborni razlog'
             },
             logging: {
-                edit: 'Postavite kanal bilježenja',
-                set: 'Promjena kanala za bilježenje'
+                set: 'Set Logging Channel',
+                edit: 'Change Logging Channel'
             },
             transcript: {
                 disable: 'Onemogući transkripte',
@@ -651,7 +702,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Poruka',
-                        name: 'Anti Link odgovor'
+                        name: 'Anti Link reply'
                     },
                     timeout: {
                         title: 'Trajanje timeout-a',
@@ -782,9 +833,7 @@ module.exports = {
             },
             color: {
                 title: 'Boja',
-                name: 'Starboard Boja',
-                description: 'Zalijepite Hex boju u chat koji želite koristiti.\nDobijte heksadecimalni kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'Šifra boje nije važeća heksadecimalna boja.\nDobijte heksadecimalni kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                name: 'Starboard Boja'
             },
             count: {
                 title: 'Broj',
@@ -835,7 +884,6 @@ module.exports = {
                 title: 'Level Uloge',
                 option: {
                     roles: 'Uloge: **{count}/{max}**',
-                    roles_upsell: 'Pretplatite se da biste dobili {count}+',
                     channel: 'Kanal: {channel}',
                     channel_none: 'kanal poruka',
                     message: 'Poruka: {message}'
@@ -895,7 +943,31 @@ module.exports = {
             leaderboards: {
                 title: 'Ploče s najboljim rezultatima',
                 option: { blacklisted: 'Na crnoj listi: {channels}' },
-                button: { blacklistedChannels: 'Uredite kanale na crnoj listi' }
+                button: {
+                    blacklistedChannels: 'Uredite kanale na crnoj listi',
+                    reset: {
+                        disable: 'Don\'t Reset Member Data on Leave',
+                        enable: 'Reset Member Data on Leave'
+                    },
+                    roles: 'Reward Roles'
+                },
+                page: {
+                    roles: {
+                        title: 'Top Roles',
+                        option: {
+                            messages: 'Message Roles: {roles}',
+                            voiceminutes: 'Voice Roles: {roles}'
+                        },
+                        warnings: {
+                            order: 'Please select the #1st role first, then #2nd and then #3rd',
+                            permsOrder: 'Please check that all roles are bellow the {bot} role'
+                        },
+                        button: {
+                            messages: 'Top 3 messange roles',
+                            voiceminutes: 'Top 3 voice minutes roles'
+                        }
+                    }
+                }
             }
         }
     },
