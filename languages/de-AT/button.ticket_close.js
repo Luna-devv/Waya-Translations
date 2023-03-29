@@ -13,5 +13,17 @@ module.exports = {
     form: {
         formTitle: `Close {channel}`,
         reason: 'Reason'
+    },
+    closeDm: {
+        title: 'Ticket {id} in {server} Closed',
+        you: 'You',
+        none: 'none',
+        data: {
+            opened: 'Opened by {user} at {date}',
+            claimed: 'Handled by {user} and solved in {time}',
+            closed: 'Closed by {user} at {date}',
+            members: 'Members: {list}'
+        },
+        footer: 'Powered by {domain}'
     }
 };
