@@ -23,6 +23,7 @@ module.exports = {
             },
             notice: 'prudente - privilegi di sviluppatore forzati..'
         },
+        upsell: 'Subscribe to get {count} more',
         permissions: 'Mancanti: {perms}',
         placeholders: 'Segnaposti',
         await: {
@@ -31,6 +32,7 @@ module.exports = {
             role: 'Menziona un ruolo o incolla l\'Id del ruolo nella chat.\nDigita {string} per rimuovere il ruolo.',
             message: 'Invia un messaggio che dovrebbe essere usato come {what}.',
             emote: 'Invia un Emoji che dovrebbe essere usato come {what}.',
+            color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
             patient: 'Enabling this might take a few seconds, please wait..'
         },
         success: {
@@ -43,7 +45,9 @@ module.exports = {
             lengthFail: '{what} è più lungo di {max} caratteri! ({length} caratteri, {relative} troppo)',
             otherLengthFail: '{what} è più corto di {min} caratteri! ({length} caratteri, {relative} troppo meno)',
             numberFail: '{what} non è un numero compreso tra {a} e {b}!',
-            roleFail: 'Questo ruolo è gestibile solo da Discord o appartiene a un utente bot.'
+            roleFail: 'Questo ruolo è gestibile solo da Discord o appartiene a un utente bot.',
+            colorFail: 'No valid hex color code was provided. Get a valid code at {url}.',
+            emoteFail: 'You have not sent any valid emotes. Only custom discord and default emojis are supported.'
         },
         webedit: {
             button: 'Editore Embed',
@@ -281,9 +285,11 @@ module.exports = {
                 },
                 warnings: {
                     afterleaveXautodelete: 'Non consigliamo di utilizzare **eliminazione automatica** ed **Eliminazione dopo abbandono** contemporaneamente',
-                    embedXcard: 'Nella scheda incorporata sovrascrive l\'immagine incorporata personalizzata'
+                    embedXcard: 'Nella scheda incorporata sovrascrive l\'immagine incorporata personalizzata',
+                    channelMissmatch: 'Channel of the wave webhook is different than the greet message'
                 },
                 button: {
+                    nextpage: 'Next Page ({cur}/{total})',
                     message: 'Modifica messaggio',
                     imgcard: 'Modifica carta',
                     pings: 'Modifica Canali Ping',
@@ -303,7 +309,8 @@ module.exports = {
                     },
                     dm: 'Messaggio DM',
                     afterleave_webedit: 'Editore Embed dopo l\'abbandono',
-                    wave: 'Wave Button'
+                    wave: 'Wave Button',
+                    reactions: 'Reactions'
                 },
                 page: {
                     channel: {
@@ -324,6 +331,27 @@ module.exports = {
                         description: 'Il messaggio Benvenutore, verrà eliminato dopo questo tempo.\nConsigliamo di mantenere questo tempo breve (solo pochi secondi).\nEsempio: `1m 3s`'
                     },
                     dm: { button: { disable: 'Disabilita il messaggio DM' } },
+                    reactions: {
+                        title: 'Reactions',
+                        option: {
+                            welcomer: 'Welcome Message Reactions: {emotes}',
+                            firstmessage: 'First Message Reactions: {emotes}'
+                        },
+                        button: {
+                            welcomer: 'Welcome Message',
+                            firstmessage: 'First Member Message'
+                        },
+                        page: {
+                            welcomer: {
+                                title: 'Welcomer',
+                                name: 'welcomer auto reaction'
+                            },
+                            firstmessage: {
+                                title: 'First Message',
+                                name: 'auto reaction'
+                            }
+                        }
+                    },
                     imgcard: {
                         title: 'Scheda',
                         option: { background: 'Sfondo: {url}' },
@@ -349,17 +377,40 @@ module.exports = {
                     dm: { title: 'Messaggio diretto' },
                     wavebtn: {
                         title: 'Wave to say hi',
-                        option: { send: 'Send: {type}' },
+                        option: {
+                            send: 'Send: {type}',
+                            label: 'Label: {label}'
+                        },
                         button: {
+                            label: 'Change Button Text',
+                            ping: {
+                                enable: 'Enable Ping',
+                                disable: 'Disable Ping'
+                            },
                             type: {
                                 title: 'Select a response type',
                                 option: {
                                     '0': 'Random Sticker',
                                     '1': 'Custom Message'
                                 }
+                            },
+                            color: {
+                                title: 'Select a color for the button',
+                                option: {
+                                    blurple: 'Blurple',
+                                    // You may leave that
+                                    grey: 'Grey',
+                                    green: 'Green',
+                                    red: 'Red'
+                                }
                             }
                         },
-                        warnings: { channelMissmatch: 'Channel of the webhook is different than the greet message.' }
+                        page: {
+                            label: {
+                                title: 'Label',
+                                name: 'Button Text'
+                            }
+                        }
                     }
                 }
             },
@@ -417,8 +468,8 @@ module.exports = {
                 disable: 'Motivo Opzionale'
             },
             logging: {
-                edit: 'Imposta canale dei Log',
-                set: 'Cambia il Canale Log'
+                set: 'Set Logging Channel',
+                edit: 'Change Logging Channel'
             },
             transcript: {
                 disable: 'Disabilita Trascritti',
@@ -651,7 +702,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Messaggio',
-                        name: 'Risposta Anti Link'
+                        name: 'Anti Link reply'
                     },
                     timeout: {
                         title: 'Durata del timeout',
@@ -782,9 +833,7 @@ module.exports = {
             },
             color: {
                 title: 'Colore',
-                name: 'Colore Starboard',
-                description: 'Incolla un colore Hex nella chat che vuoi usare.\nOttieni un codice colore Hex da [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'Il codice colore non è un colore Hex valido.\nOttieni un codice colore Hex da [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                name: 'Colore Starboard'
             },
             count: {
                 title: 'Conto',
@@ -835,7 +884,6 @@ module.exports = {
                 title: 'Ruoli di Livello',
                 option: {
                     roles: 'Ruoli: **{count}/{max}**',
-                    roles_upsell: 'Iscriviti per ricevere {count}+',
                     channel: 'Canale: {channel}',
                     channel_none: 'canale messaggi',
                     message: 'Messaggio: {message}'
@@ -895,7 +943,31 @@ module.exports = {
             leaderboards: {
                 title: 'Classifiche',
                 option: { blacklisted: 'Blacklist: {channels}' },
-                button: { blacklistedChannels: 'Modifica Canali nella Blacklist' }
+                button: {
+                    blacklistedChannels: 'Modifica Canali nella Blacklist',
+                    reset: {
+                        disable: 'Don\'t Reset Member Data on Leave',
+                        enable: 'Reset Member Data on Leave'
+                    },
+                    roles: 'Reward Roles'
+                },
+                page: {
+                    roles: {
+                        title: 'Top Roles',
+                        option: {
+                            messages: 'Message Roles: {roles}',
+                            voiceminutes: 'Voice Roles: {roles}'
+                        },
+                        warnings: {
+                            order: 'Please select the #1st role first, then #2nd and then #3rd',
+                            permsOrder: 'Please check that all roles are bellow the {bot} role'
+                        },
+                        button: {
+                            messages: 'Top 3 messange roles',
+                            voiceminutes: 'Top 3 voice minutes roles'
+                        }
+                    }
+                }
             }
         }
     },
