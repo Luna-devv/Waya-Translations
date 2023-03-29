@@ -23,6 +23,7 @@ module.exports = {
             },
             notice: 'Pass auf! - entwickler Modus aktive'
         },
+        upsell: 'Abonniere für +{count}',
         permissions: 'Fehlt: {perms}',
         placeholders: 'Platzhalter',
         await: {
@@ -31,6 +32,7 @@ module.exports = {
             role: 'Erwähne eine Rolle oder sende die Id in den Chat.\nSchreibe {string}, um die Rolle zu entfernen.',
             message: 'Sende eine Nachricht, die als {what} benutzt werden soll.',
             emote: 'Sende ein Emoji, welches als {what} benutzt werden soll.',
+            color: 'Sende einen Hex-Farbcode, der für {what} verwendet werden soll. Bekomme einen gültigen Code von {url}.',
             patient: 'Aktivieren kann ein paar Sekunden dauern, bitte warten..'
         },
         success: {
@@ -43,7 +45,9 @@ module.exports = {
             lengthFail: '{what} ist länger als {max} Buchstaben! ({length} Buchstaben, {relative} zu viel)',
             otherLengthFail: '{what} ist kürzer als {min} Buchstaben! ({length} Buchstaben, {relative} zu wenig)',
             numberFail: '{what} ist keine Zahl zwischen {a} und {b}!',
-            roleFail: 'Diese Rolle wird entweder von Discord selber oder wird von einem Bot verwaltet.'
+            roleFail: 'Diese Rolle wird entweder von Discord selber oder wird von einem Bot verwaltet.',
+            colorFail: 'Es wurde kein gültiger Hex-Farbcode angegeben. Bekomme einen gültigen Code von {url}.',
+            emoteFail: 'Du hast keine gültigen Emotes gesendet. Nur Discord und Standard-Emojis werden unterstützt.'
         },
         webedit: {
             button: 'Embed Editor',
@@ -281,9 +285,11 @@ module.exports = {
                 },
                 warnings: {
                     afterleaveXautodelete: 'Wir empfehlen nicht, **Auto löschen** und **Beim Verlassen löschen** gleichzeitig zu verwenden',
-                    embedXcard: 'Die in Embed Begrüßungskarte überschreibt das eigene Embed Bild'
+                    embedXcard: 'Die in Embed Begrüßungskarte überschreibt das eigene Embed Bild',
+                    channelMissmatch: 'Der Kanal der Webhook ist anders als der Willkommenskanal'
                 },
                 button: {
+                    nextpage: 'Nächste Seite ({cur}/{total})',
                     message: 'Nachricht Bearbeiten',
                     imgcard: 'Begrüßungskarte Bearbeiten',
                     pings: 'Ping Kanäle bearbeiten',
@@ -303,7 +309,8 @@ module.exports = {
                     },
                     dm: 'PN Nachricht',
                     afterleave_webedit: 'Nach Verlassen Embed Editor',
-                    wave: 'Wave Button'
+                    wave: 'Wave Button',
+                    reactions: 'Reaktionen'
                 },
                 page: {
                     channel: {
@@ -324,6 +331,27 @@ module.exports = {
                         description: 'Die Willkommensnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
                     },
                     dm: { button: { disable: 'Deaktiviere DM Nachricht' } },
+                    reactions: {
+                        title: 'Reaktionen',
+                        option: {
+                            welcomer: 'Auf Willkommensnachricht: {emotes}',
+                            firstmessage: 'Ersten Nachricht: {emotes}'
+                        },
+                        button: {
+                            welcomer: 'Willkommensnachricht',
+                            firstmessage: 'Erste Member Nachricht'
+                        },
+                        page: {
+                            welcomer: {
+                                title: 'Willkommenheißer',
+                                name: 'willkommenheißer Auto-Reaktion'
+                            },
+                            firstmessage: {
+                                title: 'Erste Nachricht',
+                                name: 'Auto Reaktion'
+                            }
+                        }
+                    },
                     imgcard: {
                         title: 'Begrüßungskarte',
                         option: { background: 'Hintergrund: {url}' },
@@ -349,17 +377,40 @@ module.exports = {
                     dm: { title: 'Privatnachricht' },
                     wavebtn: {
                         title: 'Winke, um Hallo zu sagen',
-                        option: { send: 'Sende: {type}' },
+                        option: {
+                            send: 'Sende: {type}',
+                            label: 'Label: {label}'
+                        },
                         button: {
+                            label: 'Ändern Button Text',
+                            ping: {
+                                enable: 'Aktiviere Ping',
+                                disable: 'Deaktiviere Ping'
+                            },
                             type: {
                                 title: 'Antwortstyp auswählen',
                                 option: {
                                     '0': 'Zufälliger Sticker',
                                     '1': 'Eigene Nachricht'
                                 }
+                            },
+                            color: {
+                                title: 'Setzte eine Farbe für den button',
+                                option: {
+                                    blurple: 'Burple',
+                                    // You may leave that
+                                    grey: 'Grau',
+                                    green: 'Grün',
+                                    red: 'Rot'
+                                }
                             }
                         },
-                        warnings: { channelMissmatch: 'Der Kanal der Webhook ist anders als der Willkommenskanal.' }
+                        page: {
+                            label: {
+                                title: 'Label',
+                                name: 'Button Text'
+                            }
+                        }
                     }
                 }
             },
@@ -417,8 +468,8 @@ module.exports = {
                 disable: 'Optionaler Grund'
             },
             logging: {
-                edit: 'Setze Logging Kanal',
-                set: 'Ändere Logging Kanal'
+                set: 'Setze Logging Kanal',
+                edit: 'Ändere Logging Kanal'
             },
             transcript: {
                 disable: 'Transkripts Deaktivieren',
@@ -782,9 +833,7 @@ module.exports = {
             },
             color: {
                 title: 'Farbe',
-                name: 'Starboard Farbe',
-                description: 'Füge einen HEX Farbcode in den Chat ein. \nEinen HEX Farbcode kannst du hier finden [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                invalid: 'Dieser Farbcode ist keine gültige HEX Farbe.\nEinen HEX Farbcode kannst du hier finden [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                name: 'Starboard Farbe'
             },
             count: {
                 title: 'Reaktionen',
@@ -835,7 +884,6 @@ module.exports = {
                 title: 'Level Rollen',
                 option: {
                     roles: 'Rollen: **{count}/{max}**',
-                    roles_upsell: 'Abonniere für +{count}',
                     channel: 'Kanal: {channel}',
                     channel_none: 'nachrichten kanal',
                     message: 'Nachricht: {message}'
@@ -895,7 +943,31 @@ module.exports = {
             leaderboards: {
                 title: 'Leaderboards',
                 option: { blacklisted: 'Blacklisted: {channels}' },
-                button: { blacklistedChannels: 'Blacklist Channels Bearbeiten' }
+                button: {
+                    blacklistedChannels: 'Blacklist Channels Bearbeiten',
+                    reset: {
+                        disable: 'Mitgliederdaten beim Verlassen nicht zurücksetzen',
+                        enable: 'Mitgliederdaten beim Verlassen zurücksetzen'
+                    },
+                    roles: 'Belohnungs Rollen'
+                },
+                page: {
+                    roles: {
+                        title: 'Top Rollen',
+                        option: {
+                            messages: 'Nachrichten Rollen: {roles}',
+                            voiceminutes: 'Sprach Rollen: {roles}'
+                        },
+                        warnings: {
+                            order: 'Bitte wähle zuerst die #1 Rolle aus, dann #2 und dann #3',
+                            permsOrder: 'Bitte überprüfe, dass alle Rollen unter der Rolle {bot} liegen'
+                        },
+                        button: {
+                            messages: 'Top 3 Messange Rollen',
+                            voiceminutes: 'Top 3 Sprach Minuten Rollen'
+                        }
+                    }
+                }
             }
         }
     },
