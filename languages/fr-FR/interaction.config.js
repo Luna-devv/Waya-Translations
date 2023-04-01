@@ -332,7 +332,7 @@ module.exports = {
                     },
                     dm: { button: { disable: 'Désactiver le message en MP' } },
                     reactions: {
-                        title: 'Reactions',
+                        title: 'Réactions',
                         option: {
                             welcomer: 'Welcome Message Reactions: {emotes}',
                             firstmessage: 'First Message Reactions: {emotes}'
@@ -574,12 +574,12 @@ module.exports = {
                     message: 'Message : {message}',
                     actions: 'Actions : {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
-                        timeout: 'timeout'
+                        reply: 'répondre',
+                        delete: 'supprimer',
+                        timeout: 'exclure'
                     },
                     total: 'Total: **{amount} words**',
-                    timeout: 'Timeout: {time}'
+                    timeout: 'Exclusion : {time}'
                 },
                 button: {
                     deleteAll: 'Clear word list',
@@ -590,9 +590,9 @@ module.exports = {
                         title: 'Manage an action',
                         selected: 'Selected',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
-                            timeout: 'Timeout'
+                            reply: 'Répondre',
+                            delete: 'Supprimer',
+                            timeout: 'Exclure'
                         }
                     },
                     export: 'Show word list'
