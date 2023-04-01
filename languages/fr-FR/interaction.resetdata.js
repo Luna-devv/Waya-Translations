@@ -9,8 +9,8 @@ module.exports = {
     delete: {
         invalidUser: 'Cet utilisateur n\'existe pas dans la base de données !',
         bulkInvalidUser: 'Aucun utilisateur dans la base de données !',
-        reset: 'The **{type}** from **{user}** has been reset!',
-        bulkReset: '**{type}** from **{user}** is in process of getting deleted!'
+        reset: 'Les données **{type}** de **{user}** ont été réinitialisées !',
+        bulkReset: '**{type}** de **{user}** sont en cours de suppression !'
     },
-    aborted: 'Aborted **{user}**\'s **{type}** deletion!'
+    aborted: 'Suppression des données **{type}** de **{user}** annulée !'
 };
