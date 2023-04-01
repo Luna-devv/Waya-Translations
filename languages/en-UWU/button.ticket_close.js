@@ -15,13 +15,13 @@ module.exports = {
         reason: 'Weason'
     },
     closeDm: {
-        title: 'Ticket {id} in {server} Closed',
-        you: 'You',
-        none: 'none',
+        title: 'Ticket {id} in {server} Cwosed',
+        you: 'U',
+        none: 'nyonye',
         data: {
-            opened: 'Opened by {user} at {date}',
-            claimed: 'Handled by {user} and solved in {time}',
-            closed: 'Closed by {user} at {date}',
+            opened: 'Openyed by {user} at {date}',
+            claimed: 'Handwed by {user} and sowved in {time}',
+            closed: 'Cwosed by {user} at {date}',
             members: 'Members: {list}'
         },
         footer: 'Powered by {domain}'
