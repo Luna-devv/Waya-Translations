@@ -1,10 +1,10 @@
 module.exports = {
-    alreadyExists: 'A stickymessage in this channel already exists!',
-    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} stickymessages**!',
-    invalidstickymessage: 'No stickymessage exists in this channel!',
+    alreadyExists: 'Një mesazh ngjitës në këtë kanal ekziston tashmë!',
+    stickymessagesLimit: 'Ju keni arritur kufirin e repartit të **{count}/{max} mesazhe ngjitëse**!',
+    invalidstickymessage: 'Nuk ekziston asnjë mesazh ngjitës në këtë kanal!',
     overview: {
-        title: 'Stickymessage Config',
-        permissions: 'Missing: {perms}',
+        title: 'Konfigurimi i mesazheve ngjitëse',
+        permissions: 'Mungon: {perms}',
         message: 'Mesazh',
         embed: 'Embed',
         note: 'Shënim i butonit',
@@ -25,7 +25,7 @@ module.exports = {
         }
     },
     form: {
-        formName: '{name}\'s Stickymessage',
+        formName: '{name} mesazh ngjitës',
         message: { content: 'Përmbajtja' },
         embed: {
             title: 'Titulli',
@@ -36,12 +36,12 @@ module.exports = {
         }
     },
     success: {
-        message: 'Successfully added a stickymessage in {channel}.',
+        message: 'U shtua me sukses një Mesazh Ngjitës në {channel}.',
         try: 'Provojeni duke dërguar disa mesazhe atje!'
     },
     list: {
-        title: ';[Stickymessage, Stickymessages]',
+        title: ';[Mesazh ngjitës, Mesazha ngjitës]',
         none: 'nuk ka mesazhe ngjitëse'
     },
-    deleted: 'Successfully deleted the stickymessage in {channel}.'
+    deleted: 'Mesazhi ngjitës në {channel} u fshi me sukses.'
 };
