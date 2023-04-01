@@ -550,7 +550,7 @@ module.exports = {
             antiLink: 'Anti-Lien',
             antiSpam: 'Anti-Spam',
             bypassRole: {
-                edit: 'Editer le rôle exclu',
+                edit: 'Éditer le rôle exclu',
                 set: 'Définir le rôle exclu'
             },
             logging: {
@@ -707,7 +707,7 @@ module.exports = {
                     timeout: {
                         title: 'Temps d\'exclusion',
                         name: 'Temps d\'exclusion',
-                        description: 'Cet utilisateur sera exclu pour cette durée !\nCette durée doit être inférieure à 18 jours.\nExemple: `7d 4h 8m 3s`'
+                        description: 'Cet utilisateur sera exclu pour cette durée !\nCette durée doit être inférieure à 18 jours.\nExemple : `7d 4h 8m 3s`'
                     }
                 }
             },
@@ -747,7 +747,7 @@ module.exports = {
                     timeout: {
                         title: 'Temps d\'exclusion',
                         name: 'Temps d\'exclusion',
-                        description: 'Cet utilisateur sera exclu pour cette durée !\nCette durée doit être inférieure à 18 jours.\nExemple: `7d 4h 8m 3s`'
+                        description: 'Cet utilisateur sera exclu pour cette durée !\nCette durée doit être inférieure à 18 jours.\nExemple : `7d 4h 8m 3s`'
                     },
                     threshold: {
                         title: 'Seuil',
