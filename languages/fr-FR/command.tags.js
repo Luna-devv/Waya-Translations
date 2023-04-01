@@ -1,9 +1,9 @@
 module.exports = {
     title: {
-        text: 'Text ;[Command, Commands]',
-        slash: 'Slash ;[Command, Commands]'
+        text: 'Texte ;[Commande, Commandes]',
+        slash: 'Slash ;[Commande, Commandes]'
     },
-    none: 'no tags',
+    none: 'aucun tag',
     disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions',
     // ;[singular, plural]
     amount: '{amount} tags • Use with {command}',
