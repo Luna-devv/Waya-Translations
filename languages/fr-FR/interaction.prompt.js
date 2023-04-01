@@ -1,5 +1,5 @@
 module.exports = {
-    validate: 'Validate data...',
+    validate: 'Validation des données...',
     create: 'Creating {type} prompt...',
     tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
     created: 'The {type} prompt has been created.',
