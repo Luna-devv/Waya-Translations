@@ -22,8 +22,8 @@ module.exports = {
             opened: 'Openyed by {user} at {date}',
             claimed: 'Handwed by {user} and sowved in {time}',
             closed: 'Cwosed by {user} at {date}',
-            members: 'Members: {list}'
+            members: 'Membews: {list}'
         },
-        footer: 'Powered by {domain}'
+        footer: 'Powewed by {domain}'
     }
 };
