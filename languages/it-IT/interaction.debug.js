@@ -1,15 +1,15 @@
 module.exports = {
     state: {
-        operational: 'Operational',
-        issues: 'Issues',
-        outage: 'Outage'
+        operational: 'Operativo',
+        issues: 'Problemi',
+        outage: 'Interruzione'
     },
-    shards: 'All Shards',
-    shard: 'Current Shard',
-    uptime: 'Shard Uptime',
-    database: 'Database',
+    shards: 'Tutti i Shard',
+    shard: 'Shard attuale',
+    uptime: 'Tempo di attività Shard',
+    database: 'Base dati',
     imageApi: 'Renderer',
     bot: 'Bot',
-    milliseconds: 'ms',
-    page: 'View History'
+    milliseconds: 'msec',
+    page: 'Visualizza cronologia'
 };
