@@ -40,9 +40,9 @@ module.exports = {
     },
     likes: {
         add: 'Pelqej',
-        remove: 'Dislike',
+        remove: 'Mospëlqej',
         added: 'Ju keni pëlqyer profilin e {user}. Ata tani kanë {num} ;[like, like] :3',
         removed: 'Nuk të pëlqen më profili i {user}.',
-        dm: '{emote} Congratulations, {name}!\n\nWe have some fantastic news to share with you! Your {bot} profile has reached an incredible {num} likes! You\'re clearly doing something right because people just can\'t get enough of you!\n\nSo let\'s keep the momentum going and spread the love! Tell everyone to invite {bot} by sending them {link} and make sure to use the {command} followed by your username to heart 💖 your profile!\n\nThank you for being such a fantastic part of our community!\n\nCheers,\n{bot} '
+        dm: '{emote} Urime, {name}!\n\nKemi disa lajme fantastike për të ndarë me ju! Profili yt i {bot} ka arritur një {num} pëlqime të pabesueshme! Është e qartë se ju jeni duke bërë diçka të drejtë, sepse njerëzit thjesht nuk mund të ngopen me ju!\n\nPra, le të vazhdojmë vrullin dhe të përhapim dashurinë! Thuaju të gjithëve të ftojnë {bot} duke i dërguar {link} dhe sigurohu që të përdorin {command} e ndjekur nga emri i përdoruesit në zemër 💖 profilin tuaj!\n\nFaleminderit që jeni një pjesë kaq fantastike e komunitetit tonë!\n\nGëzuar,\n{bot} '
     }
 };
