@@ -3,7 +3,7 @@ module.exports = {
     noCategory: 'La catégorie tickets a été supprimé. Veuillez en informer un administrateur.',
     created: 'Votre ticket {channel} a bien été créé !',
     form: {
-        formTitle: 'Raison d\'Ouverture du Ticket',
+        formTitle: 'Raison d\'ouverture du Ticket',
         field: 'Pourquoi voulez-vous ouvrir un Ticket ?',
         placeholder: 'J\'ai besoin d\'aide pour ça..'
     },
