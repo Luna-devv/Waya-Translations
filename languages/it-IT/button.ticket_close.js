@@ -15,15 +15,15 @@ module.exports = {
         reason: 'Motivo'
     },
     closeDm: {
-        title: 'Ticket {id} in {server} Closed',
-        you: 'You',
-        none: 'none',
+        title: 'Ticket {id} in {server} Chiuso',
+        you: 'Tu',
+        none: 'nessuno',
         data: {
-            opened: 'Opened by {user} at {date}',
-            claimed: 'Handled by {user} and solved in {time}',
-            closed: 'Closed by {user} at {date}',
-            members: 'Members: {list}'
+            opened: 'Creato da {user} il {date}',
+            claimed: 'Gestito da {user} e risolto in {time}',
+            closed: 'Chiuso da {user} al {date}',
+            members: 'Elenco dei membri: {list}'
         },
-        footer: 'Powered by {domain}'
+        footer: 'Fornito da {domain}'
     }
 };
