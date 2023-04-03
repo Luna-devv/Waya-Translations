@@ -45,8 +45,8 @@ module.exports = {
             },
             group: {
                 ticket: {
-                    disable: 'Disable Ticket Tag',
-                    enable: 'Enable Ticket Tag'
+                    disable: 'Désactiver le tag Ticket',
+                    enable: 'Activer le tag Ticket'
                 }
             },
             aliases: 'Gérer les Alias',
