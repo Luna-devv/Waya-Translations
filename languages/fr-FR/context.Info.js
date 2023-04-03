@@ -43,6 +43,6 @@ module.exports = {
         remove: 'Disliker',
         added: 'Vous avez liké le profil de {user}. Il/Elle a maintenant {num} ;[like, likes] :3',
         removed: 'Vous n\'aimez plus le profil de {user}.',
-        dm: '{emote} Félicitations, {name} !\n\nNous avons des nouvelles fantastiques à partager avec vous ! Votre profil {bot} a atteint l\'incroyable quantité de {num} likes ! Vous faites clairement quelque chose de bien, car les gens en veulent toujours plus venant de vous !\n\nConservons cet élan et répandons l\'amour ! Dites à tout le monde d\'inviter {bot} en leur envoyant {link} and assurez-vous d\'utiliser {command} suivi de votre nom d\'utilisateur pour aimer 💖 votre profil !\n\nMerci d\'être un si fantastique élément de notre communauté !\n\nAmicalement,\n{bot}'
+        dm: '{emote} Félicitations, {name} !\n\nNous avons des nouvelles fantastiques à partager avec vous ! Votre profil {bot} a atteint l\'incroyable quantité de {num} likes ! Vous faites clairement quelque chose de bien, car les gens en veulent toujours plus venant de vous !\n\nConservons cet élan et répandons l\'amour ! Dites à tout le monde d\'inviter {bot} en leur envoyant {link} and assurez-vous d\'utiliser {command} suivi de votre nom d\'utilisateur pour aimer 💖 votre profil !\n\nMerci d\'être un si fantastique membre de notre communauté !\n\nAmicalement,\n{bot}'
     }
 };
