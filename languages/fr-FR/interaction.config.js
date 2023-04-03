@@ -23,16 +23,16 @@ module.exports = {
             },
             notice: 'attention - Privilèges développeurs activés..'
         },
-        upsell: 'Subscribe to get {count} more',
+        upsell: 'Abonnez-vous pour obtenir {count} de plus',
         permissions: 'Manquant : {perms}',
-        placeholders: 'Placeholders',
+        placeholders: 'Variables',
         await: {
             channel: 'Mentionnez un salon ou entrez l\'ID d\'un salon dans le chat\nTapez {string} pour supprimer le salon.',
             category: 'Mentionnez une catégorie ou envoyez l\'ID d\'une catégorie dans le chat.\nTapez {string} pour supprimer la catégorie.',
             role: 'Mentionnez un rôle ou envoyez l\'ID d\'un rôle dans le chat.\nTapez {string} pour supprimer le rôle.',
             message: 'Envoyez le message qui sera utilisé en tant que {what}.',
             emote: 'Envoyez l\'émoji qui sera utilisé en tant que {what}.',
-            color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
+            color: 'Envoyez un code couleur hexadécimal à utiliser pour {what}. Obtenez un code valide sur {url}.',
             patient: 'Activer ceci peut prendre quelques secondes, veuillez patienter..'
         },
         success: {
@@ -289,7 +289,7 @@ module.exports = {
                     channelMissmatch: 'Channel of the wave webhook is different than the greet message'
                 },
                 button: {
-                    nextpage: 'Next Page ({cur}/{total})',
+                    nextpage: 'Page suivante ({cur}/{total})',
                     message: 'Modifier le Message',
                     imgcard: 'Éditer le Carton',
                     pings: 'Modifier les Salons Pings',
@@ -310,7 +310,7 @@ module.exports = {
                     dm: 'Message en MP',
                     afterleave_webedit: 'Éditeur d\'Embed Après Départ',
                     wave: 'Wave Button',
-                    reactions: 'Reactions'
+                    reactions: 'Réactions'
                 },
                 page: {
                     channel: {
