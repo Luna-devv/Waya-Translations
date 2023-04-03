@@ -20,10 +20,10 @@ module.exports = {
         tooLong: 'L\'option {index} a plus de {number} caractères !',
         noData: 'pas de données'
     },
-    verifySetUp: '**La configuration du CAPTCHA est nécessaire**\nVeuillez utiliser {command}, aller à *\'Journalisation > Arrivées > CAPTCHA\'* et rééxecuter cette commande.',
+    verifySetUp: '**La configuration du CAPTCHA est nécessaire**\nVeuillez utiliser {command}, aller dans *\'Journalisation > Arrivées > CAPTCHA\'* et réexécuter cette commande.',
     webedit: {
-        title: 'Message Web Edit',
-        description: 'Open [this Website]({url}) to start editing the message & embed.',
-        open: 'Open Web Edit'
+        title: 'Éditer le message en ligne',
+        description: 'Allez sur [ce site]({url}) pour modifier le message et l\'embed.',
+        open: 'Ouvrir l\'éditeur en ligne'
     }
 };
