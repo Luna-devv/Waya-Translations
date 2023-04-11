@@ -1,95 +1,95 @@
 module.exports = {
-    lengthFail: 'The Tag name cannot be longer than {max} characters!',
-    alreadyExists: 'A Tag with this name already exists!',
-    tagsLimit: 'You have reached the guild limit of **{count}/{max} tags**!',
-    regexFail: 'Tag name validation failed for using SlashCommands!\nNote that special characters are not allowed.',
-    alreadyExistsDefault: 'A default Command with this name already exists!',
-    invalidTag: 'A Tag with this name doesn\'t exist!',
+    lengthFail: 'Nazwa tagu nie może być dłuższa niż {max} znaków!',
+    alreadyExists: 'Tag o tej nazwie już istnieje!',
+    tagsLimit: 'Osiągnąłeś limit gildii **{count}/{max} tagów**!',
+    regexFail: 'Weryfikacja nazwy tagu nie powiodła się dla używania komend!\nZnaki specjalne są niedozwolone.',
+    alreadyExistsDefault: 'Domyślna komenda o tej nazwie już istnieje!',
+    invalidTag: 'Tag o tej nazwie nie istnieje!',
     info: {
         title: {
-            created: 'Created',
-            author: 'Author',
-            usesWeek: 'Uses a week',
-            uses: 'Uses',
-            last: 'Last Used',
-            name: 'Tag Name',
-            slash: 'Slash Command',
-            channels: 'Channels',
-            tags: 'Tags',
-            totalUses: 'Total Uses',
-            totalTags: 'Total Tags',
-            totalChannels: 'Total Channels'
+            created: 'Utworzono',
+            author: 'Autor',
+            usesWeek: 'Używa w tygodniu',
+            uses: 'Użyć',
+            last: 'Ostatnio używane',
+            name: 'Nazwa Tagu',
+            slash: 'Komenda',
+            channels: 'Kanały',
+            tags: 'Tagi',
+            totalUses: 'Całkowite użycia',
+            totalTags: 'Wszystkie tagi',
+            totalChannels: 'Wszystkie kanały'
         },
         description: {
-            usesWeek: '{number}/wk',
+            usesWeek: '{number}/tydz',
             // wk: week;; example: 43/wk
             slash: {
-                true: 'active',
-                false: 'not active'
+                true: 'aktywny',
+                false: 'nieaktywny(a)'
             },
-            channelUses: '{number} ;[use, uses]'
+            channelUses: '{number} ;[użycie, użyć]'
         },
-        noData: 'no data'
+        noData: 'brak danych'
     },
     overview: {
-        title: 'Tag Config',
-        message: 'Message',
-        embed: 'Embed',
-        placeholder: 'Useable Placeholders',
+        title: 'Konfiguracja Tagu',
+        message: 'Wiadomość',
+        embed: 'Osadzona Treść',
+        placeholder: 'Przydatne Symbole Zastępcze',
         button: {
-            exit: 'Save & Exit',
-            permission: 'Select a permission the user needs',
+            exit: 'Zapisz i wyjdź',
+            permission: 'Wybierz uprawnienie potrzebne dla użytkownika',
             color: {
-                enabled: 'Select a color for the Embed',
-                disabled: 'Use Embeds and select a color'
+                enabled: 'Wybierz kolor dla osadzenia',
+                disabled: 'Użyj osadzeń i wybierz kolor'
             },
             group: {
                 ticket: {
-                    disable: 'Disable Ticket Tag',
-                    enable: 'Enable Ticket Tag'
+                    disable: 'Wyłącz tag zgłoszenia',
+                    enable: 'Włącz tag zgłoszenia'
                 }
             },
-            aliases: 'Manage Name Aliases',
+            aliases: 'Zarządzaj aliasami nazw',
             permissions: {
                 Administrator: 'Administrator',
-                ManageChannels: 'Manage Channels',
-                ManageGuild: 'Manage Guild',
-                ManageMessages: 'Manage Messages',
-                ManageNicknames: 'Manage Nicknames',
-                ManageRoles: 'Manage Roles',
-                ManageWebhooks: 'Manage Webhooks',
-                ManageEmojisAndStickers: 'Manage Emojis & Stickers',
-                ManageEvents: 'Manage Events',
-                ManageThreads: 'Manage Threads',
-                none: 'None'
+                ManageChannels: 'Zarządzanie Kanałami',
+                ManageGuild: 'Zarządzanie Serwerem',
+                ManageMessages: 'Zarządzanie Wiadomościami',
+                ManageNicknames: 'Zarządzanie Nickami',
+                ManageRoles: 'Zarządzanie Rolami',
+                ManageWebhooks: 'Zarządzanie Webhookami',
+                ManageEmojisAndStickers: 'Zarządzenie Emotikonami i Naklejkami',
+                ManageEvents: 'Zarządzaj Wydarzeniami',
+                ManageThreads: 'Zarządzaj Wątkami',
+                none: 'Brak'
             }
         }
     },
     form: {
         formName: '{name} tag',
-        message: { content: 'Content' },
+        message: { content: 'Zawartość' },
         embed: {
-            title: 'Title',
-            description: 'Description',
-            thumbnail: 'Thumbnail',
-            image: 'Image',
-            footer: 'Footer'
+            title: 'Tytuł',
+            description: 'Opis',
+            thumbnail: 'Miniaturka',
+            image: 'Obrazek',
+            footer: 'Stopka'
         },
-        aliases: { name: 'Name Aliases ({max} max)' }
+        aliases: { name: 'Nazwa aliasów ({max} maks.)' }
     },
     success: {
-        message: 'Successfully added the Tag {name}.',
-        command: 'Try it out with {command}'
+        message: 'Pomyślnie dodano tag {name}.',
+        command: 'Wypróbuj z {command}'
     },
     list: {
         title: {
-            text: 'Text ;[Command, Commands]',
-            slash: 'Slash ;[Command, Commands]'
+            text: 'Tekst ;[Komenda, Komendy]',
+            slash: 'Ukośnik ;[Komenda, Komendy]'
         },
-        none: 'no tags',
-        disabled: '{amount} ;[tag is, tags are] hidden due to missing permissions',
+        none: 'brak tagów',
+        disabled: '{amount} ;[tag jest ukryty, tagi są ukryte] z powodu braku uprawnień',
         // ;[singular, plural]
-        amount: '{amount} tags • Use with {command}'
+        amount: '{amount} tagów • Używaj z {command}'
     },
-    deleted: 'Successfully deleted the Tag **{name}**.'
+    deleted: 'Pomyślnie usunięto tag **{name}**.'
 };
