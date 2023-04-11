@@ -1,26 +1,26 @@
 module.exports = {
-    alreadyExists: 'A stickymessage in this channel already exists!',
-    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} stickymessages**!',
-    invalidstickymessage: 'No stickymessage exists in this channel!',
+    alreadyExists: 'Lepka wiadomość na tym kanale już istnieje!',
+    stickymessagesLimit: 'Osiągnąłeś limit lepkich wiadomości **{count}/{max}**!',
+    invalidstickymessage: 'Brak lepkich wiadomości na tym kanale!',
     overview: {
-        title: 'Stickymessage Config',
-        permissions: 'Missing: {perms}',
-        message: 'Message',
-        embed: 'Embed',
-        note: 'Button Note',
+        title: 'Konfiguracja Lepkich wiadomości',
+        permissions: 'Brakuje: {perms}',
+        message: 'Wiadomość',
+        embed: 'Osadzona Treść',
+        note: 'Notatka Przycisku',
         note_status: {
-            show: 'Showing',
-            hide: 'Hidden'
+            show: 'Pokazane',
+            hide: 'Ukryte'
         },
         button: {
-            exit: 'Save & Exit',
+            exit: 'Zapisz i wyjdź',
             color: {
-                enabled: 'Select a color for the Embed',
-                disabled: 'Use Embeds and select a color'
+                enabled: 'Wybierz kolor dla osadzenia',
+                disabled: 'Użyj osadzeń i wybierz kolor'
             },
             note: {
-                show: 'Show Note',
-                hide: 'Hide Note'
+                show: 'Pokaż notatkę',
+                hide: 'Ukryj notatkę'
             }
         }
     },
