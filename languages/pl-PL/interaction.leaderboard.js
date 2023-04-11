@@ -1,8 +1,8 @@
 module.exports = {
-    messages: 'Message Leaderboard',
-    voice: 'Voice Leaderboard',
-    invites: 'Invite Leaderboard',
-    none: 'none',
-    personalized: 'Your Position',
-    total: '{amount} ;[users are, user is] on this leaderboard'
+    messages: 'Tablica wiadomości',
+    voice: 'Tablica czasu na kanałach głosowych',
+    invites: 'Tablica zaproszeń',
+    none: 'brak',
+    personalized: 'Twoja pozycja',
+    total: 'Jest {amount} ;[użytkowników, użytkownik] na tej tablicy'
 };
