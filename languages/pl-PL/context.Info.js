@@ -43,6 +43,6 @@ module.exports = {
         remove: 'Nie podoba mi się',
         added: 'Polubiłeś profil {user}. Teraz ma {num} ;[polubienie, polubienia] :3',
         removed: 'Nie lubisz już profilu {user}.',
-        dm: '{emote} Congratulations, {name}!\n\nWe have some fantastic news to share with you! Your {bot} profile has reached an incredible {num} likes! You\'re clearly doing something right because people just can\'t get enough of you!\n\nSo let\'s keep the momentum going and spread the love! Tell everyone to invite {bot} by sending them {link} and make sure to use the {command} followed by your username to heart 💖 your profile!\n\nThank you for being such a fantastic part of our community!\n\nCheers,\n{bot} '
+        dm: '{emote} Gratulacje, {name}!\n\nMamy jakieś fantastyczne wiadomości do podzielenia się z Tobą! Twój profil {bot} osiągnął niesamowite {num} polubień! Wyraźnie robisz coś dobrze, ponieważ ludzie po prostu Cię kochają!\n\nWięc utrzymajmy momentum i rozprzestrzechnienie miłości! Powiedz wszystkim o zaproszeniu {bot}, wysyłając im {link} i upewnij się, że użyłeś {command}, aby inni mogli polubić 💖 twój profil!\n\nDziękujemy za bycie tak fantastyczną częścią naszej społeczności!\n\nPozdrowienia,\n{bot} '
     }
 };
