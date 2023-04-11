@@ -1,1 +1,1 @@
-module.exports = { success: 'Now following {name} news updates in {channel}.' };
+module.exports = { success: 'Teraz obserwujesz {name} nowości w {channel}.' };
