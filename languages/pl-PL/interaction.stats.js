@@ -1,22 +1,22 @@
 module.exports = {
-    fetchError: `Could't not fetch data, please try again later!`,
+    fetchError: `Nie można pobrać danych, spróbuj ponownie później!`,
     links: {
-        website: 'website',
-        invite: 'invite',
-        more: 'in-depth stats'
+        website: 'strona internetowa',
+        invite: 'zaproszenie',
+        more: 'szczegółowe statystyki'
     },
     general: {
-        title: 'General',
-        uptime: '**{time}** uptime',
-        guilds: '**{count}** guilds',
-        users: '**{count}** users',
-        invites: '**{count}** invites',
-        starboards: '**{count}** starboards',
-        executed: '**{count}** executed',
-        usage: '{cpu}% cpu • {mem}% memory'
+        title: 'Ogólne',
+        uptime: '**{time}** czas pracy',
+        guilds: '**{count}** gildii',
+        users: '**{count}** użytkowników',
+        invites: '**{count}** zaproszeń',
+        starboards: '**{count}** starboard\\\'ów',
+        executed: '**{count}** wykonano',
+        usage: '{cpu}% procesora • {mem}% pamięci ram'
     },
     commandList: {
-        title: 'Popular',
-        none: 'none'
+        title: 'Popularne',
+        none: 'brak'
     }
 };
