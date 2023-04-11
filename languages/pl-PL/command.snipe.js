@@ -1,9 +1,9 @@
 module.exports = {
-    none: 'There were no Deleted/Edited messages in the last {time}.',
-    header: 'From {user} in {channel}:',
-    disclaimer: 'The latest {amount} snipes in the last {time}',
+    none: 'Brak usuniętych/edytowanych wiadomości w ostatnich {time}.',
+    header: 'Od {user} w {channel}:',
+    disclaimer: 'Ostatnie {amount} wykrycia w ostatnich {time}',
     type: {
-        edit: 'Edit:',
-        delete: 'Delete:'
+        edit: 'Edycja:',
+        delete: 'Usunięcie:'
     }
 };
