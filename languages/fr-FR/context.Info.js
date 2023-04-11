@@ -39,10 +39,10 @@ module.exports = {
         }
     },
     likes: {
-        add: 'Like',
-        remove: 'Dislike',
-        added: 'You have liked {user}\'s profile. They now have {num} ;[like, likes] :3',
-        removed: 'You no longer like {user}\'s profile.',
-        dm: '{emote} Congratulations, {name}!\n\nWe have some fantastic news to share with you! Your {bot} profile has reached an incredible {num} likes! You\'re clearly doing something right because people just can\'t get enough of you!\n\nSo let\'s keep the momentum going and spread the love! Tell everyone to invite {bot} by sending them {link} and make sure to use the {command} followed by your username to heart 💖 your profile!\n\nThank you for being such a fantastic part of our community!\n\nCheers,\n{bot} '
+        add: 'Liker',
+        remove: 'Disliker',
+        added: 'Vous avez liké le profil de {user}. Il/Elle a maintenant {num} ;[like, likes] :3',
+        removed: 'Vous n\'aimez plus le profil de {user}.',
+        dm: '{emote} Félicitations, {name} !\n\nNous avons des nouvelles fantastiques à partager avec vous ! Votre profil {bot} a atteint l\'incroyable quantité de {num} likes ! Vous faites clairement quelque chose de bien, car les gens en veulent toujours plus venant de vous !\n\nConservons cet élan et répandons l\'amour ! Dites à tout le monde d\'inviter {bot} en leur envoyant {link} et assurez-vous d\'utiliser {command} suivi de votre nom d\'utilisateur pour aimer 💖 votre profil !\n\nMerci d\'être un si fantastique membre de notre communauté !\n\nAmicalement,\n{bot}'
     }
 };

@@ -2,12 +2,12 @@ module.exports = {
     request: { ureStaff: 'Vous êtes staff, vous pouvez juste utiliser {command}.' },
     noData: 'Impossible de trouver ce serveur dans la base de données !',
     confirm: {
-        text: 'Are you sure that you want to delete {channel} forever?',
-        configReason: 'For `reason`, please enable logging in `/config` => __Ticketing__!',
+        text: 'Êtes-vous sûr(e) de vouloir supprimer {channel} définitivement ?',
+        configReason: 'Pour `reason`, veuillez activer la journalisation dans `/config` => __Tickets__ !',
         required: 'Un raison pour la fermeture est requise !',
         button: {
             close: 'Fermer le Ticket',
-            closeReason: 'Close Ticket with Reason'
+            closeReason: 'Fermer le Ticket avec une Raison'
         }
     },
     form: {
@@ -15,15 +15,15 @@ module.exports = {
         reason: 'Raison'
     },
     closeDm: {
-        title: 'Ticket {id} in {server} Closed',
-        you: 'You',
-        none: 'none',
+        title: 'Ticket {id} dans {server} fermé',
+        you: 'Vous',
+        none: 'aucun',
         data: {
-            opened: 'Opened by {user} at {date}',
-            claimed: 'Handled by {user} and solved in {time}',
-            closed: 'Closed by {user} at {date}',
-            members: 'Members: {list}'
+            opened: 'Ouvert par {user} le {date}',
+            claimed: 'Géré par {user} and résolu en {time}',
+            closed: 'Fermé par {user} le {date}',
+            members: 'Membres : {list}'
         },
-        footer: 'Powered by {domain}'
+        footer: 'Propulsé par {domain}'
     }
 };

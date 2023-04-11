@@ -23,7 +23,7 @@ module.exports = {
             },
             notice: 'kujdes - zbatohen privilegjet e zhvilluesit..'
         },
-        upsell: 'Subscribe to get {count} more',
+        upsell: 'Abonohu ​​për të marrë {count} më shumë',
         permissions: 'Mungon: {perms}',
         placeholders: 'Vendmbajtësi',
         await: {
@@ -32,8 +32,8 @@ module.exports = {
             role: 'Përmendni një rol ose ngjitni Id-në e rolit në bisedë.\nShkruani {string} për të hequr rolin.',
             message: 'Dërgoni një Mesazh i cili duhet të përdoret si {what}.',
             emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.',
-            color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
-            patient: 'Enabling this might take a few seconds, please wait..'
+            color: 'Dërgo një kod ngjyrë hex i cili duhet të përdoret për {what}. Merrni një kod të vlefshëm në {url}.',
+            patient: 'Aktivizimi i kësaj mund të zgjasë disa sekonda, ju lutemi prisni..'
         },
         success: {
             set: 'U vendos me sukses {what} në **{data}**.',
@@ -46,8 +46,8 @@ module.exports = {
             otherLengthFail: '{what} është më i shkurtër se {min} karaktere! ({length} karaktere, {relative} shumë më pak)',
             numberFail: '{what} nuk është një numër midis {a} dhe {b}!',
             roleFail: 'Ky rol është i menaxhueshëm vetëm nga Discord ose i përket një përdoruesi bot.',
-            colorFail: 'No valid hex color code was provided. Get a valid code at {url}.',
-            emoteFail: 'You have not sent any valid emotes. Only custom discord and default emojis are supported.'
+            colorFail: 'Nuk u dha asnjë kod i vlefshëm ngjyrash gjashtëkëndor. Merrni një kod të vlefshëm në {url}.',
+            emoteFail: 'Nuk ke dërguar emocione të vlefshme. Mbështeten vetëm mosmarrëveshjet e personalizuara dhe emoji-të e paracaktuar.'
         },
         webedit: {
             button: 'Embed Editor',
@@ -286,10 +286,10 @@ module.exports = {
                 warnings: {
                     afterleaveXautodelete: 'Ne nuk rekomandojmë përdorimin e **Fshij automatik** dhe **Fshi pas largimit** njëkohësisht',
                     embedXcard: 'Karta në embed mbishkruan imazhin tuaj të personalizuar të ngulitjes',
-                    channelMissmatch: 'Channel of the wave webhook is different than the greet message'
+                    channelMissmatch: 'Kanali i rrjetës së valës është i ndryshëm nga mesazhi i përshëndetjes'
                 },
                 button: {
-                    nextpage: 'Next Page ({cur}/{total})',
+                    nextpage: 'Faqja tjetër ({cur}/{total})',
                     message: 'Redakto mesazhin',
                     imgcard: 'Modifiko kartën',
                     pings: 'Redakto Kanalet Ping',
@@ -309,8 +309,8 @@ module.exports = {
                     },
                     dm: 'Mesazh DM',
                     afterleave_webedit: 'Pas largimit nga Redaktori i Embed',
-                    wave: 'Wave Button',
-                    reactions: 'Reactions'
+                    wave: 'Butoni i valës',
+                    reactions: 'Reagimet'
                 },
                 page: {
                     channel: {
@@ -332,23 +332,23 @@ module.exports = {
                     },
                     dm: { button: { disable: 'Çaktivizo mesazhin DM' } },
                     reactions: {
-                        title: 'Reactions',
+                        title: 'Reagimet',
                         option: {
-                            welcomer: 'Welcome Message Reactions: {emotes}',
-                            firstmessage: 'First Message Reactions: {emotes}'
+                            welcomer: 'Reagimet e mesazhit të mirëseardhjes: {emotes}',
+                            firstmessage: 'Reagimet e mesazhit të parë: {emotes}'
                         },
                         button: {
-                            welcomer: 'Welcome Message',
-                            firstmessage: 'First Member Message'
+                            welcomer: 'Mesazh Mirëpritës',
+                            firstmessage: 'Mesazhi i Anëtarit të Parë'
                         },
                         page: {
                             welcomer: {
-                                title: 'Welcomer',
-                                name: 'welcomer auto reaction'
+                                title: 'Mirëpritsi',
+                                name: 'reagimi automatik i mirëseardhjes'
                             },
                             firstmessage: {
-                                title: 'First Message',
-                                name: 'auto reaction'
+                                title: 'Mesazh i par',
+                                name: 'reagim automatik'
                             }
                         }
                     },
@@ -376,39 +376,39 @@ module.exports = {
                     },
                     dm: { title: 'Mesazh direkt' },
                     wavebtn: {
-                        title: 'Wave to say hi',
+                        title: 'Përshëndetje',
                         option: {
-                            send: 'Send: {type}',
-                            label: 'Label: {label}'
+                            send: 'Dërgo: {type}',
+                            label: 'Labeli: {label}'
                         },
                         button: {
-                            label: 'Change Button Text',
+                            label: 'Ndrysho tekstin e butonit',
                             ping: {
-                                enable: 'Enable Ping',
-                                disable: 'Disable Ping'
+                                enable: 'Aktivizo Ping',
+                                disable: 'Çaktivizo Ping'
                             },
                             type: {
-                                title: 'Select a response type',
+                                title: 'Zgjidhni një lloj përgjigjeje',
                                 option: {
-                                    '0': 'Random Sticker',
-                                    '1': 'Custom Message'
+                                    '0': 'Sticker e rastësishme',
+                                    '1': 'Mesazh i personalizuar'
                                 }
                             },
                             color: {
-                                title: 'Select a color for the button',
+                                title: 'Zgjidhni një ngjyrë për Butonin',
                                 option: {
-                                    blurple: 'Blurple',
+                                    blurple: 'Blu/vjollcë',
                                     // You may leave that
-                                    grey: 'Grey',
-                                    green: 'Green',
-                                    red: 'Red'
+                                    grey: 'Gri',
+                                    green: 'Jeshil',
+                                    red: 'Kuq'
                                 }
                             }
                         },
                         page: {
                             label: {
                                 title: 'Label',
-                                name: 'Button Text'
+                                name: 'Tekst i butonit'
                             }
                         }
                     }
@@ -468,8 +468,8 @@ module.exports = {
                 disable: 'Arsyeja Fakultative'
             },
             logging: {
-                set: 'Set Logging Channel',
-                edit: 'Change Logging Channel'
+                set: 'Cakto kanalin e Logging',
+                edit: 'Ndrysho kanalin e Logging'
             },
             transcript: {
                 disable: 'Çaktivizo transkriptet',
@@ -702,7 +702,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Mesazh',
-                        name: 'Anti Link reply'
+                        name: 'Përgjigje Anti Link'
                     },
                     timeout: {
                         title: 'Kohëzgjatja e Timeoutit',
@@ -946,25 +946,25 @@ module.exports = {
                 button: {
                     blacklistedChannels: 'Redaktoni kanalet në listën e zezë',
                     reset: {
-                        disable: 'Don\'t Reset Member Data on Leave',
-                        enable: 'Reset Member Data on Leave'
+                        disable: 'Mos i rivendosni të dhënat e anëtarëve gjatë larghimit',
+                        enable: 'Rivendos të dhënat e anëtarëve në larghim'
                     },
-                    roles: 'Reward Roles'
+                    roles: 'Rolet e shpërblimit'
                 },
                 page: {
                     roles: {
-                        title: 'Top Roles',
+                        title: 'Rolet kryesore',
                         option: {
-                            messages: 'Message Roles: {roles}',
-                            voiceminutes: 'Voice Roles: {roles}'
+                            messages: 'Rolet e mesazhit: {roles}',
+                            voiceminutes: 'Rolet e kanalit zanor: {roles}'
                         },
                         warnings: {
-                            order: 'Please select the #1st role first, then #2nd and then #3rd',
-                            permsOrder: 'Please check that all roles are bellow the {bot} role'
+                            order: 'Ju lutemi zgjidhni së pari rolin # 1, pastaj # 2 dhe më pas # 3',
+                            permsOrder: 'Ju lutemi kontrolloni që të gjitha rolet janë nën rolin {bot}'
                         },
                         button: {
-                            messages: 'Top 3 messange roles',
-                            voiceminutes: 'Top 3 voice minutes roles'
+                            messages: '3 rolet kryesore të mesazheve',
+                            voiceminutes: '3 rolet kryesore të minutave zanore'
                         }
                     }
                 }

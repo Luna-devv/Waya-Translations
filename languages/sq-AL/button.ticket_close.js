@@ -15,15 +15,15 @@ module.exports = {
         reason: 'Arsyeja'
     },
     closeDm: {
-        title: 'Ticket {id} in {server} Closed',
-        you: 'You',
-        none: 'none',
+        title: 'Ticketa {id} në {server} u mbyll',
+        you: 'Ti',
+        none: 'asnje',
         data: {
-            opened: 'Opened by {user} at {date}',
-            claimed: 'Handled by {user} and solved in {time}',
-            closed: 'Closed by {user} at {date}',
-            members: 'Members: {list}'
+            opened: 'Krijuar nga {user} ne {date}',
+            claimed: 'Trajtuar nga {user} dhe zgjidhur në {time}',
+            closed: 'Mbyllur nga {user} në {date}',
+            members: 'Anëtarët: {list}'
         },
-        footer: 'Powered by {domain}'
+        footer: 'Mundësuar nga {domain}'
     }
 };

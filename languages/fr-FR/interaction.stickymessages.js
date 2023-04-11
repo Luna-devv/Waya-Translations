@@ -1,10 +1,10 @@
 module.exports = {
-    alreadyExists: 'A stickymessage in this channel already exists!',
-    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} stickymessages**!',
-    invalidstickymessage: 'No stickymessage exists in this channel!',
+    alreadyExists: 'Un message persistant existe déjà dans ce salon !',
+    stickymessagesLimit: 'Vous avez atteint la limite de **{count}/{max} messages persistants** par serveur !',
+    invalidstickymessage: 'Aucun message persistant n\'existe dans ce salon !',
     overview: {
-        title: 'Stickymessage Config',
-        permissions: 'Missing: {perms}',
+        title: 'Configuration des Messages Persistants',
+        permissions: 'Manquantes : {perms}',
         message: 'Message',
         embed: 'Embed',
         note: 'Note du bouton',
@@ -25,7 +25,7 @@ module.exports = {
         }
     },
     form: {
-        formName: '{name}\'s Stickymessage',
+        formName: 'Message Persistent {name}',
         message: { content: 'Contenu' },
         embed: {
             title: 'Titre',
@@ -36,12 +36,12 @@ module.exports = {
         }
     },
     success: {
-        message: 'Successfully added a stickymessage in {channel}.',
+        message: 'Votre Message Persistant a bien été ajouté dans {channel}.',
         try: 'Essayez en envoyant quelques messages dedans !'
     },
     list: {
-        title: ';[Stickymessage, Stickymessages]',
+        title: ';[Message Persistant, Messages Persistants]',
         none: 'pas de messages persistants'
     },
-    deleted: 'Successfully deleted the stickymessage in {channel}.'
+    deleted: 'Votre Message Persistant a bien été supprimé dans {channel}.'
 };

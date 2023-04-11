@@ -1,7 +1,7 @@
 module.exports = {
-    alreadyExists: 'A stickymessage in this channel already exists!',
-    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} stickymessages**!',
-    invalidstickymessage: 'No stickymessage exists in this channel!',
+    alreadyExists: 'A stickymessage in this channyew awweady exists!',
+    stickymessagesLimit: 'U have weached the guiwd wimit of **{count}/{max} stickymessages**! ;///',
+    invalidstickymessage: 'Nyo stickymessage exists in this channyew! :(',
     overview: {
         title: 'Stickymessage Config',
         permissions: 'Missing: {perms}',
@@ -36,12 +36,12 @@ module.exports = {
         }
     },
     success: {
-        message: 'Successfully added a stickymessage in {channel}.',
+        message: 'Successfuwwy added a stickymessage in {channel}.',
         try: 'Ayy, twy it out by sending a few messages thewe :>'
     },
     list: {
         title: ';[Stickymessage, Stickymessages]',
         none: 'nyo sticky messages'
     },
-    deleted: 'Successfully deleted the stickymessage in {channel}.'
+    deleted: 'Successfuwwy deweted the stickymessage in {channel}.'
 };

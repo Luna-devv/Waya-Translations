@@ -1,29 +1,29 @@
 module.exports = {
-    validate: 'Validate data...',
-    create: 'Creating {type} prompt...',
-    tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
-    created: 'The {type} prompt has been created.',
+    validate: 'Validation des données...',
+    create: 'Création de l\'interface {type}...',
+    tooManyRoles: 'Vous avez {roles} rôles dans votre serveur, veuillez vérifier d\'en avoir moins de 244 !',
+    created: 'L\'interface {type} a été créée.',
     type: {
-        category: 'channel category',
-        support: 'support role',
-        emote: 'custom emote',
-        endPoll: 'end poll'
+        category: 'catégorie du salon',
+        support: 'rôle support',
+        emote: 'émoji personnalisé',
+        endPoll: 'fin de sondage'
     },
     message: {
-        created: 'created',
-        noSupport: 'none (use **/config**)',
-        invalidEmote: 'not in same guild',
-        content: 'Content',
-        endPoll: 'use {command}'
+        created: 'créé',
+        noSupport: 'aucun (utilisez **/config**)',
+        invalidEmote: 'pas dans le même serveur',
+        content: 'Contenu',
+        endPoll: 'utilisez {command}'
     },
     error: {
-        tooLong: 'Option {index} has more than {number} characters!',
-        noData: 'no data set'
+        tooLong: 'L\'option {index} a plus de {number} caractères !',
+        noData: 'pas de données'
     },
-    verifySetUp: '**CAPTCHA Setup is Required**\nPlease use {command} and go to *\'Logging > Joins > CAPTCHA\'* and run this command again.',
+    verifySetUp: '**La configuration du CAPTCHA est nécessaire**\nVeuillez utiliser {command}, aller dans *\'Journalisation > Arrivées > CAPTCHA\'* et réexécuter cette commande.',
     webedit: {
-        title: 'Message Web Edit',
-        description: 'Open [this Website]({url}) to start editing the message & embed.',
-        open: 'Open Web Edit'
+        title: 'Éditer le message en ligne',
+        description: 'Allez sur [ce site]({url}) pour modifier le message et l\'embed.',
+        open: 'Ouvrir l\'éditeur en ligne'
     }
 };

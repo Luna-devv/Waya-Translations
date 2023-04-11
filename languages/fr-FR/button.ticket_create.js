@@ -1,15 +1,15 @@
 module.exports = {
-    noData: 'Could not find guild in the Database!',
-    noCategory: 'The Tickets category has been deleted. Please notify a Server Administrator.',
+    noData: 'Impossible de trouver ce serveur dans la base de données !',
+    noCategory: 'La catégorie tickets a été supprimé. Veuillez en informer un administrateur.',
     created: 'Votre ticket {channel} a bien été créé !',
     form: {
-        formTitle: 'Ticket Opening Reason',
-        field: 'Why do you want to open a Ticket?',
+        formTitle: 'Raison d\'ouverture du Ticket',
+        field: 'Pourquoi voulez-vous ouvrir un Ticket ?',
         placeholder: 'J\'ai besoin d\'aide pour ça..'
     },
-    commands: { closerequest: 'Create a close request' },
+    commands: { closerequest: 'Faire une demande de fermeture' },
     max: {
-        category: 'You cannot create a Ticket at this time as this server reached [the max channel limit per category]({docs}) of {num}. Please tell the server admins to set the category channel to {string} to resolve this issue!\n\nHaving questions? {support}',
-        guild: 'You cannot create a Ticket at this time as this server reached the max channel limit of {num}. Please tell the server admins to delete a few channels to resovle this issue!\n\nHaving questions? {support}'
+        category: 'Vous ne pouvez pas créer de Ticket pour le moment, car ce serveur a atteint [le nombre de salons maximum par catégorie]({docs}) de {num}. Veuillez informer les administrateurs qu\'ils doivent définir la catégorie sur {string} pour résoudre ce problème !\n\nVous avez des questions ? {support}',
+        guild: 'Vous ne pouvez pas créer de Ticket pour le moment, car ce serveur a atteint le nombre de salons maximum de {num}. Veuillez informer les administrateurs qu\'ils doivent supprimer quelques salons pour résoudre ce problème !\n\nVous avez des questions ? {support}'
     }
 };

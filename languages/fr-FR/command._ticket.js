@@ -1,9 +1,9 @@
 module.exports = {
-    noMember: 'Please provide a valid member as argument.',
-    add: { success: '{user} has been successfully added to this Ticket!' },
-    remove: { success: '{user} has been successfully removed from this Ticket!' },
+    noMember: 'Veuillez fournir un membre valide en argument.',
+    add: { success: '{user} a bien été ajouté à ce Ticket !' },
+    remove: { success: '{user} a bien été retiré de ce Ticket !' },
     claim: {
-        already: ';[{user} is, You are] already handling this ticket!',
-        success: 'You have successfully transfered the ticket to {user}!'
+        already: ';[{user} gère, Vous gérez] déjà ce ticket !',
+        success: 'Vous avez bien transféré ce ticket à {user} !'
     }
 };

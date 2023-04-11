@@ -23,7 +23,7 @@ module.exports = {
             },
             notice: 'prudente - privilegi di sviluppatore forzati..'
         },
-        upsell: 'Subscribe to get {count} more',
+        upsell: 'Iscriviti per ricevere {count}+',
         permissions: 'Mancanti: {perms}',
         placeholders: 'Segnaposti',
         await: {
@@ -32,8 +32,8 @@ module.exports = {
             role: 'Menziona un ruolo o incolla l\'Id del ruolo nella chat.\nDigita {string} per rimuovere il ruolo.',
             message: 'Invia un messaggio che dovrebbe essere usato come {what}.',
             emote: 'Invia un Emoji che dovrebbe essere usato come {what}.',
-            color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
-            patient: 'Enabling this might take a few seconds, please wait..'
+            color: 'Invia un codice esadecimale che dovrebbe essere utilizzato per {what}. Ottieni un codice valido su {url}.',
+            patient: 'Abilitare questo potrebbe richiedere alcuni secondi, attendere prego..'
         },
         success: {
             set: 'Impostato {what} a **{data}** con successo.',
@@ -46,8 +46,8 @@ module.exports = {
             otherLengthFail: '{what} è più corto di {min} caratteri! ({length} caratteri, {relative} troppo meno)',
             numberFail: '{what} non è un numero compreso tra {a} e {b}!',
             roleFail: 'Questo ruolo è gestibile solo da Discord o appartiene a un utente bot.',
-            colorFail: 'No valid hex color code was provided. Get a valid code at {url}.',
-            emoteFail: 'You have not sent any valid emotes. Only custom discord and default emojis are supported.'
+            colorFail: 'Non è stato fornito alcun codice esadecimale valido. Ottieni un codice valido su {url}.',
+            emoteFail: 'Non hai inviato nessun emoji valido. Sono supportati solo emoji personalizzati e emoji predefiniti.'
         },
         webedit: {
             button: 'Editore Embed',
@@ -286,10 +286,10 @@ module.exports = {
                 warnings: {
                     afterleaveXautodelete: 'Non consigliamo di utilizzare **eliminazione automatica** ed **Eliminazione dopo abbandono** contemporaneamente',
                     embedXcard: 'Nella scheda incorporata sovrascrive l\'immagine incorporata personalizzata',
-                    channelMissmatch: 'Channel of the wave webhook is different than the greet message'
+                    channelMissmatch: 'Canale del webhook onda è diverso dal messaggio di benvenuto'
                 },
                 button: {
-                    nextpage: 'Next Page ({cur}/{total})',
+                    nextpage: 'Pagina Successiva ({cur}/{total})',
                     message: 'Modifica messaggio',
                     imgcard: 'Modifica carta',
                     pings: 'Modifica Canali Ping',
@@ -309,8 +309,8 @@ module.exports = {
                     },
                     dm: 'Messaggio DM',
                     afterleave_webedit: 'Editore Embed dopo l\'abbandono',
-                    wave: 'Wave Button',
-                    reactions: 'Reactions'
+                    wave: 'Tasto Onda',
+                    reactions: 'Reazioni'
                 },
                 page: {
                     channel: {
@@ -332,23 +332,23 @@ module.exports = {
                     },
                     dm: { button: { disable: 'Disabilita il messaggio DM' } },
                     reactions: {
-                        title: 'Reactions',
+                        title: 'Reazioni',
                         option: {
-                            welcomer: 'Welcome Message Reactions: {emotes}',
-                            firstmessage: 'First Message Reactions: {emotes}'
+                            welcomer: 'Reazioni Messaggio di Benvenuto: {emotes}',
+                            firstmessage: 'Reazioni al primo messaggio: {emotes}'
                         },
                         button: {
-                            welcomer: 'Welcome Message',
-                            firstmessage: 'First Member Message'
+                            welcomer: 'Messaggio di Benvenuto',
+                            firstmessage: 'Primo messaggio di partecipazione'
                         },
                         page: {
                             welcomer: {
-                                title: 'Welcomer',
-                                name: 'welcomer auto reaction'
+                                title: 'Benvenutore',
+                                name: 'benvenuto reazione automatica'
                             },
                             firstmessage: {
-                                title: 'First Message',
-                                name: 'auto reaction'
+                                title: 'Primo Messaggio',
+                                name: 'reazione automatica'
                             }
                         }
                     },
@@ -376,39 +376,39 @@ module.exports = {
                     },
                     dm: { title: 'Messaggio diretto' },
                     wavebtn: {
-                        title: 'Wave to say hi',
+                        title: 'Onda per dire ciao',
                         option: {
-                            send: 'Send: {type}',
+                            send: 'Invia: {type}',
                             label: 'Label: {label}'
                         },
                         button: {
-                            label: 'Change Button Text',
+                            label: 'Cambia Testo Pulsante',
                             ping: {
-                                enable: 'Enable Ping',
-                                disable: 'Disable Ping'
+                                enable: 'Abilita Ping',
+                                disable: 'Disabilita Ping'
                             },
                             type: {
-                                title: 'Select a response type',
+                                title: 'Seleziona un tipo di risposta',
                                 option: {
-                                    '0': 'Random Sticker',
-                                    '1': 'Custom Message'
+                                    '0': 'Adesivo Casuale',
+                                    '1': 'Messaggio Personalizzato'
                                 }
                             },
                             color: {
-                                title: 'Select a color for the button',
+                                title: 'Seleziona un colore per il pulsante',
                                 option: {
-                                    blurple: 'Blurple',
+                                    blurple: 'Blu violetto',
                                     // You may leave that
-                                    grey: 'Grey',
-                                    green: 'Green',
-                                    red: 'Red'
+                                    grey: 'Grigio',
+                                    green: 'Verde',
+                                    red: 'Rosso'
                                 }
                             }
                         },
                         page: {
                             label: {
                                 title: 'Label',
-                                name: 'Button Text'
+                                name: 'Testo del pulsante'
                             }
                         }
                     }
@@ -468,8 +468,8 @@ module.exports = {
                 disable: 'Motivo Opzionale'
             },
             logging: {
-                set: 'Set Logging Channel',
-                edit: 'Change Logging Channel'
+                set: 'Imposta Canale Logging',
+                edit: 'Cambia il Canale Log'
             },
             transcript: {
                 disable: 'Disabilita Trascritti',
@@ -702,7 +702,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Messaggio',
-                        name: 'Anti Link reply'
+                        name: 'Risposta Anti Link'
                     },
                     timeout: {
                         title: 'Durata del timeout',
@@ -946,25 +946,25 @@ module.exports = {
                 button: {
                     blacklistedChannels: 'Modifica Canali nella Blacklist',
                     reset: {
-                        disable: 'Don\'t Reset Member Data on Leave',
-                        enable: 'Reset Member Data on Leave'
+                        disable: 'Non rimuovere i dati dei membri all\'andata',
+                        enable: 'Resetta i dati dei membri all\'andata'
                     },
-                    roles: 'Reward Roles'
+                    roles: 'Ruoli Ricompensati'
                 },
                 page: {
                     roles: {
-                        title: 'Top Roles',
+                        title: 'Ruoli Migliori',
                         option: {
-                            messages: 'Message Roles: {roles}',
-                            voiceminutes: 'Voice Roles: {roles}'
+                            messages: 'Ruoli del messaggio: {roles}',
+                            voiceminutes: 'Ruoli vocali: {roles}'
                         },
                         warnings: {
-                            order: 'Please select the #1st role first, then #2nd and then #3rd',
-                            permsOrder: 'Please check that all roles are bellow the {bot} role'
+                            order: 'Si prega di selezionare il #1 ruolo prima, poi #2 e poi #3',
+                            permsOrder: 'Si prega di controllare che tutti i ruoli siano sotto il ruolo {bot}'
                         },
                         button: {
-                            messages: 'Top 3 messange roles',
-                            voiceminutes: 'Top 3 voice minutes roles'
+                            messages: 'Top 3 ruoli di messaggio',
+                            voiceminutes: 'Top 3 ruoli dei minuti vocali'
                         }
                     }
                 }

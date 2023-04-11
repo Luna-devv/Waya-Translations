@@ -1,6 +1,6 @@
 module.exports = {
-    dms: 'This command cannot be used inside of private messages.',
-    disabled: 'You have been disabled.',
+    dms: 'Este comando não pode ser utilizado em mensagens privadas.',
+    disabled: 'Foste desativado.',
     mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
     error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
     premium: {

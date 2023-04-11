@@ -43,6 +43,6 @@ module.exports = {
         remove: 'Dislike',
         added: 'Ti è piaciuto il profilo di {user}. Ora hanno {num} ;[piace, mi piace] :3',
         removed: 'Non ti piace più il profilo di {user}.',
-        dm: '{emote} Congratulations, {name}!\n\nWe have some fantastic news to share with you! Your {bot} profile has reached an incredible {num} likes! You\'re clearly doing something right because people just can\'t get enough of you!\n\nSo let\'s keep the momentum going and spread the love! Tell everyone to invite {bot} by sending them {link} and make sure to use the {command} followed by your username to heart 💖 your profile!\n\nThank you for being such a fantastic part of our community!\n\nCheers,\n{bot} '
+        dm: '{emote} Congratulazioni, {name}!\n\nAbbiamo delle fantastiche novità da condividere con voi! Il tuo profilo {bot} ha raggiunto un incredibile {num} mi piace! Stai chiaramente facendo qualcosa di giusto perché le persone non ne hanno mai abbastanza di te!\n\nQuindi manteniamo lo slancio e diffondiamo l\'amore! Dì a tutti di invitare {bot} inviando loro {link} e assicurati di utilizzare il {command} seguito dal tuo nome utente a cuore 💖 il tuo profilo!\n\nGrazie per essere una parte così fantastica della nostra comunità!\n\nSaluti,\n{bot} '
     }
 };
