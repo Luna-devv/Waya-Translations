@@ -25,23 +25,23 @@ module.exports = {
         }
     },
     form: {
-        formName: '{name}\'s Stickymessage',
-        message: { content: 'Content' },
+        formName: 'Lepka wiadomość {name}',
+        message: { content: 'Zawartość' },
         embed: {
-            title: 'Title',
-            description: 'Description',
-            thumbnail: 'Thumbnail',
-            image: 'Image',
-            footer: 'Footer'
+            title: 'Tytuł',
+            description: 'Opis',
+            thumbnail: 'Miniaturka',
+            image: 'Obrazek',
+            footer: 'Stopka'
         }
     },
     success: {
-        message: 'Successfully added a stickymessage in {channel}.',
-        try: 'Try it out by sending a few messages there!'
+        message: 'Pomyślnie dodano lepką wiadomość w {channel}.',
+        try: 'Wypróbuj to, wysyłając tam kilka wiadomości!'
     },
     list: {
-        title: ';[Stickymessage, Stickymessages]',
-        none: 'no sticky messages'
+        title: ';[Lepka wiadomość, Lepkie wiadomości]',
+        none: 'brak lepkich wiadomości'
     },
-    deleted: 'Successfully deleted the stickymessage in {channel}.'
+    deleted: 'Pomyślnie usunięto lepką wiadomość w {channel}.'
 };
