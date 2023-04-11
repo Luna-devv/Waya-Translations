@@ -1,33 +1,33 @@
 module.exports = {
-    disclaimer: 'You have to choose an option to apply this setting',
+    disclaimer: 'Musisz wybrać jakąś opcję, aby zastosować to ustawienie',
     choice: {
         remove: {
-            question: 'From where do you want to remove {prn} as prefered pronoun?',
+            question: 'Skąd chcesz usunąć {prn} jako preferowany zaimek?',
             button: {
-                global: 'Remove everywhere',
-                guild: 'Remove in guild'
+                global: 'Usuń wszędzie',
+                guild: 'Usuń w gildii'
             }
         },
         add: {
-            question: 'Where to you want to set {prn} as your prefered pronoun?',
+            question: 'Gdzie chcesz ustawić {prn} jako preferowany zaimek?',
             button: {
-                global: 'Set everywhere',
-                guild: 'Set in guild'
+                global: 'Ustaw wszędzie',
+                guild: 'Ustaw w gildii'
             }
         }
     },
     success: {
         removed: {
-            global: 'Successfully removed {prn} as prefered pronoun globally.',
-            guild: 'Successfully removed {prn} as prefered pronoun in this guild.'
+            global: 'Pomyślnie usunięto {prn} zgodnie z preferowanymi zaimkami globalnymi.',
+            guild: 'Pomyślnie usunięto {prn} jako preferowane zaimki na tym serwerze.'
         },
         added: {
-            global: 'Successfully added {prn} as prefered pronoun globally.',
-            guild: 'Successfully added {prn} as prefered pronoun in this guild.'
+            global: 'Pomyślnie dodano {prn} jako preferowane zaimki globalne.',
+            guild: 'Pomyślnie dodano {prn} jako preferowane zaimki na tym serwerze.'
         }
     },
     error: {
-        tooSlow: 'You were too slow, please try again!',
-        fail: 'Failed to save your settings, please try again!'
+        tooSlow: 'Byłeś(aś) zbyt wolny(a), spróbuj ponownie!',
+        fail: 'Nie udało się zapisać ustawień, spróbuj ponownie!'
     }
 };
