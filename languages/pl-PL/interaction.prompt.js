@@ -1,29 +1,29 @@
 module.exports = {
-    validate: 'Validate data...',
-    create: 'Creating {type} prompt...',
-    tooManyRoles: 'You have {roles} roles in your server, please make sure that you have less than 244!',
-    created: 'The {type} prompt has been created.',
+    validate: 'Sprawdź poprawność danych...',
+    create: 'Tworzenie wpisu {type}...',
+    tooManyRoles: 'Masz {roles} ról na swoim serwerze, upewnij się, że masz mniej niż 244!',
+    created: 'Wpis {type} został utworzony.',
     type: {
-        category: 'channel category',
-        support: 'support role',
-        emote: 'custom emote',
-        endPoll: 'end poll'
+        category: 'kategoria kanału',
+        support: 'rola wsparcia',
+        emote: 'własna emotka',
+        endPoll: 'zakończ ankietę'
     },
     message: {
-        created: 'created',
-        noSupport: 'none (use **/config**)',
-        invalidEmote: 'not in same guild',
-        content: 'Content',
-        endPoll: 'use {command}'
+        created: 'utworzono',
+        noSupport: 'brak (użyj **/config**)',
+        invalidEmote: 'nie w tej samej gildii',
+        content: 'Zawartość',
+        endPoll: 'użyj {command}'
     },
     error: {
-        tooLong: 'Option {index} has more than {number} characters!',
-        noData: 'no data set'
+        tooLong: 'Opcja {index} ma więcej niż {number} znaków!',
+        noData: 'brak ustawionych danych'
     },
-    verifySetUp: '**CAPTCHA Setup is Required**\nPlease use {command} and go to *\'Logging > Joins > CAPTCHA\'* and run this command again.',
+    verifySetUp: '**Ustawienie CAPTCHA jest wymagane**\nUżyj {command} i przejdź do *\'Logging > Joins > CAPTCHA* i uruchom tą komendę ponownie.',
     webedit: {
-        title: 'Message Web Edit',
-        description: 'Open [this Website]({url}) to start editing the message & embed.',
-        open: 'Open Web Edit'
+        title: 'Edycja wiadomości na stronie',
+        description: 'Otwórz [tą stronę internetową]({url}), aby rozpocząć edycję wiadomości i wpisu.',
+        open: 'Otwórz edycję na stronie'
     }
 };
