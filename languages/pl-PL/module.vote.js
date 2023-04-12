@@ -1,14 +1,14 @@
 module.exports = {
-    greeting: 'Hello there, {user}',
+    greeting: 'Witaj, {user}',
     description: {
-        notice: 'Thanks for voting, it really helps us {emote}\nIf you want to continue supporting this project by voting on top.gg, consider enabling the vote reminder by using {command}! Thank you :)',
-        notice_disclaimer: 'You only receive this message once',
-        remind: 'You are now able to vote again for me on top.gg!',
-        data: 'You\'ve **last voted {relativeTime}** and in total {amount} times.',
-        new: '**NEW!** Also support us on {url} with your vote!'
+        notice: 'Dziękujemy za głosowanie, to naprawdę nam pomaga {emote}\nJeśli chcesz kontynuować wspieranie tego projektu głosując na Top.gg, rozważ włączenie przypomnienia o głosowaniu, używając {command}! Dziękujemy :)',
+        notice_disclaimer: 'Otrzymasz tę wiadomość tylko raz',
+        remind: 'Teraz możesz zagłosować ponownie na mnie na top.gg!',
+        data: '**Ostatnio głosowałeś(aś) {relativeTime}** i {amount} razy.',
+        new: '**NOWOŚĆ!** Wspieraj nas również na {url}, głosując na nas!'
     },
     button: {
-        enable: 'Enable Reminder',
-        vote: 'Vote'
+        enable: 'Włączone Przypomnienie',
+        vote: 'Zagłosuj'
     }
 };
