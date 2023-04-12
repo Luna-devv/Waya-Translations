@@ -3,8 +3,8 @@
     \n are new lines
 */
 module.exports = {
-    validate: 'Validate data...',
-    notAllowed: 'You cannot use this menu.',
+    validate: 'Sprawdź poprawność danych...',
+    notAllowed: 'Nie możesz użyć tego menu.',
     prefix: {
         name: 'Prefix',
         set: 'Successfully updated the guilds prefix to {prefix}!',
