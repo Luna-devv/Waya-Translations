@@ -6,40 +6,40 @@ module.exports = {
     validate: 'Sprawdź poprawność danych...',
     notAllowed: 'Nie możesz użyć tego menu.',
     prefix: {
-        name: 'Prefix',
-        set: 'Successfully updated the guilds prefix to {prefix}!',
-        noSpace: 'Please note that you cannot use spaces inside of the prefix! It\'s only allowed on the end.',
-        disclaimer: 'This does NOT apply to "/" (Slash)-Commands'
+        name: 'Prefiks',
+        set: 'Pomyślnie zaktualizowano prefiks gildii na {prefix}!',
+        noSpace: 'Pamiętaj, że nie możesz używać spacji wewnątrz prefiksu! Jest to dozwolone tylko na końcu.',
+        disclaimer: 'To NIE dotyczy "/" (Slash)-komend'
     },
     global: {
         // will be the same everywhere
-        none: 'none',
-        useButtons: 'Select an option you want to edit using the buttons below.',
+        none: 'brak',
+        useButtons: 'Wybierz opcję, którą chcesz edytować za pomocą przycisków poniżej.',
         developer: {
-            bypass: 'You don\'t have the `MANAGE_GUILD` to access this panel..\nDo you still want to continue?',
+            bypass: 'Nie masz permisji `MANAGE_GUILD`, aby uzyskać dostęp do tego panelu.\nCzy nadal chcesz kontynuować?',
             choice: {
-                access: 'I\'m sure, yes',
-                abord: 'Nevermind'
+                access: 'Jestem pewien, tak',
+                abord: 'Nieważne'
             },
-            notice: 'carefull - developer privileges enforced..'
+            notice: 'uwaga - przywileje deweloperskie wyegzekwowane..'
         },
-        upsell: 'Subscribe to get {count} more',
-        permissions: 'Missing: {perms}',
-        placeholders: 'Placeholders',
+        upsell: 'Subskrybuj, aby uzyskać jeszcze {count}',
+        permissions: 'Brakuje: {perms}',
+        placeholders: 'Tekst zastępczy',
         await: {
-            channel: 'Mention a Channel or paste the Channel Id into the chat.\nType {string} to remove the channel.',
-            category: 'Mention a Category or paste the Category Id into the chat.\nType {string} to remove the category.',
-            role: 'Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.',
-            message: 'Send a Message which should be used as {what}.',
-            emote: 'Send an Emoji which should be used as {what}.',
-            color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
-            patient: 'Enabling this might take a few seconds, please wait..'
+            channel: 'Wspomnij kanał lub wklej ID kanału do czatu.\nWpisz {string}, aby usunąć kanał.',
+            category: 'Wspomnij kategorię lub wklej ID kategorii do czatu.\nWpisz {string}, aby usunąć kategorię.',
+            role: 'Wspomnij rolę lub wklej ID roli do czatu.\nWpisz {string}, aby usunąć rolę.',
+            message: 'Wyślij wiadomość, która powinna być używana jako {what}.',
+            emote: 'Wyślij emotikonę, która powinna być używana jako {what}.',
+            color: 'Wyślij kod koloru szesnastkowego (hex), który powinien być użyty dla {what}. Uzyskaj prawidłowy kod na {url}.',
+            patient: 'Włączenie tego może potrwać kilka sekund, proszę czekać..'
         },
         success: {
-            set: 'Successfully set {what} to **{data}**.',
-            add: 'Successfully add {what} to **{data}**.',
-            setCodeblock: 'Successfully set {what} to {data}',
-            removed: 'Successfully removed the {what}.',
+            set: 'Pomyślnie ustawiono {what} na **{data}**.',
+            add: 'Pomyślnie dodano {what} do **{data}**.',
+            setCodeblock: 'Pomyślnie ustawiono {what} na {data}',
+            removed: 'Pomyślnie usunięto {what}.',
             remove: 'Successfully remove {what} from **{data}**.',
             fail: 'This {what} does not exist in this guild..',
             lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
