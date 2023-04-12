@@ -57,46 +57,46 @@ module.exports = {
         },
         type: {
             text: 'Kanał tekstowy',
-            category: 'Category Channel',
-            role: 'Role',
-            emoji: 'Emote'
+            category: 'Kanał kategorii',
+            role: 'Rola',
+            emoji: 'Emotka'
         },
         state: {
-            enabled: 'Enabled',
-            disabled: 'Disabled'
+            enabled: 'Włączone',
+            disabled: 'Wyłączone'
         },
         option: {
-            required: 'Required',
-            optional: 'Optional'
+            required: 'Wymagane',
+            optional: 'Opcjonalnie'
         },
         button: {
-            back: 'Back',
-            disable: 'Disable',
-            enable: 'Enable',
+            back: 'Powrót',
+            disable: 'Wyłącz',
+            enable: 'Włącz',
             channel: {
-                set: 'Set Channel',
-                edit: 'Edit Channel'
+                set: 'Ustaw Kanał',
+                edit: 'Edytuj Kanał'
             },
             category: {
-                set: 'Set Category',
-                edit: 'Edit Category'
+                set: 'Ustaw Kategorię',
+                edit: 'Edytuj Kategorię'
             },
             role: {
-                set: 'Set Role',
-                edit: 'Edit Role'
+                set: 'Ustaw Rolę',
+                edit: 'Edytuj Rolę'
             },
             mode: {
-                analyst: 'Analyst',
-                cozy: 'Cozy'
+                analyst: 'Analityczny',
+                cozy: 'Spokojny'
             },
             modeChange: {
-                analyst: 'Set to Analyst',
-                cozy: 'Set to Cozy'
+                analyst: 'Przełącz na Analyticzny',
+                cozy: 'Przełącz na Spokojny'
             },
             dupaw: {
                 // This is a name, cannot be translated
-                enable: 'Enable dupaw',
-                disable: 'Disable dupaw'
+                enable: 'Włącz dupaw',
+                disable: 'Wyłącz dupaw'
             }
         }
     },
