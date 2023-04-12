@@ -101,40 +101,40 @@ module.exports = {
         }
     },
     main: {
-        title: 'Configure {name}',
+        title: 'Konfiguruj {name}',
         option: {
             premium: {
-                text: 'Enterprise Tier {tier}',
-                buy: 'Buy Enterprise'
+                text: 'Poziom Enterprise {tier}',
+                buy: 'Kup Enterprise'
             }
         },
         button: {
-            logging: 'Logging',
-            tickets: 'Ticketing',
-            moderation: 'Moderation',
+            logging: 'Logowanie',
+            tickets: 'Zgłoszenia',
+            moderation: 'Moderacja',
             starboard: 'Starboard',
-            misc: 'Miscs',
-            followNews: 'Follow News',
-            staff: 'Manage Guild',
-            exit: 'Exit',
-            help: 'Support'
+            misc: 'Różne',
+            followNews: 'Obserwuj aktualności',
+            staff: 'Zarządzaj Gildią',
+            exit: 'Wyjdź',
+            help: 'Pomoc'
         }
     },
     logging: {
-        title: 'Configure Logging',
+        title: 'Skonfiguruj logowanie',
         button: {
-            messages: 'Messages',
-            joins: 'Joins',
-            welcomer: 'Welcoming',
-            byer: 'Bying'
+            messages: 'Wiadomości',
+            joins: 'Dołączenia',
+            welcomer: 'Witanie',
+            byer: 'Żegnanie'
         },
         page: {
             messages: {
-                title: 'Messages',
-                name: 'Message Logging',
+                title: 'Wiadomości',
+                name: 'Logowanie wiadomości',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}'
+                    channel: 'Kanał: {channel}',
+                    mode: 'Tryb: {mode}'
                 },
                 button: {
                     snipe: {
@@ -144,50 +144,50 @@ module.exports = {
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Message Logging channel'
+                        title: 'Kanał',
+                        name: 'Kanał Logowania wiadomości'
                     }
                 }
             },
             joins: {
-                title: 'Joins',
-                name: 'Join Logging',
+                title: 'Dołączenia',
+                name: 'Logowanie Dołączeń',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}',
-                    filter: 'Filter: {state}',
+                    channel: 'Kanał: {channel}',
+                    mode: 'Tryb: {mode}',
+                    filter: 'Filtr: {state}',
                     captcha: 'CAPTCHA: {state}'
                 },
                 button: {
-                    filter: 'Filter',
-                    captcha: 'CAPTCHA Verification'
+                    filter: 'Filtr',
+                    captcha: 'Weryfikacja CAPTCHA'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Join Logging'
+                        title: 'Kanał',
+                        name: 'Logowanie Dołączeń'
                     },
                     filter: {
-                        title: 'Filter',
+                        title: 'Filtr',
                         option: {
-                            trigger: 'Age Trigger: **{trigger} days**',
-                            punishment: 'Punishment: **{type}**',
+                            trigger: 'Wyzwalacz Wieku: **{trigger} dni**',
+                            punishment: 'Kara: **{type}**',
                             punishmentType: {
-                                ban: 'Ban',
-                                kick: 'Kick',
+                                ban: 'Zbanuj',
+                                kick: 'Wyrzuć',
                                 timeout: 'Timeout',
-                                role: 'Assign {role} role',
-                                none: 'none'
+                                role: 'Przypisz rolę {role}',
+                                none: 'brak'
                             }
                         },
                         button: {
                             dmNotification: {
-                                disable: 'Disable DM notification',
-                                enable: 'Enable DM notification'
+                                disable: 'Wyłącz powiadomienia DM',
+                                enable: 'Włącz powiadomienia DM'
                             },
                             trigger: {
-                                set: 'Set Age Trigger',
-                                edit: 'Edit Age Trigger'
+                                set: 'Ustaw wyzwalacz Wieku',
+                                edit: 'Edytuj Wyzwalacz Wieku'
                             },
                             punishment: {
                                 title: 'Set a punishment',
