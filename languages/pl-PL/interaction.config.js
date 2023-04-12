@@ -40,23 +40,23 @@ module.exports = {
             add: 'Pomyślnie dodano {what} do **{data}**.',
             setCodeblock: 'Pomyślnie ustawiono {what} na {data}',
             removed: 'Pomyślnie usunięto {what}.',
-            remove: 'Successfully remove {what} from **{data}**.',
-            fail: 'This {what} does not exist in this guild..',
-            lengthFail: 'The {what} is longer than {max} characters! ({length} characters, {relative} too much)',
-            otherLengthFail: 'The {what} is shorter than {min} characters! ({length} characters, {relative} too less)',
-            numberFail: 'The {what} is not a number between {a} and {b}!',
-            roleFail: 'This Role is only managable by either Discord or belongs to a bot user.',
-            colorFail: 'No valid hex color code was provided. Get a valid code at {url}.',
-            emoteFail: 'You have not sent any valid emotes. Only custom discord and default emojis are supported.'
+            remove: 'Pomyślnie usunięto {what} z **{data}**.',
+            fail: 'Ten {what} nie istnieje w tej gildii..',
+            lengthFail: '{what} jest dłuższy niż {max} znaków! ({length} znaków, {relative} za dużo)',
+            otherLengthFail: '{what} jest krótszy niż {min} znaków! ({length} znaków, {relative} za mniej)',
+            numberFail: '{what} nie jest liczbą pomiędzy {a} i {b}!',
+            roleFail: 'Ta rola jest zarządzana tylko przez Discorda lub należy do użytkownika bota.',
+            colorFail: 'Nie podano prawidłowego kodu koloru szesnastkowego (hex). Zdobądź poprawny kog hex {url}.',
+            emoteFail: 'Nie wysłałeś żadnych prawidłowych emotikonów. Obsługiwane są tylko niestandardowe i domyślne emotikony discorda.'
         },
         webedit: {
-            button: 'Embed Editor',
-            title: 'Message Web Edit',
-            description: 'Open [this Website]({url}) to start editing the message & embed.',
-            open: 'Open Web Edit'
+            button: 'Edytor Osadzenia',
+            title: 'Edycja wiadomości na stronie',
+            description: 'Otwórz [ta strona internetowa]({url}), aby rozpocząć edycję wiadomości i osadzenia.',
+            open: 'Otwórz stronę internetową'
         },
         type: {
-            text: 'Text Channel',
+            text: 'Kanał tekstowy',
             category: 'Category Channel',
             role: 'Role',
             emoji: 'Emote'
