@@ -786,10 +786,10 @@ module.exports = {
                 enable: 'Activer la journalisation'
             },
             blacklist: {
-                set: 'Set Blacklisted Role',
-                change: 'Edit Blacklisted Role'
+                set: 'Définir le rôle liste noire',
+                change: 'Modifier le rôle liste noire'
             },
-            blacklistedChannels: 'Edit Blacklisted Channels',
+            blacklistedChannels: 'Modifier les salons sur liste noire',
             delete: {
                 disable: 'Disable Delete <{reactions} Reactions',
                 enable: 'Enable Delete <{reactions} Reactions'
