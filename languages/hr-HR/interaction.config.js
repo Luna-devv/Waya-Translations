@@ -31,7 +31,7 @@ module.exports = {
             category: 'Spomenite kategoriju ili zalijepite Id kategorije u chat.\nUpišite {string} za uklanjanje kategorije.',
             role: 'Spomenite ulogu ili zalijepite Id uloge u chat.\nUpišite {string} da biste uklonili ulogu.',
             message: 'Pošaljite poruku koju treba koristiti kao {what}.',
-            emote: 'Pošaljite emoji koji se treba koristiti kao {what}.',
+            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
             color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
             patient: 'Omogućavanje ovoga može potrajati nekoliko sekundi, pričekajte..'
         },
@@ -134,12 +134,14 @@ module.exports = {
                 name: 'Evidencija poruka',
                 option: {
                     channel: 'Kanal: {channel}',
-                    mode: 'Način rada: {mode}'
+                    mode: 'Način rada: {mode}',
+                    snipetimeout: 'Snipe: {time}'
                 },
                 button: {
                     snipe: {
                         enable: 'Omogući Snipe',
-                        disable: 'Onemogući Snipe'
+                        disable: 'Onemogući Snipe',
+                        timeout: 'change snipe clear duration per message'
                     }
                 },
                 page: {
@@ -509,15 +511,10 @@ module.exports = {
                 button: {
                     texts: 'Pregled ulaznice',
                     topic: 'Promjena teme',
-                    title: 'Promjena tekst naslova',
                     unclaimed: 'Promijenite Nezahtijevani Embed',
                     claimed: 'Promijenite Zahtijevani Embed'
                 },
                 page: {
-                    title: {
-                        title: 'Naslov',
-                        name: 'Naslov za ulaznicu'
-                    },
                     unclaimed: {
                         title: 'Nepotraživano',
                         name: 'Opis nenajavljene karte'
@@ -857,7 +854,8 @@ module.exports = {
         button: {
             embedMessages: 'Embed Poruke',
             levelRoles: 'Level Uloge',
-            leaderboards: 'Ploče s najboljim rezultatima'
+            leaderboards: 'Ploče s najboljim rezultatima',
+            stickymessages: 'Stickymessages'
         },
         page: {
             embedMessages: {
@@ -968,6 +966,10 @@ module.exports = {
                         }
                     }
                 }
+            },
+            stickymessages: {
+                title: 'Stickymessages',
+                button: { timeout: 'Change the timeout duration' }
             }
         }
     },
