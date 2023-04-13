@@ -337,162 +337,162 @@ module.exports = {
                         title: 'Reakcje',
                         option: {
                             welcomer: 'Powitalne Reakcje Wiadomości: {emotes}',
-                            firstmessage: 'First Message Reactions: {emotes}'
+                            firstmessage: 'Reakcje na pierwszą wiadomość: {emotes}'
                         },
                         button: {
-                            welcomer: 'Welcome Message',
-                            firstmessage: 'First Member Message'
+                            welcomer: 'Wiadomość Powitalna',
+                            firstmessage: 'Pierwsza Wiadomość Użytkownika'
                         },
                         page: {
                             welcomer: {
-                                title: 'Welcomer',
-                                name: 'welcomer auto reaction'
+                                title: 'Powitanie',
+                                name: 'automatyczna reakcja powitania'
                             },
                             firstmessage: {
-                                title: 'First Message',
-                                name: 'auto reaction'
+                                title: 'Pierwsza Wiadomość',
+                                name: 'automatyczna reakcja'
                             }
                         }
                     },
                     imgcard: {
-                        title: 'Card',
-                        option: { background: 'Background: {url}' },
+                        title: 'Karta',
+                        option: { background: 'Tło: {url}' },
                         button: {
                             background: {
-                                set: 'Set Custom Background',
-                                edit: 'Edit Custom Background'
+                                set: 'Ustaw Niestandardowe Tło',
+                                edit: 'Edytuj Niestandardowe Tło'
                             },
-                            deleteBackground: 'Delete Background',
+                            deleteBackground: 'Usuń Tło',
                             inEmbed: {
-                                enable: 'Show Image in Embed',
-                                disable: 'Don\'t Show Image in Embed'
+                                enable: 'Pokaż Obraz w Osadzaniu',
+                                disable: 'Nie Pokazuj Obrazu w Osadzeniu'
                             }
                         },
                         page: {
                             background: {
-                                title: 'Background',
-                                name: 'Card Background',
-                                description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
+                                title: 'Tło',
+                                name: 'Tło Karty',
+                                description: 'Link musi być **bezpośrednim adresem URL obrazu**, musi być również linkiem typu {scheme}.\nZalecamy stosunek {ratio} do minimalnej rozdzielczości {resolution}.'
                             }
                         }
                     },
-                    dm: { title: 'Direct Message' },
+                    dm: { title: 'Prywatna Wiadomość' },
                     wavebtn: {
-                        title: 'Wave to say hi',
+                        title: 'Pomachaj, aby powiedzieć hej',
                         option: {
-                            send: 'Send: {type}',
-                            label: 'Label: {label}'
+                            send: 'Wyślij: {type}',
+                            label: 'Etykieta: {label}'
                         },
                         button: {
-                            label: 'Change Button Text',
+                            label: 'Zmień Tekst Przycisku',
                             ping: {
-                                enable: 'Enable Ping',
-                                disable: 'Disable Ping'
+                                enable: 'Włącz Ping',
+                                disable: 'Wyłącz Ping'
                             },
                             type: {
-                                title: 'Select a response type',
+                                title: 'Wybierz typ odpowiedzi',
                                 option: {
-                                    '0': 'Random Sticker',
-                                    '1': 'Custom Message'
+                                    '0': 'Losowa Naklejka',
+                                    '1': 'Niestandardowa Wiadomość'
                                 }
                             },
                             color: {
-                                title: 'Select a color for the button',
+                                title: 'Wybierz Kolor Przycisku',
                                 option: {
                                     blurple: 'Blurple',
                                     // You may leave that
-                                    grey: 'Grey',
-                                    green: 'Green',
-                                    red: 'Red'
+                                    grey: 'Szary',
+                                    green: 'Zielony',
+                                    red: 'Czerwony'
                                 }
                             }
                         },
                         page: {
                             label: {
-                                title: 'Label',
-                                name: 'Button Text'
+                                title: 'Etykieta',
+                                name: 'Tekst Przycisku'
                             }
                         }
                     }
                 }
             },
             byer: {
-                title: 'Byer',
-                name: 'Byer',
+                title: 'Żegnanie',
+                name: 'Żegnanie',
                 option: {
-                    channel: 'Channel: {channel}',
+                    channel: 'Kanał: {channel}',
                     message: {
-                        message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        message: 'Wiadomość: {message}',
+                        command: 'Wiadomość: użyj `{command}`'
                     },
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    autodelete: 'Automatyczne usuwanie: **{time}**',
+                    autodelete_never: 'nigdy'
                 },
                 button: {
-                    message: 'Edit Message',
-                    autodelete: 'Set Autodelete'
+                    message: 'Edytuj Wiadomość',
+                    autodelete: 'Ustaw Automatyczne Usuwanie'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Byer Channel'
+                        title: 'Kanał',
+                        name: 'Kanał Pożegnań'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Byer Message'
+                        title: 'Wiadomość',
+                        name: 'Wiadomość Pożegnania'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Byer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Automatyczne Usuwanie',
+                        name: 'Automatyczne Usuwanie',
+                        description: 'Wiadomość pożegnalna zostanie usunięta po tym czasie.\nZalecamy zachowanie tego czasu na krótko (tylko na kilka sekund).\nPrzykład: `1m 3s`'
                     }
                 }
             }
         }
     },
     tickets: {
-        title: 'Configure Ticketing',
+        title: 'Skonfiguruj zgłoszenia',
         option: {
-            channel: 'Category: {channel}',
-            staff: 'Staff: {role}',
-            logging: 'Logging: {channel}',
-            forceReason: 'Reason: {state}',
-            naming: 'Naming: {type}',
+            channel: 'Kategoria: {channel}',
+            staff: 'Personel: {role}',
+            logging: 'Logowanie: {channel}',
+            forceReason: 'Powód: {state}',
+            naming: 'Nazewnictwo: {type}',
             namingType: {
-                username: 'Username',
-                userid: 'UserId',
-                random: 'Random'
+                username: 'Nazwa użytkownika',
+                userid: 'ID użytkownika',
+                random: 'Losowe'
             }
         },
         button: {
             forceReason: {
-                enable: 'Force Reason',
-                disable: 'Optional Reason'
+                enable: 'Wymuś Powód',
+                disable: 'Powód Opcjonalny'
             },
             logging: {
-                set: 'Set Logging Channel',
-                edit: 'Change Logging Channel'
+                set: 'Ustaw Kanał Logowania',
+                edit: 'Zmień Kanał Logowania'
             },
             transcript: {
-                disable: 'Disable Transcripts',
-                enable: 'Save Transcripts'
+                disable: 'Wyłącz Transkrypcje',
+                enable: 'Włącz Transkrypcje'
             },
             openReason: {
-                disable: 'Disable Open Reason',
-                enable: 'Enable Open Reason'
+                disable: 'Wyłącz Powód Otwarcia',
+                enable: 'Włącz Powód Otwarcia'
             },
             leaveAutoclose: {
-                disable: 'Disable Leave Autoclose',
-                enable: 'Enable Leave Autoclose'
+                disable: 'Wyłącz Automatyczne Zamykanie Wyjścia',
+                enable: 'Włącz Automatyczne Zamykanie Wyjścia'
             },
-            embeds: 'Change Embeds',
+            embeds: 'Zmień Osadzenie',
             naming: {
-                title: 'Set a naming type',
-                current: 'Current',
+                title: 'Ustaw typ nazewnictwa',
+                current: 'Bieżący',
                 option: {
-                    username: 'Username',
-                    userid: 'User Id',
-                    random: 'Random Id'
+                    username: 'Nazwa użytkownika',
+                    userid: 'ID użytkownika',
+                    random: 'Losowe ID'
                 }
             }
         },
