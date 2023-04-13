@@ -309,7 +309,7 @@ module.exports = {
                     },
                     dm: 'Message en MP',
                     afterleave_webedit: 'Éditeur d\'Embed Après Départ',
-                    wave: 'Wave Button',
+                    wave: 'Bouton Salutation',
                     reactions: 'Réactions'
                 },
                 page: {
@@ -334,21 +334,21 @@ module.exports = {
                     reactions: {
                         title: 'Réactions',
                         option: {
-                            welcomer: 'Welcome Message Reactions: {emotes}',
-                            firstmessage: 'First Message Reactions: {emotes}'
+                            welcomer: 'Réactions au Message de Bienvenue : {emotes}',
+                            firstmessage: 'Réaction au Premier Message : {emotes}'
                         },
                         button: {
-                            welcomer: 'Welcome Message',
-                            firstmessage: 'First Member Message'
+                            welcomer: 'Message de bienvenue',
+                            firstmessage: 'Premier Message d\'un Membre'
                         },
                         page: {
                             welcomer: {
-                                title: 'Welcomer',
-                                name: 'welcomer auto reaction'
+                                title: 'Bienvenue',
+                                name: 'réaction automatique de bienvenue'
                             },
                             firstmessage: {
-                                title: 'First Message',
-                                name: 'auto reaction'
+                                title: 'Premier Message',
+                                name: 'réaction automatique'
                             }
                         }
                     },
@@ -376,16 +376,16 @@ module.exports = {
                     },
                     dm: { title: 'Message Privé' },
                     wavebtn: {
-                        title: 'Wave to say hi',
+                        title: 'Saluer pour dire bonjour',
                         option: {
                             send: 'Envoyer : {type}',
-                            label: 'Label: {label}'
+                            label: 'Label : {label}'
                         },
                         button: {
-                            label: 'Change Button Text',
+                            label: 'Changer le Texte du Bouton',
                             ping: {
-                                enable: 'Enable Ping',
-                                disable: 'Disable Ping'
+                                enable: 'Activer Ping',
+                                disable: 'Désactiver Ping'
                             },
                             type: {
                                 title: 'Sélectionner le type de réponse',
@@ -468,8 +468,8 @@ module.exports = {
                 disable: 'Raison facultative'
             },
             logging: {
-                set: 'Set Logging Channel',
-                edit: 'Change Logging Channel'
+                set: 'Définir le salon des journaux',
+                edit: 'Modifier le salon des journaux'
             },
             transcript: {
                 disable: 'Désactiver les transcriptions',
@@ -497,7 +497,7 @@ module.exports = {
         page: {
             category: {
                 title: 'Catégorie',
-                name: 'Tickets Category'
+                name: 'Catégorie des Tickets'
             },
             role: {
                 title: 'Rôle Staff',
@@ -516,15 +516,15 @@ module.exports = {
                 page: {
                     title: {
                         title: 'Titre',
-                        name: 'Ticket embed title'
+                        name: 'Titre de l\'embed du ticket'
                     },
                     unclaimed: {
                         title: 'Non réclamé',
-                        name: 'Unclaimed Ticket description'
+                        name: 'Description du ticket non réclamé'
                     },
                     claimed: {
                         title: 'Réclamé',
-                        name: 'Claimed Ticket description'
+                        name: 'Description du ticket réclamé'
                     },
                     topic: {
                         title: 'Sujet',
@@ -578,24 +578,24 @@ module.exports = {
                         delete: 'supprimer',
                         timeout: 'exclure'
                     },
-                    total: 'Total: **{amount} words**',
+                    total: 'Total : **{amount} mots**',
                     timeout: 'Exclusion : {time}'
                 },
                 button: {
-                    deleteAll: 'Clear word list',
-                    editWords: 'Edit word list',
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    deleteAll: 'Effacer la liste de mots',
+                    editWords: 'Modifier la liste de mots',
+                    message: 'Modifier le Message',
+                    timeout: 'Durée d\'exclusion',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Gérer une action',
+                        selected: 'Sélectionné',
                         option: {
                             reply: 'Répondre',
                             delete: 'Supprimer',
                             timeout: 'Exclure'
                         }
                     },
-                    export: 'Show word list'
+                    export: 'Afficher la liste de mots'
                 },
                 page: {
                     delete: {
@@ -660,7 +660,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anit Scam reply'
+                        name: 'Réponse Anti-Arnaques'
                     },
                     timeout: {
                         title: 'Durée d\'exclusion',
@@ -763,7 +763,7 @@ module.exports = {
         button: {
             emoji: 'Changer l\'émoji',
             color: 'Changer la couleur',
-            count: 'Change Count',
+            count: 'Changer Nombre',
             nsfw: {
                 disable: 'Désactiver NSFW',
                 enable: 'Activer NSFW'
@@ -773,20 +773,20 @@ module.exports = {
                 enable: 'Activer les Bots'
             },
             selfReact: {
-                disable: 'Disable Self Reaction',
-                enable: 'Enable Self Reaction'
+                disable: 'Désactiver Auto Réaction',
+                enable: 'Activer Auto Réaction'
             },
             reply: {
-                disable: 'Hide Replied to',
-                enable: 'Show Replied to'
+                disable: 'Cacher Réponse à',
+                enable: 'Afficher Réponse à'
             },
             edits: {
-                disable: 'Disalow Edits',
-                enable: 'Allow Edits'
+                disable: 'Interdire la Modification',
+                enable: 'Autoriser la Modification'
             },
             logging: {
-                disable: 'Disable Logging',
-                enable: 'Enable Logging'
+                disable: 'Désactiver la journalisation',
+                enable: 'Activer la journalisation'
             },
             blacklist: {
                 set: 'Set Blacklisted Role',
