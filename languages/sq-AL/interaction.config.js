@@ -31,7 +31,7 @@ module.exports = {
             category: 'Përmendni një kategori ose ngjisni Id-në e kategorisë në bisedë.\nShkruani {string} për të hequr kategorinë.',
             role: 'Përmendni një rol ose ngjitni Id-në e rolit në bisedë.\nShkruani {string} për të hequr rolin.',
             message: 'Dërgoni një Mesazh i cili duhet të përdoret si {what}.',
-            emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.',
+            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
             color: 'Dërgo një kod ngjyrë hex i cili duhet të përdoret për {what}. Merrni një kod të vlefshëm në {url}.',
             patient: 'Aktivizimi i kësaj mund të zgjasë disa sekonda, ju lutemi prisni..'
         },
@@ -134,12 +134,14 @@ module.exports = {
                 name: 'Logging i mesazheve',
                 option: {
                     channel: 'Kanali: {channel}',
-                    mode: 'Modaliteti: {mode}'
+                    mode: 'Modaliteti: {mode}',
+                    snipetimeout: 'Snipe: {time}'
                 },
                 button: {
                     snipe: {
                         enable: 'Aktivizo Snipe',
-                        disable: 'Çaktivizo Snipe'
+                        disable: 'Çaktivizo Snipe',
+                        timeout: 'change snipe clear duration per message'
                     }
                 },
                 page: {
@@ -509,15 +511,10 @@ module.exports = {
                 button: {
                     texts: 'Parashikimi i Ticketes',
                     topic: 'Ndrysho Temën',
-                    title: 'Ndrysho tekstin e titullit',
                     unclaimed: 'Ndrysho Embed të padeklaruar',
                     claimed: 'Ndrysho Embed të pretenduar'
                 },
                 page: {
-                    title: {
-                        title: 'Titulli',
-                        name: 'Titulli i futjes së Ticketes'
-                    },
                     unclaimed: {
                         title: 'E pamëtuar',
                         name: 'Përshkrimi i biletës së pakërkuar'
@@ -857,7 +854,8 @@ module.exports = {
         button: {
             embedMessages: 'Mesazhet Embed',
             levelRoles: 'Rolet e nivelit',
-            leaderboards: 'Tabelat e klasifikimit'
+            leaderboards: 'Tabelat e klasifikimit',
+            stickymessages: 'Stickymessages'
         },
         page: {
             embedMessages: {
@@ -968,6 +966,10 @@ module.exports = {
                         }
                     }
                 }
+            },
+            stickymessages: {
+                title: 'Stickymessages',
+                button: { timeout: 'Change the timeout duration' }
             }
         }
     },
