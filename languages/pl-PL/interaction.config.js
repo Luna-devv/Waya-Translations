@@ -139,9 +139,9 @@ module.exports = {
                 },
                 button: {
                     snipe: {
-                        enable: 'Enable Snipe',
-                        disable: 'Disable Snipe',
-                        timeout: 'change snipe clear duration per message'
+                        enable: 'Włącz Snipe',
+                        disable: 'Wyłącz Snipe',
+                        timeout: 'zmień czas czyszczenia snipe na wiadomość'
                     }
                 },
                 page: {
@@ -218,125 +218,125 @@ module.exports = {
                         title: 'CAPTCHA',
                         name: 'CAPTCHA',
                         option: {
-                            verifiedrole: 'Verified Role: {role}',
-                            unverifiedrole: 'Unverified Role: {role}',
-                            channel: 'Logging: {channel}',
-                            color: 'Color: {color}'
+                            verifiedrole: 'Zweryfikowana rola: {role}',
+                            unverifiedrole: 'Niezweryfikowana rola: {role}',
+                            channel: 'Logowanie: {channel}',
+                            color: 'Kolor: {color}'
                         },
-                        disclaimer: 'Continue with {command}',
+                        disclaimer: 'Kontynuuj z {command}',
                         button: {
                             verifiedrole: {
-                                set: 'Set Verified Role',
-                                edit: 'Edit Verified Role'
+                                set: 'Ustaw zweryfikowaną rolę',
+                                edit: 'Edytuj zweryfikowaną rolę'
                             },
                             unverifiedrole: {
-                                set: 'Set Unverified Role',
-                                edit: 'Edit Unverified Role'
+                                set: 'Ustaw niezweryfikowaną rolę',
+                                edit: 'Edytuj niezweryfikowaną rolę'
                             },
                             type: {
-                                title: 'Set a CAPTCHA type',
-                                selected: 'Selected'
+                                title: 'Ustaw typ CAPTCHA',
+                                selected: 'Wybrane'
                             },
-                            color: 'Change Page Color'
+                            color: 'Zmień kolor strony'
                         },
                         page: {
                             verifiedrole: {
-                                title: 'Verified Role',
-                                name: 'CAPTCHA verified Role'
+                                title: 'Zweryfikowana rola',
+                                name: 'Zweryfikowana rola CAPTCHA'
                             },
                             unverifiedrole: {
-                                title: 'Unverified Role',
-                                name: 'CAPTCHA unverified Role'
+                                title: 'Niezweryfikowana rola',
+                                name: 'Zweryfikowana rola CAPTCHA'
                             },
                             logging: {
-                                title: 'Logging',
-                                name: 'CAPTCHA logging Channel'
+                                title: 'Logowanie',
+                                name: 'Kanał logowania CAPTCHA'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'failed CAPTCHA role'
+                                title: 'Rola',
+                                name: 'błędna rola CAPTCHA'
                             },
                             color: {
-                                title: 'Page Color',
-                                name: 'Page Color',
-                                description: 'Paste a Hex color into the chat you want to use.\nWe recommend you using a color near to black with very high saturation.\nNote that the color on the Passport will always look brighter.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
-                                invalid: 'The color code is not a valid Hex color.\nGet a Hex color code from [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
+                                title: 'Kolor Strony',
+                                name: 'Kolor Strony',
+                                description: 'Wklej kolor szesnastkowy do czatu, którego chcesz użyć.\nZalecamy użycie koloru blisko czarnego z bardzo wysokim nasyceniem.\nZauważ, że kolor Paszportu zawsze będzie jaśniejszy.\nPobierz kod koloru Hex z [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
+                                invalid: 'Kod koloru nie jest prawidłowym kolorem szesnastkowym.\nPobierz kod koloru szesnastkowego z [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
                         }
                     }
                 }
             },
             welcomer: {
-                title: 'Welcomer',
-                name: 'Welcomer',
+                title: 'Witanie',
+                name: 'Witanie',
                 option: {
-                    channel: 'Channel: {channel}',
-                    role: 'Roles: {role}',
+                    channel: 'Kanał: {channel}',
+                    role: 'Role: {role}',
                     message: {
-                        message: 'Message: {message}',
-                        command: 'Message: use `{command}`'
+                        message: 'Wiadomość: {message}',
+                        command: 'Wiadomość: użyj `{command}`'
                     },
                     afterleaveMessage: {
-                        message: 'AL Message: {message}',
+                        message: 'Wiadomość PW: {message}',
                         // AL: After Leave - just use the first letters of your language :)
-                        command: 'AL Message: use `{command}`'
+                        command: 'Wiadomość PW: użyj `{command}`'
                     },
-                    pings: 'Pings: {channels}',
-                    autodelete: 'Auto delete: **{time}**',
-                    autodelete_never: 'never'
+                    pings: 'Wzaimki: {channels}',
+                    autodelete: 'Auto usuwanie: **{time}**',
+                    autodelete_never: 'nigdy'
                 },
                 warnings: {
-                    afterleaveXautodelete: 'We don\'t recommend using **Auto Delete** and **Delete After Leave** simultaneously',
-                    embedXcard: 'In embed card overwrites your custom embed image',
-                    channelMissmatch: 'Channel of the wave webhook is different than the greet message'
+                    afterleaveXautodelete: 'Nie zalecamy równoczesnego używania **Automatycznego Usuwania** i **Usunięcie Po Wyjściu**',
+                    embedXcard: 'W osadzonej karcie nadpisuje niestandardowy osadzony obraz',
+                    channelMissmatch: 'Kanał fali webhooka jest inny niż wiadomość powitalna'
                 },
                 button: {
-                    nextpage: 'Next Page ({cur}/{total})',
-                    message: 'Edit Message',
-                    imgcard: 'Edit Card',
-                    pings: 'Edit Ping Channels',
-                    autodelete: 'Set Autodelete',
+                    nextpage: 'Następna Strona ({cur}/{total})',
+                    message: 'Edytuj Wiadomość',
+                    imgcard: 'Edytuj Kartę',
+                    pings: 'Edytuj Kanały Ping',
+                    autodelete: 'Ustaw Automatyczne Usuwanie',
                     assignRolesAfterRejoin: {
-                        enable: 'Reassign Roles after Rejoin',
-                        disable: 'Disable Reassign Roles after Rejoin'
+                        enable: 'Przypisz Role Po Ponownym Dołączeniu',
+                        disable: 'Wyłącz Przypisywanie Ról Po Ponownym Dołączeniu'
                     },
                     afterleave: {
-                        title: 'What should happen with the message if the member leaves?',
-                        selected: 'Selected',
+                        title: 'Co powinno się wydarzyć z wiadomością, jeśli członek wyjdzie?',
+                        selected: 'Wybrane',
                         option: {
-                            nothing: 'Nothing',
-                            edit: 'Edit on leave',
-                            delete: 'Delete on leave'
+                            nothing: 'Nic',
+                            edit: 'Edytuj po opuszczeniu',
+                            delete: 'Usuń po opuszczeniu'
                         }
                     },
-                    dm: 'DM Message',
-                    afterleave_webedit: 'After Leave Embed Editor',
-                    wave: 'Wave Button',
-                    reactions: 'Reactions'
+                    dm: 'Wiadomość DM',
+                    afterleave_webedit: 'Po opuszczeniu edytora osadzenia',
+                    wave: 'Przycisk Fali',
+                    reactions: 'Reakcje'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'Welcomer Channel'
+                        title: 'Kanał',
+                        name: 'Kanał Powitalny'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Welcomer Message'
+                        title: 'Wiadomość',
+                        name: 'Wiadomość powitalna'
                     },
                     role: {
-                        title: 'Role',
-                        name: 'Welcomer Role'
+                        title: 'Rola',
+                        name: 'Rola powitania'
                     },
                     autodelete: {
-                        title: 'Auto Delete',
-                        name: 'Auto Delete',
-                        description: 'The Welcomer message will be deleted after this time.\nWe recommend you to keep this time short (only few seconds).\nExample: `1m 3s`'
+                        title: 'Automatyczne Usuwanie',
+                        name: 'Automatyczne Usuwanie',
+                        description: 'Wiadomość powitalna zostanie usunięta po tym czasie.\nZalecamy zachowanie tego czasu na krótko (tylko na kilka sekund).\nPrzykład: `1m 3s`'
                     },
-                    dm: { button: { disable: 'Disable DM message' } },
+                    dm: { button: { disable: 'Wyłącz wiadomość DM' } },
                     reactions: {
-                        title: 'Reactions',
+                        title: 'Reakcje',
                         option: {
-                            welcomer: 'Welcome Message Reactions: {emotes}',
+                            welcomer: 'Powitalne Reakcje Wiadomości: {emotes}',
                             firstmessage: 'First Message Reactions: {emotes}'
                         },
                         button: {
