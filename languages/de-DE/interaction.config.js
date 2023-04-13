@@ -31,7 +31,7 @@ module.exports = {
             category: 'Erwähne eine Kategorie oder sende die Id in den Chat.\nSchreibe {string}, um die Kategorie zu entfernen.',
             role: 'Erwähne eine Rolle oder sende die Id in den Chat.\nSchreibe {string}, um die Rolle zu entfernen.',
             message: 'Sende eine Nachricht, die als {what} benutzt werden soll.',
-            emote: 'Sende ein Emoji, welches als {what} benutzt werden soll.',
+            emote: 'Sende einen Emoji, der als {what} verwendet werden soll.\nTippe {string}, um die Emotes zu entfernen.',
             color: 'Sende einen Hex-Farbcode, der für {what} verwendet werden soll. Bekomme einen gültigen Code von {url}.',
             patient: 'Aktivieren kann ein paar Sekunden dauern, bitte warten..'
         },
@@ -134,12 +134,14 @@ module.exports = {
                 name: 'Nachrichten Loggen',
                 option: {
                     channel: 'Kanal: {channel}',
-                    mode: 'Modus: {mode}'
+                    mode: 'Modus: {mode}',
+                    snipetimeout: 'Snipe: {time}'
                 },
                 button: {
                     snipe: {
                         enable: 'Aktiviere Snipes',
-                        disable: 'Deaktiviere Snipes'
+                        disable: 'Deaktiviere Snipes',
+                        timeout: 'ändere Snipe Löschdauer pro Nachricht'
                     }
                 },
                 page: {
@@ -509,15 +511,10 @@ module.exports = {
                 button: {
                     texts: 'Ticket Vorschau',
                     topic: 'Kanal Thema Bearbeiten',
-                    title: 'Titel ändern',
                     unclaimed: 'Unclaimed Embed Bearbeiten',
                     claimed: 'Claimed Embed Bearbeiten'
                 },
                 page: {
-                    title: {
-                        title: 'Titel',
-                        name: 'Ticket Embed Titel'
-                    },
                     unclaimed: {
                         title: 'Unclaimed',
                         name: 'Unclaimed Ticket Beschreibung'
@@ -857,7 +854,8 @@ module.exports = {
         button: {
             embedMessages: 'Nachrichten Einbetten',
             levelRoles: 'Level Rollen',
-            leaderboards: 'Leaderboards'
+            leaderboards: 'Leaderboards',
+            stickymessages: 'Stickymessages'
         },
         page: {
             embedMessages: {
@@ -968,6 +966,10 @@ module.exports = {
                         }
                     }
                 }
+            },
+            stickymessages: {
+                title: 'Stickymessages',
+                button: { timeout: 'Timeout Dauer ändern' }
             }
         }
     },
