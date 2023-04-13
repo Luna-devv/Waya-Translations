@@ -1,4 +1,4 @@
 module.exports = {
     noData: 'Nie mam danych dla tego użytkownika.',
-    content: 'Based on ;[your, {user}\'s] alltime average of {perday} messages per day, my estimate is that ;[you, they] will reach {msgs} messages by {date}.'
+    content: 'Opierając się na ;[Twojej, {user}\'s] średniej w czasie {perday} wiadomości dziennie, szacuję, że ;[Ty dotrzesz, oni dotrą] do {msgs} wiadomości do {date}.'
 };
