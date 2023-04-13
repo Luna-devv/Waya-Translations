@@ -31,7 +31,7 @@ module.exports = {
             category: 'Menziona una categoria o incolla l\'Id della categoria nella chat.\nDigita {string} per rimuovere la categoria.',
             role: 'Menziona un ruolo o incolla l\'Id del ruolo nella chat.\nDigita {string} per rimuovere il ruolo.',
             message: 'Invia un messaggio che dovrebbe essere usato come {what}.',
-            emote: 'Invia un Emoji che dovrebbe essere usato come {what}.',
+            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
             color: 'Invia un codice esadecimale che dovrebbe essere utilizzato per {what}. Ottieni un codice valido su {url}.',
             patient: 'Abilitare questo potrebbe richiedere alcuni secondi, attendere prego..'
         },
@@ -134,12 +134,14 @@ module.exports = {
                 name: 'Logging Messaggi',
                 option: {
                     channel: 'Canale: {channel}',
-                    mode: 'Modalità: {mode}'
+                    mode: 'Modalità: {mode}',
+                    snipetimeout: 'Snipe: {time}'
                 },
                 button: {
                     snipe: {
                         enable: 'Abilita Snipe',
-                        disable: 'Disabilita Snipe'
+                        disable: 'Disabilita Snipe',
+                        timeout: 'change snipe clear duration per message'
                     }
                 },
                 page: {
@@ -509,15 +511,10 @@ module.exports = {
                 button: {
                     texts: 'Anteprima Ticket',
                     topic: 'Cambia Argomento',
-                    title: 'Cambia il titolo',
                     unclaimed: 'Modifica Embed non reclamato',
                     claimed: 'Modifica Embed reclamato'
                 },
                 page: {
-                    title: {
-                        title: 'Titolo',
-                        name: 'Titolo Embed Ticket'
-                    },
                     unclaimed: {
                         title: 'Non reclamato',
                         name: 'Descrizione Ticket non reclamato'
@@ -857,7 +854,8 @@ module.exports = {
         button: {
             embedMessages: 'Messaggi embed',
             levelRoles: 'Ruoli di Livello',
-            leaderboards: 'Classifiche'
+            leaderboards: 'Classifiche',
+            stickymessages: 'Stickymessages'
         },
         page: {
             embedMessages: {
@@ -968,6 +966,10 @@ module.exports = {
                         }
                     }
                 }
+            },
+            stickymessages: {
+                title: 'Stickymessages',
+                button: { timeout: 'Change the timeout duration' }
             }
         }
     },
