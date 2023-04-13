@@ -55,6 +55,7 @@ module.exports = {
     },
     ad: {
         vote: 'Soutenez-nous !',
-        help: 'Besoin d\'aide ?'
+        help: 'Besoin d\'aide ?',
+        notifyMe: 'Get social pings!'
     }
 };
