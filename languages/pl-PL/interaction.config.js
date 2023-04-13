@@ -31,7 +31,7 @@ module.exports = {
             category: 'Wspomnij kategorię lub wklej ID kategorii do czatu.\nWpisz {string}, aby usunąć kategorię.',
             role: 'Wspomnij rolę lub wklej ID roli do czatu.\nWpisz {string}, aby usunąć rolę.',
             message: 'Wyślij wiadomość, która powinna być używana jako {what}.',
-            emote: 'Wyślij emotikonę, która powinna być używana jako {what}.',
+            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
             color: 'Wyślij kod koloru szesnastkowego (hex), który powinien być użyty dla {what}. Uzyskaj prawidłowy kod na {url}.',
             patient: 'Włączenie tego może potrwać kilka sekund, proszę czekać..'
         },
@@ -134,12 +134,14 @@ module.exports = {
                 name: 'Logowanie wiadomości',
                 option: {
                     channel: 'Kanał: {channel}',
-                    mode: 'Tryb: {mode}'
+                    mode: 'Tryb: {mode}',
+                    snipetimeout: 'Snipe: {time}'
                 },
                 button: {
                     snipe: {
                         enable: 'Enable Snipe',
-                        disable: 'Disable Snipe'
+                        disable: 'Disable Snipe',
+                        timeout: 'change snipe clear duration per message'
                     }
                 },
                 page: {
@@ -509,15 +511,10 @@ module.exports = {
                 button: {
                     texts: 'Preview Ticket',
                     topic: 'Change Topic',
-                    title: 'Change title text',
                     unclaimed: 'Change Unclaimed Embed',
                     claimed: 'Change Claimed Embed'
                 },
                 page: {
-                    title: {
-                        title: 'Title',
-                        name: 'Ticket embed title'
-                    },
                     unclaimed: {
                         title: 'Unclaimed',
                         name: 'Unclaimed Ticket description'
@@ -857,7 +854,8 @@ module.exports = {
         button: {
             embedMessages: 'Embed Messages',
             levelRoles: 'Level Roles',
-            leaderboards: 'Leaderboards'
+            leaderboards: 'Leaderboards',
+            stickymessages: 'Stickymessages'
         },
         page: {
             embedMessages: {
@@ -968,6 +966,10 @@ module.exports = {
                         }
                     }
                 }
+            },
+            stickymessages: {
+                title: 'Stickymessages',
+                button: { timeout: 'Change the timeout duration' }
             }
         }
     },
