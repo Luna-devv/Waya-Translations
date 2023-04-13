@@ -498,105 +498,105 @@ module.exports = {
         },
         page: {
             category: {
-                title: 'Category',
-                name: 'Tickets Category'
+                title: 'Kategoria',
+                name: 'Kategoria Zgłoszeń'
             },
             role: {
-                title: 'Staff Role',
-                name: 'Ticket Staff role'
+                title: 'Rola Personelu',
+                name: 'Rola Personelu Zgłoszeń'
             },
             descriptions: {
-                title: 'Texts',
-                name: 'Ticket descriptions',
+                title: 'Tekst',
+                name: 'Opisy Zgłoszeń',
                 button: {
-                    texts: 'Preview Ticket',
-                    topic: 'Change Topic',
-                    unclaimed: 'Change Unclaimed Embed',
-                    claimed: 'Change Claimed Embed'
+                    texts: 'Podgląd Zgłoszenia',
+                    topic: 'Zmień Temat',
+                    unclaimed: 'Zmień Nieodebraną Osadzenie',
+                    claimed: 'Zmień Odebrane Osadzenie'
                 },
                 page: {
                     unclaimed: {
-                        title: 'Unclaimed',
-                        name: 'Unclaimed Ticket description'
+                        title: 'Nieodebrane',
+                        name: 'Opis Nieodebranego Zgłoszenia'
                     },
                     claimed: {
-                        title: 'Claimed',
-                        name: 'Claimed Ticket description'
+                        title: 'Odebrano',
+                        name: 'Opis Odebranego Zgłoszenia'
                     },
                     topic: {
-                        title: 'Topic',
-                        name: 'Tickets Topic'
+                        title: 'Temat',
+                        name: 'Temat Zgłoszeń'
                     }
                 }
             },
             logging: {
-                title: 'Logging',
-                name: 'Ticket Logging'
+                title: 'Logowanie',
+                name: 'Logowanie Zgłoszeń'
             }
         }
     },
     moderation: {
-        title: 'Configure Moderation',
+        title: 'Skonfiguruj Moderację',
         option: {
-            role: 'Bypass Role: {role}',
-            logging: 'Logging: {channel}'
+            role: 'Obejście Roli: {role}',
+            logging: 'Logowanie: {channel}'
         },
         button: {
-            filter: 'Blacklist',
-            antiScam: 'Anti Scam',
-            antiLink: 'Anti Link',
-            antiSpam: 'Anti Spam',
+            filter: 'Czarna lista',
+            antiScam: 'Anty-Scam',
+            antiLink: 'Anty-link',
+            antiSpam: 'Anty-spam',
             bypassRole: {
-                edit: 'Edit bypass Role',
-                set: 'Set bypass Role'
+                edit: 'Edytuj Rolę Obejścia',
+                set: 'Ustaw Rolę Obejścia'
             },
             logging: {
-                edit: 'Edit logging Channel',
-                set: 'Set logging Channel'
+                edit: 'Edytuj Kanał Logowania',
+                set: 'Ustaw Kanał Logowania'
             }
         },
         page: {
             role: {
-                title: 'Bypass Role',
-                name: 'Bypass role'
+                title: 'Rola Ominięcia',
+                name: 'Rola ominięcia'
             },
             logging: {
-                title: 'Logging',
-                name: 'Moderation logs'
+                title: 'Logowanie',
+                name: 'Logi Moderacji'
             },
             filter: {
-                title: 'Filter',
-                name: 'Moderation Filter',
+                title: 'Filtr',
+                name: 'Filtry Moderacji',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Wiadomość: {message}',
+                    actions: 'Akcje: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
+                        reply: 'odpowiedź',
+                        delete: 'usuń',
                         timeout: 'timeout'
                     },
-                    total: 'Total: **{amount} words**',
+                    total: 'Razem: **{amount} słów**',
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    deleteAll: 'Clear word list',
-                    editWords: 'Edit word list',
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    deleteAll: 'Wyczyść listę słów',
+                    editWords: 'Edytuj listę słów',
+                    message: 'Edytuj Wiadomość',
+                    timeout: 'Czas Trwania Timeout\'u ',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Zarządzaj akcją',
+                        selected: 'Wybrane',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
+                            reply: 'Odpowiedź',
+                            delete: 'Usuń',
                             timeout: 'Timeout'
                         }
                     },
-                    export: 'Show word list'
+                    export: 'Pokaż listę słów'
                 },
                 page: {
                     delete: {
-                        title: 'Clear Word List',
+                        title: 'Wyczyść listę słów',
                         description: 'Are you sure that you want to clear out all blacklisted words?',
                         page: {
                             confirm: {
