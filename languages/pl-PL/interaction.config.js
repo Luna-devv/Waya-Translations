@@ -31,7 +31,7 @@ module.exports = {
             category: 'Wspomnij kategorię lub wklej ID kategorii do czatu.\nWpisz {string}, aby usunąć kategorię.',
             role: 'Wspomnij rolę lub wklej ID roli do czatu.\nWpisz {string}, aby usunąć rolę.',
             message: 'Wyślij wiadomość, która powinna być używana jako {what}.',
-            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
+            emote: 'Wyślij emotikony, które powinny być używane jako {what}.\nWpisz {string}, aby usunąć emotikony.',
             color: 'Wyślij kod koloru szesnastkowego (hex), który powinien być użyty dla {what}. Uzyskaj prawidłowy kod na {url}.',
             patient: 'Włączenie tego może potrwać kilka sekund, proszę czekać..'
         },
@@ -192,25 +192,25 @@ module.exports = {
                                 edit: 'Edytuj Wyzwalacz Wieku'
                             },
                             punishment: {
-                                title: 'Set a punishment',
-                                current: 'Current',
+                                title: 'Ustaw karę',
+                                current: 'Bieżący',
                                 option: {
-                                    ban: 'Ban User',
-                                    kick: 'Kick User',
-                                    timeout: 'Timeout User',
-                                    role: 'Assign Role'
+                                    ban: 'Zbanuj Użytkownika',
+                                    kick: 'Wyrzuć Użytkownika',
+                                    timeout: 'Ztimeout\'uj Użytkownika',
+                                    role: 'Przypisz Rolę'
                                 }
                             }
                         },
                         page: {
                             trigger: {
-                                title: 'Trigger',
-                                name: 'age requirement',
-                                description: 'If an account is younger than this age, they\'ll get punished!\nInput must be between 0 and 28 days.'
+                                title: 'Wyzwalacz',
+                                name: 'wymagania wiekowe',
+                                description: 'Jeśli konto jest młodsze niż ten wiek, użytkownik zostanie ukarany!\nWejście musi wynosić od 0 do 28 dni.'
                             },
                             role: {
-                                title: 'Role',
-                                name: 'punishment role'
+                                title: 'Rola',
+                                name: 'rola karania'
                             }
                         }
                     },
