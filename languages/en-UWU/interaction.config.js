@@ -31,7 +31,7 @@ module.exports = {
             category: 'Mention a Categowy ow paste the Categowy Id into the chat.\nType {string} to wemuv the categowy.',
             role: 'Mention a wowe ow paste the wowe Id into the chat.\nType {string} to wemuv the wowe.',
             message: 'Send a Message which shouwd be used as {what}.',
-            emote: 'Send an Emoji which shouwd be used as {what}.',
+            emote: 'Send an Emoji which shouwd be used as {what}.\nType {string} to wemuv the emotes. :>',
             color: 'Send a hex cowow code which shouwd be used fow {what}. Get a vawid code at {url}.',
             patient: 'Enyabwing this might take a few seconds, pwease wait..'
         },
@@ -134,12 +134,14 @@ module.exports = {
                 name: 'Message Wogging',
                 option: {
                     channel: 'Channyew: {channel}',
-                    mode: 'Mode: {mode}'
+                    mode: 'Mode: {mode}',
+                    snipetimeout: 'Snyipe: {time}'
                 },
                 button: {
                     snipe: {
                         enable: 'Enyabwe Snyipe',
-                        disable: 'Disabwe Snyipe'
+                        disable: 'Disabwe Snyipe',
+                        timeout: 'change snyipe cweaw duwation pew message'
                     }
                 },
                 page: {
@@ -509,15 +511,10 @@ module.exports = {
                 button: {
                     texts: 'Pweview Ticket',
                     topic: 'Change Topic',
-                    title: 'Change titwe text',
                     unclaimed: 'Change Uncwaimed Embed',
                     claimed: 'Change Cwaimed Embed'
                 },
                 page: {
-                    title: {
-                        title: 'Titwe',
-                        name: 'Ticket embed titwe'
-                    },
                     unclaimed: {
                         title: 'Uncwaimed',
                         name: 'Uncwaimed Ticket descwiption'
@@ -857,7 +854,8 @@ module.exports = {
         button: {
             embedMessages: 'Wevew Wowes',
             levelRoles: 'Wevew Wowes',
-            leaderboards: 'Weadewboawds'
+            leaderboards: 'Weadewboawds',
+            stickymessages: 'Stickymessages'
         },
         page: {
             embedMessages: {
@@ -968,6 +966,10 @@ module.exports = {
                         }
                     }
                 }
+            },
+            stickymessages: {
+                title: 'Stickymessages',
+                button: { timeout: 'Change the timeout duwation' }
             }
         }
     },
