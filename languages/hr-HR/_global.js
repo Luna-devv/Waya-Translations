@@ -56,6 +56,6 @@ module.exports = {
     ad: {
         vote: 'Podržite nas!',
         help: 'Trebate pomoć?',
-        notifyMe: 'Get social pings!'
+        notifyMe: 'Dobijte društvene obavijesti!'
     }
 };
