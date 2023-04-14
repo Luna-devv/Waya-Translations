@@ -15,15 +15,15 @@ module.exports = {
         reason: 'Razlog'
     },
     closeDm: {
-        title: 'Ticket {id} in {server} Closed',
-        you: 'You',
-        none: 'none',
+        title: 'Ulaznica {id} na {server} zatvorena',
+        you: 'Vi',
+        none: 'prazno',
         data: {
-            opened: 'Opened by {user} at {date}',
-            claimed: 'Handled by {user} and solved in {time}',
-            closed: 'Closed by {user} at {date}',
-            members: 'Members: {list}'
+            opened: 'Otvorio {user} {date}',
+            claimed: 'Rukovao {user} i riješeno za {time}',
+            closed: 'Zatvorio {user} {date}',
+            members: 'Članovi: {list}'
         },
-        footer: 'Powered by {domain}'
+        footer: 'Pokreće {domain}'
     }
 };
