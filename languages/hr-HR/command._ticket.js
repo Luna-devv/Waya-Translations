@@ -4,6 +4,6 @@ module.exports = {
     remove: { success: '{user} je uspješno uklonjen s ove ulaznice!' },
     claim: {
         already: ';[{user} već upravlja, Vi već upravljate] ovom kartom!',
-        success: 'You have successfully transfered the ticket to {user}!'
+        success: 'Uspješno ste prenijeli ulaznicu na {user}!'
     }
 };
