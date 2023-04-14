@@ -55,6 +55,7 @@ module.exports = {
     },
     ad: {
         vote: 'Na mbështetni!',
-        help: 'Ke nevoje per ndihme?'
+        help: 'Ke nevoje per ndihme?',
+        notifyMe: 'Get social pings!'
     }
 };

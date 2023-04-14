@@ -1,0 +1,1 @@
+module.exports = { noData: 'Nie udało się znaleźć tego serwera w bazie danych!' };

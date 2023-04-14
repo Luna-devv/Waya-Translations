@@ -1,10 +1,10 @@
 module.exports = {
-    alreadyExists: 'A stickymessage in this channel already exists!',
-    stickymessagesLimit: 'You have reached the guild limit of **{count}/{max} stickymessages**!',
-    invalidstickymessage: 'No stickymessage exists in this channel!',
+    alreadyExists: 'Ljepljiva poruka na ovom kanalu već postoji!',
+    stickymessagesLimit: 'Dosegli ste ograničenje servera od **{count}/{max} ljepljivih poruka**!',
+    invalidstickymessage: 'U ovom kanalu ne postoji ljepljiva poruka!',
     overview: {
-        title: 'Stickymessage Config',
-        permissions: 'Missing: {perms}',
+        title: 'Konfiguracija ljepljivih poruka',
+        permissions: 'Nedostaje: {perms}',
         message: 'Poruka',
         embed: 'Embed',
         note: 'Napomena gumba',
@@ -25,7 +25,7 @@ module.exports = {
         }
     },
     form: {
-        formName: '{name}\'s Stickymessage',
+        formName: '{name} ljepljiva poruka',
         message: { content: 'Sadržaj' },
         embed: {
             title: 'Naslov',
@@ -36,12 +36,12 @@ module.exports = {
         }
     },
     success: {
-        message: 'Successfully added a stickymessage in {channel}.',
+        message: 'Uspješno dodana ljepljiva poruka u {channel}.',
         try: 'Isprobajte ga tako što ćete tamo poslati nekoliko poruka!'
     },
     list: {
-        title: ';[Stickymessage, Stickymessages]',
+        title: ';[Ljepljiva poruka, Ljepljive poruke]',
         none: 'nema ljepljivih poruka'
     },
-    deleted: 'Successfully deleted the stickymessage in {channel}.'
+    deleted: 'Uspješno izbrisana ljepljiva poruka u {channel}.'
 };

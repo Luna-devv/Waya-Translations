@@ -31,8 +31,8 @@ module.exports = {
             category: 'Mentionnez une catégorie ou envoyez l\'ID d\'une catégorie dans le chat.\nTapez {string} pour supprimer la catégorie.',
             role: 'Mentionnez un rôle ou envoyez l\'ID d\'un rôle dans le chat.\nTapez {string} pour supprimer le rôle.',
             message: 'Envoyez le message qui sera utilisé en tant que {what}.',
-            emote: 'Envoyez l\'émoji qui sera utilisé en tant que {what}.',
-            color: 'Envoyez un code couleur hexadécimal à utiliser pour {what}. Obtenez un code valide sur {url}.',
+            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
+            color: 'Envoyez un code couleur hexadécimal à utiliser pour {what}. Obtenez un code valide avec {url}.',
             patient: 'Activer ceci peut prendre quelques secondes, veuillez patienter..'
         },
         success: {
@@ -46,8 +46,8 @@ module.exports = {
             otherLengthFail: 'Ce {what} est plus court que {min} caractères ! ({length} caractères, {relative} caractères manquants)',
             numberFail: 'Ce {what} n\'est pas un nombre compris entre {a} et {b} !',
             roleFail: 'Ce rôle n\'est modifiable que par Discord ou est lié à un bot.',
-            colorFail: 'No valid hex color code was provided. Get a valid code at {url}.',
-            emoteFail: 'You have not sent any valid emotes. Only custom discord and default emojis are supported.'
+            colorFail: 'Le code couleur hexadécimal envoyé est invalide. Obtenez-en un valide avec {url}.',
+            emoteFail: 'Vous avez envoyé un émoji invalide. Seuls les émojis personnalisés de Discord et les émojis par défaut sont pris en charge.'
         },
         webedit: {
             button: 'Editeur d\'embed',
@@ -134,12 +134,14 @@ module.exports = {
                 name: 'Historique des messages',
                 option: {
                     channel: 'Salon : {channel}',
-                    mode: 'Mode : {mode}'
+                    mode: 'Mode : {mode}',
+                    snipetimeout: 'Snipe: {time}'
                 },
                 button: {
                     snipe: {
                         enable: 'Activer Snipe',
-                        disable: 'Désactiver Snipe'
+                        disable: 'Désactiver Snipe',
+                        timeout: 'change snipe clear duration per message'
                     }
                 },
                 page: {
@@ -309,7 +311,7 @@ module.exports = {
                     },
                     dm: 'Message en MP',
                     afterleave_webedit: 'Éditeur d\'Embed Après Départ',
-                    wave: 'Wave Button',
+                    wave: 'Bouton Salutation',
                     reactions: 'Réactions'
                 },
                 page: {
@@ -334,21 +336,21 @@ module.exports = {
                     reactions: {
                         title: 'Réactions',
                         option: {
-                            welcomer: 'Welcome Message Reactions: {emotes}',
-                            firstmessage: 'First Message Reactions: {emotes}'
+                            welcomer: 'Réactions au Message de Bienvenue : {emotes}',
+                            firstmessage: 'Réaction au Premier Message : {emotes}'
                         },
                         button: {
-                            welcomer: 'Welcome Message',
-                            firstmessage: 'First Member Message'
+                            welcomer: 'Message de bienvenue',
+                            firstmessage: 'Premier Message d\'un Membre'
                         },
                         page: {
                             welcomer: {
-                                title: 'Welcomer',
-                                name: 'welcomer auto reaction'
+                                title: 'Bienvenue',
+                                name: 'réaction automatique de bienvenue'
                             },
                             firstmessage: {
-                                title: 'First Message',
-                                name: 'auto reaction'
+                                title: 'Premier Message',
+                                name: 'réaction automatique'
                             }
                         }
                     },
@@ -376,16 +378,16 @@ module.exports = {
                     },
                     dm: { title: 'Message Privé' },
                     wavebtn: {
-                        title: 'Wave to say hi',
+                        title: 'Saluer pour dire bonjour',
                         option: {
                             send: 'Envoyer : {type}',
-                            label: 'Label: {label}'
+                            label: 'Label : {label}'
                         },
                         button: {
-                            label: 'Change Button Text',
+                            label: 'Changer le Texte du Bouton',
                             ping: {
-                                enable: 'Enable Ping',
-                                disable: 'Disable Ping'
+                                enable: 'Activer Ping',
+                                disable: 'Désactiver Ping'
                             },
                             type: {
                                 title: 'Sélectionner le type de réponse',
@@ -395,20 +397,20 @@ module.exports = {
                                 }
                             },
                             color: {
-                                title: 'Select a color for the button',
+                                title: 'Sélectionnez une couleur pour le bouton',
                                 option: {
-                                    blurple: 'Blurple',
+                                    blurple: 'Bleuet',
                                     // You may leave that
-                                    grey: 'Grey',
-                                    green: 'Green',
-                                    red: 'Red'
+                                    grey: 'Gris',
+                                    green: 'Vert',
+                                    red: 'Rouge'
                                 }
                             }
                         },
                         page: {
                             label: {
                                 title: 'Label',
-                                name: 'Button Text'
+                                name: 'Texte du bouton'
                             }
                         }
                     }
@@ -468,8 +470,8 @@ module.exports = {
                 disable: 'Raison facultative'
             },
             logging: {
-                set: 'Set Logging Channel',
-                edit: 'Change Logging Channel'
+                set: 'Définir le salon des journaux',
+                edit: 'Modifier le salon des journaux'
             },
             transcript: {
                 disable: 'Désactiver les transcriptions',
@@ -497,7 +499,7 @@ module.exports = {
         page: {
             category: {
                 title: 'Catégorie',
-                name: 'Tickets Category'
+                name: 'Catégorie des Tickets'
             },
             role: {
                 title: 'Rôle Staff',
@@ -509,22 +511,17 @@ module.exports = {
                 button: {
                     texts: 'Aperçu du ticket',
                     topic: 'Changer le Sujet',
-                    title: 'Changer le titre',
                     unclaimed: 'Modifier Embed non Réclamé',
                     claimed: 'Modifier Embed Réclamé'
                 },
                 page: {
-                    title: {
-                        title: 'Titre',
-                        name: 'Ticket embed title'
-                    },
                     unclaimed: {
                         title: 'Non réclamé',
-                        name: 'Unclaimed Ticket description'
+                        name: 'Description du ticket non réclamé'
                     },
                     claimed: {
                         title: 'Réclamé',
-                        name: 'Claimed Ticket description'
+                        name: 'Description du ticket réclamé'
                     },
                     topic: {
                         title: 'Sujet',
@@ -578,65 +575,65 @@ module.exports = {
                         delete: 'supprimer',
                         timeout: 'exclure'
                     },
-                    total: 'Total: **{amount} words**',
+                    total: 'Total : **{amount} mots**',
                     timeout: 'Exclusion : {time}'
                 },
                 button: {
-                    deleteAll: 'Clear word list',
-                    editWords: 'Edit word list',
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    deleteAll: 'Effacer la liste de mots',
+                    editWords: 'Modifier la liste de mots',
+                    message: 'Modifier le Message',
+                    timeout: 'Durée d\'exclusion',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Gérer une action',
+                        selected: 'Sélectionné',
                         option: {
                             reply: 'Répondre',
                             delete: 'Supprimer',
                             timeout: 'Exclure'
                         }
                     },
-                    export: 'Show word list'
+                    export: 'Afficher la liste de mots'
                 },
                 page: {
                     delete: {
-                        title: 'Clear Word List',
-                        description: 'Are you sure that you want to clear out all blacklisted words?',
+                        title: 'Effacer la liste de mots',
+                        description: 'Êtes-vous sûr de vouloir effacer tous les mots de la liste noire ?',
                         page: {
                             confirm: {
-                                title: 'Confirmed',
-                                description: 'Successfully cleared out all blacklisted words! You can now dismiss this message.'
+                                title: 'Confirmé',
+                                description: 'Tous les mots de la liste noire ont bien étés effacés ! Vous pouvez maintenant fermer ce message.'
                             },
                             abord: {
                                 title: 'Annulé',
-                                description: 'No actions have been taken! You can now dismiss this message.'
+                                description: 'L\'action a été annulée ! Vous pouvez maintenant fermer ce message.'
                             }
                         }
                     },
                     words: {
                         title: 'Mots',
-                        name: 'Blacklisted word',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
-                        bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
-                        added: 'Successfully added "`{word}`" as new blacklisted word.',
-                        removed: 'Successfully removed "`{word}`" as blacklisted word.'
+                        name: 'Mots sur liste noire',
+                        awaitMessage: 'Envoyer un ou plusieurs mots à mettre en liste noire.\nVeuillez utiliser **uniquement** les caractères `A-Z`\nSéparez les mots avec `, ` pour en ajouter plusieurs.',
+                        bulkAdded: '{amout} nouveaux mots ont été ajoutés à la liste noire.',
+                        added: '"`{word}`" a bien été ajouté à la liste noire.',
+                        removed: '"`{word}`" a été enlevé de la liste noire.'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Blacklisted word reply'
+                        name: 'Réponse liste noire'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Durée d\'exclusion',
+                        name: 'Durée d\'exclusion',
+                        description: 'Cet utilisateur sera exclu pour cette durée !\nCette durée doit être inférieure à 18 jours.\nExemple : `7d 4h 8m 3s`'
                     }
                 }
             },
             antiScam: {
-                title: 'Anti Scam',
-                name: 'Moderation Anti Scam',
+                title: 'Anti-Arnaques',
+                name: 'Modération Anti-Arnaques',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Message : {message}',
+                    actions: 'Actions : {types}',
                     actionType: {
                         reply: 'répondre',
                         delete: 'supprimer',
@@ -651,27 +648,27 @@ module.exports = {
                         title: 'Gérer une action',
                         selected: 'Sélectionné',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
-                            timeout: 'Timeout'
+                            reply: 'Répondre',
+                            delete: 'Supprimer',
+                            timeout: 'Exclure'
                         }
                     }
                 },
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anit Scam reply'
+                        name: 'Réponse Anti-Arnaques'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Durée d\'exclusion',
+                        name: 'Durée d\'exclusion',
+                        description: 'Cet utilisateur sera exclu pour cette durée !\nCette durée doit être inférieure à 18 jours.\nExemple : `7d 4h 8m 3s`'
                     }
                 }
             },
             antiLink: {
                 title: 'Anti-Lien',
-                name: 'Moderation Anti Link',
+                name: 'Modération Anti-Lien',
                 option: {
                     message: 'Message : {message}',
                     actions: 'Actions : {types}',
@@ -702,7 +699,7 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anti Link reply'
+                        name: 'Réponse Anti-Lien'
                     },
                     timeout: {
                         title: 'Temps d\'exclusion',
@@ -713,7 +710,7 @@ module.exports = {
             },
             antiSpam: {
                 title: 'Anti-Spam',
-                name: 'Moderation Anti Spam',
+                name: 'Modération Anti-Spam',
                 option: {
                     message: 'Message : {message}',
                     actions: 'Actions : {types}',
@@ -759,11 +756,11 @@ module.exports = {
         }
     },
     starboard: {
-        title: 'Configure Starboard',
+        title: 'Configurer le Starboard',
         button: {
             emoji: 'Changer l\'émoji',
             color: 'Changer la couleur',
-            count: 'Change Count',
+            count: 'Changer Nombre',
             nsfw: {
                 disable: 'Désactiver NSFW',
                 enable: 'Activer NSFW'
@@ -773,26 +770,26 @@ module.exports = {
                 enable: 'Activer les Bots'
             },
             selfReact: {
-                disable: 'Disable Self Reaction',
-                enable: 'Enable Self Reaction'
+                disable: 'Désactiver Auto Réaction',
+                enable: 'Activer Auto Réaction'
             },
             reply: {
-                disable: 'Hide Replied to',
-                enable: 'Show Replied to'
+                disable: 'Cacher Réponse à',
+                enable: 'Afficher Réponse à'
             },
             edits: {
-                disable: 'Disalow Edits',
-                enable: 'Allow Edits'
+                disable: 'Interdire la Modification',
+                enable: 'Autoriser la Modification'
             },
             logging: {
-                disable: 'Disable Logging',
-                enable: 'Enable Logging'
+                disable: 'Désactiver la journalisation',
+                enable: 'Activer la journalisation'
             },
             blacklist: {
-                set: 'Set Blacklisted Role',
-                change: 'Edit Blacklisted Role'
+                set: 'Définir le rôle liste noire',
+                change: 'Modifier le rôle liste noire'
             },
-            blacklistedChannels: 'Edit Blacklisted Channels',
+            blacklistedChannels: 'Modifier les salons sur liste noire',
             delete: {
                 disable: 'Disable Delete <{reactions} Reactions',
                 enable: 'Enable Delete <{reactions} Reactions'
@@ -857,7 +854,8 @@ module.exports = {
         button: {
             embedMessages: 'Embed Messages',
             levelRoles: 'Level Roles',
-            leaderboards: 'Leaderboards'
+            leaderboards: 'Leaderboards',
+            stickymessages: 'Stickymessages'
         },
         page: {
             embedMessages: {
@@ -968,6 +966,10 @@ module.exports = {
                         }
                     }
                 }
+            },
+            stickymessages: {
+                title: 'Stickymessages',
+                button: { timeout: 'Change the timeout duration' }
             }
         }
     },

@@ -1,0 +1,1 @@
+module.exports = { success: 'Do zobaczenia później, {user}!' };

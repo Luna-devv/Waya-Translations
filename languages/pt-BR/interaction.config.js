@@ -31,7 +31,7 @@ module.exports = {
             category: 'Mention a Category or paste the Category Id into the chat.\nType {string} to remove the category.',
             role: 'Mention a Role or paste the Role Id into the chat.\nType {string} to remove the role.',
             message: 'Send a Message which should be used as {what}.',
-            emote: 'Send an Emoji which should be used as {what}.',
+            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
             color: 'Send a hex color code which should be used for {what}. Get a valid code at {url}.',
             patient: 'Enabling this might take a few seconds, please wait..'
         },
@@ -134,12 +134,14 @@ module.exports = {
                 name: 'Message Logging',
                 option: {
                     channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}'
+                    mode: 'Mode: {mode}',
+                    snipetimeout: 'Snipe: {time}'
                 },
                 button: {
                     snipe: {
                         enable: 'Enable Snipe',
-                        disable: 'Disable Snipe'
+                        disable: 'Disable Snipe',
+                        timeout: 'change snipe clear duration per message'
                     }
                 },
                 page: {
@@ -509,15 +511,10 @@ module.exports = {
                 button: {
                     texts: 'Preview Ticket',
                     topic: 'Change Topic',
-                    title: 'Change title text',
                     unclaimed: 'Change Unclaimed Embed',
                     claimed: 'Change Claimed Embed'
                 },
                 page: {
-                    title: {
-                        title: 'Title',
-                        name: 'Ticket embed title'
-                    },
                     unclaimed: {
                         title: 'Unclaimed',
                         name: 'Unclaimed Ticket description'
@@ -857,7 +854,8 @@ module.exports = {
         button: {
             embedMessages: 'Embed Messages',
             levelRoles: 'Level Roles',
-            leaderboards: 'Leaderboards'
+            leaderboards: 'Leaderboards',
+            stickymessages: 'Stickymessages'
         },
         page: {
             embedMessages: {
@@ -968,6 +966,10 @@ module.exports = {
                         }
                     }
                 }
+            },
+            stickymessages: {
+                title: 'Stickymessages',
+                button: { timeout: 'Change the timeout duration' }
             }
         }
     },

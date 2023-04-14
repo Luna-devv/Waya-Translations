@@ -1,0 +1,1 @@
+module.exports = { success: 'Przeładowano wszystkie interakcje w {ms}' };

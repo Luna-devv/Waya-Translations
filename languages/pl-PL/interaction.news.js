@@ -1,0 +1,1 @@
+module.exports = { success: 'Teraz obserwujesz {name} nowości w {channel}.' };
