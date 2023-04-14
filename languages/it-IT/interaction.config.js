@@ -855,7 +855,7 @@ module.exports = {
             embedMessages: 'Messaggi embed',
             levelRoles: 'Ruoli di Livello',
             leaderboards: 'Classifiche',
-            stickymessages: 'Stickymessages'
+            stickymessages: 'Messaggi Adesivi'
         },
         page: {
             embedMessages: {
@@ -968,8 +968,8 @@ module.exports = {
                 }
             },
             stickymessages: {
-                title: 'Stickymessages',
-                button: { timeout: 'Change the timeout duration' }
+                title: 'Messaggi Adesivi',
+                button: { timeout: 'Cambia la durata del timeout' }
             }
         }
     },
