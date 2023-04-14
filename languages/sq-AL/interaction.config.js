@@ -31,7 +31,7 @@ module.exports = {
             category: 'Përmendni një kategori ose ngjisni Id-në e kategorisë në bisedë.\nShkruani {string} për të hequr kategorinë.',
             role: 'Përmendni një rol ose ngjitni Id-në e rolit në bisedë.\nShkruani {string} për të hequr rolin.',
             message: 'Dërgoni një Mesazh i cili duhet të përdoret si {what}.',
-            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
+            emote: 'Dërgo një Emoji i cili duhet të përdoret si {what}.\nShkruani {string} për të hequr emocionet.',
             color: 'Dërgo një kod ngjyrë hex i cili duhet të përdoret për {what}. Merrni një kod të vlefshëm në {url}.',
             patient: 'Aktivizimi i kësaj mund të zgjasë disa sekonda, ju lutemi prisni..'
         },
@@ -141,7 +141,7 @@ module.exports = {
                     snipe: {
                         enable: 'Aktivizo Snipe',
                         disable: 'Çaktivizo Snipe',
-                        timeout: 'change snipe clear duration per message'
+                        timeout: 'ndryshoni kohëzgjatjen e qartë të shapkës për mesazh'
                     }
                 },
                 page: {
@@ -855,7 +855,7 @@ module.exports = {
             embedMessages: 'Mesazhet Embed',
             levelRoles: 'Rolet e nivelit',
             leaderboards: 'Tabelat e klasifikimit',
-            stickymessages: 'Stickymessages'
+            stickymessages: 'Mesazh ngjitës'
         },
         page: {
             embedMessages: {
@@ -968,8 +968,8 @@ module.exports = {
                 }
             },
             stickymessages: {
-                title: 'Stickymessages',
-                button: { timeout: 'Change the timeout duration' }
+                title: 'Mesazh ngjitës',
+                button: { timeout: 'Ndrysho kohëzgjatjen e timeout' }
             }
         }
     },
