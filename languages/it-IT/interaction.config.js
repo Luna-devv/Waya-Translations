@@ -31,7 +31,7 @@ module.exports = {
             category: 'Menziona una categoria o incolla l\'Id della categoria nella chat.\nDigita {string} per rimuovere la categoria.',
             role: 'Menziona un ruolo o incolla l\'Id del ruolo nella chat.\nDigita {string} per rimuovere il ruolo.',
             message: 'Invia un messaggio che dovrebbe essere usato come {what}.',
-            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
+            emote: 'Invia un Emoji che dovrebbe essere usato come {what}.\nDigita {string} per rimuovere le emoji.',
             color: 'Invia un codice esadecimale che dovrebbe essere utilizzato per {what}. Ottieni un codice valido su {url}.',
             patient: 'Abilitare questo potrebbe richiedere alcuni secondi, attendere prego..'
         },
@@ -141,7 +141,7 @@ module.exports = {
                     snipe: {
                         enable: 'Abilita Snipe',
                         disable: 'Disabilita Snipe',
-                        timeout: 'change snipe clear duration per message'
+                        timeout: 'cambia la durata della snipe pulita per messaggio'
                     }
                 },
                 page: {
