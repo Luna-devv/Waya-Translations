@@ -632,32 +632,32 @@ module.exports = {
                 title: 'Anty-Scam',
                 name: 'Moderacja Anti Scam',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Wiadomość: {message}',
+                    actions: 'Akcje: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
+                        reply: 'odpowiedz',
+                        delete: 'usuń',
                         timeout: 'timeout'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    message: 'Edytuj Wiadomość',
+                    timeout: 'Czas Trwania Timeout\'u ',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Zarządzaj akcją',
+                        selected: 'Wybrane',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
+                            reply: 'Odpowiedz',
+                            delete: 'Usuń',
                             timeout: 'Timeout'
                         }
                     }
                 },
                 page: {
                     message: {
-                        title: 'Message',
-                        name: 'Anit Scam reply'
+                        title: 'Wiadomość',
+                        name: 'Odpowiedź Anit Scam'
                     },
                     timeout: {
                         title: 'Timeout Duration',
