@@ -613,24 +613,24 @@ module.exports = {
                         title: 'Słowa',
                         name: 'Zakazane słowa',
                         awaitMessage: 'Wyślij jedno lub wiele słów, które powinny być umieszczone na czarnej liście.\nProszę **używaj tylko** znaków `od A do Z`\nPodziel słowa z `, `, aby dodać słowa.',
-                        bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
-                        added: 'Successfully added "`{word}`" as new blacklisted word.',
-                        removed: 'Successfully removed "`{word}`" as blacklisted word.'
+                        bulkAdded: 'Pomyślnie dodano {amout} nowych słów do czarnej listy.',
+                        added: 'Pomyślnie dodano "`{word}`" jako nowe słowo do czarnej listy.',
+                        removed: 'Pomyślnie usunięto "`{word}`" jako słowo z czarnej listy.'
                     },
                     message: {
-                        title: 'Message',
-                        name: 'Blacklisted word reply'
+                        title: 'Wiadomość',
+                        name: 'Odpowiedź na słowo na czarnej liście'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Czas Trwania Timeout\'u ',
+                        name: 'Czas Trwania Timeout\'u ',
+                        description: 'Użytkownik zostanie ustawiony na Timeout na ten czas!\nCzas musi być krótszy niż 18 dni.\nPrzykład: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiScam: {
-                title: 'Anti Scam',
-                name: 'Moderation Anti Scam',
+                title: 'Anty-Scam',
+                name: 'Moderacja Anti Scam',
                 option: {
                     message: 'Message: {message}',
                     actions: 'Actions: {types}',
