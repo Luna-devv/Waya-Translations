@@ -612,7 +612,7 @@ module.exports = {
                     words: {
                         title: 'Słowa',
                         name: 'Zakazane słowa',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
+                        awaitMessage: 'Wyślij jedno lub wiele słów, które powinny być umieszczone na czarnej liście.\nProszę **używaj tylko** znaków `od A do Z`\nPodziel słowa z `, `, aby dodać słowa.',
                         bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
                         added: 'Successfully added "`{word}`" as new blacklisted word.',
                         removed: 'Successfully removed "`{word}`" as blacklisted word.'
