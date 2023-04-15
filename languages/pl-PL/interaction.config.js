@@ -597,21 +597,21 @@ module.exports = {
                 page: {
                     delete: {
                         title: 'Wyczyść listę słów',
-                        description: 'Are you sure that you want to clear out all blacklisted words?',
+                        description: 'Czy na pewno chcesz wyczyścić wszystkie słowa na czarnej liście?',
                         page: {
                             confirm: {
-                                title: 'Confirmed',
-                                description: 'Successfully cleared out all blacklisted words! You can now dismiss this message.'
+                                title: 'Potwierdzone',
+                                description: 'Pomyślnie wyczyszczono wszystkie słowa na czarnej liście! Możesz teraz odrzucić tę wiadomość.'
                             },
                             abord: {
-                                title: 'Aborded',
-                                description: 'No actions have been taken! You can now dismiss this message.'
+                                title: 'Anulowane',
+                                description: 'Nie podjęto żadnych działań! Teraz możesz odrzucić tę wiadomość.'
                             }
                         }
                     },
                     words: {
-                        title: 'Words',
-                        name: 'Blacklisted word',
+                        title: 'Słowa',
+                        name: 'Zakazane słowa',
                         awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
                         bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
                         added: 'Successfully added "`{word}`" as new blacklisted word.',
