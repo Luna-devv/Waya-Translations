@@ -660,38 +660,38 @@ module.exports = {
                         name: 'Odpowiedź Anit Scam'
                     },
                     timeout: {
-                        title: 'Timeout Duration',
-                        name: 'Timeout duration',
-                        description: 'The user will be set on Timeout for this duration!\nInput must be less than 18 days.\nExample: `7d 4h 8m 3s`'
+                        title: 'Czas Trwania Timeout\'u ',
+                        name: 'Czas Trwania Timeout\'u ',
+                        description: 'Użytkownik zostanie ustawiony na Timeout na ten czas!\nCzas musi być krótszy niż 18 dni.\nPrzykład: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiLink: {
-                title: 'Anti Link',
-                name: 'Moderation Anti Link',
+                title: 'Anty-link',
+                name: 'Moderacja Anti Link',
                 option: {
-                    message: 'Message: {message}',
-                    actions: 'Actions: {types}',
+                    message: 'Wiadomość: {message}',
+                    actions: 'Akcje: {types}',
                     actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
+                        reply: 'odpowiedz',
+                        delete: 'usuń',
                         timeout: 'timeout'
                     },
                     timeout: 'Timeout: {time}'
                 },
                 button: {
                     media: {
-                        disable: 'Disallow Media',
-                        enable: 'Allow Media'
+                        disable: 'Zablokuj multimedia',
+                        enable: 'Zezwalaj na media'
                     },
-                    message: 'Edit Message',
-                    timeout: 'Timeout Duration',
+                    message: 'Edytuj Wiadomość',
+                    timeout: 'Czas Trwania Timeout\'u ',
                     actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
+                        title: 'Zarządzaj akcją',
+                        selected: 'Wybrane',
                         option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
+                            reply: 'Odpowiedz',
+                            delete: 'Usuń',
                             timeout: 'Timeout'
                         }
                     }
