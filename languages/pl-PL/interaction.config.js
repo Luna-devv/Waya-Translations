@@ -698,7 +698,7 @@ module.exports = {
                 },
                 page: {
                     message: {
-                        title: 'Message',
+                        title: 'Wiadomość',
                         name: 'Anti Link reply'
                     },
                     timeout: {
