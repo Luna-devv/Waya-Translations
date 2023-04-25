@@ -393,9 +393,11 @@ module.exports = {
                         title: "Wave to say hi",
                         option: {
                             send: "Send: {type}",
-                            label: "Label: {label}"
+                            emoji: "Emote: {emote}",
+                            label: "Label: {label}",
                         },
                         button: {
+                            emoji: "Change Button Emote",
                             label: "Change Button Text",
                             ping: {
                                 enable: "Enable Ping",
@@ -419,6 +421,10 @@ module.exports = {
                             }
                         },
                         page: {
+                            emoji: {
+                                title: "Emote",
+                                name: "Button Emote",
+                            },
                             label: {
                                 title: "Label",
                                 name: "Button Text",
@@ -476,8 +482,17 @@ module.exports = {
                 userid: "UserId",
                 random: "Random",
             },
+            position: "Position: {type}",
+            positionType: {
+                top: "At the top",
+                bottom: "On the bottom",
+            }
         },
         button: {
+            channelPosition: {
+                top: "Position: To top",
+                bottom: "Position: To bottom"
+            },
             forceReason: {
                 enable: "Force Reason",
                 disable: "Optional Reason",
@@ -996,6 +1011,10 @@ module.exports = {
                 title: "Stickymessages",
                 button: {
                     timeout: "Change the timeout duration",
+                    typing: {
+                        enable: "Enable Typing",
+                        disable: "Disable Typing"
+                    }
                 }
             }
 
