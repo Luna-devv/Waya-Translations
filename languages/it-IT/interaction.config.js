@@ -381,9 +381,11 @@ module.exports = {
                         title: 'Onda per dire ciao',
                         option: {
                             send: 'Invia: {type}',
+                            emoji: 'Emote: {emote}',
                             label: 'Label: {label}'
                         },
                         button: {
+                            emoji: 'Change Button Emote',
                             label: 'Cambia Testo Pulsante',
                             ping: {
                                 enable: 'Abilita Ping',
@@ -408,6 +410,10 @@ module.exports = {
                             }
                         },
                         page: {
+                            emoji: {
+                                title: 'Emote',
+                                name: 'Button Emote'
+                            },
                             label: {
                                 title: 'Label',
                                 name: 'Testo del pulsante'
@@ -462,9 +468,18 @@ module.exports = {
                 username: 'Nomeutente',
                 userid: 'Idutente',
                 random: 'Casuale'
+            },
+            position: 'Position: {type}',
+            positionType: {
+                top: 'At the top',
+                bottom: 'On the bottom'
             }
         },
         button: {
+            channelPosition: {
+                top: 'Position: To top',
+                bottom: 'Position: To bottom'
+            },
             forceReason: {
                 enable: 'Motivo forzato',
                 disable: 'Motivo Opzionale'
@@ -969,7 +984,13 @@ module.exports = {
             },
             stickymessages: {
                 title: 'Messaggi Adesivi',
-                button: { timeout: 'Cambia la durata del timeout' }
+                button: {
+                    timeout: 'Cambia la durata del timeout',
+                    typing: {
+                        enable: 'Enable Typing',
+                        disable: 'Disable Typing'
+                    }
+                }
             }
         }
     },
