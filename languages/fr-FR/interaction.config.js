@@ -381,9 +381,11 @@ module.exports = {
                         title: 'Saluer pour dire bonjour',
                         option: {
                             send: 'Envoyer : {type}',
+                            emoji: 'Emote: {emote}',
                             label: 'Label : {label}'
                         },
                         button: {
+                            emoji: 'Change Button Emote',
                             label: 'Changer le Texte du Bouton',
                             ping: {
                                 enable: 'Activer Ping',
@@ -408,6 +410,10 @@ module.exports = {
                             }
                         },
                         page: {
+                            emoji: {
+                                title: 'Emote',
+                                name: 'Button Emote'
+                            },
                             label: {
                                 title: 'Label',
                                 name: 'Texte du bouton'
@@ -462,9 +468,18 @@ module.exports = {
                 username: 'Nom d\'utilisateur',
                 userid: 'ID de l\'utilisateur',
                 random: 'Aléatoire'
+            },
+            position: 'Position: {type}',
+            positionType: {
+                top: 'At the top',
+                bottom: 'On the bottom'
             }
         },
         button: {
+            channelPosition: {
+                top: 'Position: To top',
+                bottom: 'Position: To bottom'
+            },
             forceReason: {
                 enable: 'Raison obligatoire',
                 disable: 'Raison facultative'
@@ -969,7 +984,13 @@ module.exports = {
             },
             stickymessages: {
                 title: 'Stickymessages',
-                button: { timeout: 'Change the timeout duration' }
+                button: {
+                    timeout: 'Change the timeout duration',
+                    typing: {
+                        enable: 'Enable Typing',
+                        disable: 'Disable Typing'
+                    }
+                }
             }
         }
     },
