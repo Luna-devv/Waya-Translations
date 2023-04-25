@@ -31,7 +31,7 @@ module.exports = {
             category: 'Menziona una categoria o incolla l\'Id della categoria nella chat.\nDigita {string} per rimuovere la categoria.',
             role: 'Menziona un ruolo o incolla l\'Id del ruolo nella chat.\nDigita {string} per rimuovere il ruolo.',
             message: 'Invia un messaggio che dovrebbe essere usato come {what}.',
-            emote: 'Send an Emoji which should be used as {what}.\nType {string} to remove the emotes.',
+            emote: 'Invia un Emoji che dovrebbe essere usato come {what}.\nDigita {string} per rimuovere le emoji.',
             color: 'Invia un codice esadecimale che dovrebbe essere utilizzato per {what}. Ottieni un codice valido su {url}.',
             patient: 'Abilitare questo potrebbe richiedere alcuni secondi, attendere prego..'
         },
@@ -141,7 +141,7 @@ module.exports = {
                     snipe: {
                         enable: 'Abilita Snipe',
                         disable: 'Disabilita Snipe',
-                        timeout: 'change snipe clear duration per message'
+                        timeout: 'cambia la durata della snipe pulita per messaggio'
                     }
                 },
                 page: {
@@ -381,9 +381,11 @@ module.exports = {
                         title: 'Onda per dire ciao',
                         option: {
                             send: 'Invia: {type}',
+                            emoji: 'Emote: {emote}',
                             label: 'Label: {label}'
                         },
                         button: {
+                            emoji: 'Change Button Emote',
                             label: 'Cambia Testo Pulsante',
                             ping: {
                                 enable: 'Abilita Ping',
@@ -408,6 +410,10 @@ module.exports = {
                             }
                         },
                         page: {
+                            emoji: {
+                                title: 'Emote',
+                                name: 'Button Emote'
+                            },
                             label: {
                                 title: 'Label',
                                 name: 'Testo del pulsante'
@@ -462,9 +468,18 @@ module.exports = {
                 username: 'Nomeutente',
                 userid: 'Idutente',
                 random: 'Casuale'
+            },
+            position: 'Position: {type}',
+            positionType: {
+                top: 'At the top',
+                bottom: 'On the bottom'
             }
         },
         button: {
+            channelPosition: {
+                top: 'Position: To top',
+                bottom: 'Position: To bottom'
+            },
             forceReason: {
                 enable: 'Motivo forzato',
                 disable: 'Motivo Opzionale'
@@ -855,7 +870,7 @@ module.exports = {
             embedMessages: 'Messaggi embed',
             levelRoles: 'Ruoli di Livello',
             leaderboards: 'Classifiche',
-            stickymessages: 'Stickymessages'
+            stickymessages: 'Messaggi Adesivi'
         },
         page: {
             embedMessages: {
@@ -968,8 +983,14 @@ module.exports = {
                 }
             },
             stickymessages: {
-                title: 'Stickymessages',
-                button: { timeout: 'Change the timeout duration' }
+                title: 'Messaggi Adesivi',
+                button: {
+                    timeout: 'Cambia la durata del timeout',
+                    typing: {
+                        enable: 'Enable Typing',
+                        disable: 'Disable Typing'
+                    }
+                }
             }
         }
     },

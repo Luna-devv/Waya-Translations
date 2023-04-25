@@ -1,5 +1,5 @@
 module.exports = {
-    request: { ureStaff: 'Jesteś administratorem, możesz użyć {command}.' },
+    request: { ureStaff: 'Jesteś personelem, możesz użyć {command}.' },
     noData: 'Nie udało się znaleźć tego serwera w bazie danych!',
     confirm: {
         text: 'Czy na pewno chcesz usunąć {channel} na zawsze?',
