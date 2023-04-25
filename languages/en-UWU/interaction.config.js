@@ -381,9 +381,11 @@ module.exports = {
                         title: 'Wave to say heyy',
                         option: {
                             send: 'Send: {type}',
+                            emoji: 'Emote: {emote}',
                             label: 'Wabew: {label}'
                         },
                         button: {
+                            emoji: 'Change Button Emote',
                             label: 'Change Button Text',
                             ping: {
                                 enable: 'Enyabwe Ping',
@@ -408,6 +410,10 @@ module.exports = {
                             }
                         },
                         page: {
+                            emoji: {
+                                title: 'Emote',
+                                name: 'Button Emote'
+                            },
                             label: {
                                 title: 'Wabew',
                                 name: 'Button Text'
@@ -462,9 +468,18 @@ module.exports = {
                 username: 'Usewnyame',
                 userid: 'UsewId',
                 random: 'Wandom'
+            },
+            position: 'Position: {type}',
+            positionType: {
+                top: 'At the top',
+                bottom: 'On the bottom'
             }
         },
         button: {
+            channelPosition: {
+                top: 'Position: To top',
+                bottom: 'Position: To bottom'
+            },
             forceReason: {
                 enable: 'Fowce weason',
                 disable: 'Optionyaw Weason'
@@ -969,7 +984,13 @@ module.exports = {
             },
             stickymessages: {
                 title: 'Stickymessages',
-                button: { timeout: 'Change the timeout duwation' }
+                button: {
+                    timeout: 'Change the timeout duwation',
+                    typing: {
+                        enable: 'Enable Typing',
+                        disable: 'Disable Typing'
+                    }
+                }
             }
         }
     },
