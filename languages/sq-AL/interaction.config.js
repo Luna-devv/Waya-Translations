@@ -381,9 +381,11 @@ module.exports = {
                         title: 'Përshëndetje',
                         option: {
                             send: 'Dërgo: {type}',
+                            emoji: 'Emote: {emote}',
                             label: 'Labeli: {label}'
                         },
                         button: {
+                            emoji: 'Change Button Emote',
                             label: 'Ndrysho tekstin e butonit',
                             ping: {
                                 enable: 'Aktivizo Ping',
@@ -408,6 +410,10 @@ module.exports = {
                             }
                         },
                         page: {
+                            emoji: {
+                                title: 'Emote',
+                                name: 'Button Emote'
+                            },
                             label: {
                                 title: 'Label',
                                 name: 'Tekst i butonit'
@@ -462,9 +468,18 @@ module.exports = {
                 username: 'Emri i përdoruesit',
                 userid: 'ID-ja e përdoruesit',
                 random: 'E rastësishme'
+            },
+            position: 'Position: {type}',
+            positionType: {
+                top: 'At the top',
+                bottom: 'On the bottom'
             }
         },
         button: {
+            channelPosition: {
+                top: 'Position: To top',
+                bottom: 'Position: To bottom'
+            },
             forceReason: {
                 enable: 'Arsyeja e forcës',
                 disable: 'Arsyeja Fakultative'
@@ -969,7 +984,13 @@ module.exports = {
             },
             stickymessages: {
                 title: 'Mesazh ngjitës',
-                button: { timeout: 'Ndrysho kohëzgjatjen e timeout' }
+                button: {
+                    timeout: 'Ndrysho kohëzgjatjen e timeout',
+                    typing: {
+                        enable: 'Enable Typing',
+                        disable: 'Disable Typing'
+                    }
+                }
             }
         }
     },
