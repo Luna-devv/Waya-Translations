@@ -1,13 +1,13 @@
 module.exports = {
-    dms: 'This command cannot be used inside of private messages.',
-    disabled: 'You have been disabled.',
+    dms: 'Esse comando não pode ser usado em mensagens privadas.',
+    disabled: 'Você foi banido do bot.',
     mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
-    error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
+    error: 'Ocorreu um erro ao executar este comando.\nPor favor, entre no nosso servidor de suporte e relate este problema com o id {issue}!',
     premium: {
-        required: 'subscription required',
+        required: 'é necessária uma assinatura',
         embeds: {
-            title: 'Sorry but Subscription is required',
-            title2: 'Sorry but the Subscriptions limit was reached',
+            title: 'Desculpe, mas a assinatura é necessária',
+            title2: 'Desculpe, mas o limite de assinaturas foi atingido',
             description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
         },
         button: {
