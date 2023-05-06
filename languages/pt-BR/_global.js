@@ -8,7 +8,7 @@ module.exports = {
         embeds: {
             title: 'Desculpe, mas a assinatura é necessária',
             title2: 'Desculpe, mas o limite de assinaturas foi atingido',
-            description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
+            description: 'Para podermos fornecer um bot estável e como dinheiro não cresce em árvores, temos que bloquear os recursos não essenciais por trás de uma Assinatura.'
         },
         button: {
             subscribe: 'Subscribe',
@@ -16,21 +16,21 @@ module.exports = {
         }
     },
     button: {
-        add: 'Add {name}',
-        support: 'Support'
+        add: 'Adicionar {name}',
+        support: 'Suporte'
     },
     permissions: {
         user: {
-            guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
-            channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
+            guild: 'Você não pode executar essa ação porque você não tem as permissões {perms}.',
+            channel: 'Você não pode executar esta ação porque não tem as permissões {perms} neste canal.',
             roles: {
                 user: {
-                    text: 'You cannot perform this action since the highest role of that user is higher than yours.',
+                    text: 'Você não pode executar esta ação, pois o cargo mais alto desse usuário é maior que o seu.',
                     user: 'User: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 },
                 role: {
-                    text: 'You cannot perform this action since your highest role is lower than the role to manage.',
+                    text: 'Você não pode executar esta ação, pois seu cargo mais alto é inferior ao cargo a ser gerenciado.',
                     user: 'Role: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 }
@@ -41,7 +41,7 @@ module.exports = {
             channel: 'I cannot run this action since I\'m missing the {perms} permissions in this channel.',
             roles: {
                 user: {
-                    text: 'I cannot perform this action since the highest role of that user is higher than mine.',
+                    text: 'Eu não posso executar esta ação porque o cargo mais alto desse usuário é mais alto do que o meu.',
                     user: 'User: {u.role} @ index {u.index}',
                     bot: 'Me: {b.role} @ index {b.index}'
                 },
