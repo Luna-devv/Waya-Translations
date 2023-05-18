@@ -1,14 +1,14 @@
 module.exports = {
-    dms: 'This command cannot be used inside of private messages.',
-    disabled: 'You have been disabled.',
+    dms: 'Esse comando não pode ser usado em mensagens privadas.',
+    disabled: 'Você foi banido do bot.',
     mention: 'Hey {user}, use **{emote} SlashCommands** to set me up!\nUse {command} for more informations.',
-    error: 'An error occurred while executing this command.\nPlease join the support server and report this issue\nwith the id {issue}!',
+    error: 'Ocorreu um erro ao executar este comando.\nPor favor, entre no nosso servidor de suporte e relate este problema com o id {issue}!',
     premium: {
-        required: 'subscription required',
+        required: 'é necessária uma assinatura',
         embeds: {
-            title: 'Sorry but Subscription is required',
-            title2: 'Sorry but the Subscriptions limit was reached',
-            description: 'In order we can provide a stable bot and money doesn\'t grow on trees, we have to lock non essential features behind a Subscription.'
+            title: 'Desculpe, mas a assinatura é necessária',
+            title2: 'Desculpe, mas o limite de assinaturas foi atingido',
+            description: 'Para podermos fornecer um bot estável e como dinheiro não cresce em árvores, temos que bloquear os recursos não essenciais por trás de uma Assinatura.'
         },
         button: {
             subscribe: 'Subscribe',
@@ -16,21 +16,21 @@ module.exports = {
         }
     },
     button: {
-        add: 'Add {name}',
-        support: 'Support'
+        add: 'Adicionar {name}',
+        support: 'Suporte'
     },
     permissions: {
         user: {
-            guild: 'You cannot run this action since you\'re missing the {perms} permissions.',
-            channel: 'You cannot run this action since you\'re missing the {perms} permissions in this channel.',
+            guild: 'Você não pode executar essa ação porque você não tem as permissões {perms}.',
+            channel: 'Você não pode executar esta ação porque não tem as permissões {perms} neste canal.',
             roles: {
                 user: {
-                    text: 'You cannot perform this action since the highest role of that user is higher than yours.',
+                    text: 'Você não pode executar esta ação, pois o cargo mais alto desse usuário é maior que o seu.',
                     user: 'User: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 },
                 role: {
-                    text: 'You cannot perform this action since your highest role is lower than the role to manage.',
+                    text: 'Você não pode executar esta ação, pois seu cargo mais alto é inferior ao cargo a ser gerenciado.',
                     user: 'Role: {u.role} @ index {u.index}',
                     you: 'You: {y.role} @ index {y.index}'
                 }
@@ -41,7 +41,7 @@ module.exports = {
             channel: 'I cannot run this action since I\'m missing the {perms} permissions in this channel.',
             roles: {
                 user: {
-                    text: 'I cannot perform this action since the highest role of that user is higher than mine.',
+                    text: 'Eu não posso executar esta ação porque o cargo mais alto desse usuário é mais alto do que o meu.',
                     user: 'User: {u.role} @ index {u.index}',
                     bot: 'Me: {b.role} @ index {b.index}'
                 },
