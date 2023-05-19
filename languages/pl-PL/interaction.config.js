@@ -478,7 +478,7 @@ module.exports = {
         button: {
             channelPosition: {
                 top: 'Pozycja: Do góry',
-                bottom: 'Position: To bottom'
+                bottom: 'Pozycja: na dół'
             },
             forceReason: {
                 enable: 'Wymuś Powód',
@@ -987,8 +987,8 @@ module.exports = {
                 button: {
                     timeout: 'Zmień czas trwania timeout\'u',
                     typing: {
-                        enable: 'Enable Typing',
-                        disable: 'Disable Typing'
+                        enable: 'Włącz pisanie',
+                        disable: 'Wyłącz pisanie'
                     }
                 }
             }
