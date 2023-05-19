@@ -381,11 +381,11 @@ module.exports = {
                         title: 'Pomachaj, aby powiedzieć hej',
                         option: {
                             send: 'Wyślij: {type}',
-                            emoji: 'Emote: {emote}',
+                            emoji: 'Emotka: {emote}',
                             label: 'Etykieta: {label}'
                         },
                         button: {
-                            emoji: 'Change Button Emote',
+                            emoji: 'Zmień Tekst Przycisku',
                             label: 'Zmień Tekst Przycisku',
                             ping: {
                                 enable: 'Włącz Ping',
@@ -411,8 +411,8 @@ module.exports = {
                         },
                         page: {
                             emoji: {
-                                title: 'Emote',
-                                name: 'Button Emote'
+                                title: 'Emotka',
+                                name: 'Emotka przycisku'
                             },
                             label: {
                                 title: 'Etykieta',
@@ -469,15 +469,15 @@ module.exports = {
                 userid: 'ID użytkownika',
                 random: 'Losowe'
             },
-            position: 'Position: {type}',
+            position: 'Pozycja: {type}',
             positionType: {
-                top: 'At the top',
-                bottom: 'On the bottom'
+                top: 'Na górze',
+                bottom: 'Na dole'
             }
         },
         button: {
             channelPosition: {
-                top: 'Position: To top',
+                top: 'Pozycja: Do góry',
                 bottom: 'Position: To bottom'
             },
             forceReason: {
