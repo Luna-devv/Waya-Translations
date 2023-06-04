@@ -15,14 +15,6 @@ module.exports = {
         // will be the same everywhere
         none: 'nyonye',
         useButtons: 'Sewect an option u want to edit using the buttons bewow, babe. 😘',
-        developer: {
-            bypass: 'u don\'t have the `MANAGE_GUILD` to access this panyew..\nDo u stiww want to continyue?',
-            choice: {
-                access: 'I\'m suwe, yes',
-                abord: 'Nyevewmind'
-            },
-            notice: 'cawefuww - devewopew pwiviweges enfowced..'
-        },
         upsell: 'Subscwibe to get {count} mowe',
         permissions: 'Missing: {perms}',
         placeholders: 'Pwacehowdews',
@@ -103,6 +95,8 @@ module.exports = {
     main: {
         title: 'Configuwe {name}',
         option: {
+            logging: 'Messages, Joins, Captcha, Welcoming',
+            fun: 'Starboard, Counting',
             premium: {
                 text: 'Entewpwise Tiew {tier}',
                 buy: 'Buy Entewpwise'
@@ -110,9 +104,9 @@ module.exports = {
         },
         button: {
             logging: 'Wogging',
+            fun: 'Fun',
             tickets: 'Ticketing',
             moderation: 'Modewation',
-            starboard: 'Stawboawd',
             misc: 'Miscs',
             followNews: 'Fowwow Nyews',
             staff: 'Manyage Guiwd',
@@ -366,13 +360,23 @@ module.exports = {
                             inEmbed: {
                                 enable: 'Show Image in Embed',
                                 disable: 'Dont Show Image in Embed'
-                            }
+                            },
+                            color: 'Text Color'
                         },
                         page: {
                             background: {
                                 title: 'Backgwound',
                                 name: 'Cawd Backgwound',
                                 description: 'The wink must be a **diwect image Uww**, it awso must be a {scheme} type wink.\nWe wecommend a watio of {ratio} and a min wesowution of {resolution}.'
+                            },
+                            text: {
+                                title: 'Text',
+                                page: {
+                                    color: {
+                                        title: 'Color',
+                                        name: 'text color'
+                                    }
+                                }
                             }
                         }
                     },
@@ -584,12 +588,6 @@ module.exports = {
                 name: 'Modewation Fiwtew',
                 option: {
                     message: 'Message: {message}',
-                    actions: 'Actions: {types}',
-                    actionType: {
-                        reply: 'wepwy',
-                        delete: 'dewete',
-                        timeout: 'timeout'
-                    },
                     total: 'Totaw: **{amount} wowds**',
                     timeout: 'Timeout: {time}'
                 },
@@ -598,15 +596,6 @@ module.exports = {
                     editWords: 'Edit wowd wist',
                     message: 'Edit Message',
                     timeout: 'Timeout Duwation',
-                    actions: {
-                        title: 'Manyage an action',
-                        selected: 'Sewected',
-                        option: {
-                            reply: 'Wepwy',
-                            delete: 'Dewete',
-                            timeout: 'Timeout'
-                        }
-                    },
                     export: 'Show wowd wist'
                 },
                 page: {
@@ -627,7 +616,7 @@ module.exports = {
                     words: {
                         title: 'Wowds',
                         name: 'Bwackwisted wowd',
-                        awaitMessage: 'Send onye ow muwtipwe wowds that shouwd get bwackwisted.\nPwease **onwy use** chawactews fwom `A-Z`\nSpwit wowds with `, ` to buwk add wowds.',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
                         bulkAdded: 'Successfuwwy buwk added {amout} nyew wowds to the bwackwist.',
                         added: 'Successfuwwy added "`{word}`" as nyew bwackwisted wowd.',
                         removed: 'Successfuwwy wemuvd "`{word}`" as bwackwisted wowd.'
@@ -770,6 +759,13 @@ module.exports = {
             }
         }
     },
+    fun: {
+        title: 'Configure Fun',
+        button: {
+            starboard: 'Starboard',
+            counting: 'Counting'
+        }
+    },
     starboard: {
         title: 'Configuwe Stawboawd',
         button: {
@@ -861,6 +857,35 @@ module.exports = {
                 name: 'Bwackwist Channyew wist',
                 description: 'Mention a Channyew/Categowy ow paste the Channyew ID into the chat.\nPwefix the message with `+` to add ow `-` to wemuv Channyews.\nU can send muwtipwe Channyews sepewated with a space.\nType `none` to wemuv aww Channyews.',
                 missingPrefix: 'The message must be pwefixed with `+` to add ow `-` to wemuv Channyews.'
+            }
+        }
+    },
+    counting: {
+        title: 'Configure Counting',
+        option: {
+            channel: 'Channel: {channel}',
+            emojis: 'Emojis: {emojis}'
+        },
+        button: {
+            reset: {
+                enable: 'Reset on fail',
+                disable: 'Don\'t reset on fail'
+            },
+            customSuccessEmote: 'Correct Emote',
+            customFailEmote: 'Error Emote'
+        },
+        page: {
+            channel: {
+                title: 'Channel',
+                name: 'Starboard Channel'
+            },
+            successEmoji: {
+                title: 'Correct Emoji',
+                name: 'success emoji'
+            },
+            failEmoji: {
+                title: 'Wrong Emoji',
+                name: 'fail emoji'
             }
         }
     },
