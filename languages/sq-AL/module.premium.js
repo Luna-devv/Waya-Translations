@@ -1,22 +1,11 @@
 module.exports = {
     end: {
-        title: 'Fundi i Abonimit',
-        description: 'Pershendetje {user}, sapo kemi marrë anulimin e abonimit tuaj.\nJemi të trishtuar që ju shohim të largoheni, por shpresojmë që ju ka pëlqyer! {emote}',
-        notes: {
-            title: 'Ju lutemi vini re:',
-            support: 'Nëse keni nevojë për ndihmë, ju lutemi [Kontaktoni Mbështetjen]({support})',
-            reSubscribe: 'Nëse dëshironi të ri-abonoheni, shkoni te {url}'
-        }
+        title: 'Subscription canceled',
+        description: 'We are sorry to see that your subscription with {bot} Enterprise has been cancelled. We appreciate your support during your time with us and hope that you have enjoyed the benefits of our service.\n\nIf there is anything we can do to improve your experience or if you have any feedback to share, please do not hesitate to contact us. Your opinion matters to us, and we are committed to continuously improving our service.\n\nBest regards,\n{dev}'
     },
     new: {
-        title: 'Abonimi i Ndërmarrjes së Re',
-        description: 'Pershendetje {user}, sapo kemi marrë pagesën tuaj të suksesshme. {emote}\nJemi vërtet të lumtur që ju shohim në bord dhe shpresojmë se do t\'ju pëlqejë ta përdorni robotin me përfitimet tuaja të reja!',
-        notes: {
-            title: 'Ju lutemi vini re:',
-            setGuild: 'Për të vendosur një grup të ndërmarrjeve, ju lutemi përdorni {command}',
-            getGuild: 'Nëse keni nevojë për ndihmë me [marrjen e Id-së së Serverit tuaj]({article})',
-            cooldown: 'Mos harroni se keni gjithmonë një freskim për {days} ditë!',
-            support: 'Nëse keni nevojë për ndihmë, ju lutemi [Kontaktoni Mbështetjen]({support})'
-        }
-    }
+        title: 'Welcome to {bot} Enterprise',
+        description: 'Thank you so much for subscribing to {bot} Enterprise, {user}! Your support means the world to us, and we truly appreciate your trust in our services. ❤️\n\nWe are dedicated to providing you with the best possible experience and ensuring that your needs are met. If you ever have any questions or concerns, please don\'t hesitate to reach out to us.\n\nBest regards,\n{dev}'
+    },
+    position: 'Developer, Customer Service Representative'
 };
