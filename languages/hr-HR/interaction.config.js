@@ -15,14 +15,6 @@ module.exports = {
         // will be the same everywhere
         none: 'prazno',
         useButtons: 'Odaberite opciju koju želite urediti pomoću gumba u nastavku.',
-        developer: {
-            bypass: 'Nemate `MANAGE_GUILD` za pristup ovoj ploči..\nŽelite li i dalje nastaviti?',
-            choice: {
-                access: 'Siguran sam, da',
-                abord: 'Nema veze'
-            },
-            notice: 'oprezno - privilegije programera nametnute..'
-        },
         upsell: 'Pretplatite se da dobijete još {count}',
         permissions: 'Nedostaje: {perms}',
         placeholders: 'Predlošci',
@@ -103,6 +95,8 @@ module.exports = {
     main: {
         title: 'Konfiguriraj {name}',
         option: {
+            logging: 'Messages, Joins, Captcha, Welcoming',
+            fun: 'Starboard, Counting',
             premium: {
                 text: 'Enterprise Tir {tier}',
                 buy: 'Kupite Enterprise'
@@ -110,9 +104,9 @@ module.exports = {
         },
         button: {
             logging: 'Evidentiranje',
+            fun: 'Fun',
             tickets: 'Ulaznice',
             moderation: 'Moderacija',
-            starboard: 'Starboard',
             misc: 'Razno',
             followNews: 'Pratite Vijesti',
             staff: 'Upravljajte serverom',
@@ -366,13 +360,23 @@ module.exports = {
                             inEmbed: {
                                 enable: 'Prikazuj sliku u Embed',
                                 disable: 'Ne prikazuj sliku u Embedu'
-                            }
+                            },
+                            color: 'Text Color'
                         },
                         page: {
                             background: {
                                 title: 'Pozadina',
                                 name: 'Pozadina kartice',
                                 description: 'Veza mora biti **izravni URL slike**, također mora biti veza tipa {scheme}.\nPreporučujemo omjer od {ratio} i minimalnu razlučivost od {resolution}.'
+                            },
+                            text: {
+                                title: 'Text',
+                                page: {
+                                    color: {
+                                        title: 'Color',
+                                        name: 'text color'
+                                    }
+                                }
                             }
                         }
                     },
@@ -584,12 +588,6 @@ module.exports = {
                 name: 'Moderacijski filter',
                 option: {
                     message: 'Poruka: {message}',
-                    actions: 'Akcije: {types}',
-                    actionType: {
-                        reply: 'odgovor',
-                        delete: 'izbrisati',
-                        timeout: 'pauza'
-                    },
                     total: 'Ukupno: **{amount} riječi**',
                     timeout: 'Pauza: {time}'
                 },
@@ -598,15 +596,6 @@ module.exports = {
                     editWords: 'Uredite popis riječi',
                     message: 'Uredi poruku',
                     timeout: 'Trajanje timeout-a',
-                    actions: {
-                        title: 'Upravljajte akcijom',
-                        selected: 'Odabran',
-                        option: {
-                            reply: 'Odgovor',
-                            delete: 'Izbrisati',
-                            timeout: 'Izbrisati'
-                        }
-                    },
                     export: 'Prikaži popis riječi'
                 },
                 page: {
@@ -627,7 +616,7 @@ module.exports = {
                     words: {
                         title: 'Riječi',
                         name: 'Zabranjene riječi',
-                        awaitMessage: 'Pošaljite jednu ili više riječi koje bi se trebale staviti na crnu listu.\nMolimo **koristite samo** znakove od `A-Z`\nRazdvojite riječi sa `, ` da biste dodali više riječi.',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
                         bulkAdded: 'Uspješno dodano {amout} novih riječi na crnu listu.',
                         added: 'Uspješno dodana "`{word}`" kao nova riječ na crnoj listi.',
                         removed: 'Uspješno uklonjena "`{word}`" kao riječ s crne liste.'
@@ -770,6 +759,13 @@ module.exports = {
             }
         }
     },
+    fun: {
+        title: 'Configure Fun',
+        button: {
+            starboard: 'Starboard',
+            counting: 'Counting'
+        }
+    },
     starboard: {
         title: 'Konfigurirajte Starboard',
         button: {
@@ -861,6 +857,35 @@ module.exports = {
                 name: 'Popis kanali na crnoj listi',
                 description: 'Spomenite kanal/kategoriju ili zalijepite Id kanala u chat.\nDodajte ispred poruke `+` za dodavanje ili `-` za uklanjanje kanala.\nMožete poslati više kanala odvojenih razmakom.\nUpišite `none` za uklanjanje svih kanala.',
                 missingPrefix: 'Poruka mora imati prefiks `+` za dodavanje ili `-` za uklanjanje kanala.'
+            }
+        }
+    },
+    counting: {
+        title: 'Configure Counting',
+        option: {
+            channel: 'Channel: {channel}',
+            emojis: 'Emojis: {emojis}'
+        },
+        button: {
+            reset: {
+                enable: 'Reset on fail',
+                disable: 'Don\'t reset on fail'
+            },
+            customSuccessEmote: 'Correct Emote',
+            customFailEmote: 'Error Emote'
+        },
+        page: {
+            channel: {
+                title: 'Channel',
+                name: 'Starboard Channel'
+            },
+            successEmoji: {
+                title: 'Correct Emoji',
+                name: 'success emoji'
+            },
+            failEmoji: {
+                title: 'Wrong Emoji',
+                name: 'fail emoji'
             }
         }
     },
