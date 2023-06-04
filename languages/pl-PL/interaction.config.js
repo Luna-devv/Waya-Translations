@@ -15,14 +15,6 @@ module.exports = {
         // will be the same everywhere
         none: 'brak',
         useButtons: 'Wybierz opcję, którą chcesz edytować za pomocą przycisków poniżej.',
-        developer: {
-            bypass: 'Nie masz permisji `MANAGE_GUILD`, aby uzyskać dostęp do tego panelu.\nCzy nadal chcesz kontynuować?',
-            choice: {
-                access: 'Jestem pewien, tak',
-                abord: 'Nieważne'
-            },
-            notice: 'uwaga - przywileje deweloperskie wyegzekwowane..'
-        },
         upsell: 'Subskrybuj, aby uzyskać jeszcze {count}',
         permissions: 'Brakuje: {perms}',
         placeholders: 'Tekst zastępczy',
@@ -103,6 +95,8 @@ module.exports = {
     main: {
         title: 'Konfiguruj {name}',
         option: {
+            logging: 'Messages, Joins, Captcha, Welcoming',
+            fun: 'Starboard, Counting',
             premium: {
                 text: 'Poziom Enterprise {tier}',
                 buy: 'Kup Enterprise'
@@ -110,9 +104,9 @@ module.exports = {
         },
         button: {
             logging: 'Logowanie',
+            fun: 'Fun',
             tickets: 'Zgłoszenia',
             moderation: 'Moderacja',
-            starboard: 'Starboard',
             misc: 'Różne',
             followNews: 'Obserwuj aktualności',
             staff: 'Zarządzaj Gildią',
@@ -366,13 +360,23 @@ module.exports = {
                             inEmbed: {
                                 enable: 'Pokaż Obraz w Osadzaniu',
                                 disable: 'Nie Pokazuj Obrazu w Osadzeniu'
-                            }
+                            },
+                            color: 'Text Color'
                         },
                         page: {
                             background: {
                                 title: 'Tło',
                                 name: 'Tło Karty',
                                 description: 'Link musi być **bezpośrednim adresem URL obrazu**, musi być również linkiem typu {scheme}.\nZalecamy stosunek {ratio} do minimalnej rozdzielczości {resolution}.'
+                            },
+                            text: {
+                                title: 'Text',
+                                page: {
+                                    color: {
+                                        title: 'Color',
+                                        name: 'text color'
+                                    }
+                                }
                             }
                         }
                     },
@@ -584,12 +588,6 @@ module.exports = {
                 name: 'Filtry Moderacji',
                 option: {
                     message: 'Wiadomość: {message}',
-                    actions: 'Akcje: {types}',
-                    actionType: {
-                        reply: 'odpowiedź',
-                        delete: 'usuń',
-                        timeout: 'timeout'
-                    },
                     total: 'Razem: **{amount} słów**',
                     timeout: 'Timeout: {time}'
                 },
@@ -598,15 +596,6 @@ module.exports = {
                     editWords: 'Edytuj listę słów',
                     message: 'Edytuj Wiadomość',
                     timeout: 'Czas Trwania Timeout\'u ',
-                    actions: {
-                        title: 'Zarządzaj akcją',
-                        selected: 'Wybrane',
-                        option: {
-                            reply: 'Odpowiedź',
-                            delete: 'Usuń',
-                            timeout: 'Timeout'
-                        }
-                    },
                     export: 'Pokaż listę słów'
                 },
                 page: {
@@ -627,7 +616,7 @@ module.exports = {
                     words: {
                         title: 'Słowa',
                         name: 'Zakazane słowa',
-                        awaitMessage: 'Wyślij jedno lub wiele słów, które powinny być umieszczone na czarnej liście.\nProszę **używaj tylko** znaków `od A do Z`\nPodziel słowa z `, `, aby dodać słowa.',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
                         bulkAdded: 'Pomyślnie dodano {amout} nowych słów do czarnej listy.',
                         added: 'Pomyślnie dodano "`{word}`" jako nowe słowo do czarnej listy.',
                         removed: 'Pomyślnie usunięto "`{word}`" jako słowo z czarnej listy.'
@@ -770,6 +759,13 @@ module.exports = {
             }
         }
     },
+    fun: {
+        title: 'Configure Fun',
+        button: {
+            starboard: 'Starboard',
+            counting: 'Counting'
+        }
+    },
     starboard: {
         title: 'Skonfiguruj Starboard',
         button: {
@@ -861,6 +857,35 @@ module.exports = {
                 name: 'Lista kanałów czarnej listy',
                 description: 'Wspomnij kanał/Kategorię lub wklej ID kanału do czatu.\nZprefiksuj wiadomość z `+`, aby dodać lub `-` aby usunąć kanały.\nMożesz wysłać wiele kanałów oddzielonych spacją.\nWpisz `none` aby usunąć wszystkie kanały.',
                 missingPrefix: 'Wiadomość musi być zprefiksowana `+`, aby dodać lub `-` aby usunąć kanały.'
+            }
+        }
+    },
+    counting: {
+        title: 'Configure Counting',
+        option: {
+            channel: 'Channel: {channel}',
+            emojis: 'Emojis: {emojis}'
+        },
+        button: {
+            reset: {
+                enable: 'Reset on fail',
+                disable: 'Don\'t reset on fail'
+            },
+            customSuccessEmote: 'Correct Emote',
+            customFailEmote: 'Error Emote'
+        },
+        page: {
+            channel: {
+                title: 'Channel',
+                name: 'Starboard Channel'
+            },
+            successEmoji: {
+                title: 'Correct Emoji',
+                name: 'success emoji'
+            },
+            failEmoji: {
+                title: 'Wrong Emoji',
+                name: 'fail emoji'
             }
         }
     },
