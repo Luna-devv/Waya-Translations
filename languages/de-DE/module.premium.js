@@ -1,22 +1,11 @@
 module.exports = {
     end: {
-        title: 'Abonnement Abgelaufen',
-        description: 'Hallo {user}, wir haben soeben Ihr Abonnement storniert.\nWir sind traurig, dass du gehst, aber wir hoffen, dass du es genossen hasst! {emote}',
-        notes: {
-            title: 'Hinweis:',
-            support: 'Wenn du Hilfe brauchst, bitte [Support kontaktieren]({support})',
-            reSubscribe: 'Wenn du abonnieren wieder möchtest, gehe zu {url}'
-        }
+        title: 'Subscription canceled',
+        description: 'We are sorry to see that your subscription with {bot} Enterprise has been cancelled. We appreciate your support during your time with us and hope that you have enjoyed the benefits of our service.\n\nIf there is anything we can do to improve your experience or if you have any feedback to share, please do not hesitate to contact us. Your opinion matters to us, and we are committed to continuously improving our service.\n\nBest regards,\n{dev}'
     },
     new: {
-        title: 'Neues Enterprise Abonnement',
-        description: 'Hallo {user}, wir haben gerade Ihre erfolgreiche Zahlung erhalten. {emote}\nWir freuen uns sehr, dich am Bord begrüßen zu dürfen und wir hoffen, dass du gerne den Bot mit deinen neuen Vorteilen benutzt!',
-        notes: {
-            title: 'Hinweis:',
-            setGuild: 'Um eine Enterprise Server zu setzen, benutze bitte {command}',
-            getGuild: 'Wenn du Hilfe benötigst beim [Erhalten der Server Id]({article})',
-            cooldown: 'Vergiss nicht, dass du immer einen {days} Tage Cooldown hattest!',
-            support: 'Wenn du Hilfe brauchst, bitte [Support kontaktieren]({support})'
-        }
-    }
+        title: 'Welcome to {bot} Enterprise',
+        description: 'Thank you so much for subscribing to {bot} Enterprise, {user}! Your support means the world to us, and we truly appreciate your trust in our services. ❤️\n\nWe are dedicated to providing you with the best possible experience and ensuring that your needs are met. If you ever have any questions or concerns, please don\'t hesitate to reach out to us.\n\nBest regards,\n{dev}'
+    },
+    position: 'Developer, Customer Service Representative'
 };
