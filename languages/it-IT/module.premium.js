@@ -1,22 +1,11 @@
 module.exports = {
     end: {
-        title: 'Abbonamento Terminato',
-        description: 'Ciao {user}, abbiamo appena ricevuto la cancellazione del tuo abbonamento.\nCi dispiace che tu te ne vai, ma speriamo che ti sia piacuto! {emote}',
-        notes: {
-            title: 'Nota che:',
-            support: 'Se hai bisogno di aiuto [Contatta l\'assistenza]({support})',
-            reSubscribe: 'Se vuoi riabbonarti, vai a {url}'
-        }
+        title: 'Subscription canceled',
+        description: 'We are sorry to see that your subscription with {bot} Enterprise has been cancelled. We appreciate your support during your time with us and hope that you have enjoyed the benefits of our service.\n\nIf there is anything we can do to improve your experience or if you have any feedback to share, please do not hesitate to contact us. Your opinion matters to us, and we are committed to continuously improving our service.\n\nBest regards,\n{dev}'
     },
     new: {
-        title: 'Nuovo Abbonamento',
-        description: 'Ciao {user}, abbiamo appena ricevuto il tuo pagamento con successo. {emote}\nSiamo davvero felici di vederti a bordo, e speriamo che ti piacerà usare il bot con i tuoi nuovi vantaggi!',
-        notes: {
-            title: 'Nota bene:',
-            setGuild: 'Per impostare una Gilda con Abbonamento, utilizza {command}',
-            getGuild: 'Se hai bisogno di aiuto per [ottenere l\'Id del tuo server]({article})',
-            cooldown: 'Non dimenticare che hai sempre {days} giorni di raffreddamento!',
-            support: 'Se hai bisogno di aiuto [Contatta l\'assistenza]({support})'
-        }
-    }
+        title: 'Welcome to {bot} Enterprise',
+        description: 'Thank you so much for subscribing to {bot} Enterprise, {user}! Your support means the world to us, and we truly appreciate your trust in our services. ❤️\n\nWe are dedicated to providing you with the best possible experience and ensuring that your needs are met. If you ever have any questions or concerns, please don\'t hesitate to reach out to us.\n\nBest regards,\n{dev}'
+    },
+    position: 'Developer, Customer Service Representative'
 };
