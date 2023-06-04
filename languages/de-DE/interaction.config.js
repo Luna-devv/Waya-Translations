@@ -15,14 +15,6 @@ module.exports = {
         // will be the same everywhere
         none: 'keinen',
         useButtons: 'Editiere eine Option mit einem Button unten.',
-        developer: {
-            bypass: 'Dir fehlen die `MANAGE_GUILD` Berechtigungen, um auf dieses Menü zuzugreifen..\nWillst du dennoch fortfahren?',
-            choice: {
-                access: 'Ja, ich will',
-                abord: 'Nein danke'
-            },
-            notice: 'Pass auf! - entwickler Modus aktive'
-        },
         upsell: 'Abonniere für +{count}',
         permissions: 'Fehlt: {perms}',
         placeholders: 'Platzhalter',
@@ -103,6 +95,8 @@ module.exports = {
     main: {
         title: '{name} Konfigurieren',
         option: {
+            logging: 'Messages, Joins, Captcha, Welcoming',
+            fun: 'Starboard, Counting',
             premium: {
                 text: 'Enterprise Level {tier}',
                 buy: 'Enterprise Kaufen'
@@ -110,9 +104,9 @@ module.exports = {
         },
         button: {
             logging: 'Loggen',
+            fun: 'Fun',
             tickets: 'Tickets',
             moderation: 'Moderation',
-            starboard: 'Starboard',
             misc: 'Sonstiges',
             followNews: 'News Folgen',
             staff: 'Server Verwalten',
@@ -366,13 +360,23 @@ module.exports = {
                             inEmbed: {
                                 enable: 'Karte im Embed anzeigen',
                                 disable: 'Karte nicht im Embed anzeigen'
-                            }
+                            },
+                            color: 'Text Color'
                         },
                         page: {
                             background: {
                                 title: 'Hintergrund',
                                 name: 'Kartenhintergrund',
                                 description: 'Der Link muss eine **direkte Bild URL** sein, es muss auch ein Link vom Typ {scheme} sein.\nWir empfehlen ein Verhältnis von {ratio} und eine mindeste Auflösung von {resolution}.'
+                            },
+                            text: {
+                                title: 'Text',
+                                page: {
+                                    color: {
+                                        title: 'Color',
+                                        name: 'text color'
+                                    }
+                                }
                             }
                         }
                     },
@@ -584,12 +588,6 @@ module.exports = {
                 name: 'Moderation Filter',
                 option: {
                     message: 'Nachricht: {message}',
-                    actions: 'Aktionen: {types}',
-                    actionType: {
-                        reply: 'nachricht',
-                        delete: 'löschen',
-                        timeout: 'muten'
-                    },
                     total: 'Insgesamt: **{amount} Wörter**',
                     timeout: 'Stumm: {time}'
                 },
@@ -598,15 +596,6 @@ module.exports = {
                     editWords: 'Wörterliste Bearbeiten',
                     message: 'Nachricht Bearbeiten',
                     timeout: 'Stumm Dauer',
-                    actions: {
-                        title: 'Aktionen Verwalten',
-                        selected: 'Ausgewählt',
-                        option: {
-                            reply: 'Nachricht',
-                            delete: 'Löschen',
-                            timeout: 'Muten'
-                        }
-                    },
                     export: 'Wörterliste Anschauen'
                 },
                 page: {
@@ -627,7 +616,7 @@ module.exports = {
                     words: {
                         title: 'Wörter',
                         name: 'Gespenstes Wort',
-                        awaitMessage: 'Sende eine oder mehrere Wörter, die auf die Blacklist kommen sollen.\nBitte **nur** Buchstaben zwischen `A-Z` verwenden\num die Wörter voneinander zu trennen, benutze `, `.',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
                         bulkAdded: 'Erfolgreich {amout} neue Wörter auf die Blacklist hinzugefügt.',
                         added: 'Erfolgreich "`{word}`" als ein neues Wort auf der Blacklist hinzugefügt.',
                         removed: 'Erfolgreich das Wort "`{word}`" von der Blacklist entfernt.'
@@ -770,6 +759,13 @@ module.exports = {
             }
         }
     },
+    fun: {
+        title: 'Configure Fun',
+        button: {
+            starboard: 'Starboard',
+            counting: 'Counting'
+        }
+    },
     starboard: {
         title: 'Starboard Konfigurieren',
         button: {
@@ -861,6 +857,35 @@ module.exports = {
                 name: 'Blacklist Channel List',
                 description: 'Erwähne einen Channel/Kategorie oder sende die Id in den Chat.\nPräfix die Nachricht mit `+` zum Hinzufügen oder `-` um Kanäle zu entfernen.\nDu kannst mehrere Kanäle mit einem Leerzeichen trennen.\nSchreibe `none`, um alle Channels zu entfernen.',
                 missingPrefix: 'Der Nachricht muss ein `+` vorangestellt werden, um Kanäle hinzuzufügen, oder ein `-`, um Kanäle zu entfernen.'
+            }
+        }
+    },
+    counting: {
+        title: 'Configure Counting',
+        option: {
+            channel: 'Channel: {channel}',
+            emojis: 'Emojis: {emojis}'
+        },
+        button: {
+            reset: {
+                enable: 'Reset on fail',
+                disable: 'Don\'t reset on fail'
+            },
+            customSuccessEmote: 'Correct Emote',
+            customFailEmote: 'Error Emote'
+        },
+        page: {
+            channel: {
+                title: 'Channel',
+                name: 'Starboard Channel'
+            },
+            successEmoji: {
+                title: 'Correct Emoji',
+                name: 'success emoji'
+            },
+            failEmoji: {
+                title: 'Wrong Emoji',
+                name: 'fail emoji'
             }
         }
     },
