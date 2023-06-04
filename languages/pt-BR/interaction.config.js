@@ -15,14 +15,6 @@ module.exports = {
         // will be the same everywhere
         none: 'none',
         useButtons: 'Select an option you want to edit using the buttons below.',
-        developer: {
-            bypass: 'You don\'t have the `MANAGE_GUILD` to access this panel..\nDo you still want to continue?',
-            choice: {
-                access: 'I\'m sure, yes',
-                abord: 'Nevermind'
-            },
-            notice: 'carefull - developer privileges enforced..'
-        },
         upsell: 'Subscribe to get {count} more',
         permissions: 'Missing: {perms}',
         placeholders: 'Placeholders',
@@ -103,6 +95,8 @@ module.exports = {
     main: {
         title: 'Configure {name}',
         option: {
+            logging: 'Messages, Joins, Captcha, Welcoming',
+            fun: 'Starboard, Counting',
             premium: {
                 text: 'Enterprise Tier {tier}',
                 buy: 'Buy Enterprise'
@@ -110,9 +104,9 @@ module.exports = {
         },
         button: {
             logging: 'Logging',
+            fun: 'Fun',
             tickets: 'Ticketing',
             moderation: 'Moderation',
-            starboard: 'Starboard',
             misc: 'Miscs',
             followNews: 'Follow News',
             staff: 'Manage Guild',
@@ -366,13 +360,23 @@ module.exports = {
                             inEmbed: {
                                 enable: 'Show Image in Embed',
                                 disable: 'Don\'t Show Image in Embed'
-                            }
+                            },
+                            color: 'Text Color'
                         },
                         page: {
                             background: {
                                 title: 'Background',
                                 name: 'Card Background',
                                 description: 'The link must be a **direct image URL**, it also must be a {scheme} type link.\nWe recommend a ratio of {ratio} and a min resolution of {resolution}.'
+                            },
+                            text: {
+                                title: 'Text',
+                                page: {
+                                    color: {
+                                        title: 'Color',
+                                        name: 'text color'
+                                    }
+                                }
                             }
                         }
                     },
@@ -584,12 +588,6 @@ module.exports = {
                 name: 'Moderation Filter',
                 option: {
                     message: 'Message: {message}',
-                    actions: 'Actions: {types}',
-                    actionType: {
-                        reply: 'reply',
-                        delete: 'delete',
-                        timeout: 'timeout'
-                    },
                     total: 'Total: **{amount} words**',
                     timeout: 'Timeout: {time}'
                 },
@@ -598,15 +596,6 @@ module.exports = {
                     editWords: 'Edit word list',
                     message: 'Edit Message',
                     timeout: 'Timeout Duration',
-                    actions: {
-                        title: 'Manage an action',
-                        selected: 'Selected',
-                        option: {
-                            reply: 'Reply',
-                            delete: 'Delete',
-                            timeout: 'Timeout'
-                        }
-                    },
                     export: 'Show word list'
                 },
                 page: {
@@ -627,7 +616,7 @@ module.exports = {
                     words: {
                         title: 'Words',
                         name: 'Blacklisted word',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nPlease **only use** characters from `A-Z`\nSplit words with `, ` to bulk add words.',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
                         bulkAdded: 'Successfully bulk added {amout} new words to the blacklist.',
                         added: 'Successfully added "`{word}`" as new blacklisted word.',
                         removed: 'Successfully removed "`{word}`" as blacklisted word.'
@@ -770,6 +759,13 @@ module.exports = {
             }
         }
     },
+    fun: {
+        title: 'Configure Fun',
+        button: {
+            starboard: 'Starboard',
+            counting: 'Counting'
+        }
+    },
     starboard: {
         title: 'Configure Starboard',
         button: {
@@ -861,6 +857,35 @@ module.exports = {
                 name: 'Blacklist Channel list',
                 description: 'Mention a Channel/Category or paste the Channel ID into the chat.\nPrefix the message with `+` to add or `-` to remove Channels.\nYou can send multiple Channels seperated with a space.\nType `none` to remove all Channels.',
                 missingPrefix: 'The message must be prefixed with `+` to add or `-` to remove Channels.'
+            }
+        }
+    },
+    counting: {
+        title: 'Configure Counting',
+        option: {
+            channel: 'Channel: {channel}',
+            emojis: 'Emojis: {emojis}'
+        },
+        button: {
+            reset: {
+                enable: 'Reset on fail',
+                disable: 'Don\'t reset on fail'
+            },
+            customSuccessEmote: 'Correct Emote',
+            customFailEmote: 'Error Emote'
+        },
+        page: {
+            channel: {
+                title: 'Channel',
+                name: 'Starboard Channel'
+            },
+            successEmoji: {
+                title: 'Correct Emoji',
+                name: 'success emoji'
+            },
+            failEmoji: {
+                title: 'Wrong Emoji',
+                name: 'fail emoji'
             }
         }
     },
