@@ -15,14 +15,6 @@ module.exports = {
         // will be the same everywhere
         none: 'asnje',
         useButtons: 'Zgjidhni një opsion që dëshironi të modifikoni duke përdorur butonat më poshtë.',
-        developer: {
-            bypass: 'Ju nuk keni "MANAGE_GUILD" për të hyrë në këtë panel..\nDëshironi të vazhdoni akoma?',
-            choice: {
-                access: 'Jam i sigurt, po',
-                abord: 'Jo'
-            },
-            notice: 'kujdes - zbatohen privilegjet e zhvilluesit..'
-        },
         upsell: 'Abonohu ​​për të marrë {count} më shumë',
         permissions: 'Mungon: {perms}',
         placeholders: 'Vendmbajtësi',
@@ -103,6 +95,8 @@ module.exports = {
     main: {
         title: 'Konfiguro {name}',
         option: {
+            logging: 'Messages, Joins, Captcha, Welcoming',
+            fun: 'Starboard, Counting',
             premium: {
                 text: 'Niveli i Abonimit {tier}',
                 buy: 'Blej Abonimin'
@@ -110,9 +104,9 @@ module.exports = {
         },
         button: {
             logging: 'Logging',
+            fun: 'Fun',
             tickets: 'Ticketat',
             moderation: 'Moderues',
-            starboard: 'Starboard',
             misc: 'Të ndryshme',
             followNews: 'Ndiqni Lajmet',
             staff: 'Menaxho Serverin',
@@ -366,13 +360,23 @@ module.exports = {
                             inEmbed: {
                                 enable: 'Shfaq imazhin në Embed',
                                 disable: 'Mos e shfaq imazhin në Embed'
-                            }
+                            },
+                            color: 'Text Color'
                         },
                         page: {
                             background: {
                                 title: 'Sfondi',
                                 name: 'Sfondi i kartës',
                                 description: 'Lidhja duhet të jetë një **URL e imazhit të drejtpërdrejtë**, gjithashtu duhet të jetë një lidhje e tipit {scheme}.\nNe rekomandojmë një raport prej {ratio} dhe një rezolucion minimal prej {resolution}.'
+                            },
+                            text: {
+                                title: 'Text',
+                                page: {
+                                    color: {
+                                        title: 'Color',
+                                        name: 'text color'
+                                    }
+                                }
                             }
                         }
                     },
@@ -584,12 +588,6 @@ module.exports = {
                 name: 'Filtri i Moderimit',
                 option: {
                     message: 'Mesazhi: {message}',
-                    actions: 'Veprimet: {types}',
-                    actionType: {
-                        reply: 'përgjigje',
-                        delete: 'fshij',
-                        timeout: 'timeout'
-                    },
                     total: 'Gjithsej: **{amount} fjalë**',
                     timeout: 'Timeout: {time}'
                 },
@@ -598,15 +596,6 @@ module.exports = {
                     editWords: 'Redakto listën e fjalëve',
                     message: 'Redakto mesazhin',
                     timeout: 'Kohëzgjatja e Timeoutit',
-                    actions: {
-                        title: 'Menaxhoni një veprim',
-                        selected: 'Zgjedhur',
-                        option: {
-                            reply: 'Përgjigje',
-                            delete: 'Fshij',
-                            timeout: 'Timeout'
-                        }
-                    },
                     export: 'Shfaq listën e fjalëve'
                 },
                 page: {
@@ -627,7 +616,7 @@ module.exports = {
                     words: {
                         title: 'Fjalët',
                         name: 'Fjalë në blacklist',
-                        awaitMessage: 'Dërgoni një ose disa fjalë që duhet të futen në blacklist.\nJu lutem **përdorni** vetëm karaktere nga "A-Z".\nNdani fjalët me `,` për të shtuar fjalë në masë.',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
                         bulkAdded: 'U shtuan me sukses {amout} fjalë të reja në blacklist.',
                         added: 'U shtua me sukses "`{word}`" si fjalë e re në blacklist.',
                         removed: 'U hoq me sukses "`{word}`" si fjalë në blacklist.'
@@ -770,6 +759,13 @@ module.exports = {
             }
         }
     },
+    fun: {
+        title: 'Configure Fun',
+        button: {
+            starboard: 'Starboard',
+            counting: 'Counting'
+        }
+    },
     starboard: {
         title: 'Konfiguro Starboard',
         button: {
@@ -861,6 +857,35 @@ module.exports = {
                 name: 'Lista e kanaleve në blacklist',
                 description: 'Përmendni një kanal/kategori ose ngjitni ID-në e kanalit në bisedë.\nVendosni mesazhin me `+` për të shtuar ose `-` për të hequr kanalet.\nJu mund të dërgoni kanale të shumta të ndara me një hapësirë.\nShkruani `none` për të hequr të gjitha kanalet.',
                 missingPrefix: 'Mesazhit duhet të parashtesohet me `+` për të shtuar ose `-` për të hequr kanalet.'
+            }
+        }
+    },
+    counting: {
+        title: 'Configure Counting',
+        option: {
+            channel: 'Channel: {channel}',
+            emojis: 'Emojis: {emojis}'
+        },
+        button: {
+            reset: {
+                enable: 'Reset on fail',
+                disable: 'Don\'t reset on fail'
+            },
+            customSuccessEmote: 'Correct Emote',
+            customFailEmote: 'Error Emote'
+        },
+        page: {
+            channel: {
+                title: 'Channel',
+                name: 'Starboard Channel'
+            },
+            successEmoji: {
+                title: 'Correct Emoji',
+                name: 'success emoji'
+            },
+            failEmoji: {
+                title: 'Wrong Emoji',
+                name: 'fail emoji'
             }
         }
     },
