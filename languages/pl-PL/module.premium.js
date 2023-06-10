@@ -1,11 +1,11 @@
 module.exports = {
     end: {
-        title: 'Subscription canceled',
-        description: 'We are sorry to see that your subscription with {bot} Enterprise has been cancelled. We appreciate your support during your time with us and hope that you have enjoyed the benefits of our service.\n\nIf there is anything we can do to improve your experience or if you have any feedback to share, please do not hesitate to contact us. Your opinion matters to us, and we are committed to continuously improving our service.\n\nBest regards,\n{dev}'
+        title: 'Subskrypcja anulowana',
+        description: 'Przykro nam, że Twoja subskrypcja z {bot} Enterprise została anulowana. Doceniamy wasze wsparcie w czasie z nami i mamy nadzieję, że skorzystałeś/aś z naszych zalet.\n\nJeśli jest coś, co możemy zrobić, aby poprawić Twoje doświadczenie lub jeśli masz jakąś opinię, którą możesz podzielić, nie wahaj się skontaktować z nami. Twoja opinia ma znaczenie dla nas i jesteśmy zaangażowani w ciągłe doskonalenie naszej usługi.\n\nPozdrawiamy,\n{dev}'
     },
     new: {
-        title: 'Welcome to {bot} Enterprise',
-        description: 'Thank you so much for subscribing to {bot} Enterprise, {user}! Your support means the world to us, and we truly appreciate your trust in our services. ❤️\n\nWe are dedicated to providing you with the best possible experience and ensuring that your needs are met. If you ever have any questions or concerns, please don\'t hesitate to reach out to us.\n\nBest regards,\n{dev}'
+        title: 'Witamy w {bot} Enterprise',
+        description: 'Dziękujemy za subskrypcję {bot} Enterprise, {user}! Wasze oznacza dla nas świat, a my naprawdę doceniamy wasze zaufanie do naszych usług. ❤️\n\nNaszym zadaniem jest zapewnienie Ci jak najlepszego doświadczenia i zapewnienie spełnienia Twoich potrzeb. Jeśli kiedykolwiek masz jakieś pytania lub obawy, nie wahaj się z nami skontaktować.\n\nSerdecznie polubienia,\n{dev}'
     },
-    position: 'Developer, Customer Service Representative'
+    position: 'Deweloper, Przedstawiciel Obsługi Klienta'
 };
