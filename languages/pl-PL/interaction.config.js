@@ -95,8 +95,8 @@ module.exports = {
     main: {
         title: 'Konfiguruj {name}',
         option: {
-            logging: 'Messages, Joins, Captcha, Welcoming',
-            fun: 'Starboard, Counting',
+            logging: 'Wiadomości, dołączenia, Captcha, Witania',
+            fun: 'Starboard, zliczanie',
             premium: {
                 text: 'Poziom Enterprise {tier}',
                 buy: 'Kup Enterprise'
@@ -104,7 +104,7 @@ module.exports = {
         },
         button: {
             logging: 'Logowanie',
-            fun: 'Fun',
+            fun: 'Zabawa',
             tickets: 'Zgłoszenia',
             moderation: 'Moderacja',
             misc: 'Różne',
@@ -361,7 +361,7 @@ module.exports = {
                                 enable: 'Pokaż Obraz w Osadzaniu',
                                 disable: 'Nie Pokazuj Obrazu w Osadzeniu'
                             },
-                            color: 'Text Color'
+                            color: 'Kolor tekstu'
                         },
                         page: {
                             background: {
@@ -370,11 +370,11 @@ module.exports = {
                                 description: 'Link musi być **bezpośrednim adresem URL obrazu**, musi być również linkiem typu {scheme}.\nZalecamy stosunek {ratio} do minimalnej rozdzielczości {resolution}.'
                             },
                             text: {
-                                title: 'Text',
+                                title: 'Tekst',
                                 page: {
                                     color: {
-                                        title: 'Color',
-                                        name: 'text color'
+                                        title: 'Kolor',
+                                        name: 'kolor tekstu'
                                     }
                                 }
                             }
@@ -616,7 +616,7 @@ module.exports = {
                     words: {
                         title: 'Słowa',
                         name: 'Zakazane słowa',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
+                        awaitMessage: 'Wyślij jedno lub wiele słów, które powinny być umieszczone na czarnej liście.\nPodziel słowa z `, ` do zbiorczego dodawania/usuwania.\nprzedstaw wiadomość `-` aby usunąć słowa.',
                         bulkAdded: 'Pomyślnie dodano {amout} nowych słów do czarnej listy.',
                         added: 'Pomyślnie dodano "`{word}`" jako nowe słowo do czarnej listy.',
                         removed: 'Pomyślnie usunięto "`{word}`" jako słowo z czarnej listy.'
@@ -760,10 +760,10 @@ module.exports = {
         }
     },
     fun: {
-        title: 'Configure Fun',
+        title: 'Konfiguruj zabawę',
         button: {
             starboard: 'Starboard',
-            counting: 'Counting'
+            counting: 'Liczenie'
         }
     },
     starboard: {
@@ -861,31 +861,31 @@ module.exports = {
         }
     },
     counting: {
-        title: 'Configure Counting',
+        title: 'Skonfiguruj liczenie',
         option: {
-            channel: 'Channel: {channel}',
-            emojis: 'Emojis: {emojis}'
+            channel: 'Kanał: {channel}',
+            emojis: 'Emotki: {emojis}'
         },
         button: {
             reset: {
-                enable: 'Reset on fail',
-                disable: 'Don\'t reset on fail'
+                enable: 'Przywracanie przy niepowodzeniu',
+                disable: 'Nie resetuj po niepowodzeniu'
             },
-            customSuccessEmote: 'Correct Emote',
-            customFailEmote: 'Error Emote'
+            customSuccessEmote: 'Popraw emotkę',
+            customFailEmote: 'Emotka błędu'
         },
         page: {
             channel: {
-                title: 'Channel',
-                name: 'Starboard Channel'
+                title: 'Kanał',
+                name: 'Kanał Starboard\'u'
             },
             successEmoji: {
-                title: 'Correct Emoji',
-                name: 'success emoji'
+                title: 'Popraw emotkę',
+                name: 'emotikony sukcesu'
             },
             failEmoji: {
-                title: 'Wrong Emoji',
-                name: 'fail emoji'
+                title: 'Błędna Emotka',
+                name: 'Emotka Niepowodzenia'
             }
         }
     },
