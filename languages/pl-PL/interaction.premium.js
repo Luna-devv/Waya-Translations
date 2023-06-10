@@ -8,5 +8,5 @@ module.exports = {
         manage: 'Możesz zarządzać swoimi subskrypcjami na {url}.',
         create: 'Subskrybuj gildię i siebie używając {command} i dodaj Id gildii.'
     },
-    success: 'Continue on {url} to subscribe and add Enterprise to {guild}.'
+    success: 'Kontynuuj {url}, aby subskrybować i dodać Enterprise do {guild}.'
 };
