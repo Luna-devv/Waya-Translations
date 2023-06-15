@@ -4,6 +4,11 @@ module.exports = {
     invalidstickymessage: 'Aucun message persistant n\'existe dans ce salon !',
     overview: {
         title: 'Configuration des Messages Persistants',
+        state: 'Status: {state}',
+        state_status: {
+            enabled: 'Enabled',
+            disabled: 'Disabled'
+        },
         permissions: 'Manquantes : {perms}',
         message: 'Message',
         embed: 'Embed',
@@ -13,6 +18,10 @@ module.exports = {
             hide: 'Caché'
         },
         button: {
+            state: {
+                enable: 'Enable',
+                disable: 'Disable'
+            },
             exit: 'Enregistrer et quitter',
             color: {
                 enabled: 'Veuillez sélectionner une couleur pour l\'embed',
