@@ -119,13 +119,14 @@ module.exports = {
         button: {
             messages: 'Mesazhet',
             joins: 'Bashkimet',
+            expressions: 'Sticker/Emojis',
             welcomer: 'Mikpritëse',
             byer: 'Pershendetjet'
         },
         page: {
             messages: {
                 title: 'Mesazhet',
-                name: 'Logging i mesazheve',
+                name: 'message logging',
                 option: {
                     channel: 'Kanali: {channel}',
                     mode: 'Modaliteti: {mode}',
@@ -141,13 +142,27 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal/i',
-                        name: 'Kanali i Logging të mesazheve'
+                        name: 'message logging channel'
+                    }
+                }
+            },
+            expressions: {
+                title: 'Expressions',
+                name: 'expressions logging',
+                option: {
+                    channel: 'Channel: {channel}',
+                    mode: 'Mode: {mode}'
+                },
+                page: {
+                    channel: {
+                        title: 'Channel',
+                        name: 'expressions logging channel'
                     }
                 }
             },
             joins: {
                 title: 'Bashkimet',
-                name: 'Logging i Bashkimeve',
+                name: 'join logging',
                 option: {
                     channel: 'Kanali: {channel}',
                     mode: 'Modaliteti: {mode}',
@@ -161,7 +176,7 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal/i',
-                        name: 'Logging i Bashkimeve'
+                        name: 'join logging'
                     },
                     filter: {
                         title: 'Filtër',
@@ -236,15 +251,15 @@ module.exports = {
                         page: {
                             verifiedrole: {
                                 title: 'Roli i verifikuar',
-                                name: 'Roli i verifikuar nga CAPTCHA'
+                                name: 'CAPTCHA verified role'
                             },
                             unverifiedrole: {
                                 title: 'Roli i paverifikuar',
-                                name: 'Roli i paverifikuar nga CAPTCHA'
+                                name: 'CAPTCHA unverified role'
                             },
                             logging: {
                                 title: 'Logging',
-                                name: 'Kanali i Logging të CAPTCHA'
+                                name: 'CAPTCHA logging channel'
                             },
                             role: {
                                 title: 'Roli',
@@ -252,7 +267,7 @@ module.exports = {
                             },
                             color: {
                                 title: 'Ngjyra e faqes',
-                                name: 'Ngjyra e faqes',
+                                name: 'page color',
                                 description: 'Ngjitni një ngjyrë Hex në bisedën që dëshironi të përdorni.\nNe ju rekomandojmë të përdorni një ngjyrë afër të zezës me ngopje shumë të lartë.\nVini re se ngjyra në pasaportë do të duket gjithmonë më e ndritshme.\nMerr një kod ngjyre Hex nga [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
                                 invalid: 'Kodi i ngjyrës nuk është një ngjyrë Hex e vlefshme.\nMerr një kod ngjyre Hex nga [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
@@ -262,7 +277,7 @@ module.exports = {
             },
             welcomer: {
                 title: 'Mikpritës',
-                name: 'Mikpritës',
+                name: 'welcomer',
                 option: {
                     channel: 'Kanali: {channel}',
                     role: 'Rolet: {role}',
@@ -311,19 +326,15 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal/i',
-                        name: 'Kanali i mirepritur'
-                    },
-                    message: {
-                        title: 'Mesazh',
-                        name: 'Mesazh Mirëpritës'
+                        name: 'welcomer channel'
                     },
                     role: {
                         title: 'Roli',
-                        name: 'Roli i mirëseardhjes'
+                        name: 'welcomer role'
                     },
                     autodelete: {
                         title: 'Fshij automatikisht',
-                        name: 'Fshij automatikisht',
+                        name: 'auto delete',
                         description: 'Mesazhi i Mirëpritësit do të fshihet pas kësaj kohe.\nNe ju rekomandojmë ta mbani këtë kohë të shkurtër (vetëm disa sekonda).\nShembull: `1m 3s`'
                     },
                     dm: { button: { disable: 'Çaktivizo mesazhin DM' } },
@@ -366,7 +377,7 @@ module.exports = {
                         page: {
                             background: {
                                 title: 'Sfondi',
-                                name: 'Sfondi i kartës',
+                                name: 'card background',
                                 description: 'Lidhja duhet të jetë një **URL e imazhit të drejtpërdrejtë**, gjithashtu duhet të jetë një lidhje e tipit {scheme}.\nNe rekomandojmë një raport prej {ratio} dhe një rezolucion minimal prej {resolution}.'
                             },
                             text: {
@@ -416,11 +427,11 @@ module.exports = {
                         page: {
                             emoji: {
                                 title: 'Emote',
-                                name: 'Button Emote'
+                                name: 'button emote'
                             },
                             label: {
                                 title: 'Label',
-                                name: 'Tekst i butonit'
+                                name: 'button text'
                             }
                         }
                     }
@@ -428,7 +439,7 @@ module.exports = {
             },
             byer: {
                 title: 'Byer',
-                name: 'Byer',
+                name: 'byer',
                 option: {
                     channel: 'Kanali: {channel}',
                     message: {
@@ -440,20 +451,20 @@ module.exports = {
                 },
                 button: {
                     message: 'Redakto mesazhin',
-                    autodelete: 'Fshirja automatike'
+                    autodelete: 'Set autodelete'
                 },
                 page: {
                     channel: {
                         title: 'Kanal/i',
-                        name: 'Kanali Byer'
+                        name: 'byer channel'
                     },
                     message: {
                         title: 'Mesazh',
-                        name: 'Mesazhi Byer'
+                        name: 'byer message'
                     },
                     autodelete: {
                         title: 'Fshij automatikisht',
-                        name: 'Fshij automatikisht',
+                        name: 'auto delete',
                         description: 'Mesazhi Byer do të fshihet pas kësaj kohe.\nNe ju rekomandojmë ta mbani këtë kohë të shkurtër (vetëm disa sekonda).\nShembull: `1m 3s`'
                     }
                 }
@@ -517,40 +528,42 @@ module.exports = {
         },
         page: {
             category: {
-                title: 'Kategoria',
-                name: 'Kategoria e Ticketav'
+                title: 'Category / Channel',
+                name: 'tickets category'
             },
             role: {
                 title: 'Roli i Stafit',
-                name: 'Roli i stafit të Ticketav'
+                name: 'ticket staff role'
             },
             descriptions: {
                 title: 'Tekste',
-                name: 'Përshkrimet e Ticketave',
+                name: 'ticket descriptions',
                 button: {
                     texts: 'Parashikimi i Ticketes',
                     topic: 'Ndrysho Temën',
                     unclaimed: 'Ndrysho Embed të padeklaruar',
-                    claimed: 'Ndrysho Embed të pretenduar'
+                    claimed: 'Ndrysho Embed të pretenduar',
+                    closeEmote: 'Change Close Emote',
+                    claimEmote: 'Change Claim Emote'
                 },
                 page: {
-                    unclaimed: {
-                        title: 'E pamëtuar',
-                        name: 'Përshkrimi i biletës së pakërkuar'
-                    },
-                    claimed: {
-                        title: 'E pretenduar',
-                        name: 'Përshkrimi i Ticketes së pretenduar'
-                    },
                     topic: {
                         title: 'Temë',
-                        name: 'Tema e Ticketave'
+                        name: 'tickets topic'
+                    },
+                    closeEmote: {
+                        title: 'Close Button Emote',
+                        name: 'close emote'
+                    },
+                    claimEmote: {
+                        title: 'Claim Button Emote',
+                        name: 'claim emote'
                     }
                 }
             },
             logging: {
                 title: 'Logging',
-                name: 'Logging e Ticketave'
+                name: 'ticket logging'
             }
         }
     },
@@ -577,15 +590,15 @@ module.exports = {
         page: {
             role: {
                 title: 'Roli i anashkalimit',
-                name: 'Roli i anashkalimit'
+                name: 'bypass role'
             },
             logging: {
                 title: 'Logging',
-                name: 'Logs e moderimit'
+                name: 'moderation logs'
             },
             filter: {
                 title: 'Filtër',
-                name: 'Filtri i Moderimit',
+                name: 'moderation Filter',
                 option: {
                     message: 'Mesazhi: {message}',
                     total: 'Gjithsej: **{amount} fjalë**',
@@ -615,26 +628,26 @@ module.exports = {
                     },
                     words: {
                         title: 'Fjalët',
-                        name: 'Fjalë në blacklist',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
+                        name: 'blacklisted word',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remove words.\nPrefix the message with `-` to remove words.',
                         bulkAdded: 'U shtuan me sukses {amout} fjalë të reja në blacklist.',
                         added: 'U shtua me sukses "`{word}`" si fjalë e re në blacklist.',
                         removed: 'U hoq me sukses "`{word}`" si fjalë në blacklist.'
                     },
                     message: {
                         title: 'Mesazh',
-                        name: 'Përgjigje fjalësh në blacklist'
+                        name: 'blacklisted word reply'
                     },
                     timeout: {
                         title: 'Kohëzgjatja e Timeoutit',
-                        name: 'Kohëzgjatja e Timeoutit',
+                        name: 'timeout duration',
                         description: 'Përdoruesi do të vendoset në Timeout për këtë kohëzgjatje!\nHyrja duhet të jetë më pak se 18 ditë.\nShembull: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiScam: {
                 title: 'Anti Scam',
-                name: 'Moderimi kundër Scam',
+                name: 'moderation anti scam',
                 option: {
                     message: 'Mesazh: {message}',
                     actions: 'Veprimet: {types}',
@@ -661,18 +674,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Mesazh',
-                        name: 'Përgjigje Anti Scam'
+                        name: 'anit scam reply'
                     },
                     timeout: {
                         title: 'Kohëzgjatja e Timeoutit',
-                        name: 'Kohëzgjatja e Timeoutit',
+                        name: 'timeout duration',
                         description: 'Përdoruesi do të vendoset në Timeout për këtë kohëzgjatje!\nHyrja duhet të jetë më pak se 18 ditë.\nShembull: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiLink: {
                 title: 'Anti Link',
-                name: 'Moderimi kundër Link',
+                name: 'moderation anti link',
                 option: {
                     message: 'Mesazh: {message}',
                     actions: 'Veprimet: {types}',
@@ -703,18 +716,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Mesazh',
-                        name: 'Përgjigje Anti Link'
+                        name: 'anti link reply'
                     },
                     timeout: {
                         title: 'Kohëzgjatja e Timeoutit',
-                        name: 'Kohëzgjatja e Timeoutit',
+                        name: 'timeout duration',
                         description: 'Përdoruesi do të vendoset në Timeout për këtë kohëzgjatje!\nHyrja duhet të jetë më pak se 18 ditë.\nShembull: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiSpam: {
                 title: 'Anti Spam',
-                name: 'Moderimi kundër Spam',
+                name: 'moderation anti spam',
                 option: {
                     message: 'Mesazh: {message}',
                     actions: 'Veprimet: {types}',
@@ -743,11 +756,11 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Mesazh',
-                        name: 'Përgjigje Anti Spam'
+                        name: 'anti spam reply'
                     },
                     timeout: {
                         title: 'Kohëzgjatja e Timeoutit',
-                        name: 'Kohëzgjatja e Timeoutit',
+                        name: 'timeout duration',
                         description: 'Përdoruesi do të vendoset në Timeout për këtë kohëzgjatje!\nHyrja duhet të jetë më pak se 18 ditë.\nShembull: `7d 4h 8m 3s`'
                     },
                     threshold: {
@@ -833,28 +846,28 @@ module.exports = {
         page: {
             channel: {
                 title: 'Kanal/i',
-                name: 'Kanali Starboard'
+                name: 'starboard channel'
             },
             emoji: {
                 title: 'Emoji',
-                name: 'Emoji Starboard'
+                name: 'starboard emoji'
             },
             color: {
                 title: 'Ngjyrë',
-                name: 'Ngjyra e Starboard'
+                name: 'starboard color'
             },
             count: {
                 title: 'Numërimi',
-                name: 'Numri i kërkuar',
+                name: 'requierd count',
                 description: 'Dërgo një numër për të vendosur kërkesën minimale të numrit të reagimeve {emote}.'
             },
             blacklistedRole: {
                 title: 'Roli Blacklist',
-                name: 'Roli blacklist'
+                name: 'blacklisted role'
             },
             blacklistedChannels: {
                 title: 'Kanalet e blacklist',
-                name: 'Lista e kanaleve në blacklist',
+                name: 'blacklist channel list',
                 description: 'Përmendni një kanal/kategori ose ngjitni ID-në e kanalit në bisedë.\nVendosni mesazhin me `+` për të shtuar ose `-` për të hequr kanalet.\nJu mund të dërgoni kanale të shumta të ndara me një hapësirë.\nShkruani `none` për të hequr të gjitha kanalet.',
                 missingPrefix: 'Mesazhit duhet të parashtesohet me `+` për të shtuar ose `-` për të hequr kanalet.'
             }
@@ -877,7 +890,7 @@ module.exports = {
         page: {
             channel: {
                 title: 'Channel',
-                name: 'Starboard Channel'
+                name: 'counting channel'
             },
             successEmoji: {
                 title: 'Correct Emoji',
@@ -941,11 +954,11 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Mesazh',
-                        name: 'Përgjigja e nivelit lart'
+                        name: 'level up reply'
                     },
                     channel: {
                         title: 'Kanal/i',
-                        name: 'Kanali i nivelit lart'
+                        name: 'level up Channel'
                     },
                     addRole: {
                         title: 'Roli i nivelit të ri',
@@ -955,7 +968,7 @@ module.exports = {
                         page: {
                             messageCount: {
                                 title: 'Numri i mesazheve',
-                                name: 'numri i kërkuar i mesazheve',
+                                name: 'required message count',
                                 description: 'Dërgoni një numër që përdoruesi do të duhet ta ketë si në numërimin e mesazheve për të marrë rolin e zgjedhur.'
                             },
                             role: {
@@ -1021,7 +1034,7 @@ module.exports = {
     },
     followNews: {
         title: 'Ndiqni përditësimet e lajmeve',
-        name: 'Ndiqni Lajmet'
+        name: 'follow news'
     },
     staff: {
         title: 'Menaxho {name}',
