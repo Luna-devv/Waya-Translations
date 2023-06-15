@@ -4,6 +4,11 @@ module.exports = {
     invalidstickymessage: 'Nyo stickymessage exists in this channyew! :(',
     overview: {
         title: 'Stickymessage Config',
+        state: 'Status: {state}',
+        state_status: {
+            enabled: 'Enabled',
+            disabled: 'Disabled'
+        },
         permissions: 'Missing: {perms}',
         message: 'Message',
         embed: 'Embed',
@@ -13,6 +18,10 @@ module.exports = {
             hide: 'Hidden'
         },
         button: {
+            state: {
+                enable: 'Enable',
+                disable: 'Disable'
+            },
             exit: 'Save & Exit',
             color: {
                 enabled: 'Sewect a cowow fow the Embed',
