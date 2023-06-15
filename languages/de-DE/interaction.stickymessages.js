@@ -4,6 +4,11 @@ module.exports = {
     invalidstickymessage: 'In diesem Kanal existiert keine Stickymessage!',
     overview: {
         title: 'Stickymessage Konfiguration',
+        state: 'Status: {state}',
+        state_status: {
+            enabled: 'Enabled',
+            disabled: 'Disabled'
+        },
         permissions: 'Fehlt: {perms}',
         message: 'Nachricht',
         embed: 'Embed',
@@ -13,6 +18,10 @@ module.exports = {
             hide: 'Versteckt'
         },
         button: {
+            state: {
+                enable: 'Enable',
+                disable: 'Disable'
+            },
             exit: 'Speichern & Verlassen',
             color: {
                 enabled: 'Setzte eine Farbe für das Embed',
