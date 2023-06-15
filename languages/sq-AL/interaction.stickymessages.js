@@ -4,6 +4,11 @@ module.exports = {
     invalidstickymessage: 'Nuk ekziston asnjë mesazh ngjitës në këtë kanal!',
     overview: {
         title: 'Konfigurimi i mesazheve ngjitëse',
+        state: 'Status: {state}',
+        state_status: {
+            enabled: 'Enabled',
+            disabled: 'Disabled'
+        },
         permissions: 'Mungon: {perms}',
         message: 'Mesazh',
         embed: 'Embed',
@@ -13,6 +18,10 @@ module.exports = {
             hide: 'E fshehur'
         },
         button: {
+            state: {
+                enable: 'Enable',
+                disable: 'Disable'
+            },
             exit: 'Ruaj & Dil',
             color: {
                 enabled: 'Zgjidhni një ngjyrë për Embed',
