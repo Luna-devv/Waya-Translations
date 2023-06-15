@@ -4,6 +4,11 @@ module.exports = {
     invalidstickymessage: 'Brak lepkich wiadomości na tym kanale!',
     overview: {
         title: 'Konfiguracja Lepkich wiadomości',
+        state: 'Status: {state}',
+        state_status: {
+            enabled: 'Enabled',
+            disabled: 'Disabled'
+        },
         permissions: 'Brakuje: {perms}',
         message: 'Wiadomość',
         embed: 'Osadzona Treść',
@@ -13,6 +18,10 @@ module.exports = {
             hide: 'Ukryte'
         },
         button: {
+            state: {
+                enable: 'Enable',
+                disable: 'Disable'
+            },
             exit: 'Zapisz i wyjdź',
             color: {
                 enabled: 'Wybierz kolor dla osadzenia',
