@@ -4,6 +4,11 @@ module.exports = {
     invalidstickymessage: "No stickymessage exists in this channel!",
     overview: {
         title: "Stickymessage Config",
+        state: "Status: {state}",
+        state_status: {
+            enabled: "Enabled",
+            disabled: "Disabled"
+        },
         permissions: "Missing: {perms}",
         message: "Message",
         embed: "Embed",
@@ -13,6 +18,10 @@ module.exports = {
             hide: 'Hidden',
         },
         button: {
+            state: {
+                enable: "Enable",
+                disable: "Disable"
+            },
             exit: "Save & Exit",
             color: {
                 enabled: "Select a color for the Embed",
