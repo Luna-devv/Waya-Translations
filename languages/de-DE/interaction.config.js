@@ -119,13 +119,14 @@ module.exports = {
         button: {
             messages: 'Nachrichten',
             joins: 'Beitretungen',
+            expressions: 'Sticker/Emojis',
             welcomer: 'Begrüßung',
             byer: 'Verabschiedungen'
         },
         page: {
             messages: {
                 title: 'Nachrichten',
-                name: 'Nachrichten Loggen',
+                name: 'message logging',
                 option: {
                     channel: 'Kanal: {channel}',
                     mode: 'Modus: {mode}',
@@ -141,13 +142,27 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'Nachrichten Logging Kanal'
+                        name: 'message logging channel'
+                    }
+                }
+            },
+            expressions: {
+                title: 'Expressions',
+                name: 'expressions logging',
+                option: {
+                    channel: 'Channel: {channel}',
+                    mode: 'Mode: {mode}'
+                },
+                page: {
+                    channel: {
+                        title: 'Channel',
+                        name: 'expressions logging channel'
                     }
                 }
             },
             joins: {
                 title: 'Beitretungen',
-                name: 'Beitretungen Loggen',
+                name: 'join logging',
                 option: {
                     channel: 'Kanal: {channel}',
                     mode: 'Modus: {mode}',
@@ -161,7 +176,7 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'Beitretungen Loggen'
+                        name: 'join logging'
                     },
                     filter: {
                         title: 'Filter',
@@ -236,15 +251,15 @@ module.exports = {
                         page: {
                             verifiedrole: {
                                 title: 'Verifiziert Rolle',
-                                name: 'CAPTCHA verifizierte Rolle'
+                                name: 'CAPTCHA verified role'
                             },
                             unverifiedrole: {
                                 title: 'Unverifiziert Rolle',
-                                name: 'CAPTCHA unverifizierte Rolle'
+                                name: 'CAPTCHA unverified role'
                             },
                             logging: {
                                 title: 'Logging',
-                                name: 'CAPTCHA Logging Channel'
+                                name: 'CAPTCHA logging channel'
                             },
                             role: {
                                 title: 'Rolle',
@@ -252,7 +267,7 @@ module.exports = {
                             },
                             color: {
                                 title: 'Seitenfarbe',
-                                name: 'Seitenfarbe',
+                                name: 'page color',
                                 description: 'Sende eine Hex-Farbe in den Chat, die verwenden werden soll.\nWir empfehlen dir, eine Farbe in der Nähe von Schwarz mit sehr hoher Sättigung zu verwenden.\nBeachte, dass die Farbe im Passport immer heller aussieht.\nErhalte einen Hex-Farbcode von [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
                                 invalid: 'Dieser Farbcode ist keine gültige HEX Farbe.\nEinen HEX Farbcode kannst du hier finden [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
@@ -262,7 +277,7 @@ module.exports = {
             },
             welcomer: {
                 title: 'Willkommenheißer',
-                name: 'Willkommenheißer',
+                name: 'welcomer',
                 option: {
                     channel: 'Kanal: {channel}',
                     role: 'Rollen: {role}',
@@ -311,19 +326,15 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'Begrüßungskanal'
-                    },
-                    message: {
-                        title: 'Nachricht',
-                        name: 'Begrüßungsnachricht'
+                        name: 'welcomer channel'
                     },
                     role: {
                         title: 'Rolle',
-                        name: 'Beitretungsrolle'
+                        name: 'welcomer role'
                     },
                     autodelete: {
                         title: 'Automatisch löschen',
-                        name: 'Automatisch löschen',
+                        name: 'auto delete',
                         description: 'Die Willkommensnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
                     },
                     dm: { button: { disable: 'Deaktiviere DM Nachricht' } },
@@ -366,7 +377,7 @@ module.exports = {
                         page: {
                             background: {
                                 title: 'Hintergrund',
-                                name: 'Kartenhintergrund',
+                                name: 'card background',
                                 description: 'Der Link muss eine **direkte Bild URL** sein, es muss auch ein Link vom Typ {scheme} sein.\nWir empfehlen ein Verhältnis von {ratio} und eine mindeste Auflösung von {resolution}.'
                             },
                             text: {
@@ -416,11 +427,11 @@ module.exports = {
                         page: {
                             emoji: {
                                 title: 'Emote',
-                                name: 'Button Emote'
+                                name: 'button emote'
                             },
                             label: {
                                 title: 'Label',
-                                name: 'Button Text'
+                                name: 'button text'
                             }
                         }
                     }
@@ -428,7 +439,7 @@ module.exports = {
             },
             byer: {
                 title: 'Verabschieder',
-                name: 'Verabschieder',
+                name: 'byer',
                 option: {
                     channel: 'Kanal: {channel}',
                     message: {
@@ -440,20 +451,20 @@ module.exports = {
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
-                    autodelete: 'Autodelete festlegen'
+                    autodelete: 'Set autodelete'
                 },
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'Verabschiedungskanal'
+                        name: 'byer channel'
                     },
                     message: {
                         title: 'Nachricht',
-                        name: 'Verabschiedungsnachricht'
+                        name: 'byer message'
                     },
                     autodelete: {
                         title: 'Automatisch löschen',
-                        name: 'Automatisch löschen',
+                        name: 'auto delete',
                         description: 'Die Verabschiedungssnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
                     }
                 }
@@ -517,40 +528,42 @@ module.exports = {
         },
         page: {
             category: {
-                title: 'Kategorie',
-                name: 'Ticket Kategorie'
+                title: 'Category / Channel',
+                name: 'tickets category'
             },
             role: {
                 title: 'Staff Rolle',
-                name: 'Ticket Staff Rolle'
+                name: 'ticket staff role'
             },
             descriptions: {
                 title: 'Texte',
-                name: 'Ticket Beschreibungen',
+                name: 'ticket descriptions',
                 button: {
                     texts: 'Ticket Vorschau',
                     topic: 'Kanal Thema Bearbeiten',
                     unclaimed: 'Unclaimed Embed Bearbeiten',
-                    claimed: 'Claimed Embed Bearbeiten'
+                    claimed: 'Claimed Embed Bearbeiten',
+                    closeEmote: 'Change Close Emote',
+                    claimEmote: 'Change Claim Emote'
                 },
                 page: {
-                    unclaimed: {
-                        title: 'Unclaimed',
-                        name: 'Unclaimed Ticket Beschreibung'
-                    },
-                    claimed: {
-                        title: 'Claimed',
-                        name: 'Claimed Ticket Beschreibung'
-                    },
                     topic: {
                         title: 'Thema',
-                        name: 'Ticket Thema'
+                        name: 'tickets topic'
+                    },
+                    closeEmote: {
+                        title: 'Close Button Emote',
+                        name: 'close emote'
+                    },
+                    claimEmote: {
+                        title: 'Claim Button Emote',
+                        name: 'claim emote'
                     }
                 }
             },
             logging: {
                 title: 'Logging',
-                name: 'Tickets Loggen'
+                name: 'ticket logging'
             }
         }
     },
@@ -577,15 +590,15 @@ module.exports = {
         page: {
             role: {
                 title: 'Umgehungsrolle',
-                name: 'Umgehungsrolle'
+                name: 'bypass role'
             },
             logging: {
                 title: 'Loggen',
-                name: 'Moderationslogs'
+                name: 'moderation logs'
             },
             filter: {
                 title: 'Filter',
-                name: 'Moderation Filter',
+                name: 'moderation Filter',
                 option: {
                     message: 'Nachricht: {message}',
                     total: 'Insgesamt: **{amount} Wörter**',
@@ -615,26 +628,26 @@ module.exports = {
                     },
                     words: {
                         title: 'Wörter',
-                        name: 'Gespenstes Wort',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
+                        name: 'blacklisted word',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remove words.\nPrefix the message with `-` to remove words.',
                         bulkAdded: 'Erfolgreich {amout} neue Wörter auf die Blacklist hinzugefügt.',
                         added: 'Erfolgreich "`{word}`" als ein neues Wort auf der Blacklist hinzugefügt.',
                         removed: 'Erfolgreich das Wort "`{word}`" von der Blacklist entfernt.'
                     },
                     message: {
                         title: 'Nachricht',
-                        name: 'Blacklisted Wort Nachricht'
+                        name: 'blacklisted word reply'
                     },
                     timeout: {
                         title: 'Mute Dauer',
-                        name: 'Mute Dauer',
+                        name: 'timeout duration',
                         description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiScam: {
                 title: 'Anti Scam',
-                name: 'Anti Scam Moderation',
+                name: 'moderation anti scam',
                 option: {
                     message: 'Nachricht: {message}',
                     actions: 'Aktionen: {types}',
@@ -661,18 +674,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Nachricht',
-                        name: 'Anti Scam Antwort'
+                        name: 'anit scam reply'
                     },
                     timeout: {
                         title: 'Stumm Dauer',
-                        name: 'Stumm Dauer',
+                        name: 'timeout duration',
                         description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiLink: {
                 title: 'Anti Links',
-                name: 'Anti Link Moderation',
+                name: 'moderation anti link',
                 option: {
                     message: 'Nachricht: {message}',
                     actions: 'Aktionen: {types}',
@@ -703,18 +716,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Nachricht',
-                        name: 'Anti Link Antwort'
+                        name: 'anti link reply'
                     },
                     timeout: {
                         title: 'Stumm Dauer',
-                        name: 'Stumm Dauer',
+                        name: 'timeout duration',
                         description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiSpam: {
                 title: 'Anti Spam',
-                name: 'Anti Spam Moderation',
+                name: 'moderation anti spam',
                 option: {
                     message: 'Nachricht: {message}',
                     actions: 'Aktionen: {types}',
@@ -743,11 +756,11 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Nachricht',
-                        name: 'Anti Spam Nachricht'
+                        name: 'anti spam reply'
                     },
                     timeout: {
                         title: 'Stumm Dauer',
-                        name: 'Stumm Dauer',
+                        name: 'timeout duration',
                         description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
                     },
                     threshold: {
@@ -833,28 +846,28 @@ module.exports = {
         page: {
             channel: {
                 title: 'Kanal',
-                name: 'Starboard Kanal'
+                name: 'starboard channel'
             },
             emoji: {
                 title: 'Emoji',
-                name: 'Starboard Emoji'
+                name: 'starboard emoji'
             },
             color: {
                 title: 'Farbe',
-                name: 'Starboard Farbe'
+                name: 'starboard color'
             },
             count: {
                 title: 'Reaktionen',
-                name: 'erforderliche Reaktionen',
+                name: 'requierd count',
                 description: 'Sende eine gültige Zahl, um die Minimum-Anzahl an {emote} Reaktionen festzulegen.'
             },
             blacklistedRole: {
                 title: 'Blacklist Rolle',
-                name: 'Blacklisted Rolle'
+                name: 'blacklisted role'
             },
             blacklistedChannels: {
                 title: 'Blacklist Channels',
-                name: 'Blacklist Channel List',
+                name: 'blacklist channel list',
                 description: 'Erwähne einen Channel/Kategorie oder sende die Id in den Chat.\nPräfix die Nachricht mit `+` zum Hinzufügen oder `-` um Kanäle zu entfernen.\nDu kannst mehrere Kanäle mit einem Leerzeichen trennen.\nSchreibe `none`, um alle Channels zu entfernen.',
                 missingPrefix: 'Der Nachricht muss ein `+` vorangestellt werden, um Kanäle hinzuzufügen, oder ein `-`, um Kanäle zu entfernen.'
             }
@@ -877,7 +890,7 @@ module.exports = {
         page: {
             channel: {
                 title: 'Channel',
-                name: 'Starboard Channel'
+                name: 'counting channel'
             },
             successEmoji: {
                 title: 'Correct Emoji',
@@ -941,11 +954,11 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Nachricht',
-                        name: 'Level Up nachricht'
+                        name: 'level up reply'
                     },
                     channel: {
                         title: 'Kanal',
-                        name: 'Level Up Kanal'
+                        name: 'level up Channel'
                     },
                     addRole: {
                         title: 'Neue Level Rolle',
@@ -955,7 +968,7 @@ module.exports = {
                         page: {
                             messageCount: {
                                 title: 'Nachrichtenanzahl',
-                                name: 'erforderliche Nachrichtenanzahl',
+                                name: 'required message count',
                                 description: 'Senden Sie eine Nummer, die der User als Nachrichtenanzahl benötigt, um die ausgewählte Rolle zu erhalten.'
                             },
                             role: {
@@ -1021,7 +1034,7 @@ module.exports = {
     },
     followNews: {
         title: 'News Updates Folgen',
-        name: 'News Folgen'
+        name: 'follow news'
     },
     staff: {
         title: '{name} Verwalten',
