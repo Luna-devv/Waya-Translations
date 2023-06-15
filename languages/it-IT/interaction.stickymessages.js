@@ -4,6 +4,11 @@ module.exports = {
     invalidstickymessage: 'Nessun messaggio adesivo esiste in questo canale!',
     overview: {
         title: 'Configurazione Messaggio Adesivo',
+        state: 'Status: {state}',
+        state_status: {
+            enabled: 'Enabled',
+            disabled: 'Disabled'
+        },
         permissions: 'Mancanti: {perms}',
         message: 'Messaggio',
         embed: 'Embed',
@@ -13,6 +18,10 @@ module.exports = {
             hide: 'Nascosto'
         },
         button: {
+            state: {
+                enable: 'Enable',
+                disable: 'Disable'
+            },
             exit: 'Salva ed esci',
             color: {
                 enabled: 'Scegli un colore per l\'Embed',
