@@ -119,13 +119,14 @@ module.exports = {
         button: {
             messages: 'Messages',
             joins: 'Joins',
+            expressions: 'Sticker/Emojis',
             welcomer: 'Wewcoming',
             byer: 'Bying'
         },
         page: {
             messages: {
                 title: 'Messages',
-                name: 'Message Wogging',
+                name: 'message logging',
                 option: {
                     channel: 'Channyew: {channel}',
                     mode: 'Mode: {mode}',
@@ -141,13 +142,27 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Channyew',
-                        name: 'Message Wogging channyew'
+                        name: 'message logging channel'
+                    }
+                }
+            },
+            expressions: {
+                title: 'Expressions',
+                name: 'expressions logging',
+                option: {
+                    channel: 'Channel: {channel}',
+                    mode: 'Mode: {mode}'
+                },
+                page: {
+                    channel: {
+                        title: 'Channel',
+                        name: 'expressions logging channel'
                     }
                 }
             },
             joins: {
                 title: 'Joins',
-                name: 'Join Wogging',
+                name: 'join logging',
                 option: {
                     channel: 'Channyew: {channel}',
                     mode: 'Mode: {mode}',
@@ -161,7 +176,7 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Channyew',
-                        name: 'Join Wogging'
+                        name: 'join logging'
                     },
                     filter: {
                         title: 'Fiwtew',
@@ -236,15 +251,15 @@ module.exports = {
                         page: {
                             verifiedrole: {
                                 title: 'Vewified Wowe',
-                                name: 'CAPTCHA vewified Wowe'
+                                name: 'CAPTCHA verified role'
                             },
                             unverifiedrole: {
                                 title: 'Unvewified Wowe',
-                                name: 'CAPTCHA unvewified Wowe'
+                                name: 'CAPTCHA unverified role'
                             },
                             logging: {
                                 title: 'Wogging',
-                                name: 'CAPTCHA wogging Channyew'
+                                name: 'CAPTCHA logging channel'
                             },
                             role: {
                                 title: 'Wowe',
@@ -252,7 +267,7 @@ module.exports = {
                             },
                             color: {
                                 title: 'Page Cowow',
-                                name: 'Page Cowow',
+                                name: 'page color',
                                 description: 'Paste a Hex cowow into the chat u want to use.\nWe wecommend u using a cowow nyeaw to bwack with vewy high satuwation.\nNyote that the cowow on the Passpowt wiww awways wook bwightew.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
                                 invalid: 'The cowow code is nyot a vawid Hex cowow.\nGet a Hex cowow code fwom [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
@@ -262,7 +277,7 @@ module.exports = {
             },
             welcomer: {
                 title: 'Wewcomew',
-                name: 'Wewcomew',
+                name: 'welcomer',
                 option: {
                     channel: 'Channyew: {channel}',
                     role: 'Wowes: {role}',
@@ -311,19 +326,15 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Channyew',
-                        name: 'Wewcomew Channyew'
-                    },
-                    message: {
-                        title: 'Message',
-                        name: 'Wewcomew Message'
+                        name: 'welcomer channel'
                     },
                     role: {
                         title: 'Wowe',
-                        name: 'Wewcomew Wowe'
+                        name: 'welcomer role'
                     },
                     autodelete: {
                         title: 'Auto Dewete',
-                        name: 'Auto Dewete',
+                        name: 'auto delete',
                         description: 'The Wewcomew message wiww be deweted aftew this time.\nWe wecommend u to keep this time showt (onwy few seconds).\nExampwe: `1m 3s`'
                     },
                     dm: { button: { disable: 'Disabwe DM message' } },
@@ -366,7 +377,7 @@ module.exports = {
                         page: {
                             background: {
                                 title: 'Backgwound',
-                                name: 'Cawd Backgwound',
+                                name: 'card background',
                                 description: 'The wink must be a **diwect image Uww**, it awso must be a {scheme} type wink.\nWe wecommend a watio of {ratio} and a min wesowution of {resolution}.'
                             },
                             text: {
@@ -416,11 +427,11 @@ module.exports = {
                         page: {
                             emoji: {
                                 title: 'Emote',
-                                name: 'Button Emote'
+                                name: 'button emote'
                             },
                             label: {
                                 title: 'Wabew',
-                                name: 'Button Text'
+                                name: 'button text'
                             }
                         }
                     }
@@ -428,7 +439,7 @@ module.exports = {
             },
             byer: {
                 title: 'Byew',
-                name: 'Byew',
+                name: 'byer',
                 option: {
                     channel: 'Channyew: {channel}',
                     message: {
@@ -440,20 +451,20 @@ module.exports = {
                 },
                 button: {
                     message: 'Edit Message',
-                    autodelete: 'Set Autodewete'
+                    autodelete: 'Set autodelete'
                 },
                 page: {
                     channel: {
                         title: 'Channyew',
-                        name: 'Set Channyew'
+                        name: 'byer channel'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Byew Message'
+                        name: 'byer message'
                     },
                     autodelete: {
                         title: 'Auto Dewete',
-                        name: 'Auto Dewete',
+                        name: 'auto delete',
                         description: 'The Wewcomew message wiww be deweted aftew this time.\nWe wecommend u to keep this time showt (onwy few seconds).\nExampwe: `1m 3s`'
                     }
                 }
@@ -517,40 +528,42 @@ module.exports = {
         },
         page: {
             category: {
-                title: 'Categowy',
-                name: 'Tickets Categowy'
+                title: 'Category / Channel',
+                name: 'tickets category'
             },
             role: {
                 title: 'Staff Wowe',
-                name: 'Ticket Staff wowe'
+                name: 'ticket staff role'
             },
             descriptions: {
                 title: 'Texts',
-                name: 'Ticket descwiptions',
+                name: 'ticket descriptions',
                 button: {
                     texts: 'Pweview Ticket',
                     topic: 'Change Topic',
                     unclaimed: 'Change Uncwaimed Embed',
-                    claimed: 'Change Cwaimed Embed'
+                    claimed: 'Change Cwaimed Embed',
+                    closeEmote: 'Change Close Emote',
+                    claimEmote: 'Change Claim Emote'
                 },
                 page: {
-                    unclaimed: {
-                        title: 'Uncwaimed',
-                        name: 'Uncwaimed Ticket descwiption'
-                    },
-                    claimed: {
-                        title: 'Cwaimed',
-                        name: 'Cwaimed Ticket descwiption'
-                    },
                     topic: {
                         title: 'Topic',
-                        name: 'Tickets Topic'
+                        name: 'tickets topic'
+                    },
+                    closeEmote: {
+                        title: 'Close Button Emote',
+                        name: 'close emote'
+                    },
+                    claimEmote: {
+                        title: 'Claim Button Emote',
+                        name: 'claim emote'
                     }
                 }
             },
             logging: {
                 title: 'Wogging',
-                name: 'Ticket Wogging'
+                name: 'ticket logging'
             }
         }
     },
@@ -577,15 +590,15 @@ module.exports = {
         page: {
             role: {
                 title: 'Bypass Wowe',
-                name: 'Bypass wowe'
+                name: 'bypass role'
             },
             logging: {
                 title: 'Wogging',
-                name: 'Modewation wogs'
+                name: 'moderation logs'
             },
             filter: {
                 title: 'Fiwtew',
-                name: 'Modewation Fiwtew',
+                name: 'moderation Filter',
                 option: {
                     message: 'Message: {message}',
                     total: 'Totaw: **{amount} wowds**',
@@ -615,26 +628,26 @@ module.exports = {
                     },
                     words: {
                         title: 'Wowds',
-                        name: 'Bwackwisted wowd',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remobe words.\nPrefix the message with `-` to remove words.',
+                        name: 'blacklisted word',
+                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remove words.\nPrefix the message with `-` to remove words.',
                         bulkAdded: 'Successfuwwy buwk added {amout} nyew wowds to the bwackwist.',
                         added: 'Successfuwwy added "`{word}`" as nyew bwackwisted wowd.',
                         removed: 'Successfuwwy wemuvd "`{word}`" as bwackwisted wowd.'
                     },
                     message: {
                         title: 'Message',
-                        name: 'Bwackwisted wowd'
+                        name: 'blacklisted word reply'
                     },
                     timeout: {
                         title: 'Timeout Duwation',
-                        name: 'Timeout Duwation',
+                        name: 'timeout duration',
                         description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiScam: {
                 title: 'Anti Scam',
-                name: 'Modewation Anti Scam',
+                name: 'moderation anti scam',
                 option: {
                     message: 'Message: {message}',
                     actions: 'Actions: {types}',
@@ -661,18 +674,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anyit Scam wepwy'
+                        name: 'anit scam reply'
                     },
                     timeout: {
                         title: 'Timeout Duwation',
-                        name: 'Timeout Duwation',
+                        name: 'timeout duration',
                         description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiLink: {
                 title: 'Anti Wink',
-                name: 'Modewation Anti Wink',
+                name: 'moderation anti link',
                 option: {
                     message: 'Message: {message}',
                     actions: 'Actions: {types}',
@@ -703,18 +716,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anti Wink Wepwy'
+                        name: 'anti link reply'
                     },
                     timeout: {
                         title: 'Timeout Duwation',
-                        name: 'Timeout duwation',
+                        name: 'timeout duration',
                         description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiSpam: {
                 title: 'Anti Spam',
-                name: 'Modewation Anti Spam',
+                name: 'moderation anti spam',
                 option: {
                     message: 'Message: {message}',
                     actions: 'Actions: {types}',
@@ -743,11 +756,11 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Anyit Scam wepwy'
+                        name: 'anti spam reply'
                     },
                     timeout: {
                         title: 'Timeout Duwation',
-                        name: 'Timeout duwation',
+                        name: 'timeout duration',
                         description: 'The user will be set on Timeout for this duration!\nInput must be less than 28 days.\nExample: `7d 4h 8m 3s`'
                     },
                     threshold: {
@@ -833,28 +846,28 @@ module.exports = {
         page: {
             channel: {
                 title: 'Channyew',
-                name: 'Stawboawd Channyew'
+                name: 'starboard channel'
             },
             emoji: {
                 title: 'Emoji',
-                name: 'Stawboawd Emoji'
+                name: 'starboard emoji'
             },
             color: {
                 title: 'Cowow',
-                name: 'Stawboawd Cowow'
+                name: 'starboard color'
             },
             count: {
                 title: 'Count',
-                name: 'wequiewd Count',
+                name: 'requierd count',
                 description: 'Send a nyumbew to set the minyimum {emote} weaction count wequiwement.'
             },
             blacklistedRole: {
                 title: 'Bwackwisted Wowe',
-                name: 'bwackwisted Wowe'
+                name: 'blacklisted role'
             },
             blacklistedChannels: {
                 title: 'Bwackwist Channyews',
-                name: 'Bwackwist Channyew wist',
+                name: 'blacklist channel list',
                 description: 'Mention a Channyew/Categowy ow paste the Channyew ID into the chat.\nPwefix the message with `+` to add ow `-` to wemuv Channyews.\nU can send muwtipwe Channyews sepewated with a space.\nType `none` to wemuv aww Channyews.',
                 missingPrefix: 'The message must be pwefixed with `+` to add ow `-` to wemuv Channyews.'
             }
@@ -877,7 +890,7 @@ module.exports = {
         page: {
             channel: {
                 title: 'Channel',
-                name: 'Starboard Channel'
+                name: 'counting channel'
             },
             successEmoji: {
                 title: 'Correct Emoji',
@@ -941,11 +954,11 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Message',
-                        name: 'Wevew Up wepwy'
+                        name: 'level up reply'
                     },
                     channel: {
                         title: 'Channyew',
-                        name: 'Wevew Up Channyew'
+                        name: 'level up Channel'
                     },
                     addRole: {
                         title: 'Nyew Wevew Wowe',
@@ -955,7 +968,7 @@ module.exports = {
                         page: {
                             messageCount: {
                                 title: 'Message Count',
-                                name: 'wequiwed Message Count',
+                                name: 'required message count',
                                 description: 'Babe, can u send a nyumbew, that the usew wiww wequiwed to have as in message count to get the sewected wowe?'
                             },
                             role: {
@@ -1021,7 +1034,7 @@ module.exports = {
     },
     followNews: {
         title: 'Fowwow Nyews Updates',
-        name: 'Fowwow Nyews'
+        name: 'follow news'
     },
     staff: {
         title: 'Manyage {name}',
