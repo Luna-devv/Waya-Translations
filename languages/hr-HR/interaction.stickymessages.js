@@ -4,6 +4,11 @@ module.exports = {
     invalidstickymessage: 'U ovom kanalu ne postoji ljepljiva poruka!',
     overview: {
         title: 'Konfiguracija ljepljivih poruka',
+        state: 'Status: {state}',
+        state_status: {
+            enabled: 'Enabled',
+            disabled: 'Disabled'
+        },
         permissions: 'Nedostaje: {perms}',
         message: 'Poruka',
         embed: 'Embed',
@@ -13,6 +18,10 @@ module.exports = {
             hide: 'Skriven'
         },
         button: {
+            state: {
+                enable: 'Enable',
+                disable: 'Disable'
+            },
             exit: 'Spremi i izađi',
             color: {
                 enabled: 'Odaberite boju za Embed',
