@@ -6,8 +6,8 @@ module.exports = {
         title: 'Konfiguracja Lepkich wiadomości',
         state: 'Status: {state}',
         state_status: {
-            enabled: 'Enabled',
-            disabled: 'Disabled'
+            enabled: 'Włączone',
+            disabled: 'Wyłączone'
         },
         permissions: 'Brakuje: {perms}',
         message: 'Wiadomość',
@@ -19,8 +19,8 @@ module.exports = {
         },
         button: {
             state: {
-                enable: 'Enable',
-                disable: 'Disable'
+                enable: 'Włącz',
+                disable: 'Wyłącz'
             },
             exit: 'Zapisz i wyjdź',
             color: {
