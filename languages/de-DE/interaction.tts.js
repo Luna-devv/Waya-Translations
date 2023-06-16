@@ -8,6 +8,6 @@ module.exports = {
         title: 'Persönliche Text to Speech Konfiguration',
         voice: 'Standard Stimme: {voice}',
         filetype: 'Standard Dateityp: {filetype}',
-        footer: 'The example audio respects all your personal options.'
+        footer: 'Die Beispiel Audio respektiert all deine persönlichen Standard Optionen.'
     }
 };
