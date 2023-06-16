@@ -259,7 +259,7 @@ module.exports = {
                             },
                             logging: {
                                 title: 'Logging',
-                                name: 'CAPTCHA logging channel'
+                                name: 'CAPTCHA logging Kanal'
                             },
                             role: {
                                 title: 'Rolle',
@@ -267,7 +267,7 @@ module.exports = {
                             },
                             color: {
                                 title: 'Seitenfarbe',
-                                name: 'page color',
+                                name: 'Seitenfarbe',
                                 description: 'Sende eine Hex-Farbe in den Chat, die verwenden werden soll.\nWir empfehlen dir, eine Farbe in der Nähe von Schwarz mit sehr hoher Sättigung zu verwenden.\nBeachte, dass die Farbe im Passport immer heller aussieht.\nErhalte einen Hex-Farbcode von [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
                                 invalid: 'Dieser Farbcode ist keine gültige HEX Farbe.\nEinen HEX Farbcode kannst du hier finden [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
@@ -277,7 +277,7 @@ module.exports = {
             },
             welcomer: {
                 title: 'Willkommenheißer',
-                name: 'welcomer',
+                name: 'Willkommensheißer',
                 option: {
                     channel: 'Kanal: {channel}',
                     role: 'Rollen: {role}',
@@ -326,15 +326,15 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'welcomer channel'
+                        name: 'Willkommenskanal'
                     },
                     role: {
                         title: 'Rolle',
-                        name: 'welcomer role'
+                        name: 'Willkommensrolle'
                     },
                     autodelete: {
                         title: 'Automatisch löschen',
-                        name: 'auto delete',
+                        name: 'automatisch löschen',
                         description: 'Die Willkommensnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
                     },
                     dm: { button: { disable: 'Deaktiviere DM Nachricht' } },
@@ -372,20 +372,20 @@ module.exports = {
                                 enable: 'Karte im Embed anzeigen',
                                 disable: 'Karte nicht im Embed anzeigen'
                             },
-                            color: 'Text Color'
+                            color: 'Textfarbe'
                         },
                         page: {
                             background: {
                                 title: 'Hintergrund',
-                                name: 'card background',
+                                name: 'Kartenhintergrund',
                                 description: 'Der Link muss eine **direkte Bild URL** sein, es muss auch ein Link vom Typ {scheme} sein.\nWir empfehlen ein Verhältnis von {ratio} und eine mindeste Auflösung von {resolution}.'
                             },
                             text: {
                                 title: 'Text',
                                 page: {
                                     color: {
-                                        title: 'Color',
-                                        name: 'text color'
+                                        title: 'Farbe',
+                                        name: 'Textfarbe'
                                     }
                                 }
                             }
@@ -396,11 +396,11 @@ module.exports = {
                         title: 'Winke, um Hallo zu sagen',
                         option: {
                             send: 'Sende: {type}',
-                            emoji: 'Emote: {emote}',
+                            emoji: 'Emoji: {emote}',
                             label: 'Label: {label}'
                         },
                         button: {
-                            emoji: 'Change Button Emote',
+                            emoji: 'Ändern Button Text',
                             label: 'Ändern Button Text',
                             ping: {
                                 enable: 'Aktiviere Ping',
@@ -426,12 +426,12 @@ module.exports = {
                         },
                         page: {
                             emoji: {
-                                title: 'Emote',
-                                name: 'button emote'
+                                title: 'Emoji',
+                                name: 'Button Emoji'
                             },
                             label: {
                                 title: 'Label',
-                                name: 'button text'
+                                name: 'Button Text'
                             }
                         }
                     }
@@ -439,7 +439,7 @@ module.exports = {
             },
             byer: {
                 title: 'Verabschieder',
-                name: 'byer',
+                name: 'Verabschieder',
                 option: {
                     channel: 'Kanal: {channel}',
                     message: {
@@ -451,20 +451,20 @@ module.exports = {
                 },
                 button: {
                     message: 'Nachricht Bearbeiten',
-                    autodelete: 'Set autodelete'
+                    autodelete: 'Auto-Löschen festlegen'
                 },
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'byer channel'
+                        name: 'Verabschiedungskanal'
                     },
                     message: {
                         title: 'Nachricht',
-                        name: 'byer message'
+                        name: 'Verabschiedungsnachricht'
                     },
                     autodelete: {
                         title: 'Automatisch löschen',
-                        name: 'auto delete',
+                        name: 'automatisch löschen',
                         description: 'Die Verabschiedungssnachricht wird nach dieser Zeit gelöscht.\nWir empfehlen dir, diese Zeit kurz zu halten (nur wenige Sekunden).\nBeispiel: `1m 3s`'
                     }
                 }
@@ -486,14 +486,14 @@ module.exports = {
             },
             position: 'Position: {type}',
             positionType: {
-                top: 'At the top',
-                bottom: 'On the bottom'
+                top: 'Oben',
+                bottom: 'Unten'
             }
         },
         button: {
             channelPosition: {
-                top: 'Position: To top',
-                bottom: 'Position: To bottom'
+                top: 'Position: Oben',
+                bottom: 'Position: Unten'
             },
             forceReason: {
                 enable: 'Grund Erzwingen',
@@ -528,31 +528,31 @@ module.exports = {
         },
         page: {
             category: {
-                title: 'Category / Channel',
-                name: 'tickets category'
+                title: 'Kategorie / Kanal',
+                name: 'Ticket Kategorie'
             },
             role: {
                 title: 'Staff Rolle',
-                name: 'ticket staff role'
+                name: 'Ticket Mitarbeiter Rolle'
             },
             descriptions: {
                 title: 'Texte',
-                name: 'ticket descriptions',
+                name: 'Ticket Beschreibungen',
                 button: {
                     texts: 'Ticket Vorschau',
                     topic: 'Kanal Thema Bearbeiten',
                     unclaimed: 'Unclaimed Embed Bearbeiten',
                     claimed: 'Claimed Embed Bearbeiten',
-                    closeEmote: 'Change Close Emote',
-                    claimEmote: 'Change Claim Emote'
+                    closeEmote: 'Schließen Emoji ändern',
+                    claimEmote: 'Beanspruchungs Emoji ändern'
                 },
                 page: {
                     topic: {
                         title: 'Thema',
-                        name: 'tickets topic'
+                        name: 'Ticket Thema'
                     },
                     closeEmote: {
-                        title: 'Close Button Emote',
+                        title: 'Schließen Button Emoji',
                         name: 'close emote'
                     },
                     claimEmote: {
