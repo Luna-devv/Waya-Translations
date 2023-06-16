@@ -95,8 +95,8 @@ module.exports = {
     main: {
         title: '{name} Konfigurieren',
         option: {
-            logging: 'Messages, Joins, Captcha, Welcoming',
-            fun: 'Starboard, Counting',
+            logging: 'Nachrichten, Beitretungen, Captcha, Willkommer',
+            fun: 'Starboard, Zählen',
             premium: {
                 text: 'Enterprise Level {tier}',
                 buy: 'Enterprise Kaufen'
@@ -104,7 +104,7 @@ module.exports = {
         },
         button: {
             logging: 'Loggen',
-            fun: 'Fun',
+            fun: 'Spaß',
             tickets: 'Tickets',
             moderation: 'Moderation',
             misc: 'Sonstiges',
@@ -126,7 +126,7 @@ module.exports = {
         page: {
             messages: {
                 title: 'Nachrichten',
-                name: 'message logging',
+                name: 'Nachrichten loggen',
                 option: {
                     channel: 'Kanal: {channel}',
                     mode: 'Modus: {mode}',
@@ -142,27 +142,27 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'message logging channel'
+                        name: 'Nachrichten logging Kanal'
                     }
                 }
             },
             expressions: {
-                title: 'Expressions',
-                name: 'expressions logging',
+                title: 'Ausdrücke',
+                name: 'Ausdrücke logging',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}'
+                    channel: 'Kanal: {channel}',
+                    mode: 'Modus: {mode}'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'expressions logging channel'
+                        title: 'Kanal',
+                        name: 'Ausdrücke logging Kanal'
                     }
                 }
             },
             joins: {
                 title: 'Beitretungen',
-                name: 'join logging',
+                name: 'beitretungen logging',
                 option: {
                     channel: 'Kanal: {channel}',
                     mode: 'Modus: {mode}',
@@ -176,7 +176,7 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'join logging'
+                        name: 'beitretungen logging'
                     },
                     filter: {
                         title: 'Filter',
@@ -251,11 +251,11 @@ module.exports = {
                         page: {
                             verifiedrole: {
                                 title: 'Verifiziert Rolle',
-                                name: 'CAPTCHA verified role'
+                                name: 'CAPTCHA verifizierte Rolle'
                             },
                             unverifiedrole: {
                                 title: 'Unverifiziert Rolle',
-                                name: 'CAPTCHA unverified role'
+                                name: 'CAPTCHA unverifizierte Rolle'
                             },
                             logging: {
                                 title: 'Logging',
