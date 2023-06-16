@@ -6,8 +6,8 @@ module.exports = {
         title: 'Stickymessage Konfiguration',
         state: 'Status: {state}',
         state_status: {
-            enabled: 'Enabled',
-            disabled: 'Disabled'
+            enabled: 'Aktiviert',
+            disabled: 'Deaktiviert'
         },
         permissions: 'Fehlt: {perms}',
         message: 'Nachricht',
@@ -19,8 +19,8 @@ module.exports = {
         },
         button: {
             state: {
-                enable: 'Enable',
-                disable: 'Disable'
+                enable: 'Aktivieren',
+                disable: 'Deaktivieren'
             },
             exit: 'Speichern & Verlassen',
             color: {
