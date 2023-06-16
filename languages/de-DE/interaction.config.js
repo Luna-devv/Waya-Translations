@@ -553,17 +553,17 @@ module.exports = {
                     },
                     closeEmote: {
                         title: 'Schließen Button Emoji',
-                        name: 'close emote'
+                        name: 'schließ Emote'
                     },
                     claimEmote: {
-                        title: 'Claim Button Emote',
-                        name: 'claim emote'
+                        title: 'Beanspruchungs Button Emote',
+                        name: 'beanspruchungs Emote'
                     }
                 }
             },
             logging: {
                 title: 'Logging',
-                name: 'ticket logging'
+                name: 'Ticket logging'
             }
         }
     },
@@ -590,15 +590,15 @@ module.exports = {
         page: {
             role: {
                 title: 'Umgehungsrolle',
-                name: 'bypass role'
+                name: 'umgehungsrolle'
             },
             logging: {
                 title: 'Loggen',
-                name: 'moderation logs'
+                name: 'Moderationslogs'
             },
             filter: {
                 title: 'Filter',
-                name: 'moderation Filter',
+                name: 'Moderationsfilter',
                 option: {
                     message: 'Nachricht: {message}',
                     total: 'Insgesamt: **{amount} Wörter**',
@@ -628,26 +628,26 @@ module.exports = {
                     },
                     words: {
                         title: 'Wörter',
-                        name: 'blacklisted word',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remove words.\nPrefix the message with `-` to remove words.',
+                        name: 'geblocktes Wort',
+                        awaitMessage: 'Sende ein oder mehrere Wörter, die geblockt werden sollen.\nTeile Wörter mit `, ` um mehrere hinzuzufügen/zu entfernen.\nPräfix die Nachricht mit `-` um Wörter zu entfernen.',
                         bulkAdded: 'Erfolgreich {amout} neue Wörter auf die Blacklist hinzugefügt.',
                         added: 'Erfolgreich "`{word}`" als ein neues Wort auf der Blacklist hinzugefügt.',
                         removed: 'Erfolgreich das Wort "`{word}`" von der Blacklist entfernt.'
                     },
                     message: {
                         title: 'Nachricht',
-                        name: 'blacklisted word reply'
+                        name: 'geblocktes Wort Nachricht'
                     },
                     timeout: {
                         title: 'Mute Dauer',
-                        name: 'timeout duration',
+                        name: 'stumm Dauer',
                         description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiScam: {
                 title: 'Anti Scam',
-                name: 'moderation anti scam',
+                name: 'Antiscam Moderation',
                 option: {
                     message: 'Nachricht: {message}',
                     actions: 'Aktionen: {types}',
@@ -674,18 +674,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Nachricht',
-                        name: 'anit scam reply'
+                        name: 'Antiscam Antwort'
                     },
                     timeout: {
                         title: 'Stumm Dauer',
-                        name: 'timeout duration',
+                        name: 'stumm Dauer',
                         description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiLink: {
                 title: 'Anti Links',
-                name: 'moderation anti link',
+                name: 'Antilink Moderation',
                 option: {
                     message: 'Nachricht: {message}',
                     actions: 'Aktionen: {types}',
@@ -716,18 +716,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Nachricht',
-                        name: 'anti link reply'
+                        name: 'Antilink Antwort'
                     },
                     timeout: {
                         title: 'Stumm Dauer',
-                        name: 'timeout duration',
+                        name: 'stumm Dauer',
                         description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiSpam: {
                 title: 'Anti Spam',
-                name: 'moderation anti spam',
+                name: 'Antispam Moderation',
                 option: {
                     message: 'Nachricht: {message}',
                     actions: 'Aktionen: {types}',
@@ -756,11 +756,11 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Nachricht',
-                        name: 'anti spam reply'
+                        name: 'Antispam Antwort'
                     },
                     timeout: {
                         title: 'Stumm Dauer',
-                        name: 'timeout duration',
+                        name: 'stumm Dauer',
                         description: 'Der User wird gestummt für die folgende Dauer!\nInput muss kürzer als 28 Tage sein.\nBeispiel: `7d 4h 8m 3s`'
                     },
                     threshold: {
@@ -773,10 +773,10 @@ module.exports = {
         }
     },
     fun: {
-        title: 'Configure Fun',
+        title: 'Spaß konfigurieren',
         button: {
             starboard: 'Starboard',
-            counting: 'Counting'
+            counting: 'Zählen'
         }
     },
     starboard: {
@@ -846,59 +846,59 @@ module.exports = {
         page: {
             channel: {
                 title: 'Kanal',
-                name: 'starboard channel'
+                name: 'starboard Kanal'
             },
             emoji: {
                 title: 'Emoji',
-                name: 'starboard emoji'
+                name: 'Starboard Emoji'
             },
             color: {
                 title: 'Farbe',
-                name: 'starboard color'
+                name: 'Starboard Farbe'
             },
             count: {
                 title: 'Reaktionen',
-                name: 'requierd count',
+                name: 'erforderliche Reaktionen',
                 description: 'Sende eine gültige Zahl, um die Minimum-Anzahl an {emote} Reaktionen festzulegen.'
             },
             blacklistedRole: {
                 title: 'Blacklist Rolle',
-                name: 'blacklisted role'
+                name: 'Blacklisted Rolle'
             },
             blacklistedChannels: {
                 title: 'Blacklist Channels',
-                name: 'blacklist channel list',
+                name: 'Blacklist Kanalliste',
                 description: 'Erwähne einen Channel/Kategorie oder sende die Id in den Chat.\nPräfix die Nachricht mit `+` zum Hinzufügen oder `-` um Kanäle zu entfernen.\nDu kannst mehrere Kanäle mit einem Leerzeichen trennen.\nSchreibe `none`, um alle Channels zu entfernen.',
                 missingPrefix: 'Der Nachricht muss ein `+` vorangestellt werden, um Kanäle hinzuzufügen, oder ein `-`, um Kanäle zu entfernen.'
             }
         }
     },
     counting: {
-        title: 'Configure Counting',
+        title: 'Zählen konfigurieren',
         option: {
-            channel: 'Channel: {channel}',
-            emojis: 'Emojis: {emojis}'
+            channel: 'Kanal: {channel}',
+            emojis: 'Emoji: {emojis}'
         },
         button: {
             reset: {
-                enable: 'Reset on fail',
-                disable: 'Don\'t reset on fail'
+                enable: 'Zurücksetzen bei Fehler',
+                disable: 'Bei Fehler nicht zurücksetzen'
             },
-            customSuccessEmote: 'Correct Emote',
-            customFailEmote: 'Error Emote'
+            customSuccessEmote: 'Korrekter Emote',
+            customFailEmote: 'Fehler Emote'
         },
         page: {
             channel: {
-                title: 'Channel',
-                name: 'counting channel'
+                title: 'Kanal',
+                name: 'Zähl Kanal'
             },
             successEmoji: {
-                title: 'Correct Emoji',
-                name: 'success emoji'
+                title: 'Korrekter Emote',
+                name: 'erfolgreich Emoji'
             },
             failEmoji: {
-                title: 'Wrong Emoji',
-                name: 'fail emoji'
+                title: 'Falscher Emoji',
+                name: 'fehlgeschlag Emoji'
             }
         }
     },
