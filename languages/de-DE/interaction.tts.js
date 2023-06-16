@@ -1,13 +1,13 @@
 module.exports = {
     get: {
-        error: 'Something went wront when creating the voice.. Try a shorter text, might work then!',
-        vote: 'Please help us at {url}, only takes a few seconds',
-        add: '[Add {bot}]({url}) to your server'
+        error: 'Beim Erstellen der Stimme ist etwas schief gelaufen. Versuche mal einen kürzeren Text, könnte dann funktionieren!',
+        vote: 'Bitte hilf uns auf {url}, dauert nur ein paar Sekunden',
+        add: '[Füge {bot}]({url}) zu deinem Server hinzu'
     },
     set: {
-        title: 'Personal Text to Speech config',
-        voice: 'Default Voice: {voice}',
-        filetype: 'Default Type: {filetype}',
+        title: 'Persönliche Text to Speech Konfiguration',
+        voice: 'Standard Stimme: {voice}',
+        filetype: 'Standard Dateityp: {filetype}',
         footer: 'The example audio respects all your personal options.'
     }
 };
