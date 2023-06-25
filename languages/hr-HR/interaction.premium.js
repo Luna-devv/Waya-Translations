@@ -1,12 +1,12 @@
 module.exports = {
     error: {
-        guild: 'A invalid guild Id has been provided.',
-        already: '{guild} is already an Enterprise guild.',
-        email: 'We need access to your email to activate a subscription, [please authorize us here]({url}) and run the command again.'
+        guild: 'Naveden je nevažeći Id servera.',
+        already: '{guild} je već Enterprise server.',
+        email: 'Potreban nam je pristup vašoj e-pošti kako bismo aktivirali pretplatu, [ovdje nas autorizirajte]({url}) i ponovno pokrenite naredbu.'
     },
     portal: {
-        manage: 'You can manage your subscriptions at {url}.',
-        create: 'Subscribe for a guild and yourself using {command} and adding your guilds Id.'
+        manage: 'Svojim pretplatama možete upravljati na {url}.',
+        create: 'Pretplatite se benefite za server i sebe koristeći {command} i dodajte svoj Id servera.'
     },
-    success: 'Continue on {url} to subscribe and add Enterprise to {guild}.'
+    success: 'Nastavite na {url} da biste se pretplatili i dodali Enterprise u {guild}.'
 };
