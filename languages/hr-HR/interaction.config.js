@@ -850,55 +850,55 @@ module.exports = {
             },
             emoji: {
                 title: 'Emote',
-                name: 'starboard emoji'
+                name: 'starboard emotikon'
             },
             color: {
                 title: 'Boja',
-                name: 'starboard color'
+                name: 'starboard boja'
             },
             count: {
                 title: 'Broj',
-                name: 'requierd count',
+                name: 'potreban broj',
                 description: 'Pošaljite broj za postavljanje minimalnog zahtjeva za broj reakcija {emote}.'
             },
             blacklistedRole: {
                 title: 'Zabrani Ulogu',
-                name: 'blacklisted role'
+                name: 'zabranjena uloga'
             },
             blacklistedChannels: {
                 title: 'Kanali na crnoj listi',
-                name: 'blacklist channel list',
+                name: 'popis kanala na crnoj listi',
                 description: 'Spomenite kanal/kategoriju ili zalijepite Id kanala u chat.\nDodajte ispred poruke `+` za dodavanje ili `-` za uklanjanje kanala.\nMožete poslati više kanala odvojenih razmakom.\nUpišite `none` za uklanjanje svih kanala.',
                 missingPrefix: 'Poruka mora imati prefiks `+` za dodavanje ili `-` za uklanjanje kanala.'
             }
         }
     },
     counting: {
-        title: 'Configure Counting',
+        title: 'Konfigurirajte brojanje',
         option: {
-            channel: 'Channel: {channel}',
-            emojis: 'Emojis: {emojis}'
+            channel: 'Kanal: {channel}',
+            emojis: 'Emotikon: {emojis}'
         },
         button: {
             reset: {
-                enable: 'Reset on fail',
-                disable: 'Don\'t reset on fail'
+                enable: 'Ponovno postavljanje pri neuspjehu',
+                disable: 'Ne resetiraj na neuspjehu'
             },
-            customSuccessEmote: 'Correct Emote',
-            customFailEmote: 'Error Emote'
+            customSuccessEmote: 'Ispravan emotikon',
+            customFailEmote: 'Neispravan emotikon'
         },
         page: {
             channel: {
-                title: 'Channel',
-                name: 'counting channel'
+                title: 'Kanal',
+                name: 'kanal za brojanje'
             },
             successEmoji: {
-                title: 'Correct Emoji',
-                name: 'success emoji'
+                title: 'Ispravan emotikon',
+                name: 'uspješan emotikon'
             },
             failEmoji: {
-                title: 'Wrong Emoji',
-                name: 'fail emoji'
+                title: 'Pogrešan emotikon',
+                name: 'neuspjepan emotikon'
             }
         }
     },
@@ -954,11 +954,11 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Poruka',
-                        name: 'level up reply'
+                        name: 'odgovor na višu razinu'
                     },
                     channel: {
                         title: 'Kanal',
-                        name: 'level up Channel'
+                        name: 'kanal za višu razinu'
                     },
                     addRole: {
                         title: 'Nova Uloga Razine',
@@ -968,7 +968,7 @@ module.exports = {
                         page: {
                             messageCount: {
                                 title: 'Broj Poruka',
-                                name: 'required message count',
+                                name: 'potreban broj poruka',
                                 description: 'Pošaljite broj koji će korisnik morati imati kao u broju poruka kako bi dobio odabranu ulogu.'
                             },
                             role: {
@@ -1025,8 +1025,8 @@ module.exports = {
                 button: {
                     timeout: 'Promijenite trajanje vremenskog ograničenja',
                     typing: {
-                        enable: 'Enable Typing',
-                        disable: 'Disable Typing'
+                        enable: 'Omogući tipkanje',
+                        disable: 'Onemogući tipkanje'
                     }
                 }
             }
@@ -1034,7 +1034,7 @@ module.exports = {
     },
     followNews: {
         title: 'Pratite novosti',
-        name: 'follow news'
+        name: 'pratite novosti'
     },
     staff: {
         title: 'Upravljaj {name}',
