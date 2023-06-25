@@ -1,13 +1,13 @@
 module.exports = {
     get: {
-        error: 'Something went wront when creating the voice.. Try a shorter text, might work then!',
-        vote: 'Please help us at {url}, only takes a few seconds',
-        add: '[Add {bot}]({url}) to your server'
+        error: 'Nešto nije u redu prilikom stvaranja glasa. Pokušajte s kraćim tekstom, možda upali!',
+        vote: 'Pomozite nam na {url}, potrebno je samo nekoliko sekundi',
+        add: '[Dodaj {bot}]({url}) na svoj server'
     },
     set: {
-        title: 'Personal Text to Speech config',
-        voice: 'Default Voice: {voice}',
-        filetype: 'Default Type: {filetype}',
-        footer: 'The example audio respects all your personal options.'
+        title: 'Osobna konfiguracija pretvaranja teksta u govor',
+        voice: 'Zadani glas: {voice}',
+        filetype: 'Zadana vrsta datoteke: {filetype}',
+        footer: 'Primjer zvuka poštuje sve vaše osobne mogućnosti.'
     }
 };
