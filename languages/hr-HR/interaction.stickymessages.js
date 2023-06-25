@@ -6,8 +6,8 @@ module.exports = {
         title: 'Konfiguracija ljepljivih poruka',
         state: 'Status: {state}',
         state_status: {
-            enabled: 'Enabled',
-            disabled: 'Disabled'
+            enabled: 'Omogućeno',
+            disabled: 'Onemogućeno'
         },
         permissions: 'Nedostaje: {perms}',
         message: 'Poruka',
@@ -19,8 +19,8 @@ module.exports = {
         },
         button: {
             state: {
-                enable: 'Enable',
-                disable: 'Disable'
+                enable: 'Omogući',
+                disable: 'Onemogući'
             },
             exit: 'Spremi i izađi',
             color: {
