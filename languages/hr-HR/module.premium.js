@@ -1,11 +1,11 @@
 module.exports = {
     end: {
-        title: 'Subscription canceled',
-        description: 'We are sorry to see that your subscription with {bot} Enterprise has been cancelled. We appreciate your support during your time with us and hope that you have enjoyed the benefits of our service.\n\nIf there is anything we can do to improve your experience or if you have any feedback to share, please do not hesitate to contact us. Your opinion matters to us, and we are committed to continuously improving our service.\n\nBest regards,\n{dev}'
+        title: 'Pretplata je otkazana',
+        description: 'Žao nam je što je vaša pretplata na {bot} Enterprise otkazana. Cijenimo vašu podršku tijekom vremena koje ste proveli s nama i nadamo se da ste uživali u prednostima naše usluge.\n\nAko postoji nešto što možemo učiniti kako bismo poboljšali vaše iskustvo ili ako želite podijeliti povratne informacije, slobodno nas kontaktirajte. Vaše mišljenje nam je važno i predani smo stalnom poboljšanju naše usluge.\n\nLijepi Pozdrav,\n{dev}'
     },
     new: {
-        title: 'Welcome to {bot} Enterprise',
-        description: 'Thank you so much for subscribing to {bot} Enterprise, {user}! Your support means the world to us, and we truly appreciate your trust in our services. ❤️\n\nWe are dedicated to providing you with the best possible experience and ensuring that your needs are met. If you ever have any questions or concerns, please don\'t hesitate to reach out to us.\n\nBest regards,\n{dev}'
+        title: 'Dobro došli u {bot} Enterprise',
+        description: 'Puno vam hvala što ste se pretplatili na {bot} Enterprise, {user}! Vaša nam podrška znači sve na svijetu i doista cijenimo vaše povjerenje u naše usluge. ❤️\n\nPosvećeni smo pružanju najboljeg mogućeg iskustva i osiguravanju zadovoljenja vaših potreba. Ako ikada budete imali pitanja ili nedoumica, slobodno nam se obratite.\n\nLijepi Pozdrav,\n{dev}'
     },
-    position: 'Developer, Customer Service Representative'
+    position: 'Programer, predstavnik službe za korisnike'
 };
