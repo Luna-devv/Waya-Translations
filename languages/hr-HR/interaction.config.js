@@ -95,8 +95,8 @@ module.exports = {
     main: {
         title: 'Konfiguriraj {name}',
         option: {
-            logging: 'Messages, Joins, Captcha, Welcoming',
-            fun: 'Starboard, Counting',
+            logging: 'Poruke, Pridruživanja, Verifikacija, Dobrodošlice',
+            fun: 'Starboard, Brojanje',
             premium: {
                 text: 'Enterprise Tir {tier}',
                 buy: 'Kupite Enterprise'
@@ -104,7 +104,7 @@ module.exports = {
         },
         button: {
             logging: 'Evidentiranje',
-            fun: 'Fun',
+            fun: 'Zabava',
             tickets: 'Ulaznice',
             moderation: 'Moderacija',
             misc: 'Razno',
@@ -119,14 +119,14 @@ module.exports = {
         button: {
             messages: 'Poruka',
             joins: 'Ulazaka',
-            expressions: 'Sticker/Emojis',
+            expressions: 'Stikeri/Emotikoni',
             welcomer: 'Dobrodošlica',
             byer: 'Pozdrava'
         },
         page: {
             messages: {
                 title: 'Poruka',
-                name: 'message logging',
+                name: 'evidencija poruka',
                 option: {
                     channel: 'Kanal: {channel}',
                     mode: 'Način rada: {mode}',
@@ -142,27 +142,27 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'message logging channel'
+                        name: 'kanal za evidenciju poruka'
                     }
                 }
             },
             expressions: {
-                title: 'Expressions',
-                name: 'expressions logging',
+                title: 'Izrazi',
+                name: 'evidencija izraza',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}'
+                    channel: 'Kanal: {channel}',
+                    mode: 'Način rada: {mode}'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'expressions logging channel'
+                        title: 'Kanal',
+                        name: 'kanal za evidenciju izraza'
                     }
                 }
             },
             joins: {
                 title: 'Ulazaka',
-                name: 'join logging',
+                name: 'evidencija ulazaka',
                 option: {
                     channel: 'Kanal: {channel}',
                     mode: 'Način rada: {mode}',
@@ -176,7 +176,7 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'join logging'
+                        name: 'evidencija ulazaka'
                     },
                     filter: {
                         title: 'Filter',
@@ -251,15 +251,15 @@ module.exports = {
                         page: {
                             verifiedrole: {
                                 title: 'Potvrđena uloga',
-                                name: 'CAPTCHA verified role'
+                                name: 'CAPTCHA potvrđena uloga'
                             },
                             unverifiedrole: {
                                 title: 'Nepotvrđena uloga',
-                                name: 'CAPTCHA unverified role'
+                                name: 'CAPTCHA neprovjerena uloga'
                             },
                             logging: {
                                 title: 'Bilježenje',
-                                name: 'CAPTCHA logging channel'
+                                name: 'Kanal za CAPTCHA bilježenje'
                             },
                             role: {
                                 title: 'Uloga',
@@ -267,7 +267,7 @@ module.exports = {
                             },
                             color: {
                                 title: 'Boja stranice',
-                                name: 'page color',
+                                name: 'boja stranice',
                                 description: 'Zalijepite Hex boju u chat koji želite koristiti.\nPreporučujemo da koristite boju blizu crne s vrlo visokom zasićenošću.\nImajte na umu da će boja na putovnici uvijek izgledati svjetlije.\nDobijte heksadecimalni kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
                                 invalid: 'Šifra boje nije važeća heksadecimalna boja.\nDobijte heksadecimalni kod boje s [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
@@ -277,7 +277,7 @@ module.exports = {
             },
             welcomer: {
                 title: 'Dobrodošlica',
-                name: 'welcomer',
+                name: 'dobrodošlica',
                 option: {
                     channel: 'Kanal: {channel}',
                     role: 'Uloge: {role}',
@@ -326,15 +326,15 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'welcomer channel'
+                        name: 'kanal dobrodošlice'
                     },
                     role: {
                         title: 'Uloga',
-                        name: 'welcomer role'
+                        name: 'uloga dobrodošlice'
                     },
                     autodelete: {
                         title: 'Automatsko brisanje',
-                        name: 'auto delete',
+                        name: 'automatsko brisanje',
                         description: 'Poruka dobrodošlice bit će izbrisana nakon tog vremena.\nPreporučujemo da ovo vrijeme bude kratko (samo nekoliko sekundi).\nPrimjer: `1m 3s`'
                     },
                     dm: { button: { disable: 'Onemogući DM poruku' } },
@@ -372,20 +372,20 @@ module.exports = {
                                 enable: 'Prikazuj sliku u Embed',
                                 disable: 'Ne prikazuj sliku u Embedu'
                             },
-                            color: 'Text Color'
+                            color: 'Boja Teksta'
                         },
                         page: {
                             background: {
                                 title: 'Pozadina',
-                                name: 'card background',
+                                name: 'pozadina kartice',
                                 description: 'Veza mora biti **izravni URL slike**, također mora biti veza tipa {scheme}.\nPreporučujemo omjer od {ratio} i minimalnu razlučivost od {resolution}.'
                             },
                             text: {
-                                title: 'Text',
+                                title: 'Tekst',
                                 page: {
                                     color: {
-                                        title: 'Color',
-                                        name: 'text color'
+                                        title: 'Boja',
+                                        name: 'boja teksta'
                                     }
                                 }
                             }
@@ -396,11 +396,11 @@ module.exports = {
                         title: 'Mahnite da pozdravite',
                         option: {
                             send: 'Pošalji: {type}',
-                            emoji: 'Emote: {emote}',
+                            emoji: 'Emotikon: {emote}',
                             label: 'Oznaka: {label}'
                         },
                         button: {
-                            emoji: 'Change Button Emote',
+                            emoji: 'Promjena Emotikona Gumba',
                             label: 'Promjena teksta gumba',
                             ping: {
                                 enable: 'Omogući Ping',
@@ -426,12 +426,12 @@ module.exports = {
                         },
                         page: {
                             emoji: {
-                                title: 'Emote',
-                                name: 'button emote'
+                                title: 'Emotikon',
+                                name: 'emotikon gumba'
                             },
                             label: {
                                 title: 'Oznaka',
-                                name: 'button text'
+                                name: 'tekts gumba'
                             }
                         }
                     }
@@ -439,7 +439,7 @@ module.exports = {
             },
             byer: {
                 title: 'Pozdrav',
-                name: 'byer',
+                name: 'pozdrav',
                 option: {
                     channel: 'Kanal: {channel}',
                     message: {
@@ -451,20 +451,20 @@ module.exports = {
                 },
                 button: {
                     message: 'Uredi poruku',
-                    autodelete: 'Set autodelete'
+                    autodelete: 'Postavite automatsko brisanje'
                 },
                 page: {
                     channel: {
                         title: 'Kanal',
-                        name: 'byer channel'
+                        name: 'kanal pozdrava'
                     },
                     message: {
                         title: 'Poruka',
-                        name: 'byer message'
+                        name: 'pozdravna poruka'
                     },
                     autodelete: {
                         title: 'Automatsko brisanje',
-                        name: 'auto delete',
+                        name: 'automatsko brisanje',
                         description: 'Poruka Byera bit će izbrisana nakon tog vremena.\nPreporučujemo da ovo vrijeme bude kratko (samo nekoliko sekundi).\nPrimjer: `1m 3s`'
                     }
                 }
@@ -484,16 +484,16 @@ module.exports = {
                 userid: 'ID korisnika',
                 random: 'Nasumično'
             },
-            position: 'Position: {type}',
+            position: 'Pozicija: {type}',
             positionType: {
-                top: 'At the top',
-                bottom: 'On the bottom'
+                top: 'Na vrhu',
+                bottom: 'Pri dnu'
             }
         },
         button: {
             channelPosition: {
-                top: 'Position: To top',
-                bottom: 'Position: To bottom'
+                top: 'Pozicija: Na vrh',
+                bottom: 'Pozicija: Na dno'
             },
             forceReason: {
                 enable: 'Obavezan razlog',
@@ -528,42 +528,42 @@ module.exports = {
         },
         page: {
             category: {
-                title: 'Category / Channel',
-                name: 'tickets category'
+                title: 'Kategorija / Kanal',
+                name: 'kategorija ulaznica'
             },
             role: {
                 title: 'Uloga osoblja',
-                name: 'ticket staff role'
+                name: 'uloga osoblja za ulaznice'
             },
             descriptions: {
                 title: 'Tekstovi',
-                name: 'ticket descriptions',
+                name: 'opisi ulaznica',
                 button: {
                     texts: 'Pregled ulaznice',
                     topic: 'Promjena teme',
                     unclaimed: 'Promijenite Nezahtijevani Embed',
                     claimed: 'Promijenite Zahtijevani Embed',
-                    closeEmote: 'Change Close Emote',
-                    claimEmote: 'Change Claim Emote'
+                    closeEmote: 'Promjena Emotikona Gumba',
+                    claimEmote: 'Promjena Emotikona Gumba'
                 },
                 page: {
                     topic: {
                         title: 'Tema',
-                        name: 'tickets topic'
+                        name: 'tema ulaznica'
                     },
                     closeEmote: {
-                        title: 'Close Button Emote',
-                        name: 'close emote'
+                        title: 'Emotikon Gumba za zatvaranje',
+                        name: 'emote za zatvaranje'
                     },
                     claimEmote: {
-                        title: 'Claim Button Emote',
-                        name: 'claim emote'
+                        title: 'Emotikon Gumba za preuzimanje',
+                        name: 'emote za preuzimanje'
                     }
                 }
             },
             logging: {
                 title: 'Evidentiranje',
-                name: 'ticket logging'
+                name: 'evidencija ulaznica'
             }
         }
     },
@@ -590,15 +590,15 @@ module.exports = {
         page: {
             role: {
                 title: 'Zaobilazna uloga',
-                name: 'bypass role'
+                name: 'zaobilazna uloga'
             },
             logging: {
                 title: 'Evidentiranje',
-                name: 'moderation logs'
+                name: 'evidentiranje moderacije'
             },
             filter: {
                 title: 'Filter',
-                name: 'moderation Filter',
+                name: 'moderacijski filter',
                 option: {
                     message: 'Poruka: {message}',
                     total: 'Ukupno: **{amount} riječi**',
@@ -628,26 +628,26 @@ module.exports = {
                     },
                     words: {
                         title: 'Riječi',
-                        name: 'blacklisted word',
-                        awaitMessage: 'Send one or multiple words that should get blacklisted.\nSplit words with `, ` to bulk add/remove words.\nPrefix the message with `-` to remove words.',
+                        name: 'zabranjena riječ',
+                        awaitMessage: 'Pošaljite jednu ili više riječi koje bi trebale biti stavljene na crnu listu.\nPodijelite riječi pomoću `, ` za skupno dodavanje/uklanjanje riječi.\nDodajte poruci `-` da biste uklonili riječi.',
                         bulkAdded: 'Uspješno dodano {amout} novih riječi na crnu listu.',
                         added: 'Uspješno dodana "`{word}`" kao nova riječ na crnoj listi.',
                         removed: 'Uspješno uklonjena "`{word}`" kao riječ s crne liste.'
                     },
                     message: {
                         title: 'Poruka',
-                        name: 'blacklisted word reply'
+                        name: 'odgovor na zabranjenu riječ'
                     },
                     timeout: {
                         title: 'Trajanje timeout-a',
-                        name: 'timeout duration',
+                        name: 'trajanje timeout-a',
                         description: 'Korisnik će biti postavljen na Timeout za ovo vrijeme!\nUnos mora biti kraći od 18 dana.\nPrimjer: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiScam: {
                 title: 'Anti Scam',
-                name: 'moderation anti scam',
+                name: 'anti scam moderacije',
                 option: {
                     message: 'Poruka: {message}',
                     actions: 'Akcije: {types}',
@@ -674,18 +674,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Poruka',
-                        name: 'anit scam reply'
+                        name: 'anit scam odgovor'
                     },
                     timeout: {
                         title: 'Trajanje timeout-a',
-                        name: 'timeout duration',
+                        name: 'trajanje timeout-a',
                         description: 'Korisnik će biti postavljen na Timeout za ovo vrijeme!\nUnos mora biti kraći od 18 dana.\nPrimjer: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiLink: {
                 title: 'Anti Link',
-                name: 'moderation anti link',
+                name: 'anti link moderacija',
                 option: {
                     message: 'Poruka: {message}',
                     actions: 'Akcije: {types}',
@@ -716,18 +716,18 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Poruka',
-                        name: 'anti link reply'
+                        name: 'anti link odgovor'
                     },
                     timeout: {
                         title: 'Trajanje timeout-a',
-                        name: 'timeout duration',
+                        name: 'trajanje timeout-a',
                         description: 'Korisnik će biti postavljen na Timeout za ovo vrijeme!\nUnos mora biti kraći od 18 dana.\nPrimjer: `7d 4h 8m 3s`'
                     }
                 }
             },
             antiSpam: {
                 title: 'Anti Spam',
-                name: 'moderation anti spam',
+                name: 'anti spam moderacije',
                 option: {
                     message: 'Poruka: {message}',
                     actions: 'Akcije: {types}',
@@ -756,11 +756,11 @@ module.exports = {
                 page: {
                     message: {
                         title: 'Poruka',
-                        name: 'anti spam reply'
+                        name: 'anit spam odgovor'
                     },
                     timeout: {
                         title: 'Trajanje timeout-a',
-                        name: 'timeout duration',
+                        name: 'trajanje timeout-a',
                         description: 'Trajanje timeout-a'
                     },
                     threshold: {
@@ -773,10 +773,10 @@ module.exports = {
         }
     },
     fun: {
-        title: 'Configure Fun',
+        title: 'Konfigurirajte zabavu',
         button: {
             starboard: 'Starboard',
-            counting: 'Counting'
+            counting: 'Brojanje'
         }
     },
     starboard: {
@@ -846,7 +846,7 @@ module.exports = {
         page: {
             channel: {
                 title: 'Kanal',
-                name: 'starboard channel'
+                name: 'starboard kanal'
             },
             emoji: {
                 title: 'Emote',
