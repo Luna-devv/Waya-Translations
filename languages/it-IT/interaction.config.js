@@ -95,8 +95,8 @@ module.exports = {
     main: {
         title: 'Configura {name}',
         option: {
-            logging: 'Messages, Joins, Captcha, Welcoming',
-            fun: 'Starboard, Counting',
+            logging: 'Messaggi, Unioni, Captcha, Welcomer',
+            fun: 'Starboard, Conteggio',
             premium: {
                 text: 'Livello Abbonamento {tier}',
                 buy: 'Compra un Abbonamento'
@@ -104,7 +104,7 @@ module.exports = {
         },
         button: {
             logging: 'Logging',
-            fun: 'Fun',
+            fun: 'Divertimento',
             tickets: 'Ticket',
             moderation: 'Moderazione',
             misc: 'Misc',
@@ -119,7 +119,7 @@ module.exports = {
         button: {
             messages: 'Messaggi',
             joins: 'Joins',
-            expressions: 'Sticker/Emojis',
+            expressions: 'Adesivi/Emoji',
             welcomer: 'Accoglienza',
             byer: 'Andata'
         },
@@ -142,27 +142,27 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Canale',
-                        name: 'message logging channel'
+                        name: 'canale Logging messaggi'
                     }
                 }
             },
             expressions: {
-                title: 'Expressions',
-                name: 'expressions logging',
+                title: 'Espressioni',
+                name: 'log espressioni',
                 option: {
-                    channel: 'Channel: {channel}',
-                    mode: 'Mode: {mode}'
+                    channel: 'Canale: {channel}',
+                    mode: 'Modalità: {mode}'
                 },
                 page: {
                     channel: {
-                        title: 'Channel',
-                        name: 'expressions logging channel'
+                        title: 'Canale',
+                        name: 'canale logging espressioni'
                     }
                 }
             },
             joins: {
                 title: 'Joins',
-                name: 'join logging',
+                name: 'logging unizioni',
                 option: {
                     channel: 'Canale: {channel}',
                     mode: 'Modalità: {mode}',
@@ -176,7 +176,7 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Canale',
-                        name: 'join logging'
+                        name: 'logging unizione'
                     },
                     filter: {
                         title: 'Filtro',
@@ -251,7 +251,7 @@ module.exports = {
                         page: {
                             verifiedrole: {
                                 title: 'Ruolo Verificato',
-                                name: 'CAPTCHA verified role'
+                                name: 'Ruolo verificato dal CAPTCHA'
                             },
                             unverifiedrole: {
                                 title: 'Ruolo Non Verificato',
@@ -259,7 +259,7 @@ module.exports = {
                             },
                             logging: {
                                 title: 'Logging',
-                                name: 'CAPTCHA logging channel'
+                                name: 'Canale di logging CAPTCHA'
                             },
                             role: {
                                 title: 'Ruolo',
@@ -267,7 +267,7 @@ module.exports = {
                             },
                             color: {
                                 title: 'Colore sfondo',
-                                name: 'page color',
+                                name: 'colore sfondo',
                                 description: 'Incolla un colore Hex nella chat che vuoi usare.\nTi consigliamo di usare un colore vicino al nero con saturazione molto alta.\nNota che il colore sul Passaporto sarà sempre più luminoso.\nOttieni un codice colore Hex da [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!',
                                 invalid: 'Il codice colore non è un colore Hex valido.\nOttieni un codice colore Hex da [htmlcolorcodes.com/color-picker](https://htmlcolorcodes.com/color-picker/)!'
                             }
@@ -277,7 +277,7 @@ module.exports = {
             },
             welcomer: {
                 title: 'Benvenutore',
-                name: 'welcomer',
+                name: 'benvenutore',
                 option: {
                     channel: 'Canale: {channel}',
                     role: 'Ruoli: {role}',
@@ -326,15 +326,15 @@ module.exports = {
                 page: {
                     channel: {
                         title: 'Canale',
-                        name: 'welcomer channel'
+                        name: 'canale benvenutore'
                     },
                     role: {
                         title: 'Ruolo',
-                        name: 'welcomer role'
+                        name: 'ruolo benvenutore'
                     },
                     autodelete: {
                         title: 'Eliminazione Automatica',
-                        name: 'auto delete',
+                        name: 'eliminazione automatica',
                         description: 'Il messaggio Benvenutore, verrà eliminato dopo questo tempo.\nConsigliamo di mantenere questo tempo breve (solo pochi secondi).\nEsempio: `1m 3s`'
                     },
                     dm: { button: { disable: 'Disabilita il messaggio DM' } },
@@ -372,20 +372,20 @@ module.exports = {
                                 enable: 'Mostra immagine in Embed',
                                 disable: 'Non mostrare immagine in Embed'
                             },
-                            color: 'Text Color'
+                            color: 'Colore Testo'
                         },
                         page: {
                             background: {
                                 title: 'Sfondo',
-                                name: 'card background',
+                                name: 'sfondo card',
                                 description: 'Il link deve essere un **URL di immagine diretta**, deve anche essere un link di tipo {scheme}.\nConsigliamo un rapporto di {ratio} e una risoluzione minima di {resolution}.'
                             },
                             text: {
-                                title: 'Text',
+                                title: 'Testo',
                                 page: {
                                     color: {
-                                        title: 'Color',
-                                        name: 'text color'
+                                        title: 'Colore',
+                                        name: 'testo colore'
                                     }
                                 }
                             }
@@ -400,7 +400,7 @@ module.exports = {
                             label: 'Label: {label}'
                         },
                         button: {
-                            emoji: 'Change Button Emote',
+                            emoji: 'Cambia Emote Pulsante',
                             label: 'Cambia Testo Pulsante',
                             ping: {
                                 enable: 'Abilita Ping',
@@ -427,11 +427,11 @@ module.exports = {
                         page: {
                             emoji: {
                                 title: 'Emote',
-                                name: 'button emote'
+                                name: 'emote del Pulsante'
                             },
                             label: {
                                 title: 'Label',
-                                name: 'button text'
+                                name: 'Testo del bottone'
                             }
                         }
                     }
@@ -439,7 +439,7 @@ module.exports = {
             },
             byer: {
                 title: 'Abbandonatore',
-                name: 'byer',
+                name: 'abbandonatore',
                 option: {
                     channel: 'Canale: {channel}',
                     message: {
@@ -451,20 +451,20 @@ module.exports = {
                 },
                 button: {
                     message: 'Modifica messaggio',
-                    autodelete: 'Set autodelete'
+                    autodelete: 'Imposta Eliminazione Automatica'
                 },
                 page: {
                     channel: {
                         title: 'Canale',
-                        name: 'byer channel'
+                        name: 'imposta Canale Abbandonatore'
                     },
                     message: {
                         title: 'Messaggio',
-                        name: 'byer message'
+                        name: 'messaggio Abbandonatore'
                     },
                     autodelete: {
                         title: 'Eliminazione Automatica',
-                        name: 'auto delete',
+                        name: 'eliminazione automatica',
                         description: 'Il messaggio Abbandonatore, verrà eliminato dopo questo tempo.\nConsigliamo di mantenere questo tempo breve (solo pochi secondi).\nEsempio: `1m 3s`'
                     }
                 }
